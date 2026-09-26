@@ -28,8 +28,9 @@ jobs:
           cache-dependency-path: |
             studies/wen-2026-propagator/requirements.txt
             studies/phase-intervention-design/requirements.txt
+            studies/spacetime-causal-influence/requirements.txt
       - name: Install pinned study dependencies
-        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt
+        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/spacetime-causal-influence/requirements.txt
       - name: Check tracked files and documentation links
         run: python scripts/check_repository.py
       - name: Test integrity failures, extraction and numerical counterexamples
@@ -47,6 +48,8 @@ jobs:
           python studies/phase-intervention-design/intervention_checks.py --check
           python studies/phase-intervention-design/design.py --check
           python studies/wen-2026-propagator/identifiability_checks.py --check
+      - name: Check spacetime causal-influence sensitivity snapshot
+        run: python studies/spacetime-causal-influence/design.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/wen-2026-propagator/fetch_data.py --verify-only
