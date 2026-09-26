@@ -38,11 +38,13 @@ jobs:
         run: python studies/wen-2026-propagator/extract_workbooks.py --output "$RUNNER_TEMP/workbooks"
       - name: Check synthetic outputs and regenerate review artifacts
         run: python studies/wen-2026-propagator/synthetic_checks.py --check --output-dir "$RUNNER_TEMP/review-artifacts"
+      - name: Reproduce deposited figures and verify reviewed residuals
+        run: python studies/wen-2026-propagator/replicate.py --check --output-dir "$RUNNER_TEMP/review-artifacts/replication"
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/wen-2026-propagator/fetch_data.py --verify-only
           git diff --exit-code
-      - name: Attach synthetic figures and numerical results
+      - name: Attach regenerated figures and numerical results
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: synthetic-review-${{ github.sha }}

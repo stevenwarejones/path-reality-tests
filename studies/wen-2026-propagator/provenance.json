@@ -43,7 +43,8 @@
       "file": "crossref.json",
       "url": "https://api.crossref.org/works/10.1126/sciadv.aeh1011",
       "bytes": 17328,
-      "sha256": "c2c8324ec7416a1dc97448e797dc2b64bc7c1e3a9a216bc998dd35f4f2c69cea"
+      "sha256": "c2c8324ec7416a1dc97448e797dc2b64bc7c1e3a9a216bc998dd35f4f2c69cea",
+      "retrieved_date_utc": "2026-09-26"
     },
     {
       "file": "figure3.webp",
@@ -80,11 +81,10 @@
       "sha256": "d0ad2195be3876fb5ebfcfddfd1cbda0c9284ba96e62007b2971f3dfec80863f"
     }
   ],
-  "tooling_source_commit": "3cd14198411c6c1d3c6ded8e764f198147fc32c7",
   "tooling_source_repository": "https://github.com/stevenwarejones/ontology-separation",
   "formal_companion": {
     "repository": "https://github.com/stevenwarejones/ontology-separation",
-    "commit": "a4d294ddb3847134ac2bdbb509c435c2eaff7a98",
+    "commit": "ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29",
     "module": "OntologySeparation/Experiments/PathInterference.lean",
     "scope": "Ideal finite case study, not an empirical certificate"
   }
