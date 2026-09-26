@@ -1,0 +1,86 @@
+[
+  {
+    "id": "CF01",
+    "status": "computationally-verified",
+    "evidence": "model.md",
+    "disposition": "Common interface and finite-object distinctions",
+    "next_step": "Formal completion"
+  },
+  {
+    "id": "CF02",
+    "status": "externally-blocked",
+    "evidence": "model.md",
+    "disposition": "Infinite spectral proof terms; local Lean startup fails",
+    "next_step": "Compile; formalize remaining analytic bridges"
+  },
+  {
+    "id": "CF03",
+    "status": "computationally-verified",
+    "evidence": "model.md",
+    "disposition": "DFT, cyclic generator and strict band tests",
+    "next_step": "Formal embedding and aliasing proof"
+  },
+  {
+    "id": "CF04",
+    "status": "computationally-verified",
+    "evidence": "model.md",
+    "disposition": "Exact spectral counterexample with complete random POVMs",
+    "next_step": "Formal finite-dimensional constructor"
+  },
+  {
+    "id": "CF05",
+    "status": "conditional",
+    "evidence": "model.md",
+    "disposition": "Derived remainder and tail bounds tested independently",
+    "next_step": "Formal approximation and POVM TV proof"
+  },
+  {
+    "id": "CF06",
+    "status": "conditional",
+    "evidence": "model.md",
+    "disposition": "Quantifiers and joint-product derivation; finite numerical examples",
+    "next_step": "Formal product/limit proof"
+  },
+  {
+    "id": "CF07",
+    "status": "computationally-verified",
+    "evidence": "protocol.md",
+    "disposition": "Born readout and explicit blind controls",
+    "next_step": "Formal dynamics-to-measurement bridge; hardware certificates"
+  },
+  {
+    "id": "CF08",
+    "status": "computationally-verified",
+    "evidence": "model.md",
+    "disposition": "Exact phase/scale degeneracies and continuous interval enclosure",
+    "next_step": "Calibrate shared nuisance bounds"
+  },
+  {
+    "id": "CF09",
+    "status": "conditional",
+    "evidence": "protocol.md",
+    "disposition": "Fixed allocation, multiplicity and strict integer eligible budgets",
+    "next_step": "Source efficiency and physical calibration cost"
+  },
+  {
+    "id": "CF10",
+    "status": "conditional",
+    "evidence": "literature.md",
+    "disposition": "Scoped primary-source comparison includes Chou finite DFT and Brun-Mlodinow distinct dispersion",
+    "next_step": "No novelty or transferred empirical bound claimed; unavailable version details have no dependent claim"
+  },
+  {
+    "id": "CF11",
+    "status": "externally-blocked",
+    "evidence": "literature.md",
+    "disposition": "No inspected dataset supplies this ring model and calibration",
+    "next_step": "Obtain compatible records without importing unauthorized data"
+  },
+  {
+    "id": "CF12",
+    "status": "out-of-scope",
+    "evidence": "model.md",
+    "disposition": "Dispersion test is not a path occupancy test",
+    "next_step": "No dependent claim"
+  }
+]
