@@ -50,7 +50,7 @@ def summarize(bundle):
     for row in primary:
         arms=list(zip(row['known_click_counts'],[k+m for k,m in zip(row['known_click_counts'],row['possible_unknown_clicks'])]))
         for eps in bundle['protocol']['joint_setting_tv_scenarios']:
-            for leak in bundle['protocol']['ordinary_leakage_gap_scenarios']:
+            for leak in bundle['protocol']['click_only_leakage_gap_scenarios']:
                 sensitivity.append(dict(direction=row['direction'],receiver_setting=row['receiver_setting'],
                     interval=effect_interval(arms,row['n'],alpha=bundle['protocol']['family_alpha'],per_history_tv=eps,leakage=leak)))
     return dict(schema_version=1,analysis='retrospective click-only v2',n=bundle['n'],family_alpha=bundle['protocol']['family_alpha'],

@@ -6,8 +6,8 @@ It produces measured marginal contrasts and assumption-indexed bounds, with
 explicit barriers to a spacelike causal interpretation.
 
 The independent raw decoder reproduces every stored setting and the archived
-click-update behavior. Preserving every eligible pulse bit differs from 105 Alice
-and 94 Bob words, adding 31 and 27 primary-window clicks respectively. All
+click-update behavior. The bitwise-OR reconstruction differs from 105 Alice
+and 94 Bob archived words, adding 31 and 27 primary-window clicks respectively. All
 no-click rows remain. Ambiguous settings and timestamp excursions receive
 worst-case score treatment. This is not a reanalysis of the published Bell
 p-value or evidence of a signaling anomaly.

@@ -43,17 +43,20 @@ contains zero. This does not validate the premise or certify no signaling.
 
 Largest primary upper limit across both directions and receiver settings:
 
-| Assumed per-history joint-setting TV cap | Assumed leakage gap | Event-supported upper limit |
+| Assumed per-history joint-setting TV cap | Assumed leakage gap (per million) | Event-supported upper limit (per million) |
 |---:|---:|---:|
-| 0 | 0 | 0.0055% |
-| 0 | 0.001 | 0.1055% |
-| 0 | 0.01 | 1.0055% |
-| 0.0001 | 0 | 0.0055% |
-| 0.0001 | 0.001 | 0.1055% |
-| 0.0001 | 0.01 | 1.0055% |
-| 0.001 | 0 | 0.0058% |
-| 0.001 | 0.001 | 0.1058% |
-| 0.001 | 0.01 | 1.0058% |
+| 0 | 0 | 54.82 |
+| 0 | 1 | 55.82 |
+| 0 | 10 | 64.82 |
+| 0 | 50 | 104.82 |
+| 0.0001 | 0 | 55.16 |
+| 0.0001 | 1 | 56.16 |
+| 0.0001 | 10 | 65.16 |
+| 0.0001 | 50 | 105.16 |
+| 0.001 | 0 | 58.25 |
+| 0.001 | 1 | 59.25 |
+| 0.001 | 10 | 68.25 |
+| 0.001 | 50 | 108.25 |
 
 These allowances are sensitivity parameters, not measured calibration results.
 Lack of a valid history-conditional calibration prevents promoting these

@@ -33,5 +33,11 @@
   ],
   "causal_claim_enabled": false,
   "spacelike_claim_enabled": false,
-  "analysis_revision": "Retrospective click-only v2, specified after inspecting v1 results. Not preregistered or independently confirmatory. Centered-score v1 retained as conservative reference."
+  "analysis_revision": "Retrospective click-only v2, specified after inspecting v1 results. Not preregistered or independently confirmatory. Centered-score v1 retained as conservative reference.",
+  "click_only_leakage_gap_scenarios": [
+    0.0,
+    1e-06,
+    1e-05,
+    5e-05
+  ]
 }

@@ -54,12 +54,12 @@ def render(output):
             'contains zero. This does not validate the premise or certify no signaling.','',
             '## Assumed calibration sensitivity','',
             'Largest primary upper limit across both directions and receiver settings:','',
-            '| Assumed per-history joint-setting TV cap | Assumed leakage gap | Event-supported upper limit |',
+            '| Assumed per-history joint-setting TV cap | Assumed leakage gap (per million) | Event-supported upper limit (per million) |',
             '|---:|---:|---:|']
     for eps in counts['protocol']['joint_setting_tv_scenarios']:
-        for leakage in counts['protocol']['ordinary_leakage_gap_scenarios']:
+        for leakage in counts['protocol']['click_only_leakage_gap_scenarios']:
             u=max(r['interval']['absolute_upper'] for r in result['primary_sensitivity'] if r['interval']['assumed_per_history_joint_tv']==eps and r['interval']['assumed_leakage_gap']==leakage)
-            lines.append(f'| {eps:g} | {leakage:g} | {100*u:.4f}% |')
+            lines.append(f'| {eps:g} | {leakage*1e6:g} | {u*1e6:.2f} |')
     lines+=['','These allowances are sensitivity parameters, not measured calibration results.',
             'Lack of a valid history-conditional calibration prevents promoting these',
             'numbers to an apparatus-certified causal bound.','',

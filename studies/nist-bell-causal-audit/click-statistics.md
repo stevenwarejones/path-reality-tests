@@ -109,6 +109,10 @@ The observed setting imbalance is not such a calibration. Nor may an observed
 click frequency be substituted for a uniform conditional p_max when asserting
 a setting-bias term of order epsilon p_max. The inversion avoids that substitution.
 
+The v2 leakage grid is B = 0, 1, 10 and 50 per million, on the scale of its
+primary limits. The v1 reference retains its original 0, 1,000 and 10,000 per
+million grid and numerical results.
+
 All numerical epsilon and B values, including zero, are assumptions. Any
 calibration failure probabilities must be added to alpha. Exogeneity, physical
 alignment, adapted outcome rules, acquisition completeness and transported
