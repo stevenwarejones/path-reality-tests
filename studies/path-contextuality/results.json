@@ -1,0 +1,464 @@
+{
+  "schema": 1,
+  "status": "prospective synthetic; no apparatus evidence",
+  "reference": {
+    "a": "3/5",
+    "b": "4/5",
+    "x": "4/5",
+    "y": "3/5",
+    "z": "4/5",
+    "w": "3/5",
+    "table": [
+      [
+        "1369/15625",
+        "7056/15625"
+      ],
+      [
+        "144/15625",
+        "7056/15625"
+      ]
+    ],
+    "q": "16/25",
+    "d": "1/50",
+    "f": "49/625",
+    "gap": "297/15625"
+  },
+  "noise_scenarios": [
+    {
+      "final_eff": 1.0,
+      "probe_eff": 1.0,
+      "final_flip": 0.0,
+      "table": [
+        [
+          0.087616,
+          0.451584,
+          0.0
+        ],
+        [
+          0.009216,
+          0.451584,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "a_f_q_d": [
+        0.087616,
+        0.0784,
+        0.64,
+        0.02
+      ],
+      "gap": 0.019007999999999997,
+      "budget": {
+        "per_main_context": 512181,
+        "main_contexts": 4,
+        "per_audit_context": 52345,
+        "audit_contexts": 44,
+        "eligible_trials": 4351904,
+        "alpha_main": 0.005,
+        "alpha_calibration": 0.005,
+        "beta_main": 0.1,
+        "audit_radius": 0.01,
+        "guarantee": "conditional Hoeffding power; calibration equivalences remain premises"
+      }
+    },
+    {
+      "final_eff": 0.9,
+      "probe_eff": 0.95,
+      "final_flip": 0.0,
+      "table": [
+        [
+          0.07491168,
+          0.38610432,
+          0.051223999999999985
+        ],
+        [
+          0.00787968,
+          0.38610432,
+          0.04377599999999999
+        ],
+        [
+          0.004357440000000004,
+          0.040642560000000036,
+          0.005000000000000004
+        ]
+      ],
+      "a_f_q_d": [
+        0.07491168,
+        0.07056,
+        0.608,
+        0.02
+      ],
+      "gap": 0.013422399999999994,
+      "budget": {
+        "per_main_context": 1027154,
+        "main_contexts": 4,
+        "per_audit_context": 52345,
+        "audit_contexts": 44,
+        "eligible_trials": 6411796,
+        "alpha_main": 0.005,
+        "alpha_calibration": 0.005,
+        "beta_main": 0.1,
+        "audit_radius": 0.01,
+        "guarantee": "conditional Hoeffding power; calibration equivalences remain premises"
+      }
+    },
+    {
+      "final_eff": 0.8,
+      "probe_eff": 0.9,
+      "final_flip": 0.01,
+      "table": [
+        [
+          0.0657040896,
+          0.32251991040000005,
+          0.09705599999999999
+        ],
+        [
+          0.0098205696,
+          0.3219554304,
+          0.08294399999999998
+        ],
+        [
+          0.008391628799999998,
+          0.07160837119999999,
+          0.01999999999999999
+        ]
+      ],
+      "a_f_q_d": [
+        0.0657040896,
+        0.0694656,
+        0.5760000000000001,
+        0.02
+      ],
+      "gap": 0.007081215999999994,
+      "budget": {
+        "per_main_context": 3690456,
+        "main_contexts": 4,
+        "per_audit_context": 52345,
+        "audit_contexts": 44,
+        "eligible_trials": 17065004,
+        "alpha_main": 0.005,
+        "alpha_calibration": 0.005,
+        "beta_main": 0.1,
+        "audit_radius": 0.01,
+        "guarantee": "conditional Hoeffding power; calibration equivalences remain premises"
+      }
+    },
+    {
+      "final_eff": 0.5,
+      "probe_eff": 0.8,
+      "final_flip": 0.02,
+      "table": [
+        [
+          0.037958144,
+          0.177721856,
+          0.21568
+        ],
+        [
+          0.007225344000000001,
+          0.177094656,
+          0.18432
+        ],
+        [
+          0.011295871999999997,
+          0.08870412799999998,
+          0.09999999999999998
+        ]
+      ],
+      "a_f_q_d": [
+        0.037958144,
+        0.047632,
+        0.512,
+        0.02
+      ],
+      "gap": -0.005476800000000004,
+      "budget": null
+    }
+  ],
+  "grid_search": {
+    "total_candidates": 1215,
+    "positive_candidates": 437,
+    "best_parameters": [
+      "3/10",
+      "1/4",
+      "1/4"
+    ],
+    "gap": 0.02265825485269446,
+    "eligible_trials": 3744976,
+    "claim": "minimum over this declared grid only"
+  },
+  "reference_random_allocation": {
+    "eligible_trials": 52484352,
+    "contexts": 48,
+    "minimum_count_event": 546712.0,
+    "log_counts_failure_bound": -136674.12879898908,
+    "beta_total": 0.1
+  },
+  "cp_power": {
+    "seed": 260926,
+    "repetitions": 2000,
+    "rejections": 2000,
+    "power": 1.0,
+    "mc_99pct_interval": [
+      0.9973543472409907,
+      1.0
+    ]
+  },
+  "countermodels": {
+    "undisturbed_marginal_invasive_joint": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "marginal_disturbance": "0",
+    "invasive_gap_if_d_misidentified_as_zero": "1/4",
+    "contextual_pointer_same_joint": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "legitimate_null_postselected_negative_fraction": "1",
+    "legitimate_null_joint_negative_success": "1/100",
+    "legitimate_null_bypass": "0"
+  },
+  "calibration": {
+    "contexts": {
+      "pointer/Q/probe": [
+        0.6080000000000001,
+        0.34199999999999997,
+        0.050000000000000044
+      ],
+      "pointer/Q/simulator": [
+        0.608,
+        0.34199999999999997,
+        0.050000000000000044
+      ],
+      "channel/Q/X/M": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/X/I": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/X/Z": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/Y/M": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/Y/I": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/Y/Z": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/Q/Z/M": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "channel/Q/Z/I": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "channel/Q/Z/Z": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "pointer/P/probe": [
+        0.34199999999999997,
+        0.6080000000000001,
+        0.050000000000000044
+      ],
+      "pointer/P/simulator": [
+        0.34199999999999997,
+        0.608,
+        0.050000000000000044
+      ],
+      "channel/P/X/M": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/X/I": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/X/Z": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/Y/M": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/Y/I": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/Y/Z": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "channel/P/Z/M": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "channel/P/Z/I": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "channel/P/Z/Z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "pointer/X+/probe": [
+        0.47499999999999987,
+        0.47499999999999987,
+        0.050000000000000044
+      ],
+      "pointer/X+/simulator": [
+        0.475,
+        0.475,
+        0.050000000000000044
+      ],
+      "channel/X+/X/M": [
+        0.9799999999999998,
+        0.02000000000000024,
+        0.0
+      ],
+      "channel/X+/X/I": [
+        0.9999999999999998,
+        2.220446049250313e-16,
+        0.0
+      ],
+      "channel/X+/X/Z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "channel/X+/Y/M": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/X+/Y/I": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/X+/Y/Z": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/X+/Z/M": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/X+/Z/I": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/X+/Z/Z": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "pointer/Y+/probe": [
+        0.47499999999999987,
+        0.47499999999999987,
+        0.050000000000000044
+      ],
+      "pointer/Y+/simulator": [
+        0.475,
+        0.475,
+        0.050000000000000044
+      ],
+      "channel/Y+/X/M": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/Y+/X/I": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/Y+/X/Z": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/Y+/Y/M": [
+        0.9799999999999998,
+        0.02000000000000024,
+        0.0
+      ],
+      "channel/Y+/Y/I": [
+        0.9999999999999998,
+        2.220446049250313e-16,
+        0.0
+      ],
+      "channel/Y+/Y/Z": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "channel/Y+/Z/M": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/Y+/Z/I": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ],
+      "channel/Y+/Z/Z": [
+        0.4999999999999999,
+        0.5000000000000001,
+        0.0
+      ]
+    },
+    "max_equivalence_residual": 1.1102230246251565e-16,
+    "preparation_coordinate_determinant": -2,
+    "status": "ideal synthetic controls; not a finite-data equivalence certificate"
+  }
+}

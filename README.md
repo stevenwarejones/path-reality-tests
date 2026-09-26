@@ -8,6 +8,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 | Study | Question | Status |
 |---|---|---|
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |
+| [Path contextuality](studies/path-contextuality/README.md) | Can a finite weak path probe reject explicit noncontextual representations? | Prospective conditional design; exact instrument and calibrated-trial budget |
 | [Phase-intervention design](studies/phase-intervention-design/README.md) | Which calibrated dephased models would a four-phase experiment exclude? | Proposed; synthetic checks and conditional power |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
