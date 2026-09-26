@@ -61,7 +61,7 @@ numbers quantify this ontic representation class, not measured apparatus disturb
 transition LP in the tests checks several boundary points; its floating-point
 output is corroboration, not the proof certificate. The analytic construction
 is checked at exact breakpoints and a dense rational grid. The Lean companion
-is [PR #90](https://github.com/stevenwarejones/ontology-separation/pull/90).
+is [PR #87](https://github.com/stevenwarejones/ontology-separation/pull/87).
 
 ## Conditional probability and shared-procedure errors
 

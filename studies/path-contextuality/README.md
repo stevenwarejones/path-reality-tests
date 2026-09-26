@@ -67,3 +67,7 @@ multiplication, including imaginary off-diagonal inputs. Seed 260926 is fixed.
 The Monte Carlo result is accompanied by its own binomial interval and does
 not replace the analytic power certificate. Snapshot comparison keeps counts,
 keys, decisions and strings exact, with explicit tolerance only for floats.
+
+The extension now includes `dual_decision` and `dual_certified_budget` for both
+success-cell witnesses; see the joint-decision section of [protocol.md](protocol.md).
+The original grid and random-allocation figures remain single-witness baselines.

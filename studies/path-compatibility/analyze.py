@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce exact compatibility, conditional Wen reconstruction and finite design."""
+"""Reproduce exact full-table compatibility and conditional sensitivity."""
 import argparse
 import hashlib
 import importlib.util
@@ -7,8 +7,6 @@ import json
 from pathlib import Path
 from fractions import Fraction as F
 import boundary
-import wen_reconstruction
-import measurements
 
 ROOT=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('contextuality_design',ROOT.parent/'path-contextuality/design.py')
@@ -34,15 +32,14 @@ def analyze():
                             'reference_observed_positive_success':boundary.B})
     source_hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest()
                    for p in sorted(ROOT.glob('*.py'))}
-    return stringify({'scope':'reference-model compatibility plus conditional real-data reconstruction; not a contextuality claim for Wen',
+    return stringify({'scope':'fixed ideal reference-table compatibility; no experimental evidence',
             'source_hashes':source_hashes,
             'boundary':{'reference_joint':boundary.TARGET,'bypass':boundary.F0,
                         'minimum_cap':boundary.G,'branch_crossing':boundary.CROSS,
                         'cap_at_minimum_disturbance':boundary.Q_MAX,
                         'reference_cap_minimum_disturbance':boundary.required_disturbance(F(16,25)),
                         'reference_cap_negative_only_necessary_disturbance':F(13,320),
-                        'attaining_models':models,'conditional_sensitivity':sensitivity},
-            'wen':wen_reconstruction.analyze(),'measurement_design':measurements.analyze()})
+                        'attaining_models':models,'conditional_sensitivity':sensitivity}})
 
 
 def main():
@@ -50,7 +47,7 @@ def main():
     result=analyze();path=ROOT/'results.json'
     if args.check:
         comparison.compare(json.loads(path.read_text()),result)
-        print('Sharp compatibility, Wen reconstruction and conditional design verified')
+        print('Sharp compatibility verified')
     else:
         path.write_text(json.dumps(result,indent=2)+'\n')
 

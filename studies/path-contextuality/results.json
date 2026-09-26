@@ -207,6 +207,179 @@
       1.0
     ]
   },
+  "dual_witness_analysis": {
+    "exact_gaps": [
+      "297/15625",
+      "109/6250"
+    ],
+    "negative_only_budget": {
+      "per_main_context": 512181,
+      "main_contexts": 4,
+      "per_audit_context": 52345,
+      "audit_contexts": 44,
+      "eligible_trials": 4351904,
+      "alpha_main": 0.005,
+      "alpha_calibration": 0.005,
+      "beta_main": 0.1,
+      "audit_radius": 0.01,
+      "guarantee": "conditional Hoeffding power; calibration equivalences remain premises"
+    },
+    "positive_only_budget": {
+      "per_main_context": 608419,
+      "main_contexts": 4,
+      "per_audit_context": 52345,
+      "audit_contexts": 44,
+      "eligible_trials": 4736856,
+      "alpha_main": 0.005,
+      "alpha_calibration": 0.005,
+      "beta_main": 0.1,
+      "audit_radius": 0.01,
+      "guarantee": "conditional Hoeffding power; calibration equivalences remain premises"
+    },
+    "dual_budget": {
+      "per_main_context": 532268,
+      "main_contexts": 4,
+      "per_audit_context": 52345,
+      "audit_contexts": 44,
+      "eligible_trials": 4432252,
+      "alpha_main": 0.005,
+      "alpha_calibration": 0.005,
+      "beta_main": 0.1,
+      "audit_radius": 0.01,
+      "guarantee": "conditional Hoeffding power; calibration equivalences remain premises",
+      "probability_coordinates": 5
+    },
+    "noise_scenarios": [
+      {
+        "final_eff": 1.0,
+        "probe_eff": 1.0,
+        "flip": 0.0,
+        "a_b_f_q_d": [
+          0.087616,
+          0.009216,
+          0.0784,
+          0.64,
+          0.02
+        ],
+        "gaps": [
+          0.019007999999999997,
+          0.017439999999999997
+        ],
+        "dual_budget": {
+          "per_main_context": 532268,
+          "main_contexts": 4,
+          "per_audit_context": 52345,
+          "audit_contexts": 44,
+          "eligible_trials": 4432252,
+          "alpha_main": 0.005,
+          "alpha_calibration": 0.005,
+          "beta_main": 0.1,
+          "audit_radius": 0.01,
+          "guarantee": "conditional Hoeffding power; calibration equivalences remain premises",
+          "probability_coordinates": 5
+        }
+      },
+      {
+        "final_eff": 0.9,
+        "probe_eff": 0.95,
+        "flip": 0.0,
+        "a_b_f_q_d": [
+          0.07491168,
+          0.012237120000000004,
+          0.07056,
+          0.608,
+          0.02
+        ],
+        "gaps": [
+          0.013422399999999994,
+          0.014011199999999994
+        ],
+        "dual_budget": {
+          "per_main_context": 979609,
+          "main_contexts": 4,
+          "per_audit_context": 52345,
+          "audit_contexts": 44,
+          "eligible_trials": 6221616,
+          "alpha_main": 0.005,
+          "alpha_calibration": 0.005,
+          "beta_main": 0.1,
+          "audit_radius": 0.01,
+          "guarantee": "conditional Hoeffding power; calibration equivalences remain premises",
+          "probability_coordinates": 5
+        }
+      },
+      {
+        "final_eff": 0.8,
+        "probe_eff": 0.9,
+        "flip": 0.01,
+        "a_b_f_q_d": [
+          0.0657040896,
+          0.018212198399999997,
+          0.0694656,
+          0.5760000000000001,
+          0.02
+        ],
+        "gaps": [
+          0.007081215999999994,
+          0.009851903999999998
+        ],
+        "dual_budget": {
+          "per_main_context": 1981357,
+          "main_contexts": 4,
+          "per_audit_context": 52345,
+          "audit_contexts": 44,
+          "eligible_trials": 10228608,
+          "alpha_main": 0.005,
+          "alpha_calibration": 0.005,
+          "beta_main": 0.1,
+          "audit_radius": 0.01,
+          "guarantee": "conditional Hoeffding power; calibration equivalences remain premises",
+          "probability_coordinates": 5
+        }
+      },
+      {
+        "final_eff": 0.5,
+        "probe_eff": 0.8,
+        "flip": 0.02,
+        "a_b_f_q_d": [
+          0.037958144,
+          0.018521215999999997,
+          0.047632,
+          0.512,
+          0.02
+        ],
+        "gaps": [
+          -0.005476800000000004,
+          0.0037705600000000027
+        ],
+        "dual_budget": {
+          "per_main_context": 13526684,
+          "main_contexts": 4,
+          "per_audit_context": 52345,
+          "audit_contexts": 44,
+          "eligible_trials": 56409916,
+          "alpha_main": 0.005,
+          "alpha_calibration": 0.005,
+          "beta_main": 0.1,
+          "audit_radius": 0.01,
+          "guarantee": "conditional Hoeffding power; calibration equivalences remain premises",
+          "probability_coordinates": 5
+        }
+      }
+    ],
+    "shared_probe_cp_power": {
+      "seed": 260926,
+      "repetitions": 2000,
+      "negative_rejections": 2000,
+      "positive_rejections": 2000,
+      "either_rejections": 2000,
+      "either_mc_99pct_interval": [
+        0.9973543472409907,
+        1.0
+      ]
+    },
+    "scope": "disturbance robustness, not a demonstrated statistical power advantage"
+  },
   "countermodels": {
     "drop_cap_quantum_joint": [
       [

@@ -1,51 +1,23 @@
-# Sharp compatibility and the measurement needed to resolve an ambiguity
+# Sharp full-table compatibility
 
-This study separates observations from assumptions through three concrete results:
+This study extends the path-contextuality design with necessary bounds and exact
+attaining models for the complete ideal reference table. See [derivation.md](derivation.md)
+and [evidence.md](evidence.md). It is not a measured violation.
 
-1. **An exact complete-table compatibility boundary** for the path-contextuality
-   reference instrument, with a two-state model at every compatible point.
-2. **An auditable reconstruction of the single deposited Wen example**, retaining
-   gains, backgrounds, spatial averaging, normalization and reference phase as
-   explicit assumptions. It does not reconstruct the unavailable complete experiment.
-3. **A finite-menu measurement comparison**, with exact non-identifiability
-   certificates and a conditional main-trial budget for a new reference quadrature.
+At q=16/25, the positive-success bound forces d≥297/1225, versus 13/320
+from the negative-success witness alone. At d=1/50 its absolute gap is smaller:
+109/6250 versus 297/15625. This is improved disturbance tolerance, not a demonstrated
+power advantage. The joint decision and power comparison are implemented in
+[the contextuality design](../path-contextuality/design.py).
 
-See [derivation](derivation.md), [reconstruction](reconstruction.md),
-[measurement design](measurement-design.md), and [evidence and limitations](evidence.md).
-The formal companion is [ontology-separation #90](https://github.com/stevenwarejones/ontology-separation/pull/90),
-stacked on [#87](https://github.com/stevenwarejones/ontology-separation/pull/87).
-Formal compilation and generated audit/report verification are still in progress.
+Run `python studies/path-compatibility/analyze.py --check`.
+The exact-fraction attainers cover the boundary; floating-point LP tests are
+independent numerical corroboration. Formal companion: ontology-separation #87.
 
-At q=16/25, the minimum disturbance needed for the **complete** reference table is
-297/1225≈24.24%, attained exactly. The negative-success inequality alone gives
-only the necessary threshold 13/320≈4.06%. These are ontic model-class parameters,
-not measured disturbance values or an empirical contextuality claim for Wen.
-
-![Reference compatibility boundary](figures/compatibility-boundary.png)
-
-The Wen equal-gain/zero-background baseline, averaged across y, has a descriptive
-10.31% residual after fitting one complex scale to FigS1C. Other declared spatial
-reductions give different results. The fit supplies neither missing calibration
-nor statistical significance; the images and slice need not be the same repeats.
-
-![Conditional Wen example reconstruction](figures/wen-example-reconstruction.png)
-
-A calibrated Y reference-quadrature measurement at x=8 distinguishes the declared
-nonzero opposite-slope families with a conservative 22 eligible main-trial bound.
-That calculation assumes bounded reference offset, visibility and efficiency.
-Calibration cost is unavailable and is **not counted as zero**; no end-to-end cost
-or current-apparatus feasibility is claimed. If the alternative families overlap,
-an exact shared-completion certificate rules out uniform separation by any test.
-
-## Reproduce
-
-```sh
-python -m pip install -r studies/path-compatibility/requirements.txt
-python studies/path-compatibility/analyze.py --check
-python -m unittest discover -s tests -p test_path_compatibility.py
-python studies/path-compatibility/plot.py --output-dir /tmp/path-compatibility-figures
-```
-
-`results.json` retains exact rational boundary models, all reduced image signals,
-conditional coordinate enclosures, and the explicitly assumed design parameters.
-Original workbooks remain untouched and are checked against the existing manifest.
+The earlier Wen reconstruction and illustrative slope-family design are parked at
+[parked/wen-reconstruction](https://github.com/stevenwarejones/path-reality-tests/tree/parked/wen-reconstruction).
+They are outside this contextuality study. Their practical recommendation is to
+measure the reference wavefront phase against an independently characterized
+external reference to test the near-collimation approximation. Calibration and
+total trial cost remain unidentified; the illustrative 22-trial number is not
+an experimental budget.

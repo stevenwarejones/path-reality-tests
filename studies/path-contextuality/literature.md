@@ -117,3 +117,14 @@ labels can be attached without changing that interface's probabilities. A physic
 bridge must restrict those labels through dynamics and calibrated instruments.
 Our experiment therefore tests the stated noncontextual representations, not
 superluminal motion, backward time or all definite trajectories.
+
+### Positive-success extension: limited prior-art check
+
+Checked KLP's published Theorem 3, Appendix B (Lemma 1, Eqs. B1–B3 and the
+subsequent tightness discussion), and Appendix H's advertised polytope approach:
+[author-hosted published text](https://ravikunjwal.com/wp-content/uploads/2021/06/physreva.100.042116.pdf).
+The published template states the negative-success upper bound. Our positive
+floor follows directly from the same diagonal-disturbance and response-cap
+premises. This is not an exhaustive follow-up review and establishes no priority.
+We make no novelty claim for either outcome form. The contribution reported here
+is the exact fixed-table compatibility region with explicit attaining models.

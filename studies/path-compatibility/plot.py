@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Regenerate the two scientific figures from checked numerical results."""
+"""Regenerate the boundary figure from checked numerical results."""
 import argparse
-import json
 from pathlib import Path
 import numpy as np
 import matplotlib
@@ -29,17 +28,5 @@ def main():
     ax.set(xlim=(.45,1),ylim=(0,.5),xlabel='Ontic negative-response cap q',ylabel='Identity-mixture disturbance d',title='Reference table: exact compatibility within the declared model')
     ax.legend(loc='upper right',fontsize=9)
     fig.savefig(args.output_dir/'compatibility-boundary.png',dpi=160);plt.close(fig)
-    r=json.loads((ROOT/'results.json').read_text())['wen'];x=np.array(r['x_coordinates']);target=np.array(r['deposited_complex_slice'])
-    fig,axes=plt.subplots(1,2,figsize=(11,4.2),layout='constrained',sharex=True)
-    for part,ax in enumerate(axes):
-        ax.plot(x,target[:,part],'ko',ms=4,label='Deposited repeated-measurement mean')
-        for name,label in [('all_y','All y'),('strip_y_1','Strip |y| <= 1'),('central_y','Central y=0')]:
-            item=r['roi_results'][name];a=np.array(item['reconstructed_before_scale']);z=a[:,0]+1j*a[:,1]
-            c=complex(*item['comparison']['fitted_complex_scale']);v=c*z
-            ax.plot(x,v.real if part==0 else v.imag,label=label,alpha=.85)
-        ax.set(xlabel='Output position / delta x',ylabel='Arbitrary units',title=['Real component','Imaginary component'][part])
-    axes[0].legend(fontsize=8)
-    fig.suptitle('One image set versus deposited slice; each ROI fitted by one common complex scale',fontsize=11)
-    fig.savefig(args.output_dir/'wen-example-reconstruction.png',dpi=160);plt.close(fig)
 
 if __name__=='__main__':main()

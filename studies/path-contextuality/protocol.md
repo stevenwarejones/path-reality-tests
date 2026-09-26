@@ -121,3 +121,38 @@ conditional-probability analysis; IID CP intervals are not justified by marginal
 rates alone. Source/herald efficiency is needed to convert eligible trials to
 emitted trials. Calibration detector specifications and pilot stability data are
 not available, so no clock time or empirical feasibility is asserted.
+
+## Joint decision using both success cells
+
+The extended predeclared rule is `dual_decision`, with order (a,b,f,q,d).
+Here b is **nonnegative-pointer success**, including pointer erasures in the
+nonnegative group. All eligible trials stay in the denominator. At unit efficiency
+this is ordinary positive-pointer success. a and b are disjoint cells of the same
+probe records; bypass, q-calibration and d-calibration supply the other three
+acquisition groups. Thus five estimated probabilities still use four main strata
+and the existing 44 audit strata.
+
+Use two-sided Clopper–Pearson intervals with error alpha/5 each. Dependence of a
+and b does not invalidate the Bonferroni coverage. Reject if either
+
+- a_L > min(q_U, max over f endpoints of q_U f + d_U(1−f)) + allowance;
+- min over f endpoints of (1−d_U−q_U)f > b_U + allowance.
+
+The endpoint minimum remains necessary if 1−d_U−q_U is negative. The allowance
+must cover any separately justified model discrepancy. The rule is a valid
+familywise test of two necessary inequalities, not an exact finite-sample test
+of all four compatibility constraints.
+
+The simultaneous Hoeffding alternative uses radius sqrt(log(10/alpha)/(2n)).
+Both witnesses change by at most one per unit change of each participating input.
+For equal counts, max(gaps)>4(r_alpha+r_beta) certifies power at least 1−beta.
+`dual_certified_budget` includes all four main and 44 calibration groups. Snapshot
+comparisons retain the single-witness budgets; adding a witness incurs a
+multiplicity penalty and does not establish better statistical power. The shared
+probe simulation uses multinomial records, not independent a/b binomial draws.
+
+At the ideal reference point, the positive gap is 109/6250=0.01744, versus
+297/15625=0.019008 for the negative witness. The rare positive cell is
+144/15625. Its advantage is robustness to disturbance: thresholds 297/1225
+versus 13/320 at q=16/25. The old grid and random-allocation outputs remain
+explicitly single-witness baselines; the new dual budget is a fixed-count design.
