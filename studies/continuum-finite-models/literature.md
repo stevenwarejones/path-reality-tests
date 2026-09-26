@@ -95,3 +95,16 @@ nearest-neighbor spatial-lattice hypothesis. It does not provide a free-ring
 apparatus dataset or a calibration certificate for this protocol. No numerical
 estimate is transferred from that paper; Chou remains the closer comparison for
 the specific quadratic-spectrum versus finite-difference Hamiltonians here.
+
+The completion check revisited Chou v1, Eqs. 7 and 11–19, Tarasov's published
+2016 Eqs. 1–4, Watrous's author text, Theorem 3.4 and Proposition 3.5, and
+Brun–Mlodinow v1's Hamiltonian/dispersion construction. The finite Fourier
+propagator here follows the selected central-difference Hamiltonian; it is not
+Tarasov's infinite long-range exact discretization. Measurement probabilities
+use complete outcome tables and TV is half L1. Product bounds concern independent
+fixed acquisition, not independent bins within one multinomial observation.
+The numerical implementation stores energies and evolves with exp(-i*t*E/hbar);
+the formal spectral functions store frequencies E/hbar. The new derivative
+check uses nonunit hbar to test this convention explicitly. Neither the shared
+energy-ratio obstruction nor the different quantum-walk dispersion supplies a
+finite-menu statistical certificate or apparatus sensitivity for this ring.
