@@ -1,0 +1,10 @@
+{
+  "integrity": "three originals checked against archive MD5 and pinned SHA256",
+  "reproduction": "Sorkin ratios agree at reported precision; Peres differences around .0001 unresolved",
+  "available": ["repeated eight-setting intensities", "acquisition ordering and time", "published cycle cuts", "within-cycle covariance"],
+  "missing": ["independent gain/response calibration records", "coherent leakage phases", "validated nuisance bounds", "controlled antipodal exposure", "complete alternative probability-theory bridge"],
+  "measured_mean_table_ambiguity": true,
+  "complete_temporal_likelihood_fit": false,
+  "formal_companion": "not opened; elementary conditional algebra alone insufficient",
+  "next_optical_measurement": "calibrated antipodal all-open phase exposure"
+}

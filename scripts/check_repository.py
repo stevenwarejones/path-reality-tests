@@ -22,6 +22,8 @@ def main():
     if any(p.startswith("studies/nist-bell-causal-audit/fixtures/") for p in tracked):
         problems.append("NIST source extracts require explicit authorization; use external pinned inputs")
     for path in sorted(tracked):
+        if path.startswith("studies/born-rule-identifiability/") and path.lower().endswith((".h5", ".hdf5", ".npy", ".npz")):
+            problems.append(f"Born-rule source arrays must remain external: {path}")
         if path in expected:
             # The author's README is preserved byte-for-byte, not rewritten for local links.
             if (ROOT / path).is_symlink():

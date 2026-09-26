@@ -1,0 +1,104 @@
+{
+  "files": [
+    {
+      "name": "functions_and_classes_1_5.py",
+      "cache_name": "7538941/functions_and_classes_1_5.py",
+      "record": 7538941,
+      "bytes": 7504,
+      "sha256": "f3caf4376597524210e792e9f9cf8e4e0353f2632aa1f6681c73768b1dfa6636",
+      "archive_md5": "md5:97d072de253cb1c9374ae378aec20f5f",
+      "url": "https://zenodo.org/api/records/7538941/files/functions_and_classes_1_5.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "1_5_gates.py",
+      "cache_name": "7538941/1_5_gates.py",
+      "record": 7538941,
+      "bytes": 11001,
+      "sha256": "8c0058ba7edd78b39ff06b6a3ade085d00f37d8db1fcd82f1debc45d5c608e94",
+      "archive_md5": "md5:134fcd1ecdeae00c618f784a01e4ccd1",
+      "url": "https://zenodo.org/api/records/7538941/files/1_5_gates.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "1_5_gates_analiza.py",
+      "cache_name": "7538941/1_5_gates_analiza.py",
+      "record": 7538941,
+      "bytes": 5701,
+      "sha256": "875cdf8ab1d127b3802a7a7f6c740367b565ef3b6708532c105f9fdc62da6478",
+      "archive_md5": "md5:1c5bb8f5f0714f54ed50e3f03ff1b7b1",
+      "url": "https://zenodo.org/api/records/7538941/files/1_5_gates_analiza.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "lima1-5s.zip",
+      "cache_name": "7538941/lima1-5s.zip",
+      "record": 7538941,
+      "bytes": 396693,
+      "sha256": "93fec90f7e84647f9e7b09f5b208807801a027829d76ffe9e0ea89da303b84c7",
+      "archive_md5": "md5:1f20d0c8aeb618ec3185b73e99412427",
+      "url": "https://zenodo.org/api/records/7538941/files/lima1-5s.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "lima1-5.zip",
+      "cache_name": "7538941/lima1-5.zip",
+      "record": 7538941,
+      "bytes": 484260,
+      "sha256": "d803f266707188a0fe88b26960c0437fcde6d8c0cd31ecf21f23d1601f0536a7",
+      "archive_md5": "md5:a7bc55b5872019f3e1dc8ba1abb41c9a",
+      "url": "https://zenodo.org/api/records/7538941/files/lima1-5.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "lagos_bench.zip",
+      "cache_name": "7538941/lagos_bench.zip",
+      "record": 7538941,
+      "bytes": 180495,
+      "sha256": "b6fd203efee82e6583aa2445bcd19dcf5dd06f90e23122a468f1eced8cd0136a",
+      "archive_md5": "md5:60c0e4c8f3cf1e3d22575cf3fa64fc5d",
+      "url": "https://zenodo.org/api/records/7538941/files/lagos_bench.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "README.txt",
+      "cache_name": "7538941/README.txt",
+      "record": 7538941,
+      "bytes": 1451,
+      "sha256": "da7daf6e50d1db774c5c22d8a2edcbc161eb37d91917ca4fd1b12c59fccab7c1",
+      "archive_md5": "md5:0ceb76001c4fdb321e9f067f3a2fd8e2",
+      "url": "https://zenodo.org/api/records/7538941/files/README.txt/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "8-bin TMD.zip",
+      "cache_name": "18483031/8-bin TMD.zip",
+      "record": 18483031,
+      "bytes": 1472696,
+      "sha256": "94d036dc438f1509553eb38080647ef8f088328825b65badfbeb3ca6bb7c6770",
+      "archive_md5": "md5:2f0294fdee66ad61501326e7b8a4d65f",
+      "url": "https://zenodo.org/api/records/18483031/files/8-bin%20TMD.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "PNR SNSPD.zip",
+      "cache_name": "18483031/PNR SNSPD.zip",
+      "record": 18483031,
+      "bytes": 2871180,
+      "sha256": "9c090b7f8a4786daa3f7b2c46dad4a3ce544487003ef82b17e9c1ecde0d6eab7",
+      "archive_md5": "md5:4e6cc11ec622d335e0483d2493733e47",
+      "url": "https://zenodo.org/api/records/18483031/files/PNR%20SNSPD.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "README.txt",
+      "cache_name": "18483031/README.txt",
+      "record": 18483031,
+      "bytes": 1460,
+      "sha256": "1ef87d8173401fe42c7d1640d94c899755b99c839a205b579fa8da835ca59b7d",
+      "archive_md5": "md5:c5669c355cadad504b17508b4f32701c",
+      "url": "https://zenodo.org/api/records/18483031/files/README.txt/content",
+      "license": "cc-by-4.0"
+    }
+  ]
+}

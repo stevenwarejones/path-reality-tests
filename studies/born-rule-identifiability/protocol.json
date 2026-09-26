@@ -1,0 +1,12 @@
+{
+  "status": "retrospective exploratory, not preregistered",
+  "date": "2026-09-26",
+  "cuts": "published one-based whole-cycle exclusions only",
+  "choices_after_inspection": ["PSD completion diagnostic", "phase radii 0,.01,.03,.1", "prospective theta=.002"],
+  "uncertainty": "descriptive Bartlett HAC lags 0,5,10,20,40 preserving gaps; no coverage claim",
+  "combination": "shared diagnostic theta, separate apparatus nuisances; deterministic regions, not likelihoods",
+  "simulation_seed": 260926,
+  "replications_per_case": 4000,
+  "prospective": {"alpha": 0.01, "power": 0.9, "range_V": 1.0, "settings": 5, "gap": "signal minus twice systematic bound"},
+  "claim_gates": {"born_rule_violation": false, "new_physics_theorem": false, "measured_confidence_region": false}
+}
