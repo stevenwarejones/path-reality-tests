@@ -8,6 +8,21 @@ this protocol. Probability coverage below is a mathematical derivation; the
 Lean companion checks algebra, interval transport and the finite union bound,
 not the exponential or binomial tail theorem.
 
+## Scope of the earlier-record variant
+
+The derivation below is for the selected optical protocol. For a receiver bit
+fixed before the current choice, fresh assignment conditional on that bit gives
+a valid independence-null test: the conditional score mean is zero. A detected
+association rejects the conjunction of fresh assignment, secure records and
+the no-backward-influence null. It does not by itself identify a backward
+`do`-effect. Under a proposed backward-causal alternative the earlier bit could
+be a descendant of the later choice; conditioning on it cannot simultaneously
+serve as an unexamined randomization premise. Such an extension must specify
+its causal or potential-outcome model, exogenous assignment and filtration.
+The optical memory interval and causal power claims are not automatically
+backward-effect intervals. Under an explicit IID sampling model, binomial
+intervals can still describe the observed conditional association.
+
 ## Fixed horizon with device memory
 
 Fix N before acquisition. Let Hᵢ contain all relevant pre-choice history,

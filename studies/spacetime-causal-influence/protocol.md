@@ -13,7 +13,7 @@ superluminal effect. Every numerical specification below is hypothetical.
 | Causal null | Local nonselective operation outside B's causal past leaves its marginal invariant | Future choice neither changes the earlier response nor shares/predicts its preparation |
 | Closest reviewed work | Optical precursor observations; fast randomized spacelike optical Bell geometry; Fermi detector response | Delayed-choice causal models and no-backward-signaling marginal logic; ordinary quantum eraser coincidences measure another quantity |
 | Measurement-to-model premises | Complete local records, fresh assignment, full support certificate and nuisance coupling bounds | The same assignment/record premises plus earlier record fixation and no B→RNG data path |
-| Sensitivity | Early interval can bound binary influence; same hardware gives a delayed in-cone positive control | Same statistical scaling; no allowed causal positive control on the already fixed past bit |
+| Sensitivity | Early interval can bound binary influence; same hardware gives a delayed in-cone positive control | IID association intervals have the same count scaling; backward-effect identification needs an additional causal model; no causal positive control on the fixed past bit |
 | Practical limitation | Separation, synchronization, support tails, leakage and detector recovery need measured bounds | Record attestation does not establish hidden setting independence; delayed optics does not predict a nonzero past marginal |
 
 Develop the separated optical protocol. The reason is measurable diagnostic
