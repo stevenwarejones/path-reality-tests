@@ -1,0 +1,433 @@
+{
+  "Fig3.xlsx": {
+    "Sheet1": {
+      "shape": [
+        851,
+        9
+      ],
+      "first_row": [
+        "x_f/dx-theor.",
+        "P_q(x_f)-theor.",
+        "P_c(x_f)-theor.",
+        "x_f/dx-exp.",
+        "P_e(x_f)",
+        "P_q(x_f)-exp.",
+        "S.E. of P_q(x_f)-exp.",
+        "P_c(x_f)-exp.",
+        "S.E. of P_c(x_f)-exp."
+      ],
+      "role": "Endpoint image, reconstructed coherent/incoherent sums and dense theory curves",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 850
+        },
+        {
+          "columns": "DEFGHI",
+          "count": 17
+        }
+      ]
+    }
+  },
+  "Fig4A.xlsx": {
+    "Sheet1": {
+      "shape": [
+        73,
+        3
+      ],
+      "first_row": [
+        "L/dx",
+        "P_L(a.u.)",
+        "S.D. of P_L(a.u.)"
+      ],
+      "role": "Path-weight means/SD grouped by length",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 72
+        }
+      ]
+    }
+  },
+  "Fig4B.xlsx": {
+    "Sheet1": {
+      "shape": [
+        101,
+        3
+      ],
+      "first_row": [
+        "S(pi/\\hbar)",
+        "P_{(l)} (a.u.)",
+        "S.D. of P_{(l)}"
+      ],
+      "role": "Path-weight means/SD grouped by action",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "Fig4C.xlsx": {
+    "Sheet1": {
+      "shape": [
+        101,
+        4
+      ],
+      "first_row": [
+        "S(\\pi/\\hbar)",
+        "\\theta(\\pi)-exp.",
+        "S.D. of \\theta(\\pi)",
+        "\\theta(\\pi)-theor."
+      ],
+      "role": "Phase means/SD and theory grouped by action",
+      "blocks": [
+        {
+          "columns": "ABCD",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "FigS1B-L.xlsx": {
+    "Sheet1": {
+      "shape": [
+        322,
+        322
+      ],
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX",
+      "blocks": [],
+      "first_row_axis": {
+        "start": -12.25,
+        "step": 0.25,
+        "count": 101
+      }
+    }
+  },
+  "FigS1B-Minus.xlsx": {
+    "Sheet1": {
+      "shape": [
+        322,
+        322
+      ],
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX",
+      "blocks": [],
+      "first_row_axis": {
+        "start": -12.25,
+        "step": 0.25,
+        "count": 101
+      }
+    }
+  },
+  "FigS1B-PSI.xlsx": {
+    "Sheet1": {
+      "shape": [
+        322,
+        322
+      ],
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX",
+      "blocks": [],
+      "first_row_axis": {
+        "start": -12.25,
+        "step": 0.25,
+        "count": 101
+      }
+    }
+  },
+  "FigS1B-Plus.xlsx": {
+    "Sheet1": {
+      "shape": [
+        322,
+        322
+      ],
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX",
+      "blocks": [],
+      "first_row_axis": {
+        "start": -12.25,
+        "step": 0.25,
+        "count": 101
+      }
+    }
+  },
+  "FigS1B-R.xlsx": {
+    "Sheet1": {
+      "shape": [
+        322,
+        322
+      ],
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX",
+      "blocks": [],
+      "first_row_axis": {
+        "start": -12.25,
+        "step": 0.25,
+        "count": 101
+      }
+    }
+  },
+  "FigS1C.xlsx": {
+    "Sheet1": {
+      "shape": [
+        341,
+        8
+      ],
+      "first_row": [
+        "x_{p3}/dx-theor.",
+        "Im[K]-theor.",
+        "Re[K]-theor.",
+        "x_{p3}/dx-exp.",
+        "Im[K]-exp.",
+        "S.E. of Im[K]-exp.",
+        "Re[K]-exp.",
+        "S.E. of Re[K]-exp."
+      ],
+      "role": "One sample propagator: component means/SE and dense theory",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 340
+        },
+        {
+          "columns": "DEFGH",
+          "count": 17
+        }
+      ]
+    }
+  },
+  "FigS2A.xlsx": {
+    "Sheet1": {
+      "shape": [
+        120,
+        18
+      ],
+      "first_row": [
+        "                     \u0394/\u03b4x\n\u03d1(\u03c0)",
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "role": "Phase histograms by displacement; 119 data rows",
+      "blocks": [
+        {
+          "columns": "ABCDEFGHIJKLMNOPQR",
+          "count": 119
+        }
+      ]
+    }
+  },
+  "FigS2B.xlsx": {
+    "Sheet1": {
+      "shape": [
+        201,
+        5
+      ],
+      "first_row": [
+        " \u0394/\u03b4x-exp.",
+        "\u03d1(\u03c0)-exp.",
+        "S.D. of \u03d1(\u03c0)-exp.",
+        " \u0394/\u03b4x-theor.",
+        "\u03d1(\u03c0)-theor."
+      ],
+      "role": "Phase means/SD by displacement and dense theory",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 17
+        },
+        {
+          "columns": "DE",
+          "count": 200
+        }
+      ]
+    }
+  },
+  "FigS2C.xlsx": {
+    "Sheet1": {
+      "shape": [
+        120,
+        18
+      ],
+      "first_row": [
+        "                     \u0394/\u03b4x\n\u03b7/(\\bar{\u03b7})",
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "role": "Amplitude histogram table with nonmonotone coordinate tail; preserve all rows",
+      "blocks": [
+        {
+          "columns": "ABCDEFGHIJKLMNOPQR",
+          "count": 119
+        }
+      ]
+    }
+  },
+  "FigS2D.xlsx": {
+    "Sheet1": {
+      "shape": [
+        201,
+        5
+      ],
+      "first_row": [
+        " \u0394/\u03b4x-exp.",
+        "\u03b7/(\\bar{\u03b7})-exp.",
+        "S.D. of \u03b7/(\\bar{\u03b7})-exp.",
+        " \u0394/\u03b4x-theor.",
+        "\u03b7/(\\bar{\u03b7})-theor."
+      ],
+      "role": "Amplitude means/SD by displacement and dense theory",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 17
+        },
+        {
+          "columns": "DE",
+          "count": 200
+        }
+      ]
+    }
+  },
+  "FigS3A.xlsx": {
+    "Sheet1": {
+      "shape": [
+        73,
+        3
+      ],
+      "first_row": [
+        "L/dx",
+        "P_L(a.u.)",
+        "S.D. of P_L(a.u.)"
+      ],
+      "role": "Simulated length-group means/SD",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 72
+        }
+      ]
+    }
+  },
+  "FigS3B.xlsx": {
+    "Sheet1": {
+      "shape": [
+        101,
+        6
+      ],
+      "first_row": [
+        "S(pi/\\hbar)",
+        "P_{(l)} (a.u.)",
+        "S.D. of P_{(l)}",
+        "\\theta(\\pi)-sim.",
+        "S.D. of \\theta(\\pi)",
+        "\\theta(\\pi)-theor."
+      ],
+      "role": "Simulated action-group means/SD and phases; preserve literal column labels",
+      "blocks": [
+        {
+          "columns": "ABCDEF",
+          "count": 100
+        }
+      ]
+    }
+  },
+  "FigS4A.xlsx": {
+    "Sheet1": {
+      "shape": [
+        73,
+        6
+      ],
+      "first_row": [
+        "L/dx-varying_final_position",
+        "P_L(a.u.)-varying_final_position",
+        "S.D. of P_L(a.u.)-varying_final_position",
+        "L/dx-fix_final_position",
+        "P_L(a.u.)-fix_final_position",
+        "S.D. of P_L(a.u.)-fix_final_position"
+      ],
+      "role": "Variable and fixed endpoint length groups on separate axes",
+      "blocks": [
+        {
+          "columns": "ABC",
+          "count": 72
+        },
+        {
+          "columns": "DEF",
+          "count": 32
+        }
+      ]
+    }
+  },
+  "FigS4B.xlsx": {
+    "Sheet1": {
+      "shape": [
+        101,
+        6
+      ],
+      "first_row": [
+        "S(pi/\\hbar)",
+        "P_{(l)} (a.u.)_varying final positions",
+        "S.D. of P_{(l)}_varying final positions",
+        "\\theta(\\pi)-exp._varying final positions",
+        "S.D. of \\theta(\\pi)_varying final positions",
+        "\\theta(\\pi)-theor._varying final positions"
+      ],
+      "role": "Variable/fixed endpoint action and phase summaries on separate sheets",
+      "blocks": [
+        {
+          "columns": "ABCDEF",
+          "count": 100
+        }
+      ]
+    },
+    "Sheet2": {
+      "shape": [
+        101,
+        6
+      ],
+      "first_row": [
+        "S(pi/\\hbar)",
+        "P_{(l)} (a.u.)_fixed final positions",
+        "S.D. of P_{(l)}_fixed final positions",
+        "\\theta(\\pi)-exp._fixed final positions",
+        "S.D. of \\theta(\\pi)_fixed final positions",
+        "\\theta(\\pi)-theor._fixed final positions"
+      ],
+      "role": "Variable/fixed endpoint action and phase summaries on separate sheets",
+      "blocks": [
+        {
+          "columns": "ABCDEF",
+          "count": 100
+        }
+      ]
+    }
+  }
+}

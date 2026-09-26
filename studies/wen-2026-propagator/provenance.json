@@ -78,6 +78,14 @@
       "retrieved_date_utc": "2026-09-26",
       "bytes": 75974,
       "sha256": "d0ad2195be3876fb5ebfcfddfd1cbda0c9284ba96e62007b2971f3dfec80863f"
+    },
+    {
+      "file": "crossref-refresh.json",
+      "url": "https://api.crossref.org/works/10.1126/sciadv.aeh1011",
+      "retrieved_date_utc": "2026-09-26",
+      "bytes": 17328,
+      "sha256": "c2c8324ec7416a1dc97448e797dc2b64bc7c1e3a9a216bc998dd35f4f2c69cea",
+      "scope": "Correction/code metadata refresh; empty relation, no update-to or updated-by fields; not proof of absence."
     }
   ],
   "tooling_source_commit": "3cd14198411c6c1d3c6ded8e764f198147fc32c7",

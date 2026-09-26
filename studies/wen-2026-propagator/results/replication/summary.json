@@ -1,0 +1,764 @@
+{
+  "kind": "Descriptive replication of deposited figure tables; no repeat-level inference",
+  "sources": [
+    {
+      "name": "Fig3.xlsx",
+      "size": 50582,
+      "sha256": "dccdde7960394bca2df8a28cd667f4ab54a39d15ce8ef9dce997bbb962ebe092"
+    },
+    {
+      "name": "Fig4A.xlsx",
+      "size": 10698,
+      "sha256": "5897f9f31b51fe387c32e329581066d4276a6d27df7c9012435cb21e85469d82"
+    },
+    {
+      "name": "Fig4B.xlsx",
+      "size": 11615,
+      "sha256": "da16adb40e929cc2d4a0aea59f0feeafe37a6d19c6e220f051315902b332203a"
+    },
+    {
+      "name": "Fig4C.xlsx",
+      "size": 15061,
+      "sha256": "139739e91ec5f4d9a2aafaabb7f65e8658f9c9b73ebb8bf5b3bfc08ced9d6f6b"
+    },
+    {
+      "name": "FigS1B-L.xlsx",
+      "size": 142424,
+      "sha256": "bc1f311ac63766cec60f852ca2e3893e6e719dee98a0a58dac6e3f7ab1a82da6"
+    },
+    {
+      "name": "FigS1B-Minus.xlsx",
+      "size": 142786,
+      "sha256": "a8a2e4eafe8412929d573a10ccf6294789e603f578b447c1ece053d4159cb234"
+    },
+    {
+      "name": "FigS1B-Plus.xlsx",
+      "size": 142855,
+      "sha256": "3edf88999c89e89572e9ade8ccc65959def984a516f9bb4d4e086722bcccb285"
+    },
+    {
+      "name": "FigS1B-PSI.xlsx",
+      "size": 144703,
+      "sha256": "c11590c741d5eb8b8d7cc62fd7c39084fbde31f5bdddd8bc2bc70e97c50fbef6"
+    },
+    {
+      "name": "FigS1B-R.xlsx",
+      "size": 142739,
+      "sha256": "9e16dc59ae14c4ded6e3a14c6b87ee5186f8e4390016190dffb2302a285fb4f7"
+    },
+    {
+      "name": "FigS1C.xlsx",
+      "size": 20020,
+      "sha256": "5d4ca2ba8f27aa0fefbe45b8f467bc0f63469b82e76fdef1588d6e9e44a412c1"
+    },
+    {
+      "name": "FigS2A.xlsx",
+      "size": 16297,
+      "sha256": "b7348b277afba3280d024e4ca9945b6b69a46333adeee909ae4807d4e01781d8"
+    },
+    {
+      "name": "FigS2B.xlsx",
+      "size": 14005,
+      "sha256": "482e635f6644c9d58c13989c395cf8e74ae7ffcbd88704196d02986bf2fe300e"
+    },
+    {
+      "name": "FigS2C.xlsx",
+      "size": 15937,
+      "sha256": "7412bc1f0977a280b4a7028671cb0f307f961f02c8ab991ba1c250952c1e1806"
+    },
+    {
+      "name": "FigS2D.xlsx",
+      "size": 13783,
+      "sha256": "a60e0ec1f82db52734801c206d136b959bb37ad7067eed6631c626d10cd71ab4"
+    },
+    {
+      "name": "FigS3A.xlsx",
+      "size": 11676,
+      "sha256": "d922b67d7fc2e700f44e5ac551e15ae6e73d05316d3e578dfcc9d7274f464393"
+    },
+    {
+      "name": "FigS3B.xlsx",
+      "size": 16790,
+      "sha256": "e042db4a8a4fbaa632d65a6680da913f24e936b57e44526b8bed39d9f5bb944d"
+    },
+    {
+      "name": "FigS4A.xlsx",
+      "size": 13495,
+      "sha256": "b42c2adf09d162d7967857f8a4a45fa8c95b92877757fef083ab18c0b97f3d5c"
+    },
+    {
+      "name": "FigS4B.xlsx",
+      "size": 25197,
+      "sha256": "49edd6c8faeba3f6ab65cd5523d21c363a6d08b11e94e556b707b45e3ea51b9f"
+    },
+    {
+      "name": "README.md",
+      "size": 11480,
+      "sha256": "e523bc79c4d882ea20c27c189fe5cea73c604fc8166a7737603cd34bd890875b"
+    }
+  ],
+  "workbook_audit": [
+    {
+      "file": "Fig3.xlsx",
+      "sha256": "dccdde7960394bca2df8a28cd667f4ab54a39d15ce8ef9dce997bbb962ebe092",
+      "sheet": "Sheet1",
+      "shape": [
+        851,
+        9
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 2652,
+      "nonempty_cells": 2661,
+      "role": "Endpoint image, reconstructed coherent/incoherent sums and dense theory curves"
+    },
+    {
+      "file": "Fig4A.xlsx",
+      "sha256": "5897f9f31b51fe387c32e329581066d4276a6d27df7c9012435cb21e85469d82",
+      "sheet": "Sheet1",
+      "shape": [
+        73,
+        3
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 216,
+      "nonempty_cells": 219,
+      "role": "Path-weight means/SD grouped by length"
+    },
+    {
+      "file": "Fig4B.xlsx",
+      "sha256": "da16adb40e929cc2d4a0aea59f0feeafe37a6d19c6e220f051315902b332203a",
+      "sheet": "Sheet1",
+      "shape": [
+        101,
+        3
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 300,
+      "nonempty_cells": 303,
+      "role": "Path-weight means/SD grouped by action"
+    },
+    {
+      "file": "Fig4C.xlsx",
+      "sha256": "139739e91ec5f4d9a2aafaabb7f65e8658f9c9b73ebb8bf5b3bfc08ced9d6f6b",
+      "sheet": "Sheet1",
+      "shape": [
+        101,
+        4
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 400,
+      "nonempty_cells": 404,
+      "role": "Phase means/SD and theory grouped by action"
+    },
+    {
+      "file": "FigS1B-L.xlsx",
+      "sha256": "bc1f311ac63766cec60f852ca2e3893e6e719dee98a0a58dac6e3f7ab1a82da6",
+      "sheet": "Sheet1",
+      "shape": [
+        322,
+        322
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 32742,
+      "nonempty_cells": 32843,
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX"
+    },
+    {
+      "file": "FigS1B-Minus.xlsx",
+      "sha256": "a8a2e4eafe8412929d573a10ccf6294789e603f578b447c1ece053d4159cb234",
+      "sheet": "Sheet1",
+      "shape": [
+        322,
+        322
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 32742,
+      "nonempty_cells": 32843,
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX"
+    },
+    {
+      "file": "FigS1B-PSI.xlsx",
+      "sha256": "c11590c741d5eb8b8d7cc62fd7c39084fbde31f5bdddd8bc2bc70e97c50fbef6",
+      "sheet": "Sheet1",
+      "shape": [
+        322,
+        322
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 32742,
+      "nonempty_cells": 32843,
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX"
+    },
+    {
+      "file": "FigS1B-Plus.xlsx",
+      "sha256": "3edf88999c89e89572e9ade8ccc65959def984a516f9bb4d4e086722bcccb285",
+      "sheet": "Sheet1",
+      "shape": [
+        322,
+        322
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 32742,
+      "nonempty_cells": 32843,
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX"
+    },
+    {
+      "file": "FigS1B-R.xlsx",
+      "sha256": "9e16dc59ae14c4ded6e3a14c6b87ee5186f8e4390016190dffb2302a285fb4f7",
+      "sheet": "Sheet1",
+      "shape": [
+        322,
+        322
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 32742,
+      "nonempty_cells": 32843,
+      "role": "One sample camera image: 321 x 101 grayscale values; formatted empty columns beyond CX"
+    },
+    {
+      "file": "FigS1C.xlsx",
+      "sha256": "5d4ca2ba8f27aa0fefbe45b8f467bc0f63469b82e76fdef1588d6e9e44a412c1",
+      "sheet": "Sheet1",
+      "shape": [
+        341,
+        8
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 1105,
+      "nonempty_cells": 1113,
+      "role": "One sample propagator: component means/SE and dense theory"
+    },
+    {
+      "file": "FigS2A.xlsx",
+      "sha256": "b7348b277afba3280d024e4ca9945b6b69a46333adeee909ae4807d4e01781d8",
+      "sheet": "Sheet1",
+      "shape": [
+        120,
+        18
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 2142,
+      "nonempty_cells": 2160,
+      "role": "Phase histograms by displacement; 119 data rows"
+    },
+    {
+      "file": "FigS2B.xlsx",
+      "sha256": "482e635f6644c9d58c13989c395cf8e74ae7ffcbd88704196d02986bf2fe300e",
+      "sheet": "Sheet1",
+      "shape": [
+        201,
+        5
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 451,
+      "nonempty_cells": 456,
+      "role": "Phase means/SD by displacement and dense theory"
+    },
+    {
+      "file": "FigS2C.xlsx",
+      "sha256": "7412bc1f0977a280b4a7028671cb0f307f961f02c8ab991ba1c250952c1e1806",
+      "sheet": "Sheet1",
+      "shape": [
+        120,
+        18
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 2142,
+      "nonempty_cells": 2160,
+      "role": "Amplitude histogram table with nonmonotone coordinate tail; preserve all rows"
+    },
+    {
+      "file": "FigS2D.xlsx",
+      "sha256": "a60e0ec1f82db52734801c206d136b959bb37ad7067eed6631c626d10cd71ab4",
+      "sheet": "Sheet1",
+      "shape": [
+        201,
+        5
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 451,
+      "nonempty_cells": 456,
+      "role": "Amplitude means/SD by displacement and dense theory"
+    },
+    {
+      "file": "FigS3A.xlsx",
+      "sha256": "d922b67d7fc2e700f44e5ac551e15ae6e73d05316d3e578dfcc9d7274f464393",
+      "sheet": "Sheet1",
+      "shape": [
+        73,
+        3
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 216,
+      "nonempty_cells": 219,
+      "role": "Simulated length-group means/SD"
+    },
+    {
+      "file": "FigS3B.xlsx",
+      "sha256": "e042db4a8a4fbaa632d65a6680da913f24e936b57e44526b8bed39d9f5bb944d",
+      "sheet": "Sheet1",
+      "shape": [
+        101,
+        6
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 600,
+      "nonempty_cells": 606,
+      "role": "Simulated action-group means/SD and phases; preserve literal column labels"
+    },
+    {
+      "file": "FigS4A.xlsx",
+      "sha256": "b42c2adf09d162d7967857f8a4a45fa8c95b92877757fef083ab18c0b97f3d5c",
+      "sheet": "Sheet1",
+      "shape": [
+        73,
+        6
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 312,
+      "nonempty_cells": 318,
+      "role": "Variable and fixed endpoint length groups on separate axes"
+    },
+    {
+      "file": "FigS4B.xlsx",
+      "sha256": "49edd6c8faeba3f6ab65cd5523d21c363a6d08b11e94e556b707b45e3ea51b9f",
+      "sheet": "Sheet1",
+      "shape": [
+        101,
+        6
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 600,
+      "nonempty_cells": 606,
+      "role": "Variable/fixed endpoint action and phase summaries on separate sheets"
+    },
+    {
+      "file": "FigS4B.xlsx",
+      "sha256": "49edd6c8faeba3f6ab65cd5523d21c363a6d08b11e94e556b707b45e3ea51b9f",
+      "sheet": "Sheet2",
+      "shape": [
+        101,
+        6
+      ],
+      "state": "visible",
+      "formulas": 0,
+      "numeric_cells_below_header": 600,
+      "nonempty_cells": 606,
+      "role": "Variable/fixed endpoint action and phase summaries on separate sheets"
+    }
+  ],
+  "figure3": {
+    "comparisons": {
+      "E_vs_Q": {
+        "n": 17,
+        "mean_signed_difference": -0.025850649352941155,
+        "mae": 0.048313610764705875,
+        "rmse": 0.06449884862805155,
+        "max_absolute_difference": 0.16959027599999987,
+        "smape_percent": 4.730009419822368
+      },
+      "Q_vs_deposited_theory": {
+        "n": 17,
+        "mean_signed_difference": 0.01759258622403425,
+        "mae": 0.05510709600544021,
+        "rmse": 0.0672836425660143,
+        "max_absolute_difference": 0.14997291187738848,
+        "smape_percent": 5.571439832609398
+      },
+      "E_vs_C": {
+        "n": 17,
+        "mean_signed_difference": -0.025850649352941162,
+        "mae": 0.12166936758823532,
+        "rmse": 0.14073005685085405,
+        "max_absolute_difference": 0.303267755,
+        "smape_percent": 12.308280654179033
+      },
+      "C_vs_deposited_theory": {
+        "n": 17,
+        "mean_signed_difference": -2.6122894697062506e-17,
+        "mae": 0.04323072247058823,
+        "rmse": 0.05187433641709208,
+        "max_absolute_difference": 0.09528193200000001,
+        "smape_percent": 4.18566507376697
+      }
+    },
+    "alignment_sensitivity": {
+      "linear": {
+        "original_units": {
+          "n": 17,
+          "mean_signed_difference": 0.01759258622403425,
+          "mae": 0.05510709600544021,
+          "rmse": 0.0672836425660143,
+          "max_absolute_difference": 0.14997291187738848,
+          "smape_percent": 5.571439832609398
+        },
+        "unit_sum_shape_only": {
+          "n": 17,
+          "mean_signed_difference": 1.510229849673926e-17,
+          "mae": 0.0030399566279261016,
+          "rmse": 0.003703005473893896,
+          "max_absolute_difference": 0.0075768412310766725,
+          "smape_percent": 5.338613730497029
+        },
+        "theory_scale_to_match_Q_sum": 1.0173738182874594
+      },
+      "nearest": {
+        "original_units": {
+          "n": 17,
+          "mean_signed_difference": 0.01777139835294117,
+          "mae": 0.05513329317647057,
+          "rmse": 0.06732923843163946,
+          "max_absolute_difference": 0.15023298799999996,
+          "smape_percent": 5.574578912810366
+        },
+        "unit_sum_shape_only": {
+          "n": 17,
+          "mean_signed_difference": 6.122553444624025e-18,
+          "mae": 0.00303976451476401,
+          "rmse": 0.0037027846656539965,
+          "max_absolute_difference": 0.007581748241570804,
+          "smape_percent": 5.338224838040145
+        },
+        "theory_scale_to_match_Q_sum": 1.0175535065940173
+      },
+      "local_cubic": {
+        "original_units": {
+          "n": 17,
+          "mean_signed_difference": 0.017592205308565652,
+          "mae": 0.055107101237431524,
+          "rmse": 0.06728353681504486,
+          "max_absolute_difference": 0.14997265349692246,
+          "smape_percent": 5.571439595619836
+        },
+        "unit_sum_shape_only": {
+          "n": 17,
+          "mean_signed_difference": 1.3061447348531253e-17,
+          "mae": 0.003039958916010438,
+          "rmse": 0.003703005782656756,
+          "max_absolute_difference": 0.007576847954535136,
+          "smape_percent": 5.338617878239553
+        },
+        "theory_scale_to_match_Q_sum": 1.0173734355732478
+      }
+    },
+    "endpoint_shape_sensitivity": {
+      "E_vs_Q_unit_sum": {
+        "n": 17,
+        "mean_signed_difference": -6.938893903907228e-18,
+        "mae": 0.0025727522998113014,
+        "rmse": 0.003314987242826167,
+        "max_absolute_difference": 0.008250782610041446,
+        "smape_percent": 4.491211419271453
+      },
+      "E_vs_C_unit_sum": {
+        "n": 17,
+        "mean_signed_difference": -7.34706413354883e-18,
+        "mae": 0.0072182685734019725,
+        "rmse": 0.008092645302034924,
+        "max_absolute_difference": 0.016108201297864985,
+        "smape_percent": 12.463747576402074
+      },
+      "positions_E_closer_to_Q_than_C": 13
+    },
+    "alternative_metric_definitions": {
+      "ordinary_MAPE_theory_denominator_percent": 5.644976436474911,
+      "ordinary_MAPE_Q_denominator_percent": 5.519757043098885,
+      "pooled_symmetric_absolute_percent": 5.395314031165282
+    },
+    "conditional_plot_rounding_smape_bound_percentage_points": 4.618601076726726e-05,
+    "deposited_series_means": {
+      "E_17_points": 1.0043337536470587,
+      "Q_17_points": 1.0301844029999998,
+      "C_17_points": 1.0301844029999998,
+      "Q_theory_850_points": 1.0301844030070588,
+      "C_theory_850_points": 1.030184403,
+      "Q_theory_interpolated_17_points": 1.0125918167759658
+    },
+    "exact_theory_coordinate_matches": 2,
+    "theory_grid_points": 850,
+    "published_Q_theory_percent": 4.45,
+    "Q_theory_difference_from_quote_percentage_points": 1.121439832609398,
+    "relative_difference_from_quoted_error_percent": 25.200895114817932,
+    "coordinate_interpretation_micrometres": {
+      "centers_dx_5_73": [
+        -45.84,
+        45.84
+      ],
+      "half_bin_edges_dx_5_73": [
+        -48.705000000000005,
+        48.705000000000005
+      ]
+    },
+    "conditional_finite_grid_sensitivity": [
+      {
+        "dx_m": 5.73e-06,
+        "comparison": "unit-sum shapes only",
+        "Q_vs_conditional_grid": {
+          "n": 17,
+          "mean_signed_difference": 1.2653277118889651e-17,
+          "mae": 0.002905893970991069,
+          "rmse": 0.00381997210635109,
+          "max_absolute_difference": 0.007407033044936284,
+          "smape_percent": 5.090084335124518
+        },
+        "deposited_theory_vs_conditional_grid": {
+          "n": 17,
+          "mean_signed_difference": -2.44902137784961e-18,
+          "mae": 0.000803934940639294,
+          "rmse": 0.0009076937568714234,
+          "max_absolute_difference": 0.0015272859880504294,
+          "smape_percent": 1.4474318698761612
+        }
+      },
+      {
+        "dx_m": 6.09e-06,
+        "comparison": "unit-sum shapes only",
+        "Q_vs_conditional_grid": {
+          "n": 17,
+          "mean_signed_difference": 1.0204255741040042e-17,
+          "mae": 0.003218467840224744,
+          "rmse": 0.0038108223643289335,
+          "max_absolute_difference": 0.007780441237374459,
+          "smape_percent": 5.672580610748195
+        },
+        "deposited_theory_vs_conditional_grid": {
+          "n": 17,
+          "mean_signed_difference": -4.89804275569922e-18,
+          "mae": 0.0008197377351492545,
+          "rmse": 0.0009208538279217108,
+          "max_absolute_difference": 0.0015050610442591816,
+          "smape_percent": 1.4867357557668548
+        }
+      }
+    ],
+    "E_uncertainty_available": false
+  },
+  "figure4": {
+    "length_rows": 72,
+    "length_coordinate_range": [
+      0.0,
+      71.0
+    ],
+    "action_rows": 100,
+    "action_coordinate_range": [
+      0.0,
+      2.0
+    ],
+    "phase_signed_metrics_pi": {
+      "n": 100,
+      "mean_signed_difference": -0.01818214717771576,
+      "mae": 0.019135357962881558,
+      "rmse": 0.02181479171230058,
+      "max_absolute_difference": 0.035246453697131
+    },
+    "phase_shortest_arc_mae_pi": 0.01913535796288156,
+    "phase_shortest_arc_rmse_pi": 0.02181479171230058,
+    "phase_mean_reported_sd_pi": 0.06813359451786799,
+    "length_mean_range_au": [
+      0.84038,
+      1.11509
+    ],
+    "action_mean_range_au": [
+      0.97491,
+      1.09645
+    ]
+  },
+  "duplicate_summary_max_absolute_differences": {
+    "Fig4A_vs_FigS4A_varying": 0.0,
+    "Fig4B_vs_FigS4B_varying": 0.0,
+    "Fig4C_vs_FigS4B_varying": 0.0,
+    "Fig4C_theory_vs_FigS3B_simulation_label": 0.0
+  },
+  "histogram_audit": {
+    "FigS2A.xlsx": {
+      "numeric_rows": 119,
+      "nonincreasing_coordinate_excel_rows": [],
+      "counts_by_displacement": [
+        85,
+        160,
+        150,
+        140,
+        130,
+        120,
+        110,
+        100,
+        90,
+        80,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10
+      ],
+      "total_counts": 1445
+    },
+    "FigS2C.xlsx": {
+      "numeric_rows": 119,
+      "nonincreasing_coordinate_excel_rows": [
+        101
+      ],
+      "counts_by_displacement": [
+        85,
+        160,
+        150,
+        140,
+        130,
+        120,
+        110,
+        100,
+        90,
+        80,
+        70,
+        60,
+        50,
+        40,
+        30,
+        20,
+        11
+      ],
+      "total_counts": 1446,
+      "rows_101_120_nonzero_count_cells": [
+        {
+          "cell": "R104",
+          "count": 1
+        }
+      ],
+      "rows_2_100_counts_total": 1445
+    }
+  },
+  "sample_propagator_descriptive_residuals": {
+    "imaginary_component": {
+      "n": 17,
+      "mean_signed_difference": -0.032854963235294035,
+      "mae": 0.11049334558823534,
+      "rmse": 0.1499700921126804,
+      "max_absolute_difference": 0.35130375
+    },
+    "real_component": {
+      "n": 17,
+      "mean_signed_difference": -0.023359632352941157,
+      "mae": 0.17056588235294115,
+      "rmse": 0.20989150121023223,
+      "max_absolute_difference": 0.4816387500000001
+    }
+  },
+  "sample_images": {
+    "FigS1B-L.xlsx": {
+      "matrix_shape": [
+        321,
+        101
+      ],
+      "first_column_coordinate_range": [
+        -40.0,
+        40.0
+      ],
+      "first_row_coordinate_range": [
+        -12.25,
+        12.75
+      ],
+      "grayscale_range": [
+        0.0,
+        1186.0
+      ]
+    },
+    "FigS1B-Minus.xlsx": {
+      "matrix_shape": [
+        321,
+        101
+      ],
+      "first_column_coordinate_range": [
+        -40.0,
+        40.0
+      ],
+      "first_row_coordinate_range": [
+        -12.25,
+        12.75
+      ],
+      "grayscale_range": [
+        0.0,
+        1089.0
+      ]
+    },
+    "FigS1B-PSI.xlsx": {
+      "matrix_shape": [
+        321,
+        101
+      ],
+      "first_column_coordinate_range": [
+        -40.0,
+        40.0
+      ],
+      "first_row_coordinate_range": [
+        -12.25,
+        12.75
+      ],
+      "grayscale_range": [
+        0.0,
+        1122.0
+      ]
+    },
+    "FigS1B-Plus.xlsx": {
+      "matrix_shape": [
+        321,
+        101
+      ],
+      "first_column_coordinate_range": [
+        -40.0,
+        40.0
+      ],
+      "first_row_coordinate_range": [
+        -12.25,
+        12.75
+      ],
+      "grayscale_range": [
+        0.0,
+        1193.0
+      ]
+    },
+    "FigS1B-R.xlsx": {
+      "matrix_shape": [
+        321,
+        101
+      ],
+      "first_column_coordinate_range": [
+        -40.0,
+        40.0
+      ],
+      "first_row_coordinate_range": [
+        -12.25,
+        12.75
+      ],
+      "grayscale_range": [
+        0.0,
+        1160.0
+      ]
+    }
+  },
+  "limitations": [
+    "No complete K[slice,out,in,repeat] tensor is present in the inspected sheets.",
+    "Processed means and SD/SE columns cannot recover path-level fidelities or covariance.",
+    "No fitting, rescaling, dropped endpoints or phase-offset adjustment in primary comparisons.",
+    "Interpolation and unit-sum normalization are declared sensitivities, not the authors' code.",
+    "No p-values: E uncertainties, joint repeats and calibration covariance are unavailable."
+  ]
+}

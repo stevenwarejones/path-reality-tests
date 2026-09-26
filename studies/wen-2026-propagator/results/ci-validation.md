@@ -28,10 +28,17 @@ supplement PDFs and complete cell inventories are excluded from git.
   `raw/README.md`. Local Markdown links are checked; PDFs, ZIPs, unapproved
   workbooks and complete extracted inventories are rejected.
 
-The 14 behavioral tests pass locally under Python 3.12 with the study's pinned
+The 24 behavioral tests pass locally under Python 3.12 with the study's pinned
 dependencies. Verification has been exercised from a different working directory.
 GitHub Actions repeats those tests, verifies all 19 files, reads all 18 workbooks,
 and regenerates the synthetic JSON and plot into a temporary artifact directory.
+Replication checks additionally validate every sheet against the reviewed column
+map, compare the numerical summary and residual CSVs, and regenerate Figures 3/4
+with full input hashes embedded in each PNG. Tests cover separate sparse/dense
+coordinate blocks, forbidden extrapolation, duplicate coordinates, nonfinite
+values, local polynomial interpolation, phase branch cuts, and the noncommutation
+of averaging and error evaluation. An independent raw-OOXML/40-digit Decimal
+calculation cross-checks the Figure 3 results without openpyxl or NumPy interpolation. Synthetic fixtures are labelled as such.
 The plot is a review artifact; CI does not compare PNG bytes. Extracted inventories
 are temporary and are not uploaded as artifacts.
 
@@ -42,9 +49,10 @@ generated files automatically. Inputs are verified again after processing and
 
 ## Scope
 
-This validates integrity, extraction behavior and declared synthetic calculations.
-It does not validate the real scientific column mappings, reproduce Figures 3/4,
-assess empirical agreement, or establish the completeness of per-repeat records.
-Those are separate replication obligations. A disagreement with the paper is not
-itself a failing CI test. The phase-intervention study and its tests remain in
-their own later PR.
+This validates integrity, extraction behavior, reviewed column mappings, declared
+synthetic calculations and numerical reproducibility of the deposited Figure 3/4
+summaries. The scientific reading of those outputs is documented separately in
+[validation.md](validation.md) and [method-comparison.md](../method-comparison.md).
+It does not certify calibration, significance, the unavailable raw-repeat tensor
+or path reality. A disagreement with the paper is not itself a failing CI test.
+The phase-intervention study and its tests remain in their own later PR.

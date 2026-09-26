@@ -10,6 +10,12 @@ that any paper is wrong.
 |---|---|---|
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | In progress |
 
+The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
+and theory comparisons, sensitivity checks, and an explicit list of missing
+inputs. Its [method comparison](studies/wen-2026-propagator/method-comparison.md)
+explains which numerical differences affect reproducibility and which tested
+choices preserve the broad comparison.
+
 The companion [ontology-separation](https://github.com/stevenwarejones/ontology-separation)
 repository contains the formal Lean framework. Its
 [path-interference case study](https://github.com/stevenwarejones/ontology-separation/blob/a4d294ddb3847134ac2bdbb509c435c2eaff7a98/docs/PATH_INTERFERENCE_CASE_STUDY.md)
