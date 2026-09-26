@@ -13,6 +13,7 @@ ROOT=Path(__file__).resolve().parent
 
 def generate():
     ring=Ring()
+    alpha_calibration=.025; alpha_main=.025; beta_main=.1
     # Every candidate uses the SAME physical acquisition menu and calibration.
     menu=[(j,t,q) for j in (1,2,3) for t in (.5,2.,8.,32.) for q in (0.,pi/2)]
     rows=[]
@@ -31,30 +32,32 @@ def generate():
                             # Power envelopes allow calibration centers to move by r:
                             # intervals around centers add another r (2r and 4r).
                             nuisance=dict(eta=eta,eta_radius=2*cal_radius,
-                                contrast=eta*visibility,contrast_radius=4*cal_radius)
+                                contrast=eta*visibility,contrast_radius=4*cal_radius+min(4.,phase_offset**2))
                             continuum=outcome_box(-q,phase_offset+fractional_scale*abs(ec),**nuisance)
                             lattice=outcome_box(delta-q,phase_offset+fractional_scale*abs(ea),**nuisance)
                             gaps.append(box_gap(continuum,lattice))
                         best=int(np.argmax(gaps)); gap=gaps[best]
                         # One simultaneous confidence box excludes any number of
                         # models: no extra factor for number of candidate N values.
-                        n=required_trials(gap,3*len(menu))
-                        per_cal,total_cal=calibration_trials(cal_radius)
+                        n=required_trials(gap,3*len(menu),alpha=alpha_main,beta=beta_main)
+                        per_cal,total_cal=calibration_trials(cal_radius,error=alpha_calibration)
                         eligible=None if n is None else len(menu)*n+total_cal
                         rows.append(dict(sites=sites,spacing=ring.length/sites,
                             efficiency=eta,visibility=visibility,phase_offset=phase_offset,
                             fractional_scale=fractional_scale,calibration_radius=cal_radius,
+                            calibration_phase_radius=phase_offset,
                             certified_coordinate_gap=gap, best_setting=list(menu[best]),
                             trials_per_setting=n,main_strata=len(menu),
                             calibration_trials_per_stratum=per_cal,calibration_strata=3,
+                            total_calibration_trials=total_cal,total_main_trials=None if n is None else len(menu)*n,
                             total_eligible_trials=eligible,
                             excludes_with_100000000_eligible=(eligible is not None and eligible<=100000000),
                             total_source_attempts=None,
                             decision='conditional-power-guarantee' if n else 'no-certified-gap'))
-    hashes={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ('model.py','decision.py','design.py','protocol.md','model.md')}
+    hashes={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ('model.py','decision.py','joint.py','design.py','protocol.md','model.md')}
     return dict(schema=1,kind='synthetic-prospective-design',data_inputs=[],source_sha256=hashes,
-        alpha_total=.05,alpha_calibration=.025,alpha_main=.025,beta_main=.1,
-        guaranteed_unconditional_power_lower=.875,
+        alpha_total=alpha_calibration+alpha_main,alpha_calibration=alpha_calibration,alpha_main=alpha_main,beta_main=beta_main,
+        guaranteed_unconditional_power_lower=1-alpha_calibration-beta_main,
         units='dimensionless L=2pi, hbar=m=1; no apparatus performance is inferred',
         source_attempts_status='requires external preparation-efficiency and scale/phase calibration certificates',
         settings=[list(s) for s in menu],rows=rows)

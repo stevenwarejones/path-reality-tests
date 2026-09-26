@@ -79,7 +79,7 @@ def outside_enlarged_box(frequency,box,statistical_radius):
 def exclude_candidates(calibration,main_counts,candidates,*,ring=None,settings=DEFAULT_SETTINGS,
                        phase_offset=0.,fractional_scale=0.,contamination=0.,
                        efficiency_transport=0.,contrast_transport=0.,
-                       alpha_calibration=.025,alpha_main=.025):
+                       alpha_calibration=.025,alpha_main=.025,calibration_phase_radius=0.):
     """Return all rejected integer N with a simultaneous coordinate witness.
 
     main_counts has one [plus,minus,failure] row per PREDECLARED setting.
@@ -89,7 +89,7 @@ def exclude_candidates(calibration,main_counts,candidates,*,ring=None,settings=D
     ring=Ring() if ring is None else ring
     if not settings or len(main_counts)!=len(settings):
         raise ValueError('one complete count row per setting required')
-    if any(not isfinite(x) or x<0 for x in (phase_offset,fractional_scale,contamination)) or contamination>1:
+    if any(not isfinite(x) or x<0 for x in (phase_offset,fractional_scale,contamination,calibration_phase_radius)) or contamination>1:
         raise ValueError('invalid external phase/scale/contamination certificate')
     rows=[]
     for row in main_counts:
@@ -108,7 +108,8 @@ def exclude_candidates(calibration,main_counts,candidates,*,ring=None,settings=D
             if not isfinite(t) or not isfinite(q):
                 raise ValueError('finite controls required')
             phase_gap(ring,n,0,j,t) # Validates integer modes and strict alias cutoff.
-    cal=calibration_box(calibration,alpha_calibration,efficiency_transport,contrast_transport)
+    calibration_phase_bias=min(2.,calibration_phase_radius**2/2)
+    cal=calibration_box(calibration,alpha_calibration,efficiency_transport,contrast_transport+calibration_phase_bias)
     radii=[radius(total,3*len(settings),alpha_main) for _,total in rows]
     if cal['empty']:
         return dict(status='inconclusive-calibration',rejected=[],retained=candidates,
@@ -134,7 +135,7 @@ def exclude_candidates(calibration,main_counts,candidates,*,ring=None,settings=D
                 models=model_results,alpha_total=alpha_calibration+alpha_main,
                 external_certificates=dict(phase_offset=phase_offset,fractional_scale=fractional_scale,
                     contamination=contamination,efficiency_transport=efficiency_transport,
-                    contrast_transport=contrast_transport),
+                    contrast_transport=contrast_transport,calibration_phase_radius=calibration_phase_radius),
                 scope='fixed independent allocations; conditional on external certificates')
 
 
@@ -142,9 +143,17 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('counts',type=Path,help='JSON with calibration, main_counts, candidates and optional certificates')
     parser.add_argument('--output',type=Path)
+    parser.add_argument('--shared',action='store_true',help='enforce one shared phase/scale across settings')
     args=parser.parse_args(); data=json.loads(args.counts.read_text())
-    result=exclude_candidates(data['calibration'],data['main_counts'],data['candidates'],
-                              **data.get('certificates',{}))
+    if args.shared:
+        from joint import exclude_shared_candidates
+        partitions=data.get('partitions')
+        partitions=None if partitions is None else {int(n):cuts for n,cuts in partitions.items()}
+        result=exclude_shared_candidates(data['calibration'],data['main_counts'],data['candidates'],
+            partitions=partitions,**data.get('certificates',{}))
+    else:
+        result=exclude_candidates(data['calibration'],data['main_counts'],data['candidates'],
+                                  **data.get('certificates',{}))
     rendered=json.dumps(result,indent=2,allow_nan=False)+'\n'
     if args.output: args.output.write_text(rendered)
     else: print(rendered,end='')

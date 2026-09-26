@@ -8,7 +8,9 @@ mode phases, with a detectable difference only under adequate access and calibra
 The [model](model.md) gives the circle dynamics, spectral counterexample,
 approximation/tail derivation, finite-resource quantifiers and exact blind spots.
 The executable [decision rule](decision.py) converts complete calibration/main
-counts into rejected candidate site counts with coordinate witnesses.
+counts into rejected candidate site counts with coordinate witnesses. The
+[shared-nuisance refinement](joint.py) additionally enforces the common scale
+and phase across momenta, with [certified sensitivity bounds](results/shared-sensitivity.json).
 The [protocol](protocol.md) specifies a common 24-setting experiment, complete
 outcomes, nuisance boxes, simultaneous rejection and conditional acquisition cost.
 The [literature review](literature.md) assesses primary sources and dataset fit.
@@ -20,6 +22,7 @@ Run from any working directory:
 
 ```sh
 python /path/to/repository/studies/continuum-finite-models/design.py --check
+python /path/to/repository/studies/continuum-finite-models/joint_design.py --check
 ```
 
 From the repository root, `python -m unittest discover -s tests -v` includes
@@ -33,7 +36,9 @@ tolerances; integer counts and categorical decisions compare exactly.
 
 The map covers 660 synthetic parameter combinations. A zero **certified** gap
 is inconclusive unless an overlap construction applies. It is not labeled as
-an optimized minimum over jointly shared nuisance parameters. The total eligible
+an optimized minimum over jointly shared nuisance parameters. The separate
+shared-scale study recovers certified gaps for some of these inconclusive rows.
+Calibration and main trials are reported separately. The total eligible
 count includes 24 main and 3 calibration strata. Total source attempts remain
 unknown because preparation efficiency and physical scale/phase certification
 are missing. Prospective unconditional power is at least 87.50%, conditional
@@ -47,13 +52,13 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | ID | Disposition |
 |---|---|
 | CF01 | Common operational interface and finite objects specified |
-| CF02 | Full spectral state/evolution proof terms in companion; local verification blocked |
-| CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal bridge open |
-| CF04 | Spectral finite counterexample checked with complete POVMs; formal constructor open |
+| CF02 | Infinite spectral evolution compiled; final companion verification in progress |
+| CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal spectrum and aliasing compiled; final combined checks pending |
+| CF04 | Spectral finite counterexample checked with complete POVMs; formal finite embedding compiled |
 | CF05 | Approximation and truncation derivations plus tests; formal proof open |
-| CF06 | Finite-resource/product quantifiers derived; formal joint-law proof open |
+| CF06 | Finite-resource/product quantifiers derived; formal product-TV and Born bounds compiled; limit composition under verification |
 | CF07 | Implementable ideal readout, wrapping and negative controls checked; apparatus calibration missing |
-| CF08 | Calibration degeneracies and sufficient continuous-box certificate checked |
+| CF08 | Single-mode scale overlap and multi-mode shared-scale exclusion checked |
 | CF09 | Executable count-based decision and conditional eligible budgets complete; source and physical calibration cost blocked |
 | CF10 | Scoped primary-source comparison completed; unavailable version details not used |
 | CF11 | No inspected compatible dataset; prospective outcome selected |
@@ -62,3 +67,11 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 Review readiness requires the companion formal proofs, audit and report to be
 complete and linked to an immutable verified commit; and all final-head CI gates. This study does not narrow that requirement by
 calling the current numerical result a continuum theorem.
+
+
+Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
+The [verified finite-embedding and local-bound source at 49c6daa](https://github.com/stevenwarejones/ontology-separation/tree/49c6daa049ff4c6462bce8ed8c7b1fbd8e0c6ea8)
+is immutable, but it does not certify the later full approximation chain.
+These are branch links, not a claim that the formal companion has merged.
+Both studies remain drafts until the complete formal result and final artifacts
+are verified; merged-main links can be pinned after that review.

@@ -50,7 +50,11 @@ ceil(log(6/0.025)/(2*r_cal²)) independent eligible trials. Then eta has radius
 r_cal and w=p_plus(0)-p_plus(π) has radius 2*r_cal. This requires calibrated
 baseline phases and the same eta,w at all main settings. Baseline phase error
 or transport drift needs additional radii; it is not absorbed by a statistical
-confidence interval. The synthetic map assumes exact calibration-phase settings.
+confidence interval. `calibration_phase_radius=kappa` adds a contrast-bias
+bound min(2,kappa²/2), since |1−cos(kappa)|≤kappa²/2. The 660-case
+map uses its stated phase radius for calibration too, including twice this bias
+in its prospective power envelope. The targeted shared-scale comparison records
+its separate, exact calibration-phase premise explicitly.
 
 For prospective power, calibration centers are random. The map doubles the
 calibration radii around the stipulated true centers, to include both center
@@ -83,7 +87,8 @@ requires different coverage arguments.
 `detection`, `phase0`, and `phase_pi`, each `[successes, total]`; `main_counts` is
 a 24-row list of `[plus, minus, failure]`; `candidates` contains distinct integer
 site counts. Optional `certificates` supplies `phase_offset`, `fractional_scale`,
-`contamination`, `efficiency_transport`, and `contrast_transport`. Defaults are
+`contamination`, `efficiency_transport`, `contrast_transport`, and
+`calibration_phase_radius`. Defaults are
 zero certificate radii and the risk allocation above, **not evidence that real
 errors vanish**. All 24 settings occur in the order returned by
 `decision.DEFAULT_SETTINGS`. The detection calibration's success is any click;
@@ -109,3 +114,63 @@ penalty; they must still come from a fixed acquisition plan. Candidate count
 does not change multiplicity. End-to-end tests drive this actual function with
 adverse calibration/main fluctuations within the promised coverage events at
 the advertised integer budgets, and also check a command-line round trip.
+
+
+## Shared scale and phase across momenta
+
+`joint.py` keeps a single offset and kinetic-scale multiplier across all settings.
+It covers the calibrated parameter rectangle by interval cells. Every discarded
+cell has a setting/outcome whose entire predicted interval misses the simultaneous
+observed confidence interval. Rejection requires covering the whole rectangle;
+a cell-budget limit or unresolved point returns inconclusive. This strengthens
+the independent-box rule using the same coverage event and the same 5.00% risk.
+No penalty is needed for searching cells or testing additional candidate N.
+Efficiency/contrast rectangles are still conservative enlargements.
+
+The prospective certificate covers **both** continuum and lattice nuisance
+families in four dimensions. A cell is discharged only when one coordinate has
+a gap larger than the proposed bound throughout that cell. This is continuous
+interval coverage, not a grid minimum or an optimized gap. Endpoints are padded
+outward and gaps below 1e-12 are not certified; floating results remain numerical
+certificates rather than Lean proofs.
+
+The certificate also saves a finite null-parameter partition. Taking the union
+of its cut locations partitions the null rectangle more finely than every
+certificate cell. For the true continuum parameter, every null subcell therefore
+inherits a separating witness. If r_alpha+r_beta<g and calibration coverage
+holds, the count decision rejects every subcell. Use this predeclared partition
+for the advertised power; a capped adaptive search alone promises only sound
+rejection, not termination within its budget. Tests exercise this distinction.
+
+```sh
+python studies/continuum-finite-models/joint_design.py --check
+python studies/continuum-finite-models/decision.py counts.json --shared --output exclusions.json
+```
+
+For guaranteed power, the count JSON also includes `partitions`, mapping candidate
+N (JSON string keys) to the two sorted cut lists in `decision_partition` from the
+matching design certificate. The code checks exact coverage of the declared
+parameter bounds. The design conditions, including calibration phase and transport
+radii, must match the acquisition certificates.
+
+At eta=0.8, visibility=0.9, calibration radius 0.001 and fractional scale radius
+0.001, the targeted comparison certifies gaps 0.01 for N=128 and 0.001 for
+N=192,256 at zero offset radius. With offset radius 0.005 it certifies N=128,192;
+N=256 remains inconclusive at the searched thresholds/budget. All use the same
+24 settings; the largest grid N=512 remains inconclusive. These are improved
+sufficient boundaries, not exhaustive identifiability limits.
+
+For one momentum, exact scale overlap is possible: writing d=E_a−E_c, choose
+s_c=d/(2E_c), s_a=−d/(2E_a). Then (1+s_c)E_c=(1+s_a)E_a.
+For j=3,N=128 both shifts are within 0.001. The tests verify equality for all
+listed times/readout phases and show those same scales fail at j=1. Thus a
+single-momentum degeneracy and its multi-momentum resolution are both checked.
+
+## Calibration and main costs
+
+Both maps report `total_calibration_trials` and `total_main_trials` separately.
+For r_cal=0.001 the three calibration strata cost 8,220,960 eligible trials.
+The shared-scale N=128 gap of 0.01 needs another 3,816,216 main trials; a gap of
+0.001 needs 381,621,024 main trials. The calibration floor must not be interpreted
+as dispersion sensitivity. Power is computed from the declared risk parameters,
+1−alpha_calibration−beta_main, rather than stored as an unrelated constant.

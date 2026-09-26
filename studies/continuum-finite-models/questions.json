@@ -8,24 +8,24 @@
   },
   {
     "id": "CF02",
-    "status": "externally-blocked",
+    "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral proof terms; local Lean startup fails",
-    "next_step": "Compile; formalize remaining analytic bridges"
+    "disposition": "Infinite spectral evolution compiled and audited at 49c6daa; full Hilbert/Born/limit extension under verification",
+    "next_step": "Final-head formal verification; position-space L2 identification remains explicitly external"
   },
   {
     "id": "CF03",
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "DFT, cyclic generator and strict band tests",
-    "next_step": "Formal embedding and aliasing proof"
+    "next_step": "Final combined audit of compiled spectrum and alias restriction"
   },
   {
     "id": "CF04",
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "Exact spectral counterexample with complete random POVMs",
-    "next_step": "Formal finite-dimensional constructor"
+    "next_step": "Final combined audit of compiled finite embedding"
   },
   {
     "id": "CF05",
@@ -51,9 +51,9 @@
   {
     "id": "CF08",
     "status": "computationally-verified",
-    "evidence": "model.md",
-    "disposition": "Exact phase/scale degeneracies and continuous interval enclosure",
-    "next_step": "Calibrate shared nuisance bounds"
+    "evidence": "joint.py",
+    "disposition": "Exact single-mode scale overlap and shared-scale multi-mode interval separation checked",
+    "next_step": "Physical shared-scale, phase and transport certificates"
   },
   {
     "id": "CF09",
