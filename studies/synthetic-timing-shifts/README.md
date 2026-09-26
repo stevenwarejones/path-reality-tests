@@ -162,3 +162,35 @@ The useful finding here is whether particular injected effects can survive
 sparse counts and training costs. Nothing here establishes that the real
 experiment contains such effects, that the chosen regimes exist there, or that
 these shifts would be spacelike influences.
+
+
+## Actual settings and second-receiver cross-check
+
+The [actual-setting protocol](actual-protocol.md) now implements the next stage:
+fixed categorical timing comparisons using real remote settings on Bob and
+Alice. [The report](actual-report.md) gives simultaneous conditional bounds
+allowing temporal memory, assignment sensitivity and two missing-row envelopes.
+This is retrospective exploration with a same-run receiver cross-check; an
+independent run and physics calibration remain outstanding.
+
+Reproduce the committed aggregate analysis without downloading detector records:
+
+```sh
+python studies/synthetic-timing-shifts/actual.py --check
+```
+
+Reconcile either receiver against the original archive (large files stay outside
+this repository), using `alice` or `bob` for `SIDE`:
+
+```sh
+python studies/nist-bell-causal-audit/fetch_data.py --directory /tmp/nist-inputs
+SIDE=alice
+python studies/synthetic-timing-shifts/actual_extract.py \
+  --hdf5 /tmp/nist-inputs/hdf5.hdf5 \
+  --archive "/tmp/nist-inputs/$SIDE.zip" --side "$SIDE" \
+  --output "studies/synthetic-timing-shifts/$SIDE-actual-counts.json" --check
+```
+
+Full-source CI does this for both receivers. The committed counts are small
+aggregates, not redistributed event streams. `actual-results.json` records all
+signed feature intervals, TV intervals and declared nuisance sensitivities.

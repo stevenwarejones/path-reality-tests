@@ -62,6 +62,8 @@ jobs:
           python studies/path-compatibility/plot.py --output-dir "$RUNNER_TEMP/review-artifacts/path-compatibility"
       - name: Reproduce synthetic timing-shift sensitivity and null controls
         run: python studies/synthetic-timing-shifts/design.py --check
+      - name: Reproduce conditional actual-setting timing bounds
+        run: python studies/synthetic-timing-shifts/actual.py --check
       - name: Check NIST causal-audit counts, assumptions and report
         run: |
           python studies/nist-bell-causal-audit/audit.py --check

@@ -52,3 +52,13 @@ jobs:
           python studies/synthetic-timing-shifts/empirical.py \
             --background "$RUNNER_TEMP/nist-output/bob-timing.npz" --check
           git diff --exit-code
+      - name: Reconcile both receivers and reproduce actual-setting timing bounds
+        run: |
+          for side in alice bob; do
+            python studies/synthetic-timing-shifts/actual_extract.py \
+              --hdf5 "$RUNNER_TEMP/nist-inputs/hdf5.hdf5" \
+              --archive "$RUNNER_TEMP/nist-inputs/$side.zip" --side "$side" \
+              --output "studies/synthetic-timing-shifts/$side-actual-counts.json" --check
+          done
+          python studies/synthetic-timing-shifts/actual.py --check
+          git diff --exit-code
