@@ -1,6 +1,6 @@
 # Staged literature and source search log
 
-Date: 2026-09-26 UTC / 2026-09-25 America/New_York. This is a focused, staged
+Date: 2026-09-26 UTC. This is a focused, staged
 review, not a claim of exhaustive coverage of quantum foundations. Primary
 papers and deposited data support technical statements; news, social discussion
 and search snippets are discovery aids only. The earlier source review is
@@ -13,9 +13,8 @@ supplement available?
 
 Queries included `"aeh1011" arxiv supplement`,
 `"Direct experimental test of Feynman" "supplementary"`,
-`"x0k6djj14" dataset version` and the exact title. Both search engines were
-used when results were sparse. Several engine-1 queries returned unrelated
-generic code/version pages; those are not evidence.
+`"x0k6djj14" dataset version` and the exact title. Some queries returned unrelated generic code/version pages; those results
+were excluded from the source review.
 
 Primary sources read: [main paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC13510607/),
 [Europe PMC XML](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/fullTextXML),
@@ -28,8 +27,8 @@ the current replication reread the comparison definitions and supplement
 Sections 6–8. Source hashes are in provenance, originals outside git.
 
 Historical access limitation: direct Dryad downloads returned 401/403 and some
-publisher/PMC retrievals were blocked. No controls were bypassed. Steven
-subsequently supplied the authorized deposit; all 19 originals match the pinned
+publisher/PMC retrievals were blocked. The deposit was subsequently obtained;
+all 19 originals match the pinned
 manifest. Q01 is now closed. A refreshed PMC open still hit a browser challenge;
 the archived primary XML remains available for equation checking. Current Dryad
 landing content lists the same 19 file names. No claim that inaccessible sources
@@ -54,7 +53,7 @@ paper title. Primary papers reviewed:
 Result: preserve acquisition → calibrated K → shared-factor path products →
 endpoint comparison as distinct steps. A separately acquired E is informative;
 reconstruction alone does not make the comparison circular. Calibration and
-conditioning remain physical assumptions. Q03/Q08/Q18 and physical-bridge.md.
+conditioning remain physical assumptions. Q03/Q08/Q17 and physical-bridge.md.
 
 ## Stage 3 — deposit sufficiency, actual sheets and numerical ambiguity
 
@@ -72,7 +71,8 @@ than their 321×101 numerical image regions. FigS4A contains a separate fixed-en
 x column. FigS2 histograms require care over edge counts and a nonmonotone tail.
 These are documented in data-dictionary.md; originals are unchanged.
 
-The first Q–theory calculation did not recover 4.45%, triggering an additional
+The first Q–theory calculation differed from 4.45% under our reading of the
+printed comparison, triggering an additional
 source check and numerical checkpoint. Queries `"aeh1011" "4.45"` and
 `"aeh1011" "correction"` returned no useful clarification (one result was an
 unrelated catalogue). We therefore reread the actual Results definition and
@@ -81,10 +81,18 @@ cubic alignment, rounding sensitivity, unit-sum normalization, alternative
 common error definitions and a conditional finite-grid model. All choices and
 their limits are retained in the code and method-comparison.md.
 
+Review feedback prompted a fresh retrieval of the primary XML; its SHA-256
+matches the archived source. The exact sentence at MathML m116–m118 names Q
+and theoretical Q and is quoted in method-comparison.md. Unit-sum E–Q gives
+4.49%, close to the reported 4.45%; that alternative is now adjacent to
+Q–theory in the comparison table. Its closeness is not evidence of the authors'
+actual array choice. Both comparison identity and processing remain clarification
+questions until the implementation is available.
+
 Result: E–Q and Q–theory remain separate; E–Q versus E–C ordering survives the
 tested scale convention. Exact printed metric reproduction remains open. No
 subsets or fitted offsets were selected to reach a desired percentage.
-Q04/Q06/Q11/Q12/Q25–Q27 updated. The per-repeat tensors and processing code are
+Q04/Q06/Q10/Q11/Q19–Q21 updated. The per-repeat tensors and processing code are
 specific remaining dependencies, not records that can be inferred from means.
 
 ## Stage 4 — alternatives, physical correspondence and ontological scope
@@ -112,12 +120,12 @@ equivalent representations. A stronger contextuality claim needs additional
 operational tests. Phase intervention remains a separate study with its own
 full protocol, literature and calibration obligations; no novelty claim here.
 
-## Stage 5 — corrections, adverse evidence and delivery review
+## Stage 5 — corrections and adverse evidence
 
 Current queries: `"aeh1011" correction code`, the full title plus `erratum` or
 `code`, and `"Wen" "Tian" "Feynman" correction` targeted to publisher/arXiv
-sources. The time-filtered engine-1 searches were noisy; engine 2 recovered
-primary paper/deposit records but no usable correction or additional code.
+sources. Search results included primary paper/deposit records and unrelated
+pages; no usable correction or additional code was identified.
 The [fresh Crossref record](https://api.crossref.org/works/10.1126/sciadv.aeh1011)
 has an empty `relation` and no `update-to`/`updated-by` fields. Its retrieval
 hash is recorded in provenance. This supports only “none identified in this
@@ -128,15 +136,12 @@ the spatial-range apparent mismatch has a plausible bin-edge explanation;
 rounding/interpolation do not explain the quoted error difference; the missing
 repeat/covariance records prevent significance/fidelity reconstruction; a
 context-dependent matching response is not itself a physical trajectory theory.
-An earlier plain-text missing-radical suspicion was rejected after MathML review.
 No claims about superluminal or backward-time motion follow from these tables.
 
-## Refresh and closure rules
+## Review boundaries
 
-Repeat targeted source/version searches when new data, code, a correction or
-author clarification arrives; repeat the apparatus/witness literature search
-before committing resources to a follow-up. Reopen all dependent claims when a
-mapping, model or normalization changes. Record query, source/version, review
-depth, contrary evidence and what actually changed. Do not treat repeated empty
-searches as closure, and do not leave a new question untracked. Full experiment
-design and full-proof novelty review belong to the separate follow-up study.
+This review reflects the sources and versions above. New data, code, corrections
+or clarification could change the mappings, model or normalization and would
+require reassessment of dependent conclusions. Empty searches do not establish
+absence. Full experiment design, apparatus-specific literature review and
+full-proof novelty review remain separate follow-up work.

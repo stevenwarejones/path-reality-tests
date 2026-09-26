@@ -23,7 +23,6 @@ to the phase-intervention study, not to a finding about Wen's data.
 The current source/version/code refresh is recorded in the search log. No usable
 additional author implementation or correction was identified, with explicit
 search/access limitations. The real column mappings and missing repeat-level
-records are documented in the data dictionary. Before a stronger ontological claim, identify the
-additional operational assumptions and the exact alternative being excluded.
-Document adverse evidence and unresolved dependencies without strengthening them
-into allegations of author error.
+records are documented in the data dictionary. A stronger ontological claim
+requires additional operational assumptions and an exact specification of the
+alternative being excluded.

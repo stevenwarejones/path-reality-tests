@@ -13,20 +13,20 @@ This records a conditional reanalysis of Dryad version 3 / 450489. It reproduces
 
 | Comparison | n | Symmetric error (%) | MAE (a.u.) | RMSE (a.u.) |
 |---|---:|---:|---:|---:|
-| E vs Q | 17 | 4.730009420 | 0.048313611 | 0.064498849 |
-| Q vs deposited theory | 17 | 5.571439833 | 0.055107096 | 0.067283643 |
-| E vs C | 17 | 12.308280654 | 0.121669368 | 0.140730057 |
-| C vs deposited theory | 17 | 4.185665074 | 0.043230722 | 0.051874336 |
+| E vs Q | 17 | 4.73 | 0.048313611 | 0.064498849 |
+| Q vs deposited theory | 17 | 5.57 | 0.055107096 | 0.067283643 |
+| E vs C | 17 | 12.31 | 0.121669368 | 0.140730057 |
+| C vs deposited theory | 17 | 4.19 | 0.043230722 | 0.051874336 |
 
-Q–theory uses coordinate-based linear interpolation of the deposited 850-point curve at all 17 observed positions. It is a separate comparison from E–Q. No scale is fitted or endpoint omitted. The paper quotes 4.45%; the table-based value above does not recover it. See [method comparison](../method-comparison.md) for tested explanations and why this does not by itself overturn the E–Q/E–C ordering.
+Q–theory uses coordinate-based linear interpolation of the deposited 850-point curve at all 17 observed positions. It is a separate comparison from E–Q. No scale is fitted or endpoint omitted. We read the paper's exact sentence as associating 4.45% with Q–theory; that reading and the authors' actual implementation are distinct. Unit-sum E–Q gives 4.49%, a closer but inexact comparison. See [method comparison](../method-comparison.md) for the quotation, both comparisons, tested explanations and why the numerical difference does not by itself overturn the E–Q/E–C ordering.
 
 ## Sensitivity checks
 
 | Alignment | Q–theory error, deposited units (%) | Unit-sum shapes (%) |
 |---|---:|---:|
-| linear | 5.571439833 | 5.338613730 |
-| nearest | 5.574578913 | 5.338224838 |
-| local_cubic | 5.571439596 | 5.338617878 |
+| linear | 5.57 | 5.34 |
+| nearest | 5.57 | 5.34 |
+| local_cubic | 5.57 | 5.34 |
 
 Figure 4 contains 72 length-group rows and 100 action-group rows. Its phase RMSE is 0.021814792π; shortest-arc RMSE is 0.021814792π. The mean supplied phase SD is 0.068133595π. This is not a significance ratio or a reconstructed phase covariance.
 

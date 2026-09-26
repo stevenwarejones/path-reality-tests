@@ -4,8 +4,7 @@ Independent reproducible checks of Wen et al., *Direct experimental test of
 Feynman's path integral postulates with single photons*, Science Advances 12,
 eaeh1011 (2026), [paper DOI](https://doi.org/10.1126/sciadv.aeh1011).
 This study reproduces the deposited Figure 3/4 summaries and separates observable
-comparisons from claims about individual paths. It does not presume that the
-paper is wrong.
+comparisons from claims about individual paths. This is not a claim of author error.
 
 ## Getting the data
 
@@ -60,15 +59,17 @@ are 4.73% and 12.31%, respectively. That ordering persists after unit-sum
 normalization. This is not a significance claim.
 
 The separate Q-versus-theory calculation gives 5.57% using the deposited theory
-curve, compared with the paper's reported 4.45%. Interpolation, simple rounding,
-unit-sum normalization and alternative common error definitions were checked.
-They do not reproduce that exact number. The underlying reference array,
-processing order and normalization code are unavailable, so this remains a
-conditional calculation and pipeline question, not an established author error.
+curve. We read the paper's wording as associating its reported 4.45% with that
+comparison; the exact sentence is quoted in [method-comparison.md](method-comparison.md).
+Unit-sum E–Q gives 4.49%, a closer but inexact result that keeps the identity of
+the evaluated comparison open as a clarification question. Interpolation,
+rounding, normalization and alternative common error definitions were checked.
+The underlying reference array, processing order and normalization code are
+unavailable. These comparisons remain conditional on the stated processing choices.
 
 Figure 4's phase residual RMSE is 0.021815π relative to its deposited theoretical
 mean phase. Group means and SDs do not supply the full path amplitudes needed to
-recompute the reported 17.4% path-level error or path-space fidelities.
+recompute the reported 17.40% path-level error or path-space fidelities.
 
 - [Validation and source hashes](results/validation.md)
 - [Numerical results and all-sheet inventory summary](results/replication/summary.json)
@@ -123,7 +124,7 @@ projection, loss and detector obligations. [Open questions](open-questions.md)
 records what is closed, what is conditional, and exactly which inputs would
 settle the rest. [Literature comparisons](literature-comparison.md) and the
 [staged search log](literature-search-log.md) document primary sources, review
-depth, adverse checks and refresh triggers. Original paper/supplement PDFs remain
+depth, adverse checks and review boundaries. Original paper/supplement PDFs remain
 outside git; [provenance](provenance.json) records their retrieval identifiers.
 
 The existing synthetic calculations remain separate from empirical replication:
@@ -134,16 +135,12 @@ a fit to the measured tables nor a reconstruction of the authors' random seed.
 ## Formal companion and follow-up
 
 The ideal finite case study lives in `ontology-separation`:
-[pinned Lean source](https://github.com/stevenwarejones/ontology-separation/blob/a4d294ddb3847134ac2bdbb509c435c2eaff7a98/OntologySeparation/Experiments/PathInterference.lean)
-and [physicist-readable case study](https://github.com/stevenwarejones/ontology-separation/blob/a4d294ddb3847134ac2bdbb509c435c2eaff7a98/docs/PATH_INTERFERENCE_CASE_STUDY.md).
+[pinned Lean source](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/OntologySeparation/Experiments/PathInterference.lean)
+and [physicist-readable case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/docs/PATH_INTERFERENCE_CASE_STUDY.md).
 It certifies finite tables and access-relative model distinctions, not this
 apparatus or its empirical numbers.
 
-A phase-intervention experiment is a separate proposed study, with its own
-explicit dephased null, calibration obligations and literature review. Stronger
-contextuality tests would require additional operational-equivalence and
-disturbance controls; neither the current tables nor the Lean example supplies
-those controls.
+A follow-up study of phase interventions and their experimentally testable model assumptions is planned.
 
 ## Automated checks
 
