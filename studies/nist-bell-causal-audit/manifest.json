@@ -1,0 +1,38 @@
+{
+  "accessed_utc": "2026-09-26",
+  "source": "NIST Bell Test Research Software and Data",
+  "files": {
+    "hdf5": {
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/processed_compressed/hdf5/2015_09_18/03_43_CH_pockel_100kHz.run4.afterTimingfix2_afterfixingModeLocking.dat.compressed.build.hdf5",
+      "sha256": "94af31f6f8cadda9ed21fdf1adb7d6154a05a33bba551c11619e5df70b800f06",
+      "bytes": 736902908
+    },
+    "alice": {
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/compressed/alice/2015_09_18/03_43_CH_pockel_100kHz.run4.afterTimingfix2_afterfixingModeLocking.alice.dat.compressed.zip",
+      "sha256": "0b4ede43343a4b0a507cbbb35bc148ea8770e7f1cbb14f5277a7718a1248979b",
+      "bytes": 799770850
+    },
+    "bob": {
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/compressed/bob/2015_09_18/03_43_CH_pockel_100kHz.run4.afterTimingfix2_afterfixingModeLocking.bob.dat.compressed.zip",
+      "sha256": "c74f6eeee166e3b960b4c90ce853efb9594cb4406e4f5cbaffa027a7fb7e0f17",
+      "bytes": 860373080
+    },
+    "code": {
+      "url": "https://s3.amazonaws.com/nist-belltestdata/belldata/code/analysis/bell_analysis_code.zip",
+      "sha256": "80b452b55ce44bb46e37ffbcd1f1684ba3293aaf0b6445c36743da4a5d37c52d",
+      "bytes": 787181075
+    }
+  },
+  "fixtures": {
+    "archived-diagnostics.json": {
+      "sha256": "803a77881d47a6c9a5d248aa28f01b58003cd5bad6401b6266c6b4dc95f3977a",
+      "bytes": 2257,
+      "notice": "NOTICE.txt"
+    },
+    "multiclick.json": {
+      "sha256": "6c7f6e4ece0c8cb3f0baabc49c03fc43204a31d12629478de26a1da9a3cfa726",
+      "bytes": 1102,
+      "notice": "NOTICE.txt"
+    }
+  }
+}

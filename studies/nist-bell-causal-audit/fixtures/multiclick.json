@@ -1,0 +1,36 @@
+{
+  "source": "NIST compressed raw archives pinned in manifest.json",
+  "modification": "Two two-sync excerpts decoded to hexadecimal on 2026-09-26; see NOTICE.txt",
+  "records": [
+    {
+      "side": "alice",
+      "raw_sync_index": 1084772,
+      "hdf_row": 962146,
+      "config": {
+        "pk": 90,
+        "radius": 4,
+        "bitoffset": 28
+      },
+      "records_hex": "064467e0f597dd07000b0004af67e0f597dd07000b0006935fe2f597dd07000b0004ff5fe2f597dd07000b00001974e2f597dd07000b0000c779e2f597dd07000b00",
+      "next_sync_tag": 2213969572157411,
+      "nominal_word": 8208,
+      "legacy_word": 8192,
+      "settings": 2
+    },
+    {
+      "side": "bob",
+      "raw_sync_index": 1483504,
+      "hdf_row": 1339893,
+      "config": {
+        "pk": 125,
+        "radius": 5,
+        "bitoffset": 37
+      },
+      "records_hex": "061ca45509e4e503000f00027ca55509e4e503000f00066d9c5709e4e503000f0004d99d5709e4e503000f0000a6b85709e4e503000f000011bd5709e4e503000f00",
+      "next_sync_tag": 1097192502301884,
+      "nominal_word": 16512,
+      "legacy_word": 16384,
+      "settings": 2
+    }
+  ]
+}
