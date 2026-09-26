@@ -35,7 +35,7 @@ def _cover(initial,enclosure,weights,threshold,max_cells):
     if isinstance(max_cells,bool) or not isinstance(max_cells,int) or max_cells<1:
         raise ValueError('positive integer cell budget required')
     pending=[initial]; examined=0; witnesses=[]
-    cuts=[set(row) for row in initial]
+    cuts=[set(map(float,row)) for row in initial]
     while pending and examined<max_cells:
         cell=pending.pop(); examined+=1
         gap,index=enclosure(cell)

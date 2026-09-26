@@ -12,7 +12,7 @@
   "source_sha256": {
     "model.py": "c600309b227a60fb9ef84a0a828ace979bac874ebe350efbb55830affdd7fd3e",
     "decision.py": "fe03f94afc31547f270d7fe0f78853d8f11c96248a21b1e26609088153585aac",
-    "joint.py": "5b92f0b8d0007c8922c56bc8ba1fc165b8fb6e8f011fef6e5b7ca4f7f919e923",
+    "joint.py": "8bc38bada9934776250ca51df57a11bf65bf40b2f4c0d8437123ad571ea5da3b",
     "joint_design.py": "d3ed635a19af67f3dc9d9c413251c9e3c2dd3024274f2fb06423f02f707668f7",
     "protocol.md": "c54ec4fd1c8b869fc9b316558c1b5eae3d467c25d4f3c861cb99d70ffbd48a13"
   },
