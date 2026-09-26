@@ -2,7 +2,8 @@
   "kind": "prospective conditional designs, not observed data or achieved power",
   "source": {
     "filename": "design.py",
-    "sha256": "88ed6452f74c44704d0cce4128c1afa3ce96425b83367a5d09d6d72f198701d0"
+    "sha256": "370ea16eac32c8d285cd4071a591b2f0b15a531e897b4ef1fe359b0bad707b12",
+    "scipy_version": "1.16.3"
   },
   "premises": [
     "independent fixed-probability Bernoulli trials within each setting",
@@ -177,7 +178,7 @@
           2016,
           2233
         ],
-        "contrast_lower": 0.02002249330293221,
+        "contrast_lower": 0.020022493302932043,
         "null_upper": 0.02,
         "method": "cp",
         "alpha": 0.01,
@@ -254,7 +255,7 @@
           14826,
           15597
         ],
-        "contrast_lower": 0.020018768573828394,
+        "contrast_lower": 0.02001876857382845,
         "null_upper": 0.02,
         "method": "cp",
         "alpha": 0.01,
@@ -398,7 +399,7 @@
         8640,
         10145
       ],
-      "contrast_lower": 0.020004566434632262,
+      "contrast_lower": 0.02000456643463254,
       "null_upper": 0.02,
       "method": "cp",
       "alpha": 0.01,
@@ -467,7 +468,7 @@
           4105,
           4105
         ],
-        "contrast_lower": 0.5503363189687909,
+        "contrast_lower": 0.5503363189687915,
         "null_upper": 0.5503094908155133,
         "method": "cp",
         "alpha": 0.01,
@@ -541,7 +542,7 @@
           1348,
           1670
         ],
-        "contrast_lower": 0.5679019799596594,
+        "contrast_lower": 0.5679019799596592,
         "null_upper": 0.5677545352191771,
         "method": "cp",
         "alpha": 0.01,
@@ -578,7 +579,7 @@
           12623,
           15732
         ],
-        "contrast_lower": 0.5353845100412409,
+        "contrast_lower": 0.53538451004124,
         "null_upper": 0.535366154385748,
         "method": "cp",
         "alpha": 0.01,
@@ -608,7 +609,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3147446928042804,
+      "contrast_lower": 0.3147446928042808,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -635,7 +636,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3767490261605542,
+      "contrast_lower": 0.37674902616055495,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -770,7 +771,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.4460000426481588,
+      "contrast_lower": 0.4460000426481594,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -797,7 +798,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5190385966729757,
+      "contrast_lower": 0.5190385966729758,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -824,7 +825,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5934806461209771,
+      "contrast_lower": 0.5934806461209776,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -878,7 +879,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.433296284182714,
+      "contrast_lower": 0.4332962841827137,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -905,7 +906,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.516188740876923,
+      "contrast_lower": 0.5161887408769229,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -959,7 +960,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.6850639852118416,
+      "contrast_lower": 0.6850639852118413,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1013,7 +1014,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.49392709315599054,
+      "contrast_lower": 0.4939270931559905,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1040,7 +1041,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.5874850294161894,
+      "contrast_lower": 0.5874850294161895,
       "null_upper": 0.5270850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1283,7 +1284,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3147446928042804,
+      "contrast_lower": 0.3147446928042808,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1310,7 +1311,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3767490261605542,
+      "contrast_lower": 0.37674902616055495,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1445,7 +1446,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.4460000426481588,
+      "contrast_lower": 0.4460000426481594,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1472,7 +1473,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5190385966729757,
+      "contrast_lower": 0.5190385966729758,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1499,7 +1500,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5934806461209771,
+      "contrast_lower": 0.5934806461209776,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1553,7 +1554,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.433296284182714,
+      "contrast_lower": 0.4332962841827137,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1580,7 +1581,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.516188740876923,
+      "contrast_lower": 0.5161887408769229,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1634,7 +1635,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.6850639852118416,
+      "contrast_lower": 0.6850639852118413,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1688,7 +1689,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.49392709315599054,
+      "contrast_lower": 0.4939270931559905,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1715,7 +1716,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.5874850294161894,
+      "contrast_lower": 0.5874850294161895,
       "null_upper": 0.5370850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1958,7 +1959,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3147446928042804,
+      "contrast_lower": 0.3147446928042808,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -1985,7 +1986,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3767490261605542,
+      "contrast_lower": 0.37674902616055495,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2120,7 +2121,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.4460000426481588,
+      "contrast_lower": 0.4460000426481594,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2147,7 +2148,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5190385966729757,
+      "contrast_lower": 0.5190385966729758,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2174,7 +2175,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5934806461209771,
+      "contrast_lower": 0.5934806461209776,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2228,7 +2229,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.433296284182714,
+      "contrast_lower": 0.4332962841827137,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2255,7 +2256,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.516188740876923,
+      "contrast_lower": 0.5161887408769229,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2309,7 +2310,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.6850639852118416,
+      "contrast_lower": 0.6850639852118413,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2363,7 +2364,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.49392709315599054,
+      "contrast_lower": 0.4939270931559905,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2390,7 +2391,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.5874850294161894,
+      "contrast_lower": 0.5874850294161895,
       "null_upper": 0.5470850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2633,7 +2634,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3147446928042804,
+      "contrast_lower": 0.3147446928042808,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2660,7 +2661,7 @@
         3107,
         5116
       ],
-      "contrast_lower": 0.3767490261605542,
+      "contrast_lower": 0.37674902616055495,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2795,7 +2796,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.4460000426481588,
+      "contrast_lower": 0.4460000426481594,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2822,7 +2823,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5190385966729757,
+      "contrast_lower": 0.5190385966729758,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2849,7 +2850,7 @@
         3611,
         5116
       ],
-      "contrast_lower": 0.5934806461209771,
+      "contrast_lower": 0.5934806461209776,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2903,7 +2904,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.433296284182714,
+      "contrast_lower": 0.4332962841827137,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2930,7 +2931,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.516188740876923,
+      "contrast_lower": 0.5161887408769229,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -2984,7 +2985,7 @@
         4114,
         5116
       ],
-      "contrast_lower": 0.6850639852118416,
+      "contrast_lower": 0.6850639852118413,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -3038,7 +3039,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.49392709315599054,
+      "contrast_lower": 0.4939270931559905,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,
@@ -3065,7 +3066,7 @@
         4616,
         5116
       ],
-      "contrast_lower": 0.5874850294161894,
+      "contrast_lower": 0.5874850294161895,
       "null_upper": 0.5770850924198951,
       "method": "cp",
       "alpha": 0.01,

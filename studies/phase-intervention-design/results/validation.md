@@ -1,6 +1,6 @@
 # Validation — phase-intervention design
 
-Synthetic checks run successfully with Python 3.12 and NumPy 2.3.5. The script was
+Synthetic checks run successfully with Python 3.12, NumPy 2.3.5 and SciPy 1.16.3. The script was
 invoked from a different working directory to verify that its output paths are
 relative to its own folder. No experimental input data were used.
 
@@ -47,7 +47,8 @@ The question-register test checks every Q-ID against the completion report,
 including grouped ranges. Existing tests continue to cover integrity failures,
 replication, synthetic algebra, corruption, and invocation from other directories.
 
-Each numerical JSON records its generating script and SHA-256. CI checks
+Each numerical JSON records its generating script and SHA-256; the design
+snapshot also records the SciPy version used for the binomial quantiles. CI checks
 snapshots without overwriting them. The guarantees remain conditional on the
 fixed-probability independent trial model derived in the protocol; these tests
 supply no calibration or observed experimental power.

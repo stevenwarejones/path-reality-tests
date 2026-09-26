@@ -193,10 +193,12 @@ def lossy_probabilities(eta, visibility):
 
 
 def examples():
+    from scipy import __version__ as scipy_version
     return {
         'kind': 'prospective conditional designs, not observed data or achieved power',
         'source': {'filename': 'design.py',
-                   'sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},
+                   'sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                   'scipy_version': scipy_version},
         'premises': ['independent fixed-probability Bernoulli trials within each setting',
                      'complete herald-denominated outcomes',
                      'predeclared settings, selected bin, sample sizes and stopping',
