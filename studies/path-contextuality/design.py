@@ -141,9 +141,10 @@ def random_context_budget(gap, contexts=48, alpha=.005, beta=.1):
     Chernoff: Pr[min n_s < N/(2K)] <= K exp(-N/(8K)). Allocate beta/2
     to counts and beta/2 to outcome estimation. No stopping or dropped trials.
     """
-    if gap <= 0 or contexts < 4:
-        raise ValueError("positive gap and at least four contexts required")
-    n = certified_budget(gap, alpha=alpha, beta=beta/2)['per_main_context']
+    if gap <= 0 or not isinstance(contexts, int) or contexts < 4+AUDIT_CONTEXTS:
+        raise ValueError("positive gap and at least 48 integral contexts required")
+    budget = certified_budget(gap, alpha=alpha, beta=beta/2)
+    n = max(budget['per_main_context'], budget['per_audit_context'])
     total = max(2*contexts*n, math.ceil(8*contexts*math.log(2*contexts/beta)))
     return {'eligible_trials': total, 'contexts': contexts,
             'minimum_count_event': total/(2*contexts), 'log_counts_failure_bound':

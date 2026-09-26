@@ -50,3 +50,15 @@ record describes the actual extraction rather than claiming a complete PDF read.
 Fan's publisher states data and code on request; neither was requested. The
 relativistic experiment's v1 header and rendered manuscript dates differ; no
 claim of version identity or complete supplementary review is made.
+
+Final adversarial check (2026-09-26, primary arXiv/publisher search): queries
+`site:arxiv.org 1403.2362 Ferrie Combes 1410.8510 reply weak values classical disturbance`,
+`"anomalous weak values" contextuality calibration loss finite statistics 2025 2026`,
+`"1812.06940" erratum correction comment`, and
+`"s41467-022-31608-6" critique density optical regime`. Some broad results were
+irrelevant; no absence-of-correction claim follows. Retrieved Ferrie–Combes v3
+model, Hofmann–Iinuma–Shikano v2 comment, and the later Ferrie–Combes correlation
+construction in primary PDFs. Brodutch PDF/HTML attempts failed. Decision:
+retain exact finite Kraus multiplication and explicit transformation calibration;
+the broader postselected-average criterion is not the constrained witness. No
+new bound or physical claim is warranted by this comparison.

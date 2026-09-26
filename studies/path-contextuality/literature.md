@@ -42,10 +42,21 @@ experimental generalized-noncontextuality test.
 
 An unchanged marginal can hide disturbance, as our two-state countermodel proves.
 [Ipsen 2014](https://arxiv.org/abs/1409.3538) was screened as a primary discussion
-of different disturbance definitions. [Ferrie–Combes 2014](https://arxiv.org/abs/1403.2362)
-and the ensuing [Brodutch comment](https://arxiv.org/abs/1410.8510) are backward
-citation leads in the debate; their full comment/reply pair was not verified here.
-No claim about the correctness of that exchange is needed for our explicit kernels.
+of different disturbance definitions. [Ferrie–Combes 2014](https://arxiv.org/pdf/1403.2362)
+constructs outcome-dependent classical bit flips and an anomalous scaled
+postselected average. The [Hofmann–Iinuma–Shikano comment](https://arxiv.org/pdf/1410.7126)
+identifies a mismatch between the disturbance required by that model and the
+quadratic weak-coupling disturbance of the quantum instrument. This is why the
+complete instrument, coupling order and disturbance calibration matter; an
+anomalous rescaled average alone is insufficient. Ferrie and Combes' subsequent
+[correlation analysis](https://arxiv.org/pdf/1410.8067) defines a broader anomalous
+postselected shift and constructs a classical correlated example without state
+change. Its conditional-average criterion does not impose our operational
+equivalences. These are distinct model comparisons, not contrary conclusions
+about the same constrained null. The [Brodutch comment](https://arxiv.org/abs/1410.8510)
+remains an unresolved retrieval lead (HTML and PDF failed). Our exact countermodels
+implement the relevant attacks independently without asserting that they reproduce
+the entire quantum calibration family.
 
 [Halliwell 2017](https://arxiv.org/abs/1704.01485) distinguishes Leggett–Garg and
 no-signaling-in-time tests. These use different noninvasiveness/classicality

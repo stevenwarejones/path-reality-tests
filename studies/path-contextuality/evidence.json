@@ -133,6 +133,39 @@
       "assumptions": "macrorealism / distinct noninvasiveness conditions",
       "quantities": "LG and NSIT",
       "data_code_status": "No equivalence to our null asserted"
+    },
+    {
+      "id": "FerrieCombes2014",
+      "doi": "10.1103/PhysRevLett.113.120404",
+      "arxiv": "1403.2362v3",
+      "dates": "2014-09-18 arXiv revision",
+      "kind": "theory",
+      "access": "PDF five pages, outcome-dependent bit-flip model equations 21\u201335",
+      "assumptions": "scaled postselected average, outcome-correlated classical disturbance",
+      "quantities": "s/lambda conditioned on pre/postselection",
+      "data_code_status": "No data imported; exact kernels inspected"
+    },
+    {
+      "id": "HofmannComment2014",
+      "doi": null,
+      "arxiv": "1410.7126v2",
+      "dates": "2014-11-21 revision",
+      "kind": "comment",
+      "access": "Full two-page PDF",
+      "assumptions": "compares weak quantum disturbance order to classical model",
+      "quantities": "quadratic versus linear coupling disturbance",
+      "data_code_status": "No data; no coefficient imported into this finite calculation"
+    },
+    {
+      "id": "FerrieCombesCorrelations2014",
+      "doi": null,
+      "arxiv": "1410.8067",
+      "dates": "2014-10-29 preprint",
+      "kind": "theory",
+      "access": "PDF definitions, conditional-independence proof and classical example sections III/IV",
+      "assumptions": "general three-variable joint probability model; broad APSS definition",
+      "quantities": "conditional compared with unconditional pointer mean",
+      "data_code_status": "No data imported; criterion differs from equivalence-constrained null"
     }
   ]
 }

@@ -71,6 +71,14 @@ class ContextualityTests(unittest.TestCase):
         self.assertLess(report['max_equivalence_residual'],1e-14)
         self.assertIn('channel/Y+/Y/M',report['contexts'])
 
+    def test_random_allocation_covers_audit_when_main_signal_is_large(self):
+        random=d.random_context_budget(.9)
+        fixed=d.certified_budget(.9,beta=.05)
+        self.assertGreaterEqual(random['minimum_count_event'],fixed['per_audit_context'])
+        self.assertGreaterEqual(random['minimum_count_event'],fixed['per_main_context'])
+        for contexts in [4,47,48.5]:
+            with self.assertRaises(ValueError): d.random_context_budget(.9,contexts=contexts)
+
     def test_countermodels(self):
         r=d.exact_countermodels()
         self.assertEqual(r['marginal_disturbance'],'0')
