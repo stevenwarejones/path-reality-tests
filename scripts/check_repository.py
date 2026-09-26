@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Check the tracked data allowlist and repository-local Markdown links."""
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -18,6 +19,8 @@ def main():
     if originals != expected:
         raise SystemExit(f"Tracked originals differ from manifest: {sorted(originals ^ expected)}")
     problems = []
+    if any(p.startswith("studies/nist-bell-causal-audit/fixtures/") for p in tracked):
+        problems.append("NIST source extracts require explicit authorization; use external pinned inputs")
     for path in sorted(tracked):
         if path in expected:
             # The author's README is preserved byte-for-byte, not rewritten for local links.
