@@ -57,6 +57,7 @@ jobs:
       - name: Check NIST causal-audit counts, assumptions and report
         run: |
           python studies/nist-bell-causal-audit/audit.py --check
+          python studies/nist-bell-causal-audit/click_audit.py --check
           python studies/nist-bell-causal-audit/report.py --output-dir "$RUNNER_TEMP/nist-report"
           cmp studies/nist-bell-causal-audit/results/report.md "$RUNNER_TEMP/nist-report/report.md"
           cmp studies/nist-bell-causal-audit/results/diagnostics.svg "$RUNNER_TEMP/nist-report/diagnostics.svg"

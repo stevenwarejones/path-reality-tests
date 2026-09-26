@@ -35,7 +35,7 @@
     },
     "history_conditional_joint_setting_tv": {
       "status": "assumed",
-      "evidence": "Scenario grid only; published Bell excess predictability is not silently equated with this joint-TV premise."
+      "evidence": "Assumed scenario grid. v2 requires a uniform per-history TV cap; v1 permits an average cap. Published Bell excess predictability and empirical setting balance do not establish either premise."
     },
     "ordinary_leakage_transport": {
       "status": "assumed",
@@ -43,11 +43,15 @@
     },
     "retrospective_endpoint_selection": {
       "status": "bounded_in_score",
-      "evidence": "Summable union bound over every contiguous start and length; does not justify deleted trials or outcome-tuned pairing."
+      "evidence": "v1 summable union over starts/lengths; v2 Ville bounds over endpoints plus summable starts and finite event/window/lambda family. Neither covers outcome-tuned pairing or undeclared window searches."
     },
     "outcome_rule_adaptedness": {
       "status": "assumed",
       "evidence": "Fixed pulse rules are explicit, but the archive does not establish that its phase calibration was selected independently of all scored outcomes. Endpoint uniformity does not cover arbitrary retrospective outcome-rule search."
+    },
+    "recorded_event_support": {
+      "status": "assumed",
+      "evidence": "Event-supported v2 assumes complete detector recording within each retained sync interval, reliable record ordering and binary latent settings consistent with unambiguous stored codes. No channel-0 record then implies no eligible click. Timestamp uncertainty may change phase eligibility but not move events between sync intervals. Not a hardware completeness certificate; unrestricted envelope also reported."
     }
   },
   "causal_required": [
@@ -59,7 +63,8 @@
     "causal_assignment_exogeneity",
     "history_conditional_joint_setting_tv",
     "ordinary_leakage_transport",
-    "outcome_rule_adaptedness"
+    "outcome_rule_adaptedness",
+    "recorded_event_support"
   ],
   "spacelike_additional_required": [
     "spacelike_endpoint_calibration"

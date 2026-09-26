@@ -8,20 +8,34 @@ and keeps ambiguous settings in the population. No spacelike causal claim is ena
 ## Primary three-pulse record
 
 The marginal differences describe valid-setting rows. The intervals instead use
-the full-row score, include worst-case completion of 19,968 uncertain rows,
-and require the assignment, record and causal premises in [statistics.md](../statistics.md).
+the full-row click-only score and count-sensitive confidence sequence.
+19,968 rows remain uncertain; 877 Alice and 797 Bob rows contain any raw
+detector event. The tighter envelope requires the explicit detector-record
+completeness/order premise in [click-statistics.md](../click-statistics.md).
 Here joint-setting TV allowance and ordinary-leakage allowance are **assumed zero**.
 Bounds are on absolute average signed effects, not average absolute influences.
 
-| Direction | Receiver setting | Descriptive difference (per million) | Conditional absolute upper limit |
-|---|---:|---:|---:|
-| A → B | 0 | -8.188 | 0.2652% |
-| A → B | 1 | -7.450 | 0.2314% |
-| B → A | 0 | 1.039 | 0.2546% |
-| B → A | 1 | -3.171 | 0.2425% |
+All numbers below are probabilities per million trials. Baseline comparisons
+are descriptive scale comparisons, not confidence bounds on a relative effect.
+
+| Direction | Receiver setting | Arm click rates | Descriptive gap | Click-only score | Event-supported upper | Unrestricted upper | v1 upper |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A → B | 0 | 140.0 / 131.8 | -8.19 | -8.29 | 38.64 | 226.92 | 2652.44 |
+| A → B | 1 | 428.3 / 420.9 | -7.45 | -7.43 | 54.82 | 237.07 | 2314.13 |
+| B → A | 0 | 129.8 / 130.9 | 1.04 | 1.05 | 30.95 | 217.34 | 2546.20 |
+| B → A | 1 | 399.0 / 395.8 | -3.17 | -3.14 | 51.91 | 233.18 | 2425.42 |
+
+The event-supported upper limits are 13.0–29.3% of the smaller observed arm click rate.
+The largest is 0.005482%, compared with the old 0.2652% reference.
+The old limit is 6–20 times the click rate and cannot exclude complete
+suppression of a detector at these rates. The unrestricted v2 envelope
+remains wider than the lower-rate baselines. The useful tighter comparison
+therefore depends materially on the detector-event support premise.
+This revised analysis was specified after inspecting the original results;
+it is retrospective, not preregistered or independently confirmatory.
 
 The simultaneous interval construction allocates total error 0.01 across the
-declared family and every contiguous interval; it tolerates arbitrary device
+72 event labels, a fixed lambda grid and every contiguous interval; it tolerates arbitrary device
 memory under the stated conditional assignment premise. Every reported interval
 contains zero. This does not validate the premise or certify no signaling.
 
@@ -29,17 +43,17 @@ contains zero. This does not validate the premise or certify no signaling.
 
 Largest primary upper limit across both directions and receiver settings:
 
-| Assumed joint-setting TV | Assumed leakage gap | Conditional upper limit |
+| Assumed per-history joint-setting TV cap | Assumed leakage gap | Event-supported upper limit |
 |---:|---:|---:|
-| 0 | 0 | 0.2652% |
-| 0 | 0.001 | 0.3652% |
-| 0 | 0.01 | 1.2652% |
-| 0.0001 | 0 | 0.3052% |
-| 0.0001 | 0.001 | 0.4052% |
-| 0.0001 | 0.01 | 1.3052% |
-| 0.001 | 0 | 0.6652% |
-| 0.001 | 0.001 | 0.7652% |
-| 0.001 | 0.01 | 1.6652% |
+| 0 | 0 | 0.0055% |
+| 0 | 0.001 | 0.1055% |
+| 0 | 0.01 | 1.0055% |
+| 0.0001 | 0 | 0.0055% |
+| 0.0001 | 0.001 | 0.1055% |
+| 0.0001 | 0.01 | 1.0055% |
+| 0.001 | 0 | 0.0058% |
+| 0.001 | 0.001 | 0.1058% |
+| 0.001 | 0.01 | 1.0058% |
 
 These allowances are sensitivity parameters, not measured calibration results.
 Lack of a valid history-conditional calibration prevents promoting these
@@ -47,7 +61,7 @@ numbers to an apparatus-certified causal bound.
 
 ## Reconstruction and window sensitivity
 
-| Side | Nominal words corrected | Narrow-radius words changed | Wide-radius words changed |
+| Side | Nominal words differing | Narrow-radius words changed | Wide-radius words changed |
 |---|---:|---:|---:|
 | alice | 105 | 5036 | 1093 |
 | bob | 94 | 1097 | 337 |
@@ -65,7 +79,9 @@ does not make this selection. Their size illustrates why complete trials matter.
 | B → A | 0 | -0.4154 |
 | B → A | 1 | -0.6620 |
 
-Correcting repeated-index click loss adds the following primary-window
+The bitwise-OR words differ from the archived words because of buffered
+fancy-index semantics. Effect on published analyses has not been assessed.
+The reconstructed record has these additional primary-window
 receiver clicks across all setting codes (counts, not inferred effects):
 
 - Alice: 31.

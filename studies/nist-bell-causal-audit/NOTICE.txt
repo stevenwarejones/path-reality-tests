@@ -2,9 +2,9 @@ NIST Bell test data attribution and preserved notice
 
 Source: https://www.nist.gov/pml/applied-physics-division/bell-test-research-software-and-data
 
-Modified extracts: on 2026-09-26 two two-sync raw-event excerpts were encoded
-as hexadecimal JSON, and five rows were extracted from diagnostics.v2.peter.csv.
-Derived count tables, corrected pulse masks and reports were computed independently.
+Derived works: on 2026-09-26 count tables, independently reconstructed pulse
+masks and reports were computed from the pinned NIST inputs. Source event
+extracts remain external; committed decoder examples are synthetic.
 NIST is the source of the original data and software; NIST does not endorse this audit.
 
 DISCLAIMER:

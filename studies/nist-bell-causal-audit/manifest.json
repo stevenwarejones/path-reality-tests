@@ -22,17 +22,5 @@
       "sha256": "80b452b55ce44bb46e37ffbcd1f1684ba3293aaf0b6445c36743da4a5d37c52d",
       "bytes": 787181075
     }
-  },
-  "fixtures": {
-    "archived-diagnostics.json": {
-      "sha256": "803a77881d47a6c9a5d248aa28f01b58003cd5bad6401b6266c6b4dc95f3977a",
-      "bytes": 2257,
-      "notice": "NOTICE.txt"
-    },
-    "multiclick.json": {
-      "sha256": "6c7f6e4ece0c8cb3f0baabc49c03fc43204a31d12629478de26a1da9a3cfa726",
-      "bytes": 1102,
-      "notice": "NOTICE.txt"
-    }
   }
 }

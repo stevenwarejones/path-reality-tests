@@ -9,15 +9,15 @@ HERE=Path(__file__).resolve().parent
 def raw_summary(raw):
     result={}
     for side,value in raw.items():
-        result[side]={k:v for k,v in value.items() if k not in ('patches','fixtures')}
+        result[side]={k:v for k,v in value.items() if k not in ('patches','fixtures','uncertain_detector_rows')}
         result[side]['changed_words']={k:len(v) for k,v in value['patches'].items()}
-        result[side]['nominal_corrections']=value['patches']['nominal']
+        result[side]['uncertain_rows_with_detector_event']=len(value['uncertain_detector_rows'])
     return result
 
 
 def verify(directory):
     directory=Path(directory)
-    for name in ('counts','analysis'):
+    for name in ('counts','analysis','click-analysis'):
         if json.loads((directory/(name+'.json')).read_text())!=json.loads((HERE/'results'/f'{name}.json').read_text()):
             raise ValueError(f'{name}: source regeneration differs')
     raw=json.loads((directory/'reconstruction.json').read_text())

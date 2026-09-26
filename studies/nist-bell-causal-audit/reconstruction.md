@@ -34,7 +34,7 @@ calibration of the hardware setting-generation/detection endpoints remain needed
 for a spacelike interpretation. The parser supplies complete records in the
 retained overlap, not a proof that every physical clock trial was recorded.
 
-## Pulse assignment and multiclick correction
+## Pulse assignment and multiclick comparison
 
 The archived builder estimates a local laser period from the previous corrected
 sync interval: divide its duration by round(duration/(129102/800)). For enormous
@@ -60,10 +60,13 @@ click words exactly. The independent implementation uses `np.bitwise_or.at` so
 all distinct eligible pulse bits survive. It changes 105 Alice and 94 Bob words.
 The primary three-bit outcome gains 31 Alice clicks and 27 Bob clicks.
 
-Two short real excerpts reproduce this mechanism in offline tests. They contain
-raw bytes, raw and HDF row indices, nominal configuration and expected corrected
-and archived words. They are attributed NIST extracts under [NOTICE.txt](NOTICE.txt),
-not synthetic measurements. The original full inputs are never edited.
+Synthetic offline cases exercise repeated-index semantics and buffer boundaries.
+Real-byte excerpts can be generated into the external reconstruction output;
+they are not committed. Full-source verification compares all stored settings
+and click words, not just excerpts. Attribution remains in [NOTICE.txt](NOTICE.txt).
+The original full inputs are never edited. The bitwise-OR words differ from the
+archived words because of buffered fancy-index semantics; their effect on the
+published analyses has not been assessed.
 
 The archived `diagnostics.v2.peter.csv` primary 16 counts reconcile exactly if
 the two ambiguous code-3 Alice no-click rows are assigned to code 2. This is a
@@ -85,6 +88,23 @@ these are all possible hardware failures or an estimate of their probability.
 The available archive lacks `build_file_txt.py`, which the archived Python 2
 scripts import. Thus rerunning the original chain unchanged is not possible from
 this ZIP. Our independent decoder is instead validated by full setting equality,
-full equality to the archived update behavior, explicit correction fixtures and
+full equality to the archived update behavior, synthetic update-semantics tests and
 published-repository count reconciliation. The standalone HDF5's missing fields
 are repaired for this run by reading raw events, not silently invented.
+
+## Detector-event support for uncertain rows
+
+Each nominal sync interval spans 800 laser pulses. A negative timestamp-offset
+jump and its positive return have rounded pulse counts summing to 1600 = 2×800:
+the offsets cancel across two intervals. `excursion_ranges` checks this structure.
+The half-open uncertain span ends at return-index+2 because the phase convention
+uses the preceding sync interval, so the next interval also needs a guard.
+
+The full decoder records channel-0 presence in each uncertain row, irrespective
+of pulse, phase, or receiver outcome eligibility, and checks that every decoded
+click has such a record. The count tables aggregate this support by stored setting
+context and chronological block. No uncertain row is deleted. Under the explicit
+record-order/completeness premise in [click-statistics.md](click-statistics.md),
+only these rows can contribute an unknown click. If events may be lost or assigned
+to a different sync interval, use the unrestricted-row envelope instead. Neither
+version covers an unknown number of missing physical trials.

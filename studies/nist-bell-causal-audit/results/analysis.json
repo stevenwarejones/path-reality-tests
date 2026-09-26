@@ -11,7 +11,8 @@
     "causal_assignment_exogeneity",
     "history_conditional_joint_setting_tv",
     "ordinary_leakage_transport",
-    "outcome_rule_adaptedness"
+    "outcome_rule_adaptedness",
+    "recorded_event_support"
   ],
   "spacelike_blockers": [
     "complete_physical_acquisition",
@@ -20,6 +21,7 @@
     "history_conditional_joint_setting_tv",
     "ordinary_leakage_transport",
     "outcome_rule_adaptedness",
+    "recorded_event_support",
     "spacelike_endpoint_calibration"
   ],
   "interpretation": "Retrospective recorded-row contrasts and assumption-indexed signed-effect intervals; no certified spacelike causal bound.",

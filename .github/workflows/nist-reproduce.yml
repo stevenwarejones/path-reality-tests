@@ -1,0 +1,48 @@
+name: Reproduce complete NIST sources
+
+on:
+  pull_request:
+    paths:
+      - 'studies/nist-bell-causal-audit/**'
+      - 'tests/test_nist*'
+      - '.github/workflows/nist-reproduce.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nist-source-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  full-source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned dependencies
+        run: python -m pip install -r studies/nist-bell-causal-audit/requirements.txt
+      - name: Download and verify all three source inputs
+        run: python studies/nist-bell-causal-audit/fetch_data.py --directory "$RUNNER_TEMP/nist-inputs"
+      - name: Decode all raw records and reconcile stored settings and words
+        run: |
+          python studies/nist-bell-causal-audit/reconstruct.py \
+            --hdf5 "$RUNNER_TEMP/nist-inputs/hdf5.hdf5" \
+            --alice "$RUNNER_TEMP/nist-inputs/alice.zip" \
+            --bob "$RUNNER_TEMP/nist-inputs/bob.zip" \
+            --output "$RUNNER_TEMP/nist-output/reconstruction.json"
+      - name: Regenerate both analyses and require source equality
+        run: |
+          python studies/nist-bell-causal-audit/audit.py \
+            --hdf5 "$RUNNER_TEMP/nist-inputs/hdf5.hdf5" \
+            --reconstruction "$RUNNER_TEMP/nist-output/reconstruction.json" \
+            --output-dir "$RUNNER_TEMP/nist-output"
+          python studies/nist-bell-causal-audit/click_audit.py --directory "$RUNNER_TEMP/nist-output"
+          python studies/nist-bell-causal-audit/verify_reproduction.py "$RUNNER_TEMP/nist-output"
+          git diff --exit-code

@@ -22,32 +22,35 @@ audit=load('nist_audit','audit.py')
 
 
 class DecoderTests(unittest.TestCase):
-    def test_real_multiclick_excerpts(self):
-        fixtures=json.loads((STUDY/'fixtures/multiclick.json').read_text())['records']
-        for f in fixtures:
-            a=np.frombuffer(bytes.fromhex(f['records_hex']),rec.DTYPE)
-            s,w,legacy,_,_=rec.decode_block(a,f['next_sync_tag'],None,f['config'])
-            self.assertEqual(int(w['nominal'][1]),f['nominal_word'])
-            self.assertEqual(int(legacy[1]),f['legacy_word'])
-            self.assertEqual(int(s[1]),f['settings'])
-            self.assertNotEqual(int(w['nominal'][1]),int(legacy[1]))
-            self.assertEqual(int(w['nominal'][1])|int(legacy[1]),int(w['nominal'][1]))
+    @staticmethod
+    def synthetic_events():
+        # Invented times: exact 161.375-bin laser period, 800 pulses per sync.
+        # Two distinct eligible bits, plus a duplicate, in the second trial.
+        a=np.array([(6,0,0),(2,1,0),(6,129100,0),(4,128001,0),
+                    (0,129100+90+round(28*161.375),0),(0,129100+90+round(29*161.375),0),
+                    (0,129100+90+round(29*161.375),0)],dtype=rec.DTYPE)
+        return a,258200,{'pk':90,'radius':4,'bitoffset':28}
+
+    def test_synthetic_multiclick_semantics(self):
+        a,tag,config=self.synthetic_events()
+        s,w,legacy,_,_=rec.decode_block(a,tag,None,config)
+        self.assertEqual(s.tolist(),[1,2])
+        self.assertEqual(w['nominal'].tolist(),[0,3])
+        self.assertEqual(legacy.tolist(),[0,2])
 
     def test_chunk_boundaries_preserve_records_and_censored_tail(self):
-        f=json.loads((STUDY/'fixtures/multiclick.json').read_text())['records'][0]
-        data=bytes.fromhex(f['records_hex'])
-        tail=np.array([(6,f['next_sync_tag'],0)],dtype=rec.DTYPE).tobytes()
+        a,tag,config=self.synthetic_events();data=a.tobytes()
+        tail=np.array([(6,tag,0)],dtype=rec.DTYPE).tobytes()
         for chunk in (1,2,3,7,100):
             blocks=list(rec.closed_blocks(io.BytesIO(data+tail),chunk))
             self.assertEqual(b''.join(a.tobytes() for a,_,_ in blocks),data+tail)
-            self.assertTrue(blocks[-1][2])
-            self.assertEqual(len(blocks[-1][0]),1)
+            self.assertTrue(blocks[-1][2]);self.assertEqual(len(blocks[-1][0]),1)
             words=[];previous=None
             for a,tag,censored in blocks:
                 if not censored:
-                    _,w,_,previous,_=rec.decode_block(a,tag,previous,f['config'])
+                    _,w,_,previous,_=rec.decode_block(a,tag,previous,config)
                     words.extend(w['nominal'].tolist())
-            self.assertEqual(words[-1],f['nominal_word'])
+            self.assertEqual(words,[0,3])
 
     def test_truncated_and_unhandled_sync_fail(self):
         with self.assertRaises(ValueError):list(rec.closed_blocks(io.BytesIO(b'x')))
@@ -149,19 +152,6 @@ class SnapshotTests(unittest.TestCase):
         self.assertTrue(all(r['unknown_rows']>0 for r in result['rows'] if r['block']=='all'))
         self.assertEqual(result,json.loads((STUDY/'results/analysis.json').read_text()))
 
-    def test_archived_diagnostics_reconcile_with_explicit_ambiguous_setting_mapping(self):
-        b=json.loads((STUDY/'results/counts.json').read_text())
-        t=np.array(b['stored_primary'])
-        source=json.loads((STUDY/'fixtures/archived-diagnostics.json').read_text())
-        row=next(r['counts'] for r in source['rows'] if 'pc_4_5_6.' in r['label'])
-        # The source diagnostic totals are reproduced when the TWO ambiguous A=3
-        # no-click records are assigned to code 2. This mapping is diagnostic only.
-        self.assertEqual(int(t[3].sum()),2)
-        t[2]+=t[3]
-        actual=[]
-        for a in (1,2):
-            for c in (1,2):actual.extend(t[a,c,::-1,::-1].ravel().tolist())
-        self.assertEqual(actual,row)
 
 
 if __name__=='__main__':unittest.main()

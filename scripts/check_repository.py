@@ -19,18 +19,8 @@ def main():
     if originals != expected:
         raise SystemExit(f"Tracked originals differ from manifest: {sorted(originals ^ expected)}")
     problems = []
-    nist = ROOT / "studies/nist-bell-causal-audit"
-    nist_entries = json.loads((nist / "manifest.json").read_text())["fixtures"]
-    expected_nist = {f"studies/nist-bell-causal-audit/fixtures/{name}" for name in nist_entries}
-    actual_nist = {p for p in tracked if p.startswith("studies/nist-bell-causal-audit/fixtures/")}
-    if actual_nist != expected_nist:
-        problems.append("NIST extract allowlist differs from its manifest")
-    for name, entry in nist_entries.items():
-        payload = (nist / "fixtures" / name).read_bytes()
-        if len(payload) != entry["bytes"] or hashlib.sha256(payload).hexdigest() != entry["sha256"]:
-            problems.append(f"NIST fixture integrity failure: {name}")
-        if not (nist / entry["notice"]).is_file():
-            problems.append(f"Missing NIST notice: {name}")
+    if any(p.startswith("studies/nist-bell-causal-audit/fixtures/") for p in tracked):
+        problems.append("NIST source extracts require explicit authorization; use external pinned inputs")
     for path in sorted(tracked):
         if path in expected:
             # The author's README is preserved byte-for-byte, not rewritten for local links.

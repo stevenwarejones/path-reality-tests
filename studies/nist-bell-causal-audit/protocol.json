@@ -1,13 +1,37 @@
 {
   "schema_version": 1,
   "run": "2015_09_18/03_43_CH_pockel_100kHz.run4.afterTimingfix2_afterfixingModeLocking",
-  "selection_reason": "A documented post-timing-fix, post-modelock-recovery run with both compressed raw streams and HDF5 available; chosen before calculating target contrasts. This is a retrospective public-data audit.",
-  "primary_slots_zero_based": [4, 5, 6],
-  "sensitivity_slots_zero_based": [[5], [3, 4, 5, 6, 7]],
+  "selection_reason": "A documented post-timing-fix, post-modelock-recovery run with both compressed raw streams and HDF5 available. The author states that this run was selected before target contrasts were calculated; that chronology is not independently verified.",
+  "primary_slots_zero_based": [
+    4,
+    5,
+    6
+  ],
+  "sensitivity_slots_zero_based": [
+    [
+      5
+    ],
+    [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  ],
   "chronological_blocks": 10,
   "family_alpha": 0.01,
-  "joint_setting_tv_scenarios": [0.0, 0.0001, 0.001],
-  "ordinary_leakage_gap_scenarios": [0.0, 0.001, 0.01],
+  "joint_setting_tv_scenarios": [
+    0.0,
+    0.0001,
+    0.001
+  ],
+  "ordinary_leakage_gap_scenarios": [
+    0.0,
+    0.001,
+    0.01
+  ],
   "causal_claim_enabled": false,
-  "spacelike_claim_enabled": false
+  "spacelike_claim_enabled": false,
+  "analysis_revision": "Retrospective click-only v2, specified after inspecting v1 results. Not preregistered or independently confirmatory. Centered-score v1 retained as conservative reference."
 }

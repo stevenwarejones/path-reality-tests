@@ -14,6 +14,22 @@ import numpy as np
 
 DTYPE = np.dtype([('ch', 'u1'), ('ttag', '<i8'), ('xfer', '<u2')])
 VARIANTS = ('nominal', 'narrow', 'wide')
+LASER_PULSES_PER_SYNC = 800
+
+
+def excursion_ranges(jumps, n):
+    """Opposite timestamp offsets cancel across two nominal sync intervals."""
+    if len(jumps) % 2:
+        raise ValueError('unpaired timestamp jump')
+    ranges = []
+    for (start, d0), (end, d1) in zip(jumps[::2], jumps[1::2]):
+        if not (start < end and d0 < 0 < d1 and d0+d1 == 2*LASER_PULSES_PER_SYNC):
+            raise ValueError('unrecognized paired timestamp excursion')
+        lo, hi = max(0, start), min(n, end+2)
+        if hi > lo:
+            ranges.append([lo, hi])
+    return ranges
+
 
 
 def sha256(path):
@@ -124,6 +140,7 @@ def discover_offset(archive, member, pattern):
 def audit_side(hdf_path, archive_path, side, chunk_records=1_000_000):
     patches = {v: [] for v in VARIANTS}
     fixtures = []
+    uncertain_detector_rows = []
     with h5py.File(hdf_path) as h, zipfile.ZipFile(archive_path) as z:
         members = [i for i in z.infolist() if not i.is_dir()]
         if len(members) != 1 or members[0].file_size % 11:
@@ -132,6 +149,8 @@ def audit_side(hdf_path, archive_path, side, chunk_records=1_000_000):
         n = len(h[side+'/settings'])
         offset = discover_offset(z, member, h[side+'/settings'][:64])
         config = {k: int(h[f'config/{side}/{k}'][()]) for k in ('pk','radius','bitoffset')}
+        expected_jumps = {who: h[who+'/badSyncInfo'][[0,3],:].T.astype('i8').tolist() for who in ('alice','bob')}
+        ranges = sum((excursion_ranges(expected_jumps[who], n) for who in expected_jumps), [])
         base = 0
         previous = None
         mismatches = {'settings': 0, 'legacy_clicks': 0}
@@ -152,6 +171,18 @@ def audit_side(hdf_path, archive_path, side, chunk_records=1_000_000):
                     sl = slice(lo-base, hi-base)
                     old_s = h[side+'/settings'][lo-offset:hi-offset]
                     old_c = h[side+'/clicks'][lo-offset:hi-offset]
+                    other = 'bob' if side == 'alice' else 'alice'
+                    other_s = h[other+'/settings'][lo-offset:hi-offset]
+                    uncertain = ~np.isin(old_s, [1,2]) | ~np.isin(other_s, [1,2])
+                    for left, right in ranges:
+                        uncertain[max(0,left-(lo-offset)):max(0,min(hi-lo,right-(lo-offset)))] = True
+                    sy = np.flatnonzero(a['ch'] == 6)
+                    present = np.zeros(len(sy), dtype=bool)
+                    present[np.searchsorted(sy,np.flatnonzero(a['ch']==0),side='right')-1] = True
+                    for word in words.values():
+                        if np.any((word != 0) & ~present):
+                            raise ValueError('click without recorded detector event')
+                    uncertain_detector_rows.extend((np.flatnonzero(uncertain & present[sl])+lo-offset).tolist())
                     mismatches['settings'] += int(np.count_nonzero(settings[sl] != old_s))
                     mismatches['legacy_clicks'] += int(np.count_nonzero(legacy[sl] != old_c))
                     for variant in VARIANTS:
@@ -174,6 +205,8 @@ def audit_side(hdf_path, archive_path, side, chunk_records=1_000_000):
                     covered += hi-lo
                 previous = next_previous
                 base += len(settings)
+        if jumps != expected_jumps[side]:
+            raise ValueError('raw timestamp jumps disagree with archived support ranges')
         if covered != n or any(mismatches.values()):
             raise ValueError(f'full reconstruction does not reconcile: {covered}/{n}, {mismatches}')
         return dict(side=side, archive_sha256=sha256(archive_path), member=member,
@@ -181,6 +214,7 @@ def audit_side(hdf_path, archive_path, side, chunk_records=1_000_000):
                     closed_raw_intervals=base, prefix_intervals=offset,
                     suffix_intervals=base-offset-n, censored_tail=tail,
                     covered_rows=covered, mismatches=mismatches, timestamp_jumps=jumps,
+                    uncertain_detector_rows=uncertain_detector_rows,
                     channel_records={str(i):int(v) for i,v in enumerate(channels) if v},
                     phase_config=config, patches=patches, fixtures=fixtures)
 

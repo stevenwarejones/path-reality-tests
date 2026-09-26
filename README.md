@@ -28,9 +28,10 @@ separation.
 
 The Wen study includes the pinned CC0 Dryad originals for reproducible offline
 checks, with the official source, version and SHA-256 manifest retained. Paper
-PDFs and complete workbook extracts are not committed. The NIST audit includes small attributed event/count extracts under the preserved
-NIST notice; its large inputs remain external and hash-pinned. Other datasets
-require explicit source/license review before inclusion.
+PDFs and complete workbook extracts are not committed. The NIST audit keeps its
+source inputs external and hash-pinned; committed tables are derived analysis
+artifacts. New source datasets or event extracts require explicit authorization
+and source/license review before inclusion.
 Repository code is distributed under the [Apache 2.0 license](LICENSE); external
 data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.

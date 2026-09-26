@@ -1,4 +1,9 @@
-# What the intervals cover
+# Conservative centered-score reference (v1)
+
+The primary retrospective v2 analysis is derived in [click-statistics.md](click-statistics.md).
+This reference is retained because its broader unknown-score allowance remains valid
+without the additional detector-event support restriction. At this run’s click rates
+it is too imprecise to exclude a setting completely suppressing receiver clicks.
 
 This is a retrospective audit of one documented NIST run. The primary record
 is any receiver click in zero-based pulse bits 4, 5, 6. No click is outcome 0;

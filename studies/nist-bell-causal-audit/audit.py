@@ -8,7 +8,7 @@ import numpy as np
 
 from artifacts import write_json
 from inference import score_interval
-from reconstruct import VARIANTS, sha256
+from reconstruct import VARIANTS, sha256, excursion_ranges
 
 HERE=Path(__file__).resolve().parent
 
@@ -25,17 +25,8 @@ def counts(a,b,ac,bc):
 
 
 def jump_ranges(reconstruction,n):
-    ranges=[]
-    for side in ('alice','bob'):
-        jumps=reconstruction[side]['timestamp_jumps']
-        if len(jumps)%2:
-            raise ValueError('unpaired timestamp jump')
-        for (start,d0),(end,d1) in zip(jumps[::2],jumps[1::2]):
-            if not (start<end and d0<0<d1 and d0+d1==1600):
-                raise ValueError('unrecognized paired timestamp excursion')
-            lo,hi=max(0,start),min(n,end+2)
-            if hi>lo:ranges.append([lo,hi])
-    return ranges
+    return sum((excursion_ranges(reconstruction[side]['timestamp_jumps'],n)
+                for side in ('alice','bob')),[])
 
 
 def apply_patches(old,start,patches):
@@ -67,6 +58,8 @@ def reconstruct_counts(hdf_path, reconstruction, protocol):
         cuts=np.linspace(0,n,nb+1,dtype='i8')
         tables=np.zeros((3,len(masks),nb,4,4,2,2),dtype='i8')
         trusted=np.zeros_like(tables)
+        unknown_contexts=np.zeros((nb,4,4),dtype='i8')
+        event_contexts=np.zeros((nb,2,4,4),dtype='i8')
         stored=np.zeros((4,4,2,2),dtype='i8')
         patches={}
         for side in ('alice','bob'):
@@ -85,15 +78,26 @@ def reconstruct_counts(hdf_path, reconstruction, protocol):
                 secure=np.ones(len(a),dtype=bool)
                 for lo,hi in ranges:
                     secure[max(0,lo-start):max(0,min(len(a),hi-start))]=False
+                uncertain = ~secure | ~np.isin(a,[1,2]) | ~np.isin(b,[1,2])
+                unknown_contexts[block] += np.bincount(4*a[uncertain].astype('i8')+b[uncertain],minlength=16).reshape(4,4)
+                for si,side in enumerate(('alice','bob')):
+                    events=np.asarray(reconstruction[side]['uncertain_detector_rows'],dtype='i8')
+                    if len(events) and (np.any(np.diff(events)<=0) or events[0]<0 or events[-1]>=n):
+                        raise ValueError('invalid uncertain detector support')
+                    rows=events[(events>=start)&(events<stop)]-start
+                    if np.any(~uncertain[rows]):
+                        raise ValueError('detector support outside uncertain rows')
+                    event_contexts[block,si] += np.bincount(4*a[rows].astype('i8')+b[rows],minlength=16).reshape(4,4)
                 for vi,v in enumerate(VARIANTS):
                     ca=apply_patches(olda,start,patches['alice',v]);cb=apply_patches(oldb,start,patches['bob',v])
                     for wi,mask in enumerate(masks):
                         oa=(ca&mask)>0;ob=(cb&mask)>0
                         tables[vi,wi,block]+=counts(a,b,oa,ob)
                         trusted[vi,wi,block]+=counts(a[secure],b[secure],oa[secure],ob[secure])
-    return dict(schema_version=1,source_sha256=sha256(hdf_path),
+    return dict(schema_version=2,source_sha256=sha256(hdf_path),
                 protocol=protocol,n=n,block_edges=cuts.tolist(),slot_groups=slots,
                 phase_variants=list(VARIANTS),timestamp_uncertain_ranges=ranges,
+                unknown_contexts=unknown_contexts.tolist(),uncertain_event_contexts=event_contexts.tolist(),
                 stored_primary=stored.tolist(),tables=tables.tolist(),trusted_tables=trusted.tolist())
 
 
