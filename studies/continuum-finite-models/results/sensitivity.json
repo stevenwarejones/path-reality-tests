@@ -3,10 +3,11 @@
   "kind": "synthetic-prospective-design",
   "data_inputs": [],
   "source_sha256": {
-    "model.py": "ae2de6e953b0a4be149ba9eb284809ed75e7ccf9318e170c9e0f1ba2cd977d61",
-    "design.py": "2be365d7daa02fa464ef3572f5332b7cb55562a1edb32a4e16b44537d896898a",
-    "protocol.md": "b6500a326f71c1bf65e4212393c93cda374fabb892782d92e0b0724645b4d384",
-    "model.md": "00068907eb111665822cbcf82a093919c98ac0f5436076bc4c13b5c10277365b"
+    "model.py": "c600309b227a60fb9ef84a0a828ace979bac874ebe350efbb55830affdd7fd3e",
+    "decision.py": "828f288949d1ba51992c07619d0d6e2cda172825a4a2d4547ede44885ab3c584",
+    "design.py": "a1ea1a703a86c67be2b1111e5be14d61c06034311a9e4116c094f24bd953d13e",
+    "protocol.md": "32269f09aef1a9e5e28e26c451950f965f84987eaa51aadd00d0bf633968bc4e",
+    "model.md": "881c1090d4f75a44e123bd01de8eda771323d6dcb5367a39a3cfa4253605cc45"
   },
   "alpha_total": 0.05,
   "alpha_calibration": 0.025,

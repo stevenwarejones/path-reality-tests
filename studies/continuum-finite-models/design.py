@@ -51,7 +51,7 @@ def generate():
                             excludes_with_100000000_eligible=(eligible is not None and eligible<=100000000),
                             total_source_attempts=None,
                             decision='conditional-power-guarantee' if n else 'no-certified-gap'))
-    hashes={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ('model.py','design.py','protocol.md','model.md')}
+    hashes={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in ('model.py','decision.py','design.py','protocol.md','model.md')}
     return dict(schema=1,kind='synthetic-prospective-design',data_inputs=[],source_sha256=hashes,
         alpha_total=.05,alpha_calibration=.025,alpha_main=.025,beta_main=.1,
         guaranteed_unconditional_power_lower=.875,

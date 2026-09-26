@@ -83,7 +83,10 @@ def project_normalize(coefficients, keep):
     if retained == 0:
         return None, tail, 2.0
     out = np.where(keep, c/sqrt(retained), 0)
-    return out, tail, sqrt(2*(1-sqrt(max(0, 1-tail))))
+    # Rationalized form preserves a nonzero error when tail is below machine epsilon.
+    # The tolerance above admits last-bit normalization drift; clamp only at endpoints.
+    tau=min(1.0,max(0.0,tail))
+    return out, tail, sqrt(2*tau/(1+sqrt(1-tau)))
 
 
 def approximation(ring, sites, cutoff, time, tail=0.0):

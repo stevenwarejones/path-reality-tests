@@ -66,6 +66,8 @@ c_J=P_Jc/sqrt(1-tau) satisfies
 
     ||c-c_J|| = sqrt(2(1-sqrt(1-tau))),  D(c,c_J)=sqrt(tau).
 
+The implementation evaluates the norm error as
+sqrt(2*tau/(1+sqrt(1-tau))) to avoid cancellation for tiny positive tails.
 Consequently TV≤min(1,sqrt(tau)+epsilon). If tau=1 normalized projection is
 undefined: use any normalized accessible state and the trivial TV≤1 instead.
 For every fixed normalized c, T<infinity, independent n<infinity and margin d>0,
@@ -116,3 +118,11 @@ including phase extrema between endpoints. It relaxes cross-setting correlations
 A strictly positive disjoint coordinate gap is a sufficient robust separation
 in full-outcome TV. Zero certified gap is inconclusive, unless an explicit
 shared prediction (such as zero visibility) is constructed.
+
+## Formal constant convention
+
+The empirical `approximation` helper implements the global 1/24 mathematical
+remainder above. The companion's currently checked Lean estimate is the
+conservative local 5/96 remainder with |ka|≤1. That local theorem does **not**
+certify the global helper. The sensitivity map and executable decision use exact
+cosine dispersion and do not call either approximation or truncation helper.

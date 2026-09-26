@@ -7,6 +7,8 @@ mode phases, with a detectable difference only under adequate access and calibra
 
 The [model](model.md) gives the circle dynamics, spectral counterexample,
 approximation/tail derivation, finite-resource quantifiers and exact blind spots.
+The executable [decision rule](decision.py) converts complete calibration/main
+counts into rejected candidate site counts with coordinate witnesses.
 The [protocol](protocol.md) specifies a common 24-setting experiment, complete
 outcomes, nuisance boxes, simultaneous rejection and conditional acquisition cost.
 The [literature review](literature.md) assesses primary sources and dataset fit.
@@ -22,7 +24,8 @@ python /path/to/repository/studies/continuum-finite-models/design.py --check
 
 From the repository root, `python -m unittest discover -s tests -v` includes
 independent matrix diagonalization/evolution, complete POVM tables, convergence,
-tail control, degeneracies, nuisance extrema, joint distributions and sampling
+stable tiny-tail control, calibration boundaries, strict count-based decisions,
+complete failures, joint distributions and sampling
 checks. Running `design.py` without `--check` regenerates JSON and SVG. Source
 hashes identify the numerical code and its model/protocol assumptions; the Git
 commit identifies the complete revision. Floating values compare with declared
@@ -51,7 +54,7 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | CF06 | Finite-resource/product quantifiers derived; formal joint-law proof open |
 | CF07 | Implementable ideal readout, wrapping and negative controls checked; apparatus calibration missing |
 | CF08 | Calibration degeneracies and sufficient continuous-box certificate checked |
-| CF09 | Conditional eligible budgets complete; source and physical calibration cost blocked |
+| CF09 | Executable count-based decision and conditional eligible budgets complete; source and physical calibration cost blocked |
 | CF10 | Scoped primary-source comparison completed; unavailable version details not used |
 | CF11 | No inspected compatible dataset; prospective outcome selected |
 | CF12 | Literal path occupancy outside scope; no conclusion relies on it |

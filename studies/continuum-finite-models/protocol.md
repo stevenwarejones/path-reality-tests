@@ -76,3 +76,36 @@ assume monotonicity in N or time; phase wrapping gives blind regions. Before
 acquisition fix the candidate set, controls, calibration certificates, eligible
 trial rule, multiplicity and stopping counts. A sequential/adaptive extension
 requires different coverage arguments.
+
+## Executable count-to-exclusion rule
+
+`decision.py` implements the rule above. The input JSON has `calibration` entries
+`detection`, `phase0`, and `phase_pi`, each `[successes, total]`; `main_counts` is
+a 24-row list of `[plus, minus, failure]`; `candidates` contains distinct integer
+site counts. Optional `certificates` supplies `phase_offset`, `fractional_scale`,
+`contamination`, `efficiency_transport`, and `contrast_transport`. Defaults are
+zero certificate radii and the risk allocation above, **not evidence that real
+errors vanish**. All 24 settings occur in the order returned by
+`decision.DEFAULT_SETTINGS`. The detection calibration's success is any click;
+the phase calibrations' success is plus, with all trials in the denominator.
+
+```sh
+python studies/continuum-finite-models/decision.py counts.json --output exclusions.json
+```
+
+The function intersects simultaneous calibration intervals with 0≤w≤eta≤1,
+rather than clipping noisy point estimates and assigning them spuriously small
+uncertainty. It encloses that physical intersection by a rectangle. If the
+intersection is empty it reports `inconclusive-calibration` and excludes no
+candidate. This conservative refusal can reduce power off the calibration
+coverage event; the 87.50% guarantee already charges that event's risk.
+
+Each candidate is rejected only for a **strict** violation of an enlarged null
+coordinate interval. A value exactly on the threshold is retained. The output
+includes every rejected/retained N and witnesses naming setting, outcome,
+frequency, interval and statistical radius. Failure is tested like either click
+outcome. Unequal stratum totals use their own radii with the same 72-coordinate
+penalty; they must still come from a fixed acquisition plan. Candidate count
+does not change multiplicity. End-to-end tests drive this actual function with
+adverse calibration/main fluctuations within the promised coverage events at
+the advertised integer budgets, and also check a command-line round trip.

@@ -58,8 +58,8 @@
   {
     "id": "CF09",
     "status": "conditional",
-    "evidence": "protocol.md",
-    "disposition": "Fixed allocation, multiplicity and strict integer eligible budgets",
+    "evidence": "decision.py",
+    "disposition": "Executable simultaneous count-to-exclusion rule, fixed allocation and strict integer eligible budgets",
     "next_step": "Source efficiency and physical calibration cost"
   },
   {
