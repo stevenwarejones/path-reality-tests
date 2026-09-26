@@ -4,13 +4,13 @@
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "Common interface and finite-object distinctions",
-    "next_step": "Substantive re-review of both draft PRs"
+    "next_step": "none"
   },
   {
     "id": "CF02",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral evolution and full Hilbert chain compiled at 1289d1b; tests and axiom audit passed",
+    "disposition": "Infinite spectral evolution and full Hilbert chain passed the full formal check at 4864f79; regenerated evidence committed at a8d6867",
     "next_step": "Position-space L2 identification remains explicitly external"
   },
   {
@@ -18,28 +18,28 @@
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "DFT, cyclic generator, alias-free band synthesis and strict band tests",
-    "next_step": "Final combined audit and substantive re-review"
+    "next_step": "none"
   },
   {
     "id": "CF04",
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "Exact spectral counterexample with complete POVMs and formal finite embedding",
-    "next_step": "Final combined audit and substantive re-review"
+    "next_step": "none"
   },
   {
     "id": "CF05",
     "status": "conditional",
     "evidence": "model.md",
     "disposition": "Global 1/24 remainder, normalized tail, strong convergence and Born continuity implemented formally; sharper empirical trace tail independently derived",
-    "next_step": "Refresh generated formal evidence; helper returns separately labeled empirical and formal tail bounds"
+    "next_step": "Sharper sqrt(tau) tail coefficient remains independently derived; formal bound uses 2*sqrt(tau)"
   },
   {
     "id": "CF06",
     "status": "conditional",
     "evidence": "model.md",
     "disposition": "Full product TV and fixed-resource test-error composition implemented formally",
-    "next_step": "Refresh generated evidence; exported limit theorem is IID, with no adaptive or correlated-trial claim"
+    "next_step": "Composition over a heterogeneous fixed setting menu is not yet an exported formal theorem"
   },
   {
     "id": "CF07",

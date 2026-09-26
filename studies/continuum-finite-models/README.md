@@ -52,8 +52,8 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | ID | Disposition |
 |---|---|
 | CF01 | Common operational interface and finite objects specified |
-| CF02 | Infinite spectral evolution constructed; final companion audit in progress |
-| CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal spectrum and aliasing compiled; final combined checks pending |
+| CF02 | Infinite spectral evolution and full chain compiled and audited |
+| CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal spectrum and aliasing compiled; combined formal checks passed |
 | CF04 | Spectral finite counterexample checked with complete POVMs; formal finite embedding compiled |
 | CF05 | Global 1/24 approximation, normalized tail and Born bounds implemented formally |
 | CF06 | Joint-product TV and finite-resource limit/test-error composition implemented formally |
@@ -70,10 +70,11 @@ calling the current numerical result a continuum theorem.
 
 
 Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
-The [full formal source at 1289d1b](https://github.com/stevenwarejones/ontology-separation/tree/1289d1b618621bd5aeea3d0e1e593265430adf26)
+The [formal source and regenerated evidence at a8d6867](https://github.com/stevenwarejones/ontology-separation/tree/a8d68678e85d12fe1204390e67daa0d750ccfe98)
 is immutable and includes the global dispersion, normalized tail, Born, product-TV,
-strong-convergence and explicit witness chain. Library/tests and the axiom audit passed at this commit. See the formal PR for
-the corrected report-export list and regenerated artifact status. This is a draft-branch
-commit, not a claim that the formal companion has merged.
+strong-convergence and explicit witness chain. Its Lean sources passed the full
+`scripts/check.sh` at `4864f79`; the linked commit adds the exact regenerated audit
+and theorem report. This is an immutable draft-branch commit, not a merged-main
+commit. The final-head snapshot consistency gate remains a merge requirement.
 Both studies remain drafts until the complete formal result and final artifacts
 are verified; merged-main links can be pinned after that review.
