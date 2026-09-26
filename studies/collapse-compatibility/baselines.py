@@ -149,4 +149,3 @@ def macroscopicity_reproduction(directory):
             "density_relative_to_max_at_endpoints":[float(density[0]),float(density[-1])],
             "uncertainty_warning":"incident rate treated as binomial trial count; phase estimated from these scans",
             "CSL_mapping":"rc=hbar_over_sigma_q/sqrt(2); lambda=(m0/me)^2/tau_e"}
-

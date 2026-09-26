@@ -1,0 +1,10 @@
+{
+  "observed_baselines": {"enabled": true, "scope": "descriptive sodium/force reproduction with discrepancies; conditional author posterior"},
+  "radiation_signal_count_upper": {"enabled": true, "scope": "Poisson event-count upper without background subtraction"},
+  "selected_envelope_feasibility": {"enabled": true, "scope": "stationary-body response approximation and deterministic published envelopes"},
+  "white_joint_confidence_region": {"enabled": false, "reason": "No joint nuisance/coverage construction; isolated force load and convention reconciliation incomplete"},
+  "colored_joint_physics": {"enabled": false, "reason": "Moving-apparatus response in a common noise frame and full detector windows are not established"},
+  "arbitrary_spectrum_exclusion": {"enabled": false, "reason": "No empirically derived positive sodium kernel or all-frequency instrument certificate"},
+  "radiation_parameter_exclusion": {"enabled": false, "reason": "Public subset lacks energy migration and full 2026 range/calibration likelihood"},
+  "novel_physics_result": {"enabled": false, "reason": "Closely related theory is established; novelty not demonstrated"}
+}

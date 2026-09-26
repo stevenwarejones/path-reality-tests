@@ -24,9 +24,66 @@ r = local_module("response")
 s = local_module("spectral_bounds")
 i = local_module("inference")
 data = local_module("io_data")
+_previous = {name: sys.modules.get(name) for name in ["response", "io_data"]}
+try:
+    sys.modules["response"] = r
+    sys.modules["io_data"] = data
+    combo = local_module("combinations")
+    baseline = local_module("baselines")
+finally:
+    for name, value in _previous.items():
+        if value is None:
+            sys.modules.pop(name, None)
+        else:
+            sys.modules[name] = value
 
 
 class CollapseResponses(unittest.TestCase):
+    def test_cube_force_torque_limit_and_nonnegative(self):
+        force, torque = combo.cube_response(1e-7)
+        self.assertGreater(force, 0)
+        self.assertAlmostEqual(torque/force/(.046**2/6), 1, places=4)
+        with self.assertRaises(ValueError): combo.cube_response(.1)
+
+    def test_radiation_neutrality_high_energy_and_colored_suppression(self):
+        self.assertAlmostEqual(float(combo.radiation_charge_factor(0.)), 0., places=10)
+        self.assertAlmostEqual(float(combo.radiation_charge_factor(1e9))/(54**2+54), 1., places=6)
+        energies = np.linspace(1, 30, 2001)
+        white = combo.radiation_response(energies, np.ones_like(energies), 1e-7, 0)
+        colored = combo.radiation_response(energies, np.ones_like(energies), 1e-7, 1e-12)
+        self.assertLess(colored/white, 1e-12)
+
+    def test_count_level_white_collapse_injection(self):
+        rng = np.random.default_rng(1729)
+        x = np.linspace(0, 10*r.D, 410)
+        coefficient = r.triangular_white_coefficient(170000., 158., 1e-7)
+        for rate in [0., 1e-8]:
+            expected = .4*np.exp(-rate*coefficient)
+            counts = rng.poisson(1000*(1+expected*np.cos(2*np.pi*x/r.D+.3)))
+            fit = baseline.harmonic_fit(x, counts)
+            self.assertLess(abs(fit["visibility"]-expected), 5*fit["visibility_se_gaussian"])
+
+    def test_psd_level_gamma_injection(self):
+        rng = np.random.default_rng(31415)
+        frequency = np.linspace(3515., 3550., 1468)
+        true_b = 2.6
+        predicted = baseline.psd_model(frequency, [1., true_b, .1, 3532.75, 1.], 1e6)
+        measured = rng.gamma(80, predicted/80)
+        fit = baseline.fit_psd(np.array([frequency, measured, measured/np.sqrt(80)]).T)
+        self.assertLess(abs(fit["B_phi0_squared_per_hz"]/(true_b*1e-18)-1), .1)
+        self.assertEqual(len(fit["omitted_zero_based_indices"]), 6)
+
+    def test_benchmark_escape_preserves_finite_covariance(self):
+        g = r.sphere_static_coefficient(1e-7, 2200., 1e-7, 1e-7)
+        last = None
+        for tau in [1e4, 1e6, 1e8]:
+            lam = 10/(g*r.ou_time(.01, tau))
+            self.assertAlmostEqual(lam*g*r.ou_time(.01, tau), 10.)
+            response = lam*r.ou_spectrum(2*np.pi*.003, tau)
+            if last is not None: self.assertLess(response, last/90)
+            last = response
+        self.assertAlmostEqual(lam/(2*tau)/(10/(g*.01**2)), 1., places=8)
+
     def test_white_trajectory_independent_time_integral(self):
         mass, velocity, rc = 170000., 158., 1e-7
         time = r.L/velocity

@@ -24,6 +24,22 @@
       "bytes": 12910,
       "sha256": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
       "redistribution": "Originals not redistributed; archive license not resolved from metadata."
+    },
+    {
+      "name": "XENONnT_ER_v2.zip",
+      "doi": "10.5281/zenodo.7992017",
+      "url": "https://zenodo.org/records/7992017/files/zenodo.zip",
+      "bytes": 28656,
+      "sha256": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "redistribution": "Original kept external; source license unresolved."
+    },
+    {
+      "name": "lpf_drs_sample.fits",
+      "url": "https://heasarc.gsfc.nasa.gov/FTP/lpf/data/fits/drs_20160110_182410__20160116_155729.fits",
+      "bytes": 1146240,
+      "sha256": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268",
+      "role": "access and metadata probe only; not the rotational bound source",
+      "redistribution": "External only; NASA DRS archive; no redistribution asserted."
     }
   ]
 }

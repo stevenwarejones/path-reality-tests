@@ -81,4 +81,3 @@ def force(directory):
     cells = {c:float(sheet[c].value) for c in ["D20","E20","D23","E23","K20","L20","M20","N20","O20","L26","M26","N29"]}
     formulas = openpyxl.load_workbook(path,data_only=False).active
     return rows,spectra,cells,{c:formulas[c].value for c in ["K23","L23","M23","N23","L26","M26","N29"]}
-

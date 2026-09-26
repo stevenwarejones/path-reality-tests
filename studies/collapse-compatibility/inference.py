@@ -28,4 +28,3 @@ def calibration_demo(seed,repeats,alpha):
     return {"evidence":"simulated","alpha":alpha,"seed":seed,"cases":result,
             "procedure":"two known-variance Gaussian responses, Bonferroni upper bounds",
             "scope":"calibration demonstration only; NOT sodium counts or Blackman periodograms"}
-

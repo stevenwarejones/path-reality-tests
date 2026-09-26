@@ -1,0 +1,71 @@
+{
+  "data": {
+    "author_oracle": {
+      "evaluations": 45,
+      "max_absolute_discrepancy": 1.94289029309e-16,
+      "module_sha256": "9dcdaf0f834af2e40f2a213ab58910a3f78f33bc25374af78b958281e778d65b",
+      "scope": "independent optics/spherical-reduction implementation versus inspected author functions"
+    },
+    "evidence": "simulated",
+    "scope": "simulation calibration independent of observational likelihood",
+    "simulation": {
+      "alpha": 0.05,
+      "cases": [
+        {
+          "binomial_mc_interval95": [
+            0.0,
+            0.000737503801108
+          ],
+          "false_exclusions_of_true_response": 0,
+          "recovered_spectrum_from_mean": [
+            -0.000885703739137,
+            -0.000300901132432
+          ],
+          "scenario": "zero_coupling",
+          "trials": 5000,
+          "true_spectrum": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "binomial_mc_interval95": [
+            0.0375455505582,
+            0.0489957308551
+          ],
+          "false_exclusions_of_true_response": 215,
+          "recovered_spectrum_from_mean": [
+            0.70071810161,
+            0.400983005988
+          ],
+          "scenario": "injected",
+          "trials": 5000,
+          "true_spectrum": [
+            0.7,
+            0.4
+          ]
+        }
+      ],
+      "evidence": "simulated",
+      "procedure": "two known-variance Gaussian responses, Bonferroni upper bounds",
+      "scope": "calibration demonstration only; NOT sodium counts or Blackman periodograms",
+      "seed": 20260926
+    }
+  },
+  "metadata": {
+    "code_sha256": "bf283517c932502bc85412bbb20b667ef2d09b3badbb6d7eb4222e7cf9758da4",
+    "empirical_joint_confidence_enabled": false,
+    "manifest_sha256": "0630198383692d2f2d4e8b6aeb6d9a4c676e0728bba68c026d8af09e35b6abbd",
+    "protocol_sha256": "1e8d7a707d5525f25b696cdf0a6af92c130da5cb89f9f47abad9fe89e44070bd",
+    "revision_association": "content hashes; no circular output/commit hash",
+    "source_hashes": {
+      "Final_data.xlsx": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "Na-Cluster-Interference.zip": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "PSD.zip": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "XENONnT_ER_v2.zip": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "lpf_drs_sample.fits": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268"
+    },
+    "sufficiency_sha256": "a1bf984d99d63000d3d692f18d859137115ad97a3504f1f9df286a999cb62aed",
+    "units": "SI except explicitly named keV, mK, mW, atomic mass units"
+  }
+}

@@ -23,8 +23,7 @@ def main():
             if len(raw)!=item["bytes"] or digest(raw)!=item["sha256"]: raise ValueError("Download integrity failure")
             target.write_bytes(raw)
     verify_sources(directory)
-    print("All three source objects match pinned hashes")
+    print("All external source objects match pinned hashes")
 
 
 if __name__=="__main__": main()
-

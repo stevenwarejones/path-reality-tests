@@ -37,4 +37,3 @@ def affine_certificate(knots,kernels,macro,tail_slopes,macro_tail_slope,weights,
     return {"upper_bound":str(sum(yi*bi for yi,bi in zip(y,b))),"knot_slacks":list(map(str,residuals)),
             "tail_slope_slack":str(tail),"evidence":"formal_conditional",
             "scope":"exact rational affine domination on [0,infinity); not Lean-verified"}
-

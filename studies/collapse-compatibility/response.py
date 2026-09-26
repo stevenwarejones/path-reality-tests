@@ -117,4 +117,3 @@ def prescribed_path_kernel(times,weights,path_a,path_b,omega,rc,mass_ratio=1.):
         return np.exp(-np.sum((x[:,None]-y[None,:])**2,axis=-1)/(4*rc*rc))
     gram = overlap(a,a)+overlap(b,b)-overlap(a,b)-overlap(b,a)
     return .5*mass_ratio**2*np.sum(w[:,None]*w[None,:]*np.cos(omega*(t[:,None]-t[None,:]))*gram)
-
