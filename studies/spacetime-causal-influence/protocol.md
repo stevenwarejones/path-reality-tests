@@ -11,7 +11,7 @@ superluminal effect. Every numerical specification below is hypothetical.
 | Intervention | Fresh local bit selects a short amplitude-modulation pulse at A | Fresh bit actuates the same modulator only after B's record is secured |
 | Primary record | Any predeclared B click in a fixed early window, with all other cases mapped to zero | Previously latched B bit; no subsequent relabeling |
 | Causal null | Local nonselective operation outside B's causal past leaves its marginal invariant | Future choice neither changes the earlier response nor shares/predicts its preparation |
-| Closest reviewed work | Optical precursor observations; fast randomized spacelike optical Bell geometry; Fermi detector response | Delayed-choice causal models and no-backward-signaling marginal logic; ordinary quantum eraser coincidences measure another quantity |
+| Closest reviewed work | Stenner–Gauthier–Neifeld symbol-arrival experiment; optical precursors; randomized spacelike Bell geometry; Fermi detector response | Delayed-choice causal models and no-backward-signaling marginal logic; ordinary quantum eraser coincidences measure another quantity |
 | Measurement-to-model premises | Complete local records, fresh assignment, full support certificate and nuisance coupling bounds | The same assignment/record premises plus earlier record fixation and no B→RNG data path |
 | Sensitivity | Early interval can bound binary influence; same hardware gives a delayed in-cone positive control | IID association intervals have the same count scaling; backward-effect identification needs an additional causal model; no causal positive control on the fixed past bit |
 | Practical limitation | Separation, synchronization, support tails, leakage and detector recovery need measured bounds | Record attestation does not establish hidden setting independence; delayed optics does not predict a nonzero past marginal |
@@ -179,3 +179,15 @@ IID zero-failure calibration calculation above does not establish that transport
 by itself. A characterized device envelope or a separate sequential calibration
 argument is required; otherwise restrict the entire inference to a justified
 IID regime. This missing apparatus input is included in ST06/ST07.
+
+## Transport from separate control runs
+
+Positive-control runs establish a delayed response only under their own settings
+and device state. Transferring that sensitivity to primary runs requires an
+explicit stability or drift bound covering source power, modulator drive, detector
+recovery, timing and acquisition electronics. Predeclare bracketing controls and
+tolerances; a failed tolerance invalidates the claimed transport. Bracketing alone
+does not prove arbitrary-history stability. Neither positive nor negative controls
+automatically supplies the history-conditional nuisance envelope in ST06. Include
+transport error and its calibration failure risk in the declared budget, or leave
+the quantitative physical inference unsupported.

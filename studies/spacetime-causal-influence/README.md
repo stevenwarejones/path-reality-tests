@@ -57,13 +57,19 @@ miss probability β=0.10, the conservative inequality guarantees at least 90.00%
 power under a signed effect of at least d on every history. It assumes conditional
 setting bias ζ=0. Nonzero ζ needs the additional correction in the statistics guide.
 
-| Observed gap d | Nuisance allowance B | Sufficient total trials | Time at hypothetical 10 kHz |
+| Observed gap d | Assumed nuisance allowance B | Sufficient total trials | Time at hypothetical 10 kHz |
 |---|---|---:|---:|
 | 0.10 | 0.002 | 3,038 | 0.304 s |
 | 0.03 | 0.002 | 37,211 | 3.721 s |
 | 0.01 | 0.002 | 455,830 | 45.583 s |
 | 0.003 | 0.002 | 29,173,105 | 2,917.311 s |
 | 0.01 | 0.01 | No uniform separation | — |
+
+**Every B in this table is assumed, not measured.** In particular B=0.002
+is conditional on the history-conditional or covered realized-average calibration
+envelope; establishing it remains externally blocked in ST06. Separate positive
+control runs also require a justified transfer to primary-run conditions; they
+do not certify this envelope or the absence of an early effect.
 
 These times exclude calibration, controls, resets and logging overhead. More
 shots cannot uniformly separate an alternative already admitted by the nuisance
@@ -88,15 +94,18 @@ The prospective resource study is complete conditional on those inputs.
 | Kind | Result | Evidence / limit |
 |---|---|---|
 | Established theory | Local normalized operations preserve a remote marginal under the stated causal premises | [Primary evidence and closest-work comparison](evidence-table.md); not a new no-communication theorem |
-| Formal verification | Finite marginal identity, normalized g-family, exclusion, toy access equivalence, countermodels, quantum algebra, interval and geometry implications | [Lean guide](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/docs/SPACETIME_INFLUENCE.md); no continuum or concentration theorem is formalized |
+| Formal verification | Finite marginal identity, normalized g-family, exclusion, toy access equivalence, countermodels, quantum algebra, interval and geometry implications | [Lean guide](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/docs/SPACETIME_INFLUENCE.md); no continuum or concentration theorem is formalized |
 | Mathematical analysis | Fixed-horizon memory interval, IID difference interval, nuisance transport and power inequality | [statistics.md](statistics.md), [physical-bridge.md](physical-bridge.md) |
 | Numerical evidence | Seeded synthetic repetitions, numerical binomial powers and strict sample counts | [config.json](config.json), [results.json](results.json), [design.py](design.py) |
 | Proposed measurement | Complete locally latched binary outcomes, fixed windows, in-cone positive controls and negative controls | [protocol.md](protocol.md); unexecuted |
 | Open physical bridge | Actual support, predictability, leakage and calibration transport | ST04, ST06, ST07 in the [register](open-questions.md); no empirical exclusion |
 
 The closest reviewed statistical proposal is Albanese's 2026 binary-channel
-criterion. Detector causality, optical precursors and loophole-controlled Bell
-experiments supply distinct precedents; none is treated as this study's data.
+criterion. Stenner–Gauthier–Neifeld (2003) is the closest reviewed optical
+information-arrival precedent. Adenier–Khrennikov and Bednorz supply adverse
+sampling/window examples; Salart's hypothetical-influence speed bounds concern
+a different observable and have a documented comment/reply. See the
+[evidence table](evidence-table.md) for versions and limits; none supplies this study's data.
 The contribution is formal verification and a reproducible conditional protocol
 analysis. No priority, improved measured bound or new-physics claim is made.
 The [search log](literature-search-log.md) records coverage through 2026-09-26 UTC

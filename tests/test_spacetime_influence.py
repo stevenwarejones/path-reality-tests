@@ -1,5 +1,6 @@
 """Independent small-sample and countermodel checks for the spacetime study."""
 import importlib.util
+from fractions import Fraction
 import itertools
 import math
 from pathlib import Path
@@ -89,14 +90,30 @@ class SpacetimeTests(unittest.TestCase):
             self.assertLessEqual(abs(mean-(p1-p0)),2*abs(pi-0.5)+1e-12)
 
     def test_common_cause_and_selection(self):
-        # Independent fair R,Y before selection. Conditional selected R=Y.
-        joint={(r,y):0.25 for r,y in itertools.product((0,1),repeat=2)}
-        for y in (0,1):
-            self.assertEqual(joint[1,y]/sum(joint[r,y] for r in (0,1)),0.5)
-            selected=sum(joint[r,y] for r in (0,1) if r==y)
-            self.assertEqual((joint[1,y] if y==1 else 0)/selected,y)
-        # X=R observationally; intervening on X leaves R fair in this model.
-        self.assertEqual(joint[1,0]+joint[1,1],0.5)
+        # Enumerate the source and a selection event; derive every numerator.
+        joint={(r,x):Fraction(1,4) for r,x in itertools.product((0,1),repeat=2)}
+        keep=lambda r,x: r==x
+        selected_prob={}
+        for x in (0,1):
+            arm=sum(m for (r,y),m in joint.items() if y==x)
+            kept=sum(m for (r,y),m in joint.items() if y==x and keep(r,y))
+            selected_prob[x]={r:sum(m for (b,y),m in joint.items()
+                                   if y==x and b==r and keep(b,y))/kept
+                              for r in (0,1)}
+            self.assertEqual(kept/arm,Fraction(1,2))
+            self.assertEqual(sum(selected_prob[x].values()),1)
+            self.assertEqual(sum(m for (r,y),m in joint.items() if y==x and r==1)/arm,
+                             Fraction(1,2))
+        tv=sum(abs(selected_prob[1][r]-selected_prob[0][r]) for r in (0,1))/2
+        self.assertEqual(tv,1)
+        self.assertEqual(sum(m for (r,x),m in joint.items() if keep(r,x)),Fraction(1,2))
+        # Shared cause X=R has association, but overriding X does not change R.
+        source={0:Fraction(1,2),1:Fraction(1,2)}
+        observational={(r,r):m for r,m in source.items()}
+        self.assertEqual(sum(m for (r,x),m in observational.items() if r!=x),0)
+        for intervention in (0,1):
+            do_joint={(r,intervention):m for r,m in source.items()}
+            self.assertEqual(sum(m for (r,x),m in do_joint.items() if r==1),Fraction(1,2))
 
     def test_coupling_and_contamination_budgets(self):
         for q,r0,r1,e0,e1 in itertools.product((0,0.25,1),repeat=5):
@@ -105,7 +122,25 @@ class SpacetimeTests(unittest.TestCase):
             self.assertLessEqual(abs(p1-p0),max(e0,e1)+1e-12)
         self.assertAlmostEqual(d.coupling_budget([0.001,0.002],[0.003,0.004]),0.01)
         # Arbitrary couplings can attain e0+e1: a common q=1/2, opposite flips.
-        self.assertAlmostEqual(abs(0.7-0.3),0.2+0.2)
+        # (observed bit, clean bit), each a normalized nonnegative coupling.
+        couplings=[{(0,0):Fraction(1,2),(0,1):Fraction(1,5),
+                    (1,0):Fraction(0),(1,1):Fraction(3,10)},
+                   {(0,0):Fraction(3,10),(0,1):Fraction(0),
+                    (1,0):Fraction(1,5),(1,1):Fraction(1,2)}]
+        observed,errors,good=[] ,[],[]
+        for coupling in couplings:
+            self.assertEqual(sum(coupling.values()),1)
+            self.assertTrue(all(m>=0 for m in coupling.values()))
+            clean=sum(m for (b,c),m in coupling.items() if c==1)
+            observed.append(sum(m for (b,c),m in coupling.items() if b==1))
+            errors.append(sum(m for (b,c),m in coupling.items() if b!=c))
+            self.assertEqual(clean,Fraction(1,2))
+            self.assertEqual(abs(observed[-1]-clean),errors[-1])
+            good.append(coupling[1,1]/sum(m for (b,c),m in coupling.items() if b==c))
+        gap=abs(observed[1]-observed[0])
+        self.assertEqual(gap,sum(errors))
+        self.assertGreater(gap,max(errors))
+        self.assertNotEqual(good[0],good[1])  # Common-good-law premise fails.
 
     def test_geometry_uncertainty_and_vacuum_boundary(self):
         g=d.geometry(30,0.5,0.5,0.1,-5,20,35,65)

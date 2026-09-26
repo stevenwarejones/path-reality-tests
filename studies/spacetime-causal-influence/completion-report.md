@@ -6,14 +6,14 @@ bound. The [research report](README.md) states the rejected conjunction and
 surviving model classes. The [question register](open-questions.md) records all
 ST01–ST12 dispositions, including externally blocked apparatus and source inputs.
 
-Formal source links below point to the companion review branch. Both repositories
+Formal source links below are immutable companion commit permalinks. Both repositories
 build independently; no unmerged cross-repository dependency is installed.
 
-- [Finite model and countermodels](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/OntologySeparation/Experiments/SpacetimeInfluence.lean)
-- [Algebra, calibration, intervals and geometry](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/OntologySeparation/Experiments/SpacetimeInfluenceBounds.lean)
-- [Lean examples/tests](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/Tests/SpacetimeInfluence.lean)
-- [Generated theorem report](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/examples/spacetime-influence.html)
-- [Complete axiom snapshot](https://github.com/stevenwarejones/ontology-separation/blob/study/spacetime-influence/docs/AXIOM_AUDIT.txt)
+- [Finite model and countermodels](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/OntologySeparation/Experiments/SpacetimeInfluence.lean)
+- [Algebra, calibration, intervals and geometry](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/OntologySeparation/Experiments/SpacetimeInfluenceBounds.lean)
+- [Lean examples/tests](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/Tests/SpacetimeInfluence.lean)
+- [Generated theorem report](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/examples/spacetime-influence.html)
+- [Complete axiom snapshot](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/docs/AXIOM_AUDIT.txt)
 
 Every theorem name below is in `OntologySeparation.SpacetimeInfluence`.
 
@@ -31,7 +31,7 @@ Every theorem name below is in `OntologySeparation.SpacetimeInfluence`.
 | Binary CI, absolute upper bound, random counts | [statistics.md](statistics.md); `binary_influence`, `difference_interval`, `absolute_interval_upper`, `strict_interval_exclusion` | Done under stated assumptions; exponential/binomial coverage is derived in prose, not Lean. |
 | Memory, losses, conditioning, multiplicity and stopping | Fixed-horizon score/bias derivation; `fair_score_mean`, `biased_score_mean`, `rejection_risk`; protocol all-trial rules | Done. No optional-stopping theorem; binary-TV interpretation of memory interval needs a constant effect. |
 | Power/resources over gaps and nuisances | [design.py](design.py), [config.json](config.json), [results.json](results.json) | Done, explicitly synthetic/prospective, with independent checks and strict rounding. Achieved sensitivity blocked, ST07. |
-| Literature stages, primary versions, adverse evidence and closest-work comparison | [search log](literature-search-log.md), [evidence table](evidence-table.md) | Done through 2026-09-26 UTC with access gaps disclosed in ST11. Closest binary methods comparison: Albanese 2026. No priority claim. |
+| Literature stages, primary versions, adverse evidence and closest-work comparison | [search log](literature-search-log.md), [evidence table](evidence-table.md) | Done through 2026-09-26 UTC with access gaps disclosed in ST11. Closest binary methods comparison: Albanese 2026; optical symbol-arrival precedent: Stenner et al. 2003; adverse reanalyses and comment/reply exchanges recorded. No priority claim. |
 | Experimental protocol, equipment and controls | [protocol.md](protocol.md) | Done as a proposal. Calibration records and lab specifications absent; no invented prices or availability. |
 | Distinguish proof, computation and observation | [README evidence/status table](README.md#evidence-and-contribution) | Done. No new source datasets/PDFs or measurements included. |
 | Full final-head verification and generated equality | Repository CI plus the checks below | Readiness depends on the actual PR head's green checks; links and exact tested revisions are recorded in the PR descriptions. |

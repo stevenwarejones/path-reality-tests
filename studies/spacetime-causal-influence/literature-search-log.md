@@ -42,3 +42,27 @@ confirming the published binary/interval scope. Tong's notes could not be
 retrieved. These remaining gaps are ST11, not evidence of novelty or permission
 to infer unseen methods. No quantitative published sensitivity is borrowed from
 a source with incomplete methods/supplement coverage.
+
+## Review-driven checkpoint, 2026-09-26 UTC
+
+Queries: `Stenner Gauthier Neifeld 2003 speed information fast light optical medium 695`;
+`Stenner Gauthier Neifeld nature02016 pdf`;
+`Adenier Khrennikov 2007 Weihs fair sampling no signalling Bednorz 2017 042118`;
+`Bednorz "042118" 2017`; `"Bednorz" "042118" comment response signaling`;
+`Salart 2008 testing speed spooky action distance Nature 454 861`;
+`"Is the Fair Sampling Assumption" "2007" "131"`; `"Stenner" "nature02587"`.
+
+Verified all four suggested precedents against primary records. Added them to
+the evidence table with source-specific coverage. Stenner publisher full text
+was subscription-only and the author-group PDF failed; the public university
+course PDF succeeded and its experiment/methods were read. Adenier and Bednorz
+PDF methods were accessible. Salart main text and complete comment/reply PDFs
+were accessible. Stenner's comment/reply was also read. Searches do not certify
+absence of further responses. No source PDFs, historical counts or code were
+added to this repository.
+
+Disposition: separate the closest experimental precedent from the closest
+statistical proposal. Apparent-signaling reanalyses motivate predeclared complete
+records and window/multiplicity controls; they do not supply an anomaly claim
+here. Control-to-primary-run transport and the assumed B values are now explicit
+in the protocol, README table and ST06.
