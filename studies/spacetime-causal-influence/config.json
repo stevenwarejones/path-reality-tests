@@ -1,0 +1,21 @@
+{
+  "alpha": 0.01,
+  "beta_miss": 0.1,
+  "seed": 20260926,
+  "trial_rate_hz": 10000,
+  "observed_gaps": [0.1, 0.03, 0.01, 0.003],
+  "nuisance_budgets": [0.0, 0.002, 0.01],
+  "simulation_trials": 100000,
+  "simulation_repeats": 20000,
+  "simulation_budget": 0.002,
+  "geometry": {
+    "distance_m": 30.0,
+    "radius_a_m": 0.5,
+    "radius_b_m": 0.5,
+    "distance_error_m": 0.1,
+    "a_earliest_ns": -5.0,
+    "a_latest_ns": 20.0,
+    "b_earliest_ns": 35.0,
+    "b_latest_ns": 65.0
+  }
+}

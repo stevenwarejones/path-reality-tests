@@ -1,0 +1,172 @@
+{
+  "label": "SYNTHETIC / PROSPECTIVE; no apparatus observations",
+  "estimand": "mean conditional signed effect; TV only for a constant binary effect",
+  "config": {
+    "alpha": 0.01,
+    "beta_miss": 0.1,
+    "seed": 20260926,
+    "trial_rate_hz": 10000,
+    "observed_gaps": [
+      0.1,
+      0.03,
+      0.01,
+      0.003
+    ],
+    "nuisance_budgets": [
+      0.0,
+      0.002,
+      0.01
+    ],
+    "simulation_trials": 100000,
+    "simulation_repeats": 20000,
+    "simulation_budget": 0.002,
+    "geometry": {
+      "distance_m": 30.0,
+      "radius_a_m": 0.5,
+      "radius_b_m": 0.5,
+      "distance_error_m": 0.1,
+      "a_earliest_ns": -5.0,
+      "a_latest_ns": 20.0,
+      "b_earliest_ns": 35.0,
+      "b_latest_ns": 65.0
+    }
+  },
+  "geometry": {
+    "minimum_distance_m": 28.9,
+    "maximum_time_difference_ns": 70.0,
+    "margin_m": 7.914527939999999,
+    "margin_ns": 26.400023512265943,
+    "spacelike": true
+  },
+  "power": [
+    {
+      "observed_gap": 0.1,
+      "nuisance": 0.0,
+      "total_trials": 2918,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9850360742572629,
+      "acquisition_seconds_at_hypothetical_rate": 0.2918
+    },
+    {
+      "observed_gap": 0.1,
+      "nuisance": 0.002,
+      "total_trials": 3038,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9847760250410378,
+      "acquisition_seconds_at_hypothetical_rate": 0.3038
+    },
+    {
+      "observed_gap": 0.1,
+      "nuisance": 0.01,
+      "total_trials": 3602,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9846799545632294,
+      "acquisition_seconds_at_hypothetical_rate": 0.3602
+    },
+    {
+      "observed_gap": 0.03,
+      "nuisance": 0.0,
+      "total_trials": 32415,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9841126518421952,
+      "acquisition_seconds_at_hypothetical_rate": 3.2415
+    },
+    {
+      "observed_gap": 0.03,
+      "nuisance": 0.002,
+      "total_trials": 37211,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9841701313726036,
+      "acquisition_seconds_at_hypothetical_rate": 3.7211
+    },
+    {
+      "observed_gap": 0.03,
+      "nuisance": 0.01,
+      "total_trials": 72933,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9841616661438299,
+      "acquisition_seconds_at_hypothetical_rate": 7.2933
+    },
+    {
+      "observed_gap": 0.01,
+      "nuisance": 0.0,
+      "total_trials": 291732,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9840091362382373,
+      "acquisition_seconds_at_hypothetical_rate": 29.1732
+    },
+    {
+      "observed_gap": 0.01,
+      "nuisance": 0.002,
+      "total_trials": 455830,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9840921778509902,
+      "acquisition_seconds_at_hypothetical_rate": 45.583
+    },
+    {
+      "observed_gap": 0.01,
+      "nuisance": 0.01,
+      "total_trials": null,
+      "certified_power_lower": null,
+      "stationary_binomial_power": null,
+      "acquisition_seconds_at_hypothetical_rate": null
+    },
+    {
+      "observed_gap": 0.003,
+      "nuisance": 0.0,
+      "total_trials": 3241457,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9840793837995515,
+      "acquisition_seconds_at_hypothetical_rate": 324.1457
+    },
+    {
+      "observed_gap": 0.003,
+      "nuisance": 0.002,
+      "total_trials": 29173105,
+      "certified_power_lower": 0.9,
+      "stationary_binomial_power": 0.9840661689573312,
+      "acquisition_seconds_at_hypothetical_rate": 2917.3105
+    },
+    {
+      "observed_gap": 0.003,
+      "nuisance": 0.01,
+      "total_trials": null,
+      "certified_power_lower": null,
+      "stationary_binomial_power": null,
+      "acquisition_seconds_at_hypothetical_rate": null
+    }
+  ],
+  "synthetic": [
+    {
+      "observed_gap": 0.0,
+      "rejection_count": 0,
+      "repeats": 20000,
+      "empirical_rejection_rate": 0.0,
+      "stationary_binomial_power": 0.00010170623875090693
+    },
+    {
+      "observed_gap": 0.03,
+      "rejection_count": 20000,
+      "repeats": 20000,
+      "empirical_rejection_rate": 1.0,
+      "stationary_binomial_power": 0.999999989411257
+    },
+    {
+      "observed_gap": 0.1,
+      "rejection_count": 20000,
+      "repeats": 20000,
+      "empirical_rejection_rate": 1.0,
+      "stationary_binomial_power": 1.0
+    }
+  ],
+  "null_example": {
+    "estimate": 0.0,
+    "signed_lower": -0.010293995693167971,
+    "signed_upper": 0.010293995693167971,
+    "absolute_lower": 0.0,
+    "absolute_upper": 0.010293995693167971,
+    "radius": 0.010293995693167971,
+    "reject": false,
+    "clean_absolute_upper": 0.012293995693167971
+  }
+}
