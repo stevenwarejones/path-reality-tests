@@ -1,0 +1,72 @@
+{
+  "dataset_scope": "NIST 2015-09-18 03_43 retained raw/HDF5 overlap",
+  "requirements": {
+    "raw_record_integrity": {
+      "status": "established",
+      "evidence": "Pinned full archives, exact record lengths and CRC-checked streaming reads."
+    },
+    "retained_trial_enumeration": {
+      "status": "established",
+      "evidence": "107109596 contiguous raw sync intervals per side; every setting and archived word reconciled, all prefixes/suffixes explicit."
+    },
+    "complete_physical_acquisition": {
+      "status": "unavailable",
+      "evidence": "Sync enumeration does not establish that hardware never omitted an entire physical trial or failed to record an event."
+    },
+    "local_binary_outcome": {
+      "status": "established",
+      "evidence": "Raw bitwise OR within fixed pulse/phase windows; no coincidence conditioning; no-click rows retained."
+    },
+    "timestamp_excursions": {
+      "status": "bounded_in_score",
+      "evidence": "Paired jump spans and ambiguous settings enter as arbitrary scores on known row slots; 19968 rows."
+    },
+    "physical_cross_site_alignment": {
+      "status": "unavailable",
+      "evidence": "Archive offsets absent; local sequence fingerprints recover stored pairing but not a GPS/propagation certificate."
+    },
+    "spacelike_endpoint_calibration": {
+      "status": "external_documentation_only",
+      "evidence": "Published experiment describes spacetime geometry; no run-specific calibrated support/tail budget transported into this audit."
+    },
+    "causal_assignment_exogeneity": {
+      "status": "assumed",
+      "evidence": "Required relative to device history and potential receiver outcomes; cannot follow from observed setting balance."
+    },
+    "history_conditional_joint_setting_tv": {
+      "status": "assumed",
+      "evidence": "Assumed scenario grid. v2 requires a uniform per-history TV cap; v1 permits an average cap. Published Bell excess predictability and empirical setting balance do not establish either premise."
+    },
+    "ordinary_leakage_transport": {
+      "status": "assumed",
+      "evidence": "No calibrated bound on history-conditional or realized-average nuisance shift for these records."
+    },
+    "retrospective_endpoint_selection": {
+      "status": "bounded_in_score",
+      "evidence": "v1 summable union over starts/lengths; v2 Ville bounds over endpoints plus summable starts and finite event/window/lambda family. Neither covers outcome-tuned pairing or undeclared window searches."
+    },
+    "outcome_rule_adaptedness": {
+      "status": "assumed",
+      "evidence": "Fixed pulse rules are explicit, but the archive does not establish that its phase calibration was selected independently of all scored outcomes. Endpoint uniformity does not cover arbitrary retrospective outcome-rule search."
+    },
+    "recorded_event_support": {
+      "status": "assumed",
+      "evidence": "Event-supported v2 assumes complete detector recording within each retained sync interval, reliable record ordering and binary latent settings consistent with unambiguous stored codes. No channel-0 record then implies no eligible click. Timestamp uncertainty may change phase eligibility but not move events between sync intervals. Not a hardware completeness certificate; unrestricted envelope also reported."
+    }
+  },
+  "causal_required": [
+    "raw_record_integrity",
+    "retained_trial_enumeration",
+    "complete_physical_acquisition",
+    "local_binary_outcome",
+    "physical_cross_site_alignment",
+    "causal_assignment_exogeneity",
+    "history_conditional_joint_setting_tv",
+    "ordinary_leakage_transport",
+    "outcome_rule_adaptedness",
+    "recorded_event_support"
+  ],
+  "spacelike_additional_required": [
+    "spacelike_endpoint_calibration"
+  ]
+}
