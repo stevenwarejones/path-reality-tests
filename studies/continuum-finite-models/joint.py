@@ -6,7 +6,7 @@ the cell budget is INCONCLUSIVE, never evidence of overlap or rejection.
 from math import isfinite
 from itertools import product
 import numpy as np
-from model import Ring, phase_gap
+from model import Ring, phase_gap, calibration_phase_bias
 from decision import DEFAULT_SETTINGS, exclude_candidates, calibrated_outcome_box
 
 
@@ -102,7 +102,7 @@ def exclude_shared_candidates(calibration,main_counts,candidates,*,max_cells=409
 
 def certify_shared_gap(sites,target_gap,*,ring=None,settings=DEFAULT_SETTINGS,
                        eta=.8,visibility=.9,calibration_radius=.001,
-                       phase_offset=0.,fractional_scale=.001,max_cells=4096):
+                       phase_offset=0.,fractional_scale=.001,max_cells=4096,calibration_phase_radius=0.):
     """Prospective uniform gap, comparing BOTH shared nuisance families.
 
     Four-dimensional interval coverage: (offset_c,scale_c,offset_a,scale_a).
@@ -112,13 +112,14 @@ def certify_shared_gap(sites,target_gap,*,ring=None,settings=DEFAULT_SETTINGS,
     """
     if not isfinite(target_gap) or target_gap<0: raise ValueError('nonnegative finite gap required')
     if not 0<=eta<=1 or not 0<=visibility<=1: raise ValueError('physical efficiency and visibility required')
-    if any(not isfinite(x) or x<0 for x in (calibration_radius,phase_offset,fractional_scale)):
+    if any(not isfinite(x) or x<0 for x in (calibration_radius,phase_offset,fractional_scale,calibration_phase_radius)):
         raise ValueError('nonnegative finite certificates required')
     ring=Ring() if ring is None else ring
     ec,ea,q,delta=_phases(ring,sites,settings)
     # Rectangular enlargement of the common calibration region is conservative.
+    contrast_radius=4*calibration_radius+2*calibration_phase_bias(calibration_phase_radius)
     cal=dict(efficiency=[max(0,eta-2*calibration_radius),min(1,eta+2*calibration_radius)],
-             contrast=[max(0,eta*visibility-4*calibration_radius),min(1,eta*visibility+4*calibration_radius)],empty=False)
+             contrast=[max(0,eta*visibility-contrast_radius),min(1,eta*visibility+contrast_radius)],empty=False)
     initial=np.array([[-phase_offset,phase_offset],[-fractional_scale,fractional_scale]]*2)
     def enclosure(cell):
         lc,hc=_boxes(-q,ec,cell[:2],cal)

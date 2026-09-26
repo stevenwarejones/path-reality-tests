@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from math import pi
 import numpy as np
-from model import Ring, phase_gap, outcome_box, box_gap, required_trials, calibration_trials
+from model import Ring, phase_gap, outcome_box, box_gap, required_trials, calibration_trials, calibration_phase_bias
 
 ROOT=Path(__file__).resolve().parent
 
@@ -32,7 +32,7 @@ def generate():
                             # Power envelopes allow calibration centers to move by r:
                             # intervals around centers add another r (2r and 4r).
                             nuisance=dict(eta=eta,eta_radius=2*cal_radius,
-                                contrast=eta*visibility,contrast_radius=4*cal_radius+min(4.,phase_offset**2))
+                                contrast=eta*visibility,contrast_radius=4*cal_radius+2*calibration_phase_bias(phase_offset))
                             continuum=outcome_box(-q,phase_offset+fractional_scale*abs(ec),**nuisance)
                             lattice=outcome_box(delta-q,phase_offset+fractional_scale*abs(ea),**nuisance)
                             gaps.append(box_gap(continuum,lattice))

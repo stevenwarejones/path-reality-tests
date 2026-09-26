@@ -89,14 +89,28 @@ def project_normalize(coefficients, keep):
     return out, tail, sqrt(2*tau/(1+sqrt(1-tau)))
 
 
+def calibration_phase_bias(phase_radius):
+    """One calibration interval's worst-case contrast bias, not center drift."""
+    if not isfinite(phase_radius) or phase_radius < 0:
+        raise ValueError('finite nonnegative calibration phase radius required')
+    return min(2., phase_radius**2/2)
+
+
 def approximation(ring, sites, cutoff, time, tail=0.0):
+    """Separate the derived pure-state trace bound from the proved Lean norm bound.
+
+    tv_bound uses sqrt(tail); formal_tv_bound uses the conservative 2*sqrt(tail).
+    Both share the globally proved 1/24 retained-band coefficient.
+    """
     check_modes(np.arange(-cutoff,cutoff+1), sites)
     if not 0 <= tail <= 1:
         raise ValueError('tail probability outside [0,1]')
     a, k = ring.length/sites, abs(float(ring.k(cutoff)))
     epsilon = abs(time)*ring.hbar*a*a*k**4/(24*ring.mass)
     # Pure-state trace distance for normalized projection is sqrt(tail).
-    return {'amplitude_band_bound': epsilon, 'tv_bound': min(1.0,sqrt(tail)+epsilon)}
+    return {'amplitude_band_bound': epsilon, 'tv_bound': min(1.0,sqrt(tail)+epsilon),
+            'formal_tv_bound': min(1.0,2*sqrt(tail)+epsilon),
+            'tv_bound_basis': 'pure-state trace-distance derivation; not the formal tail theorem'}
 
 
 def readout(phase, efficiency=1., visibility=1.):

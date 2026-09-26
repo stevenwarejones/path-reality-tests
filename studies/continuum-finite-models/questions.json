@@ -10,7 +10,7 @@
     "id": "CF02",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral evolution and Hilbert realization constructed; final combined verification pending",
+    "disposition": "Infinite spectral evolution and full Hilbert chain compiled at 1289d1b; tests and axiom audit passed",
     "next_step": "Position-space L2 identification remains explicitly external"
   },
   {
@@ -32,14 +32,14 @@
     "status": "conditional",
     "evidence": "model.md",
     "disposition": "Global 1/24 remainder, normalized tail, strong convergence and Born continuity implemented formally; sharper empirical trace tail independently derived",
-    "next_step": "Final-head verification; distinguish the proved 2*sqrt(tau) norm bound from the sharper empirical tail"
+    "next_step": "Refresh generated formal evidence; helper returns separately labeled empirical and formal tail bounds"
   },
   {
     "id": "CF06",
     "status": "conditional",
     "evidence": "model.md",
     "disposition": "Full product TV and fixed-resource test-error composition implemented formally",
-    "next_step": "Final-head audit; no adaptive or correlated-trial claim"
+    "next_step": "Refresh generated evidence; exported limit theorem is IID, with no adaptive or correlated-trial claim"
   },
   {
     "id": "CF07",
@@ -52,7 +52,7 @@
     "id": "CF08",
     "status": "computationally-verified",
     "evidence": "joint.py",
-    "disposition": "Exact single-mode scale overlap and shared-scale multi-mode interval separation checked",
+    "disposition": "Single-mode overlap and shared-scale exclusion checked; six gap refinements retain executable power partitions with calibration phase uncertainty",
     "next_step": "Physical shared-scale, phase and transport certificates"
   },
   {

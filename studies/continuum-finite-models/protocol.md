@@ -53,8 +53,13 @@ or transport drift needs additional radii; it is not absorbed by a statistical
 confidence interval. `calibration_phase_radius=kappa` adds a contrast-bias
 bound min(2,kappa²/2), since |1−cos(kappa)|≤kappa²/2. The 660-case
 map uses its stated phase radius for calibration too, including twice this bias
-in its prospective power envelope. The targeted shared-scale comparison records
-its separate, exact calibration-phase premise explicitly.
+in its prospective power envelope. The shared-scale comparison now uses the
+same nonzero phase radius for calibration and main measurements. Both designs
+and the count decision call `calibration_phase_bias`; the decision adds one bias
+allowance, while a prospective envelope adds two. One covers displacement of
+the observed calibration center from truth and the other covers the interval
+around that center. Thus kappa² versus kappa²/2 is intentional, not inconsistent
+calibration physics.
 
 For prospective power, calibration centers are random. The map doubles the
 calibration radii around the stipulated true centers, to include both center
@@ -154,11 +159,23 @@ parameter bounds. The design conditions, including calibration phase and transpo
 radii, must match the acquisition certificates.
 
 At eta=0.8, visibility=0.9, calibration radius 0.001 and fractional scale radius
-0.001, the targeted comparison certifies gaps 0.01 for N=128 and 0.001 for
-N=192,256 at zero offset radius. With offset radius 0.005 it certifies N=128,192;
-N=256 remains inconclusive at the searched thresholds/budget. All use the same
-24 settings; the largest grid N=512 remains inconclusive. These are improved
-sufficient boundaries, not exhaustive identifiability limits.
+0.001, the refined comparison gives the following certified lower bounds:
+
+| N | Phase radius 0 | Phase radius 0.005 (including calibration) |
+|---|---:|---:|
+| 96 | 0.02 | 0.02 |
+| 128 | 0.01359375 | 0.011875 |
+| 192 | 0.0046875 | 0.0029375 |
+| 256 | 0.001625 | inconclusive |
+| 512 | inconclusive | inconclusive |
+
+A coarse target menu finds an initial certificate, then six bisection refinements
+search toward the preceding unsuccessful target, up to the declared 0.02 cap.
+Each successful target retains its own complete decision partition. Attempts,
+cell counts and targets are recorded in the JSON. A failed finite-budget search
+is **not** an upper bound on the true gap; the reported search interval is only
+an algorithmic refinement interval. The results are sufficient bounds, not
+optimized identifiability limits or minimum possible acquisition costs.
 
 For one momentum, exact scale overlap is possible: writing d=E_a−E_c, choose
 s_c=d/(2E_c), s_a=−d/(2E_a). Then (1+s_c)E_c=(1+s_a)E_a.
@@ -170,7 +187,8 @@ single-momentum degeneracy and its multi-momentum resolution are both checked.
 
 Both maps report `total_calibration_trials` and `total_main_trials` separately.
 For r_cal=0.001 the three calibration strata cost 8,220,960 eligible trials.
-The shared-scale N=128 gap of 0.01 needs another 3,816,216 main trials; a gap of
-0.001 needs 381,621,024 main trials. The calibration floor must not be interpreted
-as dispersion sensitivity. Power is computed from the declared risk parameters,
+At zero phase radius, the refined N=192 design needs 17,368,008 main trials
+instead of 381,621,024 at the old 0.001 target (about 22 times fewer). N=256 needs
+144,519,216 main trials. The calibration floor must not be interpreted as
+dispersion sensitivity. Power is computed from the declared risk parameters,
 1−alpha_calibration−beta_main, rather than stored as an unrelated constant.

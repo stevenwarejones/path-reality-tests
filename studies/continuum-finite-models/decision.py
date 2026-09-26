@@ -8,7 +8,7 @@ import json
 from math import isfinite, pi
 from pathlib import Path
 import numpy as np
-from model import Ring, check_sites, phase_gap, cosine_interval, radius
+from model import Ring, check_sites, phase_gap, cosine_interval, radius, calibration_phase_bias
 
 DEFAULT_SETTINGS=tuple((j,t,q) for j in (1,2,3) for t in (.5,2.,8.,32.) for q in (0.,pi/2))
 
@@ -108,8 +108,8 @@ def exclude_candidates(calibration,main_counts,candidates,*,ring=None,settings=D
             if not isfinite(t) or not isfinite(q):
                 raise ValueError('finite controls required')
             phase_gap(ring,n,0,j,t) # Validates integer modes and strict alias cutoff.
-    calibration_phase_bias=min(2.,calibration_phase_radius**2/2)
-    cal=calibration_box(calibration,alpha_calibration,efficiency_transport,contrast_transport+calibration_phase_bias)
+    phase_bias=calibration_phase_bias(calibration_phase_radius)
+    cal=calibration_box(calibration,alpha_calibration,efficiency_transport,contrast_transport+phase_bias)
     radii=[radius(total,3*len(settings),alpha_main) for _,total in rows]
     if cal['empty']:
         return dict(status='inconclusive-calibration',rejected=[],retained=candidates,

@@ -129,4 +129,6 @@ whereas the pure-state trace-distance derivation above gives **sqrt(tau)**.
 The sharper tail coefficient is independently derived and numerically tested
 here; it is not claimed as a theorem of the companion. The sensitivity map and
 executable decision use exact cosine dispersion and do not call either
-approximation or truncation helper.
+approximation or truncation helper. `approximation()` labels `tv_bound` as the
+pure-state trace-distance derivation and returns `formal_tv_bound` separately
+with the formally proved conservative tail coefficient.

@@ -10,7 +10,7 @@ approximation/tail derivation, finite-resource quantifiers and exact blind spots
 The executable [decision rule](decision.py) converts complete calibration/main
 counts into rejected candidate site counts with coordinate witnesses. The
 [shared-nuisance refinement](joint.py) additionally enforces the common scale
-and phase across momenta, with [certified sensitivity bounds](results/shared-sensitivity.json).
+and phase across momenta, with six target-gap refinements and [certified sensitivity bounds](results/shared-sensitivity.json).
 The [protocol](protocol.md) specifies a common 24-setting experiment, complete
 outcomes, nuisance boxes, simultaneous rejection and conditional acquisition cost.
 The [literature review](literature.md) assesses primary sources and dataset fit.
@@ -70,10 +70,10 @@ calling the current numerical result a continuum theorem.
 
 
 Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
-The [full formal source at 1f678da](https://github.com/stevenwarejones/ontology-separation/tree/1f678da614665d3ec559d2471ba8e39c4cb05e52)
+The [full formal source at 1289d1b](https://github.com/stevenwarejones/ontology-separation/tree/1289d1b618621bd5aeea3d0e1e593265430adf26)
 is immutable and includes the global dispersion, normalized tail, Born, product-TV,
-strong-convergence and explicit witness chain. See the formal PR for the final
-combined verification and regenerated artifact status. This is a draft-branch
+strong-convergence and explicit witness chain. Library/tests and the axiom audit passed at this commit. See the formal PR for
+the corrected report-export list and regenerated artifact status. This is a draft-branch
 commit, not a claim that the formal companion has merged.
 Both studies remain drafts until the complete formal result and final artifacts
 are verified; merged-main links can be pinned after that review.

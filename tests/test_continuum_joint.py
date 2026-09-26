@@ -11,6 +11,7 @@ try:
     import joint as jnt
     import decision as d
     import model as m
+    import joint_design as jd
 finally:
     sys.path.pop(0)
 
@@ -84,6 +85,39 @@ class SharedNuisance(unittest.TestCase):
         with self.assertRaises(ValueError):
             jnt.exclude_shared_candidates({k:[0,1000] for k in ('detection','phase0','phase_pi')},
                 [[0,0,1000]]*24,[256],fractional_scale=.001,partitions={256:[[0.],[-.0005,.001]]})
+
+    def test_refined_certificate_reduces_budget_and_drives_decision(self):
+        phase=.005
+        cert,attempts,upper=jd.refined_certificate(192,refinements=6,
+            phase_offset=phase,calibration_phase_radius=phase,max_cells=4096)
+        gap=cert['certified_gap']
+        self.assertGreater(gap,.001)
+        self.assertEqual(gap,max(a['target'] for a in attempts if a['certified']))
+        self.assertLess(m.required_trials(gap,72),m.required_trials(.001,72))
+        self.assertGreaterEqual(upper,gap) # Algorithmic search limit, not a physical upper bound.
+        n=m.required_trials(gap,72); nc,_=m.calibration_trials(.001)
+        cal={'detection':[round(.8*nc),nc],
+             'phase0':[round(m.readout(phase,.8,.9)[0]*nc),nc],
+             'phase_pi':[round(m.readout(np.pi+phase,.8,.9)[0]*nc),nc]}
+        for scale in (-.001,0,.001):
+            records=[counts(m.readout(phase+scale*t*float(m.Ring().continuum(mode))-q,.8,.9),n)
+                     for mode,t,q in d.DEFAULT_SETTINGS]
+            result=jnt.exclude_shared_candidates(cal,records,[192],phase_offset=phase,
+                fractional_scale=.001,calibration_phase_radius=phase,
+                partitions={192:cert['decision_partition']},max_cells=1)
+            self.assertEqual(result['rejected'],[192])
+
+    def test_uncertified_search_has_no_power_partition(self):
+        cert,attempts,_=jd.refined_certificate(512,max_cells=1)
+        self.assertIsNone(cert)
+        self.assertTrue(all(not a['certified'] for a in attempts))
+
+    def test_approximation_labels_distinct_tail_bounds(self):
+        bounds=m.approximation(m.Ring(),128,2,0,tail=.01)
+        self.assertAlmostEqual(bounds['tv_bound'],.1)
+        self.assertAlmostEqual(bounds['formal_tv_bound'],.2)
+        self.assertIn('not the formal tail theorem',bounds['tv_bound_basis'])
+        self.assertAlmostEqual(m.calibration_phase_bias(.2),.02)
 
     def test_calibration_phase_uncertainty_is_propagated(self):
         n=10**8; eta=.8; visibility=.9; phase=.2
