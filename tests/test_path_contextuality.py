@@ -81,6 +81,8 @@ class ContextualityTests(unittest.TestCase):
 
     def test_countermodels(self):
         r=d.exact_countermodels()
+        self.assertEqual(r['reference_parameter_null_bypass'],'49/625')
+        self.assertEqual(r['reference_parameter_null_joint'],'49/1250')
         self.assertEqual(r['marginal_disturbance'],'0')
         self.assertEqual(r['legitimate_null_joint_negative_success'],'1/100')
         self.assertEqual(r['legitimate_null_postselected_negative_fraction'],'1')

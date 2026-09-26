@@ -62,7 +62,12 @@ prove completeness. No such reduction or failed optimization is used for exclusi
 ## Nonempty null and exact attacks
 
 A one-state model, fair negative pointer and success response 1/4 is normalized,
-undisturbed and saturates a=qf=1/8. The following complete two-state models are
+undisturbed and saturates a=qf=1/8. At the reference parameters q=16/25,
+d=1/50 and f=49/625, a fair one-state probe and stochastic final response
+r=49/625 are also admissible: choose D=identity, so (1−d)I+dD=I. This gives
+a=49/1250, below the bound. The reduced null at those parameters is therefore
+nonempty; this is not a model of the full quantum calibration family.
+The following complete two-state models are
 independently evaluated with Fractions in `exact_countermodels()`; the first two
 are also formalized in the companion.
 
@@ -95,7 +100,10 @@ assumption: small operational distance does not constrain representation distanc
 If actual a and f are within ε_a and ε_f of a model satisfying the exact
 representation premises, the null obeys
 W≤ε_a+|q−d|ε_f. This follows by subtracting the ideal score and bounding its two
-linear differences. The companion proves it directly. If an independent premise
+linear differences. The companion proves it directly. Also a≤q+ε_a under
+the same near-model premise. Combining the two bounds gives
+ a≤min(q,qf+d(1−f))+ε_a+|q−d|ε_f,
+which justifies using this allowance with the capped confidence rule. If an independent premise
 instead allows response cap q+u and disturbance weight d+v, the bound becomes
 qf+d(1−f)+uf+v(1−f); it follows by the same row proof. Operational tomography
 alone supplies neither u nor v. We report a conditional premise, not a validated

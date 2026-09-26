@@ -162,6 +162,11 @@ def exact_countermodels():
         assert sum(map(sum, table)) == 1
         return table, sum(mu[l]*response[l] for l in range(2))
     h=F(1,2)
+    f0=F(49,625); q0=F(16,25); d0=F(1,50)
+    identity_probe=[[[h,0],[h,0]], [[0,h],[0,h]]]
+    null_table,null_f=evaluate([1,0],identity_probe,[f0,f0])
+    assert null_f==f0 and null_table[0][0]==F(49,1250)
+    assert h<=q0 and (1-d0)+d0==1 and null_table[0][0]<=q0*f0+d0*(1-f0)
     # Ordinary disturbance: uniform preparation, always reset to the pointer bit.
     # Every final marginal is unchanged for this preparation, but outcome branches change.
     k=[[[h,0],[0,h]], [[h,0],[0,h]]]
@@ -176,7 +181,9 @@ def exact_countermodels():
     k3=[[[q-d,d],[1-q,0]], [[0,q],[0,1-q]]]
     t3,f3=evaluate([1,0],k3,[0,1])
     assert t3[0][0]==d and sum(t3[m][0] for m in range(2))==d and f3==0
-    return {'undisturbed_marginal_invasive_joint': [[str(x) for x in row] for row in table],
+    return {'reference_parameter_null_joint':str(null_table[0][0]),
+            'reference_parameter_null_bypass':str(null_f),
+            'undisturbed_marginal_invasive_joint': [[str(x) for x in row] for row in table],
             'marginal_disturbance': '0', 'invasive_gap_if_d_misidentified_as_zero': '1/4',
             'contextual_pointer_same_joint': [[str(x) for x in row] for row in t2],
             'legitimate_null_postselected_negative_fraction': '1',

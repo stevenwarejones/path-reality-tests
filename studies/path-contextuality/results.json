@@ -208,6 +208,8 @@
     ]
   },
   "countermodels": {
+    "reference_parameter_null_joint": "49/1250",
+    "reference_parameter_null_bypass": "49/625",
     "undisturbed_marginal_invasive_joint": [
       [
         "1/2",
