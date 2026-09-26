@@ -1,0 +1,294 @@
+{
+  "scope": "fixed ideal reference-table compatibility; no experimental evidence",
+  "source_hashes": {
+    "analyze.py": "cafd1a8b7cff594393e92298db53c4c9573aca01fb815e152bee47945354e517",
+    "boundary.py": "2d99516ea5f663ae4f7dcdc84389baeea949d4ba11a8e2faf88d914dd94f3168",
+    "plot.py": "07d65becd234b25364c02009829267a45d687da3aade6fdc18417df9fa1c69b7"
+  },
+  "boundary": {
+    "reference_joint": [
+      [
+        "1369/15625",
+        "7056/15625"
+      ],
+      [
+        "144/15625",
+        "7056/15625"
+      ]
+    ],
+    "bypass": "49/625",
+    "minimum_cap": "337/625",
+    "branch_crossing": "22223/25823",
+    "cap_at_minimum_disturbance": "1081/1225",
+    "reference_cap_minimum_disturbance": "297/1225",
+    "reference_cap_negative_only_necessary_disturbance": "13/320",
+    "attaining_models": [
+      {
+        "preparation": [
+          "49/625",
+          "576/625"
+        ],
+        "response": [
+          "1",
+          "0"
+        ],
+        "kernel": [
+          [
+            [
+              "337/625",
+              "0"
+            ],
+            [
+              "144/1225",
+              "10512/30625"
+            ]
+          ],
+          [
+            [
+              "123/2500",
+              "49/100"
+            ],
+            [
+              "0",
+              "288/625"
+            ]
+          ]
+        ],
+        "disturbance_kernel": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "2009/14016",
+            "12007/14016"
+          ]
+        ],
+        "q": "337/625",
+        "d": "10512/30625"
+      },
+      {
+        "preparation": [
+          "49/625",
+          "576/625"
+        ],
+        "response": [
+          "1",
+          "0"
+        ],
+        "kernel": [
+          [
+            [
+              "16/25",
+              "0"
+            ],
+            [
+              "144/1225",
+              "297/1225"
+            ]
+          ],
+          [
+            [
+              "13/320",
+              "49/100"
+            ],
+            [
+              "0",
+              "751/1600"
+            ]
+          ]
+        ],
+        "disturbance_kernel": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "3185/19008",
+            "15823/19008"
+          ]
+        ],
+        "q": "16/25",
+        "d": "297/1225"
+      },
+      {
+        "preparation": [
+          "49/625",
+          "576/625"
+        ],
+        "response": [
+          "1",
+          "0"
+        ],
+        "kernel": [
+          [
+            [
+              "22223/25823",
+              "0"
+            ],
+            [
+              "144/1225",
+              "288/13175"
+            ]
+          ],
+          [
+            [
+              "288/13175",
+              "49/100"
+            ],
+            [
+              "0",
+              "1029/2108"
+            ]
+          ]
+        ],
+        "disturbance_kernel": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "q": "22223/25823",
+        "d": "288/13175"
+      },
+      {
+        "preparation": [
+          "49/625",
+          "576/625"
+        ],
+        "response": [
+          "1",
+          "0"
+        ],
+        "kernel": [
+          [
+            [
+              "1081/1225",
+              "0"
+            ],
+            [
+              "144/1225",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1/50",
+              "49/100"
+            ],
+            [
+              "0",
+              "49/100"
+            ]
+          ]
+        ],
+        "disturbance_kernel": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "q": "1081/1225",
+        "d": "1/50"
+      },
+      {
+        "preparation": [
+          "49/625",
+          "576/625"
+        ],
+        "response": [
+          "1",
+          "0"
+        ],
+        "kernel": [
+          [
+            [
+              "1081/1225",
+              "0"
+            ],
+            [
+              "144/1225",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1/50",
+              "49/100"
+            ],
+            [
+              "0",
+              "49/100"
+            ]
+          ]
+        ],
+        "disturbance_kernel": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "q": "1",
+        "d": "1/50"
+      }
+    ],
+    "conditional_sensitivity": [
+      {
+        "b_probability_error": "0",
+        "bypass_interval": [
+          "49/625",
+          "49/625"
+        ],
+        "preparation_tv": "0",
+        "readout_probability_error": "0",
+        "positive_success_floor": "833/31250",
+        "reference_observed_positive_success": "144/15625"
+      },
+      {
+        "b_probability_error": "1/1000",
+        "bypass_interval": [
+          "49/625",
+          "49/625"
+        ],
+        "preparation_tv": "1/1000",
+        "readout_probability_error": "1/1000",
+        "positive_success_floor": "1561/62500",
+        "reference_observed_positive_success": "144/15625"
+      },
+      {
+        "b_probability_error": "1/100",
+        "bypass_interval": [
+          "49/625",
+          "49/625"
+        ],
+        "preparation_tv": "1/100",
+        "readout_probability_error": "1/100",
+        "positive_success_floor": "154/15625",
+        "reference_observed_positive_success": "144/15625"
+      },
+      {
+        "b_probability_error": "1/20",
+        "bypass_interval": [
+          "49/625",
+          "49/625"
+        ],
+        "preparation_tv": "1/20",
+        "readout_probability_error": "1/20",
+        "positive_success_floor": "0",
+        "reference_observed_positive_success": "144/15625"
+      }
+    ]
+  }
+}

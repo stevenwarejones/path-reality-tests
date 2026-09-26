@@ -1,11 +1,8 @@
 name: Reproduce complete NIST sources
 
 on:
+  # Required by the main ruleset: every PR must publish this check.
   pull_request:
-    paths:
-      - 'studies/nist-bell-causal-audit/**'
-      - 'tests/test_nist*'
-      - '.github/workflows/nist-reproduce.yml'
   workflow_dispatch:
 
 permissions:

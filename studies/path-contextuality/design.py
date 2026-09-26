@@ -151,6 +151,98 @@ def random_context_budget(gap, contexts=48, alpha=.005, beta=.1):
             math.log(contexts)-total/(8*contexts), 'beta_total': beta}
 
 
+def dual_witnesses(a, b, f, q, d):
+    """b is nonnegative-pointer success, INCLUDING pointer erasures."""
+    return witness(a,f,q,d), (1-d-q)*f-b
+
+
+def dual_interval_decision(intervals, allowance=0.):
+    if len(intervals)!=5 or not math.isfinite(allowance) or allowance<0:
+        raise ValueError('five intervals and finite nonnegative allowance required')
+    for lo,hi in intervals:
+        if not 0<=lo<=hi<=1: raise ValueError('invalid probability interval')
+    a,b,f,q,d=intervals
+    negative=interval_decision([a,f,q,d],allowance)['lower_gap']
+    c=1-d[1]-q[1]
+    positive=min(c*f[0],c*f[1])-b[1]-allowance
+    return {'reject':max(negative,positive)>0,
+            'negative_lower_gap':negative,'positive_lower_gap':positive,
+            'intervals':intervals}
+
+
+def dual_decision(counts, alpha=.005, allowance=0., method='cp'):
+    """Simultaneous five-coordinate coverage, hence familywise alpha for both tests.
+    Order a,b,f,q,d. a and b share the same eligible probe records; their
+    dependence is allowed by Bonferroni. No extra probe acquisition is needed.
+    """
+    if len(counts)!=5 or not 0<alpha<1 or method not in ('cp','hoeffding'):
+        raise ValueError('invalid dual decision parameters')
+    if counts[0][1]!=counts[1][1] or counts[0][0]+counts[1][0]>counts[0][1]:
+        raise ValueError('a and b must be disjoint cells of the same probe records')
+    intervals=[]
+    for k,n in counts:
+        ci=cp(k,n,alpha/5)
+        if method=='hoeffding':
+            radius=math.sqrt(math.log(10/alpha)/(2*n)) if n else 1.
+            p=k/n if n else 0.
+            ci=(max(0.,p-radius),min(1.,p+radius))
+        intervals.append(ci)
+    return dual_interval_decision(intervals,allowance)
+
+
+def dual_certified_budget(gaps, alpha=.005, beta=.1, tolerance=.01, cal_alpha=.005):
+    """Both witnesses are 1-Lipschitz in their four participating coordinates.
+    Five-coordinate simultaneous estimation uses log(10/risk). Either positive
+    gap suffices: max(gaps)>4*(r_alpha+r_beta). Four acquisition strata, not five.
+    """
+    gap=max(gaps)
+    result=certified_budget(gap,alpha,beta,tolerance,cal_alpha)
+    c=math.sqrt(math.log(10/alpha)/2)+math.sqrt(math.log(10/beta)/2)
+    n=math.floor((4*c/gap)**2)+1
+    result.update(per_main_context=n,main_contexts=4,probability_coordinates=5,
+                  eligible_trials=4*n+AUDIT_CONTEXTS*result['per_audit_context'])
+    return result
+
+
+def dual_power(params,n,repetitions=2000,seed=SEED):
+    a,b,f,q,d=params
+    rng=np.random.default_rng(seed)
+    probe=rng.multinomial(n,[a,b,1-a-b],size=repetitions)
+    other=rng.binomial(n,[f,q,d],size=(repetitions,3))
+    hits=[0,0,0]
+    for row,rest in zip(probe,other):
+        result=dual_decision([(int(k),n) for k in [row[0],row[1],*rest]])
+        for i,key in enumerate(['negative_lower_gap','positive_lower_gap']):
+            hits[i]+=result[key]>0
+        hits[2]+=result['reject']
+    return {'seed':seed,'repetitions':repetitions,
+            'negative_rejections':int(hits[0]),'positive_rejections':int(hits[1]),
+            'either_rejections':int(hits[2]),
+            'either_mc_99pct_interval':list(cp(int(hits[2]),repetitions,.01))}
+
+
+def dual_report():
+    ref=rational_instrument();a=ref['table'][0][0];b=ref['table'][1][0]
+    q,d,f=ref['q'],ref['d'],ref['f']
+    exact=dual_witnesses(a,b,f,q,d)
+    scenarios=[]
+    for eta,eff,flip in [(1.,1.,0.),(.9,.95,0.),(.8,.9,.01),(.5,.8,.02)]:
+        table,old=lossy_table(ref,eff,eta,flip)
+        # Complement the negative pointer, not merely the detected positive cell.
+        params=[old[0],float(table[1:,0].sum()),*old[1:]]
+        gaps=dual_witnesses(*params)
+        scenarios.append({'final_eff':eta,'probe_eff':eff,'flip':flip,
+                          'a_b_f_q_d':params,'gaps':list(gaps),
+                          'dual_budget':dual_certified_budget(gaps) if max(gaps)>0 else None})
+    budget=dual_certified_budget(exact)
+    return {'exact_gaps':[str(x) for x in exact],
+            'negative_only_budget':certified_budget(float(exact[0])),
+            'positive_only_budget':certified_budget(float(exact[1])),
+            'dual_budget':budget,'noise_scenarios':scenarios,
+            'shared_probe_cp_power':dual_power([float(x) for x in [a,b,f,q,d]],budget['per_main_context']),
+            'scope':'ideal-point multiplicity cost; smaller sufficient budgets in the declared lossy scenarios, conditional on maximal-eigenvalue q calibration'}
+
+
 def exact_countermodels():
     """Independent exact verification of complete finite kernels and their moments."""
     def evaluate(mu, kernel, response):
@@ -323,7 +415,7 @@ def report():
             'eligible_trials':best[0],'claim':'minimum over this declared grid only'},
         'reference_random_allocation':random_context_budget(float(ref['gap'])),
         'cp_power':simulate_power(params, budget['per_main_context']),
-        'countermodels':exact_countermodels(), 'calibration':calibration_tables(ref)}
+        'dual_witness_analysis':dual_report(), 'countermodels':exact_countermodels(), 'calibration':calibration_tables(ref)}
 
 
 def compare(expected,actual,path='$'):

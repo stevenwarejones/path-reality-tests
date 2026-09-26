@@ -67,3 +67,13 @@ multiplication, including imaginary off-diagonal inputs. Seed 260926 is fixed.
 The Monte Carlo result is accompanied by its own binomial interval and does
 not replace the analytic power certificate. Snapshot comparison keeps counts,
 keys, decisions and strings exact, with explicit tolerance only for floats.
+
+The extension now includes `dual_decision` and `dual_certified_budget` for both
+success-cell witnesses; see the joint-decision section of [protocol.md](protocol.md).
+The original grid and random-allocation figures remain single-witness baselines.
+
+The loss comparison in [the protocol](../path-contextuality/protocol.md) gives
+joint-rule budgets of 4.43M, 6.22M, 10.23M and 56.41M eligible trials. The last
+three improve on the negative witness under those specified noise models.
+The q calibration must attain the actual negative effect's largest eigenvalue;
+tomography must confirm the eigenbasis and ordering, including uncertainty.

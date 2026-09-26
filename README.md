@@ -35,3 +35,5 @@ and source/license review before inclusion.
 Repository code is distributed under the [Apache 2.0 license](LICENSE); external
 data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.
+
+See [sharp compatibility boundaries](studies/path-compatibility/README.md) for exact attainers and the two-witness decision extension.

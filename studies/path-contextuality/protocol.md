@@ -121,3 +121,73 @@ conditional-probability analysis; IID CP intervals are not justified by marginal
 rates alone. Source/herald efficiency is needed to convert eligible trials to
 emitted trials. Calibration detector specifications and pilot stability data are
 not available, so no clock time or empirical feasibility is asserted.
+
+## Joint decision using both success cells
+
+The extended predeclared rule is `dual_decision`, with order (a,b,f,q,d).
+Here b is **nonnegative-pointer success**, including pointer erasures in the
+nonnegative group. All eligible trials stay in the denominator. At unit efficiency
+this is ordinary positive-pointer success. a and b are disjoint cells of the same
+probe records; bypass, q-calibration and d-calibration supply the other three
+acquisition groups. Thus five estimated probabilities still use four main strata
+and the existing 44 audit strata.
+
+Use two-sided Clopper–Pearson intervals with error alpha/5 each. Dependence of a
+and b does not invalidate the Bonferroni coverage. Reject if either
+
+- a_L > min(q_U, max over f endpoints of q_U f + d_U(1−f)) + allowance;
+- min over f endpoints of (1−d_U−q_U)f > b_U + allowance.
+
+The endpoint minimum remains necessary if 1−d_U−q_U is negative. The allowance
+must cover any separately justified model discrepancy. The rule is a valid
+familywise test of two necessary inequalities, not an exact finite-sample test
+of all four compatibility constraints.
+
+The simultaneous Hoeffding alternative uses radius sqrt(log(10/alpha)/(2n)).
+Both witnesses change by at most one per unit change of each participating input.
+For equal counts, max(gaps)>4(r_alpha+r_beta) certifies power at least 1−beta.
+`dual_certified_budget` includes all four main and 44 calibration groups. Snapshot
+comparisons retain the single-witness budgets; adding a witness incurs a
+multiplicity penalty. At the ideal point its conservative budget is slightly
+worse; the declared lossy scenarios show a smaller sufficient budget, including
+a scenario where only the positive witness survives. The shared
+probe simulation uses multinomial records, not independent a/b binomial draws.
+
+At the ideal reference point, the positive gap is 109/6250=0.01744, versus
+297/15625=0.019008 for the negative witness. The rare positive cell is
+144/15625. Its advantage is robustness to disturbance: thresholds 297/1225
+versus 13/320 at q=16/25. The old grid and random-allocation outputs remain
+explicitly single-witness baselines; the new dual budget is a fixed-count design.
+
+
+### Loss-dependent power comparison and calibration ordering
+
+These are prospective scenarios under the declared erasure/flip model, not
+measured apparatus performance or universal statements about realistic loss.
+All counts include the same calibration audit.
+
+| Final efficiency / probe efficiency / flip | Negative gap | Positive gap | Negative-only trials | Joint-rule trials |
+| --- | ---: | ---: | ---: | ---: |
+| 1 / 1 / 0 | 0.019008 | 0.017440 | 4,351,904 | 4,432,252 |
+| .9 / .95 / 0 | 0.013422 | 0.014011 | 6,411,796 | 6,221,616 |
+| .8 / .9 / .01 | 0.007081 | 0.009852 | 17,065,004 | 10,228,608 |
+| .5 / .8 / .02 | −0.005477 | 0.003771 | No violation | 56,409,916 |
+
+Thus the second witness is slightly more expensive at the ideal point, improves
+this sufficient trial budget in the specified lossy cases, and is the only
+surviving witness in the last case. Probe loss lowers the calibrated negative
+cap q′, raising the positive floor; b must simultaneously include lost-pointer
+successes. The table evaluates both changes together. A smaller sufficient
+Hoeffding budget is not a proof of sample-optimality.
+
+The q-calibration preparation must attain the **largest eigenvalue of the actual
+lossy negative effect**; a generic expectation value would underestimate the
+required cap. With path-dependent erasure the effect may remain diagonal, but
+its ordering must still be checked: E−=diag(η_Q·16/25,η_P·9/25), so Q maximizes
+only if 16η_Q≥9η_P. Diagonality alone does not imply this. For example η_Q=1/10,
+η_P=1 reverses the ordering. The characterization/tomography audit must support
+both the eigenbasis and ordering (with uncertainty included). If it cannot,
+characterize and prepare a maximizing eigenstate or use a conservative upper
+bound on the largest eigenvalue; do not reuse the Q count as the cap. The existing
+single-q Bernoulli calibration and power budget are conditional on that
+characterization; extra characterization trials are not silently included.
