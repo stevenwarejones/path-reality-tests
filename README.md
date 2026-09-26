@@ -38,3 +38,5 @@ data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.
 
 See [sharp compatibility boundaries](studies/path-compatibility/README.md) for exact attainers and the two-witness decision extension.
+
+See [timing structure and identifiability](studies/timing-structure/README.md) for fixed cancellation and temporal diagnostics on existing NIST records, with exact invisibility witnesses.
