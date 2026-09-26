@@ -1,0 +1,91 @@
+{
+  "paper_doi": "10.1126/sciadv.aeh1011",
+  "paper_license": "CC BY-NC 4.0",
+  "retrieved_utc": "2026-09-26T02:01:27.088033+00:00",
+  "sources": [
+    {
+      "file": "paper.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13510607/",
+      "bytes": 307939,
+      "sha256": "7b888dfc8831452b10d48813524cfe94b5163879f1cd761ee6b32eebcac041db"
+    },
+    {
+      "file": "paper.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/fullTextXML",
+      "bytes": 286055,
+      "sha256": "a89dd991b2af69fc04b72171c69487adc758485f03fb864abe9c7fc156169693"
+    },
+    {
+      "file": "supplement.pdf",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/supplementaryFiles",
+      "bytes": 5507340,
+      "sha256": "47f4a063550529c47979c216fb0b4162d051b38c6f9c1f78f147772d908cd567"
+    },
+    {
+      "file": "files.json",
+      "url": "https://datadryad.org/api/v2/versions/450489/files",
+      "bytes": 12950,
+      "sha256": "dc3d4b53969aa923337f6c0562e030c222c939f7ff462f14180b864222cd5b5f"
+    },
+    {
+      "file": "version.json",
+      "url": "https://datadryad.org/api/v2/versions/450489",
+      "bytes": 13242,
+      "sha256": "4dc4fe86f19f8627a6ae90ab546fce28a1eeb0da4268e50cb110360ff4237a0b"
+    },
+    {
+      "file": "landing.html",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.x0k6djj14",
+      "bytes": 67510,
+      "sha256": "f0126ca8eeb9f648fa26772f732c8585fe01cb0bf7d70df00976fafa5591152a"
+    },
+    {
+      "file": "crossref.json",
+      "url": "https://api.crossref.org/works/10.1126/sciadv.aeh1011",
+      "bytes": 17328,
+      "sha256": "c2c8324ec7416a1dc97448e797dc2b64bc7c1e3a9a216bc998dd35f4f2c69cea"
+    },
+    {
+      "file": "figure3.webp",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/supplementaryFiles",
+      "bytes": 53954,
+      "sha256": "202c33d5ddf5f70bfc8474cbd07e8608f4339d9ca70be1ecb54f656b9b72f808"
+    },
+    {
+      "file": "kunjwal2019.html",
+      "url": "https://arxiv.org/html/1812.06940v2",
+      "retrieved_date_utc": "2026-09-26",
+      "bytes": 886390,
+      "sha256": "6089948c1d3b2e66e51c6fa9116da578bca7d20476468e3d83e7e4a4cce93835"
+    },
+    {
+      "file": "matzkin2020.pdf",
+      "url": "https://arxiv.org/pdf/2002.00832",
+      "retrieved_date_utc": "2026-09-26",
+      "bytes": 720230,
+      "sha256": "2784314d8ba5721bb7661acdb03d0b6504d03f5289c5baa227aa47d39b1e1265"
+    },
+    {
+      "file": "lundeen2011.pdf",
+      "url": "https://arxiv.org/pdf/1112.3575",
+      "retrieved_date_utc": "2026-09-26",
+      "bytes": 480596,
+      "sha256": "8b43005116bf6648c8d5dce9b4555cac9f8910300ced1db0cf36189a53d58221"
+    },
+    {
+      "file": "looped2016.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5196392/fullTextXML",
+      "retrieved_date_utc": "2026-09-26",
+      "bytes": 75974,
+      "sha256": "d0ad2195be3876fb5ebfcfddfd1cbda0c9284ba96e62007b2971f3dfec80863f"
+    }
+  ],
+  "tooling_source_commit": "3cd14198411c6c1d3c6ded8e764f198147fc32c7",
+  "tooling_source_repository": "https://github.com/stevenwarejones/ontology-separation",
+  "formal_companion": {
+    "repository": "https://github.com/stevenwarejones/ontology-separation",
+    "commit": "a4d294ddb3847134ac2bdbb509c435c2eaff7a98",
+    "module": "OntologySeparation/Experiments/PathInterference.lean",
+    "scope": "Ideal finite case study, not an empirical certificate"
+  }
+}

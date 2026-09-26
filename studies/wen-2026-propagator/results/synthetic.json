@@ -1,0 +1,111 @@
+{
+  "kind": "synthetic-only; no experimental workbooks loaded",
+  "paths": 1419857,
+  "paths_per_endpoint": 83521,
+  "full_kernel_entries": 1445,
+  "used_kernel_entries_fixed_start": 1173,
+  "composition_max_abs_error": 1.7763568394002505e-15,
+  "coordinates": [
+    {
+      "dx_m": 5.73e-06,
+      "max_transverse_slope": 0.006112,
+      "max_relative_action_over_pi_hbar": 2.9603299018867926,
+      "fraction_relative_action_at_least_2pi": 0.0017311602506449592,
+      "normalized_shape": [
+        0.044565026759452474,
+        0.04935112111614969,
+        0.0538562404870208,
+        0.05794370905448001,
+        0.061485714585453315,
+        0.06436887221330899,
+        0.06649923610284018,
+        0.06780649912811318,
+        0.06824716110636284,
+        0.06780649912811318,
+        0.06649923610284018,
+        0.06436887221330898,
+        0.0614857145854533,
+        0.05794370905448001,
+        0.0538562404870208,
+        0.04935112111614967,
+        0.044565026759452474
+      ],
+      "tv_coherent_vs_uniform": 0.059156040459911755
+    },
+    {
+      "dx_m": 6.09e-06,
+      "max_transverse_slope": 0.006496,
+      "max_relative_action_over_pi_hbar": 3.343993720754717,
+      "fraction_relative_action_at_least_2pi": 0.005614649926013676,
+      "normalized_shape": [
+        0.04153267972714286,
+        0.04714981336753215,
+        0.05256269458828479,
+        0.05757030086204181,
+        0.06197874584875088,
+        0.06561185824111049,
+        0.06832099655185575,
+        0.06999345593317322,
+        0.07055890976021618,
+        0.06999345593317324,
+        0.06832099655185575,
+        0.06561185824111047,
+        0.06197874584875089,
+        0.05757030086204181,
+        0.052562694588284775,
+        0.04714981336753216,
+        0.04153267972714286
+      ],
+      "tv_coherent_vs_uniform": 0.07295725820411447
+    }
+  ],
+  "independent_kernel_noise": [
+    {
+      "seed": 0,
+      "path_probability_smape": 0.17527673388616066,
+      "path_phase_error_sd_over_pi": 0.10640741105275413
+    },
+    {
+      "seed": 1,
+      "path_probability_smape": 0.18382014411563416,
+      "path_phase_error_sd_over_pi": 0.10169906636204755
+    },
+    {
+      "seed": 2,
+      "path_probability_smape": 0.1842242154991996,
+      "path_phase_error_sd_over_pi": 0.10322118007144808
+    },
+    {
+      "seed": 3,
+      "path_probability_smape": 0.17277614060348603,
+      "path_phase_error_sd_over_pi": 0.1035438707870724
+    },
+    {
+      "seed": 4,
+      "path_probability_smape": 0.18322779028556035,
+      "path_phase_error_sd_over_pi": 0.09793252728034368
+    },
+    {
+      "seed": 5,
+      "path_probability_smape": 0.18625259005222403,
+      "path_phase_error_sd_over_pi": 0.10381489477022089
+    },
+    {
+      "seed": 6,
+      "path_probability_smape": 0.18924133287057432,
+      "path_phase_error_sd_over_pi": 0.1019263259287235
+    },
+    {
+      "seed": 7,
+      "path_probability_smape": 0.17431667403771386,
+      "path_phase_error_sd_over_pi": 0.0990295469158368
+    }
+  ],
+  "iid_segment_phase_sd_over_pi": 0.10263552016724037,
+  "common_mode_counterexample": {
+    "probability_multiplier_for_alpha_005": 1.628894626777442,
+    "within_run_probability_smape": 0,
+    "explanation": "A shared gain error changes absolute scale while leaving within-run path uniformity exact."
+  },
+  "coordinate_convention_shape_tv": 0.013801217744202714
+}
