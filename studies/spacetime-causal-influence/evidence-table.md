@@ -20,7 +20,7 @@ separately. No source data or paper PDFs are redistributed here.
 | Liang & Zhang, *Bounding the Plausibility of Physical Theories in a Device-Independent Setting via Hypothesis Testing*, [1812.06236v2](https://arxiv.org/abs/1812.06236v2); 2018-12-15 / 2019-02-27; [Entropy 21, 185](https://doi.org/10.3390/e21020185) (2019) | Theory, simulations and data example; full arXiv PDF, sections II, III.C, IV and V | Prediction-based ratios test model sets including nonsignaling with randomized inputs, allowing memory | Their discussion explains why unrandomized acquisition blocks invalidate the apparent signaling interpretation. No data imported here | Strong adverse inference precedent; randomization is essential, and this study's simpler confidence interval does not claim a new memory-robust testing method |
 | Soulas, *A proof that no-signalling implies microcausality in quantum field theory*, [2309.07715v2](https://arxiv.org/html/2309.07715v2), revised 2025-02-28 | Theory; full HTML, assumptions of Theorem 4.1 and literature comparison | Converse direction under ideal pointwise projection measurements and operator/field assumptions; explicitly restricts realistic-measurement scope | No calibration or empirical data | Not a derivation of the proposed apparatus's locality. Its references led to the detector-factorization and noncompact-tail checks above |
 
-## Review-added experimental and adverse precedents
+## Experimental and adverse precedents
 
 | Source / version | Reviewed coverage | Quantity, assumptions and relevance | Calibration, selection and data limits |
 |---|---|---|---|
@@ -44,8 +44,8 @@ separately. No source data or paper PDFs are redistributed here.
 | Tong, [QFT notes, section 2](https://www.damtp.cam.ac.uk/user/tong/qft/qfthtml/S2.html) | Retrieval failed. Detector/QFT primary sources above supply the causal-response discussion instead; no unseen passage is cited. |
 | Kim, Bang & Moon, *Exact No Signaling in Time without Temporal Classicality*, arXiv:2607.14583 | Recent search result screened at abstract level; direct arXiv retrieval unavailable. Earlier-measurement/later-marginal temporal classicality is a different claim from later-choice influence on a secured earlier record. Not used as evidence for any theorem or novelty claim. |
 
-The source/version and access gaps are ST11. Earlier exact-title searches returned no applicable notice for their narrower
-source set. The review-added Stenner and Salart searches found the exchanges
-listed above;
+The source/version and access gaps are ST11. The Stenner and Salart sources have the comment/reply exchanges listed above.
+For the other sources, exact-title searches found no applicable notice in the
+reviewed primary records;
 this is limited coverage, not proof that none exists. The review does not compare
 unlike observables as though their numerical sensitivities were interchangeable.
