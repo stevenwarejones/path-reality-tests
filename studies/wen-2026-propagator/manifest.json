@@ -1,0 +1,123 @@
+{
+  "dataset_doi": "10.5061/dryad.x0k6djj14",
+  "version_number": 3,
+  "version_id": 450489,
+  "license": "CC0-1.0",
+  "retrieved_utc": "2026-09-26T02:01:27.087755+00:00",
+  "files": [
+    {
+      "name": "Fig3.xlsx",
+      "size": 50582,
+      "sha256": "dccdde7960394bca2df8a28cd667f4ab54a39d15ce8ef9dce997bbb962ebe092",
+      "url": "https://datadryad.org/downloads/file_stream/4840526"
+    },
+    {
+      "name": "Fig4A.xlsx",
+      "size": 10698,
+      "sha256": "5897f9f31b51fe387c32e329581066d4276a6d27df7c9012435cb21e85469d82",
+      "url": "https://datadryad.org/downloads/file_stream/4840527"
+    },
+    {
+      "name": "Fig4B.xlsx",
+      "size": 11615,
+      "sha256": "da16adb40e929cc2d4a0aea59f0feeafe37a6d19c6e220f051315902b332203a",
+      "url": "https://datadryad.org/downloads/file_stream/4840529"
+    },
+    {
+      "name": "Fig4C.xlsx",
+      "size": 15061,
+      "sha256": "139739e91ec5f4d9a2aafaabb7f65e8658f9c9b73ebb8bf5b3bfc08ced9d6f6b",
+      "url": "https://datadryad.org/downloads/file_stream/4840528"
+    },
+    {
+      "name": "FigS1B-L.xlsx",
+      "size": 142424,
+      "sha256": "bc1f311ac63766cec60f852ca2e3893e6e719dee98a0a58dac6e3f7ab1a82da6",
+      "url": "https://datadryad.org/downloads/file_stream/4840540"
+    },
+    {
+      "name": "FigS1B-Minus.xlsx",
+      "size": 142786,
+      "sha256": "a8a2e4eafe8412929d573a10ccf6294789e603f578b447c1ece053d4159cb234",
+      "url": "https://datadryad.org/downloads/file_stream/4840541"
+    },
+    {
+      "name": "FigS1B-Plus.xlsx",
+      "size": 142855,
+      "sha256": "3edf88999c89e89572e9ade8ccc65959def984a516f9bb4d4e086722bcccb285",
+      "url": "https://datadryad.org/downloads/file_stream/4840542"
+    },
+    {
+      "name": "FigS1B-PSI.xlsx",
+      "size": 144703,
+      "sha256": "c11590c741d5eb8b8d7cc62fd7c39084fbde31f5bdddd8bc2bc70e97c50fbef6",
+      "url": "https://datadryad.org/downloads/file_stream/4840543"
+    },
+    {
+      "name": "FigS1B-R.xlsx",
+      "size": 142739,
+      "sha256": "9e16dc59ae14c4ded6e3a14c6b87ee5186f8e4390016190dffb2302a285fb4f7",
+      "url": "https://datadryad.org/downloads/file_stream/4840544"
+    },
+    {
+      "name": "FigS1C.xlsx",
+      "size": 20020,
+      "sha256": "5d4ca2ba8f27aa0fefbe45b8f467bc0f63469b82e76fdef1588d6e9e44a412c1",
+      "url": "https://datadryad.org/downloads/file_stream/4840530"
+    },
+    {
+      "name": "FigS2A.xlsx",
+      "size": 16297,
+      "sha256": "b7348b277afba3280d024e4ca9945b6b69a46333adeee909ae4807d4e01781d8",
+      "url": "https://datadryad.org/downloads/file_stream/4840531"
+    },
+    {
+      "name": "FigS2B.xlsx",
+      "size": 14005,
+      "sha256": "482e635f6644c9d58c13989c395cf8e74ae7ffcbd88704196d02986bf2fe300e",
+      "url": "https://datadryad.org/downloads/file_stream/4840532"
+    },
+    {
+      "name": "FigS2C.xlsx",
+      "size": 15937,
+      "sha256": "7412bc1f0977a280b4a7028671cb0f307f961f02c8ab991ba1c250952c1e1806",
+      "url": "https://datadryad.org/downloads/file_stream/4840533"
+    },
+    {
+      "name": "FigS2D.xlsx",
+      "size": 13783,
+      "sha256": "a60e0ec1f82db52734801c206d136b959bb37ad7067eed6631c626d10cd71ab4",
+      "url": "https://datadryad.org/downloads/file_stream/4840535"
+    },
+    {
+      "name": "FigS3A.xlsx",
+      "size": 11676,
+      "sha256": "d922b67d7fc2e700f44e5ac551e15ae6e73d05316d3e578dfcc9d7274f464393",
+      "url": "https://datadryad.org/downloads/file_stream/4840536"
+    },
+    {
+      "name": "FigS3B.xlsx",
+      "size": 16790,
+      "sha256": "e042db4a8a4fbaa632d65a6680da913f24e936b57e44526b8bed39d9f5bb944d",
+      "url": "https://datadryad.org/downloads/file_stream/4840537"
+    },
+    {
+      "name": "FigS4A.xlsx",
+      "size": 13495,
+      "sha256": "b42c2adf09d162d7967857f8a4a45fa8c95b92877757fef083ab18c0b97f3d5c",
+      "url": "https://datadryad.org/downloads/file_stream/4840538"
+    },
+    {
+      "name": "FigS4B.xlsx",
+      "size": 25197,
+      "sha256": "49edd6c8faeba3f6ab65cd5523d21c363a6d08b11e94e556b707b45e3ea51b9f",
+      "url": "https://datadryad.org/downloads/file_stream/4840534"
+    },
+    {
+      "name": "README.md",
+      "size": 11480,
+      "sha256": "e523bc79c4d882ea20c27c189fe5cea73c604fc8166a7737603cd34bd890875b",
+      "url": "https://datadryad.org/downloads/file_stream/4840597"
+    }
+  ]
+}

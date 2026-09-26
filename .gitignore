@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+studies/*/raw/*
+!studies/*/raw/README.md
+studies/*/results/access-log.json
+studies/*/results/workbooks/
+*.log
