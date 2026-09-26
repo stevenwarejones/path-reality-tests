@@ -2,8 +2,7 @@
   "kind": "prospective conditional designs, not observed data or achieved power",
   "source": {
     "filename": "design.py",
-    "sha256": "370ea16eac32c8d285cd4071a591b2f0b15a531e897b4ef1fe359b0bad707b12",
-    "scipy_version": "1.16.3"
+    "sha256": "f33e912ca2a8c6909543704d73f26c003cb80327116c0610bcbd7af4e3c04bb9"
   },
   "premises": [
     "independent fixed-probability Bernoulli trials within each setting",

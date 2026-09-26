@@ -20,5 +20,9 @@
   ],
   "output_provenance": "Each numerical JSON identifies its generating script and SHA-256; no measured data are used.",
   "general_formal_companion_commit": "91590c324c444c836efe2b7d7049784a81c6a475",
-  "general_formal_companion": "https://github.com/stevenwarejones/ontology-separation/blob/91590c324c444c836efe2b7d7049784a81c6a475/docs/PHASE_INTERVENTION.md"
+  "general_formal_companion": "https://github.com/stevenwarejones/ontology-separation/blob/91590c324c444c836efe2b7d7049784a81c6a475/docs/PHASE_INTERVENTION.md",
+  "design_snapshot_generation_environment": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  }
 }

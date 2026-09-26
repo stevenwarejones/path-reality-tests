@@ -193,12 +193,10 @@ def lossy_probabilities(eta, visibility):
 
 
 def examples():
-    from scipy import __version__ as scipy_version
     return {
         'kind': 'prospective conditional designs, not observed data or achieved power',
         'source': {'filename': 'design.py',
-                   'sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-                   'scipy_version': scipy_version},
+                   'sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},
         'premises': ['independent fixed-probability Bernoulli trials within each setting',
                      'complete herald-denominated outcomes',
                      'predeclared settings, selected bin, sample sizes and stopping',
@@ -222,6 +220,30 @@ def examples():
     }
 
 
+def compare_snapshot(actual, expected, path="root"):
+    """Tolerate floating-point roundoff; preserve discrete results and structure.
+
+    Integer sample sizes stay exact: a SciPy change can shift a certified integer
+    at a discrete boundary, which requires review rather than numerical tolerance.
+    """
+    if isinstance(expected, dict):
+        if not isinstance(actual, dict) or actual.keys() != expected.keys():
+            raise ValueError(f"Snapshot keys differ at {path}")
+        for key in expected:
+            compare_snapshot(actual[key], expected[key], f"{path}.{key}")
+    elif isinstance(expected, list):
+        if not isinstance(actual, list) or len(actual) != len(expected):
+            raise ValueError(f"Snapshot length differs at {path}")
+        for index, (a, e) in enumerate(zip(actual, expected)):
+            compare_snapshot(a, e, f"{path}[{index}]")
+    elif isinstance(expected, float):
+        if type(actual) is not float or not math.isfinite(actual) or not math.isclose(
+                actual, expected, rel_tol=1e-10, abs_tol=1e-12):
+            raise ValueError(f"Snapshot number differs at {path}: {actual!r} vs {expected!r}")
+    elif type(actual) is not type(expected) or actual != expected:
+        raise ValueError(f"Snapshot value differs at {path}: {actual!r} vs {expected!r}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check', action='store_true')
@@ -229,8 +251,10 @@ def main():
     result = examples()
     target = ROOT / 'results/design.json'
     if args.check:
-        if json.loads(target.read_text()) != result:
-            raise SystemExit('Prospective design snapshot differs; inspect before updating')
+        try:
+            compare_snapshot(result, json.loads(target.read_text()))
+        except ValueError as error:
+            raise SystemExit(str(error)) from error
         print('Prospective precision/power snapshot passed')
     else:
         target.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')

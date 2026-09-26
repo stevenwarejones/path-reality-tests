@@ -48,7 +48,10 @@ including grouped ranges. Existing tests continue to cover integrity failures,
 replication, synthetic algebra, corruption, and invocation from other directories.
 
 Each numerical JSON records its generating script and SHA-256; the design
-snapshot also records the SciPy version used for the binomial quantiles. CI checks
+snapshot uses relative tolerance 1e-10 and absolute tolerance 1e-12 for floats;
+keys, strings, booleans and integer sample sizes remain exact. A SciPy change can
+shift a certified integer at a discrete boundary; such a change is reported with
+its entry path for review. The generation versions are recorded in `provenance.json`. CI checks
 snapshots without overwriting them. The guarantees remain conditional on the
 fixed-probability independent trial model derived in the protocol; these tests
 supply no calibration or observed experimental power.

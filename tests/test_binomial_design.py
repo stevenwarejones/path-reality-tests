@@ -104,6 +104,25 @@ class BinomialTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             design.interval_plan([.6, .5, .4, .5], .02, w=.5)
 
+    def test_snapshot_tolerance_preserves_discrete_results_and_structure(self):
+        expected = {'plan': [{'contrast': .6, 'tiny': 0., 'trials': 8002,
+                              'certified': True, 'method': 'cp'}]}
+        import copy
+        perturbed = copy.deepcopy(expected)
+        perturbed['plan'][0].update(contrast=.6+1e-12, tiny=5e-13)
+        design.compare_snapshot(perturbed, expected)
+        for key, value in [('trials', 8003), ('trials', 8002.),
+                           ('certified', 1), ('method', 'hoeffding'),
+                           ('contrast', .61), ('contrast', float('nan'))]:
+            changed = copy.deepcopy(expected)
+            changed['plan'][0][key] = value
+            with self.assertRaisesRegex(ValueError, rf'root\.plan\[0\]\.{key}'):
+                design.compare_snapshot(changed, expected)
+        with self.assertRaisesRegex(ValueError, 'keys differ at root'):
+            design.compare_snapshot({}, expected)
+        with self.assertRaisesRegex(ValueError, 'length differs at root.plan'):
+            design.compare_snapshot({'plan': []}, expected)
+
     def test_question_register_covered_by_dispositions(self):
         study = ROOT/'studies/wen-2026-propagator'
         registered = set(re.findall(r'^\| (Q\d+) \|', (study/'open-questions.md').read_text(), re.M))
