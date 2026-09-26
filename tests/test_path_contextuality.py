@@ -81,6 +81,12 @@ class ContextualityTests(unittest.TestCase):
 
     def test_countermodels(self):
         r=d.exact_countermodels()
+        expected=[[str(x) for x in row] for row in d.rational_instrument()['table']]
+        for name in ['drop_cap','drop_disturbance']:
+            self.assertEqual(r[name+'_quantum_joint'],expected)
+            self.assertEqual(r[name+'_bypass'],'49/625')
+        self.assertGreater(F(r['drop_cap_negative_response']),F(16,25))
+        self.assertLessEqual(F(r['drop_disturbance_max_negative_response']),F(16,25))
         self.assertEqual(r['reference_parameter_null_bypass'],'49/625')
         self.assertEqual(r['reference_parameter_null_joint'],'49/1250')
         self.assertEqual(r['marginal_disturbance'],'0')

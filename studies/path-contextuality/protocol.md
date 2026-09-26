@@ -100,12 +100,14 @@ unimplemented equivalence-validation procedure.
 Fixed counts: draw a randomized permutation of the predeclared context labels,
 with n trials in each of the four main contexts and n_cal in each of the 44 audit
 contexts. Complete the schedule independently of observed outcomes. The budget
-is 4n+44n_cal. This includes calibration audit collection but excludes unspecified
+is 4n+44n_cal. The main q and d strata repeat settings in the audit family
+using separate trials; 48 labels denote acquisition strata, not 48 distinct
+physical configurations. This includes calibration audit collection but excludes unspecified
 pilot or initial apparatus characterization; their unknown cost prevents an
 end-to-end experiment cost claim. For n_cal=ceil(log(176/α_cal)/(2t²)), all 88
 coordinate radii are at most t with simultaneous coverage ≥1−α_cal.
 
-Random counts: an alternative fixes total N and assigns each of K=48 contexts
+Random counts: an alternative fixes total N and assigns each of K=48 acquisition strata
 independently and uniformly. Conditioned on n_i, IID outcome sampling gives the
 same coverage. The probability that any n_i<N/(2K) is at most
 K exp(−N/(8K)); `random_context_budget` adds that count risk to the power budget.

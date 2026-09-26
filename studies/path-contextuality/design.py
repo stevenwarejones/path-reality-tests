@@ -152,15 +152,19 @@ def random_context_budget(gap, contexts=48, alpha=.005, beta=.1):
 
 
 def exact_countermodels():
-    """Independent exact verification of complete 2-state kernels and their moments."""
+    """Independent exact verification of complete finite kernels and their moments."""
     def evaluate(mu, kernel, response):
+        n=len(mu)
+        assert len(kernel)==len(response)==n
+        assert all(0<=r<=1 for r in response)
+        assert all(len(row)==2 and all(len(branch)==n for branch in row) for row in kernel)
         assert sum(mu) == 1 and min(mu) >= 0
         for row in kernel:
             assert sum(map(sum, row)) == 1 and min(sum(row, [])) >= 0
         table = [[sum(mu[l]*kernel[l][m][j]*(response[j] if f == 0 else 1-response[j])
-                      for l in range(2) for j in range(2)) for f in range(2)] for m in range(2)]
+                      for l in range(n) for j in range(n)) for f in range(2)] for m in range(2)]
         assert sum(map(sum, table)) == 1
-        return table, sum(mu[l]*response[l] for l in range(2))
+        return table, sum(mu[l]*response[l] for l in range(n))
     h=F(1,2)
     f0=F(49,625); q0=F(16,25); d0=F(1,50)
     identity_probe=[[[h,0],[h,0]], [[0,h],[0,h]]]
@@ -181,7 +185,32 @@ def exact_countermodels():
     k3=[[[q-d,d],[1-q,0]], [[0,q],[0,1-q]]]
     t3,f3=evaluate([1,0],k3,[0,1])
     assert t3[0][0]==d and sum(t3[m][0] for m in range(2))==d and f3==0
-    return {'reference_parameter_null_joint':str(null_table[0][0]),
+    # Exact reference-data rivals: drop exactly one representation premise.
+    target=rational_instrument()['table']
+    cap_kernel=[[[F(1081,1225),0],[F(144,1225),0]],
+                [[d0,F(49,100)],[0,F(49,100)]]]
+    cap_table,cap_f=evaluate([f0,1-f0],cap_kernel,[1,0])
+    assert cap_table==target and cap_f==f0
+    for l in range(2):
+        for j in range(2):
+            assert sum(cap_kernel[l][m][j] for m in range(2)) == (1-d0)*(l==j)+d0*(j==0)
+    assert sum(cap_kernel[0][0])>q0
+    disturbance_kernel=[[[0,target[0][0],target[0][1]],
+                         [0,target[1][0],target[1][1]]],
+                        [[0,h,0],[0,h,0]], [[0,0,h],[0,0,h]]]
+    disturbance_table,disturbance_f=evaluate([1,0,0],disturbance_kernel,[f0,1,0])
+    assert disturbance_table==target and disturbance_f==f0
+    max_negative=max(sum(row[0]) for row in disturbance_kernel)
+    assert max_negative==F(337,625) and max_negative<=q0
+    # L has zero probability of staying L, contradicting the diagonal lower bound.
+    assert sum(disturbance_kernel[0][m][0] for m in range(2)) < 1-d0
+    return {'drop_cap_quantum_joint': [[str(x) for x in row] for row in cap_table],
+            'drop_cap_bypass': str(cap_f),
+            'drop_cap_negative_response': str(sum(cap_kernel[0][0])),
+            'drop_disturbance_quantum_joint': [[str(x) for x in row] for row in disturbance_table],
+            'drop_disturbance_bypass': str(disturbance_f),
+            'drop_disturbance_max_negative_response': str(max_negative),
+            'reference_parameter_null_joint':str(null_table[0][0]),
             'reference_parameter_null_bypass':str(null_f),
             'undisturbed_marginal_invasive_joint': [[str(x) for x in row] for row in table],
             'marginal_disturbance': '0', 'invasive_gap_if_d_misidentified_as_zero': '1/4',

@@ -11,10 +11,10 @@ companion's review state and CI are tracked in
 | Explicit stochastic ontology and operational/ontic distinction | `derivation.md`; formal `Model`, `ResponseCap`, `Disturbance`, `cap_of_measurement_equivalence` | Implemented; formal CI pending |
 | Bound with a nonempty null | `Model.bound`, `full_bound`, `null_nonempty`; independent row derivation | Implemented; formal CI pending |
 | Normalized violating quantum instrument | Kraus completeness, full channel/effect identities, pulled-back POVM and `quantum_realizes_table`; independent matrix/Fraction tests | Numerical/exact arithmetic checks passed; formal CI pending |
-| Adversarial disturbance/context/selection models | `exact_countermodels`, `PathContextualityCountermodels.lean`, four constructions in derivation | Exact Python checks passed; formal CI pending |
+| Adversarial disturbance/context/selection models | `exact_countermodels`, `PathContextualityCountermodels.lean`, six constructions in derivation | Exact Python checks passed; formal CI pending |
 | No unjustified finite reduction | Universal proof over every finite cardinality; no LP/enumeration or polytope claim | Done; measurable extension is separately scoped and not Lean-certified |
 | Complete outcomes and normalization convention | 9-outcome lossy table, bypass versus joint distinction, selection counterexample | Done for specified noise channel |
-| Robustness with imperfect equivalences | `Model.robust_bound`; explicit near-model or relaxed representation premise | Conditional result; operational closeness does not imply ontic closeness |
+| Robustness with imperfect equivalences | `Model.robust_bound`, `ceiling_mono`, `Model.full_bound_of_upper`; explicit near-model or relaxed representation premise | Conditional result; operational closeness does not imply ontic closeness |
 | Accessible calibration family | 44 synthetic contexts, exact spanning-coordinate determinant, protocol mapping | Ideal construction done; actual control availability/characterization externally blocked |
 | Finite statistics and calibration costs | CP rule, Hoeffding certificate, fixed/random context counts, seeds, all-trial budgets and unit tests | Done conditional on IID, valid representations and characterized controls; not an end-to-end apparatus budget |
 | Optimization and sample comparison | Exact rational 1,215-point grid, complete outputs | Grid minimum only; global optimization neither needed nor claimed |

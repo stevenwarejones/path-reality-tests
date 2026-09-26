@@ -67,9 +67,10 @@ d=1/50 and f=49/625, a fair one-state probe and stochastic final response
 r=49/625 are also admissible: choose D=identity, so (1−d)I+dD=I. This gives
 a=49/1250, below the bound. The reduced null at those parameters is therefore
 nonempty; this is not a model of the full quantum calibration family.
-The following complete two-state models are
-independently evaluated with Fractions in `exact_countermodels()`; the first two
-are also formalized in the companion.
+The following attacks distinguish marginal checks from representation premises.
+The first three complete two-state models are independently evaluated with
+Fractions in `exact_countermodels()`; the first two are also formalized in the
+companion. Case 4 is a preparation-dependence illustration, not a Lean model.
 
 1. **Hidden disturbance:** prepare a fair bit λ. Toss a fair pointer m and replace
    λ by m; final success means λ′=0. Bypass and final success marginals are both
@@ -95,6 +96,22 @@ calibration family. A claimed equivalence across all those procedures is a
 stronger hypothesis. Generic approximate noncontextuality is an additional
 assumption: small operational distance does not constrain representation distance.
 
+Two further exact models match the entire reference quantum table and bypass
+probability 49/625. `drop_cap_realizes_quantum` uses states S/F, success response
+1/0, and preparation weights 49/625 and 576/625. S stays S with negative/positive
+weights 1081/1225 and 144/1225; F has negative-to-S weight 1/50,
+negative-to-F weight 49/100 and positive-to-F weight 49/100. Its total channel
+is 49/50 identity plus 1/50 reset-to-S, but S violates the cap 16/25.
+
+`drop_disturbance_realizes_quantum` prepares L with success response 49/625.
+Its four outgoing branches go to deterministic S/F with the four reference
+joint probabilities. S and F stay put with a fair pointer. Every negative
+response is at most 337/625 < 16/25. L never remains L, contradicting the
+49/50 diagonal lower bound required by disturbance 1/50. Both constructions
+are checked with exact Fractions and encoded in Lean; final formal verification
+is tracked in PR #87. They show that each premise is necessary at the reference
+data, while making no claim to reproduce all quantum calibration procedures.
+
 ## Derived robustness and losses
 
 If actual a and f are within ε_a and ε_f of a model satisfying the exact
@@ -119,7 +136,8 @@ matrix T, let T′ be T followed by that bit-flip channel. The nine outcomes are
 - P(lost probe,no detection)=(1−β)(1−η).
 
 Their sum is one. Bypass f′=η[(1−2e)f+e], a′=βηT′−,success,
-q′=βq, while d is unchanged by erasing a *record after* the complete instrument.
+q′=βq, measured directly in the lossy q-calibration context rather than assumed
+from fair sampling, while d is unchanged by erasing a *record after* the complete instrument.
 Thus W′=a′−q′f′−d(1−f′) is directly evaluable without fair sampling. Unknown
 physical absorption before the instrument is not this erasure model and requires
 recalibration of the channel. The main theorem tolerates arbitrary stochastic

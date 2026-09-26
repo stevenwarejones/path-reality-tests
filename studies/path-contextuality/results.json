@@ -208,6 +208,30 @@
     ]
   },
   "countermodels": {
+    "drop_cap_quantum_joint": [
+      [
+        "1369/15625",
+        "7056/15625"
+      ],
+      [
+        "144/15625",
+        "7056/15625"
+      ]
+    ],
+    "drop_cap_bypass": "49/625",
+    "drop_cap_negative_response": "1081/1225",
+    "drop_disturbance_quantum_joint": [
+      [
+        "1369/15625",
+        "7056/15625"
+      ],
+      [
+        "144/15625",
+        "7056/15625"
+      ]
+    ],
+    "drop_disturbance_bypass": "49/625",
+    "drop_disturbance_max_negative_response": "337/625",
     "reference_parameter_null_joint": "49/1250",
     "reference_parameter_null_bypass": "49/625",
     "undisturbed_marginal_invasive_joint": [
