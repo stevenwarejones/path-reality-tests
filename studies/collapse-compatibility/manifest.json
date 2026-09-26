@@ -1,0 +1,29 @@
+{
+  "accessed_utc": "2026-09-26",
+  "files": [
+    {
+      "name": "Na-Cluster-Interference.zip",
+      "doi": "10.5281/zenodo.17502163",
+      "url": "https://zenodo.org/records/17502163/files/Na-Cluster-Interference.zip",
+      "bytes": 88626,
+      "sha256": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata."
+    },
+    {
+      "name": "PSD.zip",
+      "doi": "10.5281/zenodo.3956096",
+      "url": "https://zenodo.org/records/3956096/files/PSD.zip",
+      "bytes": 290283,
+      "sha256": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata."
+    },
+    {
+      "name": "Final_data.xlsx",
+      "doi": "10.5281/zenodo.3956096",
+      "url": "https://zenodo.org/records/3956096/files/Final%20data.xlsx",
+      "bytes": 12910,
+      "sha256": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata."
+    }
+  ]
+}

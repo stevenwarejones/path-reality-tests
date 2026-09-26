@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "status": "retrospective exploratory; frozen after source inspection and baseline pilot, before validation simulations",
+  "reference_mass": "atomic mass constant; mechanics published convention also evaluated with neutron mass",
+  "rc_grid_m": [1e-7, 3e-7, 1e-6],
+  "white_rate_grid_s_inverse": [0, 1e-10, 1e-9, 1e-8, 1e-7, 1e-6, 1e-5, 0.0001, 0.001],
+  "display_scans": ["Sodium_int_powerscan_1", "Sodium_int_powerscan_3", "Sodium_int_powerscan_48"],
+  "ou_tau_grid_s": [0, 1e-12, 1e-10, 1e-8, 1e-6, 0.0001, 0.01, 1],
+  "published_force_upper_N2_per_hz": 2.0734614485025937e-36,
+  "benchmarks": [
+    {"name": "100 nm silica sphere", "radius_m": 1e-7, "density_kg_m3": 2200, "separation_m": 1e-7, "time_s": 0.01, "required_log_suppression": 10, "rationale": "mesoscopic spatial record; illustrative requirement, not a universal measurement threshold"},
+    {"name": "1 micron silica sphere", "radius_m": 1e-6, "density_kg_m3": 2200, "separation_m": 1e-6, "time_s": 0.01, "required_log_suppression": 10, "rationale": "larger spatial pointer; contrast mass amplification with the smaller benchmark"}
+  ],
+  "simulation": {"seed": 20260926, "repeats": 5000, "alpha": 0.05},
+  "no_data_selected_cutoff": true,
+  "empirical_joint_exclusion_enabled": false
+}
