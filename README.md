@@ -32,3 +32,7 @@ explicit source/license review before inclusion.
 Repository code is distributed under the [Apache 2.0 license](LICENSE); external
 data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.
+
+The [path-compatibility study](studies/path-compatibility/README.md) gives a sharp
+reference-table boundary, conditional Wen image reconstruction, and a finite-menu
+measurement comparison with explicit non-identifiability certificates.
