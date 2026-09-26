@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Independent synthetic calculations, NOT a fit or replication of observed data."""
+import argparse
 import json
+import math
 from pathlib import Path
 import numpy as np
 import matplotlib
@@ -37,7 +39,31 @@ def check_composition():
     return float(np.max(np.abs(route_sum - transfer)))
 
 
+def compare_snapshot(actual, expected, path="root"):
+    """Compare declared numerical outputs with tolerances, never image bytes."""
+    if isinstance(expected, dict):
+        if not isinstance(actual, dict) or actual.keys() != expected.keys():
+            raise ValueError(f"Snapshot keys differ at {path}")
+        for key in expected:
+            compare_snapshot(actual[key], expected[key], f"{path}.{key}")
+    elif isinstance(expected, list):
+        if not isinstance(actual, list) or len(actual) != len(expected):
+            raise ValueError(f"Snapshot length differs at {path}")
+        for index, (a, e) in enumerate(zip(actual, expected)):
+            compare_snapshot(a, e, f"{path}[{index}]")
+    elif isinstance(expected, float):
+        if not isinstance(actual, (int, float)) or not math.isfinite(actual) or not math.isclose(
+                actual, expected, rel_tol=1e-10, abs_tol=1e-12):
+            raise ValueError(f"Snapshot number differs at {path}: {actual} vs {expected}")
+    elif type(actual) is not type(expected) or actual != expected:
+        raise ValueError(f"Snapshot value differs at {path}: {actual} vs {expected}")
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Check the committed numerical snapshot")
+    parser.add_argument("--output-dir", type=Path, help="Write regenerated outputs to this directory")
+    args = parser.parse_args()
     n, m, wavelength, dz = 17, 5, 795e-9, 15e-3
     paths, previous, _ = enumerate_amplitudes(np.ones((m, n, n)), 8)
     differences = paths - previous
@@ -85,8 +111,13 @@ def main():
         "within_run_probability_smape": 0,
         "explanation": "A shared gain error changes absolute scale while leaving within-run path uniformity exact."}
     report["coordinate_convention_shape_tv"] = float(np.abs(curves[0] - curves[1]).sum() / 2)
-    out = ROOT / "results"
-    out.mkdir(exist_ok=True)
+    if args.check:
+        compare_snapshot(report, json.loads((ROOT / "results" / "synthetic.json").read_text()))
+        print("Synthetic numerical snapshot and independent composition check passed")
+        if args.output_dir is None:
+            return
+    out = args.output_dir if args.output_dir is not None else ROOT / "results"
+    out.mkdir(parents=True, exist_ok=True)
     (out / "synthetic.json").write_text(json.dumps(report, indent=2) + "\n")
     fig, ax = plt.subplots(figsize=(8, 4.6), constrained_layout=True)
     for curve, label in zip(curves, ("5.73 μm centers", "6.09 μm centers")):
