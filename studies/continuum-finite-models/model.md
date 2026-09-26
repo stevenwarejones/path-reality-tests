@@ -1,7 +1,9 @@
 # Model and mathematical derivations
 
-These are mathematical derivations, with numerical checks in `model.py`. They
-are **not yet certified by the companion Lean development**.
+These derivations have numerical checks and corresponding formal constructions.
+The [README](README.md) identifies the verified formal revision and its evidence;
+source implementations alone are not a completed audit. The sharper pure-state
+truncation constant remains independently derived here, as explained below.
 
 ## Common experiment
 
@@ -10,7 +12,8 @@ circumference L>0. The Fourier Hilbert space is l²(Z;C), with normalized
 coefficients c and E_j=hbar²(2πj/L)²/(2m). Evolution multiplies c_j by
 exp(-itE_j/hbar). Moduli, normalization and inner products are preserved;
 U(t+s)=U(t)U(s), U(-t)=U(t) inverse. Its position representation is the usual
-unitary Fourier-series identification with L² of the circle. Continuous position
+unitary Fourier-series identification with L² of the circle; that identification
+is an external analytic bridge, not a theorem exported by this formal project. Continuous position
 does not require a continuous energy spectrum.
 
 Preparations and effects are calibrated in this common Fourier convention.
@@ -132,3 +135,30 @@ executable decision use exact cosine dispersion and do not call either
 approximation or truncation helper. `approximation()` labels `tv_bound` as the
 pure-state trace-distance derivation and returns `formal_tv_bound` separately
 with the formally proved conservative tail coefficient.
+
+
+## Formal connections and independent numerical evidence
+
+| Connection | Formal declarations | Numerical evidence |
+|---|---|---|
+| Two-mode preparation and complete readout | `twoModeEmbedding_intertwines`, `transportedInterferometer_agrees`, `spectralReadout_agrees` | `test_complete_transport_on_and_off_accessible_subspace` |
+| Cyclic Hamiltonian and unique propagator | `fourier_inversion`, `sitePropagator_schrodinger`, `sitePropagator_unique`, `sitePropagator_bandSynthesis` | Matrix-exponential/derivative agreement, nonunit hbar, N=1,2 |
+| Full noisy witness and blind controls | `spectral_noisy_witness`, `site_noisy_readout`, `witness_blind_readout`, `noisy_witness_phase_robust` | All bins, exact eta*v TV, loss/visibility boundaries and signed blind times |
+| Shared kinetic scale | `one_momentum_scale_interval`, `one_momentum_all_times`, `shared_scale_two_modes_impossible` | One-gap all-time overlap; unequal one/two-momentum ratios |
+| Fixed heterogeneous experiment | `menu_tv`, `finite_family_convergence`, `finite_menu_nonseparation` | Unequal/zero counts, actual finite product laws and randomized test errors |
+
+The explicit instrument has failure on the orthogonal complement of the two
+accessible modes. Completeness therefore holds for arbitrary ambient states,
+not only the intended preparation. Noise is stochastic processing of all three
+outcomes. The site readout is transported through the same isometric preparation
+and the site evolution solves the selected Hamiltonian equation.
+
+The shared-scale ratio obstruction is an exact dynamical result. It does not
+certify separation for any specified finite set of times and reference phases;
+the floating interval coverage and executable count decisions supply the
+prospective quantitative certificates. Fixed-menu convergence allows a different
+normalized preparation, time, complete Born instrument and fixed count at each
+setting. The common cutoff and sufficiently large site count depend on that
+fixed protocol and tolerance; this is not operator-norm convergence or a test
+uniform over arbitrarily energetic states. Adaptive acquisition, optional
+stopping, correlations and ancilla-assisted channel tests remain excluded.

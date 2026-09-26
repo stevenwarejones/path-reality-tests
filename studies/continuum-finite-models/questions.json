@@ -10,14 +10,14 @@
     "id": "CF02",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral evolution and full Hilbert chain passed the full formal check at 4864f79; regenerated evidence committed at a8d6867",
+    "disposition": "Infinite spectral evolution and all Hilbert/site connections passed the full formal check at b9ecc05; all 201 audit roots and 164 theorem exports regenerated at 91d813d (see README immutable evidence link)",
     "next_step": "Position-space L2 identification remains explicitly external"
   },
   {
     "id": "CF03",
     "status": "computationally-verified",
     "evidence": "model.md",
-    "disposition": "DFT, cyclic generator, alias-free band synthesis and strict band tests",
+    "disposition": "Full Fourier inversion, physical Schrodinger propagator and uniqueness, alias-free band transport; independent matrix-exponential and derivative checks",
     "next_step": "none"
   },
   {
@@ -38,21 +38,21 @@
     "id": "CF06",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Full product TV and fixed-resource test-error composition implemented formally",
-    "next_step": "Composition over a heterogeneous fixed setting menu is not yet an exported formal theorem"
+    "disposition": "menu_tv and finite_menu_nonseparation compose heterogeneous fixed preparations, times, measurements and unequal or zero counts before choosing a common cutoff and site threshold",
+    "next_step": "none"
   },
   {
     "id": "CF07",
     "status": "computationally-verified",
     "evidence": "protocol.md",
-    "disposition": "Explicit evolved two-mode Born readout, fixed lattice witness and negative controls implemented formally",
+    "disposition": "spectral_noisy_witness and site_noisy_readout transport the complete noisy Born readout into the full Hilbert space and actual ring; phase robustness, blind times and degenerate controls are formalized",
     "next_step": "Hardware preparation, reference, visibility and loss certificates"
   },
   {
     "id": "CF08",
     "status": "computationally-verified",
     "evidence": "joint.py",
-    "disposition": "Single-mode overlap and shared-scale exclusion checked; six gap refinements retain executable power partitions with calibration phase uncertainty",
+    "disposition": "one_momentum_scale_interval proves exact overlap; shared_scale_two_modes_impossible proves the N>4 two-mode ratio obstruction. Separate numerical interval partitions certify finite-menu decisions and conditional power",
     "next_step": "Physical shared-scale, phase and transport certificates"
   },
   {

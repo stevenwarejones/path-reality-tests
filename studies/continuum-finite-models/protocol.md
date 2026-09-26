@@ -192,3 +192,22 @@ instead of 381,621,024 at the old 0.001 target (about 22 times fewer). N=256 nee
 144,519,216 main trials. The calibration floor must not be interpreted as
 dispersion sensitivity. Power is computed from the declared risk parameters,
 1−alpha_calibration−beta_main, rather than stored as an unrelated constant.
+
+
+## Relation to the formal readout and fixed-menu theorem
+
+The formal noisy N=4 example obtains its complete plus/minus/failure laws from
+an isometric preparation, the declared Hamiltonian evolution and a complete Born
+instrument. Its deterministic phase contribution is at most eta*v*radius/2 for
+each hypothesis; strict interval separation requires the sum of all relevant
+probability radii to be smaller than the nominal contrast. Exact touching is
+non-separating. The confidence/calibration radii and contamination/transport
+allowances in this protocol are additional certified inputs, not removed by
+that ideal mathematical result.
+
+The formal finite-menu theorem concerns fixed independent observations with
+possibly different preparations, times, measurements, outcome alphabets and
+trial counts. It supplies the sufficiently-fine-alternative limit, not a
+numerical certificate for the present floating nuisance partitions. Shared
+energy ratios rule out an exact all-time common rescaling; phase wrapping and
+finite calibration widths still require the joint interval search used here.

@@ -28,8 +28,10 @@ python /path/to/repository/studies/continuum-finite-models/joint_design.py --che
 From the repository root, `python -m unittest discover -s tests -v` includes
 independent matrix diagonalization/evolution, complete POVM tables, convergence,
 stable tiny-tail control, calibration boundaries, strict count-based decisions,
-complete failures, joint distributions and sampling
-checks. Running `design.py` without `--check` regenerates JSON and SVG. Source
+complete failures, heterogeneous joint distributions and sampling
+checks. The suite contains 129 tests, including 30 continuum tests; the new
+connection checks use matrix exponentials, nonunit hbar and arbitrary states
+outside the accessible measurement subspace. Running `design.py` without `--check` regenerates JSON and SVG. Source
 hashes identify the numerical code and its model/protocol assumptions; the Git
 commit identifies the complete revision. Floating values compare with declared
 tolerances; integer counts and categorical decisions compare exactly.
@@ -53,12 +55,12 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 |---|---|
 | CF01 | Common operational interface and finite objects specified |
 | CF02 | Infinite spectral evolution and full chain compiled and audited |
-| CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal spectrum and aliasing compiled; combined formal checks passed |
+| CF03 | Full Fourier inversion, physical Schrödinger dynamics and uniqueness, alias-free band transport; independent matrix checks |
 | CF04 | Spectral finite counterexample checked with complete POVMs; formal finite embedding compiled |
 | CF05 | Global 1/24 approximation, normalized tail and Born bounds implemented formally |
-| CF06 | Joint-product TV and finite-resource limit/test-error composition implemented formally |
-| CF07 | Implementable ideal readout, wrapping and negative controls checked; apparatus calibration missing |
-| CF08 | Single-mode scale overlap and multi-mode shared-scale exclusion checked |
+| CF06 | Heterogeneous-menu product TV and finite-resource test errors, including unequal/zero counts and a common convergence threshold |
+| CF07 | Complete noisy readout in infinite and site spaces, phase robustness, wrapping and degenerate controls; apparatus certificates external |
+| CF08 | Exact one-mode overlap and two-mode ratio obstruction proved; finite-menu interval certificates checked separately |
 | CF09 | Executable count-based decision and conditional eligible budgets complete; source and physical calibration cost blocked |
 | CF10 | Scoped primary-source comparison completed; unavailable version details not used |
 | CF11 | No inspected compatible dataset; prospective outcome selected |
@@ -70,11 +72,14 @@ calling the current numerical result a continuum theorem.
 
 
 Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
-The [formal source and regenerated evidence at a8d6867](https://github.com/stevenwarejones/ontology-separation/tree/a8d68678e85d12fe1204390e67daa0d750ccfe98)
-is immutable and includes the global dispersion, normalized tail, Born, product-TV,
-strong-convergence and explicit witness chain. Its Lean sources passed the full
-`scripts/check.sh` at `4864f79`; the linked commit adds the exact regenerated audit
-and theorem report. This is an immutable draft-branch commit, not a merged-main
-commit. The final-head snapshot consistency gate remains a merge requirement.
-Both studies remain drafts until the complete formal result and final artifacts
-are verified; merged-main links can be pinned after that review.
+The [formal source and regenerated evidence at 91d813d](https://github.com/stevenwarejones/ontology-separation/tree/91d813d7bc5715d8b208e01a89c9ac40f40a5ead)
+is immutable and covers the complete chain, including physical site dynamics,
+full-space noisy measurements, phase/scale controls and heterogeneous menus.
+Its unchanged Lean sources passed the complete `scripts/check.sh` at `b9ecc05`
+in [run 36277055257](https://github.com/stevenwarejones/ontology-separation/actions/runs/36277055257).
+The linked evidence commit contains all 201 continuum audit roots and 164
+exported theorems, generated after the last Lean change. It uses only the three
+accepted axioms. Final-head CI must also pass the committed-output consistency
+gate. This is an immutable draft-branch commit, not a merged-main commit.
+Both PRs remain drafts for review. After the formal PR is approved and merged,
+replace this pin with its merged-main commit before merging the empirical PR.
