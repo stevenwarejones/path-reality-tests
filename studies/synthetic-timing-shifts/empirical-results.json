@@ -1,0 +1,942 @@
+{
+  "actual_remote_labels_used": false,
+  "causal_claim_enabled": false,
+  "data_kind": "empirical_background_artificial_assignments",
+  "experimental_significance_enabled": false,
+  "family_alpha": 0.01,
+  "rows": [
+    {
+      "family_interval_95": [
+        0.0015493589499056574,
+        0.0217606685144171
+      ],
+      "family_rejections": 3,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0006060978093221481,
+          0.017944144605585428
+        ],
+        "trained_histogram": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_timing": [
+          6.32925169048572e-05,
+          0.013849769962013272
+        ]
+      },
+      "mode": "fixed",
+      "name": "null",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 2,
+        "trained_histogram": 0,
+        "trained_timing": 1
+      },
+      "repeats": 400,
+      "shift_bins": 0.0
+    },
+    {
+      "family_interval_95": [
+        0.0,
+        0.00917980458366526
+      ],
+      "family_rejections": 0,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_timing": [
+          0.0,
+          0.00917980458366526
+        ]
+      },
+      "mode": "local_only",
+      "name": "local_clock_control",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 0,
+        "trained_timing": 0
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9745951990926638,
+          0.9972688040287571
+        ]
+      },
+      "mode": "fixed",
+      "name": "fixed_0.125",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 396
+      },
+      "repeats": 400,
+      "shift_bins": 0.125
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "fixed",
+      "name": "fixed_0.25",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.25
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "fixed",
+      "name": "fixed_0.5",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.5
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "fixed",
+      "name": "fixed_1",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0015493589499056574,
+          0.0217606685144171
+        ],
+        "trained_histogram": [
+          0.9861502300379867,
+          0.9999367074830952
+        ],
+        "trained_timing": [
+          0.9710716562147131,
+          0.9959291641554002
+        ]
+      },
+      "mode": "reversing",
+      "name": "reversing_0.125",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 3,
+        "trained_histogram": 399,
+        "trained_timing": 395
+      },
+      "repeats": 400,
+      "shift_bins": 0.125
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0015493589499056574,
+          0.0217606685144171
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "reversing",
+      "name": "reversing_0.25",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 3,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.25
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0015493589499056574,
+          0.0217606685144171
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "reversing",
+      "name": "reversing_0.5",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 3,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.5
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "reversing",
+      "name": "reversing_1",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.0,
+        0.00917980458366526
+      ],
+      "family_rejections": 0,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_timing": [
+          0.0,
+          0.00917980458366526
+        ]
+      },
+      "mode": "transfer_failure",
+      "name": "regime_transfer_failure",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 0,
+        "trained_timing": 0
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "digital_fixed",
+      "name": "digital_fixed_2",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 2.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "digital_fixed",
+      "name": "digital_fixed_4",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 4.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "digital_reversing",
+      "name": "digital_reversing_2",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 2.0
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "digital_reversing",
+      "name": "digital_reversing_4",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 4.0
+    },
+    {
+      "family_interval_95": [
+        0.8003289954198555,
+        0.8745470154913524
+      ],
+      "family_rejections": 336,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.696701937589888,
+          0.7846684086381885
+        ],
+        "trained_histogram": [
+          0.4251550511622552,
+          0.52521746706301
+        ],
+        "trained_timing": [
+          0.45984312616385775,
+          0.5600078715103507
+        ]
+      },
+      "mode": "redigitized_fixed",
+      "name": "redigitized_fixed_0.125",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 297,
+        "trained_histogram": 190,
+        "trained_timing": 204
+      },
+      "repeats": 400,
+      "shift_bins": 0.125
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "redigitized_fixed",
+      "name": "redigitized_fixed_0.25",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.25
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "redigitized_fixed",
+      "name": "redigitized_fixed_0.5",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.5
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "redigitized_fixed",
+      "name": "redigitized_fixed_1",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 400,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.6344041186171916,
+        0.7278702349564251
+      ],
+      "family_rejections": 273,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0015493589499056574,
+          0.0217606685144171
+        ],
+        "trained_histogram": [
+          0.405440790720249,
+          0.5052298019989625
+        ],
+        "trained_timing": [
+          0.46232997991174773,
+          0.562483766517073
+        ]
+      },
+      "mode": "redigitized_reversing",
+      "name": "redigitized_reversing_0.125",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 3,
+        "trained_histogram": 182,
+        "trained_timing": 205
+      },
+      "repeats": 400,
+      "shift_bins": 0.125
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0006060978093221481,
+          0.017944144605585428
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9820558553944145,
+          0.9993939021906778
+        ]
+      },
+      "mode": "redigitized_reversing",
+      "name": "redigitized_reversing_0.25",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 2,
+        "trained_histogram": 400,
+        "trained_timing": 398
+      },
+      "repeats": 400,
+      "shift_bins": 0.25
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          6.32925169048572e-05,
+          0.013849769962013272
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "redigitized_reversing",
+      "name": "redigitized_reversing_0.5",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 1,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 0.5
+    },
+    {
+      "family_interval_95": [
+        0.9908201954163347,
+        1.0
+      ],
+      "family_rejections": 400,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_histogram": [
+          0.9908201954163347,
+          1.0
+        ],
+        "trained_timing": [
+          0.9908201954163347,
+          1.0
+        ]
+      },
+      "mode": "redigitized_reversing",
+      "name": "redigitized_reversing_1",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 0,
+        "trained_histogram": 400,
+        "trained_timing": 400
+      },
+      "repeats": 400,
+      "shift_bins": 1.0
+    },
+    {
+      "family_interval_95": [
+        0.0015493589499056574,
+        0.0217606685144171
+      ],
+      "family_rejections": 3,
+      "intervals_95": {
+        "click_count": [
+          0.0,
+          0.00917980458366526
+        ],
+        "pooled_timing": [
+          0.0006060978093221481,
+          0.017944144605585428
+        ],
+        "trained_histogram": [
+          0.0,
+          0.00917980458366526
+        ],
+        "trained_timing": [
+          6.32925169048572e-05,
+          0.013849769962013272
+        ]
+      },
+      "mode": "centered_latent_reversing",
+      "name": "centered_latent_reversing_0.25",
+      "rejections": {
+        "click_count": 0,
+        "pooled_timing": 2,
+        "trained_histogram": 0,
+        "trained_timing": 1
+      },
+      "repeats": 400,
+      "shift_bins": 0.25
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20260927,
+  "source": {
+    "archive_member": "03_43_CH_pockel_100kHz.run4.afterTimingfix2_afterfixingModeLocking.bob.dat.compressed",
+    "archive_sha256": "c74f6eeee166e3b960b4c90ce853efb9594cb4406e4f5cbaffa027a7fb7e0f17",
+    "background_by_segment": [
+      {
+        "event_trials": 1999,
+        "first_event_phase_quantiles_bins": [
+          -104.9610499999998,
+          -0.012499999999761258,
+          0.9875000000002387,
+          1.7137500000001467,
+          22.722375000000138
+        ],
+        "receiver_setting": 0,
+        "segment": "training",
+        "trials": 13388121
+      },
+      {
+        "event_trials": 5929,
+        "first_event_phase_quantiles_bins": [
+          -78.93889999999982,
+          0.36875000000023306,
+          1.040000000000191,
+          1.7675000000000978,
+          4.343000000000231
+        ],
+        "receiver_setting": 1,
+        "segment": "training",
+        "trials": 13389095
+      },
+      {
+        "event_trials": 6018,
+        "first_event_phase_quantiles_bins": [
+          -108.62427499999973,
+          -0.012499999999761258,
+          0.9875000000002387,
+          1.7137500000001467,
+          19.411287500000192
+        ],
+        "receiver_setting": 0,
+        "segment": "test",
+        "trials": 40168923
+      },
+      {
+        "event_trials": 17586,
+        "first_event_phase_quantiles_bins": [
+          -78.00087499999982,
+          0.31750000000027967,
+          1.040000000000191,
+          1.7137500000001467,
+          4.6600000000001955
+        ],
+        "receiver_setting": 1,
+        "segment": "test",
+        "trials": 40161221
+      }
+    ],
+    "censored_tail": {
+      "records": 3,
+      "syncs": 1
+    },
+    "data_kind": "real_local_background_no_remote_comparison",
+    "event_trials": 31532,
+    "exclusions": {
+      "both": 0,
+      "setting_only": 0,
+      "timestamp_only": 2236
+    },
+    "feature": "first event in original record order among baseline-selected pulses",
+    "hdf_sha256": "94af31f6f8cadda9ed21fdf1adb7d6154a05a33bba551c11619e5df70b800f06",
+    "max_selected_events_per_trial": 1,
+    "multiclick_trials": 0,
+    "no_click_trials": 107075828,
+    "overlap_verified": 107109596,
+    "phase_peak": 125,
+    "phase_radius_cut": false,
+    "pulse_bits": [
+      4,
+      5,
+      6
+    ],
+    "raw_prefix": 143611,
+    "raw_suffix": 11074,
+    "retained_trials": 107107360,
+    "rows": 107109596,
+    "schema_version": 1,
+    "selected_events": 31532,
+    "selected_events_in_excluded_rows": 2,
+    "side": "bob"
+  },
+  "spacelike_claim_enabled": false
+}

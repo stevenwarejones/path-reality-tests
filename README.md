@@ -11,7 +11,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 | [Path contextuality](studies/path-contextuality/README.md) | Can a finite weak path probe reject explicit noncontextual representations? | Prospective conditional design; exact instrument and calibrated-trial budget |
 | [Phase-intervention design](studies/phase-intervention-design/README.md) | Which calibrated dephased models would a four-phase experiment exclude? | Proposed; synthetic checks and conditional power |
 | [NIST Bell-record causal audit](studies/nist-bell-causal-audit/README.md) | What conditional influence bounds do public trial records support? | Full raw reconstruction, measured marginals and explicit calibration limits |
-| [Synthetic timing shifts](studies/synthetic-timing-shifts/README.md) | Could sparse records reveal timing shifts or effects that reverse sign? | Synthetic injection study; chronological training and exact null calibration |
+| [Synthetic timing shifts](studies/synthetic-timing-shifts/README.md) | Could sparse records reveal timing shifts or effects that reverse sign? | Synthetic and real-background injections; artificial assignments and held-out scores |
 | [Spacetime causal influence](studies/spacetime-causal-influence/README.md) | Can a remote intervention change a complete local record outside its future light cone? | Conditional protocol, formal companion and synthetic sensitivity study |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint

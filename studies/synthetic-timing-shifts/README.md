@@ -4,10 +4,16 @@ Can a sparse local record reveal an artificial remote-setting-dependent arrival
 shift even when total clicks do not change? Can a frozen learned score recover an
 effect whose sign reverses between observable regimes?
 
-This study answers those questions **only for explicitly simulated records**.
+The original Gaussian study answers those questions **only for simulated records**.
 The [generated report](report.md) contains detection frequencies, null controls,
-and Monte Carlo uncertainty. No experimental event files are read, altered or
-tested. All experimental, causal and spacelike claim flags remain false.
+and Monte Carlo uncertainty. Its `design.py` reads no experimental event files.
+All experimental, causal and spacelike claim flags remain false.
+
+The follow-up [empirical-background study](empirical-protocol.md) now injects
+shifts into copied Bob timing records under fresh artificial assignment labels.
+Its [separate report](empirical-report.md) measures recovery on the actual local
+timing background, without testing the actual remote labels. The original
+Gaussian simulations below remain separate and unchanged.
 
 ## Connection to the available data
 

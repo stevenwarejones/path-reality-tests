@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install pinned dependencies
-        run: python -m pip install -r studies/nist-bell-causal-audit/requirements.txt
+        run: python -m pip install -r studies/nist-bell-causal-audit/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt
       - name: Download and verify all three source inputs
         run: python studies/nist-bell-causal-audit/fetch_data.py --directory "$RUNNER_TEMP/nist-inputs"
       - name: Decode all raw records and reconcile stored settings and words
@@ -42,4 +42,13 @@ jobs:
             --output-dir "$RUNNER_TEMP/nist-output"
           python studies/nist-bell-causal-audit/click_audit.py --directory "$RUNNER_TEMP/nist-output"
           python studies/nist-bell-causal-audit/verify_reproduction.py "$RUNNER_TEMP/nist-output"
+          git diff --exit-code
+      - name: Reproduce empirical-background timing injections from pinned Bob records
+        run: |
+          python studies/synthetic-timing-shifts/empirical_extract.py \
+            --hdf5 "$RUNNER_TEMP/nist-inputs/hdf5.hdf5" \
+            --archive "$RUNNER_TEMP/nist-inputs/bob.zip" \
+            --output "$RUNNER_TEMP/nist-output/bob-timing.npz"
+          python studies/synthetic-timing-shifts/empirical.py \
+            --background "$RUNNER_TEMP/nist-output/bob-timing.npz" --check
           git diff --exit-code
