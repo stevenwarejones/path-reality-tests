@@ -4,49 +4,49 @@
     "status": "computationally-verified",
     "evidence": "model.md",
     "disposition": "Common interface and finite-object distinctions",
-    "next_step": "Formal completion"
+    "next_step": "Substantive re-review of both draft PRs"
   },
   {
     "id": "CF02",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral evolution compiled and audited at 49c6daa; full Hilbert/Born/limit extension under verification",
-    "next_step": "Final-head formal verification; position-space L2 identification remains explicitly external"
+    "disposition": "Infinite spectral evolution and Hilbert realization constructed; final combined verification pending",
+    "next_step": "Position-space L2 identification remains explicitly external"
   },
   {
     "id": "CF03",
     "status": "computationally-verified",
     "evidence": "model.md",
-    "disposition": "DFT, cyclic generator and strict band tests",
-    "next_step": "Final combined audit of compiled spectrum and alias restriction"
+    "disposition": "DFT, cyclic generator, alias-free band synthesis and strict band tests",
+    "next_step": "Final combined audit and substantive re-review"
   },
   {
     "id": "CF04",
     "status": "computationally-verified",
     "evidence": "model.md",
-    "disposition": "Exact spectral counterexample with complete random POVMs",
-    "next_step": "Final combined audit of compiled finite embedding"
+    "disposition": "Exact spectral counterexample with complete POVMs and formal finite embedding",
+    "next_step": "Final combined audit and substantive re-review"
   },
   {
     "id": "CF05",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Derived remainder and tail bounds tested independently",
-    "next_step": "Formal approximation and POVM TV proof"
+    "disposition": "Global 1/24 remainder, normalized tail, strong convergence and Born continuity implemented formally; sharper empirical trace tail independently derived",
+    "next_step": "Final-head verification; distinguish the proved 2*sqrt(tau) norm bound from the sharper empirical tail"
   },
   {
     "id": "CF06",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Quantifiers and joint-product derivation; finite numerical examples",
-    "next_step": "Formal product/limit proof"
+    "disposition": "Full product TV and fixed-resource test-error composition implemented formally",
+    "next_step": "Final-head audit; no adaptive or correlated-trial claim"
   },
   {
     "id": "CF07",
     "status": "computationally-verified",
     "evidence": "protocol.md",
-    "disposition": "Born readout and explicit blind controls",
-    "next_step": "Formal dynamics-to-measurement bridge; hardware certificates"
+    "disposition": "Explicit evolved two-mode Born readout, fixed lattice witness and negative controls implemented formally",
+    "next_step": "Hardware preparation, reference, visibility and loss certificates"
   },
   {
     "id": "CF08",

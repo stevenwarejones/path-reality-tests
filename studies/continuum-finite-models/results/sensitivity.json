@@ -8,7 +8,7 @@
     "joint.py": "8bc38bada9934776250ca51df57a11bf65bf40b2f4c0d8437123ad571ea5da3b",
     "design.py": "8bf1d3bb0f9471da44259ef5763fd09ac3542a231711e8fd506ee64479329103",
     "protocol.md": "c54ec4fd1c8b869fc9b316558c1b5eae3d467c25d4f3c861cb99d70ffbd48a13",
-    "model.md": "881c1090d4f75a44e123bd01de8eda771323d6dcb5367a39a3cfa4253605cc45"
+    "model.md": "aa7666928ca37c3c87c798239a982c48095ff509c540b15aba293e9f8360f62a"
   },
   "alpha_total": 0.05,
   "alpha_calibration": 0.025,

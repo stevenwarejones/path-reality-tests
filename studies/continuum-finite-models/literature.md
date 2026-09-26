@@ -83,3 +83,15 @@ No inspected correction changes the chosen nonrelativistic ring calculation.
 Published-version details unavailable above remain unavailable; no transferred
 estimate depends on them. The outstanding formal mathematics and apparatus
 certificates are separately recorded, not treated as literature conclusions.
+
+
+A final refresh also found Pachón and Gómez,
+[arXiv:2604.20776v2](https://arxiv.org/html/2604.20776v2)
+(28 June 2026 version). The primary HTML introduction and construction overview
+were inspected on 2026-09-26 UTC. They formulate finite-dimensional Hamiltonian
+path sums in discrete phase space for odd prime dimensions, with qutrit examples.
+This reinforces the distinction between a finite path representation and a
+nearest-neighbor spatial-lattice hypothesis. It does not provide a free-ring
+apparatus dataset or a calibration certificate for this protocol. No numerical
+estimate is transferred from that paper; Chou remains the closer comparison for
+the specific quadratic-spectrum versus finite-difference Hamiltonians here.

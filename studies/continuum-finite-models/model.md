@@ -122,7 +122,11 @@ shared prediction (such as zero visibility) is constructed.
 ## Formal constant convention
 
 The empirical `approximation` helper implements the global 1/24 mathematical
-remainder above. The companion's currently checked Lean estimate is the
-conservative local 5/96 remainder with |ka|≤1. That local theorem does **not**
-certify the global helper. The sensitivity map and executable decision use exact
-cosine dispersion and do not call either approximation or truncation helper.
+remainder above. The companion now proves that global bound separately from its
+older local 5/96 estimate; the latter alone does not certify the helper.
+The composed Lean tail estimate is the conservative **2*sqrt(tau)** norm bound,
+whereas the pure-state trace-distance derivation above gives **sqrt(tau)**.
+The sharper tail coefficient is independently derived and numerically tested
+here; it is not claimed as a theorem of the companion. The sensitivity map and
+executable decision use exact cosine dispersion and do not call either
+approximation or truncation helper.

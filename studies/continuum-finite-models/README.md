@@ -1,6 +1,6 @@
 # Continuum dynamics and finite alternatives
 
-**Synthetic prospective study; incomplete formal companion; no experimental
+**Synthetic prospective study; draft formal companion; no experimental
 exclusion.** A finite spectral model reproduces restricted continuum experiments
 exactly. A specified nearest-neighbor spatial lattice instead changes relative
 mode phases, with a detectable difference only under adequate access and calibration.
@@ -52,11 +52,11 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | ID | Disposition |
 |---|---|
 | CF01 | Common operational interface and finite objects specified |
-| CF02 | Infinite spectral evolution compiled; final companion verification in progress |
+| CF02 | Infinite spectral evolution constructed; final companion audit in progress |
 | CF03 | DFT, normalization, small sizes and aliasing checked numerically; formal spectrum and aliasing compiled; final combined checks pending |
 | CF04 | Spectral finite counterexample checked with complete POVMs; formal finite embedding compiled |
-| CF05 | Approximation and truncation derivations plus tests; formal proof open |
-| CF06 | Finite-resource/product quantifiers derived; formal product-TV and Born bounds compiled; limit composition under verification |
+| CF05 | Global 1/24 approximation, normalized tail and Born bounds implemented formally |
+| CF06 | Joint-product TV and finite-resource limit/test-error composition implemented formally |
 | CF07 | Implementable ideal readout, wrapping and negative controls checked; apparatus calibration missing |
 | CF08 | Single-mode scale overlap and multi-mode shared-scale exclusion checked |
 | CF09 | Executable count-based decision and conditional eligible budgets complete; source and physical calibration cost blocked |
@@ -64,14 +64,16 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | CF11 | No inspected compatible dataset; prospective outcome selected |
 | CF12 | Literal path occupancy outside scope; no conclusion relies on it |
 
-Review readiness requires the companion formal proofs, audit and report to be
-complete and linked to an immutable verified commit; and all final-head CI gates. This study does not narrow that requirement by
+Merge readiness requires the companion formal proofs, audit and report to be
+complete and linked to an immutable verified commit, plus all final-head CI gates. This study does not narrow that requirement by
 calling the current numerical result a continuum theorem.
 
 
 Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
-The [verified finite-embedding and local-bound source at 49c6daa](https://github.com/stevenwarejones/ontology-separation/tree/49c6daa049ff4c6462bce8ed8c7b1fbd8e0c6ea8)
-is immutable, but it does not certify the later full approximation chain.
-These are branch links, not a claim that the formal companion has merged.
+The [full formal source at 1f678da](https://github.com/stevenwarejones/ontology-separation/tree/1f678da614665d3ec559d2471ba8e39c4cb05e52)
+is immutable and includes the global dispersion, normalized tail, Born, product-TV,
+strong-convergence and explicit witness chain. See the formal PR for the final
+combined verification and regenerated artifact status. This is a draft-branch
+commit, not a claim that the formal companion has merged.
 Both studies remain drafts until the complete formal result and final artifacts
 are verified; merged-main links can be pinned after that review.
