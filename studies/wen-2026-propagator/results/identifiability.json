@@ -1,0 +1,48 @@
+{
+  "kind": "exact synthetic non-identifiability witnesses; no experimental input",
+  "source": {
+    "filename": "identifiability_checks.py",
+    "sha256": "3bbec78d1b5ad937cf6bdeb6a0ff4290b4d5aade7644053dd2de0b38aa9adbf4"
+  },
+  "shared_factor_pairing": {
+    "factor_mean": "1",
+    "factor_population_variance": "1/100",
+    "aligned_product_mean": "101/100",
+    "reversed_product_mean": "99/100"
+  },
+  "phase_magnitude_pairing": {
+    "same_magnitudes": [
+      1,
+      2,
+      3
+    ],
+    "same_phases_in_pi_units": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "coherent_intensities": [
+      "8",
+      "10"
+    ]
+  },
+  "loss_identifiability": {
+    "same_conditional_shape": [
+      "1/4",
+      "3/4"
+    ],
+    "full_distributions_including_failure": [
+      [
+        "1/20",
+        "3/20",
+        "4/5"
+      ],
+      [
+        "1/5",
+        "3/5",
+        "1/5"
+      ]
+    ]
+  },
+  "scope": "These witnesses disprove general recovery from such marginal summaries. They do not identify the missing experimental records or bound their actual effect."
+}

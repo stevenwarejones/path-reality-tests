@@ -78,7 +78,7 @@ Q–theory comparison. We checked plausible processing choices before interpreti
 | Rounded plotting values | Under a piecewise-linear slope bound and 5-decimal x / 9-decimal y rounding, the computed change in the metric is below 0.00005 percentage points. | This rules out simple rounding of these displayed numbers as an explanation of 1.12 points, not an unknown upstream transformation. |
 | Normalization / plotting grid | Unit-sum normalization of Q and the interpolated theory gives 5.34%. | It changes the comparison, but does not recover 4.45%. The exact normalization pipeline is absent. |
 | Identity of the evaluated comparison | Unit-sum E–Q gives 4.49%, closer to the quote than the tested Q–theory values. | A different comparison or processing step could be involved. The exact sentence above supports Q–theory as the printed definition, while the actual implementation remains unverified. |
-| Different definition of “MAPE” | Ordinary theory-denominator MAPE gives 5.64%; Q-denominator 5.52%; pooled symmetric error 5.40%. | None reproduces the quote; the stated symmetric definition remains the primary calculation. We do not choose a metric to force agreement. |
+| Different definition of “MAPE” | Ordinary theory-denominator MAPE gives 5.64%; Q-denominator 5.52%; pooled symmetric error 5.40%. | None reproduces the quote; the stated symmetric definition remains the primary calculation. |
 | Computing an error before versus after averaging | The operations do not commute; a small exact counterexample is tested in `tests/test_replication.py`. Path multiplication and squaring introduce further nonlinearities. | The ten individual records and calculation order are unavailable. This is a possible explanation, not a demonstrated one or a correction to the paper. |
 | A different data/code revision or theory model | Searched the DOI/title and repository records for released code, clarification and corrections; no usable additional implementation identified. | The actual 17-point theoretical reference, normalization, and author evaluation code would settle this more directly than further arbitrary fits. |
 
@@ -87,7 +87,7 @@ and each theoretical curve over its own 850 points, have mean approximately
 1.030184403. The 17 interpolated theory-Q values instead have mean
 1.012591817. Equal means on different grids suggest a plotting-normalization
 step, but the table alone does not identify how it was done. The deposit's a.u.
-values must not be presented as calibrated absolute detection probabilities.
+values are conditional shapes, not calibrated absolute detection probabilities.
 
 An additional, explicitly conditional free finite-grid calculation uses 17
 centers, five intervals, wavelength 795 nm and interval 15 mm. It compares

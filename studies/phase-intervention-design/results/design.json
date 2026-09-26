@@ -1,0 +1,3292 @@
+{
+  "kind": "prospective conditional designs, not observed data or achieved power",
+  "source": {
+    "filename": "design.py",
+    "sha256": "f33e912ca2a8c6909543704d73f26c003cb80327116c0610bcbd7af4e3c04bb9"
+  },
+  "premises": [
+    "independent fixed-probability Bernoulli trials within each setting",
+    "complete herald-denominated outcomes",
+    "predeclared settings, selected bin, sample sizes and stopping",
+    "externally justified null-contrast and anticipated-signal bounds"
+  ],
+  "plans": [
+    {
+      "anticipated_contrast": 0.8,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 72,
+      "total_trials": 288,
+      "rejection_contrast_threshold": 0.4509102680395152,
+      "contrast_radius_alpha": 0.4309102680395152,
+      "contrast_radius_beta": 0.34888817990048687,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.1,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 6841,
+      "total_trials": 27364,
+      "rejection_contrast_threshold": 0.06420722926547083,
+      "contrast_radius_alpha": 0.044207229265470833,
+      "contrast_radius_beta": 0.0357925556683632,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.05,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 48647,
+      "total_trials": 194588,
+      "rejection_contrast_threshold": 0.036577729906518947,
+      "contrast_radius_alpha": 0.016577729906518946,
+      "contrast_radius_beta": 0.01342222370397746,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.03,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 437822,
+      "total_trials": 1751288,
+      "rejection_contrast_threshold": 0.02552591627951706,
+      "contrast_radius_alpha": 0.005525916279517062,
+      "contrast_radius_beta": 0.004474079677457079,
+      "power_lower_bound": 0.9
+    }
+  ],
+  "interval_comparison": [
+    {
+      "contrast": 0.8,
+      "hoeffding_baseline": {
+        "anticipated_contrast": 0.8,
+        "null_contrast_budget": 0.02,
+        "alpha": 0.01,
+        "beta": 0.1,
+        "trials_per_setting": 72,
+        "total_trials": 288,
+        "rejection_contrast_threshold": 0.4509102680395152,
+        "contrast_radius_alpha": 0.4309102680395152,
+        "contrast_radius_beta": 0.34888817990048687,
+        "power_lower_bound": 0.9
+      },
+      "cp": {
+        "trials_per_setting": 36,
+        "total_trials": 144,
+        "probabilities": [
+          0.9,
+          0.5,
+          0.09999999999999998,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          28,
+          11,
+          0,
+          11
+        ],
+        "count_upper": [
+          36,
+          25,
+          8,
+          25
+        ],
+        "contrast_lower": 0.03690603887220684,
+        "null_upper": 0.02,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      },
+      "hoeffding_binomial_power": {
+        "trials_per_setting": 43,
+        "total_trials": 172,
+        "probabilities": [
+          0.9,
+          0.5,
+          0.09999999999999998,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          34,
+          14,
+          1,
+          14
+        ],
+        "count_upper": [
+          42,
+          29,
+          9,
+          29
+        ],
+        "contrast_lower": 0.023800358382754405,
+        "null_upper": 0.02,
+        "method": "hoeffding",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "contrast": 0.1,
+      "hoeffding_baseline": {
+        "anticipated_contrast": 0.1,
+        "null_contrast_budget": 0.02,
+        "alpha": 0.01,
+        "beta": 0.1,
+        "trials_per_setting": 6841,
+        "total_trials": 27364,
+        "rejection_contrast_threshold": 0.06420722926547083,
+        "contrast_radius_alpha": 0.044207229265470833,
+        "contrast_radius_beta": 0.0357925556683632,
+        "power_lower_bound": 0.9
+      },
+      "cp": {
+        "trials_per_setting": 4318,
+        "total_trials": 17272,
+        "probabilities": [
+          0.55,
+          0.5,
+          0.45,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          2302,
+          2085,
+          1870,
+          2085
+        ],
+        "count_upper": [
+          2448,
+          2233,
+          2016,
+          2233
+        ],
+        "contrast_lower": 0.020022493302932043,
+        "null_upper": 0.02,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      },
+      "hoeffding_binomial_power": {
+        "trials_per_setting": 5412,
+        "total_trials": 21648,
+        "probabilities": [
+          0.55,
+          0.5,
+          0.45,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          2895,
+          2624,
+          2353,
+          2624
+        ],
+        "count_upper": [
+          3059,
+          2788,
+          2517,
+          2788
+        ],
+        "contrast_lower": 0.020142751347595522,
+        "null_upper": 0.02,
+        "method": "hoeffding",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "contrast": 0.05,
+      "hoeffding_baseline": {
+        "anticipated_contrast": 0.05,
+        "null_contrast_budget": 0.02,
+        "alpha": 0.01,
+        "beta": 0.1,
+        "trials_per_setting": 48647,
+        "total_trials": 194588,
+        "rejection_contrast_threshold": 0.036577729906518947,
+        "contrast_radius_alpha": 0.016577729906518946,
+        "contrast_radius_beta": 0.01342222370397746,
+        "power_lower_bound": 0.9
+      },
+      "cp": {
+        "trials_per_setting": 30800,
+        "total_trials": 123200,
+        "probabilities": [
+          0.525,
+          0.5,
+          0.475,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          15974,
+          15203,
+          14434,
+          15203
+        ],
+        "count_upper": [
+          16366,
+          15597,
+          14826,
+          15597
+        ],
+        "contrast_lower": 0.02001876857382845,
+        "null_upper": 0.02,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      },
+      "hoeffding_binomial_power": {
+        "trials_per_setting": 38665,
+        "total_trials": 154660,
+        "probabilities": [
+          0.525,
+          0.5,
+          0.475,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          20079,
+          19112,
+          18146,
+          19112
+        ],
+        "count_upper": [
+          20519,
+          19553,
+          18586,
+          19553
+        ],
+        "contrast_lower": 0.020018823215647297,
+        "null_upper": 0.02,
+        "method": "hoeffding",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "contrast": 0.03,
+      "hoeffding_baseline": {
+        "anticipated_contrast": 0.03,
+        "null_contrast_budget": 0.02,
+        "alpha": 0.01,
+        "beta": 0.1,
+        "trials_per_setting": 437822,
+        "total_trials": 1751288,
+        "rejection_contrast_threshold": 0.02552591627951706,
+        "contrast_radius_alpha": 0.005525916279517062,
+        "contrast_radius_beta": 0.004474079677457079,
+        "power_lower_bound": 0.9
+      },
+      "cp": {
+        "trials_per_setting": 277221,
+        "total_trials": 1108884,
+        "probabilities": [
+          0.515,
+          0.5,
+          0.485,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          142179,
+          138020,
+          133862,
+          138020
+        ],
+        "count_upper": [
+          143359,
+          139201,
+          135042,
+          139201
+        ],
+        "contrast_lower": 0.02000040934836017,
+        "null_upper": 0.02,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      },
+      "hoeffding_binomial_power": {
+        "trials_per_setting": 347739,
+        "total_trials": 1390956,
+        "probabilities": [
+          0.515,
+          0.5,
+          0.485,
+          0.5
+        ],
+        "occupation": null,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          178425,
+          173209,
+          167993,
+          173209
+        ],
+        "count_upper": [
+          179746,
+          174530,
+          169314,
+          174530
+        ],
+        "contrast_lower": 0.02000018958184424,
+        "null_upper": 0.02,
+        "method": "hoeffding",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    }
+  ],
+  "low_probability_example": {
+    "center": 0.1,
+    "contrast": 0.03,
+    "cp": {
+      "trials_per_setting": 99325,
+      "total_trials": 397300,
+      "probabilities": [
+        0.115,
+        0.1,
+        0.085,
+        0.1
+      ],
+      "occupation": null,
+      "nuisance": 0.02,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        11198,
+        9721,
+        8246,
+        9721
+      ],
+      "count_upper": [
+        11648,
+        10145,
+        8640,
+        10145
+      ],
+      "contrast_lower": 0.02000456643463254,
+      "null_upper": 0.02,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    "hoeffding": {
+      "trials_per_setting": 249637,
+      "total_trials": 998548,
+      "probabilities": [
+        0.115,
+        0.1,
+        0.085,
+        0.1
+      ],
+      "occupation": null,
+      "nuisance": 0.02,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        28352,
+        24628,
+        20907,
+        24628
+      ],
+      "count_upper": [
+        29066,
+        25300,
+        21532,
+        25300
+      ],
+      "contrast_lower": 0.020001563541486148,
+      "null_upper": 0.02,
+      "method": "hoeffding",
+      "alpha": 0.01,
+      "beta": 0.1
+    }
+  },
+  "occupation_examples": [
+    {
+      "eta": 1.0,
+      "visibility": 0.6,
+      "plan": {
+        "trials_per_setting": 8002,
+        "total_trials": 40010,
+        "probabilities": [
+          0.8,
+          0.5,
+          0.2,
+          0.5
+        ],
+        "occupation": 0.5,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          6318,
+          3897,
+          1518,
+          3897,
+          3897
+        ],
+        "count_upper": [
+          6484,
+          4105,
+          1684,
+          4105,
+          4105
+        ],
+        "contrast_lower": 0.5503363189687915,
+        "null_upper": 0.5503094908155133,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.9,
+      "plan": {
+        "trials_per_setting": 470,
+        "total_trials": 2350,
+        "probabilities": [
+          0.855,
+          0.45,
+          0.04499999999999999,
+          0.45
+        ],
+        "occupation": 0.5,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          384,
+          187,
+          11,
+          187,
+          210
+        ],
+        "count_upper": [
+          419,
+          237,
+          32,
+          237,
+          260
+        ],
+        "contrast_lower": 0.6449847131775923,
+        "null_upper": 0.6439442894113763,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.8,
+      "plan": {
+        "trials_per_setting": 3209,
+        "total_trials": 16045,
+        "probabilities": [
+          0.7200000000000001,
+          0.4,
+          0.07999999999999999,
+          0.4
+        ],
+        "occupation": 0.5,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          2251,
+          1219,
+          222,
+          1219,
+          1539
+        ],
+        "count_upper": [
+          2369,
+          1348,
+          293,
+          1348,
+          1670
+        ],
+        "contrast_lower": 0.5679019799596592,
+        "null_upper": 0.5677545352191771,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.7,
+      "plan": {
+        "trials_per_setting": 31055,
+        "total_trials": 155275,
+        "probabilities": [
+          0.68,
+          0.4,
+          0.12000000000000002,
+          0.4
+        ],
+        "occupation": 0.5,
+        "nuisance": 0.02,
+        "certified": true,
+        "power_lower_bound": 0.9,
+        "count_lower": [
+          20926,
+          12221,
+          3594,
+          12221,
+          15323
+        ],
+        "count_upper": [
+          21308,
+          12623,
+          3860,
+          12623,
+          15732
+        ],
+        "contrast_lower": 0.53538451004124,
+        "null_upper": 0.535366154385748,
+        "method": "cp",
+        "alpha": 0.01,
+        "beta": 0.1
+      }
+    }
+  ],
+  "occupation_grid": [
+    {
+      "eta": 0.6,
+      "visibility": 0.6,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4684,
+        2894,
+        1125,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        4916,
+        3107,
+        1276,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.3147446928042808,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.7,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4984,
+        2894,
+        834,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5216,
+        3107,
+        967,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.37674902616055495,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.8,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5284,
+        2894,
+        545,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5516,
+        3107,
+        656,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.43931335040580693,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.9,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5585,
+        2894,
+        261,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5815,
+        3107,
+        340,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5031000382184827,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 1.0,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        5886,
+        2894,
+        0,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        6114,
+        3107,
+        0,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5725971809810478,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.6,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5484,
+        3389,
+        1320,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        5715,
+        3611,
+        1481,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.37358077101553133,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.7,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5836,
+        3389,
+        979,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6064,
+        3611,
+        1122,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.4460000426481594,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.8,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6187,
+        3389,
+        641,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6412,
+        3611,
+        760,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5190385966729758,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.9,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6540,
+        3389,
+        308,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6760,
+        3611,
+        393,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5934806461209776,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 1.0,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6893,
+        3389,
+        0,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        7106,
+        3611,
+        0,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.6741345642631789,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.6,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6288,
+        3886,
+        1515,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6511,
+        4114,
+        1686,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.4332962841827137,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.7,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6691,
+        3886,
+        1125,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6908,
+        4114,
+        1276,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5161887408769229,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.8,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7095,
+        3886,
+        738,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4114,
+        864,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5998714191738724,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.9,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7500,
+        3886,
+        355,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7699,
+        4114,
+        446,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.6850639852118413,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 1.0,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        3886,
+        0,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        4114,
+        0,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.7771948536345482,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.6,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        7095,
+        4384,
+        1711,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4616,
+        1890,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.4939270931559905,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.7,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7551,
+        4384,
+        1271,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7748,
+        4616,
+        1430,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.5874850294161895,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.8,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8008,
+        4384,
+        834,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8191,
+        4616,
+        967,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.6820523489154512,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.9,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8468,
+        4384,
+        402,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8631,
+        4616,
+        499,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.7784024148925339,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 1.0,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4384,
+        0,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        4616,
+        0,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.8824425653212737,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.6,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        4884,
+        1907,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        5116,
+        2093,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.5557707812639165,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.7,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8416,
+        4884,
+        1417,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8583,
+        5116,
+        1584,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.6600772007581999,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.8,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4884,
+        931,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        5116,
+        1070,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.7662662046373676,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.9,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        9449,
+        4884,
+        450,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9550,
+        5116,
+        551,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.8749927623823679,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 1.0,
+      "nuisance": 0.0,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        10000,
+        4884,
+        0,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        10000,
+        5116,
+        0,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.9986189260051799,
+      "null_upper": 0.5270850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.6,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4684,
+        2894,
+        1125,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        4916,
+        3107,
+        1276,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.3147446928042808,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.7,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4984,
+        2894,
+        834,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5216,
+        3107,
+        967,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.37674902616055495,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.8,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5284,
+        2894,
+        545,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5516,
+        3107,
+        656,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.43931335040580693,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.9,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5585,
+        2894,
+        261,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5815,
+        3107,
+        340,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5031000382184827,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 1.0,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        5886,
+        2894,
+        0,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        6114,
+        3107,
+        0,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5725971809810478,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.6,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5484,
+        3389,
+        1320,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        5715,
+        3611,
+        1481,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.37358077101553133,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.7,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5836,
+        3389,
+        979,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6064,
+        3611,
+        1122,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.4460000426481594,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.8,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6187,
+        3389,
+        641,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6412,
+        3611,
+        760,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5190385966729758,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.9,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6540,
+        3389,
+        308,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6760,
+        3611,
+        393,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5934806461209776,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 1.0,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6893,
+        3389,
+        0,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        7106,
+        3611,
+        0,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.6741345642631789,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.6,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6288,
+        3886,
+        1515,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6511,
+        4114,
+        1686,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.4332962841827137,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.7,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6691,
+        3886,
+        1125,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6908,
+        4114,
+        1276,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5161887408769229,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.8,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7095,
+        3886,
+        738,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4114,
+        864,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5998714191738724,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.9,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7500,
+        3886,
+        355,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7699,
+        4114,
+        446,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.6850639852118413,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 1.0,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        3886,
+        0,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        4114,
+        0,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.7771948536345482,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.6,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        7095,
+        4384,
+        1711,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4616,
+        1890,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.4939270931559905,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.7,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7551,
+        4384,
+        1271,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7748,
+        4616,
+        1430,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.5874850294161895,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.8,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8008,
+        4384,
+        834,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8191,
+        4616,
+        967,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.6820523489154512,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.9,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8468,
+        4384,
+        402,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8631,
+        4616,
+        499,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.7784024148925339,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 1.0,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4384,
+        0,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        4616,
+        0,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.8824425653212737,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.6,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        4884,
+        1907,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        5116,
+        2093,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.5557707812639165,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.7,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8416,
+        4884,
+        1417,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8583,
+        5116,
+        1584,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.6600772007581999,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.8,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4884,
+        931,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        5116,
+        1070,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.7662662046373676,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.9,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        9449,
+        4884,
+        450,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9550,
+        5116,
+        551,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.8749927623823679,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 1.0,
+      "nuisance": 0.01,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        10000,
+        4884,
+        0,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        10000,
+        5116,
+        0,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.9986189260051799,
+      "null_upper": 0.5370850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.6,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4684,
+        2894,
+        1125,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        4916,
+        3107,
+        1276,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.3147446928042808,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.7,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4984,
+        2894,
+        834,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5216,
+        3107,
+        967,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.37674902616055495,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.8,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5284,
+        2894,
+        545,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5516,
+        3107,
+        656,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.43931335040580693,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.9,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5585,
+        2894,
+        261,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5815,
+        3107,
+        340,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5031000382184827,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 1.0,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        5886,
+        2894,
+        0,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        6114,
+        3107,
+        0,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5725971809810478,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.6,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5484,
+        3389,
+        1320,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        5715,
+        3611,
+        1481,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.37358077101553133,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.7,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5836,
+        3389,
+        979,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6064,
+        3611,
+        1122,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.4460000426481594,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.8,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6187,
+        3389,
+        641,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6412,
+        3611,
+        760,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5190385966729758,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.9,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6540,
+        3389,
+        308,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6760,
+        3611,
+        393,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5934806461209776,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 1.0,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6893,
+        3389,
+        0,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        7106,
+        3611,
+        0,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.6741345642631789,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.6,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6288,
+        3886,
+        1515,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6511,
+        4114,
+        1686,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.4332962841827137,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.7,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6691,
+        3886,
+        1125,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6908,
+        4114,
+        1276,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5161887408769229,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.8,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7095,
+        3886,
+        738,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4114,
+        864,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5998714191738724,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.9,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7500,
+        3886,
+        355,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7699,
+        4114,
+        446,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.6850639852118413,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 1.0,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        3886,
+        0,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        4114,
+        0,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.7771948536345482,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.6,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        7095,
+        4384,
+        1711,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4616,
+        1890,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.4939270931559905,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.7,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7551,
+        4384,
+        1271,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7748,
+        4616,
+        1430,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.5874850294161895,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.8,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8008,
+        4384,
+        834,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8191,
+        4616,
+        967,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.6820523489154512,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.9,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8468,
+        4384,
+        402,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8631,
+        4616,
+        499,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.7784024148925339,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 1.0,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4384,
+        0,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        4616,
+        0,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.8824425653212737,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.6,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        4884,
+        1907,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        5116,
+        2093,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.5557707812639165,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.7,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8416,
+        4884,
+        1417,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8583,
+        5116,
+        1584,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.6600772007581999,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.8,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4884,
+        931,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        5116,
+        1070,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.7662662046373676,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.9,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        9449,
+        4884,
+        450,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9550,
+        5116,
+        551,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.8749927623823679,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 1.0,
+      "nuisance": 0.02,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        10000,
+        4884,
+        0,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        10000,
+        5116,
+        0,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.9986189260051799,
+      "null_upper": 0.5470850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.6,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4684,
+        2894,
+        1125,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        4916,
+        3107,
+        1276,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.3147446928042808,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.7,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        4984,
+        2894,
+        834,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5216,
+        3107,
+        967,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.37674902616055495,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.8,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5284,
+        2894,
+        545,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5516,
+        3107,
+        656,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.43931335040580693,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 0.9,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5585,
+        2894,
+        261,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        5815,
+        3107,
+        340,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5031000382184827,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.6,
+      "visibility": 1.0,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5886,
+        2894,
+        0,
+        2894,
+        4884
+      ],
+      "count_upper": [
+        6114,
+        3107,
+        0,
+        3107,
+        5116
+      ],
+      "contrast_lower": 0.5725971809810478,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.6,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5484,
+        3389,
+        1320,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        5715,
+        3611,
+        1481,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.37358077101553133,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.7,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        5836,
+        3389,
+        979,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6064,
+        3611,
+        1122,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.4460000426481594,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.8,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6187,
+        3389,
+        641,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6412,
+        3611,
+        760,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5190385966729758,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 0.9,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6540,
+        3389,
+        308,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        6760,
+        3611,
+        393,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.5934806461209776,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.7,
+      "visibility": 1.0,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        6893,
+        3389,
+        0,
+        3389,
+        4884
+      ],
+      "count_upper": [
+        7106,
+        3611,
+        0,
+        3611,
+        5116
+      ],
+      "contrast_lower": 0.6741345642631789,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.6,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6288,
+        3886,
+        1515,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6511,
+        4114,
+        1686,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.4332962841827137,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.7,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        6691,
+        3886,
+        1125,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        6908,
+        4114,
+        1276,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5161887408769229,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.8,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7095,
+        3886,
+        738,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4114,
+        864,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.5998714191738724,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 0.9,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7500,
+        3886,
+        355,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        7699,
+        4114,
+        446,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.6850639852118413,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.8,
+      "visibility": 1.0,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7907,
+        3886,
+        0,
+        3886,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        4114,
+        0,
+        4114,
+        5116
+      ],
+      "contrast_lower": 0.7771948536345482,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.6,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        7095,
+        4384,
+        1711,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7304,
+        4616,
+        1890,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.4939270931559905,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.7,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        7551,
+        4384,
+        1271,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        7748,
+        4616,
+        1430,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.5874850294161895,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.8,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8008,
+        4384,
+        834,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8191,
+        4616,
+        967,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.6820523489154512,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 0.9,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8468,
+        4384,
+        402,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        8631,
+        4616,
+        499,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.7784024148925339,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 0.9,
+      "visibility": 1.0,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4384,
+        0,
+        4384,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        4616,
+        0,
+        4616,
+        5116
+      ],
+      "contrast_lower": 0.8824425653212737,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.6,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": false,
+      "power_lower_bound": 0.0,
+      "count_lower": [
+        7907,
+        4884,
+        1907,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8093,
+        5116,
+        2093,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.5557707812639165,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.7,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8416,
+        4884,
+        1417,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        8583,
+        5116,
+        1584,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.6600772007581999,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.8,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        8930,
+        4884,
+        931,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9069,
+        5116,
+        1070,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.7662662046373676,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 0.9,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        9449,
+        4884,
+        450,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        9550,
+        5116,
+        551,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.8749927623823679,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    },
+    {
+      "eta": 1.0,
+      "visibility": 1.0,
+      "nuisance": 0.05,
+      "trials_per_setting": 10000,
+      "certified": true,
+      "power_lower_bound": 0.9,
+      "count_lower": [
+        10000,
+        4884,
+        0,
+        4884,
+        4884
+      ],
+      "count_upper": [
+        10000,
+        5116,
+        0,
+        5116,
+        5116
+      ],
+      "contrast_lower": 0.9986189260051799,
+      "null_upper": 0.5770850924198951,
+      "method": "cp",
+      "alpha": 0.01,
+      "beta": 0.1
+    }
+  ],
+  "calibration": "If calibration can fail with probability alpha_cal, total type-I error is at most alpha+alpha_cal."
+}

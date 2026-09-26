@@ -7,13 +7,15 @@ needed to compare them. Studies provide independent, reproducible checks.
 
 | Study | Question | Status |
 |---|---|---|
-| [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | In progress |
+| [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |
+| [Phase-intervention design](studies/phase-intervention-design/README.md) | Which calibrated dephased models would a four-phase experiment exclude? | Proposed; synthetic checks and conditional power |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
 and theory comparisons, sensitivity checks, and an explicit list of missing
 inputs. Its [method comparison](studies/wen-2026-propagator/method-comparison.md)
 explains which numerical differences affect reproducibility and which tested
-choices preserve the broad comparison.
+choices preserve the broad comparison. The [completion report](studies/wen-2026-propagator/completion-report.md)
+connects every audit requirement to evidence and identifies the remaining inputs.
 
 The companion [ontology-separation](https://github.com/stevenwarejones/ontology-separation)
 repository contains the formal Lean framework. Its

@@ -1,0 +1,58 @@
+{
+  "kind": "synthetic algebra/precision diagnostics; no empirical fit or power claim",
+  "source": {
+    "filename": "intervention_checks.py",
+    "sha256": "cb3ede2ac02d42d9e355b4003257bd9070e085a74faff8c5a93902ba3c06eb15"
+  },
+  "seed": 3212026,
+  "mixed_state_cases": 48,
+  "phase_identity_max_error": 2.220446049250313e-16,
+  "lossy_balanced_example": {
+    "efficiency": 0.8,
+    "selected_bin": [
+      0.7999999999999997,
+      0.3999999999999999,
+      0.0,
+      0.3999999999999998
+    ],
+    "other_bin": [
+      0.0,
+      0.39999999999999986,
+      0.7999999999999997,
+      0.3999999999999999
+    ],
+    "failure": [
+      0.19999999999999996,
+      0.19999999999999996,
+      0.19999999999999996,
+      0.19999999999999996
+    ],
+    "dephased_selected_bin": 0.39999999999999986
+  },
+  "coherent_zero_contrast_counterexample": [
+    0.7999999999999998,
+    0.7999999999999998,
+    0.7999999999999998,
+    0.7999999999999998
+  ],
+  "intermediate_window_counterexample": {
+    "free_selected_bin": 0.9999999999999996,
+    "projected_selected_bin_unconditioned": 0.2499999999999999,
+    "projected_survival": 0.4999999999999998,
+    "projected_selected_bin_conditioned": 0.5
+  },
+  "window_bound_random_cases": 32,
+  "largest_norm_error_over_bound": 0.5785225510002884,
+  "precision_design": {
+    "family_error": 0.01,
+    "trials_per_setting": 10000,
+    "contrast_radius": 0.03656394871363849,
+    "target_contrast_radius": 0.02,
+    "required_trials_per_setting": 33424
+  },
+  "limitations": [
+    "Numerical checks are not formal proofs.",
+    "No calibration/nuisance bound has been measured.",
+    "Hoeffding calculation assumes independent fixed-probability Bernoulli trials."
+  ]
+}
