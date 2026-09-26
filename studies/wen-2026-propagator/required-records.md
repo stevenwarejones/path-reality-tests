@@ -19,8 +19,7 @@ specification, not a statement that the records do not exist elsewhere.
 Self-describing array files plus a machine-readable metadata table would suffice;
 a particular proprietary format is not required. Every array needs axis labels,
 units and a source identifier. Original frames should be linked to derived K
-entries so shared references remain visible. Independent repeat counts must be
-recorded separately from path counts or pixels.
+entries so shared references remain visible. Independent repeat counts are distinct from path counts or pixels.
 
 An ingestion check would first validate file hashes and dimensions, compare the
 mapping against the published method, and reproduce the already deposited

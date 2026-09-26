@@ -7,7 +7,15 @@
     "https://arxiv.org/html/1701.05051v3",
     "https://arxiv.org/html/2305.03641v2",
     "https://doi.org/10.1080/01621459.1963.10500830",
-    "https://arxiv.org/html/1812.06940v2"
+    "https://arxiv.org/html/1812.06940v2",
+    "https://arxiv.org/html/1205.1439v3",
+    "https://doi.org/10.1209/0295-5075/1/4/004",
+    "https://arxiv.org/abs/1502.07308",
+    "https://arxiv.org/abs/0910.4227v1",
+    "https://arxiv.org/abs/2011.11667",
+    "https://arxiv.org/abs/1304.7474v1",
+    "https://arxiv.org/html/1409.1535v2",
+    "https://doi.org/10.1093/biomet/26.4.404"
   ],
   "output_provenance": "Each numerical JSON identifies its generating script and SHA-256; no measured data are used.",
   "general_formal_companion_commit": "25d22b3c1f085421e59d90cabaf4cefbd5bf158a",

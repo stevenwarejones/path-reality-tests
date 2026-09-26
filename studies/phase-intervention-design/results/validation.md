@@ -32,17 +32,25 @@ independent Bernoulli trials with fixed setting probabilities; it is not an
 empirical power calculation or validation of calibration, drift or trial selection.
 
 No apparatus has been calibrated and no scientific hypothesis has been rejected
-by these checks. PH01–PH06 remain open according to their stated closure criteria.
+by these checks. Physical feasibility and calibration remain open in PH01–PH05 and PH07–PH08.
+PH06 is closed at the literature scope: this is a re-analysis of known interference.
 
-`design.py --check` verifies the prospective sample-size snapshot. Nine new tests
-cover invalid counts and parameters, unequal trial totals, both quadratures,
-strict threshold equality, independently summed binomial null risk and power,
-snapshot corruption/NaN rejection, exact identifiability examples and invocation
-from outside the repository. Together with the existing data tests, the suite
-contains 33 tests. `--check` leaves all committed outputs unchanged.
+`design.py --check` verifies the prospective sample-size and occupation-power
+snapshot without rewriting outputs. The binomial tests directly sum probability
+masses to check CP coverage over 101 probabilities at n=1,7,40, endpoint
+monotonicity, unequal-count simultaneous coverage and null rejection risk.
+Small-design exact power independently exceeds the claimed certificate.
+Five-context power checks verify both binomial-envelope tails and every corner
+of the count envelope, including worst-case occupation. Strict equality is
+inconclusive; integer sample plans are checked at their returned sizes.
+The question-register test checks every Q-ID against the completion report,
+including grouped ranges. Existing tests continue to cover integrity failures,
+replication, synthetic algebra, corruption, and invocation from other directories.
 
-Each new numerical JSON records its generating script and SHA-256. A digest change
-or a numerical change requires explicit review; CI does not overwrite snapshots.
+Each numerical JSON records its generating script and SHA-256. CI checks
+snapshots without overwriting them. The guarantees remain conditional on the
+fixed-probability independent trial model derived in the protocol; these tests
+supply no calibration or observed experimental power.
 
 The [general formal companion](https://github.com/stevenwarejones/ontology-separation/blob/25d22b3c1f085421e59d90cabaf4cefbd5bf158a/docs/PHASE_INTERVENTION.md)
 is pinned to its source revision in ontology-separation. Its 41 new audit roots

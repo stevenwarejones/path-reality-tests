@@ -1,114 +1,228 @@
-# Recommended follow-up: phase intervention with explicit loss
+# Phase intervention with complete outcomes and occupation calibration
 
-Status: proposed experiment and analytical design; no data collected, apparatus feasibility not yet established, and no new contextuality theorem claimed. This is a standalone experiment design. It does not depend on replication of a particular published dataset.
+The baseline null is the quantum P/Q-dephased class. Rejecting it in a working
+heralded Mach–Zehnder interferometer is expected: it establishes arm coherence.
+The baseline is a calibrated, loss-complete template. The substantive conditional
+ontology test below instead allows arbitrary phase action on the occupied arm.
+All calculations are prospective; no apparatus or achieved power is reported.
 
-## Question, model classes and predicted contrast
+## Quantum predictions
 
-Can a controlled intervention at an intermediate plane distinguish coherent propagation from a specified model that has lost coherence between a region R and its complement? Choose the region and output bin on training data, then freeze them before confirmation. Use P for the region projector and Q=I−P. For state ρ at that plane, a phase intervention is Vθ=Q+exp(iθ)P. Include downstream propagation and calibrated detection in a fixed effect 0≤E≤I.
-
-Define A=Tr(EQρQ)+Tr(EPρP) and c=Tr(EPρQ). Direct expansion gives
+For a region projector P, Q=I−P, fixed preparation ρ and fixed downstream effect
+E, the intervention Vθ=Q+exp(iθ)P gives
 
 \[
-p_\theta=A+2\operatorname{Re}(e^{i\theta}c),\qquad
-p_0-p_\pi=4\operatorname{Re}c,\qquad
-p_{\pi/2}-p_{3\pi/2}=-4\operatorname{Im}c.
+p_\theta=A+2\operatorname{Re}(e^{i\theta}c),\quad
+A=\operatorname{Tr}(EQ\rho Q)+\operatorname{Tr}(EP\rho P),\quad
+c=\operatorname{Tr}(EP\rho Q).
 \]
 
-The dephased model D(ρ)=PρP+QρQ predicts the constant A under this same phase intervention. The null includes mixtures of such states with setting-independent preparation, downstream effects and loss. A broader model allowing setting-dependent preparation, efficiency or response need not obey the constant prediction. Calibration and randomization therefore belong to the model test, not optional laboratory housekeeping.
+The contrasts are p₀−pπ=4 Re(c) and pπ/₂−p₃π/₂=−4 Im(c). The dephased state
+PρP+QρQ gives A at every setting. Fixed preparation mixtures and fixed detection
+loss preserve this invariance. A coherent state can also give zero contrast at
+an insensitive detector.
 
-For a pure input and a rank-one output, c reduces to a* b with a and b the complementary-region and selected-region transition amplitudes. No separate record of which region the individual photon occupied is assumed. Path-sum and transfer-matrix quantum descriptions predict exactly the same curve. A nonzero contrast rejects the stated dephased class; it does not select an ontology of literal paths. Zero contrast does not establish dephasing: c can vanish for a coherent state and an unsuitable detector.
-
-## Acquisition and controls
-
-1. Characterize the source, preparation, selected region and detection effect. Establish whether a phase-only intervention can be implemented at the desired intermediate plane without changing apertures, mode coupling or polarization unintentionally. Use the finite-window obligations in `physical-bridge.md` to define the forward model.
-2. Use independent training/calibration data to select R and an output bin with predicted contrast. Freeze geometry, model parameters, binning, nuisance allowance, sample size and analysis before confirmation. Do not fit the confirmation fringe and call that same fit an independent prediction.
-3. Randomize the four phase settings 0, π/2, π and 3π/2 across trials or short balanced blocks. Log the actual phase, timestamp, acquisition order and calibration state. Wait for modulator settling according to a declared rule, independent of detector result.
-4. Define a trial with a source herald independent of the later detection outcome and setting. Count each trial in a complete outcome space: selected bin, other detected outcomes, no detection, and multiple detections with a preregistered assignment. Use the selected-bin count divided by all eligible heralds. Archive integer counts, including failures; do not normalize each setting by its detected subset.
-5. Interleave source-off backgrounds, detector calibration and a deliberately randomized phase control. Averaging independent uniform phases implements the P/Q dephasing map ideally. Verify its implementation and loss; a physical blocker changes boundary conditions and is not automatically an equivalent control.
-6. Bound setting-dependent transmission, preparation drift, phase error, detector response and uncertainty in the projection/effect description. If they cannot be bounded, report an unresolved model bridge rather than an exclusion. A successful control does not by itself prove there are no unmeasured degrees of freedom.
-
-## Finite-data decision rule
-
-For n independent Bernoulli trials per setting with fixed setting probabilities, let p̂θ be the selected-bin fraction. With family error α, the union bound and [Hoeffding’s bounded-variable inequality](https://doi.org/10.1080/01621459.1963.10500830) give simultaneous radii
+For the balanced lossy family, the complete table is
 
 \[
-r=\sqrt{\log(8/\alpha)/(2n)}.
+p_\theta(\pm)=\eta(1\pm v f_\theta)/2,\quad
+p_\theta(\varnothing)=1-\eta,\quad f=(1,0,-1,0).
 \]
 
-Let B be a justified upper bound on the absolute contrast that the calibrated null could produce through setting dependence. Reject this null only if
+Its selected-bin contrast is ηv and its quantum which-region probability is 1/2.
+The [formal companion](https://github.com/stevenwarejones/ontology-separation/pull/85)
+contains the density-matrix and complete-POVM realization; this extension is
+under review and its final merged source pin is pending.
+
+## Local-phase definite-region null
+
+A finite ontic state λ has one region r(λ)∈{P,Q}; its preparation distribution μ
+is independent of the setting. Responses Rθ(o|λ) are normalized on the complete
+outcome space. For λ in Q, Rθ is independent of θ. For λ in P it is arbitrary,
+including arbitrary phase-dependent loss. The occupation premise identifies
+μ(P)=w with the which-region measurement probability for the same preparation.
+Then, for every outcome including failure,
 
 \[
-\max(|\hat p_0-\hat p_\pi|,|\hat p_{\pi/2}-\hat p_{3\pi/2}|)-2r>B.
+p_s(o)-p_t(o)=\sum_{\lambda\in P}\mu(\lambda)
+[R_s(o|\lambda)-R_t(o|\lambda)],\qquad |p_s(o)-p_t(o)|\leq w.
 \]
 
-If each setting differs from a common null probability by at most δcal, B=2δcal suffices. If calibration is statistical with failure probability αcal, allocate it separately; total error is at most α+αcal. Do not subtract backgrounds into non-Bernoulli pseudo-counts and then apply this rule. Model backgrounds and multiphoton contamination in the outcome probabilities/nuisance bound. No optional stopping is permitted with this fixed-sample calculation. Dependence or appreciable drift requires a justified sequential or block analysis before claiming this error rate.
+This follows because each response difference is in [−1,1]. Unlike the dephased
+null, the class admits nonzero fringes. The balanced quantum family exceeds its
+bound exactly when ηv>1/2. At and below that boundary a two-region response model
+reproduces the entire table: if η≤1/2 its P response is the lossy table (2η,v)
+and its Q response always fails; if η≥1/2 the responses are (1,2ηv) and
+(2η−1,0), each with preparation weight 1/2. These parameters are physical precisely
+on the stated side of the boundary.
 
-With α=0.01 and n=10,000 per phase, 2r≈0.03656. To target a contrast uncertainty at most h, choose n≥ceil(2 log(8/α)/h²); this sets precision, not detection power. Power must be computed from an independently justified anticipated contrast and nuisance margin. Testing extra regions/bins requires its own multiplicity allocation or independent holdout selection.
+A violation rejects the conjunction of definite region, cross-context occupation
+matching, invariant Q response and setting independence. Occupation calibration
+estimates an operational probability; it does not prove the ontic identification.
+Context-dependent occupation models, Bohmian-style models and models with
+phase-sensitive fields in an empty arm can evade these premises. Q-response
+invariance is stronger than ordinary spatial locality: an empty-arm field can
+carry phase information locally to the later recombination point.
 
-`intervention_checks.py` verifies the complex phase/sign convention against direct density-matrix calculations, full outcome normalization with loss, the constant dephased prediction, and the intermediate-window counterexample. Its numbers are synthetic. The [pinned Lean case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/OntologySeparation/Experiments/PathInterference.lean) covers the balanced two-route/two-phase special case; it does not certify this generalized apparatus bridge or statistical rule.
+## Acquisition and physical correspondence
 
-The [general four-phase formal companion](https://github.com/stevenwarejones/ontology-separation/blob/25d22b3c1f085421e59d90cabaf4cefbd5bf158a/docs/PHASE_INTERVENTION.md) extends that special case
-to finite mixed states and complete POVMs, proves the measured-cross-term
-criterion and calibrated exclusion bound, and realizes the lossy model in quantum
-theory. It leaves apparatus correspondence and statistical coverage as premises.
+The candidate apparatus is a heralded two-mode Mach–Zehnder interferometer with
+both output ports and failure recorded. The preparation, phase convention,
+selected bin, nuisance budget, allocation and stopping rule are fixed using
+independent calibration. Training and confirmation data have separate roles.
+The [physical correspondence](physical-bridge.md) describes additional spatial
+projection and propagation approximations if a spatial mask replaces two modes.
 
-## Prior work and a possible contextuality extension
+Phase settings 0, π/2, π and 3π/2 are interleaved with a fifth, which-region
+calibration context on the same preparation. In that context a region readout
+replaces recombination. Its P fraction estimates w. A complete calibrated P/Q
+readout, or a separately justified error budget for its missing and mistaken
+outcomes, is needed. Calling an undetected occupation trial Q would bias the
+bound. The region measurement can disturb the system: no simultaneous path
+record is claimed for the interference trials.
 
-This is an established interference mechanism, not a claim to invent single-photon interference. Its value here is an intervention tied to explicit models, failure outcomes and a checked audit trail. [Lundeen et al. (2011)](https://doi.org/10.1038/nature10120) illustrates the model and ensemble dependence of direct optical inference; [Matzkin (2020)](https://doi.org/10.1103/PhysRevResearch.2.032048) relates weak probes to path amplitudes. [Magaña-Loaiza et al. (2016)](https://doi.org/10.1038/ncomms13987) shows why modifying apertures requires care about changed boundary conditions. See `literature-comparison.md` for review depth and limits.
+Every eligible source herald contributes to its assigned setting's denominator.
+The outcome space includes selected detection, other detection, no detection,
+and a fixed assignment for multiple detections. Detection-conditioned fringes
+are not the absolute probabilities used here. Backgrounds and contamination
+enter the forward model or nuisance allowance; background-subtracted fractional
+pseudo-counts are not binomial observations.
 
-For stronger ontology exclusion, a separate extension should assess the finite-pointer Theorem 3 in [Kunjwal, Lostaglio and Pusey (2019)](https://arxiv.org/html/1812.06940v2): p−≤pF(1+pm)/2+(1−pF)pd. Here p− is the joint pointer-negative/postselection-success probability, not the postselected fraction. Applicability requires the measurement and transformation equivalences in Eqs.29–30; polarization data alone do not establish them. Section IV explains secondary procedures and a remaining tomography assumption. First derive the exact instrument map and finite-data calibration requirements; only then implement a witness. This is a separate stronger objective, not a result of the phase-contrast test.
+Source-off, transmission, detector, settling and deliberately randomized-phase
+controls quantify preparation/readout changes. A blocker is not automatically a
+dephasing operation: it changes boundaries. Logs retain assignment, acquisition
+order, timestamps, setting calibration and every outcome.
 
-## Precision, power and an implementation candidate
+If Q responses vary by at most ℓ between the compared settings, the bound becomes
+w+(1−w)ℓ≤w+ℓ. An entrywise behavior discrepancy δ contributes 2δ. Thus B=ℓ+2δ
+is a conservative contrast allowance, with any region-readout bias included
+separately or in B. Unbounded setting leakage leaves the exclusion unresolved.
+Moving the element to the other arm gives the separate bound 1−w. The smaller
+bound min(w,1−w) applies to a *common* observable contrast only under an additional
+identification of the two placements' contrasts and complementary occupations. In the ideal quantum
+model V_Q(θ)=exp(iθ)V_P(−θ), so a fixed preparation/readout gives equal absolute
+opposite-phase contrasts after relabeling; physically moving a device still
+needs that correspondence and its nuisance bound.
 
-`design.py` computes sufficient fixed sample sizes and applies the rejection rule
-to four integer counts and four complete trial totals. It accepts unequal totals
-using individual radii; a missing setting is an error. Its example output is
-[prospective design.json](results/design.json), not an achieved experimental result.
+## Confidence intervals and decision rules
 
-Write hα=√(2 log(8/α)/n) for the contrast radius above. On the simultaneous
-confidence event with failure probability β, the estimated maximum contrast is
-at least d−hβ if the true maximum contrast is at least d. Therefore
+`design.py` retains the original Hoeffding `classify` rule and supplies
+`interval_classify` with either Hoeffding or Clopper–Pearson (CP) intervals.
+For Nᵢ complete independent Bernoulli trials at setting i and count Kᵢ, let
+[Lᵢ,Uᵢ] be a two-sided interval with individual error α/m. Here m=4 for the
+coherence baseline and m=5 when occupation calibration is included. The union
+bound gives simultaneous coverage at least 1−α, with unequal Nᵢ allowed.
+
+For CP, each tail has probability allocation α/(2m): the lower endpoint is the
+Beta(Kᵢ,Nᵢ−Kᵢ+1) quantile at that probability, and the upper endpoint is the
+Beta(Kᵢ+1,Nᵢ−Kᵢ) survival quantile. At Kᵢ=0 the lower endpoint is 0; at Kᵢ=Nᵢ
+the upper endpoint is 1. Inversion of binomial tails gives coverage at least the
+nominal level; numerical evaluation uses SciPy beta quantiles.
+
+For each opposite-phase pair (i,j), define
 
 \[
- d>B+h_\alpha+h_\beta
- \quad\Longrightarrow\quad
- \Pr(\mathrm{reject})\geq 1-\beta.
+C_{ij}=\max(0,L_i-U_j,L_j-U_i).
 \]
 
-A sufficient integer design is
+The baseline rejects if max(C₀₂,C₁₃)>B. The occupation-calibrated test rejects if
 
 \[
+\max(C_{02},C_{13})>U_w+B.
+\]
+
+Equality is inconclusive. On simultaneous coverage the inequalities cannot hold
+under the corresponding null, so false rejection is at most α. A separate
+statistical calibration failure αcal adds to this bound. Selection of additional
+bins or regions changes the multiplicity problem.
+
+The untruncated Hoeffding radius is rᵢ=√[log(2m/α)/(2Nᵢ)]. In symmetric-radius
+notation the occupation rule is max contrast−2rα>ŵ+rw+B; for unequal counts
+the selected pair uses rᵢ+rⱼ. The CP implementation uses asymmetric endpoints
+instead of replacing them with a common radius.
+
+## Random assignment and blocks
+
+Conditioning on realized per-setting counts preserves these intervals when
+setting assignment is independent of the trial outcomes and, conditional on
+assignments, outcomes are independent Bernoulli with a fixed probability pᵢ
+for each setting. Given a full assignment sequence, the joint count law factors
+as ∏ᵢ Bin(Nᵢ,pᵢ). Every sequence with the same Nᵢ has this same count law, so
+averaging over those sequences gives the same conditional law given the counts.
+Conditional coverage therefore implies unconditional coverage. A missing setting
+has no usable interval and the implementation returns an error, not rejection.
+
+Fixed balanced blocks with an independently randomized order have fixed counts
+and the same factorization under these outcome assumptions. Randomizing a block
+does not remove within-block correlation or drift. The binomial guarantees here
+exclude correlated/drifting blocks and outcome-adaptive stopping. Power tables
+use fixed counts per setting; per-trial randomization has a conditional power
+certificate at its realized counts, not the fixed-count total-trial guarantee.
+
+## Conditional power
+
+The Hoeffding baseline uses hγ=√[2 log(8/γ)/n] and sufficient condition
+
+\[
+d>B+h_\alpha+h_\beta,\qquad
 n>\frac{(\sqrt{2\log(8/\alpha)}+\sqrt{2\log(8/\beta)})^2}{(d-B)^2}.
 \]
 
-The strict inequality matters because equality at the decision threshold is
-inconclusive. With α=0.01, β=0.10 and B=0.02, the script gives:
+Strict integer rounding is checked explicitly. `certified_power` supplies a
+sharper *sufficient certificate*, not exact power: at specified anticipated pᵢ,
+integer binomial quantiles with tail allocation β/(2m) give a simultaneous count
+envelope with probability at least 1−β. Confidence endpoints are monotone in
+counts. Their worst-case contrast lower bound and occupation upper bound over
+that envelope certify rejection throughout it. `interval_plan` searches for
+and rechecks a sufficient integer n; discreteness precludes a minimality claim.
+A zero reported power lower bound means no certificate, not zero actual power.
 
-| Assumed lower contrast d | Trials per setting | Total trials |
-|---|---:|---:|
-| 0.80 | 72 | 288 |
-| 0.10 | 6,841 | 27,364 |
-| 0.05 | 48,647 | 194,588 |
-| 0.03 | 437,822 | 1,751,288 |
+With α=0.01, β=0.10, B=0.02 and anticipated phase probabilities
+(0.5+d/2,0.5,0.5−d/2,0.5), the total trials are:
 
-These are conservative conditional designs. They are not evidence that a
-particular source achieves d, B, independence or that many eligible heralds.
-When d≤B, more trials cannot resolve this systematic ambiguity by this rule.
-Calibration failure adds to the stated false-rejection probability. If the
-anticipated signal itself is only bounded with pilot confidence, that pilot
-failure must also be reported with the power assurance.
+| Contrast d | Original Hoeffding power bound | Hoeffding intervals + binomial power envelope | CP intervals + binomial power envelope |
+|---|---:|---:|---:|
+| 0.80 | 288 | 172 | 144 |
+| 0.10 | 27,364 | 21,648 | 17,272 |
+| 0.05 | 194,588 | 154,660 | 123,200 |
+| 0.03 | 1,751,288 | 1,390,956 | 1,108,884 |
 
-A minimal implementation candidate is a heralded two-mode Mach–Zehnder
-interferometer: one arm is P, a phase element implements the four settings, and
-both output detectors plus no-detection events are recorded. It avoids treating
-an arbitrary finite spatial quadrature as a physical filter. A spatial-region
-mask remains possible, but adds mode-overlap, diffraction and truncation checks.
-[Hacker et al. (2023)](https://doi.org/10.1088/1367-2630/ad0752) demonstrates
-single-photon-count-based phase locking; it does not establish the heralding or
-calibration assumptions of this proposed test. Confirmation acquisition should
-use phase settings fixed by independent calibration, not outcome-adaptive
-feedback unless its effect on the trial model is separately analyzed.
+At d=0.03, CP reduces the original total by 36.68%. With a lower-probability bin,
+p=(0.115,0.10,0.085,0.10), CP needs 397,300 trials versus 998,548 for Hoeffding
+intervals with the same binomial power envelope, a 60.21% reduction. CP adapts to
+the binomial variance through its exact tails; an estimated variance bound is
+not substituted. Contrast alone does not specify either of these power curves.
 
-The detailed unresolved experimental requirements are [PH01–PH06](open-questions.md).
-The literature review identifies established interference physics; no new
-experimental mechanism or general contextuality witness is claimed here.
+For the local-phase null, w=0.5 and B=0.02, CP uses five equally sampled contexts:
+
+| Efficiency η | Visibility v | Total trials sufficient for at least 90.00% power |
+|---:|---:|---:|
+| 1.00 | 0.60 | 40,010 |
+| 0.90 | 0.90 | 2,350 |
+| 0.80 | 0.80 | 16,045 |
+| 0.80 | 0.70 | 155,275 |
+
+At 10,000 trials in each of the five contexts (50,000 total), the checked grid
+at B=0.02 certifies at least 90.00% power for: η=0.60 with v=1.00; η=0.70 with
+v≥0.90; η=0.80 with v≥0.80; η=0.90 with v≥0.70; and η=1.00 with v≥0.60,
+on the grid spacing 0.10. No assertion is made between grid points.
+[design.json](results/design.json) contains the full B∈{0,0.01,0.02,0.05} grid.
+These are plausible target parameters, not an established realistic operating
+region: a source's achieved efficiency, visibility, nuisance and independence
+still need measurement. An uncertain pilot signal adds its own failure
+probability to any claimed power assurance.
+
+## Scientific scope and prior experiments
+
+The closest reviewed experimental architecture is the heralded beam-splitter
+anticorrelation and Mach–Zehnder interference experiment of
+[Grangier, Roger and Aspect (1986)](https://doi.org/10.1209/0295-5075/1/4/004).
+Its high fringe visibility alone does not establish ηv>1/2 in absolute
+herald-denominated probabilities. [Hardy (2012), Section 3](https://arxiv.org/html/1205.1439v3)
+gives a closely related phase-on-the-other-path argument. This design adds an
+explicit restricted response class, complete outcomes and reproducible finite
+statistics. It is a formal/statistical re-analysis of established physics,
+not a new experimental mechanism. Development stops at this conditional template;
+no new apparatus campaign or general trajectory exclusion follows from it.
+The [literature comparison](literature-comparison.md) distinguishes this premise
+set from ontic indifference, modular-variable arguments and contextuality tests.

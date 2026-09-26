@@ -1,32 +1,28 @@
 # Phase-intervention design
 
-Can a controlled phase change in a selected spatial region distinguish coherent
-propagation from a specified model that has lost coherence between that region
-and its complement? This study supplies a proposed experiment, explicit model
-predictions, calibration obligations, a finite-sample decision rule and a
-conservative conditional power calculation.
+The baseline null is the quantum P/Q-dephased class. Rejecting it in a heralded
+Mach–Zehnder interferometer is the expected confirmation of arm coherence. This
+study provides a calibrated, loss-complete template, and a substantive conditional
+test of **definite-region models with local phase action and calibrated occupation**:
+their complete-outcome contrast is at most the occupied-arm probability w.
 
-**Status: proposed design, with synthetic checks only.** No experimental data have
-been collected. Apparatus calibration, achieved statistical power and experimental
-novelty remain unestablished. Phase interference is established physics. The intended
-contribution is a reproducible test of clearly stated model classes, including
-loss and nuisance bounds.
+**Status: analytical design and synthetic checks only.** The contribution is
+formal and statistical re-analysis of established interference physics. No new
+experimental mechanism, calibrated apparatus or achieved power is claimed.
 
 | Material | Purpose |
 |---|---|
 | [Protocol](follow-up-protocol.md) | Four randomized phase settings, complete trial outcomes, null class and rejection rule |
 | [Physical correspondence](physical-bridge.md) | Preparation, intervention, detector and finite-window assumptions |
-| [Literature comparison](literature-comparison.md) | Prior work, actual review depth and staged searches |
+| [Literature comparison](literature-comparison.md) | Closest theoretical and experimental precedents |
 | [Open questions](open-questions.md) | Explicit feasibility, calibration and stronger-witness obligations |
-| [Prospective sample planning](design.py) | Precision, power and a count-based decision rule |
+| [Prospective sample planning](design.py) | Hoeffding and exact binomial intervals, occupation calibration and conditional power |
 | [Validation](results/validation.md) | Numerical checks, counterexamples and limits |
 
-The null is the declared P/Q-dephased class with setting-independent preparation,
-downstream response and loss, allowing a separately justified nuisance budget.
-A contrast can reject that class. It cannot distinguish equivalent path-sum and
-transfer descriptions, exclude every definite-trajectory theory, establish
-literal occupation of every path, or demonstrate faster-than-light or
-backward-time influence. A zero contrast can also occur for a coherent state.
+The [protocol](follow-up-protocol.md#local-phase-definite-region-null) states the
+rejected conjunction and its surviving alternatives. Neither test distinguishes
+path sums from equivalent transfer matrices, excludes all trajectories or tests
+faster-than-light or backward-time influence. A zero fringe need not mean dephasing.
 
 ## Reproduce the synthetic checks
 

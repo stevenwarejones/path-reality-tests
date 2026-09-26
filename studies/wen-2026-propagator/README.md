@@ -11,8 +11,8 @@ comparisons from claims about individual paths. This is not a claim of author er
 The 19 verified CC0 originals are included unchanged in `raw/dataset/`.
 [Download and verification instructions](raw/README.md) identify
 [Dryad DOI 10.5061/dryad.x0k6djj14](https://doi.org/10.5061/dryad.x0k6djj14),
-version 3 / 450489, the authoritative source. All 19 files must match
-[manifest.json](manifest.json); never change a digest to accommodate a local file.
+version 3 / 450489, the authoritative source. The 19 file digests are fixed by [manifest.json](manifest.json); a mismatch
+means the local copy is not verified.
 The dataset's own README stays separate from repository instructions.
 
 ## Reproduce
@@ -117,7 +117,7 @@ There is no complete labelled per-repeat propagator tensor, endpoint repeat
 dataset, acquisition ordering or calibration/phase/binning implementation in
 these sheets. Processed means cannot reconstruct those records. No p-values or
 confidence intervals are inferred from the number of paths or plotted bins.
-The supplied Fig4 SDs must not be treated as errors on independent means.
+The supplied Fig4 SDs describe spreads, not errors on independent means.
 
 [Physical correspondence](physical-bridge.md) details preparation, finite-window,
 projection, loss and detector obligations. [Open questions](open-questions.md)

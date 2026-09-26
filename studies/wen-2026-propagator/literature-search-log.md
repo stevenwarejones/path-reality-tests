@@ -11,11 +11,6 @@ retained here with acquisition blockers updated after the verified data arrived.
 Questions: Which paper/version is being tested? Are original data and the
 supplement available?
 
-Queries included `"aeh1011" arxiv supplement`,
-`"Direct experimental test of Feynman" "supplementary"`,
-`"x0k6djj14" dataset version` and the exact title. Some queries returned unrelated generic code/version pages; those results
-were excluded from the source review.
-
 Primary sources read: [main paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC13510607/),
 [Europe PMC XML](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/fullTextXML),
 [supplement API](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13510607/supplementaryFiles),
@@ -36,10 +31,7 @@ were freshly read is made.
 
 ## Stage 2 — measurement derivation and experimental lineage
 
-Queries included `"Measuring the quantum propagator" "least action" photon`,
-`"Demonstration of the quantum principle of least action with single photons"`,
-`"Weak values from path integrals" Matzkin`, and the Lundeen direct-measurement
-paper title. Primary papers reviewed:
+Primary papers reviewed:
 
 - [Wen et al. 2023](https://arxiv.org/html/2305.19815v1), measurement derivation
   and paraxial mapping; refreshed during this replication.
@@ -50,16 +42,13 @@ paper title. Primary papers reviewed:
 - Wen 2026 main measurement equations and supplement Section 6, mapping pointer
   intensity differences and reference factors to K.
 
-Result: preserve acquisition → calibrated K → shared-factor path products →
-endpoint comparison as distinct steps. A separately acquired E is informative;
+Acquisition → calibrated K → shared-factor path products → endpoint comparison
+are distinct inference steps. A separately acquired E is informative;
 reconstruction alone does not make the comparison circular. Calibration and
 conditioning remain physical assumptions. Q03/Q08/Q17 and physical-bridge.md.
 
 ## Stage 3 — deposit sufficiency, actual sheets and numerical ambiguity
 
-Queries included `"aeh1011" "data" "code"`,
-`"Wen" "propagator" "0.0518"`, the dataset identifier targeted to Dryad,
-GitHub and Zenodo, and the exact paper title plus `code`.
 No usable additional raw-tensor/code release was identified. The main paper's
 availability statement points to the paper, supplement and Dryad; the inspected
 deposit contains no executable analysis implementation. This is not proof that
@@ -73,10 +62,8 @@ These are documented in data-dictionary.md; originals are unchanged.
 
 The first Q–theory calculation differed from 4.45% under our reading of the
 printed comparison, triggering an additional
-source check and numerical checkpoint. Queries `"aeh1011" "4.45"` and
-`"aeh1011" "correction"` returned no useful clarification (one result was an
-unrelated catalogue). We therefore reread the actual Results definition and
-the author README rather than relying on search. Checked linear/nearest/local
+source check and numerical checkpoint. The Results definition and author README
+were reread after a targeted clarification search found no useful result. Checked linear/nearest/local
 cubic alignment, rounding sensitivity, unit-sum normalization, alternative
 common error definitions and a conditional finite-grid model. All choices and
 their limits are retained in the code and method-comparison.md.
@@ -97,10 +84,7 @@ specific remaining dependencies, not records that can be inferred from means.
 
 ## Stage 4 — alternatives, physical correspondence and ontological scope
 
-Queries included the Feynman 1948 title, `"Anomalous Weak Values Are Proofs of
-Contextuality"`, `"Anomalous weak values and contextuality" "operational
-constraints"`, `"propagator" "tomography" "finite aperture" photons`, and the
-looped-trajectory paper title. Primary review:
+Primary review:
 
 - [Feynman 1948 primary record](https://authors.library.caltech.edu/records/9h858-5hv71):
   abstract and bibliographic scope, refreshed. Finite matrix/path identity is
@@ -122,10 +106,6 @@ full protocol, literature and calibration obligations; no novelty claim here.
 
 ## Stage 5 — corrections and adverse evidence
 
-Current queries: `"aeh1011" correction code`, the full title plus `erratum` or
-`code`, and `"Wen" "Tian" "Feynman" correction` targeted to publisher/arXiv
-sources. Search results included primary paper/deposit records and unrelated
-pages; no usable correction or additional code was identified.
 The [fresh Crossref record](https://api.crossref.org/works/10.1126/sciadv.aeh1011)
 has an empty `relation` and no `update-to`/`updated-by` fields. Its retrieval
 hash is recorded in provenance. This supports only “none identified in this
@@ -143,17 +123,10 @@ No claims about superluminal or backward-time motion follow from these tables.
 This review reflects the sources and versions above. New data, code, corrections
 or clarification could change the mappings, model or normalization and would
 require reassessment of dependent conclusions. Empty searches do not establish
-absence. Full experiment design, apparatus-specific literature review and
-full-proof novelty review remain separate follow-up work.
+absence. The separate phase study now identifies a known interferometer argument and
+experimental architecture; apparatus-specific calibration remains unresolved.
 
 ## Follow-up and completion review — 2026-09-26 UTC
-
-Queries: `"aeh1011" correction code replication`, `"x0k6djj14" code propagator`,
-`"Direct experimental test of Feynman" critique uncertainty`, and a second
-search of the exact DOI/title with `correction code` and `replication`, limited
-to the preceding year. The deposit was found; several results were unrelated
-word matches. Those unrelated results provide no evidence about this paper.
-No additional usable implementation was identified in this bounded search.
 
 The source checks for the 4.45% sentence and the successful all-sheet replication
 remain those recorded above; they were not replaced by these search results.
@@ -170,8 +143,7 @@ queries, primary versions and review depth. Decision: ordinary phase interventio
 is a well-defined dephased-model test; stronger contextuality and causal-response
 claims are not outcomes of this audit.
 
-Trajectory terminology was also checked using `"s41467-022-31608-6" arxiv` and
-`Kocsis 2011 observing average trajectories single photons two slit interferometer arxiv`.
+Trajectory terminology was also checked against the following primary sources.
 The NIST-hosted Kocsis main paper was read at the weak-measurement and reconstruction
 passages. Foo et al.'s main XML was retrieved from Europe PMC after publisher/PMC
 page retrieval failed. The abstract, velocity construction and boosted-trajectory
@@ -180,3 +152,44 @@ Bliokh et al. v2 was screened from its primary abstract/version record; attempte
 full-text retrievals failed, so its derivation is not used here. These sources
 clarify different meanings of trajectory without extending the Wen audit into
 a relativistic signaling test. The review depths are in the comparison table.
+
+## Search record
+
+The staged searches used the following terms and had the recorded outcomes.
+
+Queries included `"aeh1011" arxiv supplement`,
+`"Direct experimental test of Feynman" "supplementary"`,
+`"x0k6djj14" dataset version` and the exact title. Some queries returned unrelated generic code/version pages; those results
+were excluded from the source review.
+
+Queries included `"Measuring the quantum propagator" "least action" photon`,
+`"Demonstration of the quantum principle of least action with single photons"`,
+`"Weak values from path integrals" Matzkin`, and the Lundeen direct-measurement
+paper title.
+
+Queries included `"aeh1011" "data" "code"`,
+`"Wen" "propagator" "0.0518"`, the dataset identifier targeted to Dryad,
+GitHub and Zenodo, and the exact paper title plus `code`.
+
+Queries included the Feynman 1948 title, `"Anomalous Weak Values Are Proofs of
+Contextuality"`, `"Anomalous weak values and contextuality" "operational
+constraints"`, `"propagator" "tomography" "finite aperture" photons`, and the
+looped-trajectory paper title.
+
+Queries included `"aeh1011" correction code`, the full title plus `erratum` or
+`code`, and `"Wen" "Tian" "Feynman" correction` targeted to publisher/arXiv
+sources. Search results included primary paper/deposit records and unrelated
+pages; no usable correction or additional code was identified.
+
+Queries included `"aeh1011" correction code replication`, `"x0k6djj14" code propagator`,
+`"Direct experimental test of Feynman" critique uncertainty`, and a second
+search of the exact DOI/title with `correction code` and `replication`, limited
+to the preceding year. The deposit was found; several results were unrelated
+word matches. Those unrelated results provide no evidence about this paper.
+No additional usable implementation was identified in this bounded search.
+
+Additional clarification searches used `"aeh1011" "4.45"` and
+`"aeh1011" "correction"`; no useful implementation clarification was identified.
+Trajectory searches used `"s41467-022-31608-6" arxiv` and
+`Kocsis 2011 observing average trajectories single photons two slit interferometer arxiv`,
+leading to the primary materials reviewed above.
