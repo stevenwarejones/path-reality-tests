@@ -1,0 +1,123 @@
+# Conditional protocol and statistical analysis
+
+## Procedures and denominator
+
+An eligible trial is a source herald recorded **before** independent context
+selection. Keep its record even if the probe is lost, the final detector fails,
+postselection fails, or more than one output fires. Fix a deterministic handling
+of multiple clicks before acquisition (for example, classify as an explicit
+invalid/no-detection outcome, and include its probability in the device model).
+No background-subtracted counts are passed as binomial observations.
+
+Required procedures are the two-mode source |ψ⟩, probe K, bypass I, phase reversal
+Z, success/failure readout F, path readout E, trivial fair coin, and the four
+calibration preparations |Q⟩, |P⟩, |+⟩, |+i⟩. X,Y,Z analyzers span all Hermitian
+qubit effects. The preparations span the real vector space of Hermitian 2×2
+matrices. On a trusted linear two-mode operational description, equality on these
+spanning preparations and analyzers extends by linearity to all states/effects.
+It does not prove that uncharacterized extra modes or generalized operational
+states are absent. Preparation and measurement characterization are prerequisites,
+not results of fitting the same witness data.
+
+The ancilla is measured in a binary basis; no continuous pointer is truncated.
+Record P(m,f|s,y,g) with m∈{−,+,lost}, f∈{success,failure,no detection}, preparation
+s, final setting y and fixed g=(a,b). Loss categories of the complete table remain
+in every denominator. The Lean bound applies to its binary coarse graining:
+negative versus all other pointer records, and success versus all other final
+records. The nine-cell table is still retained for calibration and diagnostics. Calibration contexts without a probe can use an explicit
+“not applied” pointer label. All rates use their context's eligible-trial count.
+
+## Calibration-to-premise map
+
+| Procedure / measured quantity | Purpose | Additional premise still required |
+|---|---|---|
+| Source herald, randomized context and timestamp | Common preparation and stable sampling | No context-dependent source drift or selection; IID model for the stated statistics |
+| Probe minus rate on characterized Q input | q (including post-instrument record erasure β) | This state reaches the response cap under the declared noisy-path equivalence |
+| Four calibration preparations × probe / noisy sharp-path simulator | 8 contexts, compare three-outcome pointer distributions | Measurement equivalence for all allowed preparations; noncontextual representation of it |
+| Four preparations × X/Y/Z analyzers × M/I/Z | 36 contexts, compare complete output distributions | Linear two-mode completeness and transformation equivalence M=(1−d)I+dZ, represented noncontextually |
+| + input, M, characterized X readout | d via probability of the − result | Complete calibrated X detector, known readout error; unknown loss cannot be identified with d |
+| Source, bypass, final F | f | Same preparation and final response as in probe trials |
+| Source, probe, final F | a from negative pointer AND success | Complete trial table; no division by postselection counts |
+
+The noisy sharp-path simulator uses a coin with p_m=2q/β−1 when β>0, followed by
+E or a fair binary output, and the same record erasure channel. Operational
+comparison of the full pointer distribution also checks the lost outcome.
+Characterize the classical randomizer independently or include its uncertainty.
+The I/Z comparison uses the *same fitted interval for d* across all 36 contexts,
+not 36 independent choices. A joint confidence region propagates shared parameters.
+
+The 44 audit contexts are acquisition settings, each with three outcomes. Two
+coordinates per context determine the third, giving 88 marginal intervals.
+Reported audit radius 0.01 is per coordinate; a difference of two unrelated
+coordinates can have radius 0.02, and a inferred third coordinate radius 0.02.
+No claim uses 0.01 as a uniform equivalence residual. Covariance between these
+coordinates does not invalidate a Bonferroni bound, but independence cannot be
+assumed for parameter fitting.
+
+**Decision boundary:** A small residual or passing an interval consistency check
+cannot establish an exact operational equality. This design proceeds only
+conditionally on the two representation premises (or separately justified
+near-model allowances). A fully empirical generalized-noncontextuality claim
+would require a validated implementation of the exact equivalences, for example
+a suitable secondary-procedure construction for the *instrument and channel*
+family, including its uncertainty and accessible supplementary transformations.
+A preparation-only mixing LP does not solve that channel problem. None is
+claimed here. Without that input, report the witness and conditional conclusion.
+
+## Confirmatory rule
+
+Choose one (g,source,F), risk budget and sample allocation using theoretical or
+separate pilot data. The supplied grid is wholly synthetic. For each of a,f,q,d,
+retain successes k_i and eligible counts n_i. With main error α, construct four
+two-sided Clopper–Pearson intervals at error α/4. Empty contexts get [0,1].
+Let a_L,f_L,f_U,q_U,d_U denote endpoints. Reject only if
+
+a_L > min(q_U, max(q_U f_L+d_U(1−f_L), q_U f_U+d_U(1−f_U))) + B.
+
+Here B is a predeclared, independently justified bound on the actual witness
+relative to a model with the representation premises. B=0 in the ideal reference.
+One may set B=ε_a+|q−d|ε_f only with the explicit near-model premise and appropriate
+uncertainty bounds; measured tomography residuals alone do not supply it.
+The maximum over both f endpoints handles q<d. All four confidence intervals
+cover simultaneously with probability ≥1−α by a union bound; this suffices for
+the false-rejection guarantee without assuming their independence.
+
+For the power certificate the implementation also supplies Hoeffding intervals
+with radius r_α(n)=sqrt(log(8/α)/(2n)). The full capped witness is 1-Lipschitz
+in each of its four coordinates on [0,1]^4. If the true gap is Δ, four IID
+estimation errors each at most r_β occur with probability ≥1−β. Thus
+Δ>4(r_α+r_β) guarantees rejection by the Hoeffding rule. The CP rule's Monte Carlo
+power is reported separately; it is not the theorem certified by that calculation.
+
+Audit intervals reserve a separate α_cal=0.005; main α=0.005. Combined statistical
+coverage is ≥99.00%. This does not include an unquantified chance that the device
+model or equivalences are false. The 90.00% power certificate is conditional on
+valid device premises; it is not a guarantee that the apparatus will pass an
+unimplemented equivalence-validation procedure.
+
+## Trial allocation, selection and stopping
+
+Fixed counts: draw a randomized permutation of the predeclared context labels,
+with n trials in each of the four main contexts and n_cal in each of the 44 audit
+contexts. Complete the schedule independently of observed outcomes. The budget
+is 4n+44n_cal. The main q and d strata repeat settings in the audit family
+using separate trials; 48 labels denote acquisition strata, not 48 distinct
+physical configurations. This includes calibration audit collection but excludes unspecified
+pilot or initial apparatus characterization; their unknown cost prevents an
+end-to-end experiment cost claim. For n_cal=ceil(log(176/α_cal)/(2t²)), all 88
+coordinate radii are at most t with simultaneous coverage ≥1−α_cal.
+
+Random counts: an alternative fixes total N and assigns each of K=48 acquisition strata
+independently and uniformly. Conditioned on n_i, IID outcome sampling gives the
+same coverage. The probability that any n_i<N/(2K) is at most
+K exp(−N/(8K)); `random_context_budget` adds that count risk to the power budget.
+It retains a logarithmic bound to avoid representing numerical underflow as exact
+zero. This deliberately conservative alternative has a much larger total budget.
+
+Do not stop early, retry blocks until rejection, search among postselections, or
+remove failed/lost trials. If several candidate witnesses are tested, preallocate
+familywise α or use held-out confirmatory data. Memory/drift require a different
+conditional-probability analysis; IID CP intervals are not justified by marginal
+rates alone. Source/herald efficiency is needed to convert eligible trials to
+emitted trials. Calibration detector specifications and pilot stability data are
+not available, so no clock time or empirical feasibility is asserted.

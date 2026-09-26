@@ -1,0 +1,171 @@
+{
+  "review_date_utc": "2026-09-26",
+  "exhaustive": false,
+  "papers": [
+    {
+      "id": "Pusey2014",
+      "doi": "10.1103/PhysRevLett.113.200401",
+      "arxiv": "1409.1535v2",
+      "dates": "2014-11-12",
+      "kind": "theory",
+      "access": "full theorem and proof; v2 HTML",
+      "assumptions": "measurement NC, sharp determinism, effect disturbance",
+      "quantities": "joint divided by bypass success",
+      "data_code_status": "No data required; no code relied on"
+    },
+    {
+      "id": "KLP2019",
+      "doi": "10.1103/PhysRevA.100.042116",
+      "arxiv": "1812.06940v2",
+      "dates": "2019-09-04 revision",
+      "kind": "theory",
+      "access": "PDF Theorems 1/3/4, B/F proofs, III/IV calibration, necessity discussion",
+      "assumptions": "measurement/transformation NC, convex mixing, identity kernel",
+      "quantities": "joint negative-success; unconditioned bypass",
+      "data_code_status": "Appendices contain calculations; no numerical certificate imported"
+    },
+    {
+      "id": "Piacentini2016",
+      "doi": "10.1103/PhysRevLett.116.180401",
+      "arxiv": "1602.02075",
+      "dates": "2016 journal",
+      "kind": "experiment",
+      "access": "5-page primary PDF; calibration and normalization passages",
+      "assumptions": "Pusey sharp-final model and calibrated pointer/effect controls",
+      "quantities": "herald counts and normalized anomaly",
+      "data_code_status": "No raw data imported; independent raw-code availability not established"
+    },
+    {
+      "id": "Mazurek2016",
+      "doi": "10.1038/ncomms11780",
+      "arxiv": "1505.06244v1",
+      "dates": "2015-05-22 preprint; 2016 journal",
+      "kind": "experiment and methods",
+      "access": "PDF secondary procedures and Appendix C",
+      "assumptions": "tomographic completeness, preparation/measurement NC",
+      "quantities": "prepare-measure table and convex mixtures",
+      "data_code_status": "Published supplemental analysis notebook described; not used"
+    },
+    {
+      "id": "Kocsis2011",
+      "doi": "10.1126/science.1202218",
+      "arxiv": null,
+      "dates": "2011-06-03",
+      "kind": "experiment",
+      "access": "NIST-hosted published PDF; no supplemental acquisition review",
+      "assumptions": "weak momentum coupling and position postselection",
+      "quantities": "ensemble conditional momentum versus plane",
+      "data_code_status": "No data/code imported"
+    },
+    {
+      "id": "Foo2022",
+      "doi": "10.1038/s41467-022-31608-6",
+      "arxiv": "2108.05169",
+      "dates": "2022-07-11 journal",
+      "kind": "theoretical proposal",
+      "access": "Publisher search extraction of equations 5/6/23/32 and methods; institutional PDF indexed but subsequent page retrieval failed",
+      "assumptions": "scalar single-particle optical approximation",
+      "quantities": "real weak momentum / real weak energy",
+      "data_code_status": "Not an executed signaling test; source data not applicable"
+    },
+    {
+      "id": "Angulo2026",
+      "doi": "10.1103/gjfq-k9dv",
+      "arxiv": "2409.03680v1",
+      "dates": "2024-09-05 preprint; 2026-04-13 journal",
+      "kind": "experiment",
+      "access": "published abstract/metadata; preprint measurement sections; published supplement unverified",
+      "assumptions": "cross-Kerr weak excitation probe; transmission conditioning",
+      "quantities": "time integral of conditional phase difference",
+      "data_code_status": "No data/code imported; publication/preprint identity not verified"
+    },
+    {
+      "id": "Zhao2026",
+      "doi": "10.1088/1674-1056/adf4b1",
+      "arxiv": null,
+      "dates": "received 2025-06-19; online 2026-02-01",
+      "kind": "theory",
+      "access": "publisher HTML prose/theorem; missing equation objects",
+      "assumptions": "sharp final outcome determinism; finite-strength/multiphoton study",
+      "quantities": "weak-value anomaly versus disturbance",
+      "data_code_status": "Detailed equations not adopted; code availability not established"
+    },
+    {
+      "id": "Fan2026",
+      "doi": "10.1038/s42005-026-02715-3",
+      "arxiv": null,
+      "dates": "2026-06-10 publication; publisher displays 2026-09-22 version of record",
+      "kind": "experiment",
+      "access": "publisher primary HTML concept/equivalence sections",
+      "assumptions": "remote-preparation ensemble constraints",
+      "quantities": "bipartite correlations mapped to contextuality witness",
+      "data_code_status": "Publisher says data and code available on request; neither requested nor imported; distinct apparatus"
+    },
+    {
+      "id": "RelativisticExperiment2025",
+      "doi": null,
+      "arxiv": "2509.11609v1",
+      "dates": "arXiv v1 header 2025-09-15; rendered manuscript date 2026-08-24; version discrepancy retained",
+      "kind": "experimental preprint",
+      "access": "primary HTML; supplement unverified",
+      "assumptions": "weak reconstruction in a relativistic Bohmian framework",
+      "quantities": "reconstructed trajectory/current quantities",
+      "data_code_status": "No data/code imported"
+    },
+    {
+      "id": "Ipsen2014",
+      "doi": null,
+      "arxiv": "1409.3538",
+      "dates": "2014",
+      "kind": "theory",
+      "access": "primary abstract screening",
+      "assumptions": "different operational/ontic disturbance definitions",
+      "quantities": "generalized weak measurement",
+      "data_code_status": "No results imported"
+    },
+    {
+      "id": "Halliwell2017",
+      "doi": null,
+      "arxiv": "1704.01485",
+      "dates": "2017-04-05",
+      "kind": "theory",
+      "access": "primary abstract screening",
+      "assumptions": "macrorealism / distinct noninvasiveness conditions",
+      "quantities": "LG and NSIT",
+      "data_code_status": "No equivalence to our null asserted"
+    },
+    {
+      "id": "FerrieCombes2014",
+      "doi": "10.1103/PhysRevLett.113.120404",
+      "arxiv": "1403.2362v3",
+      "dates": "2014-09-18 arXiv revision",
+      "kind": "theory",
+      "access": "PDF five pages, outcome-dependent bit-flip model equations 21\u201335",
+      "assumptions": "scaled postselected average, outcome-correlated classical disturbance",
+      "quantities": "s/lambda conditioned on pre/postselection",
+      "data_code_status": "No data imported; exact kernels inspected"
+    },
+    {
+      "id": "HofmannComment2014",
+      "doi": null,
+      "arxiv": "1410.7126v2",
+      "dates": "2014-11-21 revision",
+      "kind": "comment",
+      "access": "Full two-page PDF",
+      "assumptions": "compares weak quantum disturbance order to classical model",
+      "quantities": "quadratic versus linear coupling disturbance",
+      "data_code_status": "No data; no coefficient imported into this finite calculation"
+    },
+    {
+      "id": "FerrieCombesCorrelations2014",
+      "doi": null,
+      "arxiv": "1410.8067",
+      "dates": "2014-10-29 preprint",
+      "kind": "theory",
+      "access": "PDF definitions, conditional-independence proof and classical example sections III/IV",
+      "assumptions": "general three-variable joint probability model; broad APSS definition",
+      "quantities": "conditional compared with unconditional pointer mean",
+      "data_code_status": "No data imported; criterion differs from equivalence-constrained null"
+    }
+  ]
+}
