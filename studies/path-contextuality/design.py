@@ -218,7 +218,7 @@ def dual_power(params,n,repetitions=2000,seed=SEED):
     return {'seed':seed,'repetitions':repetitions,
             'negative_rejections':int(hits[0]),'positive_rejections':int(hits[1]),
             'either_rejections':int(hits[2]),
-            'either_mc_99pct_interval':cp(int(hits[2]),repetitions,.01)}
+            'either_mc_99pct_interval':list(cp(int(hits[2]),repetitions,.01))}
 
 
 def dual_report():
