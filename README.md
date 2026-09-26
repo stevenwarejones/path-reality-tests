@@ -16,8 +16,10 @@ repository contains the formal Lean framework. Its
 explains the distinction between equivalent descriptions and observable model
 separation.
 
-Original data and paper PDFs are never committed here. Each study identifies its
-official source and a checksum manifest; users obtain and verify their own copies.
+The Wen study includes the pinned CC0 Dryad originals for reproducible offline
+checks, with the official source, version and SHA-256 manifest retained. Paper
+PDFs and complete workbook extracts are not committed. Other datasets require
+explicit source/license review before inclusion.
 Repository code is distributed under the [Apache 2.0 license](LICENSE); external
 data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.

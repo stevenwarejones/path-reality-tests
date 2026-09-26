@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Retrieve pinned public Dryad files, or verify user-supplied originals.
+"""Verify bundled or user-downloaded Dryad files against the pinned manifest.
 
+Verification is the main job. Automatic download is a best-effort fallback
+that Dryad may block with 401/403; do not bypass its access controls.
 Never accepts an HTML error page as a workbook; never changes the manifest.
 No credentials, access-control workarounds, or automatic ontology conclusions.
 """
@@ -29,7 +31,13 @@ def main():
     args.directory.mkdir(parents=True, exist_ok=True)
     records = []
     blocked = False
-    for entry in json.loads((ROOT / "manifest.json").read_text())["files"]:
+    entries = json.loads((ROOT / "manifest.json").read_text())["files"]
+    expected = {e["name"] for e in entries}
+    unexpected = sorted(p.name for p in args.directory.iterdir() if p.name not in expected)
+    if unexpected:
+        print("Unexpected dataset entries:", ", ".join(unexpected))
+        return 2
+    for entry in entries:
         dest = args.directory / entry["name"]
         record = {"file": entry["name"], "url": entry["url"]}
         try:
@@ -47,6 +55,8 @@ def main():
             record["status"] = "verified"
         except (OSError, ValueError) as error:
             record.update(status="unavailable", error=str(error))
+            if isinstance(error, ValueError):
+                blocked = True  # never fetch further files after an integrity mismatch
             if isinstance(error, urllib.error.HTTPError) and error.code in (401, 403, 405, 429):
                 blocked = True  # stop repeated requests after a control/rate-limit response
         records.append(record)

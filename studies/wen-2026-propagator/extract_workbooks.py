@@ -14,13 +14,14 @@ from fetch_data import ROOT, verify
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--directory", type=Path, default=ROOT / "raw" / "dataset")
+    parser.add_argument("--output", type=Path, default=ROOT / "results" / "workbooks")
     args = parser.parse_args()
     entries = [e for e in json.loads((ROOT / "manifest.json").read_text())["files"]
                if e["name"].endswith(".xlsx")]
     # Verify the complete input set before writing any extracts.
     for entry in entries:
         verify(args.directory / entry["name"], entry)
-    out = ROOT / "results" / "workbooks"
+    out = args.output
     out.mkdir(parents=True, exist_ok=True)
     for entry in entries:
         source = args.directory / entry["name"]

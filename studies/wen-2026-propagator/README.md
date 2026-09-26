@@ -12,6 +12,13 @@ initial scaffold supplies acquisition verification, read-only workbook inventory
 and synthetic numerical checks. It does not report an empirical replication or
 findings about the paper.
 
+## Getting the data
+
+The 19 CC0 originals are included unchanged in `raw/dataset/`. See
+[download and verification instructions](raw/README.md) for the authoritative
+Dryad version, exact file sizes, data credit and independent browser download.
+Run `python fetch_data.py --verify-only` before analysis; all 19 must verify.
+
 ## Run the tools
 
 Use Python 3.12 with the pinned dependencies. From this study folder:
@@ -25,10 +32,10 @@ python synthetic_checks.py
 
 The pinned dependency versions were exercised on Python 3.12. The scripts resolve
 paths relative to their own location, so they may also be invoked by path from
-another working directory. Place user-downloaded originals in `raw/dataset/`;
+another working directory. The verified originals live in `raw/dataset/`;
 that subfolder keeps the dataset's own `README.md` separate from repository
-instructions. Neither originals nor complete extracted cell inventories are
-committed. `--directory` selects an alternative input folder for verification and
+instructions. Only the manifest-listed CC0 originals are committed; complete extracted cell
+inventories remain ignored. `--directory` selects an alternative input folder for verification and
 extraction without changing the manifest.
 
 `manifest.json` fixes all 19 filenames, byte counts and SHA-256 digests. Verification
@@ -53,3 +60,15 @@ The Lean case study belongs in `ontology-separation` and certifies an ideal
 finite example rather than this apparatus. Its [pinned source](https://github.com/stevenwarejones/ontology-separation/blob/a4d294ddb3847134ac2bdbb509c435c2eaff7a98/OntologySeparation/Experiments/PathInterference.lean)
 and [case-study document](https://github.com/stevenwarejones/ontology-separation/blob/a4d294ddb3847134ac2bdbb509c435c2eaff7a98/docs/PATH_INTERFERENCE_CASE_STUDY.md)
 identify the exact companion revision (PR #84, pending review).
+
+## Automated checks
+
+[GitHub Actions](../../.github/workflows/ci.yml) verifies all original hashes,
+checks failure cases and read-only extraction, inventories every workbook in a
+temporary directory, and regenerates synthetic outputs with a numerical snapshot
+comparison. The original bytes and tracked outputs must remain unchanged. See
+[CI validation notes](results/ci-validation.md) for the exact scope.
+
+This is data/tooling verification. Real scientific column mappings, Figure 3/4
+replication and empirical residual comparisons remain a separate replication PR.
+Agreement with a published numerical result is not a CI pass condition.
