@@ -53,9 +53,11 @@ snapshots without overwriting them. The guarantees remain conditional on the
 fixed-probability independent trial model derived in the protocol; these tests
 supply no calibration or observed experimental power.
 
-The [general formal companion](https://github.com/stevenwarejones/ontology-separation/blob/25d22b3c1f085421e59d90cabaf4cefbd5bf158a/docs/PHASE_INTERVENTION.md)
-is pinned to its source revision in ontology-separation. Its 41 new audit roots
-use only `propext`, `Classical.choice` and `Quot.sound`; repository-wide build
-status is tracked by [PR #85](https://github.com/stevenwarejones/ontology-separation/pull/85). The merged
+The [general formal companion](https://github.com/stevenwarejones/ontology-separation/blob/91590c324c444c836efe2b7d7049784a81c6a475/docs/PHASE_INTERVENTION.md)
+is pinned to the reviewed source revision in ontology-separation. Its 30
+additional geometry/local-phase roots were checked with only `propext`,
+`Classical.choice` and `Quot.sound`; 71 phase-development roots are registered.
+The regenerated report contains 29 checked results. Full repository verification
+of that revision is tracked by [PR #85](https://github.com/stevenwarejones/ontology-separation/pull/85). The merged
 [finite case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/docs/PATH_INTERFERENCE_CASE_STUDY.md)
 remains available independently.

@@ -10,6 +10,7 @@ established interference physics. No new experimental mechanism is proposed.
 | Source and inspected version | Material read | Comparison |
 |---|---|---|
 | [Hardy, arXiv:1205.1439v3 (2012)](https://arxiv.org/html/1205.1439v3) | Introduction, Section 3 interferometer argument, restricted ontic-indifference discussion | Closest reviewed conceptual argument: a phase shift on one path changes the eventual port while a localized preparation in the other path is invariant. |
+| [Dahlsten, Garner and Vedral, arXiv:1206.5702v2](https://arxiv.org/abs/1206.5702v2), Nat. Commun. 5, 4592 (2014) | Main-text Definition 1 and uncertainty/branch-locality comparison | Operational branch locality leaves a state certainly in one branch invariant under action on the other. Quantum theory satisfies this condition; it is not Q-response invariance for hidden components of a coherent preparation. |
 | [Grangier, Roger and Aspect (1986)](https://doi.org/10.1209/0295-5075/1/4/004) | Published paper, apparatus and gated Mach–Zehnder results, pp.176–179 | Closest reviewed experimental architecture: the same triggered source supports beam-splitter anticorrelation and complementary-port fringes. Its dark-corrected visibility is not an absolute heralded contrast, and is insufficient to establish this loss-complete bound's violation. |
 | [Błasiak, New J. Phys. 17, 113043 (2015)](https://arxiv.org/abs/1502.07308) | Published PDF, Sections 1–2 and model overview | Explicit adverse example to identifying particle position with all phase-carrying ontology: a detectable particle and undetectable “ghost” degrees of freedom interact locally. A phase element can affect the other-path ghost and hence the later detector outcome. |
 | [Biswas, García Díaz and Winter, arXiv:1701.05051v3](https://arxiv.org/html/1701.05051v3) | Introduction, phase-unitary/POVM formulation Eqs.1–4, two-path visibility | Ordinary fringe visibility probes coherence; a dephased-null rejection is established physics. |
@@ -24,6 +25,11 @@ particular, a localized Bohmian particle can coexist with a phase-sensitive wave
 in the other arm. This violates the null's Q-response invariance while retaining
 a definite particle position. Błasiak's local construction reinforces that the
 null's response condition is stronger than generic spatial locality.
+
+Dahlsten–Garner–Vedral's operational branch locality likewise does not imply our
+hidden-state response premise. A Q-located ontic component of a coherent
+preparation need not itself be an available operational preparation with certain
+Q detection. Treating those components as such adds a physical assumption.
 
 The occupation equality μ(P)=w adds a separate cross-context identification.
 The new analysis makes this assumption explicit, permits arbitrary occupied-arm
