@@ -45,7 +45,7 @@ inputs are required; numerical outputs come from the identified scripts.
 The [pinned Lean case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/docs/PATH_INTERFERENCE_CASE_STUDY.md)
 certifies an ideal finite special case. It does not certify this experiment's
 generalized instrument model or statistical analysis. `provenance.json` identifies
-the scientific sources. The [general phase and local-region certificate](https://github.com/stevenwarejones/ontology-separation/blob/91590c324c444c836efe2b7d7049784a81c6a475/docs/PHASE_INTERVENTION.md)
+the scientific sources. The [general phase and local-region certificate](https://github.com/stevenwarejones/ontology-separation/blob/ffbbd0d3c0eb2066ea9b32b0dfd18e9c2d50bd4d/docs/PHASE_INTERVENTION.md)
 proves the occupation bound and sharp lossy-family boundary; verification status
 is recorded in [validation](results/validation.md).
 

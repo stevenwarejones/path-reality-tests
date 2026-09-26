@@ -30,9 +30,9 @@ p_\theta(\varnothing)=1-\eta,\quad f=(1,0,-1,0).
 \]
 
 Its selected-bin contrast is ηv and its quantum which-region probability is 1/2.
-The [formal companion](https://github.com/stevenwarejones/ontology-separation/blob/91590c324c444c836efe2b7d7049784a81c6a475/docs/PHASE_INTERVENTION.md)
+The [formal companion](https://github.com/stevenwarejones/ontology-separation/blob/ffbbd0d3c0eb2066ea9b32b0dfd18e9c2d50bd4d/docs/PHASE_INTERVENTION.md)
 contains the density-matrix and complete-POVM realization and the exact
-local-model boundary. The linked revision is under review in PR #85.
+local-model boundary. The linked revision is the merged PR #85 commit on `main`.
 
 ## Local-phase definite-region null
 
