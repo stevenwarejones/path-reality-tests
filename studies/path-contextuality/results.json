@@ -378,7 +378,7 @@
         1.0
       ]
     },
-    "scope": "disturbance robustness, not a demonstrated statistical power advantage"
+    "scope": "ideal-point multiplicity cost; smaller sufficient budgets in the declared lossy scenarios, conditional on maximal-eigenvalue q calibration"
   },
   "countermodels": {
     "drop_cap_quantum_joint": [

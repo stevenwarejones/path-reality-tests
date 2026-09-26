@@ -240,7 +240,7 @@ def dual_report():
             'positive_only_budget':certified_budget(float(exact[1])),
             'dual_budget':budget,'noise_scenarios':scenarios,
             'shared_probe_cp_power':dual_power([float(x) for x in [a,b,f,q,d]],budget['per_main_context']),
-            'scope':'disturbance robustness, not a demonstrated statistical power advantage'}
+            'scope':'ideal-point multiplicity cost; smaller sufficient budgets in the declared lossy scenarios, conditional on maximal-eigenvalue q calibration'}
 
 
 def exact_countermodels():
