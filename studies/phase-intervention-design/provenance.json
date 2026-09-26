@@ -1,0 +1,15 @@
+{
+  "kind": "prospective experiment design and synthetic checks; no experimental input",
+  "review_date_utc": "2026-09-26",
+  "formal_companion_repository": "https://github.com/stevenwarejones/ontology-separation",
+  "formal_case_study_commit": "ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29",
+  "sources": [
+    "https://arxiv.org/html/1701.05051v3",
+    "https://arxiv.org/html/2305.03641v2",
+    "https://doi.org/10.1080/01621459.1963.10500830",
+    "https://arxiv.org/html/1812.06940v2"
+  ],
+  "output_provenance": "Each numerical JSON identifies its generating script and SHA-256; no measured data are used.",
+  "general_formal_companion_commit": "25d22b3c1f085421e59d90cabaf4cefbd5bf158a",
+  "general_formal_companion": "https://github.com/stevenwarejones/ontology-separation/blob/25d22b3c1f085421e59d90cabaf4cefbd5bf158a/docs/PHASE_INTERVENTION.md"
+}

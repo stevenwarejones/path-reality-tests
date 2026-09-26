@@ -1,0 +1,64 @@
+{
+  "kind": "prospective conditional designs, not observed data or achieved power",
+  "source": {
+    "filename": "design.py",
+    "sha256": "dd19c47ba12c2928680b8c25fff95a359d8975def86849972603268c5fa61fbf"
+  },
+  "premises": [
+    "independent fixed-probability Bernoulli trials within each setting",
+    "complete herald-denominated outcomes",
+    "predeclared settings, selected bin, sample sizes and stopping",
+    "externally justified null-contrast and anticipated-signal bounds"
+  ],
+  "plans": [
+    {
+      "anticipated_contrast": 0.8,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 72,
+      "total_trials": 288,
+      "rejection_contrast_threshold": 0.4509102680395152,
+      "contrast_radius_alpha": 0.4309102680395152,
+      "contrast_radius_beta": 0.34888817990048687,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.1,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 6841,
+      "total_trials": 27364,
+      "rejection_contrast_threshold": 0.06420722926547083,
+      "contrast_radius_alpha": 0.044207229265470833,
+      "contrast_radius_beta": 0.0357925556683632,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.05,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 48647,
+      "total_trials": 194588,
+      "rejection_contrast_threshold": 0.036577729906518947,
+      "contrast_radius_alpha": 0.016577729906518946,
+      "contrast_radius_beta": 0.01342222370397746,
+      "power_lower_bound": 0.9
+    },
+    {
+      "anticipated_contrast": 0.03,
+      "null_contrast_budget": 0.02,
+      "alpha": 0.01,
+      "beta": 0.1,
+      "trials_per_setting": 437822,
+      "total_trials": 1751288,
+      "rejection_contrast_threshold": 0.02552591627951706,
+      "contrast_radius_alpha": 0.005525916279517062,
+      "contrast_radius_beta": 0.004474079677457079,
+      "power_lower_bound": 0.9
+    }
+  ],
+  "calibration": "If calibration can fail with probability alpha_cal, total type-I error is at most alpha+alpha_cal."
+}

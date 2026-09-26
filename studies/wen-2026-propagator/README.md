@@ -140,7 +140,18 @@ and [physicist-readable case study](https://github.com/stevenwarejones/ontology-
 It certifies finite tables and access-relative model distinctions, not this
 apparatus or its empirical numbers.
 
-A follow-up study of phase interventions and their experimentally testable model assumptions is planned.
+The [phase-intervention study](../phase-intervention-design/README.md) specifies
+a follow-up experiment with complete loss outcomes, calibration requirements and
+a conservative conditional power calculation; no experiment has been performed.
+
+## Audit conclusions and reproducibility limits
+
+The [completion report](completion-report.md) maps each audit requirement to its
+evidence and every remaining question to its disposition.
+[Exact identifiability counterexamples](identifiability_checks.py) explain why the
+[missing joint records](required-records.md) cannot generally be recovered from
+the deposited marginal summaries. These examples are synthetic and do not change
+the reproduced figures or imply an estimate of the missing records.
 
 ## Automated checks
 

@@ -145,3 +145,38 @@ or clarification could change the mappings, model or normalization and would
 require reassessment of dependent conclusions. Empty searches do not establish
 absence. Full experiment design, apparatus-specific literature review and
 full-proof novelty review remain separate follow-up work.
+
+## Follow-up and completion review — 2026-09-26 UTC
+
+Queries: `"aeh1011" correction code replication`, `"x0k6djj14" code propagator`,
+`"Direct experimental test of Feynman" critique uncertainty`, and a second
+search of the exact DOI/title with `correction code` and `replication`, limited
+to the preceding year. The deposit was found; several results were unrelated
+word matches. Those unrelated results provide no evidence about this paper.
+No additional usable implementation was identified in this bounded search.
+
+The source checks for the 4.45% sentence and the successful all-sheet replication
+remain those recorded above; they were not replaced by these search results.
+The full question register was compared with the original analysis requirements.
+New exact synthetic examples establish why marginal means/variances and
+conditional shapes cannot generally identify the missing joint records.
+They do not estimate the error in the actual experiment.
+
+The follow-up literature review separately checked the finite interferometer
+formulation in Biswas et al. (2017), the phase-locking setup in Hacker et al.
+(2023), Hoeffding's Theorem 2, and Kunjwal et al.'s finite-pointer conditions.
+The [follow-up log](../phase-intervention-design/literature-comparison.md) records
+queries, primary versions and review depth. Decision: ordinary phase intervention
+is a well-defined dephased-model test; stronger contextuality and causal-response
+claims are not outcomes of this audit.
+
+Trajectory terminology was also checked using `"s41467-022-31608-6" arxiv` and
+`Kocsis 2011 observing average trajectories single photons two slit interferometer arxiv`.
+The NIST-hosted Kocsis main paper was read at the weak-measurement and reconstruction
+passages. Foo et al.'s main XML was retrieved from Europe PMC after publisher/PMC
+page retrieval failed. The abstract, velocity construction and boosted-trajectory
+discussion were inspected; no experimental signaling result is inferred.
+Bliokh et al. v2 was screened from its primary abstract/version record; attempted
+full-text retrievals failed, so its derivation is not used here. These sources
+clarify different meanings of trajectory without extending the Wen audit into
+a relativistic signaling test. The review depths are in the comparison table.

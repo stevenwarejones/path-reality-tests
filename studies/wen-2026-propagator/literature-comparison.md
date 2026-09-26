@@ -26,3 +26,16 @@ search/access limitations. The real column mappings and missing repeat-level
 records are documented in the data dictionary. A stronger ontological claim
 requires additional operational assumptions and an exact specification of the
 alternative being excluded.
+
+## Related trajectory terminology
+
+| Primary source | Material inspected on 2026-09-26 UTC | Consequence for this audit |
+|---|---|---|
+| [Kocsis et al. (2011)](https://doi.org/10.1126/science.1202218), [NIST paper copy](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=907599) | Main-text weak-momentum/postselection method and trajectory-reconstruction discussion; supplement not newly reviewed | Ensemble flow reconstruction is distinct from recording an individual photon's complete path. This is a different inference pipeline from multiplying reconstructed propagators. |
+| [Foo et al. (2022)](https://doi.org/10.1038/s41467-022-31608-6), [primary XML](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9276825/fullTextXML) | Abstract and main-text relativistic velocity construction, superluminal/boosted-trajectory discussion | A theoretical weak-measurement-based velocity construction can contain unusual trajectory segments. It is not an experimental confirmation that Feynman integration paths are literal histories, and it supplies no retrospective causal intervention in Wen's dataset. |
+| [Bliokh et al. (2013), v2](https://arxiv.org/abs/1304.1276v2) | Primary abstract and version record; PDF/HTML retrieval unsuccessful | Adverse interpretation lead: a classical-optical account of ensemble weak-momentum reconstruction. Its full derivation is not used as a theorem in this audit. |
+
+The formal conclusions here follow from the specified observable models, not
+from resolving every interpretation of a weakly reconstructed velocity field.
+A relativistic causal-response experiment and a noncontextual-history witness
+are separate studies with additional operational assumptions.

@@ -25,9 +25,11 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
-          cache-dependency-path: studies/wen-2026-propagator/requirements.txt
+          cache-dependency-path: |
+            studies/wen-2026-propagator/requirements.txt
+            studies/phase-intervention-design/requirements.txt
       - name: Install pinned study dependencies
-        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt
+        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt
       - name: Check tracked files and documentation links
         run: python scripts/check_repository.py
       - name: Test integrity failures, extraction and numerical counterexamples
@@ -40,6 +42,11 @@ jobs:
         run: python studies/wen-2026-propagator/synthetic_checks.py --check --output-dir "$RUNNER_TEMP/review-artifacts"
       - name: Reproduce deposited figures and verify reviewed residuals
         run: python studies/wen-2026-propagator/replicate.py --check --output-dir "$RUNNER_TEMP/review-artifacts/replication"
+      - name: Check phase-intervention design and exact identifiability witnesses
+        run: |
+          python studies/phase-intervention-design/intervention_checks.py --check
+          python studies/phase-intervention-design/design.py --check
+          python studies/wen-2026-propagator/identifiability_checks.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/wen-2026-propagator/fetch_data.py --verify-only
