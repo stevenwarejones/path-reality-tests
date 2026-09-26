@@ -94,7 +94,7 @@ The prospective resource study is complete conditional on those inputs.
 | Kind | Result | Evidence / limit |
 |---|---|---|
 | Established theory | Local normalized operations preserve a remote marginal under the stated causal premises | [Primary evidence and closest-work comparison](evidence-table.md); not a new no-communication theorem |
-| Formal verification | Finite marginal identity, normalized g-family, exclusion, toy access equivalence, countermodels, quantum algebra, interval and geometry implications | [Lean guide](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/docs/SPACETIME_INFLUENCE.md); no continuum or concentration theorem is formalized |
+| Formal verification | Finite marginal identity, normalized g-family, exclusion, toy access equivalence, countermodels, quantum algebra, interval and geometry implications | [Lean guide](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/docs/SPACETIME_INFLUENCE.md); no continuum or concentration theorem is formalized |
 | Mathematical analysis | Fixed-horizon memory interval, IID difference interval, nuisance transport and power inequality | [statistics.md](statistics.md), [physical-bridge.md](physical-bridge.md) |
 | Numerical evidence | Seeded synthetic repetitions, numerical binomial powers and strict sample counts | [config.json](config.json), [results.json](results.json), [design.py](design.py) |
 | Proposed measurement | Complete locally latched binary outcomes, fixed windows, in-cone positive controls and negative controls | [protocol.md](protocol.md); unexecuted |

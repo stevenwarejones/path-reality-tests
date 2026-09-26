@@ -9,11 +9,11 @@ ST01–ST12 dispositions, including externally blocked apparatus and source inpu
 Formal source links below are immutable companion commit permalinks. Both repositories
 build independently; no unmerged cross-repository dependency is installed.
 
-- [Finite model and countermodels](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/OntologySeparation/Experiments/SpacetimeInfluence.lean)
-- [Algebra, calibration, intervals and geometry](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/OntologySeparation/Experiments/SpacetimeInfluenceBounds.lean)
-- [Lean examples/tests](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/Tests/SpacetimeInfluence.lean)
-- [Generated theorem report](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/examples/spacetime-influence.html)
-- [Complete axiom snapshot](https://github.com/stevenwarejones/ontology-separation/blob/ef7f7b784589593f5e3fbefc56232c954faaeecf/docs/AXIOM_AUDIT.txt)
+- [Finite model and countermodels](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/OntologySeparation/Experiments/SpacetimeInfluence.lean)
+- [Algebra, calibration, intervals and geometry](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/OntologySeparation/Experiments/SpacetimeInfluenceBounds.lean)
+- [Lean examples/tests](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/Tests/SpacetimeInfluence.lean)
+- [Generated theorem report](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/examples/spacetime-influence.html)
+- [Complete axiom snapshot](https://github.com/stevenwarejones/ontology-separation/blob/69bc59f201e3c1142a0108430292bc23e2350952/docs/AXIOM_AUDIT.txt)
 
 Every theorem name below is in `OntologySeparation.SpacetimeInfluence`.
 
@@ -25,7 +25,7 @@ Every theorem name below is in `OntologySeparation.SpacetimeInfluence`.
 | Normalized tunable alternative and separator | `alternative`, `alternative_gap`, `alternative_excluded`; g=0, g=1 and strict-positive tests | Done; excludes all finite models in the defined class for exact g>0. Not a field-theory alternative. |
 | Access equivalence | `receiver_access_equivalent` | Done for the shared-bit/independent-sender construction and receiver-only access; universal hidden-path equivalence outside scope. |
 | Physical-to-operational bridge | `local_operation_fixes_effect`; detector primary sources in [evidence table](evidence-table.md) | Conditional algebra done. Real-device localization/commutation and response calibration externally blocked, ST04/ST06. No continuum proof. |
-| Premise countermodels | [physical bridge](physical-bridge.md), formal examples and [numerical tests](../../tests/test_spacetime_influence.py) | Done for preparation, receiver channel, selection, supports, storage, predictable settings and constant-effect interpretation. |
+| Premise countermodels | [physical bridge](physical-bridge.md), `countermodel_fields`, `dependentReceiver_gap`, selection acceptance/TV proofs and [numerical tests](../../tests/test_spacetime_influence.py) | Done for preparation, receiver channel, selection, supports, storage, predictable settings and constant-effect interpretation. |
 | Geometry/timing and backward record order | `spacelike_of_budget`, `earlier_record`; [config.json](config.json) and geometry tests | Done for supplied support intervals; actual support evidence absent. Vacuum c used. |
 | Nuisance in witness units | `coupling_gap`, `three_event_bound`, `calibrated_gap`, `contamination_gap`; coupling-flip counterexample | Derived by coupling, union and triangle bounds; numerical eₓ values require calibration. |
 | Binary CI, absolute upper bound, random counts | [statistics.md](statistics.md); `binary_influence`, `difference_interval`, `absolute_interval_upper`, `strict_interval_exclusion` | Done under stated assumptions; exponential/binomial coverage is derived in prose, not Lean. |
