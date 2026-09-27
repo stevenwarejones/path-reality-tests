@@ -1,0 +1,424 @@
+{
+  "calibration": "theoretical bounds; simulations check implementation and power in declared toy models",
+  "category": [
+    {
+      "amplitude": 0.0,
+      "mode": "null",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "amplitude": 0.0,
+      "mode": "drift_null",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "amplitude": 0.2,
+      "mode": "fixed",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "amplitude": 0.1,
+      "mode": "reversing",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 38,
+          "interval95": [
+            0.0681067155231008,
+            0.12806064599502015
+          ],
+          "rate": 0.095,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "amplitude": 0.2,
+      "mode": "reversing",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "amplitude": 0.25,
+      "mode": "reversing",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    }
+  ],
+  "category_trials": 107109468,
+  "future_trials": 200000,
+  "occupancy_matched": [
+    {
+      "common_state_amplitude": 0.008465537668661606,
+      "condition": "clock",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      },
+      "rare_state_amplitude": 0.25,
+      "receiver": "alice",
+      "synthetic_state0_rows": 3508163
+    },
+    {
+      "common_state_amplitude": 0.015713692711610116,
+      "condition": "recovery",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 350,
+          "interval95": [
+            0.8385413405693943,
+            0.905781485313414
+          ],
+          "rate": 0.875,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      },
+      "rare_state_amplitude": 0.25,
+      "receiver": "alice",
+      "synthetic_state0_rows": 6334206
+    },
+    {
+      "common_state_amplitude": 0.016520705524395767,
+      "condition": "clock",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 378,
+          "interval95": [
+            0.9179107626354742,
+            0.9652145197962777
+          ],
+          "rate": 0.945,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      },
+      "rare_state_amplitude": 0.25,
+      "receiver": "bob",
+      "synthetic_state0_rows": 6639349
+    },
+    {
+      "common_state_amplitude": 0.02021398056490104,
+      "condition": "recovery",
+      "outcomes": {
+        "hidden_tv_resolved": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "interaction_detected": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "pooled_detected": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      },
+      "rare_state_amplitude": 0.25,
+      "receiver": "bob",
+      "synthetic_state0_rows": 8012571
+    }
+  ],
+  "repetitions": 400,
+  "seed": 20260928,
+  "temporal": [
+    {
+      "mode": "fresh_with_outcome_memory",
+      "outcomes": {
+        "0.0": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        },
+        "0.4": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "mode": "persistent_delayed",
+      "outcomes": {
+        "0.0": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "0.4": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    },
+    {
+      "mode": "one_row_misalignment",
+      "outcomes": {
+        "0.0": {
+          "count": 400,
+          "interval95": [
+            0.9908201954163347,
+            1.0
+          ],
+          "rate": 1.0,
+          "repetitions": 400
+        },
+        "0.4": {
+          "count": 0,
+          "interval95": [
+            0.0,
+            0.00917980458366526
+          ],
+          "rate": 0.0,
+          "repetitions": 400
+        }
+      }
+    }
+  ]
+}

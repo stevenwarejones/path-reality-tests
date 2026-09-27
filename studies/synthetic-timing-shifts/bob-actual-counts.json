@@ -1,0 +1,183 @@
+{
+  "archive_sha256": "c74f6eeee166e3b960b4c90ce853efb9594cb4406e4f5cbaffa027a7fb7e0f17",
+  "axes": {
+    "envelopes": [
+      "unrestricted",
+      "event_supported"
+    ],
+    "features": [
+      "any",
+      "early",
+      "core",
+      "late"
+    ],
+    "known": [
+      "half",
+      "remote_setting",
+      "local_setting",
+      "feature"
+    ],
+    "uncertainty": [
+      "half",
+      "remote_setting",
+      "local_setting",
+      "envelope"
+    ]
+  },
+  "censored_tail": {
+    "records": 3,
+    "syncs": 1
+  },
+  "compatible_uncertainty": [
+    [
+      [
+        [
+          2630,
+          113
+        ],
+        [
+          2526,
+          85
+        ]
+      ],
+      [
+        [
+          2555,
+          105
+        ],
+        [
+          2555,
+          116
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          2436,
+          86
+        ],
+        [
+          2440,
+          97
+        ]
+      ],
+      [
+        [
+          2450,
+          100
+        ],
+        [
+          2378,
+          96
+        ]
+      ]
+    ]
+  ],
+  "half_rows": [
+    53554798,
+    53554798
+  ],
+  "hdf_sha256": "94af31f6f8cadda9ed21fdf1adb7d6154a05a33bba551c11619e5df70b800f06",
+  "known_event_counts": [
+    [
+      [
+        [
+          2087,
+          531,
+          1108,
+          448
+        ],
+        [
+          5982,
+          1251,
+          3396,
+          1335
+        ]
+      ],
+      [
+        [
+          1966,
+          507,
+          1024,
+          435
+        ],
+        [
+          5799,
+          1143,
+          3322,
+          1334
+        ]
+      ]
+    ],
+    [
+      [
+        [
+          2011,
+          517,
+          1020,
+          474
+        ],
+        [
+          5874,
+          1212,
+          3355,
+          1307
+        ]
+      ],
+      [
+        [
+          1951,
+          494,
+          1062,
+          395
+        ],
+        [
+          5854,
+          1222,
+          3302,
+          1330
+        ]
+      ]
+    ]
+  ],
+  "multiclick_rows": 0,
+  "overlap_verified": 107109596,
+  "phase_peak": 125,
+  "phase_radius_cut": false,
+  "pulse_bits": [
+    4,
+    5,
+    6
+  ],
+  "raw_prefix": 143611,
+  "raw_suffix": 11074,
+  "rows": 107109596,
+  "schema_version": 1,
+  "selected_events_including_uncertain": 31534,
+  "side": "bob",
+  "source_reconciliation": "all local settings, legacy words and timestamp excursions exact",
+  "trusted_exposures": [
+    [
+      [
+        13388987,
+        13387535
+      ],
+      [
+        13383673,
+        13384337
+      ]
+    ],
+    [
+      [
+        13395127,
+        13382645
+      ],
+      [
+        13380317,
+        13387007
+      ]
+    ]
+  ],
+  "uncertain_rows": 19968
+}

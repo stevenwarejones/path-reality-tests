@@ -7,11 +7,13 @@ needed to compare them. Studies provide independent, reproducible checks.
 
 | Study | Question | Status |
 |---|---|---|
+| [Continuum and finite models](studies/continuum-finite-models/README.md) | Which specified finite dynamics differ from a continuum ring? | Synthetic conditional design; formal completion and apparatus calibration pending |
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |
 | [Path contextuality](studies/path-contextuality/README.md) | Can a finite weak path probe reject explicit noncontextual representations? | Prospective conditional design; exact instrument and calibrated-trial budget |
 | [Phase-intervention design](studies/phase-intervention-design/README.md) | Which calibrated dephased models would a four-phase experiment exclude? | Proposed; synthetic checks and conditional power |
 | [NIST Bell-record causal audit](studies/nist-bell-causal-audit/README.md) | What conditional influence bounds do public trial records support? | Full raw reconstruction, measured marginals and explicit calibration limits |
 | [Born-rule identifiability](studies/born-rule-identifiability/README.md) | Can additional datasets separate probability changes from control and detector errors? | Measured scan–Viviani combination, ordinary qutrit compatibility certificates and conditional distance bounds; no identified probability-rule violation |
+| [Synthetic timing shifts](studies/synthetic-timing-shifts/README.md) | Could sparse records reveal timing shifts or effects that reverse sign? | Synthetic and real-background injections; artificial assignments and held-out scores |
 | [Spacetime causal influence](studies/spacetime-causal-influence/README.md) | Can a remote intervention change a complete local record outside its future light cone? | Conditional protocol, formal companion and synthetic sensitivity study |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
@@ -38,3 +40,5 @@ data and papers retain their stated licenses. Changes are reviewed through pull
 requests before merging.
 
 See [sharp compatibility boundaries](studies/path-compatibility/README.md) for exact attainers and the two-witness decision extension.
+
+See [timing structure and identifiability](studies/timing-structure/README.md) for fixed cancellation and temporal diagnostics on existing NIST records, with exact invisibility witnesses.
