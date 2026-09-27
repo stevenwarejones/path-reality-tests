@@ -1,0 +1,350 @@
+{
+  "files": [
+    {
+      "bytes": 4233,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6047_07b_IQ_Blobs1_233944/node.json",
+      "repository": "quantum_memory_data",
+      "role": "readout_calibration",
+      "sha256": "f9fe61a4d53e0927e84384f3308ea7b777862a7dcbbe92694e259fd94113134a",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236047_07b_IQ_Blobs1_233944/node.json"
+    },
+    {
+      "bytes": 1125,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6047_07b_IQ_Blobs1_233944/data.json",
+      "repository": "quantum_memory_data",
+      "role": "readout_calibration",
+      "sha256": "3695ff0b2998cdfb382df52103a644b4e26a1bc2994416aba1c72a76d4ec4511",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236047_07b_IQ_Blobs1_233944/data.json"
+    },
+    {
+      "bytes": 370272,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6047_07b_IQ_Blobs1_233944/ds.h5",
+      "repository": "quantum_memory_data",
+      "role": "readout_calibration",
+      "sha256": "860732949826a19c6a1f7823c69c05eb473c1fbaaddf91bffaf6cb6ae5425a8f",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236047_07b_IQ_Blobs1_233944/ds.h5"
+    },
+    {
+      "bytes": 68944,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6047_07b_IQ_Blobs1_233944/quam_state/state.json",
+      "repository": "quantum_memory_data",
+      "role": "readout_calibration",
+      "sha256": "92bcadc4e8dbebb5e91edac3310c4a01b6f50f2ec6d2ee0b699473f2ab2bbe97",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236047_07b_IQ_Blobs1_233944/quam_state/state.json"
+    },
+    {
+      "bytes": 658,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6047_07b_IQ_Blobs1_233944/arrays.npz",
+      "repository": "quantum_memory_data",
+      "role": "readout_calibration",
+      "sha256": "296dea6ea766022397f7d4d2359504620b6c3ffacdb7d48894d6b1ce58ffc78f",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236047_07b_IQ_Blobs1_233944/arrays.npz"
+    },
+    {
+      "bytes": 7047,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6048_110a_quantum_process_tomography_swap0ns_234006/node.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "d799a49e1bf8871fa10647d01a5f2e930f5bbb3327713ed3351f41f37753d594",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236048_110a_quantum_process_tomography_swap0ns_234006/node.json"
+    },
+    {
+      "bytes": 5244,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6048_110a_quantum_process_tomography_swap0ns_234006/data.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "dc5e8ee67672e314e4088c62763c8b78cc210829dfa91b8dc4a5eb236c7e6a8d",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236048_110a_quantum_process_tomography_swap0ns_234006/data.json"
+    },
+    {
+      "bytes": 1048333,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6048_110a_quantum_process_tomography_swap0ns_234006/ds.h5",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "6d5945b7b19eebb92406b95b354b8105865c756c5d95db7a8de2b851a7d975b8",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236048_110a_quantum_process_tomography_swap0ns_234006/ds.h5"
+    },
+    {
+      "bytes": 68634,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6048_110a_quantum_process_tomography_swap0ns_234006/quam_state/state.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "a040fc9091727ea81d948ae4bdbd0a1a43b83431220263c097cc21453b2e6dea",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236048_110a_quantum_process_tomography_swap0ns_234006/quam_state/state.json"
+    },
+    {
+      "bytes": 7055,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6099_110a_quantum_process_tomography_swap102ns_234521/node.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "c1fcda72d0a976f87b7fa04e0f2ac1c6c613cedbb13f172ea5a9fb4e68af30f6",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236099_110a_quantum_process_tomography_swap102ns_234521/node.json"
+    },
+    {
+      "bytes": 5176,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6099_110a_quantum_process_tomography_swap102ns_234521/data.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "a511fd4f02cfe7c751cbe92ef063c00461173ab0ea6e8895534e1766ed161a20",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236099_110a_quantum_process_tomography_swap102ns_234521/data.json"
+    },
+    {
+      "bytes": 1048333,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6099_110a_quantum_process_tomography_swap102ns_234521/ds.h5",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "535a6c36e811d3f6e6e19b5ca93905bd733b42554f16727b57e9eeed979a9473",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236099_110a_quantum_process_tomography_swap102ns_234521/ds.h5"
+    },
+    {
+      "bytes": 68634,
+      "path": "data/non_Markovian_152ns/2026-02-21/#6099_110a_quantum_process_tomography_swap102ns_234521/quam_state/state.json",
+      "repository": "quantum_memory_data",
+      "role": "terminal_dynamics",
+      "sha256": "a040fc9091727ea81d948ae4bdbd0a1a43b83431220263c097cc21453b2e6dea",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data/non_Markovian_152ns/2026-02-21/%236099_110a_quantum_process_tomography_swap102ns_234521/quam_state/state.json"
+    },
+    {
+      "bytes": 5676,
+      "path": "quam_libs/lib/qua_datasets.py",
+      "repository": "quantum_memory_data",
+      "role": "analysis_code_not_executed",
+      "sha256": "296335d2055777873eac0b1eba558f6efb598820342fd5b9fc51dc523d8ce65b",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/quam_libs/lib/qua_datasets.py"
+    },
+    {
+      "bytes": 7364,
+      "path": "quam_libs/legacy/_macros.py",
+      "repository": "quantum_memory_data",
+      "role": "analysis_code_not_executed",
+      "sha256": "f3da4c80bd25b090a0f179384e59f7cd80da0615e2f1285f1c17d84defa90dd9",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/quam_libs/legacy/_macros.py"
+    },
+    {
+      "bytes": 6926860,
+      "path": "data_processing/non_Markovian150ns_data.ipynb",
+      "repository": "quantum_memory_data",
+      "role": "analysis_code_not_executed",
+      "sha256": "ff58197ab1f995f429415ca7bac8dd368c7b7fcf1cdbea1f40e817648feee69c",
+      "url": "https://raw.githubusercontent.com/44hsiang/quantum_memory_data/25459810b88553dc5bc8641956e9a72e175008af/data_processing/non_Markovian150ns_data.ipynb"
+    },
+    {
+      "bytes": 108038,
+      "path": "data/SU4_opt/Job_data/cairo_SU4_job_dict_cnot_03_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "9920ef3abe36088cdc4f1f505881def92df73d628c903860cbbf8433f09962af",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/cairo_SU4_job_dict_cnot_03_10_results.pickle"
+    },
+    {
+      "bytes": 108038,
+      "path": "data/SU4_opt/Job_data/hanoi_SU4_job_dict_cnot_08_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "72d24e2a6684c34c618f2a2f1fcea25f06642f1e073321cd6d803ad0eacbf7f0",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/hanoi_SU4_job_dict_cnot_08_01_results.pickle"
+    },
+    {
+      "bytes": 108047,
+      "path": "data/SU4_opt/Job_data/hanoi_SU4_job_dict_cnot_10_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "faf024b40a069a7e7b67ae4100873728b354f13c4c38d4e6e661cdfb5316e002",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/hanoi_SU4_job_dict_cnot_10_10_results.pickle"
+    },
+    {
+      "bytes": 108047,
+      "path": "data/SU4_opt/Job_data/jakarta_SU4_job_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "a4a17fcc1ed57081bb46523d75956e133a93a9cd39fd5a576931cfa3f422ddf8",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/jakarta_SU4_job_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 108047,
+      "path": "data/SU4_opt/Job_data/jakarta_SU4_job_dict_cnot_18_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "c01dc94fa43390c8a6505a3d3642b466d61314e6bb67ba4e53ae9ab62f762288",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/jakarta_SU4_job_dict_cnot_18_10_results.pickle"
+    },
+    {
+      "bytes": 108047,
+      "path": "data/SU4_opt/Job_data/lagos_SU4_job_dict_cnot_08_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "2cd03b39f8b86809fdbd17cf1be787e2f908dbb7371be8282dfac90914ff4f99",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/lagos_SU4_job_dict_cnot_08_01_results.pickle"
+    },
+    {
+      "bytes": 108047,
+      "path": "data/SU4_opt/Job_data/perth_SU4_job_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "1609b36a4a6e2a6230b58c2044c31749f1c285ce4bf809c0ab9cc988b31cf4d9",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Job_data/perth_SU4_job_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/cairo_SU4_val_dict_cnot_03_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "38ca2f92e66e6b4a4d7e1637b349082a76243815e3a762d0a56a54f4e4244a9c",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/cairo_SU4_val_dict_cnot_03_10_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/cairo_SU4_val_dict_cnot_08_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "dcc31ed18dd49fefa8e2a5c9e5fdda60d98b9202cb92c33bfed71a24751d1d68",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/cairo_SU4_val_dict_cnot_08_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "7d412d06aecd901e0a2bfcd25d763c517c3ae26e8b6ac48fe8a2735366f4780f",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_08_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "60b13477eb48ffdb4ae77d396270b05bfec1cd104361fde01d3b6c77a7fce5a6",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_08_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_10_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "2b49ee6a6456fd2177ca1eced80fc45da66641eec8d99d79abf92d43e5d9e1d6",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/hanoi_SU4_val_dict_cnot_10_10_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/jakarta_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "c15a34fdab8a5ef0a80b2084fcce7b3c91f44369217448cb1a36d35108f432d6",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/jakarta_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/jakarta_SU4_val_dict_cnot_18_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "beb9b909cc9fde5b0e980ba904c126e2e4365ab3982178b7f72336192ab3ac99",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/jakarta_SU4_val_dict_cnot_18_10_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/lagos_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "470aae9fb53921c4e7f7b2ee21162ecca1583f6b10c9ea998f8334812c79c253",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/lagos_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/lagos_SU4_val_dict_cnot_08_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "66ba22548db80ff42ecab4a5f5d1e337880e3743bb5b7176fa639dcf68110572",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/lagos_SU4_val_dict_cnot_08_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/mumbai_SU4_val_dict_cnot_03_10_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "3c800dbbc1f4e8d0ef140e49c7bf369742aa4845abbc9d54dd5daf7b1f78052b",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/mumbai_SU4_val_dict_cnot_03_10_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/mumbai_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "1da99f191ea45908064912d8cb3ad1f5981d3087200fd1f90dc1e0e59df85e52",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/mumbai_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/perth_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "03a4a9bbe10092241750b4d0f32cd20dc88d87eb150d6fd6cbf6e0cd4bb18cf4",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/perth_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 10818,
+      "path": "data/SU4_opt/Val_data/toronto_SU4_val_dict_cnot_07_01_results.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "terminal_probability_vector",
+      "sha256": "a2900818bda921313354cb11d4d112b9225b575104f12a19560e766bfbcb4b18",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/SU4_opt/Val_data/toronto_SU4_val_dict_cnot_07_01_results.pickle"
+    },
+    {
+      "bytes": 673039,
+      "path": "data/DD_opt/DD_data/hanoi_9_step_DD_jobs_19_09.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "opcode_inventory_only",
+      "sha256": "8bdbce4de9b419db35100f76149db45a4d361288471fba1f2a6b25bd440249b3",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/DD_opt/DD_data/hanoi_9_step_DD_jobs_19_09.pickle"
+    },
+    {
+      "bytes": 33769,
+      "path": "data/DD_opt/DD_data/hanoi_9_step_DD_jobs_val_19_09.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "opcode_inventory_only",
+      "sha256": "2b0a9400d0395dc8291b656b8678d352a8e970f28b35deaa707e3d6850949b9d",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/DD_opt/DD_data/hanoi_9_step_DD_jobs_val_19_09.pickle"
+    },
+    {
+      "bytes": 691844,
+      "path": "data/IBM_char/device_fit_data/cairo_Standard/optmzr_3k1nQ_10_spc.pickle",
+      "repository": "process-tensor-network-tomography",
+      "role": "opcode_inventory_only",
+      "sha256": "dc727fa56374d523143b18bb85a6ffccb15fd2f979abdd4fe1241b2dd1a4d7d7",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/data/IBM_char/device_fit_data/cairo_Standard/optmzr_3k1nQ_10_spc.pickle"
+    },
+    {
+      "bytes": 8283,
+      "path": "src/preprocess.py",
+      "repository": "process-tensor-network-tomography",
+      "role": "analysis_code_not_executed",
+      "sha256": "718c8564078a145910ac3a0bdd560407d29c938e4e36af825a731fafb652b550",
+      "url": "https://raw.githubusercontent.com/gwhitequantum/process-tensor-network-tomography/e3f01b011f28c1497f7ebb3dc4f98a782a75095f/src/preprocess.py"
+    },
+    {
+      "bytes": 11624,
+      "path": "calibrations/07_iq_blobs.py",
+      "repository": "Qfort_opx1000",
+      "role": "later_code_unit_convention_only",
+      "sha256": "fae399908c6c040b8789fbedb628dd7dfebfeb7b65713b118f0e6f669c8c828a",
+      "url": "https://raw.githubusercontent.com/44hsiang/Qfort_opx1000/3ba3c6956f6fe47d91feb7e0c66d046261d619d3/calibrations/07_iq_blobs.py"
+    }
+  ],
+  "repositories": {
+    "Qfort_opx1000": {
+      "commit": "3ba3c6956f6fe47d91feb7e0c66d046261d619d3",
+      "redistribution": "Raw sources remain external; no source license inferred",
+      "url": "https://github.com/44hsiang/Qfort_opx1000"
+    },
+    "process-tensor-network-tomography": {
+      "commit": "e3f01b011f28c1497f7ebb3dc4f98a782a75095f",
+      "redistribution": "Raw sources remain external; no source license inferred",
+      "url": "https://github.com/gwhitequantum/process-tensor-network-tomography"
+    },
+    "quantum_memory_data": {
+      "commit": "25459810b88553dc5bc8641956e9a72e175008af",
+      "redistribution": "Raw sources remain external; no source license inferred",
+      "url": "https://github.com/44hsiang/quantum_memory_data"
+    }
+  },
+  "scope": "Selected measured schemas and code, not an exhaustive archive or matched flagged calibration"
+}

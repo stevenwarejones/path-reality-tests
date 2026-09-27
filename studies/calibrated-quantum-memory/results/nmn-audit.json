@@ -1,0 +1,259 @@
+{
+  "alpha": 0.05,
+  "kind": "measured_conditional_acquisition_diagnostic",
+  "mapping_status": "inferred_not_verified_against_original_job_records",
+  "quantum_memory_certified": false,
+  "runs": [
+    {
+      "archived_row_total_max": 10243,
+      "archived_row_total_min": 8189,
+      "circuits": 324,
+      "delay_key": "97,97",
+      "positive_groups": 12,
+      "regrouped_shots": 9216,
+      "simultaneous_bernoulli_radius": 0.025272181606161,
+      "source": "NMN_lab_rslts.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.16623263888888895,
+        "epsilon_lower": 0.057844137838283516,
+        "high_frequency": 0.7464192708333334,
+        "high_interval_lower": 0.7211470892271724,
+        "high_row": "xp,y,yp,x",
+        "low_frequency": 0.5801866319444444,
+        "low_interval_upper": 0.6054588135506054,
+        "low_row": "xp,y,xm,x",
+        "past_labels": [
+          "xp",
+          "y"
+        ]
+      },
+      "total_counts": 2985984
+    },
+    {
+      "archived_row_total_max": 8165,
+      "archived_row_total_min": 7835,
+      "circuits": 324,
+      "delay_key": "21.333,21.333",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.025749999999999995,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.503375,
+        "high_interval_lower": 0.47625004831467405,
+        "high_row": "zm,x,ym,y",
+        "low_frequency": 0.477625,
+        "low_interval_upper": 0.504749951685326,
+        "low_row": "zm,x,xm,y",
+        "past_labels": [
+          "zm",
+          "x"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8178,
+      "archived_row_total_min": 7822,
+      "circuits": 324,
+      "delay_key": "21.333,24.889",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.026375000000000037,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.514,
+        "high_interval_lower": 0.48687504831467404,
+        "high_row": "zp,x,zp,x",
+        "low_frequency": 0.487625,
+        "low_interval_upper": 0.514749951685326,
+        "low_row": "zp,x,yp,z",
+        "past_labels": [
+          "zp",
+          "x"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8195,
+      "archived_row_total_min": 7805,
+      "circuits": 324,
+      "delay_key": "21.333,28.444",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.029249999999999998,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.494375,
+        "high_interval_lower": 0.46725004831467404,
+        "high_row": "xp,y,zp,y",
+        "low_frequency": 0.465125,
+        "low_interval_upper": 0.492249951685326,
+        "low_row": "xp,y,ym,x",
+        "past_labels": [
+          "xp",
+          "y"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8139,
+      "archived_row_total_min": 7861,
+      "circuits": 324,
+      "delay_key": "24.889,21.333",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.026374999999999926,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.519125,
+        "high_interval_lower": 0.492000048314674,
+        "high_row": "zp,x,yp,y",
+        "low_frequency": 0.49275,
+        "low_interval_upper": 0.519874951685326,
+        "low_row": "zp,x,yp,z",
+        "past_labels": [
+          "zp",
+          "x"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8181,
+      "archived_row_total_min": 7819,
+      "circuits": 324,
+      "delay_key": "24.889,24.889",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.030625000000000013,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.512,
+        "high_interval_lower": 0.48487504831467404,
+        "high_row": "ym,z,yp,z",
+        "low_frequency": 0.481375,
+        "low_interval_upper": 0.508499951685326,
+        "low_row": "ym,z,ym,x",
+        "past_labels": [
+          "ym",
+          "z"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8168,
+      "archived_row_total_min": 7832,
+      "circuits": 324,
+      "delay_key": "24.889,28.444",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.026374999999999982,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.5185,
+        "high_interval_lower": 0.491375048314674,
+        "high_row": "yp,z,zm,x",
+        "low_frequency": 0.492125,
+        "low_interval_upper": 0.519249951685326,
+        "low_row": "yp,z,ym,x",
+        "past_labels": [
+          "yp",
+          "z"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8157,
+      "archived_row_total_min": 7843,
+      "circuits": 324,
+      "delay_key": "28.444,21.333",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.025249999999999995,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.516625,
+        "high_interval_lower": 0.48950004831467403,
+        "high_row": "xp,z,xm,z",
+        "low_frequency": 0.491375,
+        "low_interval_upper": 0.518499951685326,
+        "low_row": "xp,z,zp,z",
+        "past_labels": [
+          "xp",
+          "z"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8140,
+      "archived_row_total_min": 7860,
+      "circuits": 324,
+      "delay_key": "28.444,24.889",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.023375000000000035,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.528625,
+        "high_interval_lower": 0.501500048314674,
+        "high_row": "xm,y,xp,y",
+        "low_frequency": 0.50525,
+        "low_interval_upper": 0.532374951685326,
+        "low_row": "xm,y,zm,z",
+        "past_labels": [
+          "xm",
+          "y"
+        ]
+      },
+      "total_counts": 2592000
+    },
+    {
+      "archived_row_total_max": 8152,
+      "archived_row_total_min": 7848,
+      "circuits": 324,
+      "delay_key": "28.444,28.444",
+      "positive_groups": 0,
+      "regrouped_shots": 8000,
+      "simultaneous_bernoulli_radius": 0.02712495168532599,
+      "source": "NMN_tomog_rerun.json",
+      "strongest_past_marginal_contrast": {
+        "empirical_range": 0.02749999999999997,
+        "epsilon_lower": 0.0,
+        "high_frequency": 0.514875,
+        "high_interval_lower": 0.487750048314674,
+        "high_row": "xm,z,xm,z",
+        "low_frequency": 0.487375,
+        "low_interval_upper": 0.514499951685326,
+        "low_row": "xm,z,ym,x",
+        "past_labels": [
+          "xm",
+          "z"
+        ]
+      },
+      "total_counts": 2592000
+    }
+  ],
+  "simultaneous_rows": 3240
+}
