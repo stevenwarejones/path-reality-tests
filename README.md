@@ -7,6 +7,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 
 | Study | Question | Status |
 |---|---|---|
+| [Correlated qubit mechanisms](studies/correlated-qubit-mechanisms/README.md) | Can complementary interventions separate initiating sources from chip response? | Reproducible feasibility gate, measured diagnostics and conditional parity bounds; transferable prediction and combination gain unestablished |
 | [Fine timing information](studies/fine-timing-structure/README.md) | What do pulse identity and finer timing add beyond four categories? | Conditional archive bounds and paired recovery; no measured departure |
 | [Continuum and finite models](studies/continuum-finite-models/README.md) | Which specified finite dynamics differ from a continuum ring? | Synthetic conditional design; formal completion and apparatus calibration pending |
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |

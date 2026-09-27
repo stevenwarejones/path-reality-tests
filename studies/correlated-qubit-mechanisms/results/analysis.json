@@ -1,0 +1,739 @@
+{
+  "status": "FEASIBILITY GATE: no certified empirical combination gain; mission not achieved",
+  "gamma": {
+    "curves": {
+      "nonCu_charge": {
+        "rows": 10,
+        "dose_range_m_minus2": [
+          0.0,
+          3.1047090588023667
+        ],
+        "weighted_affine_intercept_s_minus1": 0.0028741176516288887,
+        "weighted_affine_slope_m2_s_minus1": 0.07181905148045513,
+        "required_error_multiplier": {
+          "lower_bound": 1.4196757000639204,
+          "exact_lower_bound": "566843477189407589176758460884878015/399276734231547123293950489507658672",
+          "row_indices_0based": [
+            0,
+            5,
+            6
+          ],
+          "exact_weights": [
+            "-4493260801253407/25000000000000000",
+            "60329717638110969/25000000000000000",
+            "-27918228418428781/12500000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 1.41967570106392,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.0,
+          "exact_lower_bound": "0",
+          "row_indices_0based": [],
+          "exact_weights": []
+        },
+        "feasible_discrepancy_upper_s_minus1": 1.000000006938894e-09,
+        "feasible_discrepancy_affine_parameters": [
+          0.0020692713172273955,
+          0.06382736888543361
+        ],
+        "fits_four_reported_errors": true
+      },
+      "nonCu_parity_Q3": {
+        "rows": 10,
+        "dose_range_m_minus2": [
+          0.0,
+          38.51597681541022
+        ],
+        "weighted_affine_intercept_s_minus1": 0.6289846378488776,
+        "weighted_affine_slope_m2_s_minus1": 0.577977502930993,
+        "required_error_multiplier": {
+          "lower_bound": 100.44364560744,
+          "exact_lower_bound": "39498153501275657474557162172328702033000/393236956528288072456604140295553283507",
+          "row_indices_0based": [
+            1,
+            4,
+            8
+          ],
+          "exact_weights": [
+            "-1474240672228397997/62500000000000000",
+            "27057267183994164307/1000000000000000000",
+            "-693883285667959271/200000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 100.44364560844005,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.7655003369676018,
+          "exact_lower_bound": "10356173573384982730969048633814367333921/13528633591997082153500000000000000000000",
+          "row_indices_0based": [
+            1,
+            5,
+            8
+          ],
+          "exact_weights": [
+            "-21207007286937739289/1000000000000000000",
+            "27057267183994164307/1000000000000000000",
+            "-2925129948528212509/500000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.8261375682077025,
+        "feasible_discrepancy_affine_parameters": [
+          0.0,
+          0.6806544468570765
+        ],
+        "fits_four_reported_errors": false
+      },
+      "nonCu_parity_Q4": {
+        "rows": 10,
+        "dose_range_m_minus2": [
+          0.0,
+          38.51597681541022
+        ],
+        "weighted_affine_intercept_s_minus1": 0.7540912754089931,
+        "weighted_affine_slope_m2_s_minus1": 0.47016037574844766,
+        "required_error_multiplier": {
+          "lower_bound": 57.72858791264407,
+          "exact_lower_bound": "7514131158242781844042313445547647684550/130163086088530334973625271069474644273",
+          "row_indices_0based": [
+            0,
+            3,
+            7
+          ],
+          "exact_weights": [
+            "-19419965697284264913/1000000000000000000",
+            "2226437302509840421/100000000000000000",
+            "-2844407327814139297/1000000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 57.72858791364439,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.6123729277456047,
+          "exact_lower_bound": "6817049646899887852767935980718287910767/11132186512549202105000000000000000000000",
+          "row_indices_0based": [
+            0,
+            5,
+            7
+          ],
+          "exact_weights": [
+            "-14730685181456881769/1000000000000000000",
+            "2226437302509840421/100000000000000000",
+            "-7533687843641522441/1000000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.6123729287456058,
+        "feasible_discrepancy_affine_parameters": [
+          0.19792551957439555,
+          0.5592432212236064
+        ],
+        "fits_four_reported_errors": false
+      },
+      "nonCu_parity_Q6": {
+        "rows": 10,
+        "dose_range_m_minus2": [
+          0.0,
+          38.51597681541022
+        ],
+        "weighted_affine_intercept_s_minus1": 0.7835942950203566,
+        "weighted_affine_slope_m2_s_minus1": 0.6179333793715732,
+        "required_error_multiplier": {
+          "lower_bound": 119.53429132660052,
+          "exact_lower_bound": "299611044904722583487860297187417880275/2506486143679916087226284915473320108",
+          "row_indices_0based": [
+            0,
+            3,
+            8
+          ],
+          "exact_weights": [
+            "-25896287802765122433/1000000000000000000",
+            "2874069513057926173/100000000000000000",
+            "-2844407327814139297/1000000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 119.53429132760057,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.6699240492553221,
+          "exact_lower_bound": "9627041430145189437271918456771681677677/14370347565289630865000000000000000000000",
+          "row_indices_0based": [
+            0,
+            5,
+            8
+          ],
+          "exact_weights": [
+            "-21207007286937739289/1000000000000000000",
+            "2874069513057926173/100000000000000000",
+            "-7533687843641522441/1000000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.6699240502553229,
+        "feasible_discrepancy_affine_parameters": [
+          0.1949958571846783,
+          0.7108039224362441
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_charge": {
+        "rows": 10,
+        "dose_range_m_minus2": [
+          0.0,
+          2.952680881636588
+        ],
+        "weighted_affine_intercept_s_minus1": 0.003053584772987933,
+        "weighted_affine_slope_m2_s_minus1": 0.06407076407660518,
+        "required_error_multiplier": {
+          "lower_bound": 1.9156351483924365,
+          "exact_lower_bound": "1036292382960603246931408204523795855/540965425399632866434667500725989903",
+          "row_indices_0based": [
+            0,
+            8,
+            9
+          ],
+          "exact_weights": [
+            "-118066777652241/488281250000000",
+            "59053617632731763/20000000000000000",
+            "-1355440060502399291/500000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 1.9156351493924386,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.0,
+          "exact_lower_bound": "0",
+          "row_indices_0based": [],
+          "exact_weights": []
+        },
+        "feasible_discrepancy_upper_s_minus1": 1e-09,
+        "feasible_discrepancy_affine_parameters": [
+          0.0017756445416269378,
+          0.05508398436402685
+        ],
+        "fits_four_reported_errors": true
+      },
+      "1umCu_parity_Q1": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.07069247174323776,
+        "weighted_affine_slope_m2_s_minus1": 0.08151243852320693,
+        "required_error_multiplier": {
+          "lower_bound": 72.72417099209204,
+          "exact_lower_bound": "620014689171857402313164724464568785300/8525565581755167395237019340577577109",
+          "row_indices_0based": [
+            0,
+            2,
+            10
+          ],
+          "exact_weights": [
+            "-665275077119298341/500000000000000000",
+            "59053617632731763/20000000000000000",
+            "-405532681849497867/250000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 72.72417099309233,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.06707731686978015,
+          "exact_lower_bound": "386192971167674118789952627361302890833/5757430219181334407750000000000000000000",
+          "row_indices_0based": [
+            3,
+            22,
+            25
+          ],
+          "exact_weights": [
+            "-146801588808638761/12500000000000000",
+            "23029720876725337631/1000000000000000000",
+            "-11285593772034236751/1000000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.06707731786978033,
+        "feasible_discrepancy_affine_parameters": [
+          0.12414935018426698,
+          0.0761718386769018
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_parity_Q2": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.015985536759961932,
+        "weighted_affine_slope_m2_s_minus1": 0.0794028423283558,
+        "required_error_multiplier": {
+          "lower_bound": 30.579670745735264,
+          "exact_lower_bound": "140525471061585404484373960834200075050/4595388623704639394390281471052340737",
+          "row_indices_0based": [
+            0,
+            3,
+            14
+          ],
+          "exact_weights": [
+            "-2601402475955769011/1000000000000000000",
+            "86676146532829339/20000000000000000",
+            "-1732404850685697939/1000000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 30.579670746735303,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.03238683160623212,
+          "exact_lower_bound": "59706001078722567437058685067681190523/1843527079297052728500000000000000000000",
+          "row_indices_0based": [
+            3,
+            14,
+            16
+          ],
+          "exact_weights": [
+            "-542825841319168223/500000000000000000",
+            "3687054158594105457/1000000000000000000",
+            "-2601402475955769011/1000000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.03238683260623214,
+        "feasible_discrepancy_affine_parameters": [
+          0.023639395006359955,
+          0.07522664454317662
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_parity_Q3": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.15727456444858556,
+        "weighted_affine_slope_m2_s_minus1": 0.08952246609090447,
+        "required_error_multiplier": {
+          "lower_bound": 129.3293558819456,
+          "exact_lower_bound": "725437561056764419247083977799490394000/5609225810410424375299547496761387713",
+          "row_indices_0based": [
+            0,
+            11,
+            16
+          ],
+          "exact_weights": [
+            "-68472552630481881/31250000000000000",
+            "1354864752319950849/250000000000000000",
+            "-807084331276095801/250000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 129.3293558829457,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.21166152047014752,
+          "exact_lower_bound": "270243058334698717592603907828900702409/1276769900048098038750000000000000000000",
+          "row_indices_0based": [
+            14,
+            16,
+            25
+          ],
+          "exact_weights": [
+            "-9671333359065616087/500000000000000000",
+            "1021415920038478431/50000000000000000",
+            "-542825841319168223/500000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.21166152147014752,
+        "feasible_discrepancy_affine_parameters": [
+          0.21097893994153472,
+          0.07564152975909114
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_parity_Q4": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.1932361692575306,
+        "weighted_affine_slope_m2_s_minus1": 0.0781789456411034,
+        "required_error_multiplier": {
+          "lower_bound": 194.87290094424876,
+          "exact_lower_bound": "73986689509949647401291433752189538400/379666383327030802900215405986103567",
+          "row_indices_0based": [
+            0,
+            5,
+            6
+          ],
+          "exact_weights": [
+            "-7530291454374427/50000000000000000",
+            "214017435816484447/100000000000000000",
+            "-198956852907735593/100000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 194.87290094524894,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.13605219567436364,
+          "exact_lower_bound": "4971251558436825717815959487862635504749/36539296802936933605000000000000000000000",
+          "row_indices_0based": [
+            5,
+            7,
+            20
+          ],
+          "exact_weights": [
+            "-6988876503304498389/1000000000000000000",
+            "7307859360587386721/1000000000000000000",
+            "-79745714320722083/250000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.1360521966743637,
+        "feasible_discrepancy_affine_parameters": [
+          0.21614454541689218,
+          0.07544581462548619
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_parity_Q5": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.0731804219026253,
+        "weighted_affine_slope_m2_s_minus1": 0.0843255097804286,
+        "required_error_multiplier": {
+          "lower_bound": 128.39952535891177,
+          "exact_lower_bound": "2127455093412000182929045626234316578000/16569026150721208818770814264542780483",
+          "row_indices_0based": [
+            0,
+            4,
+            8
+          ],
+          "exact_weights": [
+            "-128658275088750207/200000000000000000",
+            "2497609640010511001/1000000000000000000",
+            "-927159132283379983/500000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 128.39952535991316,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.058047761698475225,
+          "exact_lower_bound": "405016660692515045107580015546305438693/6977300223845734202500000000000000000000",
+          "row_indices_0based": [
+            4,
+            5,
+            22
+          ],
+          "exact_weights": [
+            "-275710752341064469/25000000000000000",
+            "2790920089538293681/250000000000000000",
+            "-33812566127648991/250000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.058047762698475454,
+        "feasible_discrepancy_affine_parameters": [
+          0.05893900197244692,
+          0.08399497210713083
+        ],
+        "fits_four_reported_errors": false
+      },
+      "1umCu_parity_Q6": {
+        "rows": 27,
+        "dose_range_m_minus2": [
+          0.0,
+          32.44568842886789
+        ],
+        "weighted_affine_intercept_s_minus1": 0.09154975553372134,
+        "weighted_affine_slope_m2_s_minus1": 0.06816407464818097,
+        "required_error_multiplier": {
+          "lower_bound": 97.84376101146236,
+          "exact_lower_bound": "195659528646015940386436494033817936440/1999713897170147461395003365413224263",
+          "row_indices_0based": [
+            1,
+            5,
+            7
+          ],
+          "exact_weights": [
+            "-79745714320722083/250000000000000000",
+            "1154275693180122131/500000000000000000",
+            "-198956852907735593/100000000000000000"
+          ]
+        },
+        "feasible_multiplier_upper": 97.84376101246276,
+        "additive_discrepancy_s_minus1": {
+          "lower_bound": 0.05530913427085532,
+          "exact_lower_bound": "1163975264129444753880156935164466019/21044901162786625731250000000000000000",
+          "row_indices_0based": [
+            7,
+            22,
+            23
+          ],
+          "exact_weights": [
+            "-68982237695593751/25000000000000000",
+            "3367184186045860117/250000000000000000",
+            "-2677361809089922607/250000000000000000"
+          ]
+        },
+        "feasible_discrepancy_upper_s_minus1": 0.05530913527085543,
+        "feasible_discrepancy_affine_parameters": [
+          0.10805151878849205,
+          0.06425699988187496
+        ],
+        "fits_four_reported_errors": false
+      }
+    },
+    "footprint": [
+      {
+        "chip": "nonCu",
+        "row": 0,
+        "distance_native_header_says_mm": 0.0,
+        "distance_mm_interpreted_as_native_um": 0.0,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 1.0,
+        "reported_error": 0.04,
+        "any_tunnel_bounds_at_point_estimate": [
+          1.0,
+          1.0
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.6,
+          1
+        ]
+      },
+      {
+        "chip": "nonCu",
+        "row": 1,
+        "distance_native_header_says_mm": 2040.508821348244,
+        "distance_mm_interpreted_as_native_um": 2.040508821348244,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.76,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.5101020514433644,
+          0.76
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.39999999999999997,
+          0.88
+        ]
+      },
+      {
+        "chip": "nonCu",
+        "row": 2,
+        "distance_native_header_says_mm": 4622.835628702366,
+        "distance_mm_interpreted_as_native_um": 4.622835628702366,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.91,
+        "reported_error": 0.04,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.7000000000000001,
+          0.91
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.5,
+          1
+        ]
+      },
+      {
+        "chip": "nonCu",
+        "row": 3,
+        "distance_native_header_says_mm": 4060.5,
+        "distance_mm_interpreted_as_native_um": 4.0605,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.93,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.735424868893541,
+          0.93
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.5641101056459328,
+          1
+        ]
+      },
+      {
+        "chip": "nonCu",
+        "row": 4,
+        "distance_native_header_says_mm": 5361.310404182917,
+        "distance_mm_interpreted_as_native_um": 5.361310404182918,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.81,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.5641101056459328,
+          0.81
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.4432235637169979,
+          0.93
+        ]
+      },
+      {
+        "chip": "nonCu",
+        "row": 5,
+        "distance_native_header_says_mm": 6659.90009309449,
+        "distance_mm_interpreted_as_native_um": 6.659900093094491,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.72,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.4708497377870819,
+          0.72
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.3675444679663241,
+          0.84
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 0,
+        "distance_native_header_says_mm": 0.0,
+        "distance_mm_interpreted_as_native_um": 0.0,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.99,
+        "reported_error": 0.04,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.8999999999999999,
+          0.99
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.5876894374382339,
+          1
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 1,
+        "distance_native_header_says_mm": 2020.0089108714346,
+        "distance_mm_interpreted_as_native_um": 2.0200089108714345,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.47,
+        "reported_error": 0.04,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.2719890110719482,
+          0.47
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.16933761370819247,
+          0.63
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 2,
+        "distance_native_header_says_mm": 4622.749073873684,
+        "distance_mm_interpreted_as_native_um": 4.622749073873684,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.2,
+        "reported_error": 0.02,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.10557280900008413,
+          0.2
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.061916848035314095,
+          0.28
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 3,
+        "distance_native_header_says_mm": 4059.9999999999995,
+        "distance_mm_interpreted_as_native_um": 4.06,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.18,
+        "reported_error": 0.02,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.09446148618625833,
+          0.18
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.0513167019494862,
+          0.26
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 4,
+        "distance_native_header_says_mm": 5360.6791547340345,
+        "distance_mm_interpreted_as_native_um": 5.360679154734035,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.2,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.10557280900008413,
+          0.2
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.0408336953374561,
+          0.32
+        ]
+      },
+      {
+        "chip": "1umCu",
+        "row": 5,
+        "distance_native_header_says_mm": 6659.90009309449,
+        "distance_mm_interpreted_as_native_um": 6.659900093094491,
+        "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
+        "reported_poisoning_contrast": 0.2,
+        "reported_error": 0.03,
+        "any_tunnel_bounds_at_point_estimate": [
+          0.10557280900008413,
+          0.2
+        ],
+        "any_tunnel_bounds_four_error_envelope": [
+          0.0408336953374561,
+          0.32
+        ]
+      }
+    ],
+    "total_rate_points": 212,
+    "interpretation": "Exploratory deterministic consistency test. Four reported errors is NOT a calibrated confidence region."
+  },
+  "mechanical": {
+    "phase_bins": 714,
+    "phase_bin_s": 0.001,
+    "nominal_period_s_from_notebook": 0.7144833333333334,
+    "total_counts": 12697600,
+    "contingency_counts": [
+      12335124,
+      171433,
+      170448,
+      20595
+    ],
+    "pooled_MI_bits_plugin": 0.0027806634947902496,
+    "weighted_phase_conditional_MI_bits_plugin": 8.802561620681492e-05,
+    "total_covariance": 0.0013944228580913484,
+    "within_phase_covariance": 0.00022066657687963678,
+    "between_phase_covariance": 0.0011737562812117112,
+    "between_phase_covariance_fraction": 0.841750602696172,
+    "covariance_identity_residual": 4.336808689942018e-19,
+    "interpretation": "Descriptive reconstruction from phase-aggregated counts; no independent-trial CI or microscopic source identification."
+  },
+  "iaia": {
+    "observed_nonCu_to_Cu_rate_ratios": {
+      "single_qubit": [
+        13.52941176470588,
+        8.958333333333334,
+        10.956521739130435
+      ],
+      "twofold": [
+        81.25,
+        75.0,
+        114.0
+      ],
+      "threefold": 200.0
+    },
+    "injection_Figure2a_rows": 30,
+    "nonCu_peak_delay_us": 32.0,
+    "interpretation": "Ratios of published observed rates, not uncertainty intervals or independent event-level reconstructions."
+  },
+  "synthetic_observation_witness": {
+    "contrast": 0.2,
+    "homogeneous_intensity": 0.11157177565710488,
+    "homogeneous_any_probability": 0.10557280900008413,
+    "heterogeneous_model": {
+      "intensities": [
+        0.0,
+        5.0
+      ],
+      "weights": [
+        0.799990919601798,
+        0.20000908039820195
+      ]
+    },
+    "heterogeneous_any_probability": 0.19866142981514304,
+    "heterogeneous_contrast": 0.2,
+    "scope": "Synthetic scalar parity-observation witnesses, NOT models verified against complete source datasets."
+  }
+}

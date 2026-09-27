@@ -1,0 +1,13 @@
+{
+  "record": "11548753",
+  "role": "screened calibration alternative; no measured analysis",
+  "files": [
+    {
+      "url": "https://zenodo.org/records/11548753/files/Figure_3_and_SM8.ipynb",
+      "name": "Figure_3_and_SM8.ipynb",
+      "bytes": 949255,
+      "sha256": "6c0f0114388643825bd017a9afd11a9588cdee8cc9b5985baec14d041fd9fdc6",
+      "md5": "db68e4a6a8bebec74fb205bc82694d44"
+    }
+  ]
+}
