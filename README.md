@@ -14,6 +14,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 | [NIST Bell-record causal audit](studies/nist-bell-causal-audit/README.md) | What conditional influence bounds do public trial records support? | Full raw reconstruction, measured marginals and explicit calibration limits |
 | [Synthetic timing shifts](studies/synthetic-timing-shifts/README.md) | Could sparse records reveal timing shifts or effects that reverse sign? | Synthetic and real-background injections; artificial assignments and held-out scores |
 | [Spacetime causal influence](studies/spacetime-causal-influence/README.md) | Can a remote intervention change a complete local record outside its future light cone? | Conditional protocol, formal companion and synthetic sensitivity study |
+| [Collapse compatibility](studies/collapse-compatibility/README.md) | What can interference, mechanical, space and radiation data jointly determine about collapse noise? | Reproduced sources; two conditional feasibility studies and explicit inference limits |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
 and theory comparisons, sensitivity checks, and an explicit list of missing

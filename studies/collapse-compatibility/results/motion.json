@@ -1,0 +1,5135 @@
+{
+  "data": {
+    "assembly_upper": {
+      "all_cross_terms_upper": 2.62409972959e-34,
+      "parts": {
+        "beam": 4.57071959773e-36,
+        "glue_mass_bound": 4.08499014997e-35,
+        "load": 5.50184035276e-35,
+        "magnet": 6.36639514566e-38
+      },
+      "q0_upper": 3.56162165981e-24
+    },
+    "benchmark": {
+      "a_lambda_over_tau_s_minus2": 3.56534785835e-05,
+      "density_kg_m3": 2200.0,
+      "frozen_atom_a": 3.56534785835e-05,
+      "lambda_s_inverse": 35.6534785835,
+      "motion_renormalization": 771693104.893,
+      "radius_m": 1e-07,
+      "rc_m": 1e-07,
+      "separation_m": 1e-07,
+      "separation_perpendicular_to_velocity": true,
+      "speed_m_s": 30146.0754902,
+      "stationary_a": 4.6201629064e-14,
+      "target_exponent": 10.0,
+      "tau_s": 1000000.0,
+      "time_s": 0.01
+    },
+    "claim": "sufficient joint envelope survivor conditional on declared source/mode/response and trajectory-error bounds; no new empirical exclusion",
+    "common_frame_profile": [
+      {
+        "a_required": 3.50585709641e-05,
+        "benchmark_cos_angle": 0.0,
+        "common_u_icrf_m_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "force_fraction_upper": 0.00491566691869,
+        "torque_fraction_upper": 0.106052010786
+      },
+      {
+        "a_required": 3.30696805444e-05,
+        "benchmark_cos_angle": 0.152153008318,
+        "common_u_icrf_m_s": [
+          5000.0,
+          0.0,
+          0.0
+        ],
+        "force_fraction_upper": 0.0056447983616,
+        "torque_fraction_upper": 0.0926517282048
+      },
+      {
+        "a_required": 4.01051649972e-05,
+        "benchmark_cos_angle": 0.0820556861758,
+        "common_u_icrf_m_s": [
+          0.0,
+          5000.0,
+          0.0
+        ],
+        "force_fraction_upper": 0.0068457138364,
+        "torque_fraction_upper": 0.105400613743
+      },
+      {
+        "a_required": 3.74823320634e-05,
+        "benchmark_cos_angle": 0.0,
+        "common_u_icrf_m_s": [
+          0.0,
+          0.0,
+          5000.0
+        ],
+        "force_fraction_upper": 0.00639801180833,
+        "torque_fraction_upper": 0.104875066386
+      },
+      {
+        "a_required": 3.90456749841e-05,
+        "benchmark_cos_angle": -0.128067387117,
+        "common_u_icrf_m_s": [
+          -5000.0,
+          -0.0,
+          -0.0
+        ],
+        "force_fraction_upper": 0.00666486517407,
+        "torque_fraction_upper": 0.129335587409
+      },
+      {
+        "a_required": 3.0964173292e-05,
+        "benchmark_cos_angle": -0.106730893203,
+        "common_u_icrf_m_s": [
+          -0.0,
+          -5000.0,
+          -0.0
+        ],
+        "force_fraction_upper": 0.00528540075953,
+        "torque_fraction_upper": 0.110420446823
+      },
+      {
+        "a_required": 3.35144659204e-05,
+        "benchmark_cos_angle": 0.0,
+        "common_u_icrf_m_s": [
+          -0.0,
+          -0.0,
+          -5000.0
+        ],
+        "force_fraction_upper": 0.00572072058765,
+        "torque_fraction_upper": 0.107235991664
+      },
+      {
+        "a_required": 3.38064289671e-05,
+        "benchmark_cos_angle": 0.32178517575,
+        "common_u_icrf_m_s": [
+          10000.0,
+          0.0,
+          0.0
+        ],
+        "force_fraction_upper": 0.007373489434,
+        "torque_fraction_upper": 0.0865800567837
+      },
+      {
+        "a_required": 4.58071106338e-05,
+        "benchmark_cos_angle": 0.145597296376,
+        "common_u_icrf_m_s": [
+          0.0,
+          10000.0,
+          0.0
+        ],
+        "force_fraction_upper": 0.00999094718312,
+        "torque_fraction_upper": 0.106311514531
+      },
+      {
+        "a_required": 4.06286214697e-05,
+        "benchmark_cos_angle": 0.0,
+        "common_u_icrf_m_s": [
+          0.0,
+          0.0,
+          10000.0
+        ],
+        "force_fraction_upper": 0.00886147162766,
+        "torque_fraction_upper": 0.104397599274
+      },
+      {
+        "a_required": 4.46096769207e-05,
+        "benchmark_cos_angle": -0.23221132433,
+        "common_u_icrf_m_s": [
+          -10000.0,
+          -0.0,
+          -0.0
+        ],
+        "force_fraction_upper": 0.00972977600647,
+        "torque_fraction_upper": 0.159534003733
+      },
+      {
+        "a_required": 2.83464791275e-05,
+        "benchmark_cos_angle": -0.243932766649,
+        "common_u_icrf_m_s": [
+          -0.0,
+          -10000.0,
+          -0.0
+        ],
+        "force_fraction_upper": 0.00618262474694,
+        "torque_fraction_upper": 0.120773193053
+      },
+      {
+        "a_required": 3.29738275086e-05,
+        "benchmark_cos_angle": 0.0,
+        "common_u_icrf_m_s": [
+          -0.0,
+          -0.0,
+          -10000.0
+        ],
+        "force_fraction_upper": 0.00719189148814,
+        "torque_fraction_upper": 0.108217581943
+      }
+    ],
+    "comparisons": [
+      {
+        "benchmark_a": 3.56534785835e-05,
+        "force_fraction_upper": 0.00499908069237,
+        "interpretation": "sufficient envelope survivor using upper response bounds; not calibrated joint coverage",
+        "joint_a_upper_s_minus2": 0.00035468469106,
+        "lpf_velocity_error_radius_m_s": 0.0,
+        "sensor_a_upper_s_minus2": 0.00713200701839,
+        "sodium_one_se_sensitivity_a": 284.07805658,
+        "space_a_upper_s_minus2": 0.00035468469106,
+        "survives_half_envelopes_and_10pct_benchmark_stress": true,
+        "torque_fraction_upper": 0.100521616755
+      },
+      {
+        "benchmark_a": 3.56534785835e-05,
+        "force_fraction_upper": 0.00499908069237,
+        "interpretation": "sufficient envelope survivor using upper response bounds; not calibrated joint coverage",
+        "joint_a_upper_s_minus2": 0.000330579031026,
+        "lpf_velocity_error_radius_m_s": 2000.0,
+        "sensor_a_upper_s_minus2": 0.00713200701839,
+        "sodium_one_se_sensitivity_a": 284.07805658,
+        "space_a_upper_s_minus2": 0.000330579031026,
+        "survives_half_envelopes_and_10pct_benchmark_stress": true,
+        "torque_fraction_upper": 0.107851603512
+      },
+      {
+        "benchmark_a": 3.56534785835e-05,
+        "force_fraction_upper": 0.00499908069237,
+        "interpretation": "sufficient envelope survivor using upper response bounds; not calibrated joint coverage",
+        "joint_a_upper_s_minus2": 0.00023415639089,
+        "lpf_velocity_error_radius_m_s": 10000.0,
+        "sensor_a_upper_s_minus2": 0.00713200701839,
+        "sodium_one_se_sensitivity_a": 284.07805658,
+        "space_a_upper_s_minus2": 0.00023415639089,
+        "survives_half_envelopes_and_10pct_benchmark_stress": true,
+        "torque_fraction_upper": 0.15226352972
+      }
+    ],
+    "finite_tau_limit_checks": [
+      {
+        "distributional_limit_s": 1.88521584399e-09,
+        "finite_tau_factor_times_tau_s": 3.39337630746e-10,
+        "length_m": 0.000113,
+        "omega_rad_s": 22196.6087347,
+        "ratio": 0.179999352237,
+        "speed_m_s": 30000.0,
+        "tau_s": 3.76666666667e-10
+      },
+      {
+        "distributional_limit_s": 1.88521584399e-09,
+        "finite_tau_factor_times_tau_s": 1.38706243798e-09,
+        "length_m": 0.000113,
+        "omega_rad_s": 22196.6087347,
+        "ratio": 0.735757893401,
+        "speed_m_s": 30000.0,
+        "tau_s": 3.76666666667e-09
+      },
+      {
+        "distributional_limit_s": 1.88521584399e-09,
+        "finite_tau_factor_times_tau_s": 1.87894744058e-09,
+        "length_m": 0.000113,
+        "omega_rad_s": 22196.6087347,
+        "ratio": 0.996674967788,
+        "speed_m_s": 30000.0,
+        "tau_s": 3.76666666667e-07
+      },
+      {
+        "distributional_limit_s": 1.88521584399e-09,
+        "finite_tau_factor_times_tau_s": 1.88521584162e-09,
+        "length_m": 0.000113,
+        "omega_rad_s": 22196.6087347,
+        "ratio": 0.999999998744,
+        "speed_m_s": 30000.0,
+        "tau_s": 1.0
+      },
+      {
+        "distributional_limit_s": 7.81583692185e-07,
+        "finite_tau_factor_times_tau_s": 1.4068577427e-07,
+        "length_m": 0.046,
+        "omega_rad_s": 0.0188495559215,
+        "ratio": 0.180000907999,
+        "speed_m_s": 29427.5029649,
+        "tau_s": 1.56316354992e-07
+      },
+      {
+        "distributional_limit_s": 7.81583692185e-07,
+        "finite_tau_factor_times_tau_s": 5.75057143821e-07,
+        "length_m": 0.046,
+        "omega_rad_s": 0.0188495559215,
+        "ratio": 0.735758882345,
+        "speed_m_s": 29427.5029649,
+        "tau_s": 1.56316354992e-06
+      },
+      {
+        "distributional_limit_s": 7.81583692185e-07,
+        "finite_tau_factor_times_tau_s": 7.78984913408e-07,
+        "length_m": 0.046,
+        "omega_rad_s": 0.0188495559215,
+        "ratio": 0.996674983366,
+        "speed_m_s": 29427.5029649,
+        "tau_s": 0.000156316354992
+      },
+      {
+        "distributional_limit_s": 7.81583692185e-07,
+        "finite_tau_factor_times_tau_s": 7.81583284941e-07,
+        "length_m": 0.046,
+        "omega_rad_s": 0.0188495559215,
+        "ratio": 0.99999947895,
+        "speed_m_s": 29427.5029649,
+        "tau_s": 1.0
+      }
+    ],
+    "finite_window_zero_speed": {
+      "evidence": "response diagnostic, not LPF actual segment length",
+      "frequency_hz": 0.003,
+      "linear_detrend_per_a": 0.0,
+      "lpf_example_duration_s": 4096.0,
+      "no_detrend_per_a": 1.62608839865e-32,
+      "projection_zero_verified": true
+    },
+    "general_spectrum": {
+      "constructive_atom": "C_t=a/2, temporal measure pi*a*delta_0 under C=int S exp(-i omega t)domega/(2pi)",
+      "physical_kernel_LP_enabled": false,
+      "reason": "constructive spectrum suffices here; no continuum interpolation/tail certificate asserted"
+    },
+    "independent_triangle_check": {
+      "exact_prescribed_per_a": 0.000196133746628,
+      "local_markov_per_a": 0.000196133746628
+    },
+    "nuisance_margins": {
+      "sensor_additional_PSD_gain_allowed": 200.036779067,
+      "sensor_tenfold_response_and_half_envelope": true,
+      "space_additional_PSD_gain_allowed_2km_s": 9.27199937172
+    },
+    "profile_scope": "13 sampled velocities on coordinate axes, speeds 0/5/10 km/s about SSB; no continuum or all-frame exclusion",
+    "relative_pair": {
+      "along_velocity_frozen_factor_at_3mHz": 1.45014396792e-14,
+      "baseline_m": 0.376,
+      "independent_mass_factor": 0.5,
+      "scope": "geometry diagnostic only; physical bound allows all orientations and delayed correlations"
+    },
+    "scope": "Gaussian random-unitary ensemble dephasing, with conditional local-Markov interferometry; not outcome selection",
+    "sodium": {
+      "max_exponent": 1.14189498406e-08,
+      "max_visibility_change_over_se": 1.29223588564e-07,
+      "rows": [
+        {
+          "absolute_harmonic_condition_number": 4.66926096581,
+          "baseline_visibility": 0.0116775411926,
+          "max_change_over_measured_visibility_se": 3.41639858852e-08,
+          "moving_visibility_interval": [
+            0.0116775409408,
+            0.0116775413431
+          ],
+          "scan": "Sodium_int_powerscan_1"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.66926096581,
+          "baseline_visibility": 0.0116775411926,
+          "max_change_over_measured_visibility_se": 2.8307014043e-08,
+          "moving_visibility_interval": [
+            0.0116775409408,
+            0.0116775413431
+          ],
+          "scan": "Sodium_int_powerscan_2"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.119121953047,
+          "max_change_over_measured_visibility_se": 1.22312629378e-07,
+          "moving_visibility_interval": [
+            0.119121952186,
+            0.119121953047
+          ],
+          "scan": "Sodium_int_powerscan_3"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.119121953047,
+          "max_change_over_measured_visibility_se": 1.22119683488e-07,
+          "moving_visibility_interval": [
+            0.119121952186,
+            0.119121953047
+          ],
+          "scan": "Sodium_int_powerscan_4"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.108774753804,
+          "max_change_over_measured_visibility_se": 9.94814595994e-08,
+          "moving_visibility_interval": [
+            0.108774753024,
+            0.108774753804
+          ],
+          "scan": "Sodium_int_powerscan_5"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.108774753804,
+          "max_change_over_measured_visibility_se": 1.07591571849e-07,
+          "moving_visibility_interval": [
+            0.108774753024,
+            0.108774753804
+          ],
+          "scan": "Sodium_int_powerscan_6"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0617943407209,
+          "max_change_over_measured_visibility_se": 6.39677210414e-08,
+          "moving_visibility_interval": [
+            0.0617943402794,
+            0.0617943407209
+          ],
+          "scan": "Sodium_int_powerscan_7"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0617943407209,
+          "max_change_over_measured_visibility_se": 7.26391147983e-08,
+          "moving_visibility_interval": [
+            0.0617943402794,
+            0.0617943407209
+          ],
+          "scan": "Sodium_int_powerscan_8"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0067144073,
+          "baseline_visibility": 0.0974547386295,
+          "max_change_over_measured_visibility_se": 8.60651613078e-08,
+          "moving_visibility_interval": [
+            0.0974547379166,
+            0.0974547386315
+          ],
+          "scan": "Sodium_int_powerscan_9"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0067144073,
+          "baseline_visibility": 0.0974547386295,
+          "max_change_over_measured_visibility_se": 7.82158364535e-08,
+          "moving_visibility_interval": [
+            0.0974547379166,
+            0.0974547386315
+          ],
+          "scan": "Sodium_int_powerscan_10"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0067144073,
+          "baseline_visibility": 0.0974547386295,
+          "max_change_over_measured_visibility_se": 1.01846894336e-07,
+          "moving_visibility_interval": [
+            0.0974547379166,
+            0.0974547386315
+          ],
+          "scan": "Sodium_int_powerscan_11"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.6744399976,
+          "baseline_visibility": 0.0238449040292,
+          "max_change_over_measured_visibility_se": 5.09632327867e-08,
+          "moving_visibility_interval": [
+            0.0238449037064,
+            0.0238449041738
+          ],
+          "scan": "Sodium_int_powerscan_12"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.6744399976,
+          "baseline_visibility": 0.0238449040292,
+          "max_change_over_measured_visibility_se": 3.45166838221e-08,
+          "moving_visibility_interval": [
+            0.0238449037064,
+            0.0238449041738
+          ],
+          "scan": "Sodium_int_powerscan_13"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.6744399976,
+          "baseline_visibility": 0.0238449040292,
+          "max_change_over_measured_visibility_se": 4.20214884465e-08,
+          "moving_visibility_interval": [
+            0.0238449037064,
+            0.0238449041738
+          ],
+          "scan": "Sodium_int_powerscan_14"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.06944912077,
+          "baseline_visibility": 0.0163536179213,
+          "max_change_over_measured_visibility_se": 3.78289166831e-08,
+          "moving_visibility_interval": [
+            0.0163536176176,
+            0.0163536181035
+          ],
+          "scan": "Sodium_int_powerscan_15"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.06944912077,
+          "baseline_visibility": 0.0163536179213,
+          "max_change_over_measured_visibility_se": 3.65295035119e-08,
+          "moving_visibility_interval": [
+            0.0163536176176,
+            0.0163536181035
+          ],
+          "scan": "Sodium_int_powerscan_16"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.06944912077,
+          "baseline_visibility": 0.0163536179213,
+          "max_change_over_measured_visibility_se": 3.60389100476e-08,
+          "moving_visibility_interval": [
+            0.0163536176176,
+            0.0163536181035
+          ],
+          "scan": "Sodium_int_powerscan_17"
+        },
+        {
+          "absolute_harmonic_condition_number": 9.47391926404,
+          "baseline_visibility": 0.00755669811381,
+          "max_change_over_measured_visibility_se": 4.05990473584e-08,
+          "moving_visibility_interval": [
+            0.00755669782114,
+            0.0075566983453
+          ],
+          "scan": "Sodium_int_powerscan_18"
+        },
+        {
+          "absolute_harmonic_condition_number": 9.47391926404,
+          "baseline_visibility": 0.00755669811381,
+          "max_change_over_measured_visibility_se": 3.30778112972e-08,
+          "moving_visibility_interval": [
+            0.00755669782114,
+            0.0075566983453
+          ],
+          "scan": "Sodium_int_powerscan_19"
+        },
+        {
+          "absolute_harmonic_condition_number": 3.10274215119,
+          "baseline_visibility": 0.0211765829797,
+          "max_change_over_measured_visibility_se": 4.53696791116e-08,
+          "moving_visibility_interval": [
+            0.0211765826612,
+            0.0211765831412
+          ],
+          "scan": "Sodium_int_powerscan_20"
+        },
+        {
+          "absolute_harmonic_condition_number": 3.10200662256,
+          "baseline_visibility": 0.0213818164048,
+          "max_change_over_measured_visibility_se": 3.14204153019e-08,
+          "moving_visibility_interval": [
+            0.0213818160833,
+            0.0213818165678
+          ],
+          "scan": "Sodium_int_powerscan_21"
+        },
+        {
+          "absolute_harmonic_condition_number": 8.13511331179,
+          "baseline_visibility": 0.00839575660368,
+          "max_change_over_measured_visibility_se": 4.1271630624e-08,
+          "moving_visibility_interval": [
+            0.00839575632054,
+            0.0083957568207
+          ],
+          "scan": "Sodium_int_powerscan_22"
+        },
+        {
+          "absolute_harmonic_condition_number": 8.13511331179,
+          "baseline_visibility": 0.00839575660368,
+          "max_change_over_measured_visibility_se": 3.16198056074e-08,
+          "moving_visibility_interval": [
+            0.00839575632054,
+            0.0083957568207
+          ],
+          "scan": "Sodium_int_powerscan_23"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.6399570357,
+          "baseline_visibility": 0.0104213600367,
+          "max_change_over_measured_visibility_se": 4.53692326556e-08,
+          "moving_visibility_interval": [
+            0.0104213597045,
+            0.010421360283
+          ],
+          "scan": "Sodium_int_powerscan_24"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.6399570357,
+          "baseline_visibility": 0.0104213600367,
+          "max_change_over_measured_visibility_se": 3.80877672161e-08,
+          "moving_visibility_interval": [
+            0.0104213597045,
+            0.010421360283
+          ],
+          "scan": "Sodium_int_powerscan_25"
+        },
+        {
+          "absolute_harmonic_condition_number": 3.22117518799,
+          "baseline_visibility": 0.0256659711063,
+          "max_change_over_measured_visibility_se": 5.59847504462e-08,
+          "moving_visibility_interval": [
+            0.0256659707083,
+            0.0256659713058
+          ],
+          "scan": "Sodium_int_powerscan_26"
+        },
+        {
+          "absolute_harmonic_condition_number": 3.22117518799,
+          "baseline_visibility": 0.0256659711063,
+          "max_change_over_measured_visibility_se": 4.17461532147e-08,
+          "moving_visibility_interval": [
+            0.0256659707083,
+            0.0256659713058
+          ],
+          "scan": "Sodium_int_powerscan_27"
+        },
+        {
+          "absolute_harmonic_condition_number": 3.22117518799,
+          "baseline_visibility": 0.0256659711063,
+          "max_change_over_measured_visibility_se": 6.37593743294e-08,
+          "moving_visibility_interval": [
+            0.0256659707083,
+            0.0256659713058
+          ],
+          "scan": "Sodium_int_powerscan_28"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.65934003243,
+          "baseline_visibility": 0.0492876569048,
+          "max_change_over_measured_visibility_se": 6.60253874841e-08,
+          "moving_visibility_interval": [
+            0.0492876564245,
+            0.0492876570161
+          ],
+          "scan": "Sodium_int_powerscan_29"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.65934003243,
+          "baseline_visibility": 0.0492876569048,
+          "max_change_over_measured_visibility_se": 4.86863795233e-08,
+          "moving_visibility_interval": [
+            0.0492876564245,
+            0.0492876570161
+          ],
+          "scan": "Sodium_int_powerscan_30"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.65934003243,
+          "baseline_visibility": 0.0492876569048,
+          "max_change_over_measured_visibility_se": 6.50999183843e-08,
+          "moving_visibility_interval": [
+            0.0492876564245,
+            0.0492876570161
+          ],
+          "scan": "Sodium_int_powerscan_31"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.65934003243,
+          "baseline_visibility": 0.0492876569048,
+          "max_change_over_measured_visibility_se": 5.93592311344e-08,
+          "moving_visibility_interval": [
+            0.0492876564245,
+            0.0492876570161
+          ],
+          "scan": "Sodium_int_powerscan_32"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.14193688905,
+          "baseline_visibility": 0.0738309130094,
+          "max_change_over_measured_visibility_se": 8.63530151778e-08,
+          "moving_visibility_interval": [
+            0.073830912431,
+            0.0738309130441
+          ],
+          "scan": "Sodium_int_powerscan_33"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.14193688905,
+          "baseline_visibility": 0.0738309130094,
+          "max_change_over_measured_visibility_se": 7.48426495226e-08,
+          "moving_visibility_interval": [
+            0.073830912431,
+            0.0738309130441
+          ],
+          "scan": "Sodium_int_powerscan_34"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.14193688905,
+          "baseline_visibility": 0.0738309130094,
+          "max_change_over_measured_visibility_se": 6.45778990824e-08,
+          "moving_visibility_interval": [
+            0.073830912431,
+            0.0738309130441
+          ],
+          "scan": "Sodium_int_powerscan_35"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.109443405904,
+          "max_change_over_measured_visibility_se": 9.76134254065e-08,
+          "moving_visibility_interval": [
+            0.10944340511,
+            0.109443405904
+          ],
+          "scan": "Sodium_int_powerscan_36"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.109443405904,
+          "max_change_over_measured_visibility_se": 9.93685713112e-08,
+          "moving_visibility_interval": [
+            0.10944340511,
+            0.109443405904
+          ],
+          "scan": "Sodium_int_powerscan_37"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.109443405904,
+          "max_change_over_measured_visibility_se": 9.50649330016e-08,
+          "moving_visibility_interval": [
+            0.10944340511,
+            0.109443405904
+          ],
+          "scan": "Sodium_int_powerscan_38"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.116475293272,
+          "max_change_over_measured_visibility_se": 1.29223588564e-07,
+          "moving_visibility_interval": [
+            0.116475292434,
+            0.116475293272
+          ],
+          "scan": "Sodium_int_powerscan_39"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.116475293272,
+          "max_change_over_measured_visibility_se": 1.25558144559e-07,
+          "moving_visibility_interval": [
+            0.116475292434,
+            0.116475293272
+          ],
+          "scan": "Sodium_int_powerscan_40"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.116475293272,
+          "max_change_over_measured_visibility_se": 1.07495333883e-07,
+          "moving_visibility_interval": [
+            0.116475292434,
+            0.116475293272
+          ],
+          "scan": "Sodium_int_powerscan_41"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0836840349933,
+          "max_change_over_measured_visibility_se": 7.75487149958e-08,
+          "moving_visibility_interval": [
+            0.0836840343944,
+            0.0836840349933
+          ],
+          "scan": "Sodium_int_powerscan_42"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0836840349933,
+          "max_change_over_measured_visibility_se": 8.42538952845e-08,
+          "moving_visibility_interval": [
+            0.0836840343944,
+            0.0836840349933
+          ],
+          "scan": "Sodium_int_powerscan_43"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0836840349933,
+          "max_change_over_measured_visibility_se": 8.35025466094e-08,
+          "moving_visibility_interval": [
+            0.0836840343944,
+            0.0836840349933
+          ],
+          "scan": "Sodium_int_powerscan_44"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0445522284878,
+          "max_change_over_measured_visibility_se": 4.45126751201e-08,
+          "moving_visibility_interval": [
+            0.0445522281696,
+            0.0445522284878
+          ],
+          "scan": "Sodium_int_powerscan_45"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0445522284878,
+          "max_change_over_measured_visibility_se": 5.52573382156e-08,
+          "moving_visibility_interval": [
+            0.0445522281696,
+            0.0445522284878
+          ],
+          "scan": "Sodium_int_powerscan_46"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0445522284878,
+          "max_change_over_measured_visibility_se": 5.61378939451e-08,
+          "moving_visibility_interval": [
+            0.0445522281696,
+            0.0445522284878
+          ],
+          "scan": "Sodium_int_powerscan_47"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0207410012014,
+          "max_change_over_measured_visibility_se": 2.9706723223e-08,
+          "moving_visibility_interval": [
+            0.0207410010534,
+            0.0207410012014
+          ],
+          "scan": "Sodium_int_powerscan_48"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0207410012014,
+          "max_change_over_measured_visibility_se": 2.26957608721e-08,
+          "moving_visibility_interval": [
+            0.0207410010534,
+            0.0207410012014
+          ],
+          "scan": "Sodium_int_powerscan_49"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0207410012014,
+          "max_change_over_measured_visibility_se": 3.13899615983e-08,
+          "moving_visibility_interval": [
+            0.0207410010534,
+            0.0207410012014
+          ],
+          "scan": "Sodium_int_powerscan_50"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0110058047678,
+          "max_change_over_measured_visibility_se": 1.08559923903e-08,
+          "moving_visibility_interval": [
+            0.0110058046892,
+            0.0110058047678
+          ],
+          "scan": "Sodium_int_powerscan_51"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0110058047678,
+          "max_change_over_measured_visibility_se": 1.35290434144e-08,
+          "moving_visibility_interval": [
+            0.0110058046892,
+            0.0110058047678
+          ],
+          "scan": "Sodium_int_powerscan_52"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0110058047678,
+          "max_change_over_measured_visibility_se": 7.5697784352e-09,
+          "moving_visibility_interval": [
+            0.0110058046892,
+            0.0110058047678
+          ],
+          "scan": "Sodium_int_powerscan_53"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.110489311459,
+          "max_change_over_measured_visibility_se": 9.74836185676e-08,
+          "moving_visibility_interval": [
+            0.110489310666,
+            0.110489311459
+          ],
+          "scan": "Sodium_int_powerscan_54"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.110489311459,
+          "max_change_over_measured_visibility_se": 1.13600967537e-07,
+          "moving_visibility_interval": [
+            0.110489310666,
+            0.110489311459
+          ],
+          "scan": "Sodium_int_powerscan_55"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.110489311459,
+          "max_change_over_measured_visibility_se": 1.07796848618e-07,
+          "moving_visibility_interval": [
+            0.110489310666,
+            0.110489311459
+          ],
+          "scan": "Sodium_int_powerscan_56"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.51627956869,
+          "baseline_visibility": 0.0234705357853,
+          "max_change_over_measured_visibility_se": 3.38343123496e-08,
+          "moving_visibility_interval": [
+            0.0234705354786,
+            0.0234705359139
+          ],
+          "scan": "Sodium_int_powerscan_57"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.51627956869,
+          "baseline_visibility": 0.0234705357853,
+          "max_change_over_measured_visibility_se": 3.93521786321e-08,
+          "moving_visibility_interval": [
+            0.0234705354786,
+            0.0234705359139
+          ],
+          "scan": "Sodium_int_powerscan_58"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.51627956869,
+          "baseline_visibility": 0.0234705357853,
+          "max_change_over_measured_visibility_se": 3.26598109857e-08,
+          "moving_visibility_interval": [
+            0.0234705354786,
+            0.0234705359139
+          ],
+          "scan": "Sodium_int_powerscan_59"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.82054200188,
+          "baseline_visibility": 0.0193649497433,
+          "max_change_over_measured_visibility_se": 3.21957135553e-08,
+          "moving_visibility_interval": [
+            0.0193649494651,
+            0.0193649498687
+          ],
+          "scan": "Sodium_int_powerscan_60"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.82054200188,
+          "baseline_visibility": 0.0193649497433,
+          "max_change_over_measured_visibility_se": 2.9537554287e-08,
+          "moving_visibility_interval": [
+            0.0193649494651,
+            0.0193649498687
+          ],
+          "scan": "Sodium_int_powerscan_61"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.82054200188,
+          "baseline_visibility": 0.0193649497433,
+          "max_change_over_measured_visibility_se": 2.86705120764e-08,
+          "moving_visibility_interval": [
+            0.0193649494651,
+            0.0193649498687
+          ],
+          "scan": "Sodium_int_powerscan_62"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.119156720668,
+          "max_change_over_measured_visibility_se": 1.14973190806e-07,
+          "moving_visibility_interval": [
+            0.119156719808,
+            0.119156720668
+          ],
+          "scan": "Sodium_int_powerscan_63"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.119156720668,
+          "max_change_over_measured_visibility_se": 1.14407907365e-07,
+          "moving_visibility_interval": [
+            0.119156719808,
+            0.119156720668
+          ],
+          "scan": "Sodium_int_powerscan_64"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.119156720668,
+          "max_change_over_measured_visibility_se": 1.17057835746e-07,
+          "moving_visibility_interval": [
+            0.119156719808,
+            0.119156720668
+          ],
+          "scan": "Sodium_int_powerscan_65"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0929347284212,
+          "max_change_over_measured_visibility_se": 8.83326965864e-08,
+          "moving_visibility_interval": [
+            0.0929347277556,
+            0.0929347284212
+          ],
+          "scan": "Sodium_int_powerscan_66"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0929347284212,
+          "max_change_over_measured_visibility_se": 9.74269177646e-08,
+          "moving_visibility_interval": [
+            0.0929347277556,
+            0.0929347284212
+          ],
+          "scan": "Sodium_int_powerscan_67"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0929347284212,
+          "max_change_over_measured_visibility_se": 9.49372348792e-08,
+          "moving_visibility_interval": [
+            0.0929347277556,
+            0.0929347284212
+          ],
+          "scan": "Sodium_int_powerscan_68"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0308403280655,
+          "max_change_over_measured_visibility_se": 3.67969216157e-08,
+          "moving_visibility_interval": [
+            0.0308403278453,
+            0.0308403280655
+          ],
+          "scan": "Sodium_int_powerscan_69"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0308403280655,
+          "max_change_over_measured_visibility_se": 3.29811127424e-08,
+          "moving_visibility_interval": [
+            0.0308403278453,
+            0.0308403280655
+          ],
+          "scan": "Sodium_int_powerscan_70"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.0,
+          "baseline_visibility": 0.0308403280655,
+          "max_change_over_measured_visibility_se": 2.98299766996e-08,
+          "moving_visibility_interval": [
+            0.0308403278453,
+            0.0308403280655
+          ],
+          "scan": "Sodium_int_powerscan_71"
+        },
+        {
+          "absolute_harmonic_condition_number": 10.186050967,
+          "baseline_visibility": 0.00734804263337,
+          "max_change_over_measured_visibility_se": 2.93388604714e-08,
+          "moving_visibility_interval": [
+            0.00734804232925,
+            0.00734804287591
+          ],
+          "scan": "Sodium_int_powerscan_72"
+        },
+        {
+          "absolute_harmonic_condition_number": 10.186050967,
+          "baseline_visibility": 0.00734804263337,
+          "max_change_over_measured_visibility_se": 3.81903497524e-08,
+          "moving_visibility_interval": [
+            0.00734804232925,
+            0.00734804287591
+          ],
+          "scan": "Sodium_int_powerscan_73"
+        },
+        {
+          "absolute_harmonic_condition_number": 10.186050967,
+          "baseline_visibility": 0.00734804263337,
+          "max_change_over_measured_visibility_se": 3.36590148978e-08,
+          "moving_visibility_interval": [
+            0.00734804232925,
+            0.00734804287591
+          ],
+          "scan": "Sodium_int_powerscan_74"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.07497850408,
+          "baseline_visibility": 0.0395728070757,
+          "max_change_over_measured_visibility_se": 6.2035352162e-08,
+          "moving_visibility_interval": [
+            0.0395728066294,
+            0.0395728072228
+          ],
+          "scan": "Sodium_int_powerscan_75"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.07497850408,
+          "baseline_visibility": 0.0395728070757,
+          "max_change_over_measured_visibility_se": 5.96229849915e-08,
+          "moving_visibility_interval": [
+            0.0395728066294,
+            0.0395728072228
+          ],
+          "scan": "Sodium_int_powerscan_76"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.07497850408,
+          "baseline_visibility": 0.0395728070757,
+          "max_change_over_measured_visibility_se": 4.75540562767e-08,
+          "moving_visibility_interval": [
+            0.0395728066294,
+            0.0395728072228
+          ],
+          "scan": "Sodium_int_powerscan_77"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.25279087806,
+          "baseline_visibility": 0.0660323297885,
+          "max_change_over_measured_visibility_se": 8.28547314832e-08,
+          "moving_visibility_interval": [
+            0.0660323292441,
+            0.0660323298446
+          ],
+          "scan": "Sodium_int_powerscan_78"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.25279087806,
+          "baseline_visibility": 0.0660323297885,
+          "max_change_over_measured_visibility_se": 7.07439833191e-08,
+          "moving_visibility_interval": [
+            0.0660323292441,
+            0.0660323298446
+          ],
+          "scan": "Sodium_int_powerscan_79"
+        },
+        {
+          "absolute_harmonic_condition_number": 1.25279087806,
+          "baseline_visibility": 0.0660323297885,
+          "max_change_over_measured_visibility_se": 6.43129655131e-08,
+          "moving_visibility_interval": [
+            0.0660323292441,
+            0.0660323298446
+          ],
+          "scan": "Sodium_int_powerscan_80"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.64635785087,
+          "baseline_visibility": 0.0210058519573,
+          "max_change_over_measured_visibility_se": 2.91071829282e-08,
+          "moving_visibility_interval": [
+            0.0210058516702,
+            0.0210058520809
+          ],
+          "scan": "Sodium_int_powerscan_81"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.64635785087,
+          "baseline_visibility": 0.0210058519573,
+          "max_change_over_measured_visibility_se": 3.05349387677e-08,
+          "moving_visibility_interval": [
+            0.0210058516702,
+            0.0210058520809
+          ],
+          "scan": "Sodium_int_powerscan_82"
+        },
+        {
+          "absolute_harmonic_condition_number": 2.64635785087,
+          "baseline_visibility": 0.0210058519573,
+          "max_change_over_measured_visibility_se": 3.10384238306e-08,
+          "moving_visibility_interval": [
+            0.0210058516702,
+            0.0210058520809
+          ],
+          "scan": "Sodium_int_powerscan_83"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.03632847402,
+          "baseline_visibility": 0.00636683316321,
+          "max_change_over_measured_visibility_se": 1.69136028207e-08,
+          "moving_visibility_interval": [
+            0.0063668329666,
+            0.00636683330053
+          ],
+          "scan": "Sodium_int_powerscan_84"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.03632847402,
+          "baseline_visibility": 0.00636683316321,
+          "max_change_over_measured_visibility_se": 1.95416403865e-08,
+          "moving_visibility_interval": [
+            0.0063668329666,
+            0.00636683330053
+          ],
+          "scan": "Sodium_int_powerscan_85"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.03632847402,
+          "baseline_visibility": 0.00636683316321,
+          "max_change_over_measured_visibility_se": 2.26435781642e-08,
+          "moving_visibility_interval": [
+            0.0063668329666,
+            0.00636683330053
+          ],
+          "scan": "Sodium_int_powerscan_86"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.46891298519,
+          "baseline_visibility": 0.00651449874703,
+          "max_change_over_measured_visibility_se": 2.07061399617e-08,
+          "moving_visibility_interval": [
+            0.00651449853522,
+            0.00651449889619
+          ],
+          "scan": "Sodium_int_powerscan_87"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.46891298519,
+          "baseline_visibility": 0.00651449874703,
+          "max_change_over_measured_visibility_se": 2.08512146295e-08,
+          "moving_visibility_interval": [
+            0.00651449853522,
+            0.00651449889619
+          ],
+          "scan": "Sodium_int_powerscan_88"
+        },
+        {
+          "absolute_harmonic_condition_number": 7.46891298519,
+          "baseline_visibility": 0.00651449874703,
+          "max_change_over_measured_visibility_se": 2.0385512321e-08,
+          "moving_visibility_interval": [
+            0.00651449853522,
+            0.00651449889619
+          ],
+          "scan": "Sodium_int_powerscan_89"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.67722669303,
+          "baseline_visibility": 0.0109940606292,
+          "max_change_over_measured_visibility_se": 2.51170265547e-08,
+          "moving_visibility_interval": [
+            0.0109940603917,
+            0.0109940607713
+          ],
+          "scan": "Sodium_int_powerscan_90"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.67722669303,
+          "baseline_visibility": 0.0109940606292,
+          "max_change_over_measured_visibility_se": 2.90275673261e-08,
+          "moving_visibility_interval": [
+            0.0109940603917,
+            0.0109940607713
+          ],
+          "scan": "Sodium_int_powerscan_91"
+        },
+        {
+          "absolute_harmonic_condition_number": 4.67722669303,
+          "baseline_visibility": 0.0109940606292,
+          "max_change_over_measured_visibility_se": 2.52355731568e-08,
+          "moving_visibility_interval": [
+            0.0109940603917,
+            0.0109940607713
+          ],
+          "scan": "Sodium_int_powerscan_92"
+        },
+        {
+          "absolute_harmonic_condition_number": 0.0,
+          "baseline_visibility": 0.0,
+          "max_change_over_measured_visibility_se": 0.0,
+          "moving_visibility_interval": [
+            0.0,
+            0.0
+          ],
+          "scan": "Sodium_int_powerscan_93"
+        },
+        {
+          "absolute_harmonic_condition_number": 0.0,
+          "baseline_visibility": 0.0,
+          "max_change_over_measured_visibility_se": 0.0,
+          "moving_visibility_interval": [
+            0.0,
+            0.0
+          ],
+          "scan": "Sodium_int_powerscan_94"
+        },
+        {
+          "absolute_harmonic_condition_number": 0.0,
+          "baseline_visibility": 0.0,
+          "max_change_over_measured_visibility_se": 0.0,
+          "moving_visibility_interval": [
+            0.0,
+            0.0
+          ],
+          "scan": "Sodium_int_powerscan_95"
+        }
+      ],
+      "validity": {
+        "max_cluster_radius_over_rc": 0.0430144013097,
+        "memory_over_optical_transit": 1.15419706208e-06,
+        "recoil_parameter": 1.51543384433e-10,
+        "scope": "local advected Markov, paraxial, point cluster; no exact long-memory Talbot-Lau map claimed",
+        "spatial_memory_s": 3.45299952092e-12
+      }
+    },
+    "sodium_auxiliary_removal": {
+      "mean_velocity_only": 1.28928914232e-07,
+      "no_advection_prescribed_path_exponent": 5.60452129472,
+      "sigma_5_to_7_percent": [
+        1.351872926e-07,
+        1.33447564182e-07
+      ]
+    },
+    "terrestrial_frame": {
+      "a_required": 4.6201629064e-14,
+      "coordinate_law": "Earth-corotating field: Earth translation plus rotation about ICRF z at 7.292115e-5 rad/s; distinct non-inertial model",
+      "lpf_instantaneous_speed_minmax_m_s": [
+        91221.7916094,
+        100973.780815
+      ],
+      "sensor_frozen_DC_leakage_upper_N2_per_hz": 2.12363710605e-70,
+      "sodium_frozen_repeated_path_warning": "no event ergodicity asserted in a static terrestrial field; ensemble map alone insufficient",
+      "space_fraction_bound": null,
+      "space_missing_bound_reason": "corotating trajectory lacks a validated whole-window chord bound; instantaneous speed is not substituted for one"
+    },
+    "trajectory_removal": {
+      "axis_aligned_half_differential_torque_fraction": 400872.016603,
+      "counterfactual_speed_m_s": 0.001,
+      "interpretation": "same field strength; without motion metadata millimetre/s drift remains possible and can produce a large response; no empirical time modulation or exclusion claimed",
+      "nominal_trajectory_uniform_fraction": 0.107851603512
+    },
+    "velocity_audit": {
+      "lpf_geocentric_speed_minmax_m_s": [
+        315.697926182,
+        443.38749408
+      ],
+      "lpf_predicted_not_reconstructed": true,
+      "lpf_projection_speed_lower_m_s": 29427.5029649,
+      "lpf_speed_minmax_m_s": [
+        29647.9610312,
+        29867.9264285
+      ],
+      "sensor_assumed_speed_minmax_m_s": [
+        28000.0,
+        32000.0
+      ],
+      "sodium_earth_speed_minmax_m_s": [
+        29640.8283737,
+        29646.0754902
+      ]
+    },
+    "window_scope": "actual sensor Blackman sampling; LPF normalized window-independent PSD upper, not a raw likelihood",
+    "windows": [
+      {
+        "blackman_constant_gain_periodic": 4.97125967805e-44,
+        "blackman_constant_gain_symmetric": 1.04819551335e-33,
+        "frequency_hz": 3532.45735168,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.00925567875
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97080915461e-44,
+        "blackman_constant_gain_symmetric": 1.04802538606e-33,
+        "frequency_hz": 3532.60040283,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.03675770537
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97041465534e-44,
+        "blackman_constant_gain_symmetric": 1.04796868493e-33,
+        "frequency_hz": 3532.64808655,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.08279899657
+      },
+      {
+        "blackman_constant_gain_periodic": 6.91784840252e-33,
+        "blackman_constant_gain_symmetric": 2.58110236039e-33,
+        "frequency_hz": 3532.83882141,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.09626904835
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96916902039e-44,
+        "blackman_constant_gain_symmetric": 1.04768523597e-33,
+        "frequency_hz": 3532.88650513,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.04055977686
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96796689699e-44,
+        "blackman_constant_gain_symmetric": 1.04751521309e-33,
+        "frequency_hz": 3533.02955627,
+        "qprime": 100000.0,
+        "white_force_window_gain": 1.00971553825
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97125967805e-44,
+        "blackman_constant_gain_symmetric": 1.04819551335e-33,
+        "frequency_hz": 3532.45735168,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.00934732788
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97080915461e-44,
+        "blackman_constant_gain_symmetric": 1.04802538606e-33,
+        "frequency_hz": 3532.60040283,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.03819055507
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97041465534e-44,
+        "blackman_constant_gain_symmetric": 1.04796868493e-33,
+        "frequency_hz": 3532.64808655,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.09084989283
+      },
+      {
+        "blackman_constant_gain_periodic": 6.91784840252e-33,
+        "blackman_constant_gain_symmetric": 2.58110236039e-33,
+        "frequency_hz": 3532.83882141,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.10757231197
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96916902039e-44,
+        "blackman_constant_gain_symmetric": 1.04768523597e-33,
+        "frequency_hz": 3532.88650513,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.04232567974
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96796689699e-44,
+        "blackman_constant_gain_symmetric": 1.04751521309e-33,
+        "frequency_hz": 3533.02955627,
+        "qprime": 1000000.0,
+        "white_force_window_gain": 1.0098159883
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97125967805e-44,
+        "blackman_constant_gain_symmetric": 1.04819551335e-33,
+        "frequency_hz": 3532.45735168,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.00939095253
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97080915461e-44,
+        "blackman_constant_gain_symmetric": 1.04802538606e-33,
+        "frequency_hz": 3532.60040283,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.03829379867
+      },
+      {
+        "blackman_constant_gain_periodic": 4.97041465534e-44,
+        "blackman_constant_gain_symmetric": 1.04796868493e-33,
+        "frequency_hz": 3532.64808655,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.09115142502
+      },
+      {
+        "blackman_constant_gain_periodic": 6.91784840252e-33,
+        "blackman_constant_gain_symmetric": 2.58110236039e-33,
+        "frequency_hz": 3532.83882141,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.10790842935
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96916902039e-44,
+        "blackman_constant_gain_symmetric": 1.04768523597e-33,
+        "frequency_hz": 3532.88650513,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.04244907578
+      },
+      {
+        "blackman_constant_gain_periodic": 4.96796689699e-44,
+        "blackman_constant_gain_symmetric": 1.04751521309e-33,
+        "frequency_hz": 3533.02955627,
+        "qprime": 2830000.0,
+        "white_force_window_gain": 1.00985723877
+      }
+    ]
+  },
+  "inputs": {
+    "evidence": "observed_metadata_and_derived_summaries",
+    "sensor": {
+      "averages_by_temperature": {
+        "100": 60,
+        "1000": 60,
+        "125": 40,
+        "150": 60,
+        "200": 60,
+        "250": 40,
+        "30": 40,
+        "300": 40,
+        "370": 40,
+        "450": 80,
+        "50": 60,
+        "580": 80,
+        "70": 60,
+        "85": 40
+      },
+      "epoch_and_attitude": "not in released PSD/workbook; no time-modulation claim",
+      "frequency_grid_hz": [
+        3515.0051,
+        3515.029,
+        3515.0528,
+        3515.0766,
+        3515.1005,
+        3515.1243,
+        3515.1482,
+        3515.172,
+        3515.1958,
+        3515.2197,
+        3515.2435,
+        3515.2674,
+        3515.2912,
+        3515.3151,
+        3515.3389,
+        3515.3627,
+        3515.3866,
+        3515.4104,
+        3515.4343,
+        3515.4581,
+        3515.4819,
+        3515.5058,
+        3515.5296,
+        3515.5535,
+        3515.5773,
+        3515.6012,
+        3515.625,
+        3515.6488,
+        3515.6727,
+        3515.6965,
+        3515.7204,
+        3515.7442,
+        3515.7681,
+        3515.7919,
+        3515.8157,
+        3515.8396,
+        3515.8634,
+        3515.8873,
+        3515.9111,
+        3515.9349,
+        3515.9588,
+        3515.9826,
+        3516.0065,
+        3516.0303,
+        3516.0542,
+        3516.078,
+        3516.1018,
+        3516.1257,
+        3516.1495,
+        3516.1734,
+        3516.1972,
+        3516.221,
+        3516.2449,
+        3516.2687,
+        3516.2926,
+        3516.3164,
+        3516.3403,
+        3516.3641,
+        3516.3879,
+        3516.4118,
+        3516.4356,
+        3516.4595,
+        3516.4833,
+        3516.5071,
+        3516.531,
+        3516.5548,
+        3516.5787,
+        3516.6025,
+        3516.6264,
+        3516.6502,
+        3516.674,
+        3516.6979,
+        3516.7217,
+        3516.7456,
+        3516.7694,
+        3516.7933,
+        3516.8171,
+        3516.8409,
+        3516.8648,
+        3516.8886,
+        3516.9125,
+        3516.9363,
+        3516.9601,
+        3516.984,
+        3517.0078,
+        3517.0317,
+        3517.0555,
+        3517.0794,
+        3517.1032,
+        3517.127,
+        3517.1509,
+        3517.1747,
+        3517.1986,
+        3517.2224,
+        3517.2462,
+        3517.2701,
+        3517.2939,
+        3517.3178,
+        3517.3416,
+        3517.3655,
+        3517.3893,
+        3517.4131,
+        3517.437,
+        3517.4608,
+        3517.4847,
+        3517.5085,
+        3517.5323,
+        3517.5562,
+        3517.58,
+        3517.6039,
+        3517.6277,
+        3517.6516,
+        3517.6754,
+        3517.6992,
+        3517.7231,
+        3517.7469,
+        3517.7708,
+        3517.7946,
+        3517.8185,
+        3517.8423,
+        3517.8661,
+        3517.89,
+        3517.9138,
+        3517.9377,
+        3517.9615,
+        3517.9853,
+        3518.0092,
+        3518.033,
+        3518.0569,
+        3518.0807,
+        3518.1046,
+        3518.1284,
+        3518.1522,
+        3518.1761,
+        3518.1999,
+        3518.2238,
+        3518.2476,
+        3518.2714,
+        3518.2953,
+        3518.3191,
+        3518.343,
+        3518.3668,
+        3518.3907,
+        3518.4145,
+        3518.4383,
+        3518.4622,
+        3518.486,
+        3518.5099,
+        3518.5337,
+        3518.5575,
+        3518.5814,
+        3518.6052,
+        3518.6291,
+        3518.6529,
+        3518.6768,
+        3518.7006,
+        3518.7244,
+        3518.7483,
+        3518.7721,
+        3518.796,
+        3518.8198,
+        3518.8437,
+        3518.8675,
+        3518.8913,
+        3518.9152,
+        3518.939,
+        3518.9629,
+        3518.9867,
+        3519.0105,
+        3519.0344,
+        3519.0582,
+        3519.0821,
+        3519.1059,
+        3519.1298,
+        3519.1536,
+        3519.1774,
+        3519.2013,
+        3519.2251,
+        3519.249,
+        3519.2728,
+        3519.2966,
+        3519.3205,
+        3519.3443,
+        3519.3682,
+        3519.392,
+        3519.4159,
+        3519.4397,
+        3519.4635,
+        3519.4874,
+        3519.5112,
+        3519.5351,
+        3519.5589,
+        3519.5827,
+        3519.6066,
+        3519.6304,
+        3519.6543,
+        3519.6781,
+        3519.702,
+        3519.7258,
+        3519.7496,
+        3519.7735,
+        3519.7973,
+        3519.8212,
+        3519.845,
+        3519.8689,
+        3519.8927,
+        3519.9165,
+        3519.9404,
+        3519.9642,
+        3519.9881,
+        3520.0119,
+        3520.0357,
+        3520.0596,
+        3520.0834,
+        3520.1073,
+        3520.1311,
+        3520.155,
+        3520.1788,
+        3520.2026,
+        3520.2265,
+        3520.2503,
+        3520.2742,
+        3520.298,
+        3520.3218,
+        3520.3457,
+        3520.3695,
+        3520.3934,
+        3520.4172,
+        3520.4411,
+        3520.4649,
+        3520.4887,
+        3520.5126,
+        3520.5364,
+        3520.5603,
+        3520.5841,
+        3520.6079,
+        3520.6318,
+        3520.6556,
+        3520.6795,
+        3520.7033,
+        3520.7272,
+        3520.751,
+        3520.7748,
+        3520.7987,
+        3520.8225,
+        3520.8464,
+        3520.8702,
+        3520.8941,
+        3520.9179,
+        3520.9417,
+        3520.9656,
+        3520.9894,
+        3521.0133,
+        3521.0371,
+        3521.0609,
+        3521.0848,
+        3521.1086,
+        3521.1325,
+        3521.1563,
+        3521.1802,
+        3521.204,
+        3521.2278,
+        3521.2517,
+        3521.2755,
+        3521.2994,
+        3521.3232,
+        3521.347,
+        3521.3709,
+        3521.3947,
+        3521.4186,
+        3521.4424,
+        3521.4663,
+        3521.4901,
+        3521.5139,
+        3521.5378,
+        3521.5616,
+        3521.5855,
+        3521.6093,
+        3521.6331,
+        3521.657,
+        3521.6808,
+        3521.7047,
+        3521.7285,
+        3521.7524,
+        3521.7762,
+        3521.8,
+        3521.8239,
+        3521.8477,
+        3521.8716,
+        3521.8954,
+        3521.9193,
+        3521.9431,
+        3521.9669,
+        3521.9908,
+        3522.0146,
+        3522.0385,
+        3522.0623,
+        3522.0861,
+        3522.11,
+        3522.1338,
+        3522.1577,
+        3522.1815,
+        3522.2054,
+        3522.2292,
+        3522.253,
+        3522.2769,
+        3522.3007,
+        3522.3246,
+        3522.3484,
+        3522.3722,
+        3522.3961,
+        3522.4199,
+        3522.4438,
+        3522.4676,
+        3522.4915,
+        3522.5153,
+        3522.5391,
+        3522.563,
+        3522.5868,
+        3522.6107,
+        3522.6345,
+        3522.6583,
+        3522.6822,
+        3522.706,
+        3522.7299,
+        3522.7537,
+        3522.7776,
+        3522.8014,
+        3522.8252,
+        3522.8491,
+        3522.8729,
+        3522.8968,
+        3522.9206,
+        3522.9445,
+        3522.9683,
+        3522.9921,
+        3523.016,
+        3523.0398,
+        3523.0637,
+        3523.0875,
+        3523.1113,
+        3523.1352,
+        3523.159,
+        3523.1829,
+        3523.2067,
+        3523.2306,
+        3523.2544,
+        3523.2782,
+        3523.3021,
+        3523.3259,
+        3523.3498,
+        3523.3736,
+        3523.3974,
+        3523.4213,
+        3523.4451,
+        3523.469,
+        3523.4928,
+        3523.5167,
+        3523.5405,
+        3523.5643,
+        3523.5882,
+        3523.612,
+        3523.6359,
+        3523.6597,
+        3523.6835,
+        3523.7074,
+        3523.7312,
+        3523.7551,
+        3523.7789,
+        3523.8028,
+        3523.8266,
+        3523.8504,
+        3523.8743,
+        3523.8981,
+        3523.922,
+        3523.9458,
+        3523.9697,
+        3523.9935,
+        3524.0173,
+        3524.0412,
+        3524.065,
+        3524.0889,
+        3524.1127,
+        3524.1365,
+        3524.1604,
+        3524.1842,
+        3524.2081,
+        3524.2319,
+        3524.2558,
+        3524.2796,
+        3524.3034,
+        3524.3273,
+        3524.3511,
+        3524.375,
+        3524.3988,
+        3524.4226,
+        3524.4465,
+        3524.4703,
+        3524.4942,
+        3524.518,
+        3524.5419,
+        3524.5657,
+        3524.5895,
+        3524.6134,
+        3524.6372,
+        3524.6611,
+        3524.6849,
+        3524.7087,
+        3524.7326,
+        3524.7564,
+        3524.7803,
+        3524.8041,
+        3524.828,
+        3524.8518,
+        3524.8756,
+        3524.8995,
+        3524.9233,
+        3524.9472,
+        3524.971,
+        3524.9949,
+        3525.0187,
+        3525.0425,
+        3525.0664,
+        3525.0902,
+        3525.1141,
+        3525.1379,
+        3525.1617,
+        3525.1856,
+        3525.2094,
+        3525.2333,
+        3525.2571,
+        3525.281,
+        3525.3048,
+        3525.3286,
+        3525.3525,
+        3525.3763,
+        3525.4002,
+        3525.424,
+        3525.4478,
+        3525.4717,
+        3525.4955,
+        3525.5194,
+        3525.5432,
+        3525.5671,
+        3525.5909,
+        3525.6147,
+        3525.6386,
+        3525.6624,
+        3525.6863,
+        3525.7101,
+        3525.7339,
+        3525.7578,
+        3525.7816,
+        3525.8055,
+        3525.8293,
+        3525.8532,
+        3525.877,
+        3525.9008,
+        3525.9247,
+        3525.9485,
+        3525.9724,
+        3525.9962,
+        3526.0201,
+        3526.0439,
+        3526.0677,
+        3526.0916,
+        3526.1154,
+        3526.1393,
+        3526.1631,
+        3526.1869,
+        3526.2108,
+        3526.2346,
+        3526.2585,
+        3526.2823,
+        3526.3062,
+        3526.33,
+        3526.3538,
+        3526.3777,
+        3526.4015,
+        3526.4254,
+        3526.4492,
+        3526.473,
+        3526.4969,
+        3526.5207,
+        3526.5446,
+        3526.5684,
+        3526.5923,
+        3526.6161,
+        3526.6399,
+        3526.6638,
+        3526.6876,
+        3526.7115,
+        3526.7353,
+        3526.7591,
+        3526.783,
+        3526.8068,
+        3526.8307,
+        3526.8545,
+        3526.8784,
+        3526.9022,
+        3526.926,
+        3526.9499,
+        3526.9737,
+        3526.9976,
+        3527.0214,
+        3527.0452,
+        3527.0691,
+        3527.0929,
+        3527.1168,
+        3527.1406,
+        3527.1645,
+        3527.1883,
+        3527.2121,
+        3527.236,
+        3527.2598,
+        3527.2837,
+        3527.3075,
+        3527.3314,
+        3527.3552,
+        3527.379,
+        3527.4029,
+        3527.4267,
+        3527.4506,
+        3527.4744,
+        3527.4982,
+        3527.5221,
+        3527.5459,
+        3527.5698,
+        3527.5936,
+        3527.6175,
+        3527.6413,
+        3527.6651,
+        3527.689,
+        3527.7128,
+        3527.7367,
+        3527.7605,
+        3527.7843,
+        3527.8082,
+        3527.832,
+        3527.8559,
+        3527.8797,
+        3527.9036,
+        3527.9274,
+        3527.9512,
+        3527.9751,
+        3527.9989,
+        3528.0228,
+        3528.0466,
+        3528.0704,
+        3528.0943,
+        3528.1181,
+        3528.142,
+        3528.1658,
+        3528.1897,
+        3528.2135,
+        3528.2373,
+        3528.2612,
+        3528.285,
+        3528.3089,
+        3528.3327,
+        3528.3566,
+        3528.3804,
+        3528.4042,
+        3528.4281,
+        3528.4519,
+        3528.4758,
+        3528.4996,
+        3528.5234,
+        3528.5473,
+        3528.5711,
+        3528.595,
+        3528.6188,
+        3528.6427,
+        3528.6665,
+        3528.6903,
+        3528.7142,
+        3528.738,
+        3528.7619,
+        3528.7857,
+        3528.8095,
+        3528.8334,
+        3528.8572,
+        3528.8811,
+        3528.9049,
+        3528.9288,
+        3528.9526,
+        3528.9764,
+        3529.0003,
+        3529.0241,
+        3529.048,
+        3529.0718,
+        3529.0956,
+        3529.1195,
+        3529.1433,
+        3529.1672,
+        3529.191,
+        3529.2149,
+        3529.2387,
+        3529.2625,
+        3529.2864,
+        3529.3102,
+        3529.3341,
+        3529.3579,
+        3529.3818,
+        3529.4056,
+        3529.4294,
+        3529.4533,
+        3529.4771,
+        3529.501,
+        3529.5248,
+        3529.5486,
+        3529.5725,
+        3529.5963,
+        3529.6202,
+        3529.644,
+        3529.6679,
+        3529.6917,
+        3529.7155,
+        3529.7394,
+        3529.7632,
+        3529.7871,
+        3529.8109,
+        3529.8347,
+        3529.8586,
+        3529.8824,
+        3529.9063,
+        3529.9301,
+        3529.954,
+        3529.9778,
+        3530.0016,
+        3530.0255,
+        3530.0493,
+        3530.0732,
+        3530.097,
+        3530.1208,
+        3530.1447,
+        3530.1685,
+        3530.1924,
+        3530.2162,
+        3530.2401,
+        3530.2639,
+        3530.2877,
+        3530.3116,
+        3530.3354,
+        3530.3593,
+        3530.3831,
+        3530.407,
+        3530.4308,
+        3530.4546,
+        3530.4785,
+        3530.5023,
+        3530.5262,
+        3530.55,
+        3530.5738,
+        3530.5977,
+        3530.6215,
+        3530.6454,
+        3530.6692,
+        3530.6931,
+        3530.7169,
+        3530.7407,
+        3530.7646,
+        3530.7884,
+        3530.8123,
+        3530.8361,
+        3530.8599,
+        3530.8838,
+        3530.9076,
+        3530.9315,
+        3530.9553,
+        3530.9792,
+        3531.003,
+        3531.0268,
+        3531.0507,
+        3531.0745,
+        3531.0984,
+        3531.1222,
+        3531.146,
+        3531.1699,
+        3531.1937,
+        3531.2176,
+        3531.2414,
+        3531.2653,
+        3531.2891,
+        3531.3129,
+        3531.3368,
+        3531.3606,
+        3531.3845,
+        3531.4083,
+        3531.4322,
+        3531.456,
+        3531.4798,
+        3531.5037,
+        3531.5275,
+        3531.5514,
+        3531.5752,
+        3531.599,
+        3531.6229,
+        3531.6467,
+        3531.6706,
+        3531.6944,
+        3531.7183,
+        3531.7421,
+        3531.7659,
+        3531.7898,
+        3531.8136,
+        3531.8375,
+        3531.8613,
+        3531.8851,
+        3531.909,
+        3531.9328,
+        3531.9567,
+        3531.9805,
+        3532.0044,
+        3532.0282,
+        3532.052,
+        3532.0759,
+        3532.0997,
+        3532.1236,
+        3532.1474,
+        3532.1712,
+        3532.1951,
+        3532.2189,
+        3532.2428,
+        3532.2666,
+        3532.2905,
+        3532.3143,
+        3532.3381,
+        3532.362,
+        3532.3858,
+        3532.4097,
+        3532.4335,
+        3532.4574,
+        3532.4812,
+        3532.505,
+        3532.5289,
+        3532.5527,
+        3532.5766,
+        3532.6004,
+        3532.6242,
+        3532.6481,
+        3532.6719,
+        3532.6958,
+        3532.7196,
+        3532.7435,
+        3532.7673,
+        3532.7911,
+        3532.815,
+        3532.8388,
+        3532.8627,
+        3532.8865,
+        3532.9103,
+        3532.9342,
+        3532.958,
+        3532.9819,
+        3533.0057,
+        3533.0296,
+        3533.0534,
+        3533.0772,
+        3533.1011,
+        3533.1249,
+        3533.1488,
+        3533.1726,
+        3533.1964,
+        3533.2203,
+        3533.2441,
+        3533.268,
+        3533.2918,
+        3533.3157,
+        3533.3395,
+        3533.3633,
+        3533.3872,
+        3533.411,
+        3533.4349,
+        3533.4587,
+        3533.4826,
+        3533.5064,
+        3533.5302,
+        3533.5541,
+        3533.5779,
+        3533.6018,
+        3533.6256,
+        3533.6494,
+        3533.6733,
+        3533.6971,
+        3533.721,
+        3533.7448,
+        3533.7687,
+        3533.7925,
+        3533.8163,
+        3533.8402,
+        3533.864,
+        3533.8879,
+        3533.9117,
+        3533.9355,
+        3533.9594,
+        3533.9832,
+        3534.0071,
+        3534.0309,
+        3534.0548,
+        3534.0786,
+        3534.1024,
+        3534.1263,
+        3534.1501,
+        3534.174,
+        3534.1978,
+        3534.2216,
+        3534.2455,
+        3534.2693,
+        3534.2932,
+        3534.317,
+        3534.3409,
+        3534.3647,
+        3534.3885,
+        3534.4124,
+        3534.4362,
+        3534.4601,
+        3534.4839,
+        3534.5078,
+        3534.5316,
+        3534.5554,
+        3534.5793,
+        3534.6031,
+        3534.627,
+        3534.6508,
+        3534.6746,
+        3534.6985,
+        3534.7223,
+        3534.7462,
+        3534.77,
+        3534.7939,
+        3534.8177,
+        3534.8415,
+        3534.8654,
+        3534.8892,
+        3534.9131,
+        3534.9369,
+        3534.9607,
+        3534.9846,
+        3535.0084,
+        3535.0323,
+        3535.0561,
+        3535.08,
+        3535.1038,
+        3535.1276,
+        3535.1515,
+        3535.1753,
+        3535.1992,
+        3535.223,
+        3535.2468,
+        3535.2707,
+        3535.2945,
+        3535.3184,
+        3535.3422,
+        3535.3661,
+        3535.3899,
+        3535.4137,
+        3535.4376,
+        3535.4614,
+        3535.4853,
+        3535.5091,
+        3535.533,
+        3535.5568,
+        3535.5806,
+        3535.6045,
+        3535.6283,
+        3535.6522,
+        3535.676,
+        3535.6998,
+        3535.7237,
+        3535.7475,
+        3535.7714,
+        3535.7952,
+        3535.8191,
+        3535.8429,
+        3535.8667,
+        3535.8906,
+        3535.9144,
+        3535.9383,
+        3535.9621,
+        3535.9859,
+        3536.0098,
+        3536.0336,
+        3536.0575,
+        3536.0813,
+        3536.1052,
+        3536.129,
+        3536.1528,
+        3536.1767,
+        3536.2005,
+        3536.2244,
+        3536.2482,
+        3536.272,
+        3536.2959,
+        3536.3197,
+        3536.3436,
+        3536.3674,
+        3536.3913,
+        3536.4151,
+        3536.4389,
+        3536.4628,
+        3536.4866,
+        3536.5105,
+        3536.5343,
+        3536.5582,
+        3536.582,
+        3536.6058,
+        3536.6297,
+        3536.6535,
+        3536.6774,
+        3536.7012,
+        3536.725,
+        3536.7489,
+        3536.7727,
+        3536.7966,
+        3536.8204,
+        3536.8443,
+        3536.8681,
+        3536.8919,
+        3536.9158,
+        3536.9396,
+        3536.9635,
+        3536.9873,
+        3537.0111,
+        3537.035,
+        3537.0588,
+        3537.0827,
+        3537.1065,
+        3537.1304,
+        3537.1542,
+        3537.178,
+        3537.2019,
+        3537.2257,
+        3537.2496,
+        3537.2734,
+        3537.2972,
+        3537.3211,
+        3537.3449,
+        3537.3688,
+        3537.3926,
+        3537.4165,
+        3537.4403,
+        3537.4641,
+        3537.488,
+        3537.5118,
+        3537.5357,
+        3537.5595,
+        3537.5834,
+        3537.6072,
+        3537.631,
+        3537.6549,
+        3537.6787,
+        3537.7026,
+        3537.7264,
+        3537.7502,
+        3537.7741,
+        3537.7979,
+        3537.8218,
+        3537.8456,
+        3537.8695,
+        3537.8933,
+        3537.9171,
+        3537.941,
+        3537.9648,
+        3537.9887,
+        3538.0125,
+        3538.0363,
+        3538.0602,
+        3538.084,
+        3538.1079,
+        3538.1317,
+        3538.1556,
+        3538.1794,
+        3538.2032,
+        3538.2271,
+        3538.2509,
+        3538.2748,
+        3538.2986,
+        3538.3224,
+        3538.3463,
+        3538.3701,
+        3538.394,
+        3538.4178,
+        3538.4417,
+        3538.4655,
+        3538.4893,
+        3538.5132,
+        3538.537,
+        3538.5609,
+        3538.5847,
+        3538.6086,
+        3538.6324,
+        3538.6562,
+        3538.6801,
+        3538.7039,
+        3538.7278,
+        3538.7516,
+        3538.7754,
+        3538.7993,
+        3538.8231,
+        3538.847,
+        3538.8708,
+        3538.8947,
+        3538.9185,
+        3538.9423,
+        3538.9662,
+        3538.99,
+        3539.0139,
+        3539.0377,
+        3539.0615,
+        3539.0854,
+        3539.1092,
+        3539.1331,
+        3539.1569,
+        3539.1808,
+        3539.2046,
+        3539.2284,
+        3539.2523,
+        3539.2761,
+        3539.3,
+        3539.3238,
+        3539.3476,
+        3539.3715,
+        3539.3953,
+        3539.4192,
+        3539.443,
+        3539.4669,
+        3539.4907,
+        3539.5145,
+        3539.5384,
+        3539.5622,
+        3539.5861,
+        3539.6099,
+        3539.6338,
+        3539.6576,
+        3539.6814,
+        3539.7053,
+        3539.7291,
+        3539.753,
+        3539.7768,
+        3539.8006,
+        3539.8245,
+        3539.8483,
+        3539.8722,
+        3539.896,
+        3539.9199,
+        3539.9437,
+        3539.9675,
+        3539.9914,
+        3540.0152,
+        3540.0391,
+        3540.0629,
+        3540.0867,
+        3540.1106,
+        3540.1344,
+        3540.1583,
+        3540.1821,
+        3540.206,
+        3540.2298,
+        3540.2536,
+        3540.2775,
+        3540.3013,
+        3540.3252,
+        3540.349,
+        3540.3728,
+        3540.3967,
+        3540.4205,
+        3540.4444,
+        3540.4682,
+        3540.4921,
+        3540.5159,
+        3540.5397,
+        3540.5636,
+        3540.5874,
+        3540.6113,
+        3540.6351,
+        3540.659,
+        3540.6828,
+        3540.7066,
+        3540.7305,
+        3540.7543,
+        3540.7782,
+        3540.802,
+        3540.8258,
+        3540.8497,
+        3540.8735,
+        3540.8974,
+        3540.9212,
+        3540.9451,
+        3540.9689,
+        3540.9927,
+        3541.0166,
+        3541.0404,
+        3541.0643,
+        3541.0881,
+        3541.1119,
+        3541.1358,
+        3541.1596,
+        3541.1835,
+        3541.2073,
+        3541.2312,
+        3541.255,
+        3541.2788,
+        3541.3027,
+        3541.3265,
+        3541.3504,
+        3541.3742,
+        3541.398,
+        3541.4219,
+        3541.4457,
+        3541.4696,
+        3541.4934,
+        3541.5173,
+        3541.5411,
+        3541.5649,
+        3541.5888,
+        3541.6126,
+        3541.6365,
+        3541.6603,
+        3541.6842,
+        3541.708,
+        3541.7318,
+        3541.7557,
+        3541.7795,
+        3541.8034,
+        3541.8272,
+        3541.851,
+        3541.8749,
+        3541.8987,
+        3541.9226,
+        3541.9464,
+        3541.9703,
+        3541.9941,
+        3542.0179,
+        3542.0418,
+        3542.0656,
+        3542.0895,
+        3542.1133,
+        3542.1371,
+        3542.161,
+        3542.1848,
+        3542.2087,
+        3542.2325,
+        3542.2564,
+        3542.2802,
+        3542.304,
+        3542.3279,
+        3542.3517,
+        3542.3756,
+        3542.3994,
+        3542.4232,
+        3542.4471,
+        3542.4709,
+        3542.4948,
+        3542.5186,
+        3542.5425,
+        3542.5663,
+        3542.5901,
+        3542.614,
+        3542.6378,
+        3542.6617,
+        3542.6855,
+        3542.7094,
+        3542.7332,
+        3542.757,
+        3542.7809,
+        3542.8047,
+        3542.8286,
+        3542.8524,
+        3542.8762,
+        3542.9001,
+        3542.9239,
+        3542.9478,
+        3542.9716,
+        3542.9955,
+        3543.0193,
+        3543.0431,
+        3543.067,
+        3543.0908,
+        3543.1147,
+        3543.1385,
+        3543.1623,
+        3543.1862,
+        3543.21,
+        3543.2339,
+        3543.2577,
+        3543.2816,
+        3543.3054,
+        3543.3292,
+        3543.3531,
+        3543.3769,
+        3543.4008,
+        3543.4246,
+        3543.4484,
+        3543.4723,
+        3543.4961,
+        3543.52,
+        3543.5438,
+        3543.5677,
+        3543.5915,
+        3543.6153,
+        3543.6392,
+        3543.663,
+        3543.6869,
+        3543.7107,
+        3543.7346,
+        3543.7584,
+        3543.7822,
+        3543.8061,
+        3543.8299,
+        3543.8538,
+        3543.8776,
+        3543.9014,
+        3543.9253,
+        3543.9491,
+        3543.973,
+        3543.9968,
+        3544.0207,
+        3544.0445,
+        3544.0683,
+        3544.0922,
+        3544.116,
+        3544.1399,
+        3544.1637,
+        3544.1875,
+        3544.2114,
+        3544.2352,
+        3544.2591,
+        3544.2829,
+        3544.3068,
+        3544.3306,
+        3544.3544,
+        3544.3783,
+        3544.4021,
+        3544.426,
+        3544.4498,
+        3544.4736,
+        3544.4975,
+        3544.5213,
+        3544.5452,
+        3544.569,
+        3544.5929,
+        3544.6167,
+        3544.6405,
+        3544.6644,
+        3544.6882,
+        3544.7121,
+        3544.7359,
+        3544.7598,
+        3544.7836,
+        3544.8074,
+        3544.8313,
+        3544.8551,
+        3544.879,
+        3544.9028,
+        3544.9266,
+        3544.9505,
+        3544.9743,
+        3544.9982,
+        3545.022,
+        3545.0459,
+        3545.0697,
+        3545.0935,
+        3545.1174,
+        3545.1412,
+        3545.1651,
+        3545.1889,
+        3545.2127,
+        3545.2366,
+        3545.2604,
+        3545.2843,
+        3545.3081,
+        3545.332,
+        3545.3558,
+        3545.3796,
+        3545.4035,
+        3545.4273,
+        3545.4512,
+        3545.475,
+        3545.4988,
+        3545.5227,
+        3545.5465,
+        3545.5704,
+        3545.5942,
+        3545.6181,
+        3545.6419,
+        3545.6657,
+        3545.6896,
+        3545.7134,
+        3545.7373,
+        3545.7611,
+        3545.785,
+        3545.8088,
+        3545.8326,
+        3545.8565,
+        3545.8803,
+        3545.9042,
+        3545.928,
+        3545.9518,
+        3545.9757,
+        3545.9995,
+        3546.0234,
+        3546.0472,
+        3546.0711,
+        3546.0949,
+        3546.1187,
+        3546.1426,
+        3546.1664,
+        3546.1903,
+        3546.2141,
+        3546.2379,
+        3546.2618,
+        3546.2856,
+        3546.3095,
+        3546.3333,
+        3546.3572,
+        3546.381,
+        3546.4048,
+        3546.4287,
+        3546.4525,
+        3546.4764,
+        3546.5002,
+        3546.524,
+        3546.5479,
+        3546.5717,
+        3546.5956,
+        3546.6194,
+        3546.6433,
+        3546.6671,
+        3546.6909,
+        3546.7148,
+        3546.7386,
+        3546.7625,
+        3546.7863,
+        3546.8102,
+        3546.834,
+        3546.8578,
+        3546.8817,
+        3546.9055,
+        3546.9294,
+        3546.9532,
+        3546.977,
+        3547.0009,
+        3547.0247,
+        3547.0486,
+        3547.0724,
+        3547.0963,
+        3547.1201,
+        3547.1439,
+        3547.1678,
+        3547.1916,
+        3547.2155,
+        3547.2393,
+        3547.2631,
+        3547.287,
+        3547.3108,
+        3547.3347,
+        3547.3585,
+        3547.3824,
+        3547.4062,
+        3547.43,
+        3547.4539,
+        3547.4777,
+        3547.5016,
+        3547.5254,
+        3547.5492,
+        3547.5731,
+        3547.5969,
+        3547.6208,
+        3547.6446,
+        3547.6685,
+        3547.6923,
+        3547.7161,
+        3547.74,
+        3547.7638,
+        3547.7877,
+        3547.8115,
+        3547.8354,
+        3547.8592,
+        3547.883,
+        3547.9069,
+        3547.9307,
+        3547.9546,
+        3547.9784,
+        3548.0022,
+        3548.0261,
+        3548.0499,
+        3548.0738,
+        3548.0976,
+        3548.1215,
+        3548.1453,
+        3548.1691,
+        3548.193,
+        3548.2168,
+        3548.2407,
+        3548.2645,
+        3548.2883,
+        3548.3122,
+        3548.336,
+        3548.3599,
+        3548.3837,
+        3548.4076,
+        3548.4314,
+        3548.4552,
+        3548.4791,
+        3548.5029,
+        3548.5268,
+        3548.5506,
+        3548.5744,
+        3548.5983,
+        3548.6221,
+        3548.646,
+        3548.6698,
+        3548.6937,
+        3548.7175,
+        3548.7413,
+        3548.7652,
+        3548.789,
+        3548.8129,
+        3548.8367,
+        3548.8605,
+        3548.8844,
+        3548.9082,
+        3548.9321,
+        3548.9559,
+        3548.9798,
+        3549.0036,
+        3549.0274,
+        3549.0513,
+        3549.0751,
+        3549.099,
+        3549.1228,
+        3549.1467,
+        3549.1705,
+        3549.1943,
+        3549.2182,
+        3549.242,
+        3549.2659,
+        3549.2897,
+        3549.3135,
+        3549.3374,
+        3549.3612,
+        3549.3851,
+        3549.4089,
+        3549.4328,
+        3549.4566,
+        3549.4804,
+        3549.5043,
+        3549.5281,
+        3549.552,
+        3549.5758,
+        3549.5996,
+        3549.6235,
+        3549.6473,
+        3549.6712,
+        3549.695,
+        3549.7189,
+        3549.7427,
+        3549.7665,
+        3549.7904,
+        3549.8142,
+        3549.8381,
+        3549.8619,
+        3549.8857,
+        3549.9096,
+        3549.9334,
+        3549.9573,
+        3549.9811
+      ],
+      "reported_fft_length": 4194304,
+      "reported_sample_rate_hz": 100000.0,
+      "window": "Blackman; symmetric/periodic convention not specified"
+    },
+    "sodium": {
+      "integration_times_s": [
+        1
+      ],
+      "mass_quadrature_u": [
+        144706.020033,
+        145690.994992,
+        146675.96995,
+        147660.944908,
+        148645.919866,
+        149630.894825,
+        150615.869783,
+        151600.844741,
+        152585.819699,
+        153570.794658,
+        154555.769616,
+        155540.744574,
+        156525.719533,
+        157510.694491,
+        158495.669449,
+        159480.644407,
+        160465.619366,
+        161450.594324,
+        162435.569282,
+        163420.54424,
+        164405.519199,
+        165390.494157,
+        166375.469115,
+        167360.444073,
+        168345.419032,
+        169330.39399,
+        170315.368948,
+        171300.343907,
+        172285.318865,
+        173270.293823,
+        174255.268781,
+        175240.24374,
+        176225.218698,
+        177210.193656,
+        178195.168614,
+        179180.143573,
+        180165.118531,
+        181150.093489,
+        182135.068447,
+        183120.043406,
+        184105.018364,
+        185089.993322,
+        186074.96828,
+        187059.943239,
+        188044.918197,
+        189029.893155,
+        190014.868114,
+        190999.843072,
+        191984.81803,
+        192969.792988,
+        193954.767947,
+        194939.742905
+      ],
+      "normalized_mass_weights": [
+        0.0155491158112,
+        0.0157564560463,
+        0.0159637962815,
+        0.016167740744,
+        0.0163550459203,
+        0.0165423510965,
+        0.0167296562728,
+        0.0169169614491,
+        0.0171042666254,
+        0.0172915718017,
+        0.017478876978,
+        0.0176661821543,
+        0.0178534873306,
+        0.0180383674616,
+        0.0180825949646,
+        0.0181268224676,
+        0.0181710499706,
+        0.0182152774736,
+        0.0182595049766,
+        0.0183037324796,
+        0.0183479599826,
+        0.0183921874856,
+        0.0184364149886,
+        0.0184806424916,
+        0.0186706038841,
+        0.0188834254946,
+        0.019096247105,
+        0.0193090687154,
+        0.0195218903258,
+        0.0197347119363,
+        0.0199475335467,
+        0.0201603551571,
+        0.0203731767676,
+        0.020585998378,
+        0.0207210513159,
+        0.0208246264577,
+        0.0209282015996,
+        0.0210317767414,
+        0.0211353518833,
+        0.0212389270251,
+        0.021342502167,
+        0.0214460773088,
+        0.0215496524507,
+        0.0216532275925,
+        0.0216992939486,
+        0.0217000503523,
+        0.021700806756,
+        0.0217015631598,
+        0.0217023195635,
+        0.0217030759672,
+        0.0217038323709,
+        0.0217045887746
+      ],
+      "powers_by_scan": {
+        "Sodium_int_powerscan_1": [
+          0.0632,
+          0.0615,
+          0.0696
+        ],
+        "Sodium_int_powerscan_10": [
+          0.0632,
+          0.02378,
+          0.0696
+        ],
+        "Sodium_int_powerscan_11": [
+          0.0632,
+          0.02378,
+          0.0696
+        ],
+        "Sodium_int_powerscan_12": [
+          0.06241,
+          0.050266,
+          0.06873
+        ],
+        "Sodium_int_powerscan_13": [
+          0.06241,
+          0.050266,
+          0.06873
+        ],
+        "Sodium_int_powerscan_14": [
+          0.06241,
+          0.050266,
+          0.06873
+        ],
+        "Sodium_int_powerscan_15": [
+          0.06241,
+          0.0451,
+          0.06873
+        ],
+        "Sodium_int_powerscan_16": [
+          0.06241,
+          0.0451,
+          0.06873
+        ],
+        "Sodium_int_powerscan_17": [
+          0.06241,
+          0.0451,
+          0.06873
+        ],
+        "Sodium_int_powerscan_18": [
+          0.06241,
+          0.039852,
+          0.06873
+        ],
+        "Sodium_int_powerscan_19": [
+          0.06241,
+          0.039852,
+          0.06873
+        ],
+        "Sodium_int_powerscan_2": [
+          0.0632,
+          0.0615,
+          0.0696
+        ],
+        "Sodium_int_powerscan_20": [
+          0.06241,
+          0.047724,
+          0.06873
+        ],
+        "Sodium_int_powerscan_21": [
+          0.06241,
+          0.047724,
+          0.0696
+        ],
+        "Sodium_int_powerscan_22": [
+          0.06162,
+          0.040918,
+          0.06786
+        ],
+        "Sodium_int_powerscan_23": [
+          0.06162,
+          0.040918,
+          0.06786
+        ],
+        "Sodium_int_powerscan_24": [
+          0.06162,
+          0.035998,
+          0.06786
+        ],
+        "Sodium_int_powerscan_25": [
+          0.06162,
+          0.035998,
+          0.06786
+        ],
+        "Sodium_int_powerscan_26": [
+          0.06162,
+          0.03239,
+          0.06786
+        ],
+        "Sodium_int_powerscan_27": [
+          0.06162,
+          0.03239,
+          0.06786
+        ],
+        "Sodium_int_powerscan_28": [
+          0.06162,
+          0.03239,
+          0.06786
+        ],
+        "Sodium_int_powerscan_29": [
+          0.06162,
+          0.02911,
+          0.06786
+        ],
+        "Sodium_int_powerscan_3": [
+          0.0632,
+          0.019844,
+          0.0696
+        ],
+        "Sodium_int_powerscan_30": [
+          0.06162,
+          0.02911,
+          0.06786
+        ],
+        "Sodium_int_powerscan_31": [
+          0.06162,
+          0.02911,
+          0.06786
+        ],
+        "Sodium_int_powerscan_32": [
+          0.06162,
+          0.02911,
+          0.06786
+        ],
+        "Sodium_int_powerscan_33": [
+          0.06162,
+          0.02624,
+          0.06786
+        ],
+        "Sodium_int_powerscan_34": [
+          0.06162,
+          0.02624,
+          0.06786
+        ],
+        "Sodium_int_powerscan_35": [
+          0.06162,
+          0.02624,
+          0.06786
+        ],
+        "Sodium_int_powerscan_36": [
+          0.06162,
+          0.021238,
+          0.06786
+        ],
+        "Sodium_int_powerscan_37": [
+          0.06162,
+          0.021238,
+          0.06786
+        ],
+        "Sodium_int_powerscan_38": [
+          0.06162,
+          0.021238,
+          0.06786
+        ],
+        "Sodium_int_powerscan_39": [
+          0.06162,
+          0.01722,
+          0.06786
+        ],
+        "Sodium_int_powerscan_4": [
+          0.0632,
+          0.019844,
+          0.0696
+        ],
+        "Sodium_int_powerscan_40": [
+          0.06162,
+          0.01722,
+          0.06786
+        ],
+        "Sodium_int_powerscan_41": [
+          0.06162,
+          0.01722,
+          0.06786
+        ],
+        "Sodium_int_powerscan_42": [
+          0.06162,
+          0.01148,
+          0.06786
+        ],
+        "Sodium_int_powerscan_43": [
+          0.06162,
+          0.01148,
+          0.06786
+        ],
+        "Sodium_int_powerscan_44": [
+          0.06162,
+          0.01148,
+          0.06786
+        ],
+        "Sodium_int_powerscan_45": [
+          0.06162,
+          0.007544,
+          0.06786
+        ],
+        "Sodium_int_powerscan_46": [
+          0.06162,
+          0.007544,
+          0.06786
+        ],
+        "Sodium_int_powerscan_47": [
+          0.06162,
+          0.007544,
+          0.06786
+        ],
+        "Sodium_int_powerscan_48": [
+          0.06162,
+          0.00492,
+          0.06786
+        ],
+        "Sodium_int_powerscan_49": [
+          0.06162,
+          0.00492,
+          0.06786
+        ],
+        "Sodium_int_powerscan_5": [
+          0.0632,
+          0.014186,
+          0.0696
+        ],
+        "Sodium_int_powerscan_50": [
+          0.06162,
+          0.00492,
+          0.06786
+        ],
+        "Sodium_int_powerscan_51": [
+          0.06162,
+          0.003526,
+          0.06786
+        ],
+        "Sodium_int_powerscan_52": [
+          0.06162,
+          0.003526,
+          0.06786
+        ],
+        "Sodium_int_powerscan_53": [
+          0.06162,
+          0.003526,
+          0.06786
+        ],
+        "Sodium_int_powerscan_54": [
+          0.06162,
+          0.015252,
+          0.06786
+        ],
+        "Sodium_int_powerscan_55": [
+          0.06162,
+          0.015252,
+          0.06786
+        ],
+        "Sodium_int_powerscan_56": [
+          0.06162,
+          0.015252,
+          0.06786
+        ],
+        "Sodium_int_powerscan_57": [
+          0.06162,
+          0.052726,
+          0.06786
+        ],
+        "Sodium_int_powerscan_58": [
+          0.06162,
+          0.052726,
+          0.06786
+        ],
+        "Sodium_int_powerscan_59": [
+          0.06162,
+          0.052726,
+          0.06786
+        ],
+        "Sodium_int_powerscan_6": [
+          0.0632,
+          0.014186,
+          0.0696
+        ],
+        "Sodium_int_powerscan_60": [
+          0.06162,
+          0.05658,
+          0.06786
+        ],
+        "Sodium_int_powerscan_61": [
+          0.06162,
+          0.05658,
+          0.06786
+        ],
+        "Sodium_int_powerscan_62": [
+          0.06162,
+          0.05658,
+          0.06786
+        ],
+        "Sodium_int_powerscan_63": [
+          0.06241,
+          0.018614,
+          0.06873
+        ],
+        "Sodium_int_powerscan_64": [
+          0.06241,
+          0.018614,
+          0.06873
+        ],
+        "Sodium_int_powerscan_65": [
+          0.06241,
+          0.018614,
+          0.06873
+        ],
+        "Sodium_int_powerscan_66": [
+          0.06162,
+          0.012546,
+          0.06786
+        ],
+        "Sodium_int_powerscan_67": [
+          0.06162,
+          0.012546,
+          0.06786
+        ],
+        "Sodium_int_powerscan_68": [
+          0.06162,
+          0.012546,
+          0.06786
+        ],
+        "Sodium_int_powerscan_69": [
+          0.06162,
+          0.006109,
+          0.06786
+        ],
+        "Sodium_int_powerscan_7": [
+          0.0632,
+          0.00902,
+          0.0696
+        ],
+        "Sodium_int_powerscan_70": [
+          0.06162,
+          0.006109,
+          0.06786
+        ],
+        "Sodium_int_powerscan_71": [
+          0.06162,
+          0.006109,
+          0.06786
+        ],
+        "Sodium_int_powerscan_72": [
+          0.06162,
+          0.037966,
+          0.06786
+        ],
+        "Sodium_int_powerscan_73": [
+          0.06162,
+          0.037966,
+          0.06786
+        ],
+        "Sodium_int_powerscan_74": [
+          0.06162,
+          0.037966,
+          0.06786
+        ],
+        "Sodium_int_powerscan_75": [
+          0.06162,
+          0.03034,
+          0.06786
+        ],
+        "Sodium_int_powerscan_76": [
+          0.06162,
+          0.03034,
+          0.06786
+        ],
+        "Sodium_int_powerscan_77": [
+          0.06162,
+          0.03034,
+          0.06786
+        ],
+        "Sodium_int_powerscan_78": [
+          0.06162,
+          0.027142,
+          0.06786
+        ],
+        "Sodium_int_powerscan_79": [
+          0.06162,
+          0.027142,
+          0.06786
+        ],
+        "Sodium_int_powerscan_8": [
+          0.0632,
+          0.00902,
+          0.0696
+        ],
+        "Sodium_int_powerscan_80": [
+          0.06162,
+          0.027142,
+          0.06786
+        ],
+        "Sodium_int_powerscan_81": [
+          0.06162,
+          0.055432,
+          0.06786
+        ],
+        "Sodium_int_powerscan_82": [
+          0.06162,
+          0.055432,
+          0.06786
+        ],
+        "Sodium_int_powerscan_83": [
+          0.06162,
+          0.055432,
+          0.06786
+        ],
+        "Sodium_int_powerscan_84": [
+          0.06083,
+          0.070274,
+          0.06699
+        ],
+        "Sodium_int_powerscan_85": [
+          0.06083,
+          0.070274,
+          0.06699
+        ],
+        "Sodium_int_powerscan_86": [
+          0.06083,
+          0.070274,
+          0.06699
+        ],
+        "Sodium_int_powerscan_87": [
+          0.06083,
+          0.065764,
+          0.06699
+        ],
+        "Sodium_int_powerscan_88": [
+          0.06083,
+          0.065764,
+          0.06699
+        ],
+        "Sodium_int_powerscan_89": [
+          0.06083,
+          0.065764,
+          0.06699
+        ],
+        "Sodium_int_powerscan_9": [
+          0.0632,
+          0.02378,
+          0.0696
+        ],
+        "Sodium_int_powerscan_90": [
+          0.06083,
+          0.0615,
+          0.06699
+        ],
+        "Sodium_int_powerscan_91": [
+          0.06083,
+          0.0615,
+          0.06699
+        ],
+        "Sodium_int_powerscan_92": [
+          0.06083,
+          0.0615,
+          0.06699
+        ],
+        "Sodium_int_powerscan_93": [
+          0.06083,
+          0.0,
+          0.06699
+        ],
+        "Sodium_int_powerscan_94": [
+          0.06083,
+          0.0,
+          0.06699
+        ],
+        "Sodium_int_powerscan_95": [
+          0.06083,
+          0.0,
+          0.06699
+        ]
+      },
+      "velocity_evidence": "author analysis parameters; paper describes TOF measurement; event-resolved velocities not deposited",
+      "velocity_mean_m_s": 158.0,
+      "velocity_sigma_m_s": 9.0
+    },
+    "trajectory": {
+      "earth_lpf": {
+        "jd_utc": [
+          2457798.5,
+          2457798.75,
+          2457799.0,
+          2457799.25,
+          2457799.5,
+          2457799.75,
+          2457800.0,
+          2457800.25,
+          2457800.5,
+          2457800.75,
+          2457801.0,
+          2457801.25,
+          2457801.5,
+          2457801.75,
+          2457802.0,
+          2457802.25,
+          2457802.5,
+          2457802.75,
+          2457803.0,
+          2457803.25,
+          2457803.5,
+          2457803.75,
+          2457804.0,
+          2457804.25,
+          2457804.5,
+          2457804.75,
+          2457805.0,
+          2457805.25,
+          2457805.5,
+          2457805.75,
+          2457806.0,
+          2457806.25,
+          2457806.5,
+          2457806.75,
+          2457807.0,
+          2457807.25,
+          2457807.5,
+          2457807.75,
+          2457808.0,
+          2457808.25,
+          2457808.5,
+          2457808.75,
+          2457809.0,
+          2457809.25,
+          2457809.5,
+          2457809.75,
+          2457810.0,
+          2457810.25,
+          2457810.5,
+          2457810.75,
+          2457811.0,
+          2457811.25,
+          2457811.5,
+          2457811.75,
+          2457812.0,
+          2457812.25,
+          2457812.5
+        ],
+        "position_m": [
+          [
+            -120887023557.0,
+            77855251860.6,
+            33726316008.6
+          ],
+          [
+            -121263233015.0,
+            77367739797.9,
+            33514956629.0
+          ],
+          [
+            -121637119428.0,
+            76878751963.8,
+            33302958272.7
+          ],
+          [
+            -122008675795.0,
+            76388297215.9,
+            33090324844.0
+          ],
+          [
+            -122377895126.0,
+            75896384457.7,
+            32877060263.4
+          ],
+          [
+            -122744770442.0,
+            75403022639.9,
+            32663168468.4
+          ],
+          [
+            -123109294779.0,
+            74908220761.1,
+            32448653413.5
+          ],
+          [
+            -123471461187.0,
+            74411987868.1,
+            32233519070.5
+          ],
+          [
+            -123831262736.0,
+            73914333056.8,
+            32017769428.9
+          ],
+          [
+            -124188692517.0,
+            73415265472.3,
+            31801408496.1
+          ],
+          [
+            -124543743640.0,
+            72914794309.3,
+            31584440297.4
+          ],
+          [
+            -124896409240.0,
+            72412928811.7,
+            31366868875.8
+          ],
+          [
+            -125246682478.0,
+            71909678273.1,
+            31148698292.6
+          ],
+          [
+            -125594556541.0,
+            71405052036.8,
+            30929932627.2
+          ],
+          [
+            -125940024645.0,
+            70899059495.0,
+            30710575976.8
+          ],
+          [
+            -126283080033.0,
+            70391710089.5,
+            30490632456.8
+          ],
+          [
+            -126623715980.0,
+            69883013311.2,
+            30270106200.6
+          ],
+          [
+            -126961925794.0,
+            69372978699.9,
+            30049001359.5
+          ],
+          [
+            -127297702812.0,
+            68861615844.2,
+            29827322102.8
+          ],
+          [
+            -127631040408.0,
+            68348934381.5,
+            29605072617.9
+          ],
+          [
+            -127961931987.0,
+            67834943998.2,
+            29382257110.0
+          ],
+          [
+            -128290370991.0,
+            67319654429.3,
+            29158879802.1
+          ],
+          [
+            -128616350897.0,
+            66803075458.5,
+            28934944935.5
+          ],
+          [
+            -128939865217.0,
+            66285216918.8,
+            28710456769.5
+          ],
+          [
+            -129260907502.0,
+            65766088692.3,
+            28485419581.2
+          ],
+          [
+            -129579471339.0,
+            65245700710.5,
+            28259837666.3
+          ],
+          [
+            -129895550353.0,
+            64724062955.1,
+            28033715338.7
+          ],
+          [
+            -130209138208.0,
+            64201185458.0,
+            27807056930.9
+          ],
+          [
+            -130520228610.0,
+            63677078302.0,
+            27579866793.9
+          ],
+          [
+            -130828815301.0,
+            63151751621.5,
+            27352149297.9
+          ],
+          [
+            -131134892067.0,
+            62625215603.2,
+            27123908832.2
+          ],
+          [
+            -131438452737.0,
+            62097480486.6,
+            26895149805.4
+          ],
+          [
+            -131739491181.0,
+            61568556565.4,
+            26665876646.1
+          ],
+          [
+            -132038001315.0,
+            61038454187.5,
+            26436093802.8
+          ],
+          [
+            -132333977101.0,
+            60507183756.8,
+            26205805744.6
+          ],
+          [
+            -132627412548.0,
+            59974755733.6,
+            25975016961.3
+          ],
+          [
+            -132918301715.0,
+            59441180635.4,
+            25743731963.7
+          ],
+          [
+            -133206638711.0,
+            58906469038.2,
+            25511955284.4
+          ],
+          [
+            -133492417699.0,
+            58370631577.1,
+            25279691477.5
+          ],
+          [
+            -133775632899.0,
+            57833678946.9,
+            25046945119.5
+          ],
+          [
+            -134056278587.0,
+            57295621903.3,
+            24813720809.5
+          ],
+          [
+            -134334349101.0,
+            56756471262.6,
+            24580023169.1
+          ],
+          [
+            -134609838843.0,
+            56216237903.0,
+            24345856843.1
+          ],
+          [
+            -134882742283.0,
+            55674932764.0,
+            24111226499.4
+          ],
+          [
+            -135153053960.0,
+            55132566846.7,
+            23876136829.2
+          ],
+          [
+            -135420768487.0,
+            54589151213.4,
+            23640592547.1
+          ],
+          [
+            -135685880556.0,
+            54044696987.3,
+            23404598390.7
+          ],
+          [
+            -135948384939.0,
+            53499215350.9,
+            23168159121.0
+          ],
+          [
+            -136208276494.0,
+            52952717545.7,
+            22931279521.6
+          ],
+          [
+            -136465550168.0,
+            52405214869.7,
+            22693964398.6
+          ],
+          [
+            -136720201000.0,
+            51856718676.2,
+            22456218580.0
+          ],
+          [
+            -136972224128.0,
+            51307240370.7,
+            22218046914.9
+          ],
+          [
+            -137221614788.0,
+            50756791409.1,
+            21979454273.1
+          ],
+          [
+            -137468368321.0,
+            50205383293.7,
+            21740445543.9
+          ],
+          [
+            -137712480176.0,
+            49653027570.5,
+            21501025634.9
+          ],
+          [
+            -137953945910.0,
+            49099735824.8,
+            21261199471.5
+          ],
+          [
+            -138192761195.0,
+            48545519677.6,
+            21020971994.5
+          ]
+        ],
+        "prediction_after_2016_04_14": false,
+        "source": [
+          "Target body name: Earth (399)                     {source: DE441}",
+          "Center body name: Solar System Barycenter (0)     {source: DE441}"
+        ],
+        "velocity_m_s": [
+          [
+            -17470.7706391,
+            -22535.7053494,
+            -9770.30526963
+          ],
+          [
+            -17363.3843867,
+            -22604.232443,
+            -9799.97765107
+          ],
+          [
+            -17255.6738749,
+            -22672.3505083,
+            -9829.46965251
+          ],
+          [
+            -17147.639492,
+            -22740.0574429,
+            -9858.78052727
+          ],
+          [
+            -17039.281731,
+            -22807.3510915,
+            -9887.90950758
+          ],
+          [
+            -16930.6011886,
+            -22874.2292568,
+            -9916.85580806
+          ],
+          [
+            -16821.5985614,
+            -22940.6897082,
+            -9945.61862893
+          ],
+          [
+            -16712.2746427,
+            -23006.7301899,
+            -9974.19715896
+          ],
+          [
+            -16602.630318,
+            -23072.3484284,
+            -10002.5905781
+          ],
+          [
+            -16492.6665605,
+            -23137.5421386,
+            -10030.7980598
+          ],
+          [
+            -16382.3844252,
+            -23202.309029,
+            -10058.818773
+          ],
+          [
+            -16271.7850443,
+            -23266.6468062,
+            -10086.6518837
+          ],
+          [
+            -16160.869621,
+            -23330.5531778,
+            -10114.2965568
+          ],
+          [
+            -16049.6394247,
+            -23394.0258553,
+            -10141.7519564
+          ],
+          [
+            -15938.0957849,
+            -23457.0625558,
+            -10169.0172474
+          ],
+          [
+            -15826.2400867,
+            -23519.6610022,
+            -10196.0915952
+          ],
+          [
+            -15714.0737656,
+            -23581.8189238,
+            -10222.9741666
+          ],
+          [
+            -15601.5983031,
+            -23643.5340558,
+            -10249.6641295
+          ],
+          [
+            -15488.8152227,
+            -23704.8041375,
+            -10276.1606527
+          ],
+          [
+            -15375.7260863,
+            -23765.6269113,
+            -10302.4629054
+          ],
+          [
+            -15262.332491,
+            -23826.0001198,
+            -10328.5700565
+          ],
+          [
+            -15148.6360673,
+            -23885.9215034,
+            -10354.4812742
+          ],
+          [
+            -15034.6384763,
+            -23945.3887973,
+            -10380.1957244
+          ],
+          [
+            -14920.3414095,
+            -24004.3997283,
+            -10405.7125703
+          ],
+          [
+            -14805.7465878,
+            -24062.9520107,
+            -10431.0309707
+          ],
+          [
+            -14690.8557621,
+            -24121.0433433,
+            -10456.1500789
+          ],
+          [
+            -14575.6707142,
+            -24178.671405,
+            -10481.0690413
+          ],
+          [
+            -14460.1932588,
+            -24235.8338516,
+            -10505.7869963
+          ],
+          [
+            -14344.4252459,
+            -24292.5283114,
+            -10530.3030726
+          ],
+          [
+            -14228.3685646,
+            -24348.7523826,
+            -10554.6163881
+          ],
+          [
+            -14112.0251469,
+            -24404.5036293,
+            -10578.7260482
+          ],
+          [
+            -13995.3969734,
+            -24459.7795788,
+            -10602.6311453
+          ],
+          [
+            -13878.4860786,
+            -24514.5777197,
+            -10626.330757
+          ],
+          [
+            -13761.2945581,
+            -24568.8954994,
+            -10649.8239457
+          ],
+          [
+            -13643.8245753,
+            -24622.7303233,
+            -10673.1097576
+          ],
+          [
+            -13526.0783703,
+            -24676.0795549,
+            -10696.1872224
+          ],
+          [
+            -13408.0582675,
+            -24728.9405157,
+            -10719.0553532
+          ],
+          [
+            -13289.7666857,
+            -24781.3104874,
+            -10741.7131463
+          ],
+          [
+            -13171.2061471,
+            -24833.1867147,
+            -10764.1595822
+          ],
+          [
+            -13052.3792869,
+            -24884.566409,
+            -10786.3936262
+          ],
+          [
+            -12933.2888635,
+            -24935.4467544,
+            -10808.4142301
+          ],
+          [
+            -12813.9377679,
+            -24985.8249137,
+            -10830.2203336
+          ],
+          [
+            -12694.329033,
+            -25035.6980376,
+            -10851.8108672
+          ],
+          [
+            -12574.4658428,
+            -25085.0632735,
+            -10873.1847549
+          ],
+          [
+            -12454.35154,
+            -25133.917777,
+            -10894.3409173
+          ],
+          [
+            -12333.9896332,
+            -25182.2587244,
+            -10915.2782759
+          ],
+          [
+            -12213.3838027,
+            -25230.0833264,
+            -10935.9957576
+          ],
+          [
+            -12092.5379046,
+            -25277.3888433,
+            -10956.492299
+          ],
+          [
+            -11971.4559735,
+            -25324.1726004,
+            -10976.7668524
+          ],
+          [
+            -11850.1422227,
+            -25370.4320054,
+            -10996.8183908
+          ],
+          [
+            -11728.6010432,
+            -25416.1645651,
+            -11016.6459145
+          ],
+          [
+            -11606.8369995,
+            -25461.3679033,
+            -11036.2484564
+          ],
+          [
+            -11484.8548234,
+            -25506.039778,
+            -11055.625089
+          ],
+          [
+            -11362.6594059,
+            -25550.1780987,
+            -11074.7749298
+          ],
+          [
+            -11240.255786,
+            -25593.7809427,
+            -11093.6971481
+          ],
+          [
+            -11117.6491379,
+            -25636.8465704,
+            -11112.3909701
+          ],
+          [
+            -10994.8447556,
+            -25679.3734393,
+            -11130.8556847
+          ]
+        ]
+      },
+      "earth_sodium": {
+        "jd_utc": [
+          2460787.5,
+          2460787.54167,
+          2460787.58333,
+          2460787.625,
+          2460787.66667,
+          2460787.70833,
+          2460787.75,
+          2460787.79167,
+          2460787.83333,
+          2460787.875,
+          2460787.91667,
+          2460787.95833,
+          2460788.0,
+          2460788.04167,
+          2460788.08333,
+          2460788.125,
+          2460788.16667,
+          2460788.20833,
+          2460788.25,
+          2460788.29167,
+          2460788.33333,
+          2460788.375,
+          2460788.41667,
+          2460788.45833,
+          2460788.5
+        ],
+        "position_m": [
+          [
+            -128572620361.0,
+            -73366697000.5,
+            -31775088468.7
+          ],
+          [
+            -128517848276.0,
+            -73450737762.5,
+            -31811523293.8
+          ],
+          [
+            -128463011242.0,
+            -73534742012.7,
+            -31847942321.8
+          ],
+          [
+            -128408109285.0,
+            -73618709707.7,
+            -31884345533.6
+          ],
+          [
+            -128353142432.0,
+            -73702640804.1,
+            -31920732910.0
+          ],
+          [
+            -128298110710.0,
+            -73786535258.4,
+            -31957104431.9
+          ],
+          [
+            -128243014144.0,
+            -73870393027.0,
+            -31993460080.2
+          ],
+          [
+            -128187852763.0,
+            -73954214066.5,
+            -32029799835.7
+          ],
+          [
+            -128132626592.0,
+            -74037998333.4,
+            -32066123679.3
+          ],
+          [
+            -128077335658.0,
+            -74121745784.2,
+            -32102431591.9
+          ],
+          [
+            -128021979988.0,
+            -74205456375.2,
+            -32138723554.1
+          ],
+          [
+            -127966559609.0,
+            -74289130062.9,
+            -32174999546.9
+          ],
+          [
+            -127911074548.0,
+            -74372766803.8,
+            -32211259551.0
+          ],
+          [
+            -127855524831.0,
+            -74456366554.2,
+            -32247503547.3
+          ],
+          [
+            -127799910486.0,
+            -74539929270.6,
+            -32283731516.5
+          ],
+          [
+            -127744231540.0,
+            -74623454909.2,
+            -32319943439.3
+          ],
+          [
+            -127688488020.0,
+            -74706943426.6,
+            -32356139296.6
+          ],
+          [
+            -127632679953.0,
+            -74790394779.0,
+            -32392319069.1
+          ],
+          [
+            -127576807365.0,
+            -74873808922.8,
+            -32428482737.5
+          ],
+          [
+            -127520870286.0,
+            -74957185814.3,
+            -32464630282.6
+          ],
+          [
+            -127464868741.0,
+            -75040525409.8,
+            -32500761685.0
+          ],
+          [
+            -127408802758.0,
+            -75123827665.5,
+            -32536876925.6
+          ],
+          [
+            -127352672365.0,
+            -75207092537.8,
+            -32572975984.9
+          ],
+          [
+            -127296477589.0,
+            -75290319983.0,
+            -32609058843.7
+          ],
+          [
+            -127240218458.0,
+            -75373509957.2,
+            -32645125482.7
+          ]
+        ],
+        "prediction_after_2016_04_14": false,
+        "source": [
+          "Target body name: Earth (399)                     {source: DE441}",
+          "Center body name: Solar System Barycenter (0)     {source: DE441}"
+        ],
+        "velocity_m_s": [
+          [
+            15205.4449597,
+            -23349.7231568,
+            -10122.9770347
+          ],
+          [
+            15223.4900344,
+            -23339.5870385,
+            -10118.5915956
+          ],
+          [
+            15241.527763,
+            -23329.438854,
+            -10114.2008505
+          ],
+          [
+            15259.5581329,
+            -23319.2785993,
+            -10109.8047966
+          ],
+          [
+            15277.5811314,
+            -23309.1062704,
+            -10105.403431
+          ],
+          [
+            15295.5967455,
+            -23298.9218632,
+            -10100.9967509
+          ],
+          [
+            15313.6049622,
+            -23288.7253737,
+            -10096.5847535
+          ],
+          [
+            15331.6057684,
+            -23278.5167978,
+            -10092.1674359
+          ],
+          [
+            15349.5991508,
+            -23268.2961313,
+            -10087.7447951
+          ],
+          [
+            15367.585096,
+            -23258.0633702,
+            -10083.3168285
+          ],
+          [
+            15385.5635903,
+            -23247.8185105,
+            -10078.883533
+          ],
+          [
+            15403.5346202,
+            -23237.561548,
+            -10074.4449059
+          ],
+          [
+            15421.4981716,
+            -23227.2924786,
+            -10070.0009443
+          ],
+          [
+            15439.4542307,
+            -23217.0112982,
+            -10065.5516453
+          ],
+          [
+            15457.4027832,
+            -23206.7180027,
+            -10061.0970061
+          ],
+          [
+            15475.3438149,
+            -23196.4125881,
+            -10056.6370237
+          ],
+          [
+            15493.2773113,
+            -23186.0950502,
+            -10052.1716954
+          ],
+          [
+            15511.2032578,
+            -23175.765385,
+            -10047.7010184
+          ],
+          [
+            15529.1216397,
+            -23165.4235884,
+            -10043.2249896
+          ],
+          [
+            15547.0324421,
+            -23155.0696564,
+            -10038.7436064
+          ],
+          [
+            15564.9356499,
+            -23144.7035849,
+            -10034.2568659
+          ],
+          [
+            15582.8312478,
+            -23134.3253698,
+            -10029.7647653
+          ],
+          [
+            15600.7192206,
+            -23123.9350073,
+            -10025.2673017
+          ],
+          [
+            15618.5995527,
+            -23113.5324932,
+            -10020.7644724
+          ],
+          [
+            15636.4722283,
+            -23103.1178237,
+            -10016.2562746
+          ]
+        ]
+      },
+      "lpf": {
+        "jd_utc": [
+          2457798.5,
+          2457798.75,
+          2457799.0,
+          2457799.25,
+          2457799.5,
+          2457799.75,
+          2457800.0,
+          2457800.25,
+          2457800.5,
+          2457800.75,
+          2457801.0,
+          2457801.25,
+          2457801.5,
+          2457801.75,
+          2457802.0,
+          2457802.25,
+          2457802.5,
+          2457802.75,
+          2457803.0,
+          2457803.25,
+          2457803.5,
+          2457803.75,
+          2457804.0,
+          2457804.25,
+          2457804.5,
+          2457804.75,
+          2457805.0,
+          2457805.25,
+          2457805.5,
+          2457805.75,
+          2457806.0,
+          2457806.25,
+          2457806.5,
+          2457806.75,
+          2457807.0,
+          2457807.25,
+          2457807.5,
+          2457807.75,
+          2457808.0,
+          2457808.25,
+          2457808.5,
+          2457808.75,
+          2457809.0,
+          2457809.25,
+          2457809.5,
+          2457809.75,
+          2457810.0,
+          2457810.25,
+          2457810.5,
+          2457810.75,
+          2457811.0,
+          2457811.25,
+          2457811.5,
+          2457811.75,
+          2457812.0,
+          2457812.25,
+          2457812.5
+        ],
+        "position_m": [
+          [
+            -120194283823.0,
+            76651638545.1,
+            33118767883.1
+          ],
+          [
+            -120566152372.0,
+            76169370045.0,
+            32905945694.9
+          ],
+          [
+            -120935670226.0,
+            75685674911.6,
+            32692511658.9
+          ],
+          [
+            -121302830926.0,
+            75200562901.6,
+            32478470298.2
+          ],
+          [
+            -121667628068.0,
+            74714043792.8,
+            32263826146.3
+          ],
+          [
+            -122030055304.0,
+            74226127385.7,
+            32048583747.6
+          ],
+          [
+            -122390106338.0,
+            73736823503.4,
+            31832747657.5
+          ],
+          [
+            -122747774933.0,
+            73246141991.0,
+            31616322442.1
+          ],
+          [
+            -123103054908.0,
+            72754092715.6,
+            31399312678.4
+          ],
+          [
+            -123455940136.0,
+            72260685565.9,
+            31181722953.8
+          ],
+          [
+            -123806424545.0,
+            71765930450.1,
+            30963557865.8
+          ],
+          [
+            -124154502118.0,
+            71269837298.6,
+            30744822022.6
+          ],
+          [
+            -124500166896.0,
+            70772416061.9,
+            30525520042.5
+          ],
+          [
+            -124843412984.0,
+            70273676716.2,
+            30305656556.2
+          ],
+          [
+            -125184234539.0,
+            69773629256.1,
+            30085236204.1
+          ],
+          [
+            -125522625775.0,
+            69272283695.5,
+            29864263636.0
+          ],
+          [
+            -125858580947.0,
+            68769650061.2,
+            29642743509.0
+          ],
+          [
+            -126192094363.0,
+            68265738397.0,
+            29420680489.2
+          ],
+          [
+            -126523160386.0,
+            67760558766.3,
+            29198079252.5
+          ],
+          [
+            -126851773442.0,
+            67254121254.3,
+            28974944485.9
+          ],
+          [
+            -127177928020.0,
+            66746435968.4,
+            28751280887.4
+          ],
+          [
+            -127501618672.0,
+            66237513038.9,
+            28527093166.7
+          ],
+          [
+            -127822840024.0,
+            65727362622.9,
+            28302386046.4
+          ],
+          [
+            -128141586759.0,
+            65215994896.8,
+            28077164259.2
+          ],
+          [
+            -128457853623.0,
+            64703420057.2,
+            27851432548.4
+          ],
+          [
+            -128771635396.0,
+            64189648307.8,
+            27625195661.4
+          ],
+          [
+            -129082926909.0,
+            63674689866.4,
+            27398458353.9
+          ],
+          [
+            -129391723043.0,
+            63158554965.1,
+            27171225388.9
+          ],
+          [
+            -129698018742.0,
+            62641253856.6,
+            26943501540.0
+          ],
+          [
+            -130001809011.0,
+            62122796812.6,
+            26715291590.1
+          ],
+          [
+            -130303088911.0,
+            61603194120.9,
+            26486600330.7
+          ],
+          [
+            -130601853556.0,
+            61082456085.1,
+            26257432561.3
+          ],
+          [
+            -130898098116.0,
+            60560593022.9,
+            26027793088.4
+          ],
+          [
+            -131191817816.0,
+            60037615267.3,
+            25797686726.1
+          ],
+          [
+            -131483007933.0,
+            59513533165.6,
+            25567118295.6
+          ],
+          [
+            -131771663802.0,
+            58988357079.7,
+            25336092624.7
+          ],
+          [
+            -132057780813.0,
+            58462097384.1,
+            25104614547.6
+          ],
+          [
+            -132341354409.0,
+            57934764466.9,
+            24872688903.9
+          ],
+          [
+            -132622380083.0,
+            57406368726.3,
+            24640320538.2
+          ],
+          [
+            -132900853386.0,
+            56876920573.0,
+            24407514300.1
+          ],
+          [
+            -133176769920.0,
+            56346430427.6,
+            24174275043.1
+          ],
+          [
+            -133450125353.0,
+            55814908724.7,
+            23940607626.3
+          ],
+          [
+            -133720915402.0,
+            55282365906.9,
+            23706516911.8
+          ],
+          [
+            -133989135837.0,
+            54748812424.7,
+            23472007764.2
+          ],
+          [
+            -134254782469.0,
+            54214258731.2,
+            23237085048.6
+          ],
+          [
+            -134517851157.0,
+            53678715284.8,
+            23001753631.8
+          ],
+          [
+            -134778337819.0,
+            53142192551.3,
+            22766018382.7
+          ],
+          [
+            -135036238431.0,
+            52604701005.3,
+            22529884173.6
+          ],
+          [
+            -135291549033.0,
+            52066251129.8,
+            22293355879.8
+          ],
+          [
+            -135544265730.0,
+            51526853417.3,
+            22056438379.9
+          ],
+          [
+            -135794384700.0,
+            50986518372.3,
+            21819136557.6
+          ],
+          [
+            -136041902184.0,
+            50445256505.9,
+            21581455299.0
+          ],
+          [
+            -136286814483.0,
+            49903078336.0,
+            21343399493.0
+          ],
+          [
+            -136529117935.0,
+            49359994377.8,
+            21104974027.8
+          ],
+          [
+            -136768808929.0,
+            48816015149.0,
+            20866183793.0
+          ],
+          [
+            -137005883908.0,
+            48271151170.8,
+            20627033680.1
+          ],
+          [
+            -137240339380.0,
+            47725412972.0,
+            20387528584.3
+          ]
+        ],
+        "prediction_after_2016_04_14": true,
+        "source": [
+          "Target body name: LISA Pathfinder (spacecraft) (-141043) {source: lpf_20160413}",
+          "Center body name: Solar System Barycenter (0)     {source: DE441}"
+        ],
+        "velocity_m_s": [
+          [
+            -17270.4504625,
+            -22294.0711705,
+            -9838.64627914
+          ],
+          [
+            -17161.7723626,
+            -22360.344458,
+            -9867.07707337
+          ],
+          [
+            -17052.7939673,
+            -22426.1666163,
+            -9895.29873837
+          ],
+          [
+            -16943.5177852,
+            -22491.5366144,
+            -9923.31077403
+          ],
+          [
+            -16833.9463945,
+            -22556.4533893,
+            -9951.11266588
+          ],
+          [
+            -16724.0823525,
+            -22620.9159075,
+            -9978.7039113
+          ],
+          [
+            -16613.928224,
+            -22684.9231457,
+            -10006.084011
+          ],
+          [
+            -16503.486594,
+            -22748.4740851,
+            -10033.2524664
+          ],
+          [
+            -16392.7600466,
+            -22811.5677212,
+            -10060.2087842
+          ],
+          [
+            -16281.7512258,
+            -22874.2030319,
+            -10086.9524621
+          ],
+          [
+            -16170.4625772,
+            -22936.3791119,
+            -10113.4830468
+          ],
+          [
+            -16058.8966725,
+            -22998.0950039,
+            -10139.8000617
+          ],
+          [
+            -15947.0559303,
+            -23059.3498436,
+            -10165.9030685
+          ],
+          [
+            -15834.9434631,
+            -23120.142418,
+            -10191.7914785
+          ],
+          [
+            -15722.5621312,
+            -23180.4716582,
+            -10217.4647635
+          ],
+          [
+            -15609.9148235,
+            -23240.3364932,
+            -10242.9223928
+          ],
+          [
+            -15497.0031534,
+            -23299.7365287,
+            -10268.1641245
+          ],
+          [
+            -15383.8286124,
+            -23358.671446,
+            -10293.1897479
+          ],
+          [
+            -15270.393062,
+            -23417.1407451,
+            -10317.9989732
+          ],
+          [
+            -15156.699879,
+            -23475.1431473,
+            -10342.5911765
+          ],
+          [
+            -15042.7536139,
+            -23532.6767735,
+            -10366.9654757
+          ],
+          [
+            -14928.5584438,
+            -23589.7399499,
+            -10391.1210762
+          ],
+          [
+            -14814.1165748,
+            -23646.3320414,
+            -10415.0576281
+          ],
+          [
+            -14699.429972,
+            -23702.4525488,
+            -10438.7748397
+          ],
+          [
+            -14584.4999125,
+            -23758.1013419,
+            -10462.2725781
+          ],
+          [
+            -14469.3289286,
+            -23813.277645,
+            -10485.5504344
+          ],
+          [
+            -14353.9197907,
+            -23867.9805682,
+            -10508.6079526
+          ],
+          [
+            -14238.2754654,
+            -23922.2091295,
+            -10531.4446391
+          ],
+          [
+            -14122.3986478,
+            -23975.9625,
+            -10554.0600692
+          ],
+          [
+            -14006.2918323,
+            -24029.239967,
+            -10576.4538714
+          ],
+          [
+            -13889.9575423,
+            -24082.0408153,
+            -10598.6256783
+          ],
+          [
+            -13773.3983047,
+            -24134.3643417,
+            -10620.5751325
+          ],
+          [
+            -13656.6167063,
+            -24186.2098262,
+            -10642.3018766
+          ],
+          [
+            -13539.6152901,
+            -24237.5765884,
+            -10663.8055767
+          ],
+          [
+            -13422.3965889,
+            -24288.4639721,
+            -10685.0859175
+          ],
+          [
+            -13304.9631391,
+            -24338.871343,
+            -10706.142601
+          ],
+          [
+            -13187.3174602,
+            -24388.7980973,
+            -10726.9753515
+          ],
+          [
+            -13069.4621225,
+            -24438.2436391,
+            -10747.5839054
+          ],
+          [
+            -12951.3994746,
+            -24487.2074855,
+            -10767.9680564
+          ],
+          [
+            -12833.1319916,
+            -24535.6891363,
+            -10788.1275993
+          ],
+          [
+            -12714.6619822,
+            -24583.6881865,
+            -10808.0623771
+          ],
+          [
+            -12595.9924933,
+            -24631.2039831,
+            -10827.7721354
+          ],
+          [
+            -12477.1263075,
+            -24678.2360072,
+            -10847.2566815
+          ],
+          [
+            -12358.0662453,
+            -24724.7837584,
+            -10866.5158345
+          ],
+          [
+            -12238.8137826,
+            -24770.8472823,
+            -10885.5496449
+          ],
+          [
+            -12119.3702797,
+            -24816.4266992,
+            -10904.3581949
+          ],
+          [
+            -11999.7375071,
+            -24861.5220007,
+            -10922.9415114
+          ],
+          [
+            -11879.9188662,
+            -24906.1325813,
+            -10941.2993668
+          ],
+          [
+            -11759.9190263,
+            -24950.2573741,
+            -10959.431335
+          ],
+          [
+            -11639.7422801,
+            -24993.8954756,
+            -10977.337053
+          ],
+          [
+            -11519.3908442,
+            -25037.0467933,
+            -10995.0164912
+          ],
+          [
+            -11398.8666995,
+            -25079.7113379,
+            -11012.4696563
+          ],
+          [
+            -11278.1711137,
+            -25121.8894038,
+            -11029.6966666
+          ],
+          [
+            -11157.3067082,
+            -25163.5807753,
+            -11046.6974185
+          ],
+          [
+            -11036.2763742,
+            -25204.7851396,
+            -11063.4717602
+          ],
+          [
+            -10915.0832273,
+            -25245.5021032,
+            -11080.0194996
+          ],
+          [
+            -10793.7301076,
+            -25285.731382,
+            -11096.3404845
+          ]
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "auxiliary_summary_sha256": "096849d8ac97a1f64ffdc78ed6ae66aee04ccfd7ae10cb77fad7d1d54ab53065",
+    "baseline_data_sha256": "2997bf3ef95c4f967759e37eafb6ae3044a416e900ab09d13e41be6d41a969ea",
+    "code_sha256": "d924ea6c484fa81cba8caac8e937df2b69bcd8669f4b4d9a31f14f7f6b723d11",
+    "empirical_joint_confidence_enabled": false,
+    "manifest_sha256": "d261015f8cf8a02c93ff18456cf6e18efbb3bf09972623615c54c429490435eb",
+    "protocol_sha256": "1e8d7a707d5525f25b696cdf0a6af92c130da5cb89f9f47abad9fe89e44070bd",
+    "revision_association": "content hashes; no circular output/commit hash",
+    "source_hashes": {
+      "Final_data.xlsx": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "Na-Cluster-Interference.zip": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "PSD.zip": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "XENONnT_ER_v2.zip": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "earth_201702.txt": "edec8fa63f100838ced32127368156586d08a1a2a9cfb72b1c1b1d490a391374",
+      "earth_sodium.txt": "d0eb7cddc067df5381c79dca503e55cc6c14ecb2478ee08890848cac8918e051",
+      "lpf_201702.txt": "22ff2ca9e37ff737bd5c683d21cc5579407c683252c157a399f3eefa476b8362",
+      "lpf_drs_sample.fits": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268"
+    },
+    "sufficiency_sha256": "78284c1795a9d8f4e818189765c06bbd1f5a347b0f62ee257adfdbe6af260e20",
+    "units": "SI except explicitly named keV, mK, mW, atomic mass units"
+  }
+}

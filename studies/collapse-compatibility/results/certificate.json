@@ -1,0 +1,95 @@
+{
+  "data": {
+    "empirical_exclusion_enabled": false,
+    "escape_example": {
+      "escape_column": 2,
+      "scope": "finite supplied responses",
+      "status": "unbounded"
+    },
+    "evidence": "formal_conditional",
+    "finite_primal_dual": {
+      "dual": [
+        1.0,
+        1.0
+      ],
+      "dual_violation": 0.0,
+      "duality_gap": 0.0,
+      "primal": [
+        2.0,
+        0.0,
+        3.0
+      ],
+      "primal_violation": 0.0,
+      "scope": "finite numerical result, not continuum",
+      "status": "bounded",
+      "value": 5.0
+    },
+    "input": {
+      "bounds": [
+        2,
+        3
+      ],
+      "kernels": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "knots": [
+        0,
+        1,
+        2
+      ],
+      "macro": [
+        1,
+        2,
+        1
+      ],
+      "macro_tail_slope": 0,
+      "tail_slopes": [
+        0,
+        0
+      ],
+      "weights": [
+        1,
+        1
+      ]
+    },
+    "validation": {
+      "evidence": "formal_conditional",
+      "knot_slacks": [
+        "0",
+        "0",
+        "0"
+      ],
+      "scope": "exact rational affine domination on [0,infinity); not Lean-verified",
+      "tail_slope_slack": "0",
+      "upper_bound": "5"
+    }
+  },
+  "metadata": {
+    "code_sha256": "d924ea6c484fa81cba8caac8e937df2b69bcd8669f4b4d9a31f14f7f6b723d11",
+    "empirical_joint_confidence_enabled": false,
+    "manifest_sha256": "d261015f8cf8a02c93ff18456cf6e18efbb3bf09972623615c54c429490435eb",
+    "protocol_sha256": "1e8d7a707d5525f25b696cdf0a6af92c130da5cb89f9f47abad9fe89e44070bd",
+    "revision_association": "content hashes; no circular output/commit hash",
+    "source_hashes": {
+      "Final_data.xlsx": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "Na-Cluster-Interference.zip": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "PSD.zip": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "XENONnT_ER_v2.zip": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "earth_201702.txt": "edec8fa63f100838ced32127368156586d08a1a2a9cfb72b1c1b1d490a391374",
+      "earth_sodium.txt": "d0eb7cddc067df5381c79dca503e55cc6c14ecb2478ee08890848cac8918e051",
+      "lpf_201702.txt": "22ff2ca9e37ff737bd5c683d21cc5579407c683252c157a399f3eefa476b8362",
+      "lpf_drs_sample.fits": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268"
+    },
+    "sufficiency_sha256": "78284c1795a9d8f4e818189765c06bbd1f5a347b0f62ee257adfdbe6af260e20",
+    "units": "SI except explicitly named keV, mK, mW, atomic mass units"
+  }
+}
