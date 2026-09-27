@@ -1,0 +1,1882 @@
+{
+  "limitations": [
+    "optical baseline has unreconciled residuals",
+    "incident rate is not independently calibrated Bernoulli trial count",
+    "exposure and mass tails are not bounded by the archive",
+    "mechanical mode/control/DC calibration is not independently measured"
+  ],
+  "sensor": {
+    "baseline_tolerance_relative": 2e-10,
+    "dc_flux_force_calibration_phi0_squared_per_N2": 3075482422300000.0,
+    "measured_timestamps_available": false,
+    "spectra": [
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0184,
+          1.52218e-12,
+          2.4067779e-13
+        ],
+        "last_row": [
+          3549.9809,
+          1.465124e-12,
+          2.3165644e-13
+        ],
+        "maximum_hz": 3549.9809,
+        "maximum_step_hz": 0.0276,
+        "minimum_hz": 3515.0184,
+        "minimum_psd_phi0_squared_per_hz": 7.07449e-13,
+        "minimum_step_hz": 0.0275,
+        "peak_hz": 3532.7342,
+        "rows": 1268,
+        "temperature_mk": 30
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.61721e-12,
+          2.0878091e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.3592097e-12,
+          1.7547321e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 8.70867e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 50
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.3930767e-12,
+          1.7984542e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.7954907e-12,
+          2.3179685e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.78758e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 70
+      },
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0051,
+          8.285485e-13,
+          1.3100502e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.703005e-12,
+          2.6926873e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 7.994645e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 85
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.6280937e-12,
+          2.1018599e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.8088203e-12,
+          2.335177e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.4363133e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 100
+      },
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0051,
+          8.7986e-13,
+          1.3911808e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.2024945e-12,
+          1.9013107e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 8.16301e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 125
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.1756617e-12,
+          1.5177727e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.3840163e-12,
+          1.7867574e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.2862567e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 150
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.3695637e-12,
+          1.7680991e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.37439e-12,
+          1.7743299e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.0139267e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7435,
+        "rows": 1468,
+        "temperature_mk": 200
+      },
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0051,
+          1.19345e-12,
+          1.8870101e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.567124e-12,
+          2.4778406e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 6.79653e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 250
+      },
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0051,
+          1.7269444e-12,
+          2.7305388e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.1487286e-12,
+          1.8162994e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.5632668e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 300
+      },
+      {
+        "averages": 40,
+        "first_row": [
+          3515.0051,
+          1.216085e-12,
+          1.9227992e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.346969e-12,
+          2.129745e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 9.041525e-13,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 370
+      },
+      {
+        "averages": 80,
+        "first_row": [
+          3515.0051,
+          1.3311822e-12,
+          1.488307e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.5364165e-12,
+          1.7177659e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 1.0181328e-12,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 450
+      },
+      {
+        "averages": 80,
+        "first_row": [
+          3515.0051,
+          1.0740393e-12,
+          1.2008124e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.435638e-12,
+          1.6050921e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 1.0129833e-12,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 580
+      },
+      {
+        "averages": 60,
+        "first_row": [
+          3515.0051,
+          1.568137e-12,
+          2.0244562e-13
+        ],
+        "last_row": [
+          3549.9811,
+          1.50292e-12,
+          1.9402614e-13
+        ],
+        "maximum_hz": 3549.9811,
+        "maximum_step_hz": 0.0239,
+        "minimum_hz": 3515.0051,
+        "minimum_psd_phi0_squared_per_hz": 1.141423e-12,
+        "minimum_step_hz": 0.0238,
+        "peak_hz": 3532.7673,
+        "rows": 1468,
+        "temperature_mk": 1000
+      }
+    ],
+    "thermal_regression_chi_squared": 12.897642025,
+    "thermal_regression_slope": 3.2806157987e-12,
+    "workbook_cells": {
+      "D20": -4.64152e-21,
+      "D23": 3.29027e-12,
+      "E20": 5.30886e-21,
+      "E23": 2.69917e-14,
+      "K20": 1.380648e-23,
+      "L20": 0.43,
+      "L26": -1.509200627e-36,
+      "M20": 0.013,
+      "M26": 1.7721892722e-36,
+      "N20": 3532.7528724,
+      "N29": 2.0734614485e-36,
+      "O20": 0.0005916407243
+    }
+  },
+  "sodium": {
+    "count_bins": 3895,
+    "mass_model_mean_u": 171283.76335,
+    "mass_model_minmax_u": [
+      144706.02003,
+      194939.7429
+    ],
+    "scans": [
+      {
+        "count_total": 90101,
+        "incident_rate_hz": 26500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2194.8165471,
+        "ols_row_l1": [
+          1.0,
+          1.273126882,
+          1.2832048943
+        ],
+        "optical_mean_probability": 0.087398141555,
+        "optical_visibility": 0.011677541193,
+        "scan": "Sodium_int_powerscan_1",
+        "visibility": 0.018842043702,
+        "visibility_se": 0.0073699140901
+      },
+      {
+        "count_total": 86941,
+        "incident_rate_hz": 25000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2119.2105475,
+        "ols_row_l1": [
+          1.0,
+          1.2823950611,
+          1.2787253257
+        ],
+        "optical_mean_probability": 0.087398141555,
+        "optical_visibility": 0.011677541193,
+        "scan": "Sodium_int_powerscan_2",
+        "visibility": 0.022667829579,
+        "visibility_se": 0.0088948145702
+      },
+      {
+        "count_total": 144153,
+        "incident_rate_hz": 25000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3504.7783339,
+        "ols_row_l1": [
+          1.0,
+          1.2746970158,
+          1.2857650786
+        ],
+        "optical_mean_probability": 0.1419129281,
+        "optical_visibility": 0.11912195305,
+        "scan": "Sodium_int_powerscan_3",
+        "visibility": 0.076594589254,
+        "visibility_se": 0.0070371318374
+      },
+      {
+        "count_total": 141667,
+        "incident_rate_hz": 24500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3448.7328623,
+        "ols_row_l1": [
+          1.0,
+          1.2677124538,
+          1.3064802104
+        ],
+        "optical_mean_probability": 0.1419129281,
+        "optical_visibility": 0.11912195305,
+        "scan": "Sodium_int_powerscan_4",
+        "visibility": 0.063704097722,
+        "visibility_se": 0.0070482503207
+      },
+      {
+        "count_total": 154364,
+        "incident_rate_hz": 24000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3751.5688613,
+        "ols_row_l1": [
+          1.0,
+          1.2662284932,
+          1.286439657
+        ],
+        "optical_mean_probability": 0.15433507975,
+        "optical_visibility": 0.1087747538,
+        "scan": "Sodium_int_powerscan_5",
+        "visibility": 0.092224520679,
+        "visibility_se": 0.0078399266363
+      },
+      {
+        "count_total": 152544,
+        "incident_rate_hz": 24000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3715.017508,
+        "ols_row_l1": [
+          1.0,
+          1.2636667212,
+          1.28264735
+        ],
+        "optical_mean_probability": 0.15433507975,
+        "optical_visibility": 0.1087747538,
+        "scan": "Sodium_int_powerscan_6",
+        "visibility": 0.079753750946,
+        "visibility_se": 0.0072489631997
+      },
+      {
+        "count_total": 164893,
+        "incident_rate_hz": 23750.0,
+        "integration_s": 1.0,
+        "mean_counts": 4013.8664353,
+        "ols_row_l1": [
+          1.0,
+          1.263260284,
+          1.2867346845
+        ],
+        "optical_mean_probability": 0.16732389954,
+        "optical_visibility": 0.061794340721,
+        "scan": "Sodium_int_powerscan_7",
+        "visibility": 0.055022220294,
+        "visibility_se": 0.0069018208573
+      },
+      {
+        "count_total": 164412,
+        "incident_rate_hz": 23500.0,
+        "integration_s": 1.0,
+        "mean_counts": 4003.6252977,
+        "ols_row_l1": [
+          1.0,
+          1.2544361998,
+          1.2973342855
+        ],
+        "optical_mean_probability": 0.16732389954,
+        "optical_visibility": 0.061794340721,
+        "scan": "Sodium_int_powerscan_8",
+        "visibility": 0.062259668146,
+        "visibility_se": 0.0060779065453
+      },
+      {
+        "count_total": 132689,
+        "incident_rate_hz": 23500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3228.4686307,
+        "ols_row_l1": [
+          1.0,
+          1.2659037179,
+          1.2872293609
+        ],
+        "optical_mean_probability": 0.13423738719,
+        "optical_visibility": 0.09745473863,
+        "scan": "Sodium_int_powerscan_9",
+        "visibility": 0.045919741366,
+        "visibility_se": 0.0082833945488
+      },
+      {
+        "count_total": 131021,
+        "incident_rate_hz": 23500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3186.0441014,
+        "ols_row_l1": [
+          1.0,
+          1.2709083865,
+          1.2985379374
+        ],
+        "optical_mean_probability": 0.13423738719,
+        "optical_visibility": 0.09745473863,
+        "scan": "Sodium_int_powerscan_10",
+        "visibility": 0.067657278893,
+        "visibility_se": 0.0091146719174
+      },
+      {
+        "count_total": 129491,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3146.3133246,
+        "ols_row_l1": [
+          1.0,
+          1.2640928093,
+          1.2830408734
+        ],
+        "optical_mean_probability": 0.13423738719,
+        "optical_visibility": 0.09745473863,
+        "scan": "Sodium_int_powerscan_11",
+        "visibility": 0.063372796034,
+        "visibility_se": 0.0069998372819
+      },
+      {
+        "count_total": 97491,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2377.2746794,
+        "ols_row_l1": [
+          1.0,
+          1.2609728657,
+          1.2703238568
+        ],
+        "optical_mean_probability": 0.098942323963,
+        "optical_visibility": 0.023844904029,
+        "scan": "Sodium_int_powerscan_12",
+        "visibility": 0.0069700817618,
+        "visibility_se": 0.006334040559
+      },
+      {
+        "count_total": 95972,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2339.9817724,
+        "ols_row_l1": [
+          1.0,
+          1.2638116069,
+          1.2877629029
+        ],
+        "optical_mean_probability": 0.098942323963,
+        "optical_visibility": 0.023844904029,
+        "scan": "Sodium_int_powerscan_13",
+        "visibility": 0.0092888828902,
+        "visibility_se": 0.0093520914452
+      },
+      {
+        "count_total": 94523,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2303.502463,
+        "ols_row_l1": [
+          1.0,
+          1.266769265,
+          1.2842175702
+        ],
+        "optical_mean_probability": 0.098942323963,
+        "optical_visibility": 0.023844904029,
+        "scan": "Sodium_int_powerscan_14",
+        "visibility": 0.013942186065,
+        "visibility_se": 0.0076818598156
+      },
+      {
+        "count_total": 101087,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2464.2439955,
+        "ols_row_l1": [
+          1.0,
+          1.26577236,
+          1.2881638435
+        ],
+        "optical_mean_probability": 0.1045650764,
+        "optical_visibility": 0.016353617921,
+        "scan": "Sodium_int_powerscan_15",
+        "visibility": 0.011791150833,
+        "visibility_se": 0.0080291645422
+      },
+      {
+        "count_total": 99419,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2423.7619834,
+        "ols_row_l1": [
+          1.0,
+          1.2742613578,
+          1.28116519
+        ],
+        "optical_mean_probability": 0.1045650764,
+        "optical_visibility": 0.016353617921,
+        "scan": "Sodium_int_powerscan_16",
+        "visibility": 0.013210724298,
+        "visibility_se": 0.0083147748341
+      },
+      {
+        "count_total": 97049,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2364.8759595,
+        "ols_row_l1": [
+          1.0,
+          1.2619513763,
+          1.29415448
+        ],
+        "optical_mean_probability": 0.1045650764,
+        "optical_visibility": 0.016353617921,
+        "scan": "Sodium_int_powerscan_17",
+        "visibility": 0.016184164093,
+        "visibility_se": 0.0084279628907
+      },
+      {
+        "count_total": 105100,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2561.539901,
+        "ols_row_l1": [
+          1.0,
+          1.2758784616,
+          1.2841074732
+        ],
+        "optical_mean_probability": 0.1109722444,
+        "optical_visibility": 0.0075566981138,
+        "scan": "Sodium_int_powerscan_18",
+        "visibility": 0.012641055185,
+        "visibility_se": 0.0072089123442
+      },
+      {
+        "count_total": 104065,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2537.9232199,
+        "ols_row_l1": [
+          1.0,
+          1.2660627064,
+          1.288392183
+        ],
+        "optical_mean_probability": 0.1109722444,
+        "optical_visibility": 0.0075566981138,
+        "scan": "Sodium_int_powerscan_19",
+        "visibility": 0.013569402491,
+        "visibility_se": 0.0088480755585
+      },
+      {
+        "count_total": 98673,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2405.4223556,
+        "ols_row_l1": [
+          1.0,
+          1.2668214106,
+          1.2861239661
+        ],
+        "optical_mean_probability": 0.10163008384,
+        "optical_visibility": 0.02117658298,
+        "scan": "Sodium_int_powerscan_20",
+        "visibility": 0.0082135310328,
+        "visibility_se": 0.0070196705549
+      },
+      {
+        "count_total": 98294,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2394.1094659,
+        "ols_row_l1": [
+          1.0,
+          1.2695647142,
+          1.2960629934
+        ],
+        "optical_mean_probability": 0.10089945593,
+        "optical_visibility": 0.021381816405,
+        "scan": "Sodium_int_powerscan_21",
+        "visibility": 0.0256202856,
+        "visibility_se": 0.010231922704
+      },
+      {
+        "count_total": 104296,
+        "incident_rate_hz": 22500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2543.8022027,
+        "ols_row_l1": [
+          1.0,
+          1.2690938898,
+          1.2835153465
+        ],
+        "optical_mean_probability": 0.11119958956,
+        "optical_visibility": 0.0083957566037,
+        "scan": "Sodium_int_powerscan_22",
+        "visibility": 0.0026542684024,
+        "visibility_se": 0.0068603130056
+      },
+      {
+        "count_total": 102887,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2506.7025745,
+        "ols_row_l1": [
+          1.0,
+          1.2593541138,
+          1.2920282035
+        ],
+        "optical_mean_probability": 0.11119958956,
+        "optical_visibility": 0.0083957566037,
+        "scan": "Sodium_int_powerscan_23",
+        "visibility": 0.021907283206,
+        "visibility_se": 0.0089543973751
+      },
+      {
+        "count_total": 104165,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2540.6246964,
+        "ols_row_l1": [
+          1.0,
+          1.2650809733,
+          1.2881613511
+        ],
+        "optical_mean_probability": 0.11787049448,
+        "optical_visibility": 0.010421360037,
+        "scan": "Sodium_int_powerscan_24",
+        "visibility": 0.006452370097,
+        "visibility_se": 0.0073219924172
+      },
+      {
+        "count_total": 104875,
+        "incident_rate_hz": 23000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2557.8795677,
+        "ols_row_l1": [
+          1.0,
+          1.2633282283,
+          1.2808276438
+        ],
+        "optical_mean_probability": 0.11787049448,
+        "optical_visibility": 0.010421360037,
+        "scan": "Sodium_int_powerscan_25",
+        "visibility": 0.0063750433266,
+        "visibility_se": 0.0087217813424
+      },
+      {
+        "count_total": 112034,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2728.9802485,
+        "ols_row_l1": [
+          1.0,
+          1.264172667,
+          1.2872198573
+        ],
+        "optical_mean_probability": 0.12326400374,
+        "optical_visibility": 0.025665971106,
+        "scan": "Sodium_int_powerscan_26",
+        "visibility": 0.024374678345,
+        "visibility_se": 0.0071090976743
+      },
+      {
+        "count_total": 110558,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2693.6615719,
+        "ols_row_l1": [
+          1.0,
+          1.2753670345,
+          1.2813798581
+        ],
+        "optical_mean_probability": 0.12326400374,
+        "optical_visibility": 0.025665971106,
+        "scan": "Sodium_int_powerscan_27",
+        "visibility": 0.017456239426,
+        "visibility_se": 0.0095338379358
+      },
+      {
+        "count_total": 106740,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2599.6822691,
+        "ols_row_l1": [
+          1.0,
+          1.2642858563,
+          1.294839202
+        ],
+        "optical_mean_probability": 0.12326400374,
+        "optical_visibility": 0.025665971106,
+        "scan": "Sodium_int_powerscan_28",
+        "visibility": 0.023181129407,
+        "visibility_se": 0.0062422359595
+      },
+      {
+        "count_total": 114620,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2791.8143932,
+        "ols_row_l1": [
+          1.0,
+          1.2529459886,
+          1.284557029
+        ],
+        "optical_mean_probability": 0.12857736711,
+        "optical_visibility": 0.049287656905,
+        "scan": "Sodium_int_powerscan_29",
+        "visibility": 0.023765440843,
+        "visibility_se": 0.0072742027799
+      },
+      {
+        "count_total": 111717,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2721.1886708,
+        "ols_row_l1": [
+          1.0,
+          1.270017309,
+          1.2992729862
+        ],
+        "optical_mean_probability": 0.12857736711,
+        "optical_visibility": 0.049287656905,
+        "scan": "Sodium_int_powerscan_30",
+        "visibility": 0.027605390156,
+        "visibility_se": 0.0098648135656
+      },
+      {
+        "count_total": 109143,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2657.101097,
+        "ols_row_l1": [
+          1.0,
+          1.2579637677,
+          1.2796984363
+        ],
+        "optical_mean_probability": 0.12857736711,
+        "optical_visibility": 0.049287656905,
+        "scan": "Sodium_int_powerscan_31",
+        "visibility": 0.033775150009,
+        "visibility_se": 0.0073776138143
+      },
+      {
+        "count_total": 112747,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2743.8390659,
+        "ols_row_l1": [
+          1.0,
+          1.2525623059,
+          1.2927927585
+        ],
+        "optical_mean_probability": 0.12857736711,
+        "optical_visibility": 0.049287656905,
+        "scan": "Sodium_int_powerscan_32",
+        "visibility": 0.046104774597,
+        "visibility_se": 0.0080911098072
+      },
+      {
+        "count_total": 118587,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2882.2583403,
+        "ols_row_l1": [
+          1.0,
+          1.2696612394,
+          1.2879667279
+        ],
+        "optical_mean_probability": 0.13357719818,
+        "optical_visibility": 0.073830913009,
+        "scan": "Sodium_int_powerscan_33",
+        "visibility": 0.055888676543,
+        "visibility_se": 0.0066982562284
+      },
+      {
+        "count_total": 118704,
+        "incident_rate_hz": 21500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2888.5476055,
+        "ols_row_l1": [
+          1.0,
+          1.2648072177,
+          1.280491076
+        ],
+        "optical_mean_probability": 0.13357719818,
+        "optical_visibility": 0.073830913009,
+        "scan": "Sodium_int_powerscan_34",
+        "visibility": 0.048175809447,
+        "visibility_se": 0.0077284092084
+      },
+      {
+        "count_total": 115483,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2810.3854426,
+        "ols_row_l1": [
+          1.0,
+          1.2557883351,
+          1.2833384974
+        ],
+        "optical_mean_probability": 0.13357719818,
+        "optical_visibility": 0.073830913009,
+        "scan": "Sodium_int_powerscan_35",
+        "visibility": 0.048010056956,
+        "visibility_se": 0.0089568510276
+      },
+      {
+        "count_total": 125845,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3060.3341318,
+        "ols_row_l1": [
+          1.0,
+          1.2556820336,
+          1.2885029908
+        ],
+        "optical_mean_probability": 0.14315943311,
+        "optical_visibility": 0.1094434059,
+        "scan": "Sodium_int_powerscan_36",
+        "visibility": 0.062034660604,
+        "visibility_se": 0.0081267670111
+      },
+      {
+        "count_total": 123051,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2989.8799735,
+        "ols_row_l1": [
+          1.0,
+          1.268639527,
+          1.2825626711
+        ],
+        "optical_mean_probability": 0.14315943311,
+        "optical_visibility": 0.1094434059,
+        "scan": "Sodium_int_powerscan_37",
+        "visibility": 0.079168998842,
+        "visibility_se": 0.0079832240211
+      },
+      {
+        "count_total": 121046,
+        "incident_rate_hz": 20500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2943.5774315,
+        "ols_row_l1": [
+          1.0,
+          1.2715929048,
+          1.2981676689
+        ],
+        "optical_mean_probability": 0.14315943311,
+        "optical_visibility": 0.1094434059,
+        "scan": "Sodium_int_powerscan_38",
+        "visibility": 0.061133478315,
+        "visibility_se": 0.00834462867
+      },
+      {
+        "count_total": 129953,
+        "incident_rate_hz": 20000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3160.7607215,
+        "ols_row_l1": [
+          1.0,
+          1.2679982642,
+          1.283196991
+        ],
+        "optical_mean_probability": 0.15175047861,
+        "optical_visibility": 0.11647529327,
+        "scan": "Sodium_int_powerscan_39",
+        "visibility": 0.067030670987,
+        "visibility_se": 0.0064871475889
+      },
+      {
+        "count_total": 127182,
+        "incident_rate_hz": 20000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3092.6461663,
+        "ols_row_l1": [
+          1.0,
+          1.2699547841,
+          1.2886216856
+        ],
+        "optical_mean_probability": 0.15175047861,
+        "optical_visibility": 0.11647529327,
+        "scan": "Sodium_int_powerscan_40",
+        "visibility": 0.07036906861,
+        "visibility_se": 0.0066765281848
+      },
+      {
+        "count_total": 125891,
+        "incident_rate_hz": 20000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3061.6930726,
+        "ols_row_l1": [
+          1.0,
+          1.263579554,
+          1.2967226012
+        ],
+        "optical_mean_probability": 0.15175047861,
+        "optical_visibility": 0.11647529327,
+        "scan": "Sodium_int_powerscan_41",
+        "visibility": 0.081252608954,
+        "visibility_se": 0.0077984081792
+      },
+      {
+        "count_total": 139056,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3378.2288941,
+        "ols_row_l1": [
+          1.0,
+          1.2658647997,
+          1.2897646472
+        ],
+        "optical_mean_probability": 0.16561261505,
+        "optical_visibility": 0.083684034993,
+        "scan": "Sodium_int_powerscan_42",
+        "visibility": 0.072140240828,
+        "visibility_se": 0.0077224563615
+      },
+      {
+        "count_total": 135854,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3305.0513349,
+        "ols_row_l1": [
+          1.0,
+          1.2623215569,
+          1.2878915208
+        ],
+        "optical_mean_probability": 0.16561261505,
+        "optical_visibility": 0.083684034993,
+        "scan": "Sodium_int_powerscan_43",
+        "visibility": 0.070324300036,
+        "visibility_se": 0.0071078798841
+      },
+      {
+        "count_total": 134551,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3270.3278377,
+        "ols_row_l1": [
+          1.0,
+          1.2687891423,
+          1.2830473917
+        ],
+        "optical_mean_probability": 0.16561261505,
+        "optical_visibility": 0.083684034993,
+        "scan": "Sodium_int_powerscan_44",
+        "visibility": 0.084288597517,
+        "visibility_se": 0.007171835971
+      },
+      {
+        "count_total": 147608,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3592.703912,
+        "ols_row_l1": [
+          1.0,
+          1.2517094818,
+          1.2738908676
+        ],
+        "optical_mean_probability": 0.17634985237,
+        "optical_visibility": 0.044552228488,
+        "scan": "Sodium_int_powerscan_45",
+        "visibility": 0.033396665175,
+        "visibility_se": 0.0071484684674
+      },
+      {
+        "count_total": 146203,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3561.1730198,
+        "ols_row_l1": [
+          1.0,
+          1.2677624748,
+          1.2859861675
+        ],
+        "optical_mean_probability": 0.17634985237,
+        "optical_visibility": 0.044552228488,
+        "scan": "Sodium_int_powerscan_46",
+        "visibility": 0.039899092283,
+        "visibility_se": 0.0057584651156
+      },
+      {
+        "count_total": 145767,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3549.4234731,
+        "ols_row_l1": [
+          1.0,
+          1.2664675376,
+          1.2927717786
+        ],
+        "optical_mean_probability": 0.17634985237,
+        "optical_visibility": 0.044552228488,
+        "scan": "Sodium_int_powerscan_47",
+        "visibility": 0.05724942441,
+        "visibility_se": 0.0056681402193
+      },
+      {
+        "count_total": 152943,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3727.6927926,
+        "ols_row_l1": [
+          1.0,
+          1.2574665694,
+          1.2856547976
+        ],
+        "optical_mean_probability": 0.18413426188,
+        "optical_visibility": 0.020741001201,
+        "scan": "Sodium_int_powerscan_48",
+        "visibility": 0.019151534,
+        "visibility_se": 0.0049832893373
+      },
+      {
+        "count_total": 151854,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3700.5572426,
+        "ols_row_l1": [
+          1.0,
+          1.2572009981,
+          1.2956505207
+        ],
+        "optical_mean_probability": 0.18413426188,
+        "optical_visibility": 0.020741001201,
+        "scan": "Sodium_int_powerscan_49",
+        "visibility": 0.03918225365,
+        "visibility_se": 0.0065226805093
+      },
+      {
+        "count_total": 149289,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3639.484409,
+        "ols_row_l1": [
+          1.0,
+          1.2480028624,
+          1.2938512993
+        ],
+        "optical_mean_probability": 0.18413426188,
+        "optical_visibility": 0.020741001201,
+        "scan": "Sodium_int_powerscan_50",
+        "visibility": 0.019616914515,
+        "visibility_se": 0.0047160681169
+      },
+      {
+        "count_total": 153841,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3752.2037282,
+        "ols_row_l1": [
+          1.0,
+          1.2680145161,
+          1.2701683301
+        ],
+        "optical_mean_probability": 0.18848974211,
+        "optical_visibility": 0.011005804768,
+        "scan": "Sodium_int_powerscan_51",
+        "visibility": 0.016582760025,
+        "visibility_se": 0.0072347773486
+      },
+      {
+        "count_total": 152446,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3718.172277,
+        "ols_row_l1": [
+          1.0,
+          1.2610309833,
+          1.2939771065
+        ],
+        "optical_mean_probability": 0.18848974211,
+        "optical_visibility": 0.011005804768,
+        "scan": "Sodium_int_powerscan_52",
+        "visibility": 0.0030156454293,
+        "visibility_se": 0.0058053393308
+      },
+      {
+        "count_total": 152753,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3722.4101877,
+        "ols_row_l1": [
+          1.0,
+          1.26111803,
+          1.2913320101
+        ],
+        "optical_mean_probability": 0.18848974211,
+        "optical_visibility": 0.011005804768,
+        "scan": "Sodium_int_powerscan_53",
+        "visibility": 0.021700310013,
+        "visibility_se": 0.01037555967
+      },
+      {
+        "count_total": 132283,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3217.8652203,
+        "ols_row_l1": [
+          1.0,
+          1.2583885535,
+          1.2998267833
+        ],
+        "optical_mean_probability": 0.15628046147,
+        "optical_visibility": 0.11048931146,
+        "scan": "Sodium_int_powerscan_54",
+        "visibility": 0.073198531499,
+        "visibility_se": 0.0081376970392
+      },
+      {
+        "count_total": 129863,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3155.0081626,
+        "ols_row_l1": [
+          1.0,
+          1.2679235766,
+          1.2919314948
+        ],
+        "optical_mean_probability": 0.15628046147,
+        "optical_visibility": 0.11048931146,
+        "scan": "Sodium_int_powerscan_55",
+        "visibility": 0.097535098317,
+        "visibility_se": 0.0069831461069
+      },
+      {
+        "count_total": 128848,
+        "incident_rate_hz": 21000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3134.4962343,
+        "ols_row_l1": [
+          1.0,
+          1.2717983089,
+          1.2898763059
+        ],
+        "optical_mean_probability": 0.15628046147,
+        "optical_visibility": 0.11048931146,
+        "scan": "Sodium_int_powerscan_56",
+        "visibility": 0.078017167294,
+        "visibility_se": 0.0073591404977
+      },
+      {
+        "count_total": 77786,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1897.3520057,
+        "ols_row_l1": [
+          1.0,
+          1.2626312678,
+          1.280400748
+        ],
+        "optical_mean_probability": 0.097877136289,
+        "optical_visibility": 0.023470535785,
+        "scan": "Sodium_int_powerscan_57",
+        "visibility": 0.010650300837,
+        "visibility_se": 0.009063525939
+      },
+      {
+        "count_total": 74691,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1819.9518426,
+        "ols_row_l1": [
+          1.0,
+          1.2648900599,
+          1.2973359204
+        ],
+        "optical_mean_probability": 0.097877136289,
+        "optical_visibility": 0.023470535785,
+        "scan": "Sodium_int_powerscan_58",
+        "visibility": 0.02235800156,
+        "visibility_se": 0.0077926604897
+      },
+      {
+        "count_total": 74582,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1818.1211618,
+        "ols_row_l1": [
+          1.0,
+          1.2659071302,
+          1.2869096901
+        ],
+        "optical_mean_probability": 0.097877136289,
+        "optical_visibility": 0.023470535785,
+        "scan": "Sodium_int_powerscan_59",
+        "visibility": 0.01277674262,
+        "visibility_se": 0.0093894654731
+      },
+      {
+        "count_total": 72071,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1755.7322821,
+        "ols_row_l1": [
+          1.0,
+          1.2657995685,
+          1.2877119872
+        ],
+        "optical_mean_probability": 0.094212346074,
+        "optical_visibility": 0.019364949743,
+        "scan": "Sodium_int_powerscan_60",
+        "visibility": 0.019576186009,
+        "visibility_se": 0.0086409373161
+      },
+      {
+        "count_total": 76657,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1869.2349971,
+        "ols_row_l1": [
+          1.0,
+          1.2761003019,
+          1.2827996658
+        ],
+        "optical_mean_probability": 0.094212346074,
+        "optical_visibility": 0.019364949743,
+        "scan": "Sodium_int_powerscan_61",
+        "visibility": 0.0041348437631,
+        "visibility_se": 0.0094185571349
+      },
+      {
+        "count_total": 75245,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1833.9204885,
+        "ols_row_l1": [
+          1.0,
+          1.2655470432,
+          1.2984878825
+        ],
+        "optical_mean_probability": 0.094212346074,
+        "optical_visibility": 0.019364949743,
+        "scan": "Sodium_int_powerscan_62",
+        "visibility": 0.018220127742,
+        "visibility_se": 0.0097033893897
+      },
+      {
+        "count_total": 125236,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3049.5854206,
+        "ols_row_l1": [
+          1.0,
+          1.2534479966,
+          1.2800078847
+        ],
+        "optical_mean_probability": 0.14654581941,
+        "optical_visibility": 0.11915672067,
+        "scan": "Sodium_int_powerscan_63",
+        "visibility": 0.083518121552,
+        "visibility_se": 0.0074735632507
+      },
+      {
+        "count_total": 122941,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2992.614117,
+        "ols_row_l1": [
+          1.0,
+          1.2731542474,
+          1.2916781281
+        ],
+        "optical_mean_probability": 0.14654581941,
+        "optical_visibility": 0.11915672067,
+        "scan": "Sodium_int_powerscan_64",
+        "visibility": 0.076148980121,
+        "visibility_se": 0.0075104897328
+      },
+      {
+        "count_total": 120957,
+        "incident_rate_hz": 19500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2943.6452414,
+        "ols_row_l1": [
+          1.0,
+          1.274938912,
+          1.2879679094
+        ],
+        "optical_mean_probability": 0.14654581941,
+        "optical_visibility": 0.11915672067,
+        "scan": "Sodium_int_powerscan_65",
+        "visibility": 0.088809485707,
+        "visibility_se": 0.0073404689925
+      },
+      {
+        "count_total": 132954,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3237.509359,
+        "ols_row_l1": [
+          1.0,
+          1.2634668476,
+          1.2830431395
+        ],
+        "optical_mean_probability": 0.1628847804,
+        "optical_visibility": 0.092934728421,
+        "scan": "Sodium_int_powerscan_66",
+        "visibility": 0.070941105523,
+        "visibility_se": 0.0075349374101
+      },
+      {
+        "count_total": 131456,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3199.8530971,
+        "ols_row_l1": [
+          1.0,
+          1.2730686197,
+          1.3012334035
+        ],
+        "optical_mean_probability": 0.1628847804,
+        "optical_visibility": 0.092934728421,
+        "scan": "Sodium_int_powerscan_67",
+        "visibility": 0.087815867563,
+        "visibility_se": 0.0068315959831
+      },
+      {
+        "count_total": 130994,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3188.9979212,
+        "ols_row_l1": [
+          1.0,
+          1.2600758373,
+          1.3061598412
+        ],
+        "optical_mean_probability": 0.1628847804,
+        "optical_visibility": 0.092934728421,
+        "scan": "Sodium_int_powerscan_68",
+        "visibility": 0.081507438004,
+        "visibility_se": 0.0070107512705
+      },
+      {
+        "count_total": 148195,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3613.9520484,
+        "ols_row_l1": [
+          1.0,
+          1.2616826658,
+          1.2695946339
+        ],
+        "optical_mean_probability": 0.18054160372,
+        "optical_visibility": 0.030840328066,
+        "scan": "Sodium_int_powerscan_69",
+        "visibility": 0.029768351173,
+        "visibility_se": 0.0059834557319
+      },
+      {
+        "count_total": 146558,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3574.5700608,
+        "ols_row_l1": [
+          1.0,
+          1.27454224,
+          1.2890079224
+        ],
+        "optical_mean_probability": 0.18054160372,
+        "optical_visibility": 0.030840328066,
+        "scan": "Sodium_int_powerscan_70",
+        "visibility": 0.033145506482,
+        "visibility_se": 0.0066757223529
+      },
+      {
+        "count_total": 144075,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 3512.1309652,
+        "ols_row_l1": [
+          1.0,
+          1.272396001,
+          1.2880836486
+        ],
+        "optical_mean_probability": 0.18054160372,
+        "optical_visibility": 0.030840328066,
+        "scan": "Sodium_int_powerscan_71",
+        "visibility": 0.034341031276,
+        "visibility_se": 0.0073809226797
+      },
+      {
+        "count_total": 88818,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2166.8359653,
+        "ols_row_l1": [
+          1.0,
+          1.2553464584,
+          1.2834597117
+        ],
+        "optical_mean_probability": 0.1151122041,
+        "optical_visibility": 0.0073480426334,
+        "scan": "Sodium_int_powerscan_72",
+        "visibility": 0.0043501554845,
+        "visibility_se": 0.010365742941
+      },
+      {
+        "count_total": 88250,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2151.5525487,
+        "ols_row_l1": [
+          1.0,
+          1.2633577326,
+          1.2985040211
+        ],
+        "optical_mean_probability": 0.1151122041,
+        "optical_visibility": 0.0073480426334,
+        "scan": "Sodium_int_powerscan_73",
+        "visibility": 0.011714197822,
+        "visibility_se": 0.0079632443219
+      },
+      {
+        "count_total": 86221,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 2102.0166657,
+        "ols_row_l1": [
+          1.0,
+          1.2584731481,
+          1.2832870701
+        ],
+        "optical_mean_probability": 0.1151122041,
+        "optical_visibility": 0.0073480426334,
+        "scan": "Sodium_int_powerscan_74",
+        "visibility": 0.0087227130142,
+        "visibility_se": 0.0090352937167
+      },
+      {
+        "count_total": 100008,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2438.4037543,
+        "ols_row_l1": [
+          1.0,
+          1.2578279577,
+          1.2944946924
+        ],
+        "optical_mean_probability": 0.12653665386,
+        "optical_visibility": 0.039572807076,
+        "scan": "Sodium_int_powerscan_75",
+        "visibility": 0.012806300158,
+        "visibility_se": 0.0071935854719
+      },
+      {
+        "count_total": 97976,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2388.6699768,
+        "ols_row_l1": [
+          1.0,
+          1.2775000554,
+          1.2942368585
+        ],
+        "optical_mean_probability": 0.12653665386,
+        "optical_visibility": 0.039572807076,
+        "scan": "Sodium_int_powerscan_76",
+        "visibility": 0.018271916504,
+        "visibility_se": 0.0074846404976
+      },
+      {
+        "count_total": 100584,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2450.7419074,
+        "ols_row_l1": [
+          1.0,
+          1.2674093893,
+          1.2825391492
+        ],
+        "optical_mean_probability": 0.12653665386,
+        "optical_visibility": 0.039572807076,
+        "scan": "Sodium_int_powerscan_77",
+        "visibility": 0.027256518566,
+        "visibility_se": 0.0093841964912
+      },
+      {
+        "count_total": 106217,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2589.6016851,
+        "ols_row_l1": [
+          1.0,
+          1.2660534267,
+          1.268718477
+        ],
+        "optical_mean_probability": 0.1319688147,
+        "optical_visibility": 0.066032329789,
+        "scan": "Sodium_int_powerscan_78",
+        "visibility": 0.041415188412,
+        "visibility_se": 0.0065707934564
+      },
+      {
+        "count_total": 105699,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2576.1937238,
+        "ols_row_l1": [
+          1.0,
+          1.2752843972,
+          1.2777231126
+        ],
+        "optical_mean_probability": 0.1319688147,
+        "optical_visibility": 0.066032329789,
+        "scan": "Sodium_int_powerscan_79",
+        "visibility": 0.034538078468,
+        "visibility_se": 0.0076956555444
+      },
+      {
+        "count_total": 105097,
+        "incident_rate_hz": 17500.0,
+        "integration_s": 1.0,
+        "mean_counts": 2560.5092676,
+        "ols_row_l1": [
+          1.0,
+          1.2774438996,
+          1.299604179
+        ],
+        "optical_mean_probability": 0.1319688147,
+        "optical_visibility": 0.066032329789,
+        "scan": "Sodium_int_powerscan_80",
+        "visibility": 0.032944751123,
+        "visibility_se": 0.0084651877443
+      },
+      {
+        "count_total": 78020,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1903.1591015,
+        "ols_row_l1": [
+          1.0,
+          1.2679328687,
+          1.2868992261
+        ],
+        "optical_mean_probability": 0.095273138171,
+        "optical_visibility": 0.021005851957,
+        "scan": "Sodium_int_powerscan_81",
+        "visibility": 0.007157688872,
+        "visibility_se": 0.0098634467254
+      },
+      {
+        "count_total": 76584,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1868.0570295,
+        "ols_row_l1": [
+          1.0,
+          1.2609776553,
+          1.2994227722
+        ],
+        "optical_mean_probability": 0.095273138171,
+        "optical_visibility": 0.021005851957,
+        "scan": "Sodium_int_powerscan_82",
+        "visibility": 0.0028331204744,
+        "visibility_se": 0.0094022506586
+      },
+      {
+        "count_total": 76371,
+        "incident_rate_hz": 19000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1863.4073725,
+        "ols_row_l1": [
+          1.0,
+          1.2698527368,
+          1.2946776337
+        ],
+        "optical_mean_probability": 0.095273138171,
+        "optical_visibility": 0.021005851957,
+        "scan": "Sodium_int_powerscan_83",
+        "visibility": 0.0080991314947,
+        "visibility_se": 0.0092497334821
+      },
+      {
+        "count_total": 65846,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1607.0304424,
+        "ols_row_l1": [
+          1.0,
+          1.2645875001,
+          1.2891247138
+        ],
+        "optical_mean_probability": 0.084518720865,
+        "optical_visibility": 0.0063668331632,
+        "scan": "Sodium_int_powerscan_84",
+        "visibility": 0.011257599742,
+        "visibility_se": 0.011624081449
+      },
+      {
+        "count_total": 65693,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1602.1217435,
+        "ols_row_l1": [
+          1.0,
+          1.2587646255,
+          1.2986998285
+        ],
+        "optical_mean_probability": 0.084518720865,
+        "optical_visibility": 0.0063668331632,
+        "scan": "Sodium_int_powerscan_85",
+        "visibility": 0.012688099898,
+        "visibility_se": 0.010060828717
+      },
+      {
+        "count_total": 64656,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1576.4940334,
+        "ols_row_l1": [
+          1.0,
+          1.2750732925,
+          1.2930760483
+        ],
+        "optical_mean_probability": 0.084518720865,
+        "optical_visibility": 0.0063668331632,
+        "scan": "Sodium_int_powerscan_86",
+        "visibility": 0.015523187802,
+        "visibility_se": 0.0086825984551
+      },
+      {
+        "count_total": 68152,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1661.4985509,
+        "ols_row_l1": [
+          1.0,
+          1.2657785651,
+          1.2910290461
+        ],
+        "optical_mean_probability": 0.087836077042,
+        "optical_visibility": 0.006514498747,
+        "scan": "Sodium_int_powerscan_87",
+        "visibility": 0.0080877785917,
+        "visibility_se": 0.010229251491
+      },
+      {
+        "count_total": 66205,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1616.0692524,
+        "ols_row_l1": [
+          1.0,
+          1.2694278054,
+          1.2992394263
+        ],
+        "optical_mean_probability": 0.087836077042,
+        "optical_visibility": 0.006514498747,
+        "scan": "Sodium_int_powerscan_88",
+        "visibility": 0.020125087301,
+        "visibility_se": 0.010158080325
+      },
+      {
+        "count_total": 67313,
+        "incident_rate_hz": 18500.0,
+        "integration_s": 1.0,
+        "mean_counts": 1643.8200072,
+        "ols_row_l1": [
+          1.0,
+          1.2633904341,
+          1.2935655435
+        ],
+        "optical_mean_probability": 0.087836077042,
+        "optical_visibility": 0.006514498747,
+        "scan": "Sodium_int_powerscan_89",
+        "visibility": 0.024547343805,
+        "visibility_se": 0.010390139318
+      },
+      {
+        "count_total": 71323,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1740.8056356,
+        "ols_row_l1": [
+          1.0,
+          1.2579373663,
+          1.2810012781
+        ],
+        "optical_mean_probability": 0.091257265868,
+        "optical_visibility": 0.010994060629,
+        "scan": "Sodium_int_powerscan_90",
+        "visibility": 0.014590554389,
+        "visibility_se": 0.009454662606
+      },
+      {
+        "count_total": 72172,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1760.0287369,
+        "ols_row_l1": [
+          1.0,
+          1.2664068677,
+          1.2835475554
+        ],
+        "optical_mean_probability": 0.091257265868,
+        "optical_visibility": 0.010994060629,
+        "scan": "Sodium_int_powerscan_91",
+        "visibility": 0.0039868529107,
+        "visibility_se": 0.0081809477547
+      },
+      {
+        "count_total": 69929,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 1705.6245636,
+        "ols_row_l1": [
+          1.0,
+          1.2637614759,
+          1.3046869681
+        ],
+        "optical_mean_probability": 0.091257265868,
+        "optical_visibility": 0.010994060629,
+        "scan": "Sodium_int_powerscan_92",
+        "visibility": 0.005328194277,
+        "visibility_se": 0.0094102483928
+      },
+      {
+        "count_total": 154394,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3767.4471521,
+        "ols_row_l1": [
+          1.0,
+          1.265109109,
+          1.2841341554
+        ],
+        "optical_mean_probability": 0.2031743911,
+        "optical_visibility": 0.0,
+        "scan": "Sodium_int_powerscan_93",
+        "visibility": 0.0075423621667,
+        "visibility_se": 0.0062945080877
+      },
+      {
+        "count_total": 153924,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3751.1742096,
+        "ols_row_l1": [
+          1.0,
+          1.2665581973,
+          1.2890273183
+        ],
+        "optical_mean_probability": 0.2031743911,
+        "optical_visibility": 0.0,
+        "scan": "Sodium_int_powerscan_94",
+        "visibility": 0.017838972285,
+        "visibility_se": 0.0080338213316
+      },
+      {
+        "count_total": 152232,
+        "incident_rate_hz": 18000.0,
+        "integration_s": 1.0,
+        "mean_counts": 3714.4355406,
+        "ols_row_l1": [
+          1.0,
+          1.2690789354,
+          1.29022483
+        ],
+        "optical_mean_probability": 0.2031743911,
+        "optical_visibility": 0.0,
+        "scan": "Sodium_int_powerscan_95",
+        "visibility": 0.006780650325,
+        "visibility_se": 0.0073176118998
+      }
+    ],
+    "support_is_measured_tail_bound": false
+  },
+  "source_files": [
+    {
+      "bytes": 88626,
+      "doi": "10.5281/zenodo.17502163",
+      "name": "Na-Cluster-Interference.zip",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata.",
+      "sha256": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "url": "https://zenodo.org/records/17502163/files/Na-Cluster-Interference.zip"
+    },
+    {
+      "bytes": 290283,
+      "doi": "10.5281/zenodo.3956096",
+      "name": "PSD.zip",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata.",
+      "sha256": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "url": "https://zenodo.org/records/3956096/files/PSD.zip"
+    },
+    {
+      "bytes": 12910,
+      "doi": "10.5281/zenodo.3956096",
+      "name": "Final_data.xlsx",
+      "redistribution": "Originals not redistributed; archive license not resolved from metadata.",
+      "sha256": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "url": "https://zenodo.org/records/3956096/files/Final%20data.xlsx"
+    }
+  ]
+}

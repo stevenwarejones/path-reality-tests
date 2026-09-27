@@ -1,0 +1,18 @@
+{
+  "generated_sources_sha256": "3648d735b5690243812ec0e4b9225e687ea5ce1810fb0c1cf9231c2892b93ba9",
+  "studies/collapse-compatibility/baselines.py": "4233801dd09905c8994cad15ea9fd08a813f34989e94658ea7b0208ed38a5f08",
+  "studies/collapse-compatibility/io_data.py": "3282638fb36e1af487fe7b1c9fa615ff1ec698428baf9c3888fb321f61603634",
+  "studies/collapse-compatibility/manifest.json": "d261015f8cf8a02c93ff18456cf6e18efbb3bf09972623615c54c429490435eb",
+  "studies/collapse-compatibility/moving_response.py": "4399ff3566a466efbdb16dfb53bf12bd43fb3f1304ad2f099ed6261acd8d4808",
+  "studies/collapse-compatibility/response.py": "4020f09572dece6bb157adbf96186eb5321b4da58e40a7319413ec54195f1f76",
+  "studies/collapse-compatibility/results/baselines.json": "9f19803190052f59dbfad9d88b11fc79e8c909567a53353b33d9a482e7660899",
+  "studies/moving-noise-boundary/analyze.py": "1e151ce0262561868c652f4ae6310300e4942fd41daba1ed33ad2edc91e380d6",
+  "studies/moving-noise-boundary/cal-manifest.json": "8c69ba8a0f217ba82d9e816c72122cd8237b59a737d3061ef43e0c73aa14e4a8",
+  "studies/moving-noise-boundary/cal_audit.py": "8d3221c1990d32c9bd716061333a9e06875ccdbf98303ed6ab55ed0b162477c5",
+  "studies/moving-noise-boundary/cal_response.py": "4eb5693e2e5f001db1dbce187a9eccd2b69021578f938e69d84627149158e4ed",
+  "studies/moving-noise-boundary/noise_kernels.py": "eb22605ac062adfcc5489d9d24f483adef810573c2c978f977daf38d3db86b86",
+  "studies/moving-noise-boundary/noise_sources.py": "1c56148f8031a1e158b34eb2467139f78a0d627d010d9306b09df15748b5a23c",
+  "studies/moving-noise-boundary/plot.py": "43b0b49f20fe974ecdb8edee2232b8c720ca8da0c3c2f1e41ece74f36ebf00fb",
+  "studies/moving-noise-boundary/protocol.json": "c9739cf02b9992342a77d53b29a0bf82a95c90ac43fb9c99b7e062248db635ba",
+  "studies/moving-noise-boundary/results/cal-audit.json": "bf117e210b7fd21c2065528cba5a22ecd6c6af65d36b2f352d8d8e631af9b83d"
+}

@@ -1,0 +1,131 @@
+{
+  "benchmark": {
+    "analytic_spatial_conservatism": 6.8404165278,
+    "certified_exponent_lower": 10.0,
+    "spatial_difference_analytic_lower": 6.3283452078e+17,
+    "spatial_difference_numerical": 4.3288517153e+18,
+    "temporal_band_analytic_lower": 0.99967104024,
+    "uniform_band_exponent_numerical": 68.418346314,
+    "variance_s_minus2": 1.5807119162e-13
+  },
+  "claim_flags": {
+    "arbitrary_frames_covered": false,
+    "conditional_ensemble_small_perturbation_family": true,
+    "continuum_temporal_band_covered": true,
+    "empirical_joint_survivor": false,
+    "exclusion": false,
+    "genuine_identification_gain": false,
+    "outcome_selection": false
+  },
+  "off_grid_atomic_witnesses": [
+    {
+      "benchmark_exponent_numerical": 68.426449786,
+      "force_variance_upper_N2": 5.6298977988e-37,
+      "frequency_hz": 0.1,
+      "raw_sensor_psd_upper_at_min_frequency": 7.6501852108e-52,
+      "variance_s_minus2": 1.5807119162e-13
+    },
+    {
+      "benchmark_exponent_numerical": 68.426251622,
+      "force_variance_upper_N2": 5.6298977988e-37,
+      "frequency_hz": 0.13712345679,
+      "raw_sensor_psd_upper_at_min_frequency": 3.6675003383e-51,
+      "variance_s_minus2": 1.5807119162e-13
+    },
+    {
+      "benchmark_exponent_numerical": 68.421047217,
+      "force_variance_upper_N2": 5.6298977988e-37,
+      "frequency_hz": 0.5,
+      "raw_sensor_psd_upper_at_min_frequency": 4.4646449505e-53,
+      "variance_s_minus2": 1.5807119162e-13
+    },
+    {
+      "benchmark_exponent_numerical": 68.404166389,
+      "force_variance_upper_N2": 5.6298977988e-37,
+      "frequency_hz": 0.999999999,
+      "raw_sensor_psd_upper_at_min_frequency": 6.6035159501e-53,
+      "variance_s_minus2": 1.5807119162e-13
+    },
+    {
+      "benchmark_exponent_numerical": 68.404166389,
+      "force_variance_upper_N2": 5.6298977988e-37,
+      "frequency_hz": 1.0,
+      "raw_sensor_psd_upper_at_min_frequency": 6.7982840103e-53,
+      "variance_s_minus2": 1.5807119162e-13
+    }
+  ],
+  "required_next_input": {
+    "CAL": "public PSI-32 images and timestamp labels obtained; object-plane scale/PSF, effective lens/spin fit, clock and ISS trajectory error join unestablished; 52 pK not reproduced",
+    "LPF": "matched calibrated angular science/control data and reconstructed trajectory error envelope",
+    "sensor": "matched calibrated low-frequency force or another measured geometry, including control response and mode",
+    "sodium": "validated exposure/mass tail and preparation independence; calibrated joint count/flux likelihood or exact controlled moving response"
+  },
+  "sensitivity": [
+    {
+      "additional_sensor_calibration_multiplier": 1,
+      "exposure_multiplier": 1,
+      "mass_multiplier": 1,
+      "sensor_minimum_observed_psd_fraction_upper": 2.1370588993e-06,
+      "transmission_multiplier": 1,
+      "visibility_SE_ratio_upper": 0.010928485122
+    },
+    {
+      "additional_sensor_calibration_multiplier": 10,
+      "exposure_multiplier": 1,
+      "mass_multiplier": 1,
+      "sensor_minimum_observed_psd_fraction_upper": 2.1370588993e-05,
+      "transmission_multiplier": 0.5,
+      "visibility_SE_ratio_upper": 0.021857804442
+    },
+    {
+      "additional_sensor_calibration_multiplier": 10,
+      "exposure_multiplier": 1,
+      "mass_multiplier": 2,
+      "sensor_minimum_observed_psd_fraction_upper": 2.1370588993e-05,
+      "transmission_multiplier": 1,
+      "visibility_SE_ratio_upper": 0.043719441377
+    },
+    {
+      "additional_sensor_calibration_multiplier": 10,
+      "exposure_multiplier": 2,
+      "mass_multiplier": 1,
+      "sensor_minimum_observed_psd_fraction_upper": 2.1370588993e-05,
+      "transmission_multiplier": 1,
+      "visibility_SE_ratio_upper": 0.043719441377
+    }
+  ],
+  "sensor": {
+    "calibration_stress_multiplier": 10.0,
+    "complete_assembly_q0_upper": 3.5616216598e-24,
+    "conditional_measured_total_PSD_variance_ceiling": 7.3966698661e-08,
+    "dc_flux_force_calibration": 3075482422300000.0,
+    "discrete_window_uniform_gain_upper_s": 1.2897707138e-09,
+    "field_induced_displacement_rms_upper_m": 1.7449452299e-18,
+    "fixed_orthogonal_detrend_gain_upper_s": 83.88608,
+    "fraction_of_minimum_measured_psd_upper": 2.1370588993e-06,
+    "max_predicted_psd_upper": 1.4524584921e-18,
+    "mechanical_low_band_gain_upper": 1.0000001603,
+    "minimum_measured_psd": 6.79653e-13,
+    "same_field_backaction_ratio_to_rc": 1.7449452299e-11,
+    "undetrended_leakage_fraction_upper": 3.2857846999e-17
+  },
+  "sodium": {
+    "conditional_one_SE_variance_ceiling": 1.4409452089e-11,
+    "ensemble_bound_for_prior_SSB_variance": 1.0,
+    "ensemble_is_not_single_realization_or_joint_likelihood": true,
+    "maximum_unbounded_input_tail_for_one_SE_certificate": 0.00034055186598,
+    "maximum_visibility_change_over_SE_upper": 0.010928485122,
+    "single_realization_95pct_trace_distance_bound": 0.0086901671889,
+    "unconditional_probability_change_upper": 3.7759645464e-06
+  },
+  "source_removal": {
+    "actual_admitted_by_one_rejected_by_joint_spectrum": null,
+    "both_certificate_variance": 1.4409452089e-11,
+    "reason": "These are sufficient certificate domains, not empirical acceptance sets. Sensor is redundant in selected band; minimum complementarity bar is NOT met.",
+    "sensor_addition_gain_in_selected_band": 1.0,
+    "sensor_only_certificate_variance": 7.3966698661e-08,
+    "sodium_only_certificate_variance": 1.4409452089e-11
+  },
+  "status": "Gate A blocked for complementary empirical identification; conditional bounds are implemented",
+  "uniform_witness_density_s_minus2_per_hz": 1.7563465736e-13
+}

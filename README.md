@@ -16,6 +16,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 | [Born-rule identifiability](studies/born-rule-identifiability/README.md) | Can additional datasets separate probability changes from control and detector errors? | Measured scan–Viviani combination, ordinary qutrit compatibility certificates and conditional distance bounds; no identified probability-rule violation |
 | [Synthetic timing shifts](studies/synthetic-timing-shifts/README.md) | Could sparse records reveal timing shifts or effects that reverse sign? | Synthetic and real-background injections; artificial assignments and held-out scores |
 | [Spacetime causal influence](studies/spacetime-causal-influence/README.md) | Can a remote intervention change a complete local record outside its future light cone? | Conditional protocol, formal companion and synthetic sensitivity study |
+| [Moving-noise feasibility boundary](studies/moving-noise-boundary/README.md) | Can complementary archives constrain one moving dephasing field? | Tested quantum/measurement bounds and public CAL image audit; empirical complementarity gate blocked |
 | [Collapse compatibility](studies/collapse-compatibility/README.md) | What can interference, mechanical, space and radiation data jointly determine about collapse noise? | Reproduced sources; two conditional feasibility studies and explicit inference limits |
 
 The Wen study now includes reproduced Figure 3/4 summaries, separate endpoint
