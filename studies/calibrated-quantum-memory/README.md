@@ -4,8 +4,9 @@
 quantum environmental memory from existing matched datasets. It supplies
 measured-data diagnostics, explicit IBM-compatible classical/quantum models
 within a declared simultaneous interval region, and a prospective certificate
-tested on explicitly synthetic records. The fitted models have substantial
-aggregate residuals; an adequate joint likelihood fit is not certified.
+tested on explicitly synthetic records. A new finite-sample joint test excludes
+the earlier points and two improved delay-dependent candidates. The full
+classical-memory class remains unresolved.
 
 The central question is whether dynamics require more quantum information in
 the environment than a calibrated intervention can leave in the system.
@@ -13,6 +14,19 @@ Classical environmental memory may still accompany quantum system evolution.
 The [feasibility gate](feasibility.md) records the candidate acquisitions,
 matching evidence, alternatives checked, and missing inputs. The
 [theory](theory.md) states and proves the narrower implemented result.
+
+## Aggregate statistical follow-up
+
+The [joint statistical analysis](joint-statistics.md) now rejects the exhibited
+pairs from a valid aggregate/cell confidence region with at least 95% coverage,
+conditional on independent fixed-exposure multinomial rows and record mapping.
+It uses exact multinomial moments and a directed-rounding Cantelli bound,
+without a chi-square approximation or guessed fitted degrees of freedom.
+
+Separate delay unitaries and fitted shared SPAM improve the candidates, but
+their verified physical classical/quantum pairs also fail this region. These
+are point exclusions, not exclusions of the classical-memory class. The old
+cell-only certificate remains valid in its narrower statistical scope.
 
 ## Shared-instrument identifiability result
 
@@ -26,8 +40,8 @@ Exact rational checks prove physicality; directed-rounding binomial tails
 verify every cell constraint independently of the discovery optimizer.
 
 This closes the search for a positive exclusion within the **current interval region**.
-It does not settle a stronger likelihood analysis: aggregate residuals are
-substantial. The report gives an exact fixed-model ambiguity boundary and an
+The later joint analysis above excludes these particular points under its
+additional independence assumptions; the larger model class remains unresolved. The report gives an exact fixed-model ambiguity boundary and an
 isolated-instrument probe whose predicted probabilities differ by about 0.003.
 Those are fitted-model predictions, not additional measured calibration.
 The empirical research mission remains incomplete.

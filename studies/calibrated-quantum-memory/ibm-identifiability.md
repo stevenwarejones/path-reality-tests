@@ -1,5 +1,11 @@
 # IBM: a physical shared-instrument ambiguity, with a statistical limit
 
+**Follow-up:** the [finite-sample joint analysis](joint-statistics.md) now
+excludes these specific probability points from its new aggregate/cell region.
+Two delay-dependent improved pairs also fail. This does not revoke the cell-box
+certificate below or exclude the full classical-memory class. The new test
+requires independent rows, an assumption not needed by the old union bound.
+
 **Decision: archive the search for a positive memory claim within the current interval region.**
 A focused numerical search now supplies explicit classical and quantum-memory
 models satisfying every selected IBM count constraint, with the same shared

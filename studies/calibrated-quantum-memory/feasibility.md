@@ -5,8 +5,9 @@ the current IBM interval region; retain the draft as a scoped physical
 identifiability result. The empirical mission remains incomplete.**
 The [new calculation](ibm-identifiability.md) verifies full classical and
 quantum models for every selected IBM cell under two conditional mappings.
-Aggregate likelihood residuals remain substantial, so stronger statistical
-regions and more general delay-dependent classical fits are unresolved.
+The [joint follow-up](joint-statistics.md) now excludes those points and two
+improved delay-dependent pairs using a valid finite-sample aggregate region.
+The full delay-dependent classical class remains unresolved.
 No independent matched causal-break calibration has been verified. This is
 not a general impossibility theorem or a refutation of the original experiment.
 The prior acquisition search below is retained as history, not expanded into
@@ -16,7 +17,7 @@ another terminal-QPT inventory.
 |---|---|
 | Positive claim from this simultaneous cell box | Archive: explicit physical classical points satisfy every constraint. |
 | Shared-instrument identifiability | Completed at the declared-region level: exact full-record pair, fixed-point boundary, source deletions and separating probe. No aggregate fit or broad novelty claim. |
-| Stronger statistical NMN analysis | Unresolved: requires a suitable region and delay-dependent models; local optimizer failures cannot settle it. |
+| Stronger statistical NMN analysis | Continue: a valid joint region excludes four exhibited points; improved delay-dependent unitary/shared-SPAM pairs are independently physical but still rejected. The larger classical class remains computationally unresolved. |
 | New empirical architecture | Reopen only with actual intermediate intervention records and usable control constraints; adjacent terminal calibration/QPT is insufficient. No better qualifying dataset was verified in this update. |
 
 ## Target and proposed measurement combination

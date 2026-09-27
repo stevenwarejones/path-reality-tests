@@ -4,6 +4,7 @@ import importlib.util
 import itertools
 import json
 import pickle
+import sys
 from pathlib import Path
 import tempfile
 import unittest
@@ -24,6 +25,11 @@ A = load('audit')
 C = load('certificate')
 S = load('acquisition_audit')
 T = load('identifiability')
+# Standalone study modules use sibling imports.
+sys.modules['identifiability']=T
+D = load('delay_candidates')
+sys.modules['delay_candidates']=D
+J = load('joint_statistics')
 
 
 class CountAuditTests(unittest.TestCase):
@@ -292,6 +298,104 @@ class IBMIdentifiabilityTests(unittest.TestCase):
         actual=binom.sf(7947,8000,.976)
         self.assertGreater(float(Decimal(report['binomial_upper_tail_bound'])),actual)
         self.assertLess(float(Decimal(report['binomial_upper_tail_bound'])),1e-32)
+
+
+class JointStatisticsTests(unittest.TestCase):
+    def test_exact_multinomial_pearson_moments_by_enumeration(self):
+        from fractions import Fraction as F
+        import math
+        probs=[F(1,10),F(2,10),F(3,10),F(4,10)]
+        for n in (1,2,4):
+            mean=second=mass=F(0)
+            for a in range(n+1):
+                for b in range(n-a+1):
+                    for c in range(n-a-b+1):
+                        counts=[a,b,c,n-a-b-c]
+                        pr=F(math.factorial(n))
+                        for k,p in zip(counts,probs):pr*=p**k/math.factorial(k)
+                        x=sum((k-n*p)**2/(n*p) for k,p in zip(counts,probs))
+                        mass+=pr;mean+=pr*x;second+=pr*x*x
+            self.assertEqual(mass,1);self.assertEqual(mean,3)
+            self.assertEqual(second-mean*mean,6+(sum(1/p for p in probs)-22)/n)
+
+    def test_directed_statistic_bounds_contain_exact_values(self):
+        from decimal import Decimal,localcontext
+        from fractions import Fraction as F
+        counts=np.array([[2,3,1,4],[4,1,2,3]])
+        nums=[1,2,3,4];result=J.pearson_region(counts,nums,10)
+        exact=sum((F(int(k))-10*F(p,10))**2/(10*F(p,10)) for row in counts for k,p in zip(row,nums))
+        var=2*(6+(sum(F(10,p) for p in nums)-22)/10)
+        with localcontext() as ctx:
+            ctx.prec=100
+            x=Decimal(exact.numerator)/Decimal(exact.denominator)
+            vv=Decimal(var.numerator)/Decimal(var.denominator)
+            self.assertLessEqual(Decimal(result['pearson_lower']),x)
+            self.assertGreaterEqual(Decimal(result['pearson_upper']),x)
+            self.assertLessEqual(Decimal(result['variance_lower']),vv)
+            self.assertGreaterEqual(Decimal(result['variance_upper']),vv)
+
+    def test_small_exact_experiment_has_nominal_region_coverage(self):
+        from fractions import Fraction as F
+        import math
+        probs=[F(1,100),F(2,100),F(3,100),F(94,100)]
+        rejected=F(0);n=4
+        for a in range(n+1):
+            for b in range(n-a+1):
+                for c in range(n-a-b+1):
+                    counts=[a,b,c,n-a-b-c];pr=F(math.factorial(n))
+                    for k,p in zip(counts,probs):pr*=p**k/math.factorial(k)
+                    result=J.pearson_region(np.array([counts]),[1,2,3,94],100)
+                    if result['aggregate_region_membership']=='excluded':rejected+=pr
+        self.assertGreater(rejected,0)
+        self.assertLessEqual(rejected,F(1,40))
+
+    def test_joint_region_rejects_points_without_excluding_class(self):
+        result=json.loads((STUDY/'results/ibm-joint-statistics.json').read_text())
+        self.assertEqual(len(result['reports']),4)
+        for row in result['reports']:
+            self.assertEqual(row['aggregate_region_membership'],'excluded')
+            self.assertFalse(row['classical_memory_class_excluded'])
+            self.assertFalse(row['fitted_degrees_of_freedom_used'])
+
+    def test_delay_probabilities_match_independent_choi_contraction(self):
+        catalog=json.loads((STUDY/'results/ibm-delay-candidates.json').read_text())
+        labels=sorted(A.LABELS)
+        def unitary(vec,den):
+            return (den*T.I-1j*sum(k*s for k,s in zip(vec,T.PAULIS)))/np.sqrt(float(den*den+sum(k*k for k in vec)))
+        for candidate in catalog['candidates']:
+            D.check_candidate(candidate);nums,dens=D.probabilities(candidate,labels)
+            probs=np.asarray(nums/dens[...,None],float);S=candidate['spam_denominator']
+            witness=candidate['instrument'];matrices=[]
+            for pair in witness['choi']:
+                matrices.append([(np.asarray(T.arrays(block)[0],float)+1j*np.asarray(T.arrays(block)[1],float))/witness['denominator'] for block in pair])
+            for d,pair in enumerate(candidate['rotation_cayley']):
+                pre,post=[unitary(v,candidate['rotation_denominator']) for v in pair]
+                for row,label in enumerate(labels):
+                    a,m,p,z=label.split(',');y=witness['settings'].index(m+','+p)
+                    rho=(T.I+sum(k*s/S for k,s in zip(candidate['preparations'][a],T.PAULIS)))/2
+                    rho=pre@rho@pre.conj().T
+                    bias,*vec=candidate['effects'][z]
+                    obs=bias/S*T.I+sum(k*s/S for k,s in zip(vec,T.PAULIS))
+                    for b in range(2):
+                        output=np.einsum('ij,iajb->ab',rho,matrices[y][b].reshape(2,2,2,2))
+                        output=post@output@post.conj().T
+                        for c in range(2):
+                            expected=np.trace((T.I+(1-2*c)*obs)/2@output).real
+                            self.assertAlmostEqual(probs[d,row,2*b+c],expected,places=12)
+
+    def test_new_pair_has_independent_quantum_circuit_verification(self):
+        from types import SimpleNamespace
+        catalog=json.loads((STUDY/'results/ibm-delay-candidates.json').read_text())
+        checker=SimpleNamespace(witnesses=[c['instrument'] for c in catalog['candidates']],assertGreater=self.assertGreater)
+        IBMIdentifiabilityTests.test_independent_kraus_swap_circuit_on_full_operator_basis(checker)
+
+    def test_nonphysical_spam_and_invalid_probabilities_fail_closed(self):
+        catalog=json.loads((STUDY/'results/ibm-delay-candidates.json').read_text())
+        for field,key,value in [('preparations','xp',[10**14,0,0]),('effects','x',[10**12,10**12,0,0])]:
+            bad=copy.deepcopy(catalog['candidates'][0]);bad[field][key]=value
+            with self.assertRaises(ValueError):D.check_candidate(bad)
+        for nums,den in [([1,2,3,3],10),([0,2,3,5],10),([1,2,3,4],10.5)]:
+            with self.assertRaises(ValueError):J.pearson_region(np.array([[1,2,3,4]]),nums,den)
 
 
 if __name__ == '__main__':

@@ -42,3 +42,10 @@ measurable separating probe. Every selected count cell is inside its declared
 region, but aggregate residuals are substantial. This is a scoped empirical
 compatibility calculation, not proof of broad experimental indistinguishability
 or novelty of the underlying instrument/environment ambiguity.
+
+The [joint statistical follow-up](joint-statistics.md) uses established exact
+multinomial moments and Cantelli's inequality, with a two-component confidence
+budget. No novelty is claimed for that statistics. It answers a concrete new
+question: whether the exhibited points survive a valid aggregate check. They
+do not, including two improved delay-dependent pairs. It does not answer
+whether every classical-memory model fails.
