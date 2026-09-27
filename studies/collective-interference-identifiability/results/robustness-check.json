@@ -1,0 +1,553 @@
+{
+  "independently_calibrated_settings": [
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 0,
+      "bunch_lower": 0.0,
+      "bunch_probability": 1.70461518067865e-05,
+      "certified_cluster_ceiling": 0.12098775013569052,
+      "certified_distinguishable_event_upper": 0.06049387506784526,
+      "empirical_distinguishable_event": 0.0,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        98,
+        99,
+        96
+      ],
+      "many_shots": 420,
+      "refined_unobserved_triples": 0,
+      "time_ms": 0.5,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.0008869199787978523
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 0,
+      "bunch_lower": 0.0,
+      "bunch_probability": 0.0006842503509139432,
+      "certified_cluster_ceiling": 0.2576132582650976,
+      "certified_distinguishable_event_upper": 0.1288066291325488,
+      "empirical_distinguishable_event": 0.0005298990999024254,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        97,
+        91,
+        93
+      ],
+      "many_shots": 400,
+      "refined_unobserved_triples": 0,
+      "time_ms": 0.7142857142857143,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.016525499851801562
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 1,
+      "bunch_lower": 1.9736e-06,
+      "bunch_probability": 0.0007384992436564304,
+      "certified_cluster_ceiling": 0.23804718092007401,
+      "certified_distinguishable_event_upper": 0.11902359046003701,
+      "empirical_distinguishable_event": 8.496657981194063e-05,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        97,
+        91,
+        96
+      ],
+      "many_shots": 396,
+      "refined_unobserved_triples": 0,
+      "time_ms": 0.9285714285714286,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.01119385283821721
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 10,
+      "bunch_lower": 0.0072513186,
+      "bunch_probability": 0.020596821355267424,
+      "certified_cluster_ceiling": 0.40591628174503624,
+      "certified_distinguishable_event_upper": 0.20295814087251812,
+      "empirical_distinguishable_event": 0.004851554064793349,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        95,
+        97,
+        99
+      ],
+      "many_shots": 398,
+      "refined_unobserved_triples": 0,
+      "time_ms": 1.1428571428571428,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.008551697330011206
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 17,
+      "bunch_lower": 0.0168969949,
+      "bunch_probability": 0.028404161711082208,
+      "certified_cluster_ceiling": 0.5749214117610044,
+      "certified_distinguishable_event_upper": 0.2874607058805022,
+      "empirical_distinguishable_event": 0.015280792186652197,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        96,
+        97,
+        95
+      ],
+      "many_shots": 411,
+      "refined_unobserved_triples": 0,
+      "time_ms": 1.3571428571428572,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.022182602641180358
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 24,
+      "bunch_lower": 0.0296054336,
+      "bunch_probability": 0.03261207798997042,
+      "certified_cluster_ceiling": 0.5215295874693687,
+      "certified_distinguishable_event_upper": 0.26076479373468436,
+      "empirical_distinguishable_event": 0.011119170688522717,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        95,
+        95,
+        97
+      ],
+      "many_shots": 392,
+      "refined_unobserved_triples": 0,
+      "time_ms": 1.5714285714285714,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.00979155190963193
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 13,
+      "bunch_lower": 0.0112059224,
+      "bunch_probability": 0.015019104516938636,
+      "certified_cluster_ceiling": 0.44452367581710306,
+      "certified_distinguishable_event_upper": 0.22226183790855153,
+      "empirical_distinguishable_event": 0.006097191116088092,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        96,
+        95,
+        94
+      ],
+      "many_shots": 404,
+      "refined_unobserved_triples": 0,
+      "time_ms": 1.7857142857142858,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.02757409791624872
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 6,
+      "bunch_lower": 0.0027754211,
+      "bunch_probability": 0.006188454075771133,
+      "certified_cluster_ceiling": 0.3707903770504744,
+      "certified_distinguishable_event_upper": 0.1853951885252372,
+      "empirical_distinguishable_event": 0.0039025135508555637,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        96,
+        97,
+        97
+      ],
+      "many_shots": 382,
+      "refined_unobserved_triples": 0,
+      "time_ms": 2.0,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.015538229199491632
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 5,
+      "bunch_lower": 0.0016996251,
+      "bunch_probability": 0.006470040270493551,
+      "certified_cluster_ceiling": 0.3639326958836791,
+      "certified_distinguishable_event_upper": 0.18196634794183955,
+      "empirical_distinguishable_event": 0.0032621823146397814,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        92,
+        92,
+        90
+      ],
+      "many_shots": 413,
+      "refined_unobserved_triples": 0,
+      "time_ms": 2.2142857142857144,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.00905973786612772
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 9,
+      "bunch_lower": 0.0061429159,
+      "bunch_probability": 0.0074812060961567655,
+      "certified_cluster_ceiling": 0.3804319191648847,
+      "certified_distinguishable_event_upper": 0.19021595958244236,
+      "empirical_distinguishable_event": 0.004732495080422391,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        98,
+        94,
+        94
+      ],
+      "many_shots": 388,
+      "refined_unobserved_triples": 0,
+      "time_ms": 2.428571428571429,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.0023588897903408066
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 11,
+      "bunch_lower": 0.0087302757,
+      "bunch_probability": 0.01015944735000145,
+      "certified_cluster_ceiling": 0.4114396569652234,
+      "certified_distinguishable_event_upper": 0.2057198284826117,
+      "empirical_distinguishable_event": 0.00429151593747867,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        92,
+        91,
+        98
+      ],
+      "many_shots": 391,
+      "refined_unobserved_triples": 0,
+      "time_ms": 2.642857142857143,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.004765482745172232
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 11,
+      "bunch_lower": 0.0087528541,
+      "bunch_probability": 0.010909695824731258,
+      "certified_cluster_ceiling": 0.382362000604101,
+      "certified_distinguishable_event_upper": 0.1911810003020505,
+      "empirical_distinguishable_event": 0.0040475173456783,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        95,
+        94,
+        97
+      ],
+      "many_shots": 390,
+      "refined_unobserved_triples": 0,
+      "time_ms": 2.857142857142857,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.00174397234625252
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 7,
+      "bunch_lower": 0.0034777356,
+      "bunch_probability": 0.0058347364115744465,
+      "certified_cluster_ceiling": 0.36879768750580516,
+      "certified_distinguishable_event_upper": 0.18439884375290258,
+      "empirical_distinguishable_event": 0.0035583464154892728,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        90,
+        91,
+        91
+      ],
+      "many_shots": 421,
+      "refined_unobserved_triples": 0,
+      "time_ms": 3.0714285714285716,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.002827451687405567
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 6,
+      "bunch_lower": 0.0025536666,
+      "bunch_probability": 0.0058620539653906015,
+      "certified_cluster_ceiling": 0.3490648251173383,
+      "certified_distinguishable_event_upper": 0.17453241255866914,
+      "empirical_distinguishable_event": 0.003580172997074529,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        93,
+        94,
+        94
+      ],
+      "many_shots": 415,
+      "refined_unobserved_triples": 0,
+      "time_ms": 3.2857142857142856,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.0013300417818981449
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 4,
+      "bunch_lower": 0.0010151985,
+      "bunch_probability": 0.004857821809709249,
+      "certified_cluster_ceiling": 0.3387290558159919,
+      "certified_distinguishable_event_upper": 0.16936452790799594,
+      "empirical_distinguishable_event": 0.0028526449513782263,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        97,
+        96,
+        94
+      ],
+      "many_shots": 396,
+      "refined_unobserved_triples": 0,
+      "time_ms": 3.5,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.0021216557653815486
+    },
+    {
+      "all_pattern_constraints_pass": true,
+      "bunch_count": 14,
+      "bunch_lower": 0.0042236869,
+      "bunch_probability": 0.0043331429418703125,
+      "certified_cluster_ceiling": 0.1142051952004865,
+      "certified_distinguishable_event_upper": 0.05710259760024325,
+      "empirical_distinguishable_event": 0.0028344029142361084,
+      "full_independent_singleton_region_pass": true,
+      "independent_singleton_shots": [
+        230,
+        230,
+        233
+      ],
+      "many_shots": 1202,
+      "refined_unobserved_triples": 0,
+      "time_ms": 4.65,
+      "translation_assumption": false,
+      "unobserved_triple_upper": 0.00026248344455103193
+    }
+  ],
+  "selected_shared_drift": {
+    "all_pattern_constraints_pass": true,
+    "bunch_probability": 0.023075036505304354,
+    "certified_bounds": {
+      "beta": 0.055853496221322,
+      "drift_critical_upper": 0.89852380063206,
+      "fixed_preparation_change_excluded_through_sum_tv": 0.00554,
+      "fixed_preparation_change_upper": "Not established for the augmented row-hit region.",
+      "gamma": 0.2881834,
+      "shared_zero_mean_drift_excluded_through_sum_tv": 0.0397
+    },
+    "drift_budget_sum_tv": 0.89852380063206,
+    "mean_singleton_region_pass": true,
+    "old_focusing_rejected_rows": [
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "proposed_distinguishable_pair_control": {
+      "fixed_quantum_channel": 0.1432359739972339,
+      "shared_drift_cluster": 0.20007026982661177,
+      "status": "Prediction for a new matched acquisition; not an existing control at this setting."
+    },
+    "quantum_row_hits": [
+      {
+        "compatible": true,
+        "count": 11,
+        "lower": 0.000676,
+        "prediction": 0.00232705180524,
+        "row": 8,
+        "upper": 0.010827
+      },
+      {
+        "compatible": true,
+        "count": 40,
+        "lower": 0.006107,
+        "prediction": 0.014132176780059331,
+        "row": 9,
+        "upper": 0.024711
+      },
+      {
+        "compatible": true,
+        "count": 278,
+        "lower": 0.071191,
+        "prediction": 0.0955012095526311,
+        "row": 10,
+        "upper": 0.117687
+      },
+      {
+        "compatible": true,
+        "count": 760,
+        "lower": 0.219645,
+        "prediction": 0.2770655337218131,
+        "row": 11,
+        "upper": 0.2893
+      },
+      {
+        "compatible": true,
+        "count": 976,
+        "lower": 0.288678,
+        "prediction": 0.32888278767215473,
+        "row": 12,
+        "upper": 0.363699
+      },
+      {
+        "compatible": true,
+        "count": 914,
+        "lower": 0.268751,
+        "prediction": 0.3052718978223168,
+        "row": 13,
+        "upper": 0.342456
+      },
+      {
+        "compatible": true,
+        "count": 796,
+        "lower": 0.231071,
+        "prediction": 0.2472929562553941,
+        "row": 14,
+        "upper": 0.301779
+      },
+      {
+        "compatible": true,
+        "count": 931,
+        "lower": 0.274206,
+        "prediction": 0.3134784468663856,
+        "row": 15,
+        "upper": 0.348289
+      },
+      {
+        "compatible": true,
+        "count": 1015,
+        "lower": 0.301256,
+        "prediction": 0.330973191448164,
+        "row": 16,
+        "upper": 0.377019
+      },
+      {
+        "compatible": true,
+        "count": 746,
+        "lower": 0.215211,
+        "prediction": 0.2747264353241713,
+        "row": 17,
+        "upper": 0.284437
+      },
+      {
+        "compatible": true,
+        "count": 294,
+        "lower": 0.075916,
+        "prediction": 0.08920787250010416,
+        "row": 18,
+        "upper": 0.123586
+      },
+      {
+        "compatible": true,
+        "count": 49,
+        "lower": 0.008144,
+        "prediction": 0.023758927519140535,
+        "row": 19,
+        "upper": 0.028654
+      }
+    ],
+    "refined_unobserved_triples": 0,
+    "row_hit_constraints_pass": true,
+    "row_hits": [
+      {
+        "compatible": true,
+        "count": 11,
+        "lower": 0.000676,
+        "prediction": 0.00084091139375,
+        "row": 8,
+        "upper": 0.010827
+      },
+      {
+        "compatible": true,
+        "count": 40,
+        "lower": 0.006107,
+        "prediction": 0.006756191711372411,
+        "row": 9,
+        "upper": 0.024711
+      },
+      {
+        "compatible": true,
+        "count": 278,
+        "lower": 0.071191,
+        "prediction": 0.11450670604493385,
+        "row": 10,
+        "upper": 0.117687
+      },
+      {
+        "compatible": true,
+        "count": 760,
+        "lower": 0.219645,
+        "prediction": 0.2776266239927511,
+        "row": 11,
+        "upper": 0.2893
+      },
+      {
+        "compatible": true,
+        "count": 976,
+        "lower": 0.288678,
+        "prediction": 0.3343903333379701,
+        "row": 12,
+        "upper": 0.363699
+      },
+      {
+        "compatible": true,
+        "count": 914,
+        "lower": 0.268751,
+        "prediction": 0.30116417526032707,
+        "row": 13,
+        "upper": 0.342456
+      },
+      {
+        "compatible": true,
+        "count": 796,
+        "lower": 0.231071,
+        "prediction": 0.2971961397250139,
+        "row": 14,
+        "upper": 0.301779
+      },
+      {
+        "compatible": true,
+        "count": 931,
+        "lower": 0.274206,
+        "prediction": 0.31145870194516506,
+        "row": 15,
+        "upper": 0.348289
+      },
+      {
+        "compatible": true,
+        "count": 1015,
+        "lower": 0.301256,
+        "prediction": 0.3058092730362743,
+        "row": 16,
+        "upper": 0.377019
+      },
+      {
+        "compatible": true,
+        "count": 746,
+        "lower": 0.215211,
+        "prediction": 0.22871729325161322,
+        "row": 17,
+        "upper": 0.284437
+      },
+      {
+        "compatible": true,
+        "count": 294,
+        "lower": 0.075916,
+        "prediction": 0.11031108169150758,
+        "row": 18,
+        "upper": 0.123586
+      },
+      {
+        "compatible": true,
+        "count": 49,
+        "lower": 0.008144,
+        "prediction": 0.008911773939129803,
+        "row": 19,
+        "upper": 0.028654
+      }
+    ],
+    "shared_law": "Two equiprobable channels, identical acquisition law in both preparation families.",
+    "unobserved_triple_upper": 0.004442522094888336
+  }
+}

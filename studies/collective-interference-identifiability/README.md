@@ -1,11 +1,33 @@
-# What does calibrated three-atom bunching exclude?
+# Collective interference: fixed-channel exclusion and a drift ambiguity
 
-**The selected public atomic records conditionally exclude mixtures of
-orthogonally labelled groups containing at most two atoms.** The revision uses
-2D singleton information and supplies physical models for the joint and both
-source-deleted regions, including every selected three-atom image pattern.
-Independent calibration transfer and a fixed shared channel remain unverified;
-the broader apparatus-robust research goal is **incomplete**.
+**The selected records exclude the declared fixed-channel cluster null, but
+admit an explicit shared fluctuating cluster model in the expanded confidence
+region.** Both preparation families use the same two-channel law. This is a
+physical countermodel for the broad passive-channel class; its large
+fluctuation is not established as plausible for the apparatus's lattice
+Hamiltonian. The apparatus-robust research goal remains **incomplete**.
+
+| Current robustness result | Exact-check conclusion |
+|---|---:|
+| Shared-drift budget excluded through (sum of per-input TV deviations) | 0.0397 |
+| Physical shared-drift model feasible at | 0.89852380063206 |
+| Mean singleton, all parity-pattern and 12 row-hit constraints | All pass |
+| Old focusing model rejected by added row-hit constraints | 8 rows |
+| Independently calibrated settings with physical joint cluster models | 16 / 16 |
+| Proposed matched distinguishable-pair event: fixed quantum / drifting cluster | 0.143236 / 0.200070 |
+
+The critical drift budget is bracketed, not solved. The feasible endpoint is
+about 30% TV per input; it does not show that tiny errors explain the data.
+A separate event-specific envelope excludes fixed preparation changes through
+sum TV .00554, about 17.7 times the old generic sufficient allowance.
+
+Read the [robustness decision table and derivation](robustness-report.md) for
+the nuisance coordinates, shared acquisition law, complete setting checks,
+confidence allocations, limitations and proposed separating control. The
+selected-data and 16-setting analyses have separate declared confidence
+families; they are not combined into an archive-wide 95% claim.
+
+## Preserved fixed-channel source-combination result
 
 The two measurement families come from Young et al.,
 [An atomic boson sampler](https://arxiv.org/html/2307.06936v2),
@@ -13,7 +35,7 @@ The two measurement families come from Young et al.,
 shots and 2,999 three-atom shots, with 93 collisionless full-row events.
 Three supplied singleton arrays are translated copies of that one record.
 
-## Decisive results
+## Fixed-channel results
 
 The final declared simultaneous region includes singleton row and conditional
 cell probabilities, loss/crop tails, all 497,785 possible parity patterns with
@@ -42,7 +64,9 @@ an arbitrary search of other settings and archives.
 | Complete selected three-atom record only | A physical fixed-channel pair-plus-singleton model satisfies every retained pattern interval and bunching constraint. Exact translation of its unconstrained channel is still enforced. |
 | Additional controls | No extra dataset is asserted indispensable or used to shrink the selected channel region. |
 
-Thus both selected sources are necessary for this **region-based** exclusion.
+Thus both selected sources are necessary for this preserved **region-based**
+exclusion. This deletion claim concerns the original full-pattern region,
+before adding row-hit constraints or enlarging the channel class.
 The very sparse full-pattern confidence region is broad: compatibility is not
 a likelihood fit, proof that every other statistic is inconclusive, or a fit
 to the entire multi-setting archive or a specific lattice Hamiltonian.
@@ -69,8 +93,9 @@ on July 2, 2022. The selected 2.45 ms record is from July 2. These controls do
 not bound the selected channel without an additional justified dynamical and
 date-transfer model. No measured bound below the sufficient TV allowance has
 been established; no arbitrary interaction or detection error is inserted.
-A fitted apparatus-specific drift explanation and a measured control that
-separates it remain open. The physical null is not every definition of absent
+A shared passive-channel drift model now fits the expanded selected region,
+and a proposed matched pair control separates it from the exhibited quantum
+model. Its restriction to an apparatus-specific Hamiltonian remains open. The physical null is not every definition of absent
 three-particle interference, entanglement depth or a universal resource.
 
 ## Reproduce
@@ -82,6 +107,7 @@ python studies/collective-interference-identifiability/certificate.py --check
 python studies/collective-interference-identifiability/witness.py --check
 python studies/collective-interference-identifiability/cell_certificate.py --check
 python studies/collective-interference-identifiability/full_models.py --check
+python studies/collective-interference-identifiability/robustness.py --check
 python -m unittest discover -s tests -p 'test_collective_interference.py' -v
 ```
 
@@ -92,6 +118,7 @@ python -m pip install -r studies/collective-interference-identifiability/require
 python studies/collective-interference-identifiability/sources.py --cache /tmp/collective-raw --download --check
 python studies/collective-interference-identifiability/build_full_models.py --cache /tmp/collective-raw --check-source
 python studies/collective-interference-identifiability/control_audit.py --cache /tmp/collective-raw --check
+python studies/collective-interference-identifiability/build_robustness.py --cache /tmp/collective-raw --check-source
 ```
 
 The 59 MB archive and extracted NC files remain outside git. The deposited

@@ -98,3 +98,15 @@ The old summary quantum witness has zero probability for 68 observed patterns,
 each seen once. It fails the complete parity region. The new smoothed rational
 quantum witness passes every constraint of that region; the old artifact is
 retained only for its original summary and singleton-source claims.
+
+## Robustness extension
+
+All 16 settings with independent site calibrations (15 July 7 scan points and
+July 2 at 4.65 ms) now have full source reconstruction and physical joint C2
+models. No translation relation is imposed on their three columns. The
+selected setting additionally has a common-law two-channel C2 model fitting
+its full singleton region, all parity-pattern constraints and all 12 new
+row-hit intervals. This is not an independent fit with unrelated laws for
+each preparation. See [robustness-report.md](robustness-report.md) for the
+wide critical-error bracket, distinct confidence families, Hamiltonian
+limitation, targeted primary-literature update and specified control.

@@ -14,6 +14,7 @@ import certificate as collective_certificate
 import witness as collective_witness
 import cell_certificate as cells
 import full_models as full
+import robustness as robust
 sys.path.pop(0)
 
 class CollectiveTests(unittest.TestCase):
@@ -170,5 +171,61 @@ class ExpandedRegionTests(unittest.TestCase):
             model=full.ParityModel(U[:2],10,kind)
             self.assertEqual(sum(truth.values()),1)
             for pat,p in truth.items():self.assertEqual(F(model.parity(pat),model.den),p)
+
+class RobustnessTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.read=staticmethod(lambda n:json.loads((STUDY/'results'/n).read_text()))
+
+    def test_shared_law_complete_model_and_geometry(self):
+        r=robust.selected_verify(self.read)
+        self.assertTrue(r['mean_singleton_region_pass'])
+        self.assertTrue(r['all_pattern_constraints_pass'])
+        self.assertTrue(r['row_hit_constraints_pass'])
+        self.assertEqual(len(r['old_focusing_rejected_rows']),8)
+        self.assertLess(r['certified_bounds']['shared_zero_mean_drift_excluded_through_sum_tv'],r['drift_budget_sum_tv'])
+        self.assertGreater(r['proposed_distinguishable_pair_control']['shared_drift_cluster']-r['proposed_distinguishable_pair_control']['fixed_quantum_channel'],.05)
+
+    def test_priority_independent_settings_have_joint_nulls(self):
+        cases=self.read('matched-regions.json')['cases']
+        self.assertEqual(len(cases),16)
+        for target in [11/7,17/7,4.65]:
+            c=min(cases,key=lambda c:abs(c['time_ms']-target))
+            r=robust.matched_verify(c,self.read(c['model_file']))
+            self.assertTrue(r['full_independent_singleton_region_pass'])
+            self.assertTrue(r['all_pattern_constraints_pass'])
+            self.assertFalse(r['translation_assumption'])
+
+    def test_chernoff_envelope_dominates_exact_binomial_tails(self):
+        for n in range(2,18):
+            for k,p,side in [(0,F(1,3),'upper'),(n,F(2,3),'lower'),((n+1)//2,F(1,3),'lower'),(n//2,F(2,3),'upper')]:
+                bound=p**k*(1-p)**(n-k)*n**n/F(k**k*(n-k)**(n-k))
+                a,b=collective_certificate.cdf_numerator(n,k-1 if side=='lower' else k,p)
+                tail=1-F(a,b) if side=='lower' else F(a,b)
+                self.assertLessEqual(tail,bound)
+        with self.assertRaises(AssertionError):robust.check_chernoff(100,50,F(1,2),F(1,100),'lower')
+
+    def test_event_specific_signed_perturbation_envelopes(self):
+        import random
+        rng=random.Random(913)
+        def draw():
+            a=[rng.randrange(1,20) for _ in range(7)];return [F(v,sum(a)) for v in a]
+        def event(p):
+            return sum(p[0][a]*p[1][b]*p[2][c] for a,b,c in itertools.product(range(6),repeat=3) if a//3==b//3==c//3 and len({a,b,c})==3)
+        for _ in range(20):
+            left=[draw() for j in range(3)];right=[draw() for j in range(3)]
+            mean=[[(a+b)/2 for a,b in zip(l,r)] for l,r in zip(left,right)]
+            rows=[[sum(p[:3]),sum(p[3:6])] for p in mean]
+            gamma=max(v for p in rows for v in p)
+            beta=max(rows[j][y]*rows[k][y] for j,k in itertools.combinations(range(3),2) for y in range(2))
+            d=sum(robust.tv(a,b) for a,b in zip(left,mean));U=event(mean)
+            self.assertLessEqual(event(left),robust.preparation_bound(U,beta,gamma,d))
+            self.assertLessEqual((event(left)+event(right))/2,robust.drift_bound(U,gamma,d))
+
+    def test_nonphysical_independent_channel_and_invalid_mean_rejected(self):
+        case=self.read('matched-regions.json')['cases'][-1]
+        m=self.read(case['model_file']);m['amplitude_denominator']=1
+        with self.assertRaises(AssertionError):robust.generic_transport(m)
+        with self.assertRaises(AssertionError):robust.single_probabilities([[F(0)]*12 for _ in range(28)],self.read('cell-certificate.json'))
 
 if __name__=='__main__':unittest.main()

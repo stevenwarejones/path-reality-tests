@@ -1,4 +1,9 @@
-# Response to the PR20 review
+# Preserved conditional source-combination revision
+
+The next investigation is recorded in [robustness-report.md](robustness-report.md).
+This document describes the successfully closed fixed-channel combination
+criterion at the earlier full-pattern region; its outstanding-work statements
+are historical.
 
 The reviewed certificate at `c878cb26e6c89192d3e983dd240579d90feceb32` is
 preserved. The new result strengthens conditional inference from the selected
