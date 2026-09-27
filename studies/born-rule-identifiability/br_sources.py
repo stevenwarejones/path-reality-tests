@@ -24,6 +24,7 @@ def main():
     p.add_argument('--cache', type=Path, required=True)
     p.add_argument('--verify-only', action='store_true')
     p.add_argument('--portfolio', action='store_true', help='Also fetch discovery portfolio sources')
+    p.add_argument('--tables', action='store_true', help='Also fetch measured joint-table sources')
     a = p.parse_args()
     cache = a.cache.resolve()
     if cache.is_relative_to(ROOT):
@@ -32,6 +33,8 @@ def main():
     entries = manifest()['files']
     if a.portfolio:
         entries += json.loads((HERE/'portfolio-manifest.json').read_text())['files']
+    if a.tables:
+        entries += json.loads((HERE/'table-manifest.json').read_text())['files']
     for e in entries:
         path = cache/e.get('cache_name', e['name'])
         path.parent.mkdir(parents=True, exist_ok=True)

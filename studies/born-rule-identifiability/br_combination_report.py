@@ -1,23 +1,25 @@
 """Generated portfolio findings and candidate-removal comparisons."""
 def render(audit,result):
-    lines=['# Expanded dataset-combination findings','',
+    lines=['# Expanded dataset-combination feasibility (retained secondary analysis)','',
+        'The [measured scan–Viviani report](joint-table-report.md) is now the main joint analysis. The failed pairings and prospective checks below are retained.','',
         'Main result: a normalized single-qubit probability deformation is exactly indistinguishable from one ordinary control-axis warp throughout the audited integer gate-depth circuit family. Combining depths cannot identify it. A complementary-preparation witness can separate the pair ideally, but contrast/calibration uncertainty removes that prospective gain. No measured Born-rule exclusion is obtained. The waveguide runner-up supplies a separate exact optical ambiguity and phase-cycling design.','',
         '## Public source audit','',
         '| Archive | Evidence | Backend | Jobs | Circuit rows | Largest first-harmonic residual |','|---|---|---|---:|---:|---:|']
-    for name,d in audit['ibm'].items():
+    for name,d in sorted(audit['ibm'].items()):
         residual=max([v['residual_max_abs'] for v in d['depths'].values()],default=None)
         val='not mapped' if residual is None else f'{residual:.7f}'
         lines.append(f"| {name} | {d['evidence_type']} | {d['backend']} | {d['jobs']} | {d['circuit_rows']} | {val} |")
     lines+=['','Hardware residuals are descriptive, with job-level errors in [portfolio-audit.json](portfolio-audit.json). They are not a theta fit or discovery significance. The simulator is not independent hardware evidence. Missing benchmark gate labels are not inferred from order.','',
         '| Photon archive | Outcome matrix | Available event settings | Max event/P discrepancy | Max POVM row-sum error |','|---|---|---:|---:|---:|']
-    for name,d in audit['photon'].items():
+    for name,d in sorted(audit['photon'].items()):
         lines.append(f"| {name} | {d['outcome_matrix_shape']} | {len(d['event_reconciliation'])} | {max(r['max_frequency_discrepancy'] for r in d['event_reconciliation']):.7f} | {d['response_row_sum_max_error']:.7f} |")
     lines+=['','Zero outcomes are retained. The supplied detector POVMs are derived under assumed coherent-state statistics; they are not independent Born-free calibration. PNR classified events and fitted probability products differ and cannot be pooled as independent replications.','',
         '## Exact single-versus-joint result','',
         'For fθ(p)=p+θp(1−p)(2p−1), hθ(x)=2fθ((1+x)/2)−1, choose cos(gθ(φ))=hθ(cosφ). Since sin(nπ/2) is 0 or ±1, fθ(p_n(φ))=p_n(gθ(φ)) for every integer n. Independent complex circuit multiplication verifies the convention. Both datasets individually and jointly remain ambiguous with the same one-parameter warp. This is an exact conditional observation-map theorem, not an assertion that all real residuals follow this model.','',
         '| θ | Largest numerical equality error over checked depths | Ideal complementary squared radius |','|---:|---:|---:|']
     for r in result['qubit_equivalence']:
-        lines.append(f"| {r['theta']} | {r['max_exact_family_residual']:.2g} | {r['quadrature_squared_radius']:.7f} |")
+        error = '<1e-12' if r['max_exact_family_residual'] < 1e-12 else f"{r['max_exact_family_residual']:.2g}"
+        lines.append(f"| {r['theta']} | {error} | {r['quadrature_squared_radius']:.7f} |")
     p=result['qubit_prospective']
     lines+=['','## Raw-count feasibility and removal','',
         f"Each of four prospective preparations uses {p['shots_per_preparation']:,} shots, matching the hardware pooled per-angle depth-1 scale. These new preparations were **not** measured in the public archive. Simultaneous exact binomial intervals use family alpha 0.01.",'',

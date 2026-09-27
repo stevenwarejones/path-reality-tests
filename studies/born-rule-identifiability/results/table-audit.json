@@ -1,0 +1,2440 @@
+{
+  "source": {
+    "files": [
+      {
+        "name": "dim-wit-par.py",
+        "cache_name": "7470893/dim-wit-par.py",
+        "record": 7470893,
+        "bytes": 8194,
+        "sha256": "4fb465fd2b34af143a2532df87362b59ca309828e571e42f40b383880ac68510",
+        "archive_md5": "md5:3c5c8d0d3354013fc79f0a9bb18ecfb9",
+        "url": "https://zenodo.org/api/records/7470893/files/dim-wit-par.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "readme.txt",
+        "cache_name": "7470893/readme.txt",
+        "record": 7470893,
+        "bytes": 1177,
+        "sha256": "537f66673e75e66722c9d6e0faba091ffefbf65d54dd31162022e79f432481ce",
+        "archive_md5": "md5:0877d9b13f5818a145843e8df9a1f0b8",
+        "url": "https://zenodo.org/api/records/7470893/files/readme.txt/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "dim-par-anp.py",
+        "cache_name": "7470893/dim-par-anp.py",
+        "record": 7470893,
+        "bytes": 8736,
+        "sha256": "5185fc336a811c74e8885ffedff1cc09db0f111199aa664fc0ed301a3dfd3a50",
+        "archive_md5": "md5:140004a8599761a99d0ed1999bb7169a",
+        "url": "https://zenodo.org/api/records/7470893/files/dim-par-anp.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "Job.py",
+        "cache_name": "7470893/Job.py",
+        "record": 7470893,
+        "bytes": 11132,
+        "sha256": "6aeefa16db586418f56f13eefdb6b8a3ac55b74df6c8e883dffd719ff90fab41",
+        "archive_md5": "md5:cd9990cc94c87455c6d2a3f57bd45bdf",
+        "url": "https://zenodo.org/api/records/7470893/files/Job.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "wyniki-nairobi.zip",
+        "cache_name": "7470893/wyniki-nairobi.zip",
+        "record": 7470893,
+        "bytes": 321790,
+        "sha256": "adc3c1fbd8aa90f2bce8165e35e76c2ca8aee87236ab3b4cf14f2f85a3a28ba5",
+        "archive_md5": "md5:331e1e647284ca3e3518a2e9b51a689a",
+        "url": "https://zenodo.org/api/records/7470893/files/wyniki-nairobi.zip/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "readme.txt",
+        "cache_name": "21775462/readme.txt",
+        "record": 21775462,
+        "bytes": 3122,
+        "sha256": "71fe17af251305aa799b91fe1be9fed368210039680efec4f721fe5e69798fd1",
+        "archive_md5": "md5:af92cda607573f4aad33da7c50eebace",
+        "url": "https://zenodo.org/api/records/21775462/files/readme.txt/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "ibm_nairobi_calibrations.csv",
+        "cache_name": "21775462/ibm_nairobi_calibrations.csv",
+        "record": 21775462,
+        "bytes": 2224,
+        "sha256": "f78dc63d3cbe27eb4793d5bf980b31a43a9391a2fd0f547495b897119e016349",
+        "archive_md5": "md5:6238afd09f62f6ced01ee86c241a00bb",
+        "url": "https://zenodo.org/api/records/21775462/files/ibm_nairobi_calibrations.csv/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "aria-viv.txt",
+        "cache_name": "21775462/aria-viv.txt",
+        "record": 21775462,
+        "bytes": 5984,
+        "sha256": "10e756f60a7f2d685a33824a14128126532d3c1bf87d0dbaeb24b8438a9b27e1",
+        "archive_md5": "md5:45590017400cc60eb68c4dc7fcb42f9a",
+        "url": "https://zenodo.org/api/records/21775462/files/aria-viv.txt/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "jobionq.py",
+        "cache_name": "21775462/jobionq.py",
+        "record": 21775462,
+        "bytes": 16912,
+        "sha256": "5b91f9020102b1ce9948dfb48e66aba17a7db2ce7825ec756cbdf7b5a0833fbc",
+        "archive_md5": "md5:68cb2b0104a4e06467c5ae49966f4a6c",
+        "url": "https://zenodo.org/api/records/21775462/files/jobionq.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "results-aria-viv.zip",
+        "cache_name": "21775462/results-aria-viv.zip",
+        "record": 21775462,
+        "bytes": 41011,
+        "sha256": "054f34576a58695737d0cf608cf0b9137c0182722f8c39e1b2607cc8094c4659",
+        "archive_md5": "md5:03981f338c19b4fb54d1ddc89d5db04c",
+        "url": "https://zenodo.org/api/records/21775462/files/results-aria-viv.zip/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "viv.py",
+        "cache_name": "21775462/viv.py",
+        "record": 21775462,
+        "bytes": 6252,
+        "sha256": "6504cbe073a76575646a029a9211c2ca1d5d8def5dc236c2311f8c2a6bdccece",
+        "archive_md5": "md5:747cb7072121ad974e087df8abcc0b27",
+        "url": "https://zenodo.org/api/records/21775462/files/viv.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "dim-an-viv.py",
+        "cache_name": "21775462/dim-an-viv.py",
+        "record": 21775462,
+        "bytes": 4894,
+        "sha256": "c2165c03829e73ae5d9930d1d55167a10c0596b6c16062a87fd4eb170e936128",
+        "archive_md5": "md5:5a19bf1a5c5e06bc154dc1cd1b551049",
+        "url": "https://zenodo.org/api/records/21775462/files/dim-an-viv.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "results_nairobi.zip",
+        "cache_name": "21775462/results_nairobi.zip",
+        "record": 21775462,
+        "bytes": 25738,
+        "sha256": "4ca7e51d8e1cdf120e4d99f6d7b994c0d8285ca3af94092a94dfc00e6821e455",
+        "archive_md5": "md5:f98fc9e25be8e6b40239b00a0ecd6a97",
+        "url": "https://zenodo.org/api/records/21775462/files/results_nairobi.zip/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "viviani-nairobi.txt",
+        "cache_name": "21775462/viviani-nairobi.txt",
+        "record": 21775462,
+        "bytes": 1186,
+        "sha256": "50d0fc5fad81ad6c51c818a801ad995e5e85944b67d741d29818755641969071",
+        "archive_md5": "md5:b0773716d018d4a69dc0b6784b9c5fbc",
+        "url": "https://zenodo.org/api/records/21775462/files/viviani-nairobi.txt/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "vivionx.py",
+        "cache_name": "21775462/vivionx.py",
+        "record": 21775462,
+        "bytes": 2636,
+        "sha256": "777ace34b2e8f5675465c138f0de6021377ce94f485c8d42dca0903cddf32e70",
+        "archive_md5": "md5:10bddc8fbc88fc468c1c0b63ac70fe6c",
+        "url": "https://zenodo.org/api/records/21775462/files/vivionx.py/content",
+        "license": "cc-by-4.0"
+      },
+      {
+        "name": "Job.py",
+        "cache_name": "21775462/Job.py",
+        "record": 21775462,
+        "bytes": 11606,
+        "sha256": "21279fbe755f491864ec372d27e7facee1ce3977a46d5b04440596105c4953bf",
+        "archive_md5": "md5:6dc029a0612f5812c30219b00e5f9fb1",
+        "url": "https://zenodo.org/api/records/21775462/files/Job.py/content",
+        "license": "cc-by-4.0"
+      }
+    ]
+  },
+  "records": {
+    "scan": {
+      "metadata": {
+        "author": "TB",
+        "jobs": 20,
+        "tests circuits": 0,
+        "repetitions": 8,
+        "parameters list": [0, 1.2566370614359172, 2.5132741228718345, 3.7699111843077517, 5.026548245743669],
+        "shots": 100000,
+        "backend": "ibm_nairobi",
+        "randomization": true,
+        "script version": "skrypt_v3_TR",
+        "start time": "2022-12-17 19:30:24",
+        "description": "Tutaj mo\u017cna umie\u015bci\u0107 kr\u00f3tki opis joba."
+      },
+      "actual_jobs": 115,
+      "job_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115],
+      "missing_indices_within_recorded_range": [10],
+      "job_list_rows": 20,
+      "job_list_complete": false,
+      "job_list_ids": ["639e18da7f42d2365bd34673", "639e18e1cde4216676b14e0e", "639e18e83c2e3c253ba531b0", "639e18eefbeeb32144906f08", "639e18f5fbeeb3447a906f09", "639e18fcd23e955229033277", "639e19067f42d25ce7d34677", "639e190dfd03a40da8214123", "639e1916cde4213e63b14e10", "639e1921d23e954daf033278", "639e192bcde4213cc2b14e11", "639e1937e9c45a7d1a60cf5c", "639e19437f42d2eab7d34678", "639e194ee9c45aee9560cf5d", "639e195ae9c45a992760cf5f", "639e19667f42d22f3fd34679", "639e1974d23e956286033279", "639e1981d23e9526c003327a", "639e198ea3da40382c250a50", "639e199d3c2e3c4f8aa531b8"],
+      "setting_order_audit": [
+        {
+          "sha256": "70b1e9926fc744712c231676a94e9b41ccd7a4f494cdc9c8488ebc8b742e3e4b",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d680ef45358903ca315778feab1322fec336341674e2723578e029a2539e0f13",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a2473307b3b00782f7832752ede27df4d3d250ffa3a8c23d92074514094c6a10",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5b6da243acca3996b9ceaad811fdd6d914cdf635582a6e27765a45e8113bd28e",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "2e07a1c69214357b452e55d8f551765bbb244f5a4e40f3e456798015d7728419",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c2d8df9c2f14f7029c888387d87acf607f08fd850f4b2a9fde0d484a4c2f61ec",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ee719569d180c6e811bb300ba3b7d19731edced8ae734b50622abe3e293ae289",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "4c1b3bf5ff28c0eb5cc62f8bc102b334f400b0be586c58b3e5d3f71072b27c28",
+          "adjacent_equal_settings": 2,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "3fbec5c5e8749965b5b562303b410e2f8a3de40254ebdf54e9ab6289b593a34d",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ef4dfeb78c039d3763d2cc09e602b06d4273c4488cd7f1e65e71e755b057db7c",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "4139826def0a8f4f377bd03ccfeb6addaf1308b2d9b5b76b5deea875675d8d59",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ec1bbd9deaf12768cf5dea56b74d12d862e568f7d5369aeb1ee8afc7f1b413ee",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b86a439717fe5c1e3b4ac57e175727ac9e43b86ffb315ff74d731672e04038dd",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "36f572b0aaf5aef1afcdceec0e1b8fe7e98950fe1dc76466c835fe7b621e818a",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c618ad34e363240e503c307142fa91b01da76fb4dc40cdd8a03498eeba4f8a88",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a56bd82a19ec839ecebbb4a31444c73a47422a99793cf7f84e9ca42dd1683e26",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "86fba079a4f8a3e8d92aafb9033df310e89c369e325866ee9664b7efb83f1872",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "49f94ab53358bf3ff5c30afcf84db4954afb469ac111a569210c5598f0c02d0e",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "bb41decddce9935cc75f3947cf9af3e6703a3896a1ee06e5d12875712ff33db2",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c1f6ec571f19d52fe60ca3f9b5aebe881cf3732d8b29417f751ad899c204660b",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "de77c1593b1edb2494997f8b3fb6161bd0a5a74cf687b267e2f8b94fea365292",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "98558685f85eeb7b07a447cb7d694d1a241ad5aad4fdf3c89c7186a984a66712",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ae77c1be0d20fdcc8e8870ea5b031d4f530683ffe2ee9f9e1fe043159713aafc",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8f26ac459a146e1aa04a7963aa16451ec9d5a0bd85f9a15f0380ef9d628c2e4c",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "96e7849d0971441ea5eb03e54319be2a42361818ae6f6ef7df8e1eabdefac80c",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "f4eb69351428833563346b5182f5c9c9d6bee30be21011fdb9f024d813ab6e42",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "904437b211581e19fa4363712f81af51fb6e2513c17b94a84473d27a3f4bd4ce",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "0b8a8b9cf4ac7fa2444aed5ba1c748d826f3ed87357cc1e1825591ed8a6b8eee",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "4a17bac356151db3a5cfc7ac8770c7234489355c6ab4ecad2095ff52c47b630f",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "62588dd0e63dfe3a4e11191349bfb4c4a0d5a0ca8854bea222107e7eb621c848",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ed576af883d5a2f3d89cb0d5a78516b61318aab974c1c7356cbbcb3f33ddf23b",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e1fa1abda04d75955f35a8f30b03a7e8f60ffcccbe51141437e446b6f0be36cc",
+          "adjacent_equal_settings": 1,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "2180002bc7d0d3b2b9f520ac7e551761e717020f7b407e430278d93f7d235bdd",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "6b27a4e654043e2875b9ee0863baaaf7384c514d4454db4f4a3acede0f49e72f",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b43b822ca9d59783b634ae55e9fd8646f73b9abeb19293a35ccc9b9f0d4ddeda",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "aad896b94eff2d3a8a335473dfa3de2d9850d78249cb4deb500fcdef114ec856",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c63fdbd6a3f9c9ed86ca6a7f6cce653b9fb03c7db958419c1ddd7fe1d1c73e5c",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d57ccec8a7ab340293b7d78cc837740a009fca3dfe04a6d4cf2390e3967c54f7",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a2c7308e2c7c635980c7e4c03410f2c05e025fcdeb54b8771870dbf0fe608b93",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "0e433cd7f981e6edcee04a95ea10261266e74d5bba82a300cf6b6d041e5d2928",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e1dbfda33def5da1fb8178c5ddf205109db2497b55501e4bbd2c5e3945208d2e",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "f44b9260af8fa50c2a4043b6931e80bb1fae5cf8bbbc88d0ad9e5b09d35e7acf",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "1007ced6d1f75ac3240be7df7ac238a9fc23923f8d154b70692802b970afd1cf",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "187c3f991d2fd02743e8107651598b36e3d38b5bd86e753fcf6bb44fbebd726a",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "74fba75ac9f3edb2c0dd8386c4ae7c5e50508ae4319cb10678887edcdf4a6872",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "336b2f4913f14a0c094069cb54d6cfccf2a894e79d3fedf69fc538004e3fc204",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5f3de41e38573be52cffb12c1430a00ae9faa077ccced01cd0366fe6371a8a44",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "3a9d9708605815923daf821eca5c221060800b9652b96fe3bc1e501841a5f6e0",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "720b2c3e61ed7d0f9a19c61cd180a20cf3cb626a7a8bcc1d30997f92c62dda9b",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "9a7855a1e6d3d88fe0f538a58b7272883d99081884c6fe673d682a17370bb268",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "3fa71ce502264b57326303232b4c80202e686f5bb6c9215f1aad467b4bf05d35",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "0f5c82b257dd1e75b07af090e0a8965870c1eb40e6703eb457de7d4e4b438dd7",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "87f0848489b6680e788637373d804ebccec58f642dadd96f2963d510726ccdee",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "dbbd79271941bb0475a0f7009d5b010e11940bbc5be11600e0efc3c6c14eb3ec",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "7e2f24460b7a597431d7e3ce92df74204612b50c8162bb832add4c0c312ed8a5",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b68a89305585b742340840b2aced5fc052e0c3d6831834c7184cd7c7bf4513c7",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5f82caea9c299350ba82a56548487d00b13f9544e3ee3ff2ecf1f5553385a7e2",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "59773d5f760bdb6ca05f731ea47e5cec0933850b1b1206f66eeee3f1f358aa94",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "66a6afce6ff1513278025fdda1793993e15325786e6dc3697a36b8e7b618c917",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "9371897c2bfafb9c055f4b87532bb90f9139936ea8a004129875f396774185cf",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b9aa7b6cad7c8e9e210a1b6a34132717bc9ee9262d380c3bd2630f43c9ccfa52",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8dbf624ac31dcf99344d8b4732f81908ed141112342f0ea9e95e9da7e52d39d1",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "336a74a3c4f579d26ca5ac4819fa8584b56e6370b9fd80aa085c06bc4d8c2af9",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c4a8a4fc57073055c56d1b66265882305f02cc021e50f26c0fc176f25930a334",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "05aa12cfad9dce7f9ed7e84b28ecfdb5ac2a6284e6077fda30e12e963619c553",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "c3e1e4df88a774dd56ace279f4959f3cf5c0657735151b49158798b8527f5368",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a339bf485019343a5a26c99b82a66cb38be7f82d8b73a897bda6e873e472309a",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d901088e9feca1df855001bc1e83386ed2a21a311751e340b0e7dc58b50f7c1e",
+          "adjacent_equal_settings": 2,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d28d9c2ad4a55cbb1671f56f22fa0e609e9322f64047ce59e1e019b38dd8f139",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e0fc5b650dabe8f7a974f69998a2a65dcc16b23368b272a4a3e2de5f0b2d72c5",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d1f1579f1b98e72820a2211971b29c1f187c40ae585af1a2ee13614f86815c84",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "59f91ff5ef0502a27ce068846e52e145bb2d7c3967cfd826e74ee45308095843",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8d121c9bf501488329a1ccbe85063e900881b7d56e09085cc562f275bd2436f3",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "eb2dabbfb45783bed61745af6549ac13fc240aa303699b392256a417480cbd50",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ef1fb24c6fd99c09e89b0978b27aaa6914694c1de493d812137c446923d00480",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "ac88c147ad5b36b96d1d32fecc991fc963ea10cca7b935f4c13442848e81d3a7",
+          "adjacent_equal_settings": 2,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a0ecf1e80b3b62c7c1d28ea74ef727a7dcc0e945d1340f2c90f67110840aad25",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "d832f69bf61acff2d1fe4841f251b27430e8fcee148595343e21f1a177117db6",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "01d0e94f83650c35dcf366b9a7a94fb4b1e44f63adf593419d5fcc6d43504113",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "f0f6b0d757b3bb6ba1317f4f7b4c8921f1020eb0c8c6a992667a3626627786d7",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "87752c5acde5e2de209b0f564a42eedfe0359d5bb13cb157926dae42139b05e3",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "dcc17dcd71c2a521a9bde6aeaca80e7c267cf024fcad775b193c1fc12891db7b",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8251a97121d3228600e07928c620c54c3ec6d153d4566c843b7d58fa46bd0920",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a9107252654f6c8b0eb091161fd4e161081b36b6b0f27b1079103f500600a1d3",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "516ecf16096965257ba29d346c5742c58afddd77bdb795364f94cfde5dee2cea",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "00401909f516564069318441a2d5d11888dde8c7ecbb2d7417cae781021628ea",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5e68bd30b362ff42aee96034a3f3566a902b7ba19b9245042ac92d7f59abe570",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "38ac494ba59ebe03cea9e613077c6dff7ecaf96d01f5d947dbb79d9b6fa470b1",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "388651d3f4fa1eba3a82bf6b510f96bab7829828260671096b0e172eae95ce59",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "f67cbf107565db3b9953c0d6a1f37c065116eb9167080c1f7af3856938205132",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8230a1925d463ac37b37d4cc4ba0627b682ad883b9b2663e86fd0deb4da5a824",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "cb09b658a66639811dfcd7ea007dd194268e416d4f946e6f2aa5478b6caae749",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b844763ddda8b6a60259702621dff7a0c45effba5da843e36409048592e2be52",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "f7d75e1c582885e04ea98402b0ea3ca886f79ed9678d834803791c40d37aacf8",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "34b3abaac730ad0cf9b47cbeabb67f1410a1170eb0f2339c32d97ce35e621cdb",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8943059c781b87d25e55f962295699ffe1e762c5845f47d62ceb46c90bbf5b9b",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "8a8ad7d9db12313bb46ecb63fdcf22f4a06ede06ef61be5f50a9b7c36ed51293",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "23f3be3f5974165a5fecdc2e49530f646519a07bbacc95dfd16ccb646c83db48",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "a41ee96d8bd194ff25b0c89fb351a5600d023bcd9ad426f122ff0955623e348f",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "6f730c9b9867ee98977ed0fddc33478f045b77cc31b09c2f6769cfb42c526fa6",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e9d9bc4a5c78d711788542ac11051a6e3c5d3cae2cc51f3a039206df5054d5f8",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "306b855ac3001ed470bf576216f82914684fd19335ec187a3dc2788e0132400a",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "856c06495a0f83bbd2aab54014f750ea4d6b4ffce80e73d6f4a4d37e74ea2d18",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e8793860847acffb7dd8926663f2698ef0aa75f19d9603f2da39007e19193023",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e7ad82a42a13d1413519c20c0afdc4a090986ecd4861044237ee91953ff87acb",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "86c18fdf385adecb545d500e9690e436fb0fbe861de96487468ac7bd2fa243f8",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "e86e0da1bab14e2ab6c56d630a798720fc36933530473fc33995f3bd79b771aa",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "3e3af3e3ef9ba447e9f521851f1981ee4bac6bc0aea2c4da108fa2e4ea1f7dc0",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "055056e40f45f9e4eeff93b9f56f9569030eba306c07757b46e8f54063894862",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "344077cca951c724b66b4553e8db497062f9f51b12ad879c416d9a5f8c5fc307",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5dab7d8231c306501d3e70ce96e862f625d24d01abdd8b65f7dfdacd1accc87d",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "38d4b7f44d1240dc31b3e621198391ab0d6644fd6eddecfd955630e7ea068a0e",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "7c49f0b4cadf573845723d38446806c815551fe61ead1ee4949b6afb01cd9261",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "b7d1155fb40f3cbd54a5af04174a54e0c8144e33d32c2cbd81054f511b2c4a55",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 288
+        },
+        {
+          "sha256": "5b8a6cc326dd14e2d820bb8ca5dea8787715b0ce11dc98f814df7c7552b8e371",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 288
+        }
+      ],
+      "lag1_circuit_residual_diagnostic": [-0.0538724512646384, 0.0542011919643152, -0.016983442552599384, -0.042313053755484664, -0.11167510673849979, 0.05693971648083476, -0.09509833745418887, -0.03397300048272297, 0.021639871493859368, 0.021340126226835652, 0.07460265961307372, -0.03740591428861155, 0.025503778084985287, 0.01395382783480339, 0.030681608409896102, -0.1361055556965288, 0.06966169320232576, 0.010615041504018426, -0.11149013112247844, -0.06307545988546852, 0.10255405452393716, -0.005062084824781223, -0.03665717258642663, 0.04183805960432626, -0.036918917690471786, 0.037924319031692126, 0.0324380377221169, -0.06638764176174439, -0.005317064539842311, -0.03129316505919854, -0.036582756356106125, 0.02074058841832072, -0.06976046708211318, -0.015798145895375048, 0.022675373998110992, 0.006995270563262172, 0.045908067142207507, -0.03760937143431267, 0.054459546909630514, 0.0760172767111349, -0.02250948383663493, -0.011941404881417723, -0.0904119711229837, 0.011686679252494971, -0.0003184701977002269, 0.050998773149833775, -0.04112812898771335, 0.07065684696313965, -0.11972728909087203, -0.16693621953106136, -0.08390286662913218, 0.05774301664937782, 0.0011013522188026265, -0.014850174926010587, 0.08415306372444037, 0.022572874861950466, 0.10658726132236775, -0.006812675395302327, 0.10563060705977115, -0.13141979053092281, -0.05293652216353737, -0.015016652417322442, -0.05202825125983002, -0.01123727549975967, 0.11803819823780373, 0.050665816379971175, 0.015376774859956293, -0.031899726310961295, 0.018790044345073312, 0.06413386596627023, 0.08851972697646067, 0.028897076266580595, -0.032977854956295634, -0.043191487276619006, 0.008175240006120936, 0.05972329209677201, -0.0859793641519843, -0.06492753500717165, -0.012648075426421884, -0.020283176617452096, 0.04107850456122289, -0.04306038636963555, -0.1004220968285166, 0.04462364790727464, 0.10542746820736286, -0.09185656348398898, -0.1649770953446405, 0.06192292960349342, 0.03444221025127421, 0.09070205743629538, -0.040035894959410616, 0.05388348449184896, 0.009821359123828718, -0.017106715858863985, 0.004573395017974365, 0.04227348982390981, 0.044390940227372465, 0.08441288069291784, 0.21027089158418572, 0.31439089151168426, 0.026303996651834752, 0.006750225591053159, -0.06920641152010445, 0.021295453299069424, 0.046332239161612755, 0.08030683998772312, -0.03339611922255302, 0.017264009305234727, -0.05946586198487921, -0.06323715038312666, 0.011632839873919974, 0.02752616770702183, -0.08070436559276561, -0.07138686437909562, -0.03535736093862184],
+      "counts_0_1_by_job": [
+        [
+          [[66649, 733351], [422306, 377694], [431074, 368926], [427829, 372171]],
+          [[551419, 248581], [779394, 20606], [263007, 536993], [254025, 545975]],
+          [[545448, 254552], [251387, 548613], [778832, 21168], [265451, 534549]],
+          [[545681, 254319], [264278, 535722], [255065, 544935], [779297, 20703]],
+          [[425852, 374148], [422838, 377162], [750333, 49667], [119166, 680834]],
+          [[421183, 378817], [81629, 718371], [697706, 102294], [513443, 286557]],
+          [[422822, 377178], [221797, 578203], [277181, 522819], [794964, 5036]],
+          [[430173, 369827], [651498, 148502], [69041, 730959], [572530, 227470]],
+          [[429675, 370325], [775838, 24162], [359579, 440421], [154781, 645219]]
+        ],
+        [
+          [[68491, 731509], [422883, 377117], [431666, 368334], [428926, 371074]],
+          [[552428, 247572], [779411, 20589], [263575, 536425], [255136, 544864]],
+          [[546108, 253892], [252812, 547188], [779443, 20557], [267328, 532672]],
+          [[547463, 252537], [265941, 534059], [256329, 543671], [779448, 20552]],
+          [[426705, 373295], [423139, 376861], [751088, 48912], [120358, 679642]],
+          [[422555, 377445], [83681, 716319], [697626, 102374], [514290, 285710]],
+          [[424071, 375929], [222852, 577148], [278726, 521274], [795188, 4812]],
+          [[431253, 368747], [651682, 148318], [70892, 729108], [573592, 226408]],
+          [[431682, 368318], [776110, 23890], [360849, 439151], [156678, 643322]]
+        ],
+        [
+          [[63239, 736761], [421689, 378311], [429329, 370671], [428083, 371917]],
+          [[549105, 250895], [779350, 20650], [259764, 540236], [251075, 548925]],
+          [[545309, 254691], [248204, 551796], [779464, 20536], [263264, 536736]],
+          [[545994, 254006], [262916, 537084], [252768, 547232], [779326, 20674]],
+          [[425609, 374391], [419641, 380359], [750418, 49582], [115818, 684182]],
+          [[420153, 379847], [77902, 722098], [697471, 102529], [511898, 288102]],
+          [[420877, 379123], [219794, 580206], [274204, 525796], [795339, 4661]],
+          [[427981, 372019], [650574, 149426], [65215, 734785], [571259, 228741]],
+          [[429166, 370834], [776209, 23791], [358915, 441085], [151467, 648533]]
+        ],
+        [
+          [[62997, 737003], [421440, 378560], [428451, 371549], [427169, 372831]],
+          [[549934, 250066], [778990, 21010], [260156, 539844], [250957, 549043]],
+          [[543772, 256228], [249425, 550575], [779367, 20633], [262824, 537176]],
+          [[545012, 254988], [261698, 538302], [253286, 546714], [779319, 20681]],
+          [[423932, 376068], [420145, 379855], [750413, 49587], [115853, 684147]],
+          [[418903, 381097], [78315, 721685], [697210, 102790], [512047, 287953]],
+          [[420149, 379851], [218840, 581160], [274263, 525737], [795113, 4887]],
+          [[427719, 372281], [651309, 148691], [65470, 734530], [570822, 229178]],
+          [[428404, 371596], [776012, 23988], [358985, 441015], [151316, 648684]]
+        ],
+        [
+          [[60543, 739457], [419125, 380875], [427140, 372860], [426434, 373566]],
+          [[549437, 250563], [779456, 20544], [259523, 540477], [248950, 551050]],
+          [[543245, 256755], [246383, 553617], [779614, 20386], [261082, 538918]],
+          [[543863, 256137], [259671, 540329], [250180, 549820], [779645, 20355]],
+          [[423390, 376610], [419344, 380656], [750471, 49529], [113324, 686676]],
+          [[418718, 381282], [75767, 724233], [697586, 102414], [511124, 288876]],
+          [[419210, 380790], [217263, 582737], [273249, 526751], [795317, 4683]],
+          [[426992, 373008], [651128, 148872], [62923, 737077], [570684, 229316]],
+          [[427430, 372570], [776199, 23801], [357518, 442482], [149449, 650551]]
+        ],
+        [
+          [[60142, 739858], [419802, 380198], [426477, 373523], [426375, 373625]],
+          [[549816, 250184], [779604, 20396], [258023, 541977], [248850, 551150]],
+          [[543244, 256756], [246132, 553868], [779706, 20294], [261347, 538653]],
+          [[543975, 256025], [259491, 540509], [250044, 549956], [779454, 20546]],
+          [[422005, 377995], [418742, 381258], [750678, 49322], [112424, 687576]],
+          [[418177, 381823], [74858, 725142], [697514, 102486], [510893, 289107]],
+          [[419709, 380291], [216400, 583600], [272372, 527628], [795434, 4566]],
+          [[426463, 373537], [650737, 149263], [62712, 737288], [570283, 229717]],
+          [[428095, 371905], [776569, 23431], [355593, 444407], [148363, 651637]]
+        ],
+        [
+          [[63507, 736493], [420676, 379324], [428901, 371099], [428620, 371380]],
+          [[551793, 248207], [779402, 20598], [261211, 538789], [253197, 546803]],
+          [[544974, 255026], [250385, 549615], [779088, 20912], [261600, 538400]],
+          [[544918, 255082], [262949, 537051], [249791, 550209], [779631, 20369]],
+          [[425386, 374614], [422145, 377855], [750708, 49292], [114384, 685616]],
+          [[418287, 381713], [78460, 721540], [697922, 102078], [510163, 289837]],
+          [[421462, 378538], [219089, 580911], [274594, 525406], [795535, 4465]],
+          [[427824, 372176], [650830, 149170], [66189, 733811], [573548, 226452]],
+          [[430154, 369846], [776782, 23218], [358385, 441615], [153465, 646535]]
+        ],
+        [
+          [[61040, 738960], [416755, 383245], [429933, 370067], [425094, 374906]],
+          [[551871, 248129], [779947, 20053], [261251, 538749], [248270, 551730]],
+          [[542326, 257674], [249117, 550883], [779893, 20107], [261776, 538224]],
+          [[542200, 257800], [261772, 538228], [247763, 552237], [779865, 20135]],
+          [[421575, 378425], [420232, 379768], [751204, 48796], [113676, 686324]],
+          [[415741, 384259], [75829, 724171], [696199, 103801], [513017, 286983]],
+          [[418649, 381351], [218468, 581532], [269946, 530054], [795557, 4443]],
+          [[425580, 374420], [649885, 150115], [63681, 736319], [570263, 229737]],
+          [[428251, 371749], [776305, 23695], [359653, 440347], [148847, 651153]]
+        ],
+        [
+          [[61603, 738397], [417063, 382937], [429871, 370129], [424623, 375377]],
+          [[552133, 247867], [780250, 19750], [261169, 538831], [249816, 550184]],
+          [[542924, 257076], [249446, 550554], [779920, 20080], [263057, 536943]],
+          [[542520, 257480], [262264, 537736], [247998, 552002], [780170, 19830]],
+          [[421761, 378239], [420337, 379663], [751668, 48332], [114191, 685809]],
+          [[416989, 383011], [76248, 723752], [696361, 103639], [512384, 287616]],
+          [[418359, 381641], [218873, 581127], [270284, 529716], [795762, 4238]],
+          [[426020, 373980], [650878, 149122], [63879, 736121], [569634, 230366]],
+          [[429086, 370914], [776433, 23567], [359604, 440396], [149399, 650601]]
+        ],
+        [
+          [[63733, 736267], [417997, 382003], [432152, 367848], [426316, 373684]],
+          [[552350, 247650], [780088, 19912], [263802, 536198], [251208, 548792]],
+          [[543827, 256173], [251341, 548659], [779876, 20124], [263560, 536440]],
+          [[543188, 256812], [264229, 535771], [249688, 550312], [780277, 19723]],
+          [[423647, 376353], [421827, 378173], [751392, 48608], [116245, 683755]],
+          [[417374, 382626], [79116, 720884], [696140, 103860], [513495, 286505]],
+          [[419342, 380658], [220536, 579464], [272056, 527944], [795775, 4225]],
+          [[427482, 372518], [650903, 149097], [66641, 733359], [571443, 228557]],
+          [[429977, 370023], [776327, 23673], [361038, 438962], [151815, 648185]]
+        ],
+        [
+          [[60138, 739862], [416319, 383681], [430462, 369538], [424107, 375893]],
+          [[550728, 249272], [779918, 20082], [260802, 539198], [247695, 552305]],
+          [[541465, 258535], [247958, 552042], [779715, 20285], [261444, 538556]],
+          [[541361, 258639], [260068, 539932], [246863, 553137], [779664, 20336]],
+          [[421561, 378439], [419477, 380523], [751529, 48471], [112247, 687753]],
+          [[415335, 384665], [75330, 724670], [694999, 105001], [512122, 287878]],
+          [[417860, 382140], [217651, 582349], [269524, 530476], [795477, 4523]],
+          [[424934, 375066], [650060, 149940], [62792, 737208], [569336, 230664]],
+          [[428350, 371650], [776237, 23763], [358099, 441901], [148386, 651614]]
+        ],
+        [
+          [[63516, 736484], [417799, 382201], [431904, 368096], [426062, 373938]],
+          [[553414, 246586], [780205, 19795], [263223, 536777], [250718, 549282]],
+          [[543518, 256482], [250734, 549266], [780451, 19549], [263808, 536192]],
+          [[543691, 256309], [263825, 536175], [249230, 550770], [780272, 19728]],
+          [[423109, 376891], [421783, 378217], [751495, 48505], [115902, 684098]],
+          [[417585, 382415], [78811, 721189], [696391, 103609], [513445, 286555]],
+          [[419781, 380219], [220495, 579505], [271767, 528233], [795945, 4055]],
+          [[427121, 372879], [650766, 149234], [66513, 733487], [570272, 229728]],
+          [[429363, 370637], [776635, 23365], [360338, 439662], [151579, 648421]]
+        ],
+        [
+          [[65047, 734953], [418688, 381312], [431856, 368144], [426958, 373042]],
+          [[553045, 246955], [780346, 19654], [264245, 535755], [251663, 548337]],
+          [[543815, 256185], [251446, 548554], [780188, 19812], [265459, 534541]],
+          [[543591, 256409], [264715, 535285], [250535, 549465], [780488, 19512]],
+          [[423714, 376286], [422718, 377282], [751856, 48144], [117905, 682095]],
+          [[418457, 381543], [80353, 719647], [696433, 103567], [513840, 286160]],
+          [[420480, 379520], [221536, 578464], [273872, 526128], [796071, 3929]],
+          [[428227, 371773], [652310, 147690], [67767, 732233], [570604, 229396]],
+          [[431036, 368964], [776668, 23332], [362561, 437439], [152996, 647004]]
+        ],
+        [
+          [[59014, 740986], [416539, 383461], [428872, 371128], [423984, 376016]],
+          [[551103, 248897], [780330, 19670], [260228, 539772], [247415, 552585]],
+          [[541834, 258166], [247359, 552641], [780136, 19864], [261209, 538791]],
+          [[541984, 258016], [260455, 539545], [246351, 553649], [780211, 19789]],
+          [[421416, 378584], [419273, 380727], [751669, 48331], [111693, 688307]],
+          [[414261, 385739], [74483, 725517], [695575, 104425], [512121, 287879]],
+          [[417967, 382033], [216829, 583171], [267730, 532270], [795863, 4137]],
+          [[425864, 374136], [650770, 149230], [62532, 737468], [569256, 230744]],
+          [[427545, 372455], [776797, 23203], [359148, 440852], [147461, 652539]]
+        ],
+        [
+          [[47155, 752845], [413882, 386118], [420953, 379047], [421249, 378751]],
+          [[547314, 252686], [779214, 20786], [251370, 548630], [239181, 560819]],
+          [[539256, 260744], [239810, 560190], [779138, 20862], [250219, 549781]],
+          [[540589, 259411], [249682, 550318], [237750, 562250], [779248, 20752]],
+          [[416282, 383718], [415761, 384239], [750160, 49840], [99822, 700178]],
+          [[411872, 388128], [63658, 736342], [696176, 103824], [505276, 294724]],
+          [[414341, 385659], [206045, 593955], [261840, 538160], [796148, 3852]],
+          [[420157, 379843], [645955, 154045], [50146, 749854], [569192, 230808]],
+          [[422761, 377239], [777298, 22702], [350552, 449448], [138202, 661798]]
+        ],
+        [
+          [[48886, 751114], [413686, 386314], [423020, 376980], [420876, 379124]],
+          [[548613, 251387], [779122, 20878], [251595, 548405], [239452, 560548]],
+          [[540407, 259593], [240981, 559019], [779064, 20936], [251088, 548912]],
+          [[541618, 258382], [251393, 548607], [238892, 561108], [779205, 20795]],
+          [[417240, 382760], [415937, 384063], [750308, 49692], [100955, 699045]],
+          [[412600, 387400], [64676, 735324], [695760, 104240], [505315, 294685]],
+          [[415140, 384860], [207297, 592703], [261645, 538355], [796117, 3883]],
+          [[421442, 378558], [646715, 153285], [51094, 748906], [569012, 230988]],
+          [[422811, 377189], [777208, 22792], [351731, 448269], [138653, 661347]]
+        ],
+        [
+          [[44925, 755075], [411633, 388367], [421959, 378041], [419155, 380845]],
+          [[547044, 252956], [779077, 20923], [249981, 550019], [237067, 562933]],
+          [[537792, 262208], [237733, 562267], [778906, 21094], [248903, 551097]],
+          [[539491, 260509], [247627, 552373], [237058, 562942], [779329, 20671]],
+          [[414668, 385332], [414000, 386000], [750071, 49929], [98070, 701930]],
+          [[411095, 388905], [61731, 738269], [695428, 104572], [504164, 295836]],
+          [[412404, 387596], [204067, 595933], [260978, 539022], [795975, 4025]],
+          [[418675, 381325], [645458, 154542], [47771, 752229], [567582, 232418]],
+          [[422061, 377939], [776799, 23201], [349891, 450109], [136092, 663908]]
+        ],
+        [
+          [[49864, 750136], [414075, 385925], [423560, 376440], [421006, 378994]],
+          [[547842, 252158], [779237, 20763], [252803, 547197], [240628, 559372]],
+          [[540179, 259821], [241529, 558471], [779122, 20878], [251530, 548470]],
+          [[540815, 259185], [250902, 549098], [239724, 560276], [779256, 20744]],
+          [[417189, 382811], [416756, 383244], [750297, 49703], [101835, 698165]],
+          [[413377, 386623], [65592, 734408], [696480, 103520], [506413, 293587]],
+          [[415174, 384826], [207400, 592600], [263685, 536315], [795988, 4012]],
+          [[422018, 377982], [646135, 153865], [51853, 748147], [568340, 231660]],
+          [[422954, 377046], [776875, 23125], [352635, 447365], [140063, 659937]]
+        ],
+        [
+          [[44310, 755690], [412028, 387972], [421289, 378711], [418724, 381276]],
+          [[546595, 253405], [779108, 20892], [248475, 551525], [236745, 563255]],
+          [[538235, 261765], [237061, 562939], [779253, 20747], [247577, 552423]],
+          [[539196, 260804], [248143, 551857], [235196, 564804], [779249, 20751]],
+          [[414529, 385471], [414287, 385713], [749838, 50162], [97537, 702463]],
+          [[410853, 389147], [60488, 739512], [695951, 104049], [503967, 296033]],
+          [[413162, 386838], [203273, 596727], [259164, 540836], [796233, 3767]],
+          [[418821, 381179], [645454, 154546], [46813, 753187], [567222, 232778]],
+          [[420935, 379065], [776930, 23070], [348965, 451035], [134589, 665411]]
+        ],
+        [
+          [[57970, 742030], [419194, 380806], [426687, 373313], [426138, 373862]],
+          [[551475, 248525], [779114, 20886], [258598, 541402], [246488, 553512]],
+          [[542570, 257430], [247436, 552564], [778804, 21196], [257337, 542663]],
+          [[544110, 255890], [257933, 542067], [245673, 554327], [778682, 21318]],
+          [[420900, 379100], [421295, 378705], [750612, 49388], [109637, 690363]],
+          [[416366, 383634], [74229, 725771], [696734, 103266], [508651, 291349]],
+          [[418801, 381199], [214722, 585278], [268647, 531353], [795469, 4531]],
+          [[425384, 374616], [648051, 151949], [60687, 739313], [571758, 228242]],
+          [[427101, 372899], [776369, 23631], [357558, 442442], [147578, 652422]]
+        ],
+        [
+          [[56826, 743174], [417746, 382254], [426605, 373395], [424651, 375349]],
+          [[549273, 250727], [779363, 20637], [256974, 543026], [246652, 553348]],
+          [[543726, 256274], [245067, 554933], [779457, 20543], [258488, 541512]],
+          [[543540, 256460], [258421, 541579], [246652, 553348], [779038, 20962]],
+          [[422857, 377143], [417075, 382925], [751610, 48390], [109866, 690134]],
+          [[417981, 382019], [72357, 727643], [696785, 103215], [510195, 289805]],
+          [[419124, 380876], [215328, 584672], [267778, 532222], [795934, 4066]],
+          [[422806, 377194], [649000, 151000], [59674, 740326], [571708, 228292]],
+          [[424911, 375089], [776823, 23177], [356057, 443943], [147088, 652912]]
+        ],
+        [
+          [[47084, 752916], [413299, 386701], [422755, 377245], [419381, 380619]],
+          [[546485, 253515], [779662, 20338], [249918, 550082], [239208, 560792]],
+          [[540699, 259301], [237436, 562564], [779610, 20390], [250269, 549731]],
+          [[540257, 259743], [252008, 547992], [238829, 561171], [779587, 20413]],
+          [[416653, 383347], [412593, 387407], [750777, 49223], [100952, 699048]],
+          [[413023, 386977], [62578, 737422], [695570, 104430], [506320, 293680]],
+          [[414877, 385123], [207628, 592372], [261155, 538845], [796285, 3715]],
+          [[417514, 382486], [646885, 153115], [49541, 750459], [568301, 231699]],
+          [[420252, 379748], [777132, 22868], [349554, 450446], [138223, 661777]]
+        ],
+        [
+          [[44728, 755272], [412110, 387890], [421490, 378510], [418760, 381240]],
+          [[545138, 254862], [779452, 20548], [248345, 551655], [237466, 562534]],
+          [[539351, 260649], [236086, 563914], [779266, 20734], [249175, 550825]],
+          [[539687, 260313], [250295, 549705], [237466, 562534], [779163, 20837]],
+          [[416183, 383817], [411551, 388449], [750923, 49077], [98901, 701099]],
+          [[411665, 388335], [60197, 739803], [694989, 105011], [505288, 294712]],
+          [[413441, 386559], [206080, 593920], [259567, 540433], [796366, 3634]],
+          [[416680, 383320], [646446, 153554], [47071, 752929], [568036, 231964]],
+          [[419031, 380969], [776793, 23207], [349014, 450986], [136191, 663809]]
+        ],
+        [
+          [[47734, 752266], [413680, 386320], [422988, 377012], [420336, 379664]],
+          [[545918, 254082], [779515, 20485], [250915, 549085], [240293, 559707]],
+          [[540910, 259090], [238669, 561331], [779602, 20398], [251452, 548548]],
+          [[539964, 260036], [251446, 548554], [238028, 561972], [779315, 20685]],
+          [[418235, 381765], [413047, 386953], [751195, 48805], [100793, 699207]],
+          [[412932, 387068], [63658, 736342], [696419, 103581], [506197, 293803]],
+          [[414894, 385106], [208325, 591675], [260893, 539107], [796313, 3687]],
+          [[417504, 382496], [646963, 153037], [49553, 750447], [568816, 231184]],
+          [[420184, 379816], [776682, 23318], [350357, 449643], [138789, 661211]]
+        ],
+        [
+          [[60462, 739538], [419568, 380432], [428603, 371397], [426314, 373686]],
+          [[550723, 249277], [779256, 20744], [259061, 540939], [248441, 551559]],
+          [[544414, 255586], [247877, 552123], [779458, 20542], [260620, 539380]],
+          [[544951, 255049], [260412, 539588], [247545, 552455], [779260, 20740]],
+          [[423758, 376242], [418311, 381689], [751121, 48879], [112905, 687095]],
+          [[419253, 380747], [75526, 724474], [697406, 102594], [511169, 288831]],
+          [[420422, 379578], [218047, 581953], [270618, 529382], [795750, 4250]],
+          [[424789, 375211], [648961, 151039], [62372, 737628], [572638, 227362]],
+          [[425889, 374111], [776470, 23530], [357426, 442574], [150015, 649985]]
+        ],
+        [
+          [[53594, 746406], [416062, 383938], [425684, 374316], [421821, 378179]],
+          [[548209, 251791], [779174, 20826], [255145, 544855], [243551, 556449]],
+          [[541846, 258154], [241760, 558240], [779032, 20968], [255363, 544637]],
+          [[542813, 257187], [254828, 545172], [242519, 557481], [778824, 21176]],
+          [[419559, 380441], [414662, 385338], [750870, 49130], [106220, 693780]],
+          [[416171, 383829], [68525, 731475], [695639, 104361], [507771, 292229]],
+          [[416880, 383120], [212358, 587642], [265333, 534667], [795779, 4221]],
+          [[421403, 378597], [648500, 151500], [55726, 744274], [569231, 230769]],
+          [[423187, 376813], [776535, 23465], [352337, 447663], [143325, 656675]]
+        ],
+        [
+          [[53865, 746135], [416260, 383740], [425620, 374380], [422366, 377634]],
+          [[548015, 251985], [779395, 20605], [254301, 545699], [244258, 555742]],
+          [[541955, 258045], [242535, 557465], [779439, 20561], [255517, 544483]],
+          [[542429, 257571], [255957, 544043], [243510, 556490], [779120, 20880]],
+          [[421394, 378606], [416329, 383671], [750683, 49317], [107354, 692646]],
+          [[416929, 383071], [69378, 730622], [696350, 103650], [508147, 291853]],
+          [[417181, 382819], [213288, 586712], [265750, 534250], [796124, 3876]],
+          [[421527, 378473], [649024, 150976], [56014, 743986], [570656, 229344]],
+          [[423437, 376563], [776690, 23310], [353167, 446833], [143705, 656295]]
+        ],
+        [
+          [[45599, 754401], [413407, 386593], [420435, 379565], [418748, 381252]],
+          [[545418, 254582], [779511, 20489], [248478, 551522], [238147, 561853]],
+          [[540485, 259515], [236181, 563819], [779295, 20705], [250024, 549976]],
+          [[539716, 260284], [250679, 549321], [237527, 562473], [779194, 20806]],
+          [[416836, 383164], [411559, 388441], [750505, 49495], [99440, 700560]],
+          [[412116, 387884], [61147, 738853], [696296, 103704], [504663, 295337]],
+          [[413709, 386291], [206592, 593408], [260231, 539769], [796144, 3856]],
+          [[417305, 382695], [646908, 153092], [47471, 752529], [567840, 232160]],
+          [[419467, 380533], [776786, 23214], [348661, 451339], [137073, 662927]]
+        ],
+        [
+          [[43215, 756785], [410872, 389128], [419875, 380125], [418161, 381839]],
+          [[544144, 255856], [779229, 20771], [246409, 553591], [235672, 564328]],
+          [[538653, 261347], [234314, 565686], [779015, 20985], [247142, 552858]],
+          [[538592, 261408], [248409, 551591], [234669, 565331], [778499, 21501]],
+          [[414854, 385146], [410175, 389825], [750203, 49797], [96607, 703393]],
+          [[411272, 388728], [58701, 741299], [694888, 105112], [504727, 295273]],
+          [[411720, 388280], [203993, 596007], [257593, 542407], [796049, 3951]],
+          [[415639, 384361], [646312, 153688], [45022, 754978], [566604, 233396]],
+          [[418076, 381924], [776596, 23404], [346829, 453171], [134351, 665649]]
+        ],
+        [
+          [[43229, 756771], [410819, 389181], [419350, 380650], [416896, 383104]],
+          [[545355, 254645], [779306, 20694], [247573, 552427], [238044, 561956]],
+          [[538478, 261522], [234061, 565939], [779362, 20638], [248791, 551209]],
+          [[538298, 261702], [248410, 551590], [235793, 564207], [779346, 20654]],
+          [[415043, 384957], [409619, 390381], [750400, 49600], [96994, 703006]],
+          [[408650, 391350], [59262, 740738], [695142, 104858], [503820, 296180]],
+          [[411413, 388587], [204079, 595921], [258600, 541400], [795917, 4083]],
+          [[417785, 382215], [647077, 152923], [45787, 754213], [567190, 232810]],
+          [[420139, 379861], [776527, 23473], [347844, 452156], [135176, 664824]]
+        ],
+        [
+          [[37726, 762274], [407695, 392305], [419467, 380533], [411738, 388262]],
+          [[543769, 256231], [779116, 20884], [242014, 557986], [234189, 565811]],
+          [[536581, 263419], [231101, 568899], [778901, 21099], [242290, 557710]],
+          [[537043, 262957], [243989, 556011], [232681, 567319], [779737, 20263]],
+          [[411642, 388358], [408335, 391665], [749881, 50119], [91511, 708489]],
+          [[406029, 393971], [52982, 747018], [695060, 104940], [498969, 301031]],
+          [[407976, 392024], [198937, 601063], [255068, 544932], [795793, 4207]],
+          [[413982, 386018], [646355, 153645], [39905, 760095], [566093, 233907]],
+          [[416140, 383860], [775782, 24218], [345193, 454807], [129079, 670921]]
+        ],
+        [
+          [[43937, 756063], [410866, 389134], [422732, 377268], [415862, 384138]],
+          [[545305, 254695], [779512, 20488], [248081, 551919], [239054, 560946]],
+          [[538680, 261320], [237471, 562529], [779422, 20578], [247621, 552379]],
+          [[539245, 260755], [248021, 551979], [237563, 562437], [779540, 20460]],
+          [[415481, 384519], [411257, 388743], [750393, 49607], [97668, 702332]],
+          [[409948, 390052], [59714, 740286], [695955, 104045], [502344, 297656]],
+          [[411354, 388646], [203871, 596129], [260060, 539940], [795907, 4093]],
+          [[416664, 383336], [647693, 152307], [46437, 753563], [567631, 232369]],
+          [[419897, 380103], [776289, 23711], [348730, 451270], [135799, 664201]]
+        ],
+        [
+          [[39065, 760935], [410385, 389615], [417805, 382195], [415742, 384258]],
+          [[543979, 256021], [778563, 21437], [243267, 556733], [233375, 566625]],
+          [[538369, 261631], [232047, 567953], [778649, 21351], [245050, 554950]],
+          [[537772, 262228], [244974, 555026], [232040, 567960], [778836, 21164]],
+          [[413732, 386268], [408696, 391304], [749961, 50039], [92847, 707153]],
+          [[409821, 390179], [54864, 745136], [695522, 104478], [501867, 298133]],
+          [[411511, 388489], [199989, 600011], [257035, 542965], [795971, 4029]],
+          [[415975, 384025], [645699, 154301], [41582, 758418], [565615, 234385]],
+          [[417877, 382123], [776516, 23484], [344275, 455725], [130832, 669168]]
+        ],
+        [
+          [[39590, 760410], [409730, 390270], [417814, 382186], [416092, 383908]],
+          [[545036, 254964], [778524, 21476], [242980, 557020], [233937, 566063]],
+          [[537852, 262148], [232261, 567739], [778209, 21791], [244189, 555811]],
+          [[537921, 262079], [245374, 554626], [232698, 567302], [778789, 21211]],
+          [[413314, 386686], [408253, 391747], [749777, 50223], [92984, 707016]],
+          [[409018, 390982], [55035, 744965], [695318, 104682], [501801, 298199]],
+          [[412045, 387955], [200568, 599432], [257300, 542700], [795963, 4037]],
+          [[416001, 383999], [646693, 153307], [42044, 757956], [565233, 234767]],
+          [[417567, 382433], [776221, 23779], [345334, 454666], [131467, 668533]]
+        ],
+        [
+          [[44130, 755870], [409754, 390246], [419684, 380316], [419019, 380981]],
+          [[546592, 253408], [779403, 20597], [247631, 552369], [236791, 563209]],
+          [[540311, 259689], [236436, 563564], [778896, 21104], [247511, 552489]],
+          [[538851, 261149], [248607, 551393], [236256, 563744], [778770, 21230]],
+          [[415531, 384469], [412108, 387892], [749892, 50108], [96752, 703248]],
+          [[410977, 389023], [60250, 739750], [695286, 104714], [503062, 296938]],
+          [[411881, 388119], [203390, 596610], [259625, 540375], [795878, 4122]],
+          [[417658, 382342], [647318, 152682], [46280, 753720], [566307, 233693]],
+          [[420543, 379457], [776443, 23557], [348188, 451812], [135125, 664875]]
+        ],
+        [
+          [[42056, 757944], [408856, 391144], [418919, 381081], [417861, 382139]],
+          [[546109, 253891], [779386, 20614], [247040, 552960], [234554, 565446]],
+          [[538831, 261169], [234825, 565175], [778959, 21041], [246510, 553490]],
+          [[537206, 262794], [246165, 553835], [234939, 565061], [778994, 21006]],
+          [[413779, 386221], [411277, 388723], [749719, 50281], [94444, 705556]],
+          [[409029, 390971], [57566, 742434], [695526, 104474], [502654, 297346]],
+          [[411191, 388809], [201715, 598285], [258241, 541759], [795987, 4013]],
+          [[416722, 383278], [646496, 153504], [44004, 755996], [564979, 235021]],
+          [[419440, 380560], [776679, 23321], [345479, 454521], [133289, 666711]]
+        ],
+        [
+          [[39088, 760912], [407776, 392224], [417592, 382408], [416331, 383669]],
+          [[544743, 255257], [779388, 20612], [244643, 555357], [233030, 566970]],
+          [[538265, 261735], [232772, 567228], [779101, 20899], [244238, 555762]],
+          [[536972, 263028], [244642, 555358], [233166, 566834], [778819, 21181]],
+          [[413244, 386756], [409876, 390124], [749298, 50702], [92131, 707869]],
+          [[408579, 391421], [54760, 745240], [695185, 104815], [501468, 298532]],
+          [[408898, 391102], [200322, 599678], [255280, 544720], [795956, 4044]],
+          [[415667, 384333], [646322, 153678], [41070, 758930], [564118, 235882]],
+          [[417682, 382318], [776570, 23430], [345213, 454787], [131417, 668583]]
+        ],
+        [
+          [[49373, 750627], [413744, 386256], [422828, 377172], [421108, 378892]],
+          [[548689, 251311], [779396, 20604], [252425, 547575], [241046, 558954]],
+          [[541480, 258520], [241460, 558540], [779361, 20639], [251664, 548336]],
+          [[540463, 259537], [251451, 548549], [240666, 559334], [779248, 20752]],
+          [[418351, 381649], [415665, 384335], [750128, 49872], [101604, 698396]],
+          [[413464, 386536], [65224, 734776], [696684, 103316], [506006, 293994]],
+          [[414544, 385456], [207625, 592375], [263189, 536811], [796055, 3945]],
+          [[421026, 378974], [648298, 151702], [51699, 748301], [567782, 232218]],
+          [[422392, 377608], [776828, 23172], [350903, 449097], [140669, 659331]]
+        ],
+        [
+          [[46142, 753858], [410708, 389292], [422088, 377912], [420422, 379578]],
+          [[548269, 251731], [779281, 20719], [250599, 549401], [238805, 561195]],
+          [[540547, 259453], [237910, 562090], [778927, 21073], [249522, 550478]],
+          [[538353, 261647], [249669, 550331], [238591, 561409], [779227, 20773]],
+          [[416309, 383691], [413838, 386162], [749922, 50078], [98916, 701084]],
+          [[412814, 387186], [62002, 737998], [696050, 103950], [504549, 295451]],
+          [[413947, 386053], [205249, 594751], [260995, 539005], [796084, 3916]],
+          [[418265, 381735], [647517, 152483], [48498, 751502], [567006, 232994]],
+          [[421019, 378981], [776450, 23550], [349233, 450767], [137030, 662970]]
+        ],
+        [
+          [[42428, 757572], [409968, 390032], [419095, 380905], [417980, 382020]],
+          [[546929, 253071], [779141, 20859], [246797, 553203], [235421, 564579]],
+          [[538672, 261328], [235252, 564748], [779341, 20659], [246423, 553577]],
+          [[537169, 262831], [246607, 553393], [235220, 564780], [778751, 21249]],
+          [[414693, 385307], [411728, 388272], [749877, 50123], [95114, 704886]],
+          [[410467, 389533], [58270, 741730], [695958, 104042], [502983, 297017]],
+          [[410978, 389022], [201800, 598200], [259051, 540949], [796144, 3856]],
+          [[417551, 382449], [646277, 153723], [45310, 754690], [564620, 235380]],
+          [[419882, 380118], [777041, 22959], [347345, 452655], [133734, 666266]]
+        ],
+        [
+          [[46788, 753212], [411654, 388346], [422443, 377557], [420071, 379929]],
+          [[547842, 252158], [779531, 20469], [251178, 548822], [238544, 561456]],
+          [[539674, 260326], [239044, 560956], [779267, 20733], [250462, 549538]],
+          [[539469, 260531], [250533, 549467], [239026, 560974], [779452, 20548]],
+          [[416718, 383282], [414033, 385967], [750537, 49463], [99601, 700399]],
+          [[412780, 387220], [63074, 736926], [696652, 103348], [504665, 295335]],
+          [[412872, 387128], [205581, 594419], [261340, 538660], [796272, 3728]],
+          [[419563, 380437], [647815, 152185], [49763, 750237], [566942, 233058]],
+          [[421388, 378612], [777194, 22806], [350371, 449629], [137851, 662149]]
+        ],
+        [
+          [[45386, 754614], [410707, 389293], [421404, 378596], [420010, 379990]],
+          [[547644, 252356], [779106, 20894], [249218, 550782], [238192, 561808]],
+          [[540569, 259431], [237852, 562148], [779334, 20666], [249025, 550975]],
+          [[538815, 261185], [249523, 550477], [238051, 561949], [779018, 20982]],
+          [[415694, 384306], [413133, 386867], [749670, 50330], [97975, 702025]],
+          [[411846, 388154], [61781, 738219], [695637, 104363], [504303, 295697]],
+          [[412734, 387266], [204713, 595287], [260630, 539370], [795935, 4065]],
+          [[418711, 381289], [647881, 152119], [48188, 751812], [566184, 233816]],
+          [[420915, 379085], [776685, 23315], [348615, 451385], [136388, 663612]]
+        ],
+        [
+          [[46838, 753162], [412013, 387987], [421216, 378784], [420310, 379690]],
+          [[548457, 251543], [779473, 20527], [250682, 549318], [239520, 560480]],
+          [[540349, 259651], [239801, 560199], [779083, 20917], [249411, 550589]],
+          [[538976, 261024], [249847, 550153], [238713, 561287], [779180, 20820]],
+          [[415995, 384005], [413865, 386135], [750266, 49734], [99804, 700196]],
+          [[412381, 387619], [62975, 737025], [695966, 104034], [504116, 295884]],
+          [[413643, 386357], [205733, 594267], [261164, 538836], [795974, 4026]],
+          [[418603, 381397], [647437, 152563], [49085, 750915], [566492, 233508]],
+          [[421156, 378844], [776785, 23215], [349787, 450213], [138075, 661925]]
+        ],
+        [
+          [[40673, 759327], [408398, 391602], [417833, 382167], [417084, 382916]],
+          [[546258, 253742], [779126, 20874], [246097, 553903], [234112, 565888]],
+          [[538654, 261346], [233966, 566034], [778649, 21351], [245434, 554566]],
+          [[536098, 263902], [244960, 555040], [233600, 566400], [779098, 20902]],
+          [[413561, 386439], [412124, 387876], [749539, 50461], [94380, 705620]],
+          [[409224, 390776], [56736, 743264], [695119, 104881], [501868, 298132]],
+          [[409389, 390611], [200437, 599563], [257276, 542724], [795902, 4098]],
+          [[416500, 383500], [646532, 153468], [43378, 756622], [564936, 235064]],
+          [[418343, 381657], [776200, 23800], [346311, 453689], [131975, 668025]]
+        ],
+        [
+          [[45805, 754195], [411394, 388606], [422189, 377811], [418838, 381162]],
+          [[546658, 253342], [779109, 20891], [247942, 552058], [239287, 560713]],
+          [[541090, 258910], [238774, 561226], [779060, 20940], [247178, 552822]],
+          [[538494, 261506], [248496, 551504], [237431, 562569], [779228, 20772]],
+          [[416063, 383937], [413177, 386823], [749825, 50175], [97525, 702475]],
+          [[413146, 386854], [61146, 738854], [696411, 103589], [502856, 297144]],
+          [[413340, 386660], [203909, 596091], [260746, 539254], [796093, 3907]],
+          [[419683, 380317], [646974, 153026], [47126, 752874], [569173, 230827]],
+          [[420052, 379948], [776789, 23211], [349185, 450815], [137028, 662972]]
+        ],
+        [
+          [[45452, 754548], [411797, 388203], [424655, 375345], [417814, 382186]],
+          [[547370, 252630], [779153, 20847], [248723, 551277], [239570, 560430]],
+          [[541010, 258990], [240115, 559885], [779051, 20949], [246310, 553690]],
+          [[540163, 259837], [247397, 552603], [236992, 563008], [778706, 21294]],
+          [[416076, 383924], [414150, 385850], [750128, 49872], [97519, 702481]],
+          [[413329, 386671], [61532, 738468], [695724, 104276], [503602, 296398]],
+          [[413188, 386812], [203953, 596047], [260344, 539656], [796073, 3927]],
+          [[420061, 379939], [644588, 155412], [47700, 752300], [568977, 231023]],
+          [[421054, 378946], [777521, 22479], [349231, 450769], [137296, 662704]]
+        ],
+        [
+          [[39620, 760380], [409069, 390931], [421450, 378550], [414186, 385814]],
+          [[544458, 255542], [778719, 21281], [244291, 555709], [235376, 564624]],
+          [[538513, 261487], [235049, 564951], [778627, 21373], [241638, 558362]],
+          [[537122, 262878], [243489, 556511], [233098, 566902], [778547, 21453]],
+          [[413150, 386850], [411995, 388005], [749772, 50228], [91955, 708045]],
+          [[409670, 390330], [55576, 744424], [694644, 105356], [500618, 299382]],
+          [[410885, 389115], [199226, 600774], [256138, 543862], [796077, 3923]],
+          [[416986, 383014], [643351, 156649], [41578, 758422], [567463, 232537]],
+          [[417108, 382892], [777381, 22619], [344857, 455143], [131887, 668113]]
+        ],
+        [
+          [[36331, 763669], [406906, 393094], [420507, 379493], [413519, 386481]],
+          [[543258, 256742], [778863, 21137], [241710, 558290], [232378, 567622]],
+          [[537716, 262284], [233354, 566646], [778765, 21235], [239536, 560464]],
+          [[535609, 264391], [240651, 559349], [230621, 569379], [778402, 21598]],
+          [[411616, 388384], [411183, 388817], [749385, 50615], [89797, 710203]],
+          [[408349, 391651], [53004, 746996], [694714, 105286], [499682, 300318]],
+          [[409730, 390270], [196784, 603216], [253872, 546128], [796022, 3978]],
+          [[414947, 385053], [643206, 156794], [38844, 761156], [567376, 232624]],
+          [[416311, 383689], [777136, 22864], [343068, 456932], [129717, 670283]]
+        ],
+        [
+          [[40254, 759746], [409103, 390897], [421714, 378286], [414624, 385376]],
+          [[544935, 255065], [778770, 21230], [243743, 556257], [235592, 564408]],
+          [[539248, 260752], [236136, 563864], [778923, 21077], [242328, 557672]],
+          [[538257, 261743], [243442, 556558], [233298, 566702], [778404, 21596]],
+          [[413183, 386817], [411815, 388185], [749417, 50583], [92965, 707035]],
+          [[408627, 391373], [56162, 743838], [695176, 104824], [501211, 298789]],
+          [[411201, 388799], [199902, 600098], [257377, 542623], [796002, 3998]],
+          [[418018, 381982], [644244, 155756], [42562, 757438], [567571, 232429]],
+          [[418914, 381086], [777359, 22641], [345886, 454114], [132514, 667486]]
+        ],
+        [
+          [[34944, 765056], [406247, 393753], [418858, 381142], [411900, 388100]],
+          [[542555, 257445], [778920, 21080], [239956, 560044], [231930, 568070]],
+          [[537472, 262528], [232257, 567743], [778464, 21536], [238560, 561440]],
+          [[534819, 265181], [239351, 560649], [229798, 570202], [778117, 21883]],
+          [[409927, 390073], [410045, 389955], [749411, 50589], [88093, 711907]],
+          [[407218, 392782], [51369, 748631], [693240, 106760], [499392, 300608]],
+          [[407722, 392278], [195402, 604598], [252879, 547121], [795704, 4296]],
+          [[413882, 386118], [642649, 157351], [37414, 762586], [566181, 233819]],
+          [[416061, 383939], [776624, 23376], [343077, 456923], [128307, 671693]]
+        ],
+        [
+          [[40831, 759169], [409984, 390016], [422213, 377787], [415342, 384658]],
+          [[545653, 254347], [778667, 21333], [244849, 555151], [236502, 563498]],
+          [[539063, 260937], [236615, 563385], [778856, 21144], [243013, 556987]],
+          [[537518, 262482], [244874, 555126], [233867, 566133], [778787, 21213]],
+          [[412581, 387419], [412343, 387657], [749843, 50157], [93182, 706818]],
+          [[410125, 389875], [57017, 742983], [695100, 104900], [501540, 298460]],
+          [[410754, 389246], [199114, 600886], [256721, 543279], [795965, 4035]],
+          [[417029, 382971], [644061, 155939], [43266, 756734], [568174, 231826]],
+          [[418473, 381527], [776899, 23101], [346432, 453568], [133103, 666897]]
+        ],
+        [
+          [[35042, 764958], [406223, 393777], [412912, 387088], [414112, 385888]],
+          [[543152, 256848], [779021, 20979], [242043, 557957], [230200, 569800]],
+          [[535487, 264513], [231183, 568817], [778865, 21135], [243081, 556919]],
+          [[535478, 264522], [240941, 559059], [230542, 569458], [778868, 21132]],
+          [[408601, 391399], [408266, 391734], [749120, 50880], [88373, 711627]],
+          [[405350, 394650], [51274, 748726], [694013, 105987], [500850, 299150]],
+          [[406778, 393222], [195452, 604548], [253570, 546430], [795727, 4273]],
+          [[414489, 385511], [644796, 155204], [37601, 762399], [563211, 236789]],
+          [[414749, 385251], [776083, 23917], [343437, 456563], [126534, 673466]]
+        ],
+        [
+          [[33562, 766438], [404971, 395029], [413624, 386376], [413136, 386864]],
+          [[543213, 256787], [778891, 21109], [240746, 559254], [228654, 571346]],
+          [[534104, 265896], [228103, 571897], [778947, 21053], [241070, 558930]],
+          [[534372, 265628], [238969, 561031], [229043, 570957], [779233, 20767]],
+          [[408882, 391118], [408100, 391900], [748717, 51283], [87011, 712989]],
+          [[404666, 395334], [49222, 750778], [693636, 106364], [499722, 300278]],
+          [[406235, 393765], [194749, 605251], [251694, 548306], [795848, 4152]],
+          [[412850, 387150], [644187, 155813], [35925, 764075], [563483, 236517]],
+          [[414127, 385873], [776144, 23856], [342298, 457702], [124985, 675015]]
+        ],
+        [
+          [[32945, 767055], [405610, 394390], [413205, 386795], [412554, 387446]],
+          [[542449, 257551], [779001, 20999], [239993, 560007], [227930, 572070]],
+          [[534949, 265051], [228182, 571818], [779038, 20962], [240876, 559124]],
+          [[533812, 266188], [239443, 560557], [228407, 571593], [779393, 20607]],
+          [[408489, 391511], [408386, 391614], [749396, 50604], [86512, 713488]],
+          [[404114, 395886], [48859, 751141], [693976, 106024], [499558, 300442]],
+          [[406020, 393980], [194632, 605368], [252501, 547499], [795805, 4195]],
+          [[411945, 388055], [643846, 156154], [35400, 764600], [562989, 237011]],
+          [[413579, 386421], [776022, 23978], [342564, 457436], [125007, 674993]]
+        ],
+        [
+          [[33983, 766017], [405999, 394001], [414547, 385453], [413016, 386984]],
+          [[541294, 258706], [779330, 20670], [239860, 560140], [228217, 571783]],
+          [[535409, 264591], [227266, 572734], [778849, 21151], [242318, 557682]],
+          [[534271, 265729], [241668, 558332], [227034, 572966], [779283, 20717]],
+          [[409673, 390327], [405611, 394389], [749333, 50667], [88052, 711948]],
+          [[404855, 395145], [49521, 750479], [693616, 106384], [502188, 297812]],
+          [[405253, 394747], [196836, 603164], [252170, 547830], [796033, 3967]],
+          [[411091, 388909], [646126, 153874], [36227, 763773], [561330, 238670]],
+          [[413776, 386224], [775775, 24225], [341643, 458357], [125418, 674582]]
+        ],
+        [
+          [[32347, 767653], [406088, 393912], [414100, 385900], [411736, 388264]],
+          [[541028, 258972], [779128, 20872], [239379, 560621], [227327, 572673]],
+          [[536121, 263879], [226188, 573812], [778893, 21107], [241283, 558717]],
+          [[533266, 266734], [240922, 559078], [226884, 573116], [779264, 20736]],
+          [[409925, 390075], [405139, 394861], [749483, 50517], [87012, 712988]],
+          [[404674, 395326], [47832, 752168], [693766, 106234], [502291, 297709]],
+          [[404190, 395810], [195818, 604182], [250807, 549193], [796224, 3776]],
+          [[410705, 389295], [645685, 154315], [35204, 764796], [561473, 238527]],
+          [[413808, 386192], [776085, 23915], [340569, 459431], [124055, 675945]]
+        ],
+        [
+          [[30434, 769566], [404713, 395287], [413416, 386584], [411750, 388250]],
+          [[540299, 259701], [779447, 20553], [237500, 562500], [226500, 573500]],
+          [[535093, 264907], [225560, 574440], [778808, 21192], [240452, 559548]],
+          [[532904, 267096], [239516, 560484], [225682, 574318], [779368, 20632]],
+          [[408763, 391237], [404063, 395937], [749048, 50952], [85640, 714360]],
+          [[404311, 395689], [46067, 753933], [693137, 106863], [500924, 299076]],
+          [[404241, 395759], [193909, 606091], [250263, 549737], [796287, 3713]],
+          [[410528, 389472], [645841, 154159], [32994, 767006], [560698, 239302]],
+          [[412658, 387342], [776242, 23758], [339751, 460249], [122715, 677285]]
+        ],
+        [
+          [[30064, 769936], [404926, 395074], [412026, 387974], [411431, 388569]],
+          [[539787, 260213], [779089, 20911], [236488, 563512], [226601, 573399]],
+          [[534398, 265602], [224898, 575102], [778793, 21207], [239601, 560399]],
+          [[532906, 267094], [239143, 560857], [225280, 574720], [779465, 20535]],
+          [[408975, 391025], [404097, 395903], [749234, 50766], [84715, 715285]],
+          [[403552, 396448], [45661, 754339], [693700, 106300], [500009, 299991]],
+          [[403579, 396421], [193129, 606871], [250007, 549993], [796049, 3951]],
+          [[410218, 389782], [645995, 154005], [32605, 767395], [559882, 240118]],
+          [[412052, 387948], [776145, 23855], [339319, 460681], [122627, 677373]]
+        ],
+        [
+          [[29046, 770954], [403639, 396361], [412449, 387551], [410835, 389165]],
+          [[539491, 260509], [779290, 20710], [236876, 563124], [225296, 574704]],
+          [[533989, 266011], [223669, 576331], [778806, 21194], [238409, 561591]],
+          [[531638, 268362], [238343, 561657], [223632, 576368], [779568, 20432]],
+          [[407763, 392237], [403290, 396710], [749197, 50803], [84172, 715828]],
+          [[403636, 396364], [44668, 755332], [692815, 107185], [499625, 300375]],
+          [[403182, 396818], [193789, 606211], [248844, 551156], [796025, 3975]],
+          [[409364, 390636], [645274, 154726], [31477, 768523], [560792, 239208]],
+          [[411249, 388751], [776075, 23925], [338322, 461678], [121390, 678610]]
+        ],
+        [
+          [[28794, 771206], [403494, 396506], [412565, 387435], [411853, 388147]],
+          [[539397, 260603], [778783, 21217], [236506, 563494], [224413, 575587]],
+          [[533850, 266150], [223256, 576744], [778705, 21295], [238594, 561406]],
+          [[532797, 267203], [238076, 561924], [224576, 575424], [779214, 20786]],
+          [[407451, 392549], [404127, 395873], [748580, 51420], [83654, 716346]],
+          [[403028, 396972], [44275, 755725], [693074, 106926], [499661, 300339]],
+          [[403162, 396838], [192938, 607062], [249547, 550453], [795888, 4112]],
+          [[408828, 391172], [644878, 155122], [31443, 768557], [560241, 239759]],
+          [[411510, 388490], [775633, 24367], [338218, 461782], [121056, 678944]]
+        ],
+        [
+          [[32054, 767946], [405424, 394576], [412721, 387279], [412673, 387327]],
+          [[540404, 259596], [779267, 20733], [238385, 561615], [226824, 573176]],
+          [[536250, 263750], [226194, 573806], [778931, 21069], [241072, 558928]],
+          [[532400, 267600], [240546, 559454], [226769, 573231], [779624, 20376]],
+          [[409622, 390378], [404966, 395034], [748812, 51188], [86561, 713439]],
+          [[405705, 394295], [47468, 752532], [693532, 106468], [501090, 298910]],
+          [[404913, 395087], [195215, 604785], [251190, 548810], [796080, 3920]],
+          [[410604, 389396], [646388, 153612], [34355, 765645], [561384, 238616]],
+          [[412770, 387230], [776179, 23821], [340502, 459498], [123605, 676395]]
+        ],
+        [
+          [[30234, 769766], [404321, 395679], [412406, 387594], [411399, 388601]],
+          [[540629, 259371], [779083, 20917], [237155, 562845], [226894, 573106]],
+          [[534739, 265261], [225112, 574888], [778657, 21343], [239046, 560954]],
+          [[533123, 266877], [239610, 560390], [225723, 574277], [779288, 20712]],
+          [[408520, 391480], [403800, 396200], [749207, 50793], [84885, 715115]],
+          [[404198, 395802], [45506, 754494], [693306, 106694], [500563, 299437]],
+          [[404240, 395760], [193340, 606660], [249451, 550549], [796066, 3934]],
+          [[410008, 389992], [645353, 154647], [32925, 767075], [560906, 239094]],
+          [[412171, 387829], [775737, 24263], [340043, 459957], [122360, 677640]]
+        ],
+        [
+          [[35156, 764844], [406513, 393487], [417154, 382846], [410928, 389072]],
+          [[543139, 256861], [779346, 20654], [239422, 560578], [231683, 568317]],
+          [[534713, 265287], [229533, 570467], [778986, 21014], [242491, 557509]],
+          [[535046, 264954], [241240, 558760], [231654, 568346], [779789, 20211]],
+          [[410964, 389036], [407043, 392957], [748960, 51040], [89562, 710438]],
+          [[403416, 396584], [51180, 748820], [695094, 104906], [500337, 299663]],
+          [[406576, 393424], [197213, 602787], [254600, 545400], [795999, 4001]],
+          [[413164, 386836], [645420, 154580], [37882, 762118], [563321, 236679]],
+          [[415198, 384802], [776485, 23515], [341514, 458486], [127972, 672028]]
+        ],
+        [
+          [[31077, 768923], [404164, 395836], [415250, 384750], [410301, 389699]],
+          [[541363, 258637], [779217, 20783], [236634, 563366], [228455, 571545]],
+          [[533814, 266186], [225560, 574440], [778884, 21116], [238764, 561236]],
+          [[533255, 266745], [238927, 561073], [228057, 571943], [779451, 20549]],
+          [[408747, 391253], [404934, 395066], [748848, 51152], [85828, 714172]],
+          [[402079, 397921], [47153, 752847], [694564, 105436], [499488, 300512]],
+          [[405573, 394427], [194188, 605812], [251904, 548096], [796024, 3976]],
+          [[412017, 387983], [644700, 155300], [33339, 766661], [561704, 238296]],
+          [[413429, 386571], [776378, 23622], [338460, 461540], [124605, 675395]]
+        ],
+        [
+          [[35910, 764090], [407291, 392709], [419328, 380672], [409616, 390384]],
+          [[542231, 257769], [779227, 20773], [240140, 559860], [232303, 567697]],
+          [[535792, 264208], [230368, 569632], [778843, 21157], [241852, 558148]],
+          [[536056, 263944], [241382, 558618], [232213, 567787], [779597, 20403]],
+          [[411983, 388017], [406886, 393114], [749528, 50472], [89994, 710006]],
+          [[403620, 396380], [51691, 748309], [695624, 104376], [500713, 299287]],
+          [[407068, 392932], [198265, 601735], [254964, 545036], [796043, 3957]],
+          [[414281, 385719], [646053, 153947], [38524, 761476], [563182, 236818]],
+          [[414538, 385462], [776282, 23718], [341972, 458028], [129247, 670753]]
+        ],
+        [
+          [[29037, 770963], [403673, 396327], [412583, 387417], [409977, 390023]],
+          [[541308, 258692], [778608, 21392], [236373, 563627], [225908, 574092]],
+          [[533714, 266286], [225852, 574148], [778633, 21367], [236258, 563742]],
+          [[533566, 266434], [235709, 564291], [226147, 573853], [778645, 21355]],
+          [[409120, 390880], [406052, 393948], [748919, 51081], [83120, 716880]],
+          [[403621, 396379], [45404, 754596], [694955, 105045], [497937, 302063]],
+          [[404122, 395878], [192566, 607434], [249283, 550717], [795952, 4048]],
+          [[410542, 389458], [642819, 157181], [31611, 768389], [562899, 237101]],
+          [[413323, 386677], [776699, 23301], [337694, 462306], [122285, 677715]]
+        ],
+        [
+          [[33477, 766523], [406008, 393992], [418017, 381983], [410982, 389018]],
+          [[542473, 257527], [778855, 21145], [239999, 560001], [229589, 570411]],
+          [[535261, 264739], [229147, 570853], [778543, 21457], [239770, 560230]],
+          [[534086, 265914], [239771, 560229], [228731, 571269], [778952, 21048]],
+          [[411214, 388786], [407718, 392282], [748978, 51022], [86825, 713175]],
+          [[405318, 394682], [49681, 750319], [694914, 105086], [498517, 301483]],
+          [[406115, 393885], [195340, 604660], [252195, 547805], [795910, 4090]],
+          [[412236, 387764], [643846, 156154], [35637, 764363], [564956, 235044]],
+          [[415394, 384606], [776939, 23061], [340759, 459241], [126002, 673998]]
+        ],
+        [
+          [[25497, 774503], [401521, 398479], [411135, 388865], [407077, 392923]],
+          [[539244, 260756], [778449, 21551], [233832, 566168], [222843, 577157]],
+          [[531959, 268041], [222837, 577163], [778399, 21601], [235553, 564447]],
+          [[531310, 268690], [233944, 566056], [223155, 576845], [778648, 21352]],
+          [[406328, 393672], [403229, 396771], [747921, 52079], [79807, 720193]],
+          [[399788, 400212], [41384, 758616], [692431, 107569], [498313, 301687]],
+          [[401480, 398520], [189950, 610050], [245484, 554516], [795944, 4056]],
+          [[407971, 392029], [642243, 157757], [28249, 771751], [561209, 238791]],
+          [[409554, 390446], [775773, 24227], [335958, 464042], [118551, 681449]]
+        ],
+        [
+          [[26119, 773881], [401307, 398693], [412914, 387086], [407145, 392855]],
+          [[540004, 259996], [778740, 21260], [234687, 565313], [223146, 576854]],
+          [[532400, 267600], [223061, 576939], [779006, 20994], [236531, 563469]],
+          [[531136, 268864], [235096, 564904], [223838, 576162], [779061, 20939]],
+          [[405632, 394368], [403200, 396800], [748404, 51596], [80080, 719920]],
+          [[400801, 399199], [42036, 757964], [692974, 107026], [498849, 301151]],
+          [[402271, 397729], [190699, 609301], [246675, 553325], [796041, 3959]],
+          [[408882, 391118], [642562, 157438], [28413, 771587], [560833, 239167]],
+          [[409826, 390174], [776146, 23854], [336947, 463053], [119554, 680446]]
+        ],
+        [
+          [[25646, 774354], [401323, 398677], [411449, 388551], [407738, 392262]],
+          [[539965, 260035], [778933, 21067], [233966, 566034], [223353, 576647]],
+          [[532574, 267426], [223008, 576992], [778766, 21234], [234458, 565542]],
+          [[530158, 269842], [234199, 565801], [222903, 577097], [779101, 20899]],
+          [[405376, 394624], [402774, 397226], [748410, 51590], [79814, 720186]],
+          [[400330, 399670], [41665, 758335], [692959, 107041], [498650, 301350]],
+          [[400740, 399260], [189668, 610332], [246522, 553478], [795850, 4150]],
+          [[409133, 390867], [642623, 157377], [27899, 772101], [561050, 238950]],
+          [[409980, 390020], [776472, 23528], [336138, 463862], [118809, 681191]]
+        ],
+        [
+          [[25953, 774047], [401514, 398486], [412319, 387681], [407618, 392382]],
+          [[539994, 260006], [779146, 20854], [235256, 564744], [223214, 576786]],
+          [[532247, 267753], [223317, 576683], [778883, 21117], [235616, 564384]],
+          [[530827, 269173], [234408, 565592], [223502, 576498], [779149, 20851]],
+          [[405738, 394262], [403541, 396459], [748449, 51551], [81015, 718985]],
+          [[400737, 399263], [42259, 757741], [693142, 106858], [497990, 302010]],
+          [[401952, 398048], [190779, 609221], [246131, 553869], [796083, 3917]],
+          [[409057, 390943], [642384, 157616], [28734, 771266], [561024, 238976]],
+          [[410346, 389654], [776373, 23627], [335761, 464239], [119674, 680326]]
+        ],
+        [
+          [[28631, 771369], [403183, 396817], [413330, 386670], [409055, 390945]],
+          [[540142, 259858], [778960, 21040], [236464, 563536], [224913, 575087]],
+          [[533916, 266084], [225526, 574474], [779004, 20996], [237644, 562356]],
+          [[531949, 268051], [237192, 562808], [226203, 573797], [779545, 20455]],
+          [[407620, 392380], [405287, 394713], [748733, 51267], [83281, 716719]],
+          [[401931, 398069], [44727, 755273], [693323, 106677], [500308, 299692]],
+          [[403328, 396672], [193707, 606293], [249438, 550562], [796083, 3917]],
+          [[409600, 390400], [643367, 156633], [31127, 768873], [561742, 238258]],
+          [[412360, 387640], [776392, 23608], [338379, 461621], [122102, 677898]]
+        ],
+        [
+          [[28458, 771542], [400874, 399126], [414323, 385677], [406744, 393256]],
+          [[540045, 259955], [779573, 20427], [237548, 562452], [223911, 576089]],
+          [[532347, 267653], [224883, 575117], [779329, 20671], [238518, 561482]],
+          [[531956, 268044], [236541, 563459], [225018, 574982], [779709, 20291]],
+          [[406712, 393288], [402755, 397245], [750154, 49846], [83924, 716076]],
+          [[399034, 400966], [44679, 755321], [693017, 106983], [498619, 301381]],
+          [[402273, 397727], [193274, 606726], [246507, 553493], [796103, 3897]],
+          [[407751, 392249], [642783, 157217], [30789, 769211], [561911, 238089]],
+          [[409719, 390281], [776153, 23847], [339431, 460569], [120883, 679117]]
+        ],
+        [
+          [[27035, 772965], [401216, 398784], [413049, 386951], [407336, 392664]],
+          [[539469, 260531], [779549, 20451], [236132, 563868], [224337, 575663]],
+          [[532279, 267721], [223846, 576154], [779107, 20893], [237501, 562499]],
+          [[532316, 267684], [235646, 564354], [223765, 576235], [779414, 20586]],
+          [[406694, 393306], [402758, 397242], [749799, 50201], [82678, 717322]],
+          [[398981, 401019], [43553, 756447], [692680, 107320], [498432, 301568]],
+          [[402635, 397365], [191353, 608647], [246240, 553760], [796030, 3970]],
+          [[408298, 391702], [642518, 157482], [29691, 770309], [561377, 238623]],
+          [[409864, 390136], [776390, 23610], [339113, 460887], [120385, 679615]]
+        ],
+        [
+          [[25296, 774704], [400036, 399964], [412785, 387215], [406163, 393837]],
+          [[538866, 261134], [779128, 20872], [234695, 565305], [222200, 577800]],
+          [[531120, 268880], [221490, 578510], [778609, 21391], [236050, 563950]],
+          [[531175, 268825], [233983, 566017], [222203, 577797], [779065, 20935]],
+          [[405920, 394080], [402358, 397642], [749340, 50660], [80630, 719370]],
+          [[398189, 401811], [40880, 759120], [692607, 107393], [496319, 303681]],
+          [[401588, 398412], [189648, 610352], [244839, 555161], [796048, 3952]],
+          [[407152, 392848], [641750, 158250], [27604, 772396], [560058, 239942]],
+          [[408981, 391019], [775976, 24024], [337735, 462265], [117839, 682161]]
+        ],
+        [
+          [[197238, 602762], [460921, 339079], [474029, 325971], [463610, 336390]],
+          [[558138, 241862], [728345, 71655], [346545, 453455], [337319, 462681]],
+          [[553528, 246472], [335134, 464866], [728141, 71859], [344385, 455615]],
+          [[556769, 243231], [343363, 456637], [336672, 463328], [727591, 72409]],
+          [[467690, 332310], [463988, 336012], [706203, 93797], [236034, 563966]],
+          [[458239, 341761], [209306, 590694], [664668, 135332], [528268, 271732]],
+          [[462868, 337132], [313511, 486489], [351067, 448933], [735759, 64241]],
+          [[466275, 333725], [633223, 166777], [199256, 600744], [576399, 223601]],
+          [[464773, 335227], [721063, 78937], [413505, 386495], [263086, 536914]]
+        ],
+        [
+          [[28766, 771234], [402169, 397831], [414977, 385023], [407534, 392466]],
+          [[540152, 259848], [779484, 20516], [237945, 562055], [225629, 574371]],
+          [[533455, 266545], [225022, 574978], [779112, 20888], [238787, 561213]],
+          [[532418, 267582], [236676, 563324], [225995, 574005], [779709, 20291]],
+          [[407282, 392718], [403637, 396363], [749707, 50293], [84166, 715834]],
+          [[400133, 399867], [45143, 754857], [693183, 106817], [498402, 301598]],
+          [[403927, 396073], [194066, 605934], [247753, 552247], [796324, 3676]],
+          [[408107, 391893], [642745, 157255], [31628, 768372], [562388, 237612]],
+          [[411041, 388959], [776566, 23434], [339903, 460097], [121896, 678104]]
+        ],
+        [
+          [[26013, 773987], [400606, 399394], [413245, 386755], [406701, 393299]],
+          [[537688, 262312], [779712, 20288], [236039, 563961], [222953, 577047]],
+          [[531795, 268205], [222939, 577061], [779071, 20929], [237152, 562848]],
+          [[531214, 268786], [234396, 565604], [223327, 576673], [779402, 20598]],
+          [[405398, 394602], [402716, 397284], [749356, 50644], [81685, 718315]],
+          [[397920, 402080], [42491, 757509], [693336, 106664], [498208, 301792]],
+          [[401246, 398754], [190907, 609093], [245288, 554712], [796050, 3950]],
+          [[407746, 392254], [642766, 157234], [28898, 771102], [561399, 238601]],
+          [[409797, 390203], [776220, 23780], [337661, 462339], [119217, 680783]]
+        ],
+        [
+          [[25193, 774807], [400036, 399964], [413239, 386761], [405484, 394516]],
+          [[539007, 260993], [779245, 20755], [234859, 565141], [222821, 577179]],
+          [[531493, 268507], [222860, 577140], [779083, 20917], [236352, 563648]],
+          [[530864, 269136], [234356, 565644], [222548, 577452], [779418, 20582]],
+          [[405272, 394728], [401884, 398116], [749272, 50728], [80605, 719395]],
+          [[398720, 401280], [41725, 758275], [692985, 107015], [497352, 302648]],
+          [[401919, 398081], [189766, 610234], [244485, 555515], [796060, 3940]],
+          [[406353, 393647], [641944, 158056], [27741, 772259], [560962, 239038]],
+          [[409484, 390516], [776072, 23928], [337477, 462523], [118437, 681563]]
+        ],
+        [
+          [[25705, 774295], [400954, 399046], [410268, 389732], [410634, 389366]],
+          [[539177, 260823], [778949, 21051], [235565, 564435], [221290, 578710]],
+          [[531347, 268653], [224409, 575591], [778574, 21426], [234990, 565010]],
+          [[531769, 268231], [235216, 564784], [223129, 576871], [778809, 21191]],
+          [[403262, 396738], [402960, 397040], [748979, 51021], [81741, 718259]],
+          [[400545, 399455], [42751, 757249], [692818, 107182], [498793, 301207]],
+          [[401808, 398192], [189314, 610686], [247741, 552259], [795818, 4182]],
+          [[410000, 390000], [643704, 156296], [28779, 771221], [558723, 241277]],
+          [[409512, 390488], [775950, 24050], [336695, 463305], [118556, 681444]]
+        ],
+        [
+          [[26413, 773587], [401482, 398518], [410448, 389552], [411740, 388260]],
+          [[538576, 261424], [779046, 20954], [235871, 564129], [222075, 577925]],
+          [[531651, 268349], [224726, 575274], [778683, 21317], [236259, 563741]],
+          [[532234, 267766], [234936, 565064], [224192, 575808], [779012, 20988]],
+          [[403985, 396015], [403418, 396582], [749353, 50647], [82085, 717915]],
+          [[399734, 400266], [42859, 757141], [692899, 107101], [498661, 301339]],
+          [[402506, 397494], [189613, 610387], [247448, 552552], [796057, 3943]],
+          [[410493, 389507], [644654, 155346], [29436, 770564], [559565, 240435]],
+          [[410179, 389821], [776211, 23789], [337596, 462404], [119053, 680947]]
+        ],
+        [
+          [[27835, 772165], [401376, 398624], [409965, 390035], [412551, 387449]],
+          [[541277, 258723], [779346, 20654], [236826, 563174], [222919, 577081]],
+          [[531993, 268007], [224981, 575019], [779234, 20766], [237207, 562793]],
+          [[533101, 266899], [236049, 563951], [224357, 575643], [778888, 21112]],
+          [[405292, 394708], [403269, 396731], [748866, 51134], [83243, 716757]],
+          [[399846, 400154], [43690, 756310], [693142, 106858], [499533, 300467]],
+          [[403635, 396365], [190449, 609551], [247548, 552452], [796119, 3881]],
+          [[411005, 388995], [644092, 155908], [30925, 769075], [558757, 241243]],
+          [[411050, 388950], [776217, 23783], [337876, 462124], [120203, 679797]]
+        ],
+        [
+          [[30451, 769549], [403884, 396116], [411111, 388889], [414024, 385976]],
+          [[540567, 259433], [779084, 20916], [239259, 560741], [223941, 576059]],
+          [[533538, 266462], [227943, 572057], [778877, 21123], [239255, 560745]],
+          [[533173, 266827], [238680, 561320], [226989, 573011], [779000, 21000]],
+          [[405101, 394899], [405294, 394706], [749240, 50760], [85679, 714321]],
+          [[402594, 397406], [46954, 753046], [693908, 106092], [500329, 299671]],
+          [[404302, 395698], [193399, 606601], [250146, 549854], [795979, 4021]],
+          [[412259, 387741], [645047, 154953], [33383, 766617], [560236, 239764]],
+          [[412412, 387588], [776245, 23755], [339378, 460622], [122666, 677334]]
+        ],
+        [
+          [[29630, 770370], [402740, 397260], [410964, 389036], [413648, 386352]],
+          [[540049, 259951], [779292, 20708], [238484, 561516], [223534, 576466]],
+          [[533048, 266952], [225788, 574212], [779271, 20729], [237526, 562474]],
+          [[533376, 266624], [237760, 562240], [226024, 573976], [779089, 20911]],
+          [[405549, 394451], [404807, 395193], [749028, 50972], [84995, 715005]],
+          [[401978, 398022], [45888, 754112], [693845, 106155], [501013, 298987]],
+          [[404747, 395253], [191719, 608281], [250342, 549658], [796089, 3911]],
+          [[411846, 388154], [645034, 154966], [32376, 767624], [559679, 240321]],
+          [[411287, 388713], [776400, 23600], [339050, 460950], [122159, 677841]]
+        ],
+        [
+          [[30502, 769498], [402799, 397201], [411552, 388448], [413529, 386471]],
+          [[540822, 259178], [779159, 20841], [239299, 560701], [225299, 574701]],
+          [[533340, 266660], [227668, 572332], [779304, 20696], [239230, 560770]],
+          [[533995, 266005], [238457, 561543], [227321, 572679], [779084, 20916]],
+          [[406896, 393104], [405788, 394212], [749150, 50850], [85819, 714181]],
+          [[401969, 398031], [47018, 752982], [693196, 106804], [500175, 299825]],
+          [[404639, 395361], [192749, 607251], [250403, 549597], [796154, 3846]],
+          [[412165, 387835], [645448, 154552], [33325, 766675], [559365, 240635]],
+          [[411378, 388622], [776636, 23364], [339243, 460757], [122496, 677504]]
+        ],
+        [
+          [[25052, 774948], [399028, 400972], [410923, 389077], [406385, 393615]],
+          [[539417, 260583], [779688, 20312], [235021, 564979], [223536, 576464]],
+          [[531279, 268721], [220405, 579595], [779446, 20554], [237802, 562198]],
+          [[529721, 270279], [236730, 563270], [221291, 578709], [779936, 20064]],
+          [[405643, 394357], [400825, 399175], [749853, 50147], [81112, 718888]],
+          [[397787, 402213], [41400, 758600], [692718, 107282], [497993, 302007]],
+          [[399958, 400042], [190146, 609854], [245531, 554469], [796057, 3943]],
+          [[406426, 393574], [644078, 155922], [28027, 771973], [559150, 240850]],
+          [[410435, 389565], [775775, 24225], [338306, 461694], [117717, 682283]]
+        ],
+        [
+          [[26151, 773849], [400047, 399953], [412525, 387475], [405996, 394004]],
+          [[539796, 260204], [779397, 20603], [235235, 564765], [224124, 575876]],
+          [[532295, 267705], [222088, 577912], [779285, 20715], [238010, 561990]],
+          [[529957, 270043], [237394, 562606], [221736, 578264], [779896, 20104]],
+          [[405456, 394544], [401817, 398183], [749438, 50562], [82225, 717775]],
+          [[399422, 400578], [42431, 757569], [692960, 107040], [498094, 301906]],
+          [[401319, 398681], [191730, 608270], [247133, 552867], [796064, 3936]],
+          [[408386, 391614], [645578, 154422], [29239, 770761], [558347, 241653]],
+          [[411579, 388421], [775871, 24129], [339049, 460951], [118799, 681201]]
+        ],
+        [
+          [[23072, 776928], [398607, 401393], [409438, 390562], [406145, 393855]],
+          [[538545, 261455], [779452, 20548], [233291, 566709], [220971, 579029]],
+          [[530009, 269991], [219276, 580724], [779307, 20693], [235285, 564715]],
+          [[529471, 270529], [235931, 564069], [219375, 580625], [779710, 20290]],
+          [[404098, 395902], [399827, 400173], [749486, 50514], [79033, 720967]],
+          [[396999, 403001], [38523, 761477], [692705, 107295], [495999, 304001]],
+          [[398240, 401760], [188616, 611384], [243482, 556518], [795819, 4181]],
+          [[405713, 394287], [644445, 155555], [25821, 774179], [558067, 241933]],
+          [[409832, 390168], [775527, 24473], [336408, 463592], [115518, 684482]]
+        ],
+        [
+          [[24814, 775186], [399114, 400886], [411664, 388336], [407106, 392894]],
+          [[539110, 260890], [779562, 20438], [233737, 566263], [223472, 576528]],
+          [[531577, 268423], [220229, 579771], [779265, 20735], [237657, 562343]],
+          [[529087, 270913], [235840, 564160], [220386, 579614], [779691, 20309]],
+          [[405519, 394481], [401068, 398932], [749568, 50432], [80202, 719798]],
+          [[397484, 402516], [41032, 758968], [692675, 107325], [497623, 302377]],
+          [[399501, 400499], [189463, 610537], [245774, 554226], [796016, 3984]],
+          [[407072, 392928], [644427, 155573], [27694, 772306], [559029, 240971]],
+          [[410448, 389552], [775716, 24284], [337371, 462629], [117217, 682783]]
+        ],
+        [
+          [[23330, 776670], [398201, 401799], [409379, 390621], [406372, 393628]],
+          [[539736, 260264], [779363, 20637], [232983, 567017], [222061, 577939]],
+          [[531228, 268772], [218619, 581381], [779142, 20858], [235481, 564519]],
+          [[528885, 271115], [235526, 564474], [219025, 580975], [779476, 20524]],
+          [[403661, 396339], [400180, 399820], [749558, 50442], [78896, 721104]],
+          [[396072, 403928], [39564, 760436], [692419, 107581], [496031, 303969]],
+          [[398397, 401603], [187776, 612224], [244876, 555124], [796088, 3912]],
+          [[405822, 394178], [644805, 155195], [26025, 773975], [558671, 241329]],
+          [[410466, 389534], [775498, 24502], [336012, 463988], [116533, 683467]]
+        ],
+        [
+          [[24625, 775375], [400412, 399588], [410334, 389666], [407875, 392125]],
+          [[539860, 260140], [779435, 20565], [234565, 565435], [222110, 577890]],
+          [[531888, 268112], [220362, 579638], [779570, 20430], [236615, 563385]],
+          [[529897, 270103], [237062, 562938], [220561, 579439], [780099, 19901]],
+          [[404422, 395578], [401379, 398621], [749432, 50568], [80340, 719660]],
+          [[397342, 402658], [40803, 759197], [692329, 107671], [497598, 302402]],
+          [[399574, 400426], [189563, 610437], [246259, 553741], [796139, 3861]],
+          [[407417, 392583], [644633, 155367], [27524, 772476], [559312, 240688]],
+          [[410539, 389461], [775983, 24017], [337035, 462965], [117286, 682714]]
+        ],
+        [
+          [[25451, 774549], [399507, 400493], [410235, 389765], [408525, 391475]],
+          [[539990, 260010], [779715, 20285], [235072, 564928], [223246, 576754]],
+          [[531696, 268304], [219774, 580226], [779255, 20745], [237401, 562599]],
+          [[529772, 270228], [237564, 562436], [221160, 578840], [780054, 19946]],
+          [[405360, 394640], [401080, 398920], [749564, 50436], [80907, 719093]],
+          [[397525, 402475], [41231, 758769], [692404, 107596], [498120, 301880]],
+          [[400161, 399839], [190323, 609677], [245345, 554655], [796402, 3598]],
+          [[408134, 391866], [645324, 154676], [28299, 771701], [559005, 240995]],
+          [[410722, 389278], [775943, 24057], [337793, 462207], [118330, 681670]]
+        ],
+        [
+          [[24177, 775823], [399195, 400805], [409307, 390693], [407858, 392142]],
+          [[539791, 260209], [779656, 20344], [234233, 565767], [222523, 577477]],
+          [[530680, 269320], [220002, 579998], [779366, 20634], [236705, 563295]],
+          [[528414, 271586], [235894, 564106], [219934, 580066], [779978, 20022]],
+          [[404448, 395552], [400321, 399679], [749442, 50558], [79672, 720328]],
+          [[396876, 403124], [40594, 759406], [692903, 107097], [497124, 302876]],
+          [[399093, 400907], [189215, 610785], [244748, 555252], [796088, 3912]],
+          [[407029, 392971], [644502, 155498], [27251, 772749], [558741, 241259]],
+          [[410798, 389202], [776052, 23948], [337909, 462091], [116823, 683177]]
+        ],
+        [
+          [[24261, 775739], [398314, 401686], [409518, 390482], [406978, 393022]],
+          [[539660, 260340], [779497, 20503], [234138, 565862], [222211, 577789]],
+          [[531028, 268972], [219698, 580302], [779517, 20483], [236599, 563401]],
+          [[528581, 271419], [236507, 563493], [220297, 579703], [779972, 20028]],
+          [[403701, 396299], [400122, 399878], [749369, 50631], [80161, 719839]],
+          [[397245, 402755], [40327, 759673], [692561, 107439], [496960, 303040]],
+          [[398602, 401398], [188772, 611228], [244376, 555624], [796059, 3941]],
+          [[407188, 392812], [644894, 155106], [27089, 772911], [558473, 241527]],
+          [[410514, 389486], [775914, 24086], [336710, 463290], [117624, 682376]]
+        ],
+        [
+          [[25289, 774711], [399144, 400856], [410558, 389442], [407610, 392390]],
+          [[539391, 260609], [779776, 20224], [234775, 565225], [223554, 576446]],
+          [[531523, 268477], [220975, 579025], [779573, 20427], [237325, 562675]],
+          [[529578, 270422], [237376, 562624], [221268, 578732], [780041, 19959]],
+          [[405177, 394823], [400569, 399431], [749782, 50218], [81293, 718707]],
+          [[397569, 402431], [41550, 758450], [693079, 106921], [497903, 302097]],
+          [[399172, 400828], [189879, 610121], [245715, 554285], [796276, 3724]],
+          [[407636, 392364], [644683, 155317], [28080, 771920], [559121, 240879]],
+          [[411836, 388164], [775805, 24195], [338166, 461834], [118363, 681637]]
+        ],
+        [
+          [[24075, 775925], [401323, 398677], [412623, 387377], [406670, 393330]],
+          [[538184, 261816], [778814, 21186], [232763, 567237], [222585, 577415]],
+          [[531937, 268063], [221536, 578464], [778544, 21456], [233861, 566139]],
+          [[531930, 268070], [234187, 565813], [220533, 579467], [779065, 20935]],
+          [[404334, 395666], [403092, 396908], [749038, 50962], [78790, 721210]],
+          [[400999, 399001], [40565, 759435], [692878, 107122], [495998, 304002]],
+          [[401970, 398030], [187481, 612519], [245471, 554529], [795999, 4001]],
+          [[406459, 393541], [641791, 158209], [26734, 773266], [561238, 238762]],
+          [[409944, 390056], [776348, 23652], [336895, 463105], [117791, 682209]]
+        ],
+        [
+          [[25014, 774986], [401492, 398508], [412426, 387574], [407223, 392777]],
+          [[539606, 260394], [778738, 21262], [233175, 566825], [223901, 576099]],
+          [[532405, 267595], [222673, 577327], [778640, 21360], [235213, 564787]],
+          [[532024, 267976], [234072, 565928], [221347, 578653], [778620, 21380]],
+          [[405017, 394983], [402925, 397075], [749161, 50839], [80000, 720000]],
+          [[401086, 398914], [41764, 758236], [692883, 107117], [496837, 303163]],
+          [[402501, 397499], [189124, 610876], [245826, 554174], [796018, 3982]],
+          [[407629, 392371], [641957, 158043], [27703, 772297], [561776, 238224]],
+          [[411288, 388712], [776275, 23725], [338001, 461999], [119574, 680426]]
+        ],
+        [
+          [[39746, 760254], [405922, 394078], [418866, 381134], [411555, 388445]],
+          [[541316, 258684], [774142, 25858], [242346, 557654], [232765, 567235]],
+          [[533835, 266165], [232225, 567775], [772774, 27226], [243754, 556246]],
+          [[533809, 266191], [242765, 557235], [231448, 568552], [773610, 26390]],
+          [[409868, 390132], [408666, 391334], [745357, 54643], [92661, 707339]],
+          [[405693, 394307], [55449, 744551], [690533, 109467], [499837, 300163]],
+          [[407044, 392956], [198688, 601312], [254974, 545026], [791557, 8443]],
+          [[412638, 387362], [641037, 158963], [42158, 757842], [562621, 237379]],
+          [[416096, 383904], [771639, 28361], [344506, 455494], [130911, 669089]]
+        ],
+        [
+          [[113349, 686651], [431218, 368782], [441682, 358318], [435816, 364184]],
+          [[546416, 253584], [744387, 55613], [286630, 513370], [279620, 520380]],
+          [[541079, 258921], [277291, 522709], [750130, 49870], [291171, 508829]],
+          [[548089, 251911], [291179, 508821], [279241, 520759], [747454, 52546]],
+          [[434327, 365673], [433518, 366482], [721235, 78765], [161634, 638366]],
+          [[429041, 370959], [127918, 672082], [678911, 121089], [509730, 290270]],
+          [[434195, 365805], [251913, 548087], [301698, 498302], [760616, 39384]],
+          [[436241, 363759], [633160, 166840], [115019, 684981], [572331, 227669]],
+          [[439640, 360360], [752045, 47955], [376172, 423828], [194024, 605976]]
+        ],
+        [
+          [[91492, 708508], [423758, 376242], [433396, 366604], [422779, 377221]],
+          [[546499, 253501], [758374, 41626], [276216, 523784], [264547, 535453]],
+          [[539410, 260590], [263245, 536755], [755823, 44177], [276643, 523357]],
+          [[537829, 262171], [276562, 523438], [263356, 536644], [760386, 39614]],
+          [[425541, 374459], [422509, 377491], [726891, 73109], [139269, 660731]],
+          [[422026, 377974], [104137, 695863], [683491, 116509], [507099, 292901]],
+          [[424675, 375325], [234814, 565186], [282536, 517464], [774518, 25482]],
+          [[430189, 369811], [636870, 163130], [91647, 708353], [565610, 234390]],
+          [[434165, 365835], [758719, 41281], [366695, 433305], [170897, 629103]]
+        ],
+        [
+          [[42677, 757323], [407067, 392933], [419774, 380226], [410708, 389292]],
+          [[543014, 256986], [776157, 23843], [246151, 553849], [234897, 565103]],
+          [[535803, 264197], [234296, 565704], [775978, 24022], [247398, 552602]],
+          [[535622, 264378], [245999, 554001], [232446, 567554], [776725, 23275]],
+          [[412493, 387507], [409105, 390895], [746800, 53200], [95063, 704937]],
+          [[407437, 392563], [57579, 742421], [691507, 108493], [501947, 298053]],
+          [[408579, 391421], [201553, 598447], [255408, 544592], [792959, 7041]],
+          [[414011, 385989], [643612, 156388], [44500, 755500], [563028, 236972]],
+          [[419194, 380806], [772449, 27551], [346917, 453083], [131183, 668817]]
+        ],
+        [
+          [[29764, 770236], [402891, 397109], [416101, 383899], [409129, 390871]],
+          [[540952, 259048], [779197, 20803], [237182, 562818], [227241, 572759]],
+          [[533219, 266781], [226923, 573077], [778880, 21120], [238142, 561858]],
+          [[533917, 266083], [238762, 561238], [225440, 574560], [779122, 20878]],
+          [[406703, 393297], [405883, 394117], [749763, 50237], [84538, 715462]],
+          [[402721, 397279], [45878, 754122], [693060, 106940], [498746, 301254]],
+          [[403633, 396367], [192026, 607974], [249126, 550874], [796072, 3928]],
+          [[409862, 390138], [643613, 156387], [32692, 767308], [563036, 236964]],
+          [[413704, 386296], [776453, 23547], [340914, 459086], [122889, 677111]]
+        ],
+        [
+          [[30925, 769075], [403535, 396465], [415651, 384349], [410788, 389212]],
+          [[541035, 258965], [779080, 20920], [238133, 561867], [227597, 572403]],
+          [[534145, 265855], [227577, 572423], [778722, 21278], [239204, 560796]],
+          [[533633, 266367], [238865, 561135], [226371, 573629], [779058, 20942]],
+          [[407121, 392879], [406166, 393834], [749757, 50243], [85543, 714457]],
+          [[403829, 396171], [47106, 752894], [692979, 107021], [499560, 300440]],
+          [[404560, 395440], [193949, 606051], [249261, 550739], [795943, 4057]],
+          [[410845, 389155], [643401, 156599], [33323, 766677], [562796, 237204]],
+          [[413445, 386555], [776228, 23772], [341912, 458088], [123522, 676478]]
+        ],
+        [
+          [[30518, 769482], [403824, 396176], [415027, 384973], [410411, 389589]],
+          [[541483, 258517], [779337, 20663], [237522, 562478], [228252, 571748]],
+          [[534182, 265818], [227018, 572982], [778967, 21033], [238873, 561127]],
+          [[534393, 265607], [239025, 560975], [225463, 574537], [779039, 20961]],
+          [[407977, 392023], [406785, 393215], [749513, 50487], [85057, 714943]],
+          [[403023, 396977], [47102, 752898], [693783, 106217], [498466, 301534]],
+          [[405419, 394581], [193099, 606901], [250216, 549784], [796161, 3839]],
+          [[409184, 390816], [643976, 156024], [33069, 766931], [563446, 236554]],
+          [[413862, 386138], [776650, 23350], [340027, 459973], [123729, 676271]]
+        ],
+        [
+          [[28382, 771618], [403379, 396621], [414128, 385872], [409758, 390242]],
+          [[539566, 260434], [778888, 21112], [236155, 563845], [225815, 574185]],
+          [[533737, 266263], [224740, 575260], [778572, 21428], [237744, 562256]],
+          [[534241, 265759], [236943, 563057], [224356, 575644], [779250, 20750]],
+          [[407037, 392963], [403596, 396404], [749735, 50265], [83304, 716696]],
+          [[402864, 397136], [44976, 755024], [693714, 106286], [497309, 302691]],
+          [[403940, 396060], [192643, 607357], [248147, 551853], [796025, 3975]],
+          [[409885, 390115], [644105, 155895], [31609, 768391], [561805, 238195]],
+          [[411291, 388709], [775838, 24162], [341005, 458995], [121155, 678845]]
+        ],
+        [
+          [[27602, 772398], [403564, 396436], [413362, 386638], [409034, 390966]],
+          [[540129, 259871], [779131, 20869], [235970, 564030], [225344, 574656]],
+          [[532199, 267801], [223403, 576597], [778877, 21123], [237001, 562999]],
+          [[534175, 265825], [236876, 563124], [223200, 576800], [779352, 20648]],
+          [[406238, 393762], [403095, 396905], [749929, 50071], [82816, 717184]],
+          [[401418, 398582], [44046, 755954], [692755, 107245], [497081, 302919]],
+          [[403452, 396548], [191903, 608097], [246591, 553409], [796055, 3945]],
+          [[409012, 390988], [644092, 155908], [30699, 769301], [561366, 238634]],
+          [[411789, 388211], [776005, 23995], [340951, 459049], [120281, 679719]]
+        ],
+        [
+          [[28390, 771610], [402911, 397089], [413370, 386630], [409335, 390665]],
+          [[539394, 260606], [779109, 20891], [237372, 562628], [225895, 574105]],
+          [[533123, 266877], [223662, 576338], [778681, 21319], [237197, 562803]],
+          [[533242, 266758], [236737, 563263], [223881, 576119], [778996, 21004]],
+          [[407487, 392513], [404147, 395853], [749889, 50111], [83222, 716778]],
+          [[401337, 398663], [45100, 754900], [692241, 107759], [497914, 302086]],
+          [[402591, 397409], [191927, 608073], [247527, 552473], [795916, 4084]],
+          [[408021, 391979], [644508, 155492], [31521, 768479], [561532, 238468]],
+          [[412265, 387735], [775942, 24058], [341644, 458356], [121310, 678690]]
+        ],
+        [
+          [[28193, 771807], [403510, 396490], [413060, 386940], [409718, 390282]],
+          [[539400, 260600], [779147, 20853], [237008, 562992], [225783, 574217]],
+          [[532554, 267446], [223692, 576308], [779123, 20877], [237709, 562291]],
+          [[533473, 266527], [236582, 563418], [223739, 576261], [779217, 20783]],
+          [[406067, 393933], [403597, 396403], [750089, 49911], [83295, 716705]],
+          [[400339, 399661], [44157, 755843], [693185, 106815], [497875, 302125]],
+          [[402668, 397332], [191324, 608676], [247288, 552712], [796118, 3882]],
+          [[408895, 391105], [644716, 155284], [30883, 769117], [561013, 238987]],
+          [[412363, 387637], [775992, 24008], [341164, 458836], [120378, 679622]]
+        ],
+        [
+          [[28054, 771946], [402582, 397418], [413939, 386061], [409243, 390757]],
+          [[539144, 260856], [779433, 20567], [236652, 563348], [225246, 574754]],
+          [[532614, 267386], [223435, 576565], [779022, 20978], [237100, 562900]],
+          [[532958, 267042], [237043, 562957], [223428, 576572], [779312, 20688]],
+          [[406430, 393570], [404340, 395660], [750216, 49784], [83612, 716388]],
+          [[400944, 399056], [44357, 755643], [692463, 107537], [497237, 302763]],
+          [[402612, 397388], [191175, 608825], [247010, 552990], [796093, 3907]],
+          [[408695, 391305], [644224, 155776], [31071, 768929], [561998, 238002]],
+          [[412031, 387969], [775897, 24103], [342138, 457862], [120563, 679437]]
+        ],
+        [
+          [[30269, 769731], [404673, 395327], [416777, 383223], [408064, 391936]],
+          [[540504, 259496], [779375, 20625], [237803, 562197], [227349, 572651]],
+          [[533116, 266884], [225597, 574403], [778888, 21112], [239011, 560989]],
+          [[534697, 265303], [237718, 562282], [225466, 574534], [779642, 20358]],
+          [[407597, 392403], [404887, 395113], [750083, 49917], [85094, 714906]],
+          [[403752, 396248], [46658, 753342], [693022, 106978], [498448, 301552]],
+          [[405073, 394927], [192860, 607140], [249476, 550524], [796005, 3995]],
+          [[410949, 389051], [644840, 155160], [33338, 766662], [562782, 237218]],
+          [[411615, 388385], [776066, 23934], [342271, 457729], [123178, 676822]]
+        ],
+        [
+          [[29337, 770663], [404973, 395027], [415949, 384051], [407727, 392273]],
+          [[539257, 260743], [779308, 20692], [237409, 562591], [226292, 573708]],
+          [[533091, 266909], [224515, 575485], [778657, 21343], [238389, 561611]],
+          [[533797, 266203], [237013, 562987], [224309, 575691], [779009, 20991]],
+          [[407307, 392693], [404253, 395747], [750802, 49198], [84197, 715803]],
+          [[402739, 397261], [45031, 754969], [693212, 106788], [497941, 302059]],
+          [[404132, 395868], [192978, 607022], [247923, 552077], [795984, 4016]],
+          [[409123, 390877], [643864, 156136], [31810, 768190], [562307, 237693]],
+          [[412267, 387733], [776219, 23781], [342242, 457758], [121395, 678605]]
+        ],
+        [
+          [[28669, 771331], [404442, 395558], [412219, 387781], [409474, 390526]],
+          [[540993, 259007], [778555, 21445], [236548, 563452], [226646, 573354]],
+          [[532589, 267411], [225761, 574239], [778703, 21297], [236582, 563418]],
+          [[533572, 266428], [235980, 564020], [224245, 575755], [778624, 21376]],
+          [[407015, 392985], [405450, 394550], [749388, 50612], [82894, 717106]],
+          [[402181, 397819], [44793, 755207], [693129, 106871], [498478, 301522]],
+          [[404196, 395804], [192265, 607735], [247197, 552803], [796029, 3971]],
+          [[410769, 389231], [643855, 156145], [31507, 768493], [561574, 238426]],
+          [[412165, 387835], [776515, 23485], [340393, 459607], [121635, 678365]]
+        ],
+        [
+          [[29143, 770857], [402079, 397921], [411861, 388139], [412876, 387124]],
+          [[539859, 260141], [779464, 20536], [237536, 562464], [224346, 575654]],
+          [[533130, 266870], [223988, 576012], [779088, 20912], [238882, 561118]],
+          [[533388, 266612], [238870, 561130], [225394, 574606], [778968, 21032]],
+          [[407725, 392275], [405669, 394331], [749439, 50561], [84295, 715705]],
+          [[402224, 397776], [45536, 754464], [693461, 106539], [499444, 300556]],
+          [[403550, 396450], [192995, 607005], [249794, 550206], [796136, 3864]],
+          [[410658, 389342], [643895, 156105], [32018, 767982], [561710, 238290]],
+          [[412778, 387222], [776657, 23343], [338786, 461214], [122039, 677961]]
+        ],
+        [
+          [[31708, 768292], [403707, 396293], [412870, 387130], [414561, 385439]],
+          [[541210, 258790], [779515, 20485], [240014, 559986], [226776, 573224]],
+          [[534096, 265904], [226662, 573338], [779204, 20796], [241643, 558357]],
+          [[534662, 265338], [240149, 559851], [227565, 572435], [779465, 20535]],
+          [[408546, 391454], [406397, 393603], [749044, 50956], [86548, 713452]],
+          [[402825, 397175], [48317, 751683], [693235, 106765], [501214, 298786]],
+          [[404585, 395415], [195048, 604952], [251541, 548459], [796236, 3764]],
+          [[412022, 387978], [644290, 155710], [34870, 765130], [561551, 238449]],
+          [[414237, 385763], [776661, 23339], [341170, 458830], [124148, 675852]]
+        ],
+        [
+          [[32905, 767095], [405907, 394093], [413542, 386458], [413949, 386051]],
+          [[542301, 257699], [779881, 20119], [240697, 559303], [228212, 571788]],
+          [[535015, 264985], [227325, 572675], [779329, 20671], [242339, 557661]],
+          [[535007, 264993], [240948, 559052], [228808, 571192], [779484, 20516]],
+          [[409781, 390219], [407429, 392571], [749537, 50463], [87737, 712263]],
+          [[403224, 396776], [48865, 751135], [693992, 106008], [501815, 298185]],
+          [[406091, 393909], [195386, 604614], [251957, 548043], [796301, 3699]],
+          [[411464, 388536], [644266, 155734], [36067, 763933], [562993, 237007]],
+          [[415851, 384149], [776934, 23066], [340802, 459198], [125269, 674731]]
+        ]
+      ],
+      "shots_per_circuit": 100000,
+      "repetitions_per_setting_job": 8,
+      "shot_timestamps_available": false,
+      "settings_from": "Each count row, not the incomplete job list",
+      "evidence_type": "hardware_counts"
+    },
+    "viviani": {
+      "metadata": {
+        "author": "TB",
+        "jobs": 1,
+        "tests circuits": 0,
+        "repetitions": 15,
+        "shots": 100000,
+        "backend": "ibm_nairobi",
+        "randomization": true,
+        "script version": "skrypt_v3_TR",
+        "start time": "2023-10-08 10:40:01",
+        "description": "Tutaj mo\u017cna umie\u015bci\u0107 kr\u00f3tki opis joba."
+      },
+      "actual_jobs": 9,
+      "job_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "missing_indices_within_recorded_range": [],
+      "job_list_rows": 1,
+      "job_list_complete": false,
+      "job_list_ids": ["cmh8e3gyhgyg008fd4yg"],
+      "setting_order_audit": [
+        {
+          "sha256": "2b0229b57bdc7d5d85a9d9bc1f2c35524be11f2f3ec7d3f7d9d9a1abae2bb6af",
+          "adjacent_equal_settings": 11,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "22a5860a676ecec950dcb61265e0e1793913a51e45c641d1d63d0e392976b75f",
+          "adjacent_equal_settings": 14,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "80277cdfcad8f4ca903b7eaba4aefc1beeae82ec4063904c932700416f725139",
+          "adjacent_equal_settings": 10,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "b4de972f1f12bc3805017d8649a6aae4fea67452809d5057dac615c19c00da67",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "ab1391a2d61dd1e953998a61f0bd8a4c22410ece7484b8c5c9bcda3415bee95f",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "5a555588c5d3f34f0622e8cb86fd9668869f43a7032f5bdba39d1a9b3944d537",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "55fd857e0dbbb794d98b9c738518e2ea6cd7c3f6943d6f180d77992bf93a0a08",
+          "adjacent_equal_settings": 12,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "5570e69b2faeda3405c27bddf6264ace1706218ef360b3cbd535180ffe18e0e4",
+          "adjacent_equal_settings": 13,
+          "circuit_rows": 300
+        },
+        {
+          "sha256": "60577e4db8b31163d810a5e879bdfe091096f9aee1889d5442f3afefdf875703",
+          "adjacent_equal_settings": 21,
+          "circuit_rows": 300
+        }
+      ],
+      "lag1_circuit_residual_diagnostic": [-0.06736740816737459, -0.026639342067548966, -0.034118709740094386, -0.04144693987101229, 0.006277173469403834, -0.0029313272211977607, -0.01615115848641413, -0.02465786494445141, 0.03605493532093631],
+      "counts_0_1_by_job": [
+        [
+          [[1145330, 354670], [788598, 711402], [62636, 1437364], [397991, 1102009]],
+          [[761723, 738277], [1123238, 376762], [438153, 1061847], [62451, 1437549]],
+          [[62703, 1437297], [437217, 1062783], [1112260, 387740], [758124, 741876]],
+          [[395878, 1104122], [61979, 1438021], [779761, 720239], [1135158, 364842]],
+          [[1272261, 227739], [1280863, 219137], [290367, 1209633], [255089, 1244911]]
+        ],
+        [
+          [[1150023, 349977], [791466, 708534], [64943, 1435057], [404339, 1095661]],
+          [[759533, 740467], [1123944, 376056], [446936, 1053064], [64904, 1435096]],
+          [[64265, 1435735], [429613, 1070387], [1106299, 393701], [755426, 744574]],
+          [[388192, 1111808], [64429, 1435571], [785382, 714618], [1131775, 368225]],
+          [[1274817, 225183], [1287049, 212951], [297762, 1202238], [260271, 1239729]]
+        ],
+        [
+          [[1153302, 346698], [802999, 697001], [86241, 1413759], [419470, 1080530]],
+          [[768885, 731115], [1129037, 370963], [461228, 1038772], [85504, 1414496]],
+          [[85489, 1414511], [445509, 1054491], [1111814, 388186], [766320, 733680]],
+          [[404305, 1095695], [84913, 1415087], [795237, 704763], [1137489, 362511]],
+          [[1277398, 222602], [1290248, 209752], [314551, 1185449], [277795, 1222205]]
+        ],
+        [
+          [[1154456, 345544], [802940, 697060], [92063, 1407937], [424197, 1075803]],
+          [[774343, 725657], [1129578, 370422], [464125, 1035875], [92148, 1407852]],
+          [[91446, 1408554], [447265, 1052735], [1112069, 387931], [770638, 729362]],
+          [[406818, 1093182], [90927, 1409073], [797970, 702030], [1135876, 364124]],
+          [[1279297, 220703], [1290143, 209857], [318374, 1181626], [284871, 1215129]]
+        ],
+        [
+          [[1152551, 347449], [801766, 698234], [90119, 1409881], [421622, 1078378]],
+          [[774512, 725488], [1127954, 372046], [462358, 1037642], [90220, 1409780]],
+          [[89551, 1410449], [445951, 1054049], [1113137, 386863], [769587, 730413]],
+          [[405240, 1094760], [88968, 1411032], [796747, 703253], [1138184, 361816]],
+          [[1279284, 220716], [1289109, 210891], [317964, 1182036], [282397, 1217603]]
+        ],
+        [
+          [[1151107, 348893], [791475, 708525], [65928, 1434072], [402111, 1097889]],
+          [[758677, 741323], [1122830, 377170], [446845, 1053155], [65078, 1434922]],
+          [[64452, 1435548], [431555, 1068445], [1107611, 392389], [755628, 744372]],
+          [[387572, 1112428], [64201, 1435799], [786523, 713477], [1132682, 367318]],
+          [[1274049, 225951], [1285846, 214154], [298204, 1201796], [259115, 1240885]]
+        ],
+        [
+          [[1156843, 343157], [789580, 710420], [67911, 1432089], [407041, 1092959]],
+          [[760831, 739169], [1132213, 367787], [448622, 1051378], [66931, 1433069]],
+          [[66326, 1433674], [435898, 1064102], [1106568, 393432], [755969, 744031]],
+          [[395178, 1104822], [66042, 1433958], [785986, 714014], [1129905, 370095]],
+          [[1275388, 224612], [1287845, 212155], [301695, 1198305], [265546, 1234454]]
+        ],
+        [
+          [[1147309, 352691], [788498, 711502], [67074, 1432926], [405647, 1094353]],
+          [[762474, 737526], [1126461, 373539], [449447, 1050553], [66079, 1433921]],
+          [[66291, 1433709], [430719, 1069281], [1110396, 389604], [758307, 741693]],
+          [[390911, 1109089], [65491, 1434509], [783596, 716404], [1130728, 369272]],
+          [[1276253, 223747], [1284111, 215889], [298339, 1201661], [262444, 1237556]]
+        ],
+        [
+          [[1150216, 349784], [790615, 709385], [74611, 1425389], [416496, 1083504]],
+          [[769402, 730598], [1132439, 367561], [454813, 1045187], [74851, 1425149]],
+          [[73867, 1426133], [433958, 1066042], [1110657, 389343], [764171, 735829]],
+          [[394410, 1105590], [74041, 1425959], [786287, 713713], [1130488, 369512]],
+          [[1280664, 219336], [1286719, 213281], [303602, 1196398], [273002, 1226998]]
+        ]
+      ],
+      "shots_per_circuit": 100000,
+      "repetitions_per_setting_job": 15,
+      "shot_timestamps_available": false,
+      "settings_from": "Each count row, not the incomplete job list",
+      "evidence_type": "hardware_counts"
+    },
+    "aria_drift_control": {
+      "metadata": {
+
+      },
+      "actual_jobs": 20,
+      "job_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "missing_indices_within_recorded_range": [],
+      "job_list_rows": 20,
+      "job_list_complete": true,
+      "job_list_ids": ["cad15ab5-f1f3-486c-a077-d5392785d898", "da429097-4453-4164-98a1-171d7dfe888b", "9fc6b0cc-3475-4580-ab57-d1bb755040f7", "17a812fc-e86a-428c-b797-943beeb5859e", "ed733a4f-6eb5-43a2-a212-39c0a2134b70", "ab8bce31-d89a-4090-bd4c-943e035bccb2", "7907668b-d428-4b7e-b92b-1d129728d2c9", "5938940a-527e-41f4-b1b9-9991fef5bbc9", "4834cf07-186d-43ed-900f-42657173a44a", "ef9975bc-e151-491c-a570-982379f987f5", "a9a95e87-a419-4c07-a971-38713d3ccf52", "5ac3e36c-61db-492f-83c9-f984f6fc9dbc", "5ab211fc-3fca-4d4d-99f2-361878bc8a52", "fdfb5acf-8d54-4221-86e4-8b4784f71b11", "281b2b40-e5ee-43c9-8474-7760038fceb2", "91099b60-f7f6-4d94-91e8-c382e826843c", "b77a4107-c80e-4305-9032-d929bbc7afb5", "5cacb201-0537-4cfb-8b0d-0e6295e9b02e", "ae820fdf-5256-4c10-833a-90366d8b7588", "df84e684-8a7b-4297-88c7-5d0239c55ef6"],
+      "setting_order_audit": [
+        {
+          "sha256": "eea3b3abee11e8930af31d96e2f05ca39ab2c49a446db35cb559efd1d111a7d0",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "bea8dd1e8e76370693ea98b4228e2c6b9c9853b10e7928a551bad6fee0bf8a6e",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "63b62fc86b732aa1e87b9c8b89c2c9d2b51eb2dcaa8ec655f3d087a9bc35971f",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "631b62e61e7de31b11aad9299ae1ded04416a96e8e90317eefc6671622a0f959",
+          "adjacent_equal_settings": 0,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "fe7570234edc2ab8431127cfc8b4d696cfa20502a51d868a0f82112028368478",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "327e95a75008118ceb6cee1c7bf8f2bcd3d3e2185c5af574f04803b52c4b3b57",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "f9b33185ee1b93f49ef4cd5fb5f33612a1531d0a213079df8246b8f4afedf37a",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "d1a0d78095911acbd30497744943576773ff708859aad418290da05f41044619",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "bc7fdbfbfae2f48d09242d1f19620c8c14ceca1aea2e1af32e603b2028191a29",
+          "adjacent_equal_settings": 6,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "0e7ee9727e182b6e4ee06ee74aed2d16c91cb86af3f32460e160cb051175d5e8",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "0b75bf9d24dfa435d1461e339476eb79725373cf23c52c540f00859d4d0ee452",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "4cf6243f588c9a76d95aeb0a99efcd3f3404503d51d63b042ea28de119578534",
+          "adjacent_equal_settings": 7,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "518a6260450261db9229f5cc7df1ffc7f227309d1227755b9f96168460e949a5",
+          "adjacent_equal_settings": 2,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "b4fd39abbb723e758d801bc17d4b6af460c17627a07324309f50ab1852b9b042",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "ca95ad58c5c0531d01eb4de930d2fc5368ba9fba8e044a903cebb662a9489af4",
+          "adjacent_equal_settings": 4,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "ae5c23372e09422786c369b513d2acb439067160c482afbb00261ea04a8de65f",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "a2912bb7407413e8fd3b2f3e7e592efda103a2e1ffb6b531b2a4f0857992eaa8",
+          "adjacent_equal_settings": 9,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "4735b3b6ab0f7fbb6e224d8d89127f39b412d25bdd415bad3b20771a366a5f9a",
+          "adjacent_equal_settings": 3,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "4c75c213fd8b99c0afea20d7701a20c7723e24367143316b0fecf9445a12daea",
+          "adjacent_equal_settings": 8,
+          "circuit_rows": 100
+        },
+        {
+          "sha256": "7966975951db58672446a3d0c24e428d53e2cca9ebd578750cda0df1379b400b",
+          "adjacent_equal_settings": 5,
+          "circuit_rows": 100
+        }
+      ],
+      "lag1_circuit_residual_diagnostic": [-0.21476522321292732, 0.08976873035141715, -0.056879528985507195, -0.05400871899991341, -0.06456557767883497, 0.03029708040309744, -0.023033632587430807, -0.1655380523731583, -0.09922006090361091, -0.10640344045240638, -0.05021695831554944, 0.010519909580942725, 0.1445637483059337, -0.11252917990126618, 0.06886118843035156, -0.011021311284499827, -0.025171187430330522, -0.06691585008586715, -0.19417038966635913, 0.12122646471021319],
+      "counts_0_1_by_job": [
+        [
+          [[3778, 1222], [4996, 4], [2506, 2494], [1264, 3736]],
+          [[4995, 5], [3757, 1243], [1238, 3762], [2513, 2487]],
+          [[2480, 2520], [1273, 3727], [3741, 1259], [4994, 6]],
+          [[1269, 3731], [2505, 2495], [4992, 8], [3764, 1236]],
+          [[4299, 701], [4256, 744], [721, 4279], [773, 4227]]
+        ],
+        [
+          [[3695, 1305], [4992, 8], [2534, 2466], [1241, 3759]],
+          [[4992, 8], [3693, 1307], [1302, 3698], [2533, 2467]],
+          [[2598, 2402], [1237, 3763], [3669, 1331], [4994, 6]],
+          [[1295, 3705], [2532, 2468], [4992, 8], [3781, 1219]],
+          [[4264, 736], [4280, 720], [752, 4248], [770, 4230]]
+        ],
+        [
+          [[3790, 1210], [4995, 5], [2507, 2493], [1256, 3744]],
+          [[4996, 4], [3786, 1214], [1235, 3765], [2484, 2516]],
+          [[2512, 2488], [1235, 3765], [3754, 1246], [4994, 6]],
+          [[1229, 3771], [2491, 2509], [4994, 6], [3768, 1232]],
+          [[4253, 747], [4250, 750], [783, 4217], [741, 4259]]
+        ],
+        [
+          [[3783, 1217], [4995, 5], [2519, 2481], [1214, 3786]],
+          [[4994, 6], [3762, 1238], [1310, 3690], [2489, 2511]],
+          [[2529, 2471], [1225, 3775], [3755, 1245], [4993, 7]],
+          [[1260, 3740], [2501, 2499], [4997, 3], [3710, 1290]],
+          [[4223, 777], [4266, 734], [715, 4285], [718, 4282]]
+        ],
+        [
+          [[4275, 725], [4999, 1], [3885, 1115], [3866, 1134]],
+          [[4995, 5], [4711, 289], [2640, 2360], [3002, 1998]],
+          [[4809, 191], [2585, 2415], [4617, 383], [4999, 1]],
+          [[1889, 3111], [3493, 1507], [4996, 4], [4402, 598]],
+          [[4744, 256], [4834, 166], [3846, 1154], [3172, 1828]]
+        ],
+        [
+          [[3802, 1198], [4997, 3], [4403, 597], [3725, 1275]],
+          [[4995, 5], [4180, 820], [3211, 1789], [3947, 1053]],
+          [[3396, 1604], [3072, 1928], [4126, 874], [4993, 7]],
+          [[3709, 1291], [3029, 1971], [4991, 9], [4003, 997]],
+          [[4377, 623], [4402, 598], [2849, 2151], [2920, 2080]]
+        ],
+        [
+          [[3799, 1201], [4995, 5], [2546, 2454], [1247, 3753]],
+          [[4995, 5], [3746, 1254], [1276, 3724], [2503, 2497]],
+          [[2514, 2486], [1244, 3756], [3738, 1262], [4995, 5]],
+          [[1320, 3680], [2468, 2532], [4997, 3], [3767, 1233]],
+          [[4275, 725], [4263, 737], [791, 4209], [799, 4201]]
+        ],
+        [
+          [[3728, 1272], [4995, 5], [2515, 2485], [1232, 3768]],
+          [[4997, 3], [3759, 1241], [1245, 3755], [2502, 2498]],
+          [[2434, 2566], [1277, 3723], [3807, 1193], [4997, 3]],
+          [[1296, 3704], [2441, 2559], [4998, 2], [3789, 1211]],
+          [[4219, 781], [4225, 775], [735, 4265], [734, 4266]]
+        ],
+        [
+          [[3687, 1313], [4997, 3], [2498, 2502], [1295, 3705]],
+          [[4999, 1], [3814, 1186], [1233, 3767], [2513, 2487]],
+          [[2488, 2512], [1244, 3756], [3723, 1277], [4995, 5]],
+          [[1297, 3703], [2465, 2535], [4994, 6], [3746, 1254]],
+          [[4251, 749], [4251, 749], [704, 4296], [706, 4294]]
+        ],
+        [
+          [[3748, 1252], [4995, 5], [2481, 2519], [1258, 3742]],
+          [[4995, 5], [3745, 1255], [1228, 3772], [2527, 2473]],
+          [[2519, 2481], [1214, 3786], [3693, 1307], [4991, 9]],
+          [[1254, 3746], [2454, 2546], [4992, 8], [3693, 1307]],
+          [[4227, 773], [4292, 708], [754, 4246], [710, 4290]]
+        ],
+        [
+          [[3744, 1256], [4997, 3], [2559, 2441], [1292, 3708]],
+          [[4990, 10], [3739, 1261], [1280, 3720], [2557, 2443]],
+          [[2511, 2489], [1226, 3774], [3730, 1270], [4997, 3]],
+          [[1255, 3745], [2494, 2506], [4995, 5], [3731, 1269]],
+          [[4247, 753], [4280, 720], [729, 4271], [780, 4220]]
+        ],
+        [
+          [[3686, 1314], [4990, 10], [2496, 2504], [1278, 3722]],
+          [[4993, 7], [3722, 1278], [1269, 3731], [2494, 2506]],
+          [[2523, 2477], [1332, 3668], [3772, 1228], [4996, 4]],
+          [[1181, 3819], [2513, 2487], [4998, 2], [3752, 1248]],
+          [[4222, 778], [4254, 746], [781, 4219], [783, 4217]]
+        ],
+        [
+          [[3921, 1079], [4995, 5], [2548, 2452], [1302, 3698]],
+          [[4992, 8], [3776, 1224], [1855, 3145], [2564, 2436]],
+          [[2446, 2554], [1840, 3160], [3819, 1181], [4992, 8]],
+          [[1259, 3741], [2628, 2372], [4999, 1], [3762, 1238]],
+          [[4333, 667], [4365, 635], [737, 4263], [708, 4292]]
+        ],
+        [
+          [[3737, 1263], [4994, 6], [2490, 2510], [1240, 3760]],
+          [[4997, 3], [3769, 1231], [1252, 3748], [2506, 2494]],
+          [[2492, 2508], [1320, 3680], [3770, 1230], [4994, 6]],
+          [[1322, 3678], [2498, 2502], [4997, 3], [3733, 1267]],
+          [[4324, 676], [4291, 709], [757, 4243], [739, 4261]]
+        ],
+        [
+          [[3723, 1277], [4991, 9], [2477, 2523], [1227, 3773]],
+          [[4992, 8], [3723, 1277], [1257, 3743], [2507, 2493]],
+          [[2452, 2548], [1241, 3759], [3708, 1292], [4995, 5]],
+          [[1283, 3717], [2496, 2504], [4997, 3], [3766, 1234]],
+          [[4275, 725], [4201, 799], [751, 4249], [746, 4254]]
+        ],
+        [
+          [[3741, 1259], [4994, 6], [2515, 2485], [1870, 3130]],
+          [[4997, 3], [3730, 1270], [1237, 3763], [2558, 2442]],
+          [[2899, 2101], [1302, 3698], [3949, 1051], [4995, 5]],
+          [[1850, 3150], [2909, 2091], [4999, 1], [3721, 1279]],
+          [[4248, 752], [4371, 629], [721, 4279], [769, 4231]]
+        ],
+        [
+          [[3707, 1293], [4992, 8], [2546, 2454], [1299, 3701]],
+          [[4996, 4], [3792, 1208], [1292, 3708], [2540, 2460]],
+          [[2495, 2505], [1323, 3677], [3768, 1232], [4994, 6]],
+          [[1245, 3755], [2499, 2501], [4995, 5], [3774, 1226]],
+          [[4260, 740], [4292, 708], [774, 4226], [807, 4193]]
+        ],
+        [
+          [[3748, 1252], [4997, 3], [2557, 2443], [1246, 3754]],
+          [[4997, 3], [3760, 1240], [1300, 3700], [2588, 2412]],
+          [[2520, 2480], [1295, 3705], [3711, 1289], [4996, 4]],
+          [[1295, 3705], [2489, 2511], [4996, 4], [3758, 1242]],
+          [[4264, 736], [4279, 721], [737, 4263], [786, 4214]]
+        ],
+        [
+          [[3748, 1252], [4999, 1], [2516, 2484], [1263, 3737]],
+          [[4993, 7], [3768, 1232], [1250, 3750], [2483, 2517]],
+          [[2536, 2464], [1299, 3701], [3731, 1269], [4997, 3]],
+          [[1568, 3432], [2536, 2464], [4993, 7], [3717, 1283]],
+          [[4261, 739], [4347, 653], [1444, 3556], [767, 4233]]
+        ],
+        [
+          [[3791, 1209], [4996, 4], [2536, 2464], [1236, 3764]],
+          [[4993, 7], [3712, 1288], [1213, 3787], [2552, 2448]],
+          [[2556, 2444], [1286, 3714], [3741, 1259], [4997, 3]],
+          [[1287, 3713], [2557, 2443], [4993, 7], [3712, 1288]],
+          [[4279, 721], [4276, 724], [722, 4278], [823, 4177]]
+        ]
+      ],
+      "shots_per_circuit": 1000,
+      "repetitions_per_setting_job": 5,
+      "shot_timestamps_available": false,
+      "settings_from": "Each count row, not the incomplete job list",
+      "evidence_type": "hardware_counts"
+    }
+  },
+  "selection": "Nairobi 2022 angle scan + Nairobi 2023 Viviani; Aria is a drift stress control",
+  "cross_acquisition_calibration_shared": false
+}

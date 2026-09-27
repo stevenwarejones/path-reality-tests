@@ -20,9 +20,10 @@ jobs:
       - name: Install pinned dependencies
         run: python -m pip install -r studies/born-rule-identifiability/requirements.txt
       - name: Fetch and verify external originals
-        run: python studies/born-rule-identifiability/fetch_data.py --cache "$RUNNER_TEMP/born-sources" --portfolio
+        run: python studies/born-rule-identifiability/fetch_data.py --cache "$RUNNER_TEMP/born-sources" --portfolio --tables
       - name: Reproduce all source audits and derived findings
         run: |
           python studies/born-rule-identifiability/analyze.py --cache "$RUNNER_TEMP/born-sources" --check
           python studies/born-rule-identifiability/combinations.py --cache "$RUNNER_TEMP/born-sources" --check
+          python studies/born-rule-identifiability/joint_tables.py --cache "$RUNNER_TEMP/born-sources" --check
           git diff --exit-code

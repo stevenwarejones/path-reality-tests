@@ -1,9 +1,16 @@
-# Born-rule identifiability against optical imperfections
+# Born-rule identifiability across measured datasets
 
-**Limited result; draft research.** The expanded search now has a stronger
-single-qubit result: one ordinary control-axis warp exactly mimics a normalized
-probability deformation at every integer gate depth. See the
-[main combination report](results/combination-report.md).
+**Main measured result:** the December 2022 Nairobi preparation scan and October
+2023 Viviani acquisition supply different constraints on a common probability
+deformation. Both full mean tables also admit explicit ordinary qutrit models
+with small preparation-dependent leakage. No Born-rule violation is identified.
+See the [measured joint report](results/joint-table-report.md) and
+[observation models, proofs and prior-art comparison](joint-tables.md).
+
+The earlier [rotation/portfolio report](results/combination-report.md) remains a
+secondary feasibility result: its exact common angle warp explains why combining
+quarter-turn depths cannot identify the deformation. The new measured combination
+replaces that uninformative pairing as the main analysis.
 
 The optical runner-up is also complete: The waveguide archive's nonzero Sorkin means
 admit a specified ordinary optical model and an indistinguishable additive
@@ -31,6 +38,10 @@ python studies/born-rule-identifiability/fetch_data.py --cache /tmp/born-rule-so
 python studies/born-rule-identifiability/analyze.py --cache /tmp/born-rule-sources --check
 python studies/born-rule-identifiability/fetch_data.py --cache /tmp/born-rule-sources --portfolio
 python studies/born-rule-identifiability/combinations.py --cache /tmp/born-rule-sources --check
+python studies/born-rule-identifiability/fetch_data.py --cache /tmp/born-rule-sources --tables
+python studies/born-rule-identifiability/joint_tables.py --cache /tmp/born-rule-sources --check
+# Refit the nonconvex models and rerun count simulations (several minutes):
+python studies/born-rule-identifiability/joint_tables.py --cache /tmp/born-rule-sources --refit --output-dir /tmp/born-table-refit
 python -m unittest discover -s tests -p 'test_born_rule_*.py' -v
 ```
 
@@ -46,3 +57,8 @@ processing, absent gain/response calibration records, unmeasured leakage phases,
 and no independently calibrated antipodal exposure. Published calibration
 statements are not numerical calibration records. No source author was contacted.
 The conditional optical result does not warrant an elementary-only Lean PR.
+
+The table `--check` path verifies saved physical constructions, analytic bounds,
+source reduction and report. It does not claim optimizer identity. `--refit`
+repeats the full exploratory optimization; different equally feasible nuisance
+parameters need not match bit-for-bit. All probability predictions are reviewable.

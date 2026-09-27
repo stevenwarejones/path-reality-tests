@@ -19,3 +19,10 @@ Timon Schapeler and Tim Bartley, [Zenodo 18483031](https://zenodo.org/records/18
 CC-BY-4.0 (PNR acquisition also credits Fabian Schlue). Selected files are pinned
 in [portfolio-manifest.json](portfolio-manifest.json). Derived counts, inventories
 and reports retain this attribution; original scripts/event arrays stay external.
+
+## Measured preparation–measurement combination
+
+See the [audited table inventory](joint-tables.md#source-audit-and-experimental-bridge),
+[immutable table manifest](table-manifest.json), and [job-cell reduction](results/table-audit.json).
+The 2022 and 2023 Nairobi records have independent apparatus parameters. The Aria
+record is a measured drift control. No raw files are redistributed.

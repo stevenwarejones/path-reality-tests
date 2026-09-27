@@ -32,3 +32,12 @@ Expanded primary source: Białecki, Rybotycki, Tworzydło and Bednorz,
 including circuit, repeated-gate and control-error discussion was inspected.
 The explicit deformation/axis-warp pair here does not claim that their narrower
 waveform-error model fits every measured residual.
+
+## Measured-table extension
+
+The [claim-to-prior-art table](joint-tables.md#prior-art-and-precise-delta) compares
+the dimension-witness papers, leakage witness and GST review at the level of
+assumptions. The implemented delta is a shared-theta analysis of two distinct
+measured geometries, with explicit ordinary qutrit constructions and uncertainty
+boundaries. Rank witnesses, higher harmonics and known published anomalies are
+not claimed as discoveries. Literature priority remains unestablished.

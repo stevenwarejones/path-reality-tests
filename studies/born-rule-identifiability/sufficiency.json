@@ -1,10 +1,37 @@
 {
   "integrity": "three originals checked against archive MD5 and pinned SHA256",
   "reproduction": "Sorkin ratios agree at reported precision; Peres differences around .0001 unresolved",
-  "available": ["repeated eight-setting intensities", "acquisition ordering and time", "published cycle cuts", "within-cycle covariance"],
-  "missing": ["independent gain/response calibration records", "coherent leakage phases", "validated nuisance bounds", "controlled antipodal exposure", "complete alternative probability-theory bridge"],
+  "available": [
+    "repeated eight-setting intensities",
+    "acquisition ordering and time",
+    "published cycle cuts",
+    "within-cycle covariance"
+  ],
+  "missing": [
+    "independent gain/response calibration records",
+    "coherent leakage phases",
+    "validated nuisance bounds",
+    "controlled antipodal exposure",
+    "complete alternative probability-theory bridge"
+  ],
   "measured_mean_table_ambiguity": true,
   "complete_temporal_likelihood_fit": false,
   "formal_companion": "not opened; elementary conditional algebra alone insufficient",
-  "next_optical_measurement": "calibrated antipodal all-open phase exposure"
+  "next_optical_measurement": "calibrated antipodal all-open phase exposure",
+  "measured_table_extension": {
+    "distinct_acquisitions": [
+      "Nairobi preparation scan 2022-12",
+      "Nairobi Viviani 2023-10"
+    ],
+    "result": "full mean-table and job-dependent ordinary qutrit compatibility; restricted shared-theta profiles",
+    "certified_global_statement": "centered-rank lower bound on distance to any physical qubit table, conditional independent-shot uncertainty bound",
+    "not_claimed": [
+      "global theta exclusion",
+      "calibration transfer",
+      "validated gate-level dynamics",
+      "independence inferred from shot count",
+      "new physics or literature priority"
+    ],
+    "entrypoint": "joint-tables.md"
+  }
 }

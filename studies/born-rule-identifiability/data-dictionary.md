@@ -28,3 +28,14 @@ and coefficients (−1,1,1,−1,1,−1,−1,1). κ is mean(I3)/mean(sum absolute
 interference), as paper B.3, not mean of ratios. Covariance stays at cycle level;
 HAC retains original cycle gaps. No per-setting renormalization, photon-trial
 interpretation, inferred V-to-W gain or clipping of invalid denominators is used.
+
+## Measured table extension
+
+`table-audit.json` stores integer count pairs `[0,1]`, indexed by job, preparation,
+measurement and outcome. Scan has 9 preparations, Viviani and the Aria control 5;
+all have 4 measurements. Explicit job indices preserve the missing scan job 10.
+`joint-tables.json` stores physical parameters, predictions, residuals, spectral
+bounds, frozen-job results and count simulations. Angles are radians; probabilities,
+contrasts and leakage fractions are dimensionless. `theta` is universal only in
+the single-system family in [joint-tables.md](joint-tables.md). `leakage_cap` is
+a sensitivity setting, never an observed calibration.

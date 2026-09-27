@@ -43,3 +43,8 @@ processed propagator means do not provide absent joint acquisition covariance.
 None supplies a valid shared θ for the optical diagnostic. Same-apparatus
 calibration may be relevant if its original settings, range and uncertainty
 are documented; similar equipment in another laboratory does not share nuisances.
+
+The [measured-table theory extension](joint-tables.md) gives the complete
+antipodal-ensemble observation map, the global finite-design rank distinction,
+its ensemble limitation, and explicit ordinary qutrit competitors. Only theta
+is shared between the two measured acquisitions.

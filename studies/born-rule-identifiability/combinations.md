@@ -1,3 +1,8 @@
+> Main update: the [measured scan–Viviani combination](joint-tables.md) and
+> [generated joint report](results/joint-table-report.md) supersede the prospective
+> quarter-turn extension as the principal candidate. The failed pairings below
+> are retained to document discovery and scope.
+
 # Expanded combination search and explicit bridges
 
 Retrospective search 2026-09-26. Starting datasets were not a closed list.

@@ -71,6 +71,7 @@ jobs:
         run: |
           python studies/born-rule-identifiability/analyze.py --check
           python studies/born-rule-identifiability/combinations.py --check
+          python studies/born-rule-identifiability/joint_tables.py --check
           git diff --exit-code
       - name: Confirm original inputs remain unchanged
         run: |

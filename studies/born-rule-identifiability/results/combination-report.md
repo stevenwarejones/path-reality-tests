@@ -1,4 +1,6 @@
-# Expanded dataset-combination findings
+# Expanded dataset-combination feasibility (retained secondary analysis)
+
+The [measured scan–Viviani report](joint-table-report.md) is now the main joint analysis. The failed pairings and prospective checks below are retained.
 
 Main result: a normalized single-qubit probability deformation is exactly indistinguishable from one ordinary control-axis warp throughout the audited integer gate-depth circuit family. Combining depths cannot identify it. A complementary-preparation witness can separate the pair ideally, but contrast/calibration uncertainty removes that prospective gain. No measured Born-rule exclusion is obtained. The waveguide runner-up supplies a separate exact optical ambiguity and phase-cycling design.
 
@@ -6,9 +8,9 @@ Main result: a normalized single-qubit probability deformation is exactly indist
 
 | Archive | Evidence | Backend | Jobs | Circuit rows | Largest first-harmonic residual |
 |---|---|---|---:|---:|---:|
+| lagos_bench | observed | ibm_lagos | 63 | 18396 | not mapped |
 | lima1-5 | observed | ibmq_lima | 290 | 29000 | 0.0016146 |
 | lima1-5s | simulation | qasm_simulator | 290 | 29000 | 0.0002546 |
-| lagos_bench | observed | ibm_lagos | 63 | 18396 | not mapped |
 
 Hardware residuals are descriptive, with job-level errors in [portfolio-audit.json](portfolio-audit.json). They are not a theta fit or discovery significance. The simulator is not independent hardware evidence. Missing benchmark gate labels are not inferred from order.
 
@@ -25,9 +27,9 @@ For fθ(p)=p+θp(1−p)(2p−1), hθ(x)=2fθ((1+x)/2)−1, choose cos(gθ(φ))=h
 
 | θ | Largest numerical equality error over checked depths | Ideal complementary squared radius |
 |---:|---:|---:|
-| -0.1 | 2.2e-16 | 0.9506250 |
-| 0.01 | 2.2e-16 | 1.0050063 |
-| 0.1 | 2.2e-16 | 1.0506250 |
+| -0.1 | <1e-12 | 0.9506250 |
+| 0.01 | <1e-12 | 1.0050063 |
+| 0.1 | <1e-12 | 1.0506250 |
 
 ## Raw-count feasibility and removal
 
