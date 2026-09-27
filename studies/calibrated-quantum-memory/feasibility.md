@@ -1,11 +1,23 @@
 # Feasibility gate: calibrated environmental memory
 
-Decision (2026-09-27): **narrow to an acquisition audit and a prospective,
-calibration-robust certificate. The empirical mission remains incomplete.**
-Repository base inspected: `db1a02dcab5cc12107cc86fdb371dfba95353cc2`.
-No independent matched causal-break calibration has been verified in the
-sources inspected below. This is a bounded search result, not an impossibility
-theorem or a refutation of the original experiments.
+Decision (2026-09-27, third calculation): **archive the search for a positive exclusion within
+the current IBM interval region; retain the draft as a scoped physical
+identifiability result. The empirical mission remains incomplete.**
+The [new calculation](ibm-identifiability.md) verifies full classical and
+quantum models for every selected IBM cell under two conditional mappings.
+Aggregate likelihood residuals remain substantial, so stronger statistical
+regions and more general delay-dependent classical fits are unresolved.
+No independent matched causal-break calibration has been verified. This is
+not a general impossibility theorem or a refutation of the original experiment.
+The prior acquisition search below is retained as history, not expanded into
+another terminal-QPT inventory.
+
+| Route | Decision and reason |
+|---|---|
+| Positive claim from this simultaneous cell box | Archive: explicit physical classical points satisfy every constraint. |
+| Shared-instrument identifiability | Completed at the declared-region level: exact full-record pair, fixed-point boundary, source deletions and separating probe. No aggregate fit or broad novelty claim. |
+| Stronger statistical NMN analysis | Unresolved: requires a suitable region and delay-dependent models; local optimizer failures cannot settle it. |
+| New empirical architecture | Reopen only with actual intermediate intervention records and usable control constraints; adjacent terminal calibration/QPT is insufficient. No better qualifying dataset was verified in this update. |
 
 ## Target and proposed measurement combination
 
@@ -31,8 +43,10 @@ For the intended general experiment, shared instruments \(\mathcal I_{b|y}\)
 and a process \(W_j\) generate probabilities through the Choi link product
 \(p_j(b,c|a,y,z)=W_j\star\rho_a\star J(\mathcal I_{b|y})\star E_{c|z}\),
 with the link product contracting matched input/output wires and its partial
-transposes fixed by a single Choi convention. This general nonlinear problem
-is not implemented here. Calibration probabilities constrain these same maps through
+transposes fixed by a single Choi convention. The unrestricted nonlinear problem
+is not solved here. A shared-instrument physical subfamily is now implemented
+and independently certified in the IBM report; identity delay processes are
+a witness choice, not a restriction of the full null. Calibration probabilities constrain these same maps through
 trusted input states and output effects. Different delays have separate
 processes; no stationary generator is imposed. Device identity and matching
 times are required evidence, not inferred from similar fidelities.
@@ -44,7 +58,8 @@ circuits. Under this mapping and independent trials within each circuit, a
 simultaneous Hoeffding region gives a **5.7844 percentage-point minimum
 worst-case marginal discrepancy** for UQ from any shared past-marginal model.
 IBM's nine settings give zero lower bounds with this conservative diagnostic.
-Zero does not establish compatibility. This is a process/instrument stability
+Zero alone does not establish compatibility; the later IBM analysis
+constructs physical points in a declared exact-binomial cell region. This is a process/instrument stability
 and record-semantics gate, not a quantum-memory witness. The original job
 records and regrouping implementation are not present, so the interpretation
 remains conditional. See [the report](README.md).
@@ -96,6 +111,25 @@ NMN, whose operations differ and whose calibration is missing.
    therefore does not implement this certificate. No claim is made about every
    file in that archive. It is an independent comparison, not borrowed calibration.
 
+## Bounded intervention-architecture check
+
+A short fallback search considered actual intermediate interventions, rather
+than more terminal QPT. The ranking below is for further acquisition checking,
+not a claim that any candidate already supplies a usable joint dataset.
+
+| Rank / architecture | Multi-time intervention and records | Flagged instrument / matched controls | Boundary and complementarity | Decision |
+|---|---|---|---|---|
+| 1. Guo et al., [photonic common-cause process](https://arxiv.org/abs/2003.14045) | Experimental instrument-specific memory and process recovery; intermediate operation choice is part of the reported experiment. Public raw outcome tables were not verified in this bounded check. | An independent finite-count region for outcome probabilities and postmeasurement states, matched to SPAM and epoch, was not verified. | A distinct photonic architecture; require explicit surviving optical modes, heralds and registers. Which measured family breaks instrument/process ambiguity remains unresolved. | Most relevant next acquisition check; do not promote the paper's reconstructed process to raw calibration. |
+| 2. Gong et al., [five-qubit temporal correlations](https://doi.org/10.1038/s41534-020-00329-3) | Intermediate reset/probe construction and final postselected tomography; paper links [Figshare 12715493](https://figshare.com/articles/dataset/12715493). Linked data were not successfully retrieved. | No matched independent flagged-reset characterization was verified. | Probe ancillas, postselection and controller records must be explicit; final probe correlations do not themselves certify the reset's error. | Potentially useful intervention architecture, blocked at record verification. |
+| 3. Gosling et al., [fluxonium/TLS quantum-jump monitoring](https://arxiv.org/html/2603.11889v1) | Stroboscopic readout every 6 microseconds; [Zenodo 21908500](https://zenodo.org/records/21908500) lists a trace archive, analysis notebook and Solomon-equation code. The 213.8 MB trace archive was not downloaded. | Readout time series and IQ plot are reported; no complete instrument-state/SPAM confidence region was established here. | The paper explicitly finds a semiclassical population-rate model sufficient; no qubit manipulations provide independent coherence probes. | Archive for this quantum-environmental-memory target. It is useful evidence of memory, not the needed distinction from classical environmental records. |
+
+No author was contacted and no cross-device calibration was borrowed. This
+check does not establish that the first two archives lack the required files;
+it records the limits of inspection. Neither becomes a substitute empirical
+result for the IBM calculation. A pivot should proceed only after the required
+records are actually recovered and a preliminary full-record feasibility test
+shows that the new operations constrain the relevant ambiguity.
+
 ## What would reopen the empirical gate?
 
 The [exact acquisition specification](missing-acquisition.md) now freezes a
@@ -115,5 +149,7 @@ the prospective theorem; the two numbers must not be compared as if identical.
 
 There is no empirical null exclusion, no verified empirical combination gain,
 and no claim of novelty for the prospective bound. Missing files are not an
-identifiability theorem. The exact restricted ambiguity in [theory](theory.md)
-is a constructive mathematical example and is explicitly not fitted to NMN.
+identifiability theorem. The earlier restricted ambiguity in [theory](theory.md) is synthetic.
+The later [IBM ambiguity](ibm-identifiability.md) is fitted to all selected
+measured counts, but only certifies membership in its declared interval region;
+its substantial aggregate residuals prevent a stronger empirical claim.

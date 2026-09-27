@@ -30,6 +30,8 @@ jobs:
         run: python studies/calibrated-quantum-memory/certificate.py --check
       - name: Retrieve and verify pinned NMN counts
         run: python studies/calibrated-quantum-memory/audit.py --source-dir "$RUNNER_TEMP/nmn" --download --check
+      - name: Verify exact IBM physical models and every measured count constraint
+        run: python studies/calibrated-quantum-memory/identifiability.py --source-dir "$RUNNER_TEMP/nmn" --check
       - name: Reconstruct measured calibration and acquisition schemas
         run: python studies/calibrated-quantum-memory/acquisition_audit.py --source-root "$RUNNER_TEMP/acquisitions" --nmn-dir "$RUNNER_TEMP/nmn" --download --check
       - name: Confirm tracked files remain unchanged

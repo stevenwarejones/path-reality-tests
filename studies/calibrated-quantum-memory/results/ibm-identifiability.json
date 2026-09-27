@@ -1,0 +1,222 @@
+{
+  "alpha": 0.05,
+  "empirical_quantum_memory_excluded_or_certified": false,
+  "first_bit_zero_branch": "Same certified models by opposite-repreparation relabeling; all constraints permute.",
+  "interpretation": "A shared-instrument classical point remains; no positive joint exclusion over the mapping union.",
+  "kind": "measured_conditional_full_record_identifiability_certificate",
+  "mapping_historical_provenance_verified": false,
+  "reports": [
+    {
+      "aggregate_goodness_of_fit_not_certified": true,
+      "all_binomial_tails_certified": true,
+      "boundary_decimal": 0.0030002048211392337,
+      "cells": 11664,
+      "exact_classical_cp_tp": true,
+      "exact_probability_identity": true,
+      "exact_quantum_instrument_cp_tp": true,
+      "exact_table4_diagnostic": {
+        "assumed_exact_assignment_ceiling": 0.976,
+        "binomial_upper_tail_bound": "1.0823015947796333326485272579804957955008884010325E-33",
+        "count": 7948,
+        "delay": "28.444,21.333",
+        "interpretation": "Conditional forward-model consistency failure; not a quantum-memory exclusion.",
+        "label": "zp,z,zp,z",
+        "outcome": "00",
+        "rejects_fixed_forward_assignment_point": true,
+        "shots": 8000
+      },
+      "fixed_classical_instrument_memory_weight_boundary": [
+        91140275404438241414812992791,
+        30378017781409531687918864671855
+      ],
+      "interval_slack_is_display_only": true,
+      "isolated_instrument_probe": {
+        "half_diamond_upper": 0.003,
+        "label": "zp,z,zm,z",
+        "positive_difference_event": [
+          "00",
+          "10"
+        ],
+        "shots_per_candidate_for_two_radius_separation_at_95_percent": 1008931,
+        "total_variation": 0.002947284929789368,
+        "total_variation_exact": [
+          117537723,
+          39880000000
+        ]
+      },
+      "mapping": "regroup_first_1",
+      "memory_weight": [
+        3,
+        1000
+      ],
+      "minimum_certified_tail_to_threshold_ratio": 1.122073901,
+      "multinomial_deviance_to_saturated": 17570.907529,
+      "outcome": "physical_classical_and_quantum_models_certified",
+      "per_run": [
+        {
+          "delay": "21.333,21.333",
+          "minimum_interval_slack": 0.000373783414
+        },
+        {
+          "delay": "21.333,24.889",
+          "minimum_interval_slack": 0.000373783224
+        },
+        {
+          "delay": "21.333,28.444",
+          "minimum_interval_slack": 0.000373783473
+        },
+        {
+          "delay": "24.889,21.333",
+          "minimum_interval_slack": 0.000641332774
+        },
+        {
+          "delay": "24.889,24.889",
+          "minimum_interval_slack": 0.000417981956
+        },
+        {
+          "delay": "24.889,28.444",
+          "minimum_interval_slack": 0.000561911369
+        },
+        {
+          "delay": "28.444,21.333",
+          "minimum_interval_slack": 0.000605693414
+        },
+        {
+          "delay": "28.444,24.889",
+          "minimum_interval_slack": 0.000433479077
+        },
+        {
+          "delay": "28.444,28.444",
+          "minimum_interval_slack": 0.000373783414
+        }
+      ],
+      "probability_numerators_sha256": "949622755ed36402293bab9505009ef3f274e66303657376c0d1ed015e948fe0",
+      "quantum_partial_transpose_witness_expectation": "-3/8000",
+      "saturated_multinomial_dimension": 8748,
+      "shared_first_effects_across_repreparations": true,
+      "shots_per_row_max": 8000,
+      "shots_per_row_min": 8000,
+      "source_deletion": {
+        "retain_x_y_only": {
+          "cells": 7776,
+          "confidence_budget_cells": 11664,
+          "minimum_interval_slack": 0.000477505739,
+          "same_complete_physical_models_fit": true
+        },
+        "retain_z_only": {
+          "cells": 3888,
+          "confidence_budget_cells": 11664,
+          "minimum_interval_slack": 0.000373783224,
+          "same_complete_physical_models_fit": true
+        }
+      },
+      "unconstrained_shared_row_deviance": 10526.806014
+    },
+    {
+      "aggregate_goodness_of_fit_not_certified": true,
+      "all_binomial_tails_certified": true,
+      "boundary_decimal": 0.0030002038951161274,
+      "cells": 11664,
+      "exact_classical_cp_tp": true,
+      "exact_probability_identity": true,
+      "exact_quantum_instrument_cp_tp": true,
+      "exact_table4_diagnostic": {
+        "assumed_exact_assignment_ceiling": 0.976,
+        "binomial_upper_tail_bound": "4.1667865247435549754248306499882993165801471633816E-34",
+        "count": 7928,
+        "delay": "21.333,28.444",
+        "interpretation": "Conditional forward-model consistency failure; not a quantum-memory exclusion.",
+        "label": "zp,z,zp,z",
+        "outcome": "00",
+        "rejects_fixed_forward_assignment_point": true,
+        "shots": 7979
+      },
+      "fixed_classical_instrument_memory_weight_boundary": [
+        192677479633149771632541677530,
+        64221461730250802919142704094787
+      ],
+      "interval_slack_is_display_only": true,
+      "isolated_instrument_probe": {
+        "half_diamond_upper": 0.003,
+        "label": "zm,y,zp,z",
+        "positive_difference_event": [
+          "01",
+          "11"
+        ],
+        "shots_per_candidate_for_two_radius_separation_at_95_percent": 989268,
+        "total_variation": 0.0029764315727181545,
+        "total_variation_exact": [
+          1483751139,
+          498500000000
+        ]
+      },
+      "mapping": "literal_rows",
+      "memory_weight": [
+        3,
+        1000
+      ],
+      "minimum_certified_tail_to_threshold_ratio": 1.0204385958,
+      "multinomial_deviance_to_saturated": 16409.187968,
+      "outcome": "physical_classical_and_quantum_models_certified",
+      "per_run": [
+        {
+          "delay": "21.333,21.333",
+          "minimum_interval_slack": 0.000374024985
+        },
+        {
+          "delay": "21.333,24.889",
+          "minimum_interval_slack": 0.000374024277
+        },
+        {
+          "delay": "21.333,28.444",
+          "minimum_interval_slack": 0.000374024737
+        },
+        {
+          "delay": "24.889,21.333",
+          "minimum_interval_slack": 0.000644655749
+        },
+        {
+          "delay": "24.889,24.889",
+          "minimum_interval_slack": 0.000374024773
+        },
+        {
+          "delay": "24.889,28.444",
+          "minimum_interval_slack": 0.000596649995
+        },
+        {
+          "delay": "28.444,21.333",
+          "minimum_interval_slack": 0.000633324953
+        },
+        {
+          "delay": "28.444,24.889",
+          "minimum_interval_slack": 0.000571110102
+        },
+        {
+          "delay": "28.444,28.444",
+          "minimum_interval_slack": 0.000381712778
+        }
+      ],
+      "probability_numerators_sha256": "048fce946eab021fdcd46c9f646556f6fe4638abc007881a5ddf61c3f4df21e8",
+      "quantum_partial_transpose_witness_expectation": "-3/8000",
+      "saturated_multinomial_dimension": 8748,
+      "shared_first_effects_across_repreparations": true,
+      "shots_per_row_max": 8195,
+      "shots_per_row_min": 7805,
+      "source_deletion": {
+        "retain_x_y_only": {
+          "cells": 7776,
+          "confidence_budget_cells": 11664,
+          "minimum_interval_slack": 0.000481714574,
+          "same_complete_physical_models_fit": true
+        },
+        "retain_z_only": {
+          "cells": 3888,
+          "confidence_budget_cells": 11664,
+          "minimum_interval_slack": 0.000374024277,
+          "same_complete_physical_models_fit": true
+        }
+      },
+      "unconstrained_shared_row_deviance": 9648.072396
+    }
+  ]
+}

@@ -1,9 +1,11 @@
 # Calibrated quantum environmental memory
 
 **Status: empirical feasibility gate not passed.** This study does not establish
-quantum environmental memory from existing matched datasets. It supplies a
-reproducible measured-data diagnostic, an exact restricted ambiguity, and a
-prospective certificate tested on explicitly synthetic records.
+quantum environmental memory from existing matched datasets. It supplies
+measured-data diagnostics, explicit IBM-compatible classical/quantum models
+within a declared simultaneous interval region, and a prospective certificate
+tested on explicitly synthetic records. The fitted models have substantial
+aggregate residuals; an adequate joint likelihood fit is not certified.
 
 The central question is whether dynamics require more quantum information in
 the environment than a calibrated intervention can leave in the system.
@@ -11,6 +13,24 @@ Classical environmental memory may still accompany quantum system evolution.
 The [feasibility gate](feasibility.md) records the candidate acquisitions,
 matching evidence, alternatives checked, and missing inputs. The
 [theory](theory.md) states and proves the narrower implemented result.
+
+## Shared-instrument identifiability result
+
+The [IBM report](ibm-identifiability.md) now gives two full physical models
+with identical flagged probabilities for all 11,664 selected IBM count cells,
+under both inferred regrouping and conditional literal-row interpretations.
+One has no environmental memory; the other has a process with certified
+quantum temporal entanglement. Each uses shared instruments across all nine
+delays, with first measurement effects shared across re-preparation labels.
+Exact rational checks prove physicality; directed-rounding binomial tails
+verify every cell constraint independently of the discovery optimizer.
+
+This closes the search for a positive exclusion within the **current interval region**.
+It does not settle a stronger likelihood analysis: aggregate residuals are
+substantial. The report gives an exact fixed-model ambiguity boundary and an
+isolated-instrument probe whose predicted probabilities differ by about 0.003.
+Those are fitted-model predictions, not additional measured calibration.
+The empirical research mission remains incomplete.
 
 ## Follow-up: measured calibration and acquisition semantics
 
@@ -30,8 +50,9 @@ historical transformation remains unresolved. A new
 retains outcomes and permits feed-forward. The
 [missing-acquisition specification](missing-acquisition.md) gives exact
 settings, counts, metadata, timing controls and the completion gate.
-No empirical margin, joint quantum fit, or complete source-only witness is
-claimed. No further synthetic demonstration was added in this follow-up.
+That acquisition audit did not establish an empirical exclusion. The later
+IBM result above supplies physical compatibility points with explicit
+statistical limitations. No further synthetic count demonstration was added.
 
 ## Measured acquisition result
 
@@ -91,8 +112,9 @@ incorrect record semantics. It excludes that shared description for both
 classical and quantum processes; it is not backwards causation or a witness
 of quantum memory. A fixed readout-error map shared across the contexts does
 not by itself remove this discrepancy. Each IBM setting has a zero lower
-bound with this conservative diagnostic, which does not prove a physical
-model fits all its observations.
+bound with this conservative diagnostic, which by itself does not prove
+physical compatibility. The later
+IBM calculation above supplies explicit points in a different cell-wise region.
 
 The bound concerns acquisition context dependence and is **not** the
 intervention diamond-distance epsilon in the prospective theorem below.
@@ -177,8 +199,8 @@ instruments. Leakage and intervention–environment coupling are not covered.
 
 See the [claim-by-claim matrix](prior-art.md). This work does not claim novelty
 for quantum-memory witnesses, self-consistent tomography, the six-state EB
-benchmark, or diamond-norm robustness. Its bounded contribution is the pinned
-count/regrouping audit and the explicit executable prospective bridge,
+benchmark, or diamond-norm robustness. Its bounded contribution includes the pinned
+count/regrouping audit, the scoped IBM physical ambiguity, and the explicit executable prospective bridge,
 source-removal constructions, and failure controls. It has not achieved the
 requested new empirical certificate or established a publication-level result.
 
@@ -191,6 +213,7 @@ python -m pip install -r studies/calibrated-quantum-memory/requirements.txt
 python -m unittest discover -s tests -p 'test_calibrated_quantum_memory.py' -v
 python studies/calibrated-quantum-memory/certificate.py --check
 python studies/calibrated-quantum-memory/audit.py --source-dir /tmp/calibrated-memory-nmn --download --check
+python studies/calibrated-quantum-memory/identifiability.py --source-dir /tmp/calibrated-memory-nmn --check
 python studies/calibrated-quantum-memory/acquisition_audit.py --source-root /tmp/calibrated-memory-sources --nmn-dir /tmp/calibrated-memory-nmn --download --check
 python scripts/check_repository.py
 ```

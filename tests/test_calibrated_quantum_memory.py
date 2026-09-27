@@ -1,4 +1,5 @@
 """Physical, inference and acquisition-failure tests; no network or source data."""
+import copy
 import importlib.util
 import itertools
 import json
@@ -22,6 +23,7 @@ def load(name):
 A = load('audit')
 C = load('certificate')
 S = load('acquisition_audit')
+T = load('identifiability')
 
 
 class CountAuditTests(unittest.TestCase):
@@ -189,6 +191,107 @@ class AcquisitionSemanticsTests(unittest.TestCase):
         self.assertEqual(qm['readout_calibration'][0]['counts'],[[4005,995],[744,4256]])
         self.assertEqual(qm['terminal_dynamics'][0]['parents'],[6047])
         self.assertTrue(all(not row['intermediate_flag_axis_present'] for row in qm['terminal_dynamics']))
+
+
+class IBMIdentifiabilityTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.witnesses=json.loads((STUDY/'results/ibm-instrument-witnesses.json').read_text())['witnesses']
+
+    def test_exact_physicality_sharing_and_fixed_instrument_endpoint(self):
+        from fractions import Fraction
+        for witness in self.witnesses:
+            endpoint=T.check_instruments(witness)
+            self.assertGreater(endpoint,Fraction(3,1000))
+            self.assertLess(endpoint,Fraction(301,100000))
+            bad=copy.deepcopy(witness)
+            beyond=endpoint+Fraction(1,10**10)
+            bad['memory_weight']=[beyond.numerator,beyond.denominator]
+            with self.assertRaises(ValueError):T.check_instruments(bad)
+
+    def test_certificate_mutations_fail_closed(self):
+        mutations=[lambda w:w['choi'][0].pop(),
+                   lambda w:w['choi'].pop(),
+                   lambda w:w['choi'][0][0]['real'].__setitem__(1,123),
+                   lambda w:w['choi'][0][0]['real'].__setitem__(0,-1),
+                   lambda w:w['choi'][0][0]['real'].__setitem__(0,1.5),
+                   lambda w:w['settings'].pop()]
+        for mutation in mutations:
+            bad=copy.deepcopy(self.witnesses[0]);mutation(bad)
+            with self.assertRaises(ValueError):T.check_instruments(bad)
+
+    def test_directed_binomial_membership_interior_endpoints_and_rejection(self):
+        for k,p in [(50,50),(0,1),(100,99)]:
+            self.assertGreaterEqual(T.binomial_membership(100,k,p,100,11664),1)
+        for k,p in [(50,1),(0,99),(100,1)]:
+            with self.assertRaises(ValueError):T.binomial_membership(100,k,p,100,11664)
+
+    def test_independent_kraus_swap_circuit_on_full_operator_basis(self):
+        swap=np.array([[1,0,0,0],[0,0,1,0],[0,1,0,0],[0,0,0,1]])
+        basis=[np.eye(4)[j].reshape(2,2) for j in range(4)]
+        def apply_choi(j,x):
+            return np.einsum('ij,iajb->ab',x,j.reshape(2,2,2,2))
+        for witness in self.witnesses:
+            w=float(T.F(*witness['memory_weight']))
+            for pair in witness['choi']:
+                for block in pair:
+                    re,im=T.arrays(block)
+                    j=(np.asarray(re,float)+1j*np.asarray(im,float))/witness['denominator']
+                    q=np.trace(j).real/2
+                    k=(j-w*q*T.IDENTITY_CHOI)/(1-w)
+                    vals,vecs=np.linalg.eigh(k)
+                    self.assertGreater(vals.min(),0)
+                    kraus=[np.sqrt(vals[i])*vecs[:,i].reshape(2,2).T for i in range(4)]
+                    for x in basis:
+                        joint=swap@np.kron(x,T.I/2)@swap
+                        evolved=sum(np.kron(a,T.I)@joint@np.kron(a.conj().T,T.I) for a in kraus)
+                        returned=swap@evolved@swap
+                        output=np.trace(returned.reshape(2,2,2,2),axis1=1,axis2=3)
+                        direct=sum(a@x@a.conj().T for a in kraus)
+                        np.testing.assert_allclose((1-w)*direct+w*output,apply_choi(j,x),atol=3e-14)
+
+    def test_quantum_comb_normalization_causality_and_temporal_entanglement(self):
+        w=.003
+        phi=np.outer([1,0,0,1],[1,0,0,1])
+        direct=np.kron(phi,phi)
+        bypass=np.zeros((16,16))
+        for i,bits in enumerate(itertools.product(range(2),repeat=4)):
+            for j,other in enumerate(itertools.product(range(2),repeat=4)):
+                a,b,o,c=bits;aa,bb,oo,cc=other
+                bypass[i,j]=phi[2*a+c,2*aa+cc]*(b==bb)*(o==oo)/2
+        comb=(1-w)*direct+w*bypass
+        self.assertGreaterEqual(np.linalg.eigvalsh(comb).min(),-1e-14)
+        self.assertAlmostEqual(np.trace(comb),4)
+        marginal=np.trace(comb.reshape([2]*8),axis1=3,axis2=7).reshape(8,8)
+        prefix=(1-w)*phi+w*np.eye(4)/2
+        np.testing.assert_allclose(marginal,np.kron(prefix,T.I),atol=1e-14)
+        np.testing.assert_allclose(np.trace(prefix.reshape(2,2,2,2),axis1=1,axis2=3),T.I)
+        pt=(comb/4).reshape([2]*8).transpose(4,5,2,3,0,1,6,7).reshape(16,16)
+        v=np.zeros(16);v[1]=1/np.sqrt(2);v[8]=-1/np.sqrt(2)
+        self.assertAlmostEqual(v@pt@v,-w/8)
+
+    def test_probe_and_statistical_scope_are_preserved(self):
+        result=json.loads((STUDY/'results/ibm-identifiability.json').read_text())
+        self.assertFalse(result['empirical_quantum_memory_excluded_or_certified'])
+        for witness,report in zip(self.witnesses,result['reports']):
+            nums,den=T.probability_numerators(witness,sorted(A.LABELS))
+            np.testing.assert_array_equal(nums.sum(axis=1),den)
+            probe=T.isolated_probe(witness,sorted(A.LABELS))
+            self.assertGreater(probe['total_variation'],.0029)
+            self.assertLessEqual(probe['total_variation'],probe['half_diamond_upper'])
+            self.assertEqual(probe,report['isolated_instrument_probe'])
+            self.assertTrue(report['aggregate_goodness_of_fit_not_certified'])
+            self.assertGreater(report['multinomial_deviance_to_saturated'],16000)
+
+    def test_fixed_assignment_ceiling_uses_a_rigorous_tail_upper_bound(self):
+        from decimal import Decimal
+        counts=np.array([[[7948,0,52,0]]])
+        report=T.assignment_ceiling_diagnostic(counts,['zp,z,zp,z'],['example'])
+        self.assertTrue(report['rejects_fixed_forward_assignment_point'])
+        from scipy.stats import binom
+        actual=binom.sf(7947,8000,.976)
+        self.assertGreater(float(Decimal(report['binomial_upper_tail_bound'])),actual)
+        self.assertLess(float(Decimal(report['binomial_upper_tail_bound'])),1e-32)
 
 
 if __name__ == '__main__':
