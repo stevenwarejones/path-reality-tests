@@ -64,6 +64,11 @@ jobs:
         run: python studies/synthetic-timing-shifts/design.py --check
       - name: Reproduce conditional actual-setting timing bounds
         run: python studies/synthetic-timing-shifts/actual.py --check
+      - name: Reproduce timing structure, counterexamples and recovery controls
+        run: |
+          python studies/timing-structure/analyze.py --check
+          python studies/timing-structure/recovery.py --check
+          python studies/timing-structure/plot.py --output-dir "$RUNNER_TEMP/review-artifacts/timing-structure"
       - name: Check NIST causal-audit counts, assumptions and report
         run: |
           python studies/nist-bell-causal-audit/audit.py --check
