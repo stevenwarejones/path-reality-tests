@@ -1,0 +1,994 @@
+{
+  "records": [
+    {
+      "bunch_count": 0,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.8849416,
+          0.98322858
+        ],
+        [
+          0.88606418,
+          0.98340009
+        ],
+        [
+          0.9113819,
+          0.99350855
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.03081839,
+        0.04060374,
+        0.02967172
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 420,
+      "nominal_time_ms": 0.5,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        98,
+        99,
+        96
+      ]
+    },
+    {
+      "bunch_count": 0,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.78172908,
+          0.92666632
+        ],
+        [
+          0.78097984,
+          0.92996451
+        ],
+        [
+          0.79821357,
+          0.93945216
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.04950719,
+        0.07127813,
+        0.04584663
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 400,
+      "nominal_time_ms": 0.714285714286,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        97,
+        91,
+        93
+      ]
+    },
+    {
+      "bunch_count": 1,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.79387041,
+          0.93441256
+        ],
+        [
+          0.705523,
+          0.87835012
+        ],
+        [
+          0.74350003,
+          0.90162723
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.07409086,
+        0.06303694,
+        0.04681777
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 396,
+      "nominal_time_ms": 0.928571428571,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        97,
+        91,
+        96
+      ]
+    },
+    {
+      "bunch_count": 10,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.53720248,
+          0.73788566
+        ],
+        [
+          0.42182036,
+          0.62811016
+        ],
+        [
+          0.47233623,
+          0.67452376
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.16961476,
+        0.09835194,
+        0.11715089
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 398,
+      "nominal_time_ms": 1.142857142857,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        95,
+        97,
+        99
+      ]
+    },
+    {
+      "bunch_count": 17,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.31684941,
+          0.52176785
+        ],
+        [
+          0.31334735,
+          0.51689357
+        ],
+        [
+          0.22421979,
+          0.41920736
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.06883591,
+        0.10087719,
+        0.15822029
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 411,
+      "nominal_time_ms": 1.357142857143,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        96,
+        97,
+        95
+      ]
+    },
+    {
+      "bunch_count": 24,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.11633482,
+          0.28281871
+        ],
+        [
+          0.17809572,
+          0.36350709
+        ],
+        [
+          0.18315051,
+          0.36758397
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.11578947,
+        0.10341834,
+        0.11025502
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 392,
+      "nominal_time_ms": 1.571428571429,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        95,
+        95,
+        97
+      ]
+    },
+    {
+      "bunch_count": 13,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.04377038,
+          0.17051854
+        ],
+        [
+          0.05924063,
+          0.19774082
+        ],
+        [
+          0.02378256,
+          0.13376759
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.13289474,
+        0.11569149,
+        0.19428891
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 404,
+      "nominal_time_ms": 1.785714285714,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        96,
+        95,
+        94
+      ]
+    },
+    {
+      "bunch_count": 6,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.00649145,
+          0.0886181
+        ],
+        [
+          0.00642405,
+          0.08773178
+        ],
+        [
+          0.00642405,
+          0.08773178
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.09138746,
+        0.14078608,
+        0.17525773
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 382,
+      "nominal_time_ms": 2.0,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        96,
+        97,
+        97
+      ]
+    },
+    {
+      "bunch_count": 5,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.01197159,
+          0.10759345
+        ],
+        [
+          0.00264364,
+          0.07633067
+        ],
+        [
+          0.0,
+          0.04015892
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.17391304,
+        0.19323671,
+        0.20024155
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 413,
+      "nominal_time_ms": 2.214285714286,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        92,
+        92,
+        90
+      ]
+    },
+    {
+      "bunch_count": 9,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.01123132,
+          0.10121782
+        ],
+        [
+          0.00258716,
+          0.07475177
+        ],
+        [
+          0.00258716,
+          0.07475177
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.19626574,
+        0.14046895,
+        0.10638298
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 388,
+      "nominal_time_ms": 2.428571428571,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        98,
+        94,
+        94
+      ]
+    },
+    {
+      "bunch_count": 11,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.01197159,
+          0.10759345
+        ],
+        [
+          0.03148622,
+          0.15208752
+        ],
+        [
+          0.02279745,
+          0.12850784
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.17833254,
+        0.16947649,
+        0.14599686
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 391,
+      "nominal_time_ms": 2.642857142857,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        92,
+        91,
+        98
+      ]
+    },
+    {
+      "bunch_count": 11,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.02352839,
+          0.13241274
+        ],
+        [
+          0.0598871,
+          0.19974319
+        ],
+        [
+          0.09732465,
+          0.25400119
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.22665174,
+        0.18676072,
+        0.26924764
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 390,
+      "nominal_time_ms": 2.857142857143,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        95,
+        94,
+        97
+      ]
+    },
+    {
+      "bunch_count": 7,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.09639143,
+          0.25995055
+        ],
+        [
+          0.06191409,
+          0.2060006
+        ],
+        [
+          0.06191409,
+          0.2060006
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.18217338,
+        0.19291819,
+        0.12087912
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 421,
+      "nominal_time_ms": 3.071428571429,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        90,
+        91,
+        91
+      ]
+    },
+    {
+      "bunch_count": 6,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.14554113,
+          0.32422127
+        ],
+        [
+          0.11761949,
+          0.28564633
+        ],
+        [
+          0.04472207,
+          0.17398569
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.19881034,
+        0.21905742,
+        0.26595745
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 415,
+      "nominal_time_ms": 3.285714285714,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        93,
+        94,
+        94
+      ]
+    },
+    {
+      "bunch_count": 4,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.08921326,
+          0.2421973
+        ],
+        [
+          0.04377038,
+          0.17051854
+        ],
+        [
+          0.07574298,
+          0.22487719
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.19222509,
+        0.18205747,
+        0.11391844
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220707/29",
+        "220707/36",
+        "220707/38",
+        "220707/40",
+        "220707/42"
+      ],
+      "many_shots": 396,
+      "nominal_time_ms": 3.5,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220707/50",
+        "220707/31",
+        "220707/52"
+      ],
+      "single_shots": [
+        97,
+        96,
+        94
+      ]
+    },
+    {
+      "bunch_count": 93,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.01832216,
+          0.04065303
+        ],
+        [
+          0.01832216,
+          0.04065303
+        ],
+        [
+          0.01832216,
+          0.04065303
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "independent_input_runs": false,
+      "many_run_ids": [
+        "220702/21",
+        "220702/24",
+        "220702/31"
+      ],
+      "many_shots": 2999,
+      "nominal_time_ms": 2.45,
+      "same_nominal_selected_setting": true,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220702/29",
+        "220702/29",
+        "220702/29"
+      ],
+      "single_shots": [
+        931,
+        931,
+        931
+      ]
+    },
+    {
+      "bunch_count": 14,
+      "center_row_probability_marginal_95_intervals": [
+        [
+          0.01232218,
+          0.06169925
+        ],
+        [
+          0.01804647,
+          0.07297968
+        ],
+        [
+          0.01493772,
+          0.06652973
+        ]
+      ],
+      "empirical_displacement_row_tv": [
+        0.13478261,
+        0.15252846,
+        0.08565031
+      ],
+      "independent_input_runs": true,
+      "many_run_ids": [
+        "220702/35",
+        "220702/37"
+      ],
+      "many_shots": 1202,
+      "nominal_time_ms": 4.65,
+      "same_nominal_selected_setting": false,
+      "single_input_sites": [
+        [
+          24,
+          24
+        ],
+        [
+          25,
+          24
+        ],
+        [
+          26,
+          24
+        ]
+      ],
+      "single_run_ids": [
+        "220702/39",
+        "220702/40",
+        "220702/43"
+      ],
+      "single_shots": [
+        230,
+        230,
+        233
+      ]
+    }
+  ],
+  "selected_date": "2022-07-02",
+  "selected_full_image_support_audit": {
+    "distinct_observed_parity_patterns": 2539,
+    "example_pattern": [
+      [
+        9,
+        13
+      ],
+      [
+        9,
+        14
+      ],
+      [
+        13,
+        15
+      ]
+    ],
+    "example_pattern_count": 1,
+    "prepared_shots": 2999,
+    "quantum_summary_witness_passes_full_image_support": false,
+    "scope": "Rules out this committed inner example as a full-image fit, not all quantum or cluster models.",
+    "shots_in_zero_probability_patterns": 68,
+    "witness_zero_probability_patterns": 68
+  },
+  "source_notebook_sha256": "263981a756b3f10ac81ba74c323d1f1be9475e7935d8c902e89c8c80eaf2443a",
+  "tv_intervals_status": "Exploratory point-TV and one-outcome marginal intervals; not simultaneous transfer guarantees."
+}

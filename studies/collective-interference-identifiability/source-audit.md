@@ -40,7 +40,7 @@ that initial-selected population, not all experimental attempts.
   Those probabilities are free variables inside the measured empty/outside
   mass. Treating all NaNs as physical zero probabilities would be unsound.
 * The NC arrays retain shot ordering, but lack shot timestamps and run IDs.
-  The notebook dates these experiments June 25–July 9, 2022 and specifies
+  The run-map audit dates the selected experiment July 2, 2022 and specifies
   nominal n=3 evolution time 2.46 ms. `3NN.nc` lists the corresponding
   2,999-shot setting at 2.45 ms. We do not use that second packaging as a new
   independent source or infer precision from the discrepancy.
@@ -50,8 +50,9 @@ that initial-selected population, not all experimental attempts.
   prediction uses resampling, parity and a survival normalization; it is
   not an independent measured calibration.
 * The original `inference/fullbunch.py` evaluates distinguishable 2D
-  collision removal by Monte Carlo and bootstrap uncertainty. Our looser
-  row upper bound avoids numerical sampling and is deliberately one-sided.
+  collision removal by Monte Carlo and bootstrap uncertainty. The preserved original
+  row bound avoids numerical sampling. The revision certifies distinct-x 2D
+  bunching directly, also without Monte Carlo.
   We do not claim byte-for-byte reproduction of the original bootstrap runs.
 
 ### Other measurement combinations actually audited
@@ -85,3 +86,15 @@ survey. A consequential new experimental conclusion would require a robust
 transfer calibration, stronger count-level analysis, and comparison with
 existing witnesses on the same records. The small conditional certificate
 alone does not establish a PhD-level advance.
+
+## Revision: matched-control sharing
+
+The hash-checked notebook run maps and all 17 settings in `3NN.nc` and
+`3NN_0.nc`–`3NN_2.nc` are reconstructed by `control_audit.py`. See the
+[explicit sharing table and limitations](revision.md#matched-controls).
+The selected 3NN and 1D images agree exactly after aligning physical x/y
+coordinates; their different array dimensions do not make independent data.
+The old summary quantum witness has zero probability for 68 observed patterns,
+each seen once. It fails the complete parity region. The new smoothed rational
+quantum witness passes every constraint of that region; the old artifact is
+retained only for its original summary and singleton-source claims.

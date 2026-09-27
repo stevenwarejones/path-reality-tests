@@ -77,6 +77,12 @@
     "1D.nc": "e4f5b7ba826e81b7dec81bc46f330444eee87a6d0353a22dd67a62e13c04a881",
     "1D_singles.nc": "72c342bac83696b904b3745197e68e1b61e9762f3f36743455f7d40724a71aeb"
   },
+  "control_members": {
+    "3NN.nc": "12d26cb9c9036dba5b758668d5ff71251f10ed0b52d7e506149ba44ab5fd1440",
+    "3NN_0.nc": "905ff8817d939e0a46e3b640e130837550471b94f6c4b2ac7e2a717dbe050b38",
+    "3NN_1.nc": "53c44debcec6285f806f10f0c429bd55a95336292663d8a0f1e3d83680c09ea2",
+    "3NN_2.nc": "eb276a9403be2ac6617b19f0f22fa5d6499d3b85ecda86bce31609902d14c534"
+  },
   "notebook": {
     "sha256": "263981a756b3f10ac81ba74c323d1f1be9475e7935d8c902e89c8c80eaf2443a",
     "url": "https://zenodo.org/records/10453016/files/2402_mpwc_upload.ipynb?download=1"

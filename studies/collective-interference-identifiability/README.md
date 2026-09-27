@@ -1,105 +1,107 @@
 # What does calibrated three-atom bunching exclude?
 
-**The public atomic records conditionally exclude mixtures of distinguishable
-groups containing at most two atoms. The exclusion is too fragile to claim
-that the released calibration independently establishes the required apparatus
-assumptions.** This is a verified conditional result, not completion of the
-broader apparatus-robust research goal.
+**The selected public atomic records conditionally exclude mixtures of
+orthogonally labelled groups containing at most two atoms.** The revision uses
+2D singleton information and supplies physical models for the joint and both
+source-deleted regions, including every selected three-atom image pattern.
+Independent calibration transfer and a fixed shared channel remain unverified;
+the broader apparatus-robust research goal is **incomplete**.
 
-The combination is **two measurement families in one apparatus**: a singleton
-propagation record and three-atom parity images from Young et al.,
+The two measurement families come from Young et al.,
 [An atomic boson sampler](https://arxiv.org/html/2307.06936v2),
-[Zenodo 10453016](https://zenodo.org/records/10453016).
-The three singleton arrays are shifted copies of the same 931 shots. They do
-not independently establish translation invariance or provide 2,793 trials.
+[Zenodo 10453016](https://zenodo.org/records/10453016): 931 unique singleton
+shots and 2,999 three-atom shots, with 93 collisionless full-row events.
+Three supplied singleton arrays are translated copies of that one record.
 
-| Quantity | Verified result |
+## Decisive results
+
+The final declared simultaneous region includes singleton row and conditional
+cell probabilities, loss/crop tails, all 497,785 possible parity patterns with
+at most three occupied sites in the selected crop, and the bunching event.
+Of those patterns, 2,539 were observed. Exact marginal binomial intervals and
+union bounds give nominal 95% familywise coverage across the declared n=2–5
+family, conditional on IID sampling and the stated physical bridge. This is
+exploratory archive reanalysis, not preregistered confirmation or coverage over
+an arbitrary search of other settings and archives.
+
+| Final expanded-region quantity | Exact-check result |
 |---|---:|
-| Three-atom prepared shots / bunching events | 2,999 / 93 |
-| Three-atom shots with three detected occupied sites | 2,329 |
-| Unique singleton calibration shots | 931 |
-| Simultaneous lower bound on bunching per prepared shot | 0.02364675 |
-| Certified upper bound on distinguishable row coincidence | 0.01166 |
-| Ceiling for the size-two cluster class | 0.02332 |
-| Separation in absolute probability | 0.00032675 |
-| Sum of allowable singleton-transfer TV errors, with other errors zero | **less than 0.000163375** |
-| Lower bound on the defined non-cluster mixture weight, under exact sharing | 0.007005789 |
+| Bunching lower endpoint | 0.023025033926510948 |
+| Distinguishable exact-event upper bound | 0.0112 |
+| Size-two cluster ceiling | 0.0224 |
+| Separation margin | **0.000625033926510948** |
+| Sufficient sum of full-cell transfer-TV allowances, other effects zero | **less than 0.000312516963255474** |
+| Conditional non-cluster mixture-weight lower bound | 0.0139516501453 |
+| Joint quantum model bunching probability | 0.0259974396797 |
+| Higher-source-only cluster model bunching probability | 0.0289752778116 |
 
-The statistical construction allocates a total error budget of 0.05 across
-four inspected particle numbers (2–5), using exact binomial tails and a union
-bound. Coverage requires IID shots within each genuine record and the stated
-measurement model. It does not require independent copies of calibration data.
-The result is exploratory archive reanalysis, not preregistered confirmation.
+| Retained sources | Conclusion for the same declared region and physical assumptions |
+|---|---|
+| Singleton + complete selected three-atom parity record | C2 excluded; a physical identical-boson model satisfies every retained constraint. |
+| Singleton only | The preserved fully distinguishable physical witness reproduces all empirical singleton cell frequencies and belongs to the full singleton region. |
+| Complete selected three-atom record only | A physical fixed-channel pair-plus-singleton model satisfies every retained pattern interval and bunching constraint. Exact translation of its unconstrained channel is still enforced. |
+| Additional controls | No extra dataset is asserted indispensable or used to shrink the selected channel region. |
 
-The exact certificate covers **every probability vector in the declared
-confidence region**, with unobserved crop-tail mass retained. It is not a
-finite model bank, an optimizer's failure to find a counterexample, or a
-bootstrap interval. Four boxes and rational dual bounds suffice; the checker
-uses only Python's standard library and exact integer/fraction arithmetic.
+Thus both selected sources are necessary for this **region-based** exclusion.
+The very sparse full-pattern confidence region is broad: compatibility is not
+a likelihood fit, proof that every other statistic is inconclusive, or a fit
+to the entire multi-setting archive or a specific lattice Hamiltonian.
 
-## What the combination adds, and what remains open
+## What improved and what did not
 
-Singleton images alone cannot constrain the internal distinguishability
-resource: an explicit fully distinguishable physical model reproduces the
-entire empirical singleton image distribution. Its bunching probability is
-0.00462813088179467. Using identical internal states with the same propagation
-gives a physical example with bunching probability in
-[0.0252913383446, 0.0252913383815], inside the declared joint summary region.
-Thus the joint summary region is nonempty, while the size-two-cluster part is
-empty under exact sharing.
+| Analysis design | Distinguishable ceiling | Cluster margin |
+|---|---:|---:|
+| Preserved original row-only certificate | 0.01166 | 0.00032675 |
+| Row-only relaxation using the revised singleton region | 0.0119 | −0.00015325 |
+| 2D exact-event certificate with scalar bunching region | 0.0112 | 0.00124675 |
+| Final 2D certificate with complete parity region | 0.0112 | 0.0006250339265 |
 
-The bunching statistic alone also admits fully distinguishable explanations
-with different propagation. **We have not constructed a model satisfying every
-constraint of the complete higher-particle image distribution after dropping
-calibration.** Consequently this is a certified joint summary exclusion plus
-a full-singleton-source witness, not a proof that both complete sources are
-indispensable. Nor is the compatible quantum example a fit to every
-higher-order output count. These distinctions prevent a coarse ablation from
-being mistaken for complete-source separation.
+These are alternative confidence designs for comparison, not four additional
+simultaneous 95% discoveries. Additional cell categories widen the row
+intervals enough that the revised row-only certificate does not exclude C2.
+Retaining distinct x positions restores the exclusion. Including all higher
+patterns then spends part of the bunching budget. Neither upper bound is
+claimed globally optimal. [revision.md](revision.md) gives the proof,
+allocation, runtime, source-sharing table and discovery history.
 
-The numerical separation allows only 327 extra bunching events per million
-prepared shots from all unmodelled effects combined. Independent calibration
-of spatial transfer, drift, interactions, false positives and preparation
-errors to that level has **not** been established here. Exact translation is a
-particularly strong assumption: the archive's copied calibration arrays do
-not test it. No broad empirical certification, violation of quantum mechanics,
-computational advantage, or consequential novelty is claimed.
+Independent input-site records exist at 2.428571 ms on July 7 and at 4.65 ms
+on July 2, 2022. The selected 2.45 ms record is from July 2. These controls do
+not bound the selected channel without an additional justified dynamical and
+date-transfer model. No measured bound below the sufficient TV allowance has
+been established; no arbitrary interaction or detection error is inserted.
+A fitted apparatus-specific drift explanation and a measured control that
+separates it remain open. The physical null is not every definition of absent
+three-particle interference, entanglement depth or a universal resource.
 
-## Read and reproduce
+## Reproduce
 
-* [Feasibility gate](gate.md): archive choice and exact measurement families.
-* [Theory and assumptions](theory.md): physical class, parity channel, confidence proof and robustness budget.
-* [Source audit and prior art](source-audit.md): dependency/cropping findings and comparison with existing witnesses.
-* [Claim status](claim-status.md): measured, proved, conditional and open claims.
-* [Source manifest](sources.json): pinned URLs, hashes and licensing notes.
-
-Fast offline checks (Python 3.12; no third-party packages):
+Fast offline exact checks use Python's standard library:
 
 ```sh
 python studies/collective-interference-identifiability/certificate.py --check
 python studies/collective-interference-identifiability/witness.py --check
+python studies/collective-interference-identifiability/cell_certificate.py --check
+python studies/collective-interference-identifiability/full_models.py --check
 python -m unittest discover -s tests -p 'test_collective_interference.py' -v
 ```
 
-Full source reconstruction (59 MB download, approximately 630 MB extracted;
-raw data remain outside git):
+Reconstruct the pinned originals and the complete derived histogram:
 
 ```sh
 python -m pip install -r studies/collective-interference-identifiability/requirements.txt
 python studies/collective-interference-identifiability/sources.py --cache /tmp/collective-raw --download --check
+python studies/collective-interference-identifiability/build_full_models.py --cache /tmp/collective-raw --check-source
+python studies/collective-interference-identifiability/control_audit.py --cache /tmp/collective-raw --check
 ```
 
-To regenerate certificates after an intentional analysis change:
+The 59 MB archive and extracted NC files remain outside git. The deposited
+parity histogram contains derived aggregate counts, not shot chronology.
+PR CI now runs both exact checks and full source reconstruction. Solver-based
+regeneration uses `build_cell_certificate.py` and `build_full_models.py --cache
+/tmp/collective-raw`; optimizer versions can change proposed witnesses. The
+independent exact check decides validity, not byte equality of new proposals.
 
-```sh
-python studies/collective-interference-identifiability/build_certificate.py
-python studies/collective-interference-identifiability/build_witness.py --cache /tmp/collective-raw
-python studies/collective-interference-identifiability/witness.py
-python studies/collective-interference-identifiability/diagnostics.py
-```
-
-Solver versions can change the witness/dual parameters; trust the independent
-exact check, not byte equality of newly optimized parameters. Source counts
-and checked committed outputs must reproduce exactly. The dedicated workflow
-runs fast checks on PRs; its manually requested full-source job downloads and
-reconstructs the original records.
+Further reading: [physical class and preserved original proof](theory.md),
+[revision and full-region derivation](revision.md),
+[source audit and primary prior art](source-audit.md),
+[claim status](claim-status.md), [source manifest](sources.json).

@@ -1,4 +1,7 @@
-# Feasibility decision: narrow to a conditional three-atom certificate
+# Original feasibility decision: narrow to a conditional three-atom certificate
+
+This historical gate is retained; [revision.md](revision.md) records the
+completed 2D and full-pattern checks and the still-open apparatus gate.
 
 Question: do singleton propagation records and three-atom parity images exclude
 mixtures of orthogonally labelled groups of size at most two?
@@ -18,7 +21,7 @@ copies in y. The confidence construction must respect that dependency.
 
 | Measured family | Exact records and exposure | Intervention / date | Role / unresolved sharing |
 |---|---|---|---|
-| Singleton propagation | `1D_singles.nc`, keys 30, 31, 32; only 931 unique shots; initial and final binary images; 12 by 12 reference crop | Prepare one atom; notebook identifies runs in June 25–July 9, 2022; per-shot timestamps absent in these NC files | Estimates one detected transition distribution. Translation to other input sites is assumed, not independently calibrated by copied arrays. |
+| Singleton propagation | `1D_singles.nc`, keys 30, 31, 32; only 931 unique shots; initial and final binary images; 12 by 12 reference crop | Prepare one atom; notebook identifies selected run 220702/29 (July 2, 2022); per-shot timestamps absent in these NC files | Estimates one detected transition distribution. Translation to other input sites is assumed, not independently calibrated by copied arrays. |
 | Three-atom interference | `1D.nc`, key 3; 2,999 initial-selected shots, 2,329 with three final occupied sites, 93 with all three in one y row | Prepare adjacent three-atom input; nominal 2.46 ms in notebook (`3NN.nc` labels duplicate subset 2.45 ms) | Tests the cluster class; final parity image must be forward-modelled. Same apparatus, different preparation. |
 | Pairwise records (not used in certificate) | `2NN_2205.nc` and singleton counterparts; other settings and dates | Two-atom HOM-like evolution | Possible apparatus cross-check, not evidence for every pair in the selected three-atom preparation. No indispensable third source claimed. |
 

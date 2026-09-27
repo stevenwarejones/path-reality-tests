@@ -1,0 +1,30 @@
+{
+  "bunch_lower": 0.02364675,
+  "cell_event_upper": 0.0112,
+  "cell_leaves": 3,
+  "cluster_ceiling": 0.0224,
+  "conditional_distinct_upper_by_row": [
+    1.0,
+    1.0,
+    0.99967416,
+    0.97068492,
+    0.90197232,
+    0.9536438,
+    0.95856171,
+    0.94470949,
+    0.91231702,
+    0.9699195,
+    1.0,
+    1.0
+  ],
+  "confidence_familywise": 0.95,
+  "full_singleton_region_witness_compatible": true,
+  "historical_row_upper": 0.01166,
+  "margin": 0.00124675,
+  "non_cluster_weight_lower": 0.027829241071428572,
+  "row_leaves": 4,
+  "row_only_margin_same_region": -0.00015325,
+  "same_region_row_upper": 0.0119,
+  "scope": "Full singleton region plus scalar bunching; see full_models.py for the expanded region",
+  "sum_full_cell_transfer_tv_sufficient": 0.000623375
+}

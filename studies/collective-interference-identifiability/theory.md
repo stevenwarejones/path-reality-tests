@@ -1,4 +1,9 @@
-# Physical model, bound and statistical certificate
+# Physical model and preserved original certificate
+
+The physical class and inequality below remain current. The numeric certificate,
+summary witnesses and robustness budget in this document describe the original
+reviewed head. The expanded 2D region, full parity models and current budget are
+in [revision.md](revision.md). The original exact artifacts remain unchanged.
 
 ## Declared physical alternatives
 
