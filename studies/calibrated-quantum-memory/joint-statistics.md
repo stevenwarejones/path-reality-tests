@@ -33,6 +33,14 @@ Under that fixed p, exact multinomial moments give
  =\sum_r\left[6+\frac{\sum_i1/p_{ri}-22}{N_r}\right].
 \]
 
+Boundary probability points are included: if p_ri=0 but n_ri>0, the point
+assigns the observed event probability zero and is excluded. Otherwise omit
+zero-probability categories and replace each row's mean by K_r−1 and variance
+by 2(K_r−1)+[sum_(p_i>0)1/p_i−K_r^2−2(K_r−1)]/N_r, where K_r is its support
+size. A deterministic row has zero statistic and variance. The verifier tests
+these boundary cases; positivity of the fitted points does not silently remove
+boundary models from the full confidence-region definition.
+
 These are finite-N identities, not asymptotic chi-square moments. For one
 row, expand X as sum_i n_i^2/(Np_i)−N and use multinomial factorial moments
 E[(n_i)_a(n_j)_b]=(N)_(a+b)p_i^a p_j^b. This gives mean 3 and the displayed

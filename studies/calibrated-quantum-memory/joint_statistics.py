@@ -16,7 +16,7 @@ import delay_candidates
 def pearson_region(counts, numerators, denominators, alpha=Decimal('0.025')):
     """Directed bounds on Pearson X and its exact multinomial variance.
 
-    Independent rows, each with four positive probabilities and a fixed trial
+    Independent rows, each with four nonnegative probabilities and a fixed trial
     count. A complete point can be chosen after observing the data: acceptance
     means membership in an inverted confidence region, not a fitted-null test.
     """
@@ -28,24 +28,30 @@ def pearson_region(counts, numerators, denominators, alpha=Decimal('0.025')):
     down=Context(prec=60,rounding=ROUND_FLOOR)
     up=Context(prec=60,rounding=ROUND_CEILING)
     xl=xu=vl=vu=Decimal(0)
+    mean_int=0;impossible=False
     for row,pnums,den in zip(counts.reshape(-1,4),nums.reshape(-1,4),dens.reshape(-1)):
         if type(den) not in (int,np.int64):raise ValueError("noninteger denominator")
         den=int(den);N=int(row.sum())
         if N<=0 or den<=0 or any(type(p) not in (int,np.int64) for p in pnums):
             raise ValueError('invalid rational probability or exposure')
         pnums=[int(p) for p in pnums]
-        if min(pnums)<=0 or sum(pnums)!=den:
-            raise ValueError('probabilities must be positive and normalized')
+        if min(pnums)<0 or sum(pnums)!=den:
+            raise ValueError('probabilities must be nonnegative and normalized')
+        support=sum(p>0 for p in pnums);mean_int+=support-1
+        leading=2*(support-1);correction=support*support+leading
         reciprocal_l=reciprocal_u=Decimal(0)
         for k,p in zip(row,pnums):
+            if p==0:
+                impossible=impossible or int(k)>0
+                continue
             a=Decimal((int(k)*den-N*p)**2);b=Decimal(N*p*den)
             xl=down.add(xl,down.divide(a,b));xu=up.add(xu,up.divide(a,b))
             reciprocal_l=down.add(reciprocal_l,down.divide(Decimal(den),Decimal(p)))
             reciprocal_u=up.add(reciprocal_u,up.divide(Decimal(den),Decimal(p)))
-        row_vl=down.add(Decimal(6),down.divide(down.subtract(reciprocal_l,Decimal(22)),Decimal(N)))
-        row_vu=up.add(Decimal(6),up.divide(up.subtract(reciprocal_u,Decimal(22)),Decimal(N)))
+        row_vl=down.add(Decimal(leading),down.divide(down.subtract(reciprocal_l,Decimal(correction)),Decimal(N)))
+        row_vu=up.add(Decimal(leading),up.divide(up.subtract(reciprocal_u,Decimal(correction)),Decimal(N)))
         vl=down.add(vl,row_vl);vu=up.add(vu,row_vu)
-    mean=Decimal(3*counts.size//4)
+    mean=Decimal(mean_int)
     if vl<0:raise ValueError('unsupported negative variance bound')
     def tail_bound(stat,var,ctx,other):
         if stat<=mean:return Decimal(1)
@@ -53,8 +59,11 @@ def pearson_region(counts, numerators, denominators, alpha=Decimal('0.025')):
         square=other.multiply(delta,delta)
         return ctx.divide(var,other.add(var,square))
     # Cantelli is increasing in V and decreasing in X above the null mean.
-    lower=tail_bound(xu,vl,down,up)
-    upper=tail_bound(xl,vu,up,down)
+    if impossible:
+        xl=xu=Decimal('Infinity');lower=upper=Decimal(0)
+    else:
+        lower=tail_bound(xu,vl,down,up)
+        upper=tail_bound(xl,vu,up,down)
     decision='inside' if lower>alpha else 'excluded' if upper<=alpha else 'rounding_unresolved'
     return dict(rows=int(counts.size//4),outcomes_per_row=4,aggregate_component_alpha=str(alpha),
                 mean_exact=int(mean),pearson_lower=str(xl),pearson_upper=str(xu),

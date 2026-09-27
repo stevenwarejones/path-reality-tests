@@ -349,6 +349,15 @@ class JointStatisticsTests(unittest.TestCase):
         self.assertGreater(rejected,0)
         self.assertLessEqual(rejected,F(1,40))
 
+    def test_boundary_probabilities_keep_coverage_and_impossible_events_reject(self):
+        valid=J.pearson_region(np.array([[0,0,0,10]]),[0,0,0,1],1)
+        self.assertEqual(valid['mean_exact'],0)
+        self.assertEqual(valid['aggregate_region_membership'],'inside')
+        impossible=J.pearson_region(np.array([[1,0,0,9]]),[0,0,0,1],1)
+        self.assertEqual(impossible['aggregate_region_membership'],'excluded')
+        two=J.pearson_region(np.array([[0,5,5,0]]),[0,1,1,0],2)
+        self.assertEqual(two['mean_exact'],1)
+
     def test_joint_region_rejects_points_without_excluding_class(self):
         result=json.loads((STUDY/'results/ibm-joint-statistics.json').read_text())
         self.assertEqual(len(result['reports']),4)
@@ -394,7 +403,7 @@ class JointStatisticsTests(unittest.TestCase):
         for field,key,value in [('preparations','xp',[10**14,0,0]),('effects','x',[10**12,10**12,0,0])]:
             bad=copy.deepcopy(catalog['candidates'][0]);bad[field][key]=value
             with self.assertRaises(ValueError):D.check_candidate(bad)
-        for nums,den in [([1,2,3,3],10),([0,2,3,5],10),([1,2,3,4],10.5)]:
+        for nums,den in [([1,2,3,3],10),([-1,3,3,5],10),([1,2,3,4],10.5)]:
             with self.assertRaises(ValueError):J.pearson_region(np.array([[1,2,3,4]]),nums,den)
 
 
