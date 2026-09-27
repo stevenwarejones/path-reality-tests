@@ -69,7 +69,7 @@ def closed_blocks(stream, chunk_records=1_000_000):
         yield carry, None, True  # censored tail, never fabricated as a no-click trial
 
 
-def decode_block(a, next_sync_tag, previous_delta, config):
+def decode_block(a, next_sync_tag, previous_delta, config, *, include_events=False):
     sy = np.flatnonzero(a['ch'] == 6)
     if not len(sy) or sy[0] != 0:
         raise ValueError('block must begin at a sync')
@@ -115,7 +115,10 @@ def decode_block(a, next_sync_tag, previous_delta, config):
             legacy = np.zeros(len(sy), dtype='u2')
             # Intentionally reproduce archived repeated-index behavior, for diagnosis.
             legacy[idx[ok]] += values
-    return settings, words, legacy, int(dt[-1]), bad
+    decoded = (settings, words, legacy, int(dt[-1]), bad)
+    if include_events:
+        return (*decoded, dict(row=idx, phase=phases, pulse=pulses))
+    return decoded
 
 
 def discover_offset(archive, member, pattern):
