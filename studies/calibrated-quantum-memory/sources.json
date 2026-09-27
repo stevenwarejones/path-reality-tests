@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/Christina-Giar/NMN-tomo",
+  "commit": "154235f8bbf5e70eb71c325370a67b1894490452",
+  "license": "MIT; sources kept external",
+  "nmn_files": [
+    {
+      "name": "NMN_lab_rslts.json",
+      "bytes": 20177,
+      "sha256": "b52afa57cced174839059e6438e17dc49ead33ae6687c44f58f6f2c664dcdc43",
+      "url": "https://raw.githubusercontent.com/Christina-Giar/NMN-tomo/154235f8bbf5e70eb71c325370a67b1894490452/NMN_lab_rslts.json"
+    },
+    {
+      "name": "NMN_tomog_rerun.json",
+      "bytes": 176825,
+      "sha256": "450db9360fbd162fd12e5be13655e45e1d19f29049f96c9fdb2ab6616b00c657",
+      "url": "https://raw.githubusercontent.com/Christina-Giar/NMN-tomo/154235f8bbf5e70eb71c325370a67b1894490452/NMN_tomog_rerun.json"
+    },
+    {
+      "name": "All codes.ipynb",
+      "bytes": 1399666,
+      "sha256": "b0a2e041ef1616f8c0cff8e2536a892a260820d16fbd8343d22e898b0441c2a1",
+      "url": "https://raw.githubusercontent.com/Christina-Giar/NMN-tomo/154235f8bbf5e70eb71c325370a67b1894490452/All%20codes.ipynb"
+    },
+    {
+      "name": "README.md",
+      "bytes": 904,
+      "sha256": "fcd27b514890614b03a26f7ec84a879962feccdb846fd00de103b9631c46a593",
+      "url": "https://raw.githubusercontent.com/Christina-Giar/NMN-tomo/154235f8bbf5e70eb71c325370a67b1894490452/README.md"
+    },
+    {
+      "name": "LICENSE",
+      "bytes": 1071,
+      "sha256": "cb7f42b4ce4bae39d4dd83ec9758de7567abc17b22ad7ac30687e66d5373d1af",
+      "url": "https://raw.githubusercontent.com/Christina-Giar/NMN-tomo/154235f8bbf5e70eb71c325370a67b1894490452/LICENSE"
+    }
+  ]
+}

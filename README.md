@@ -7,6 +7,7 @@ needed to compare them. Studies provide independent, reproducible checks.
 
 | Study | Question | Status |
 |---|---|---|
+| [Calibrated environmental memory](studies/calibrated-quantum-memory/README.md) | Can matched intervention calibration distinguish environmental quantum memory from system survival? | Conditional measured acquisition audit and synthetic full-class certificate; empirical matching gate incomplete |
 | [Fine timing information](studies/fine-timing-structure/README.md) | What do pulse identity and finer timing add beyond four categories? | Conditional archive bounds and paired recovery; no measured departure |
 | [Continuum and finite models](studies/continuum-finite-models/README.md) | Which specified finite dynamics differ from a continuum ring? | Synthetic conditional design; formal completion and apparatus calibration pending |
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |

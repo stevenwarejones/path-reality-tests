@@ -1,0 +1,254 @@
+{
+  "calibration_successes": [
+    [
+      [
+        4002,
+        3998
+      ],
+      [
+        3990,
+        4012
+      ],
+      [
+        4003,
+        4099
+      ]
+    ],
+    [
+      [
+        3961,
+        3993
+      ],
+      [
+        3975,
+        4046
+      ],
+      [
+        3972,
+        3994
+      ]
+    ],
+    [
+      [
+        4006,
+        4054
+      ],
+      [
+        3990,
+        3995
+      ],
+      [
+        3999,
+        3959
+      ]
+    ]
+  ],
+  "certificate": {
+    "alpha": 0.05,
+    "calibration_T_intervals": [
+      [
+        [
+          -0.04213917914480198,
+          0.04313917914480187
+        ],
+        [
+          -0.045389179144801846,
+          0.03988917914480201
+        ],
+        [
+          -0.05463917914480193,
+          0.030639179144801916
+        ]
+      ],
+      [
+        [
+          -0.04663917914480193,
+          0.03863917914480192
+        ],
+        [
+          -0.05151417914480195,
+          0.033764179144801905
+        ],
+        [
+          -0.04538917914480196,
+          0.039889179144801896
+        ]
+      ],
+      [
+        [
+          -0.04863917914480193,
+          0.03663917914480192
+        ],
+        [
+          -0.04326417914480191,
+          0.04201417914480194
+        ],
+        [
+          -0.03763917914480192,
+          0.04763917914480193
+        ]
+      ]
+    ],
+    "calibration_mean_radius": 0.04263917914480193,
+    "calibration_t_intervals": [
+      [
+        -0.029889179144801888,
+        0.04263917914480193
+      ],
+      [
+        -0.04001417914480188,
+        0.036889179144801894
+      ],
+      [
+        -0.035139179144801864,
+        0.03738917914480195
+      ]
+    ],
+    "classical_memory_recovery_upper": 0.9398142415354782,
+    "dynamics_probability_radius": 0.019643361002992105,
+    "margin": 0.040542397461529656,
+    "recovery_lower": 0.9803566389970079,
+    "recovery_upper": 1.0,
+    "reject": true,
+    "required_epsilon_lower": 0.31368997233034124,
+    "reset_epsilon_upper": 0.2731475748688115,
+    "status": "conditional_bound"
+  },
+  "coverage_basis": "analytic_Hoeffding_and_full_class_theorem_not_simulations",
+  "dynamics_successes": [
+    8000,
+    8000,
+    8000,
+    8000,
+    8000,
+    8000
+  ],
+  "hidden_pauli_flag_recovery_residual": 0.0,
+  "kind": "synthetic_only",
+  "leakage_and_environment_coupling_covered": false,
+  "null_controls": [
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "reset_no_memory",
+      "recovery_mean": 0.5,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "classical_z_record_survives_reset",
+      "recovery_mean": 0.6666666666666666,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "classical_four_outcome_record",
+      "recovery_mean": 0.6666666666666666,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "classical_rotated_record",
+      "recovery_mean": 0.6666666666666666,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "failed_reset_identity_bypass",
+      "recovery_mean": 1.0,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "name": "partial_reset_bypass",
+      "recovery_mean": 0.6,
+      "rejections": 0,
+      "repetitions": 1000
+    }
+  ],
+  "physical_checks": {
+    "maximum_residual": 1.1102230246251565e-16,
+    "minimum_choi_eigenvalue": 0.0
+  },
+  "power": [
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "lambda": 0.4,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.003682083896865671
+      ],
+      "lambda": 0.75,
+      "rejections": 0,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.010701947929414703,
+        0.028299041249019177
+      ],
+      "lambda": 0.9,
+      "rejections": 18,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.9704875983749022,
+        0.988522963006899
+      ],
+      "lambda": 0.97,
+      "rejections": 981,
+      "repetitions": 1000
+    },
+    {
+      "binomial_95_interval": [
+        0.9963179161031344,
+        1.0
+      ],
+      "lambda": 1.0,
+      "rejections": 1000,
+      "repetitions": 1000
+    }
+  ],
+  "seed": 27092026,
+  "shots_per_setting": 8000,
+  "source_removal_witnesses": {
+    "calibration_only_reset_null_feasible": true,
+    "dynamics_only_identity_bypass_feasible": true,
+    "identity_bypass_recovery": 1.0,
+    "identity_bypass_violates_calibration": true,
+    "quantum_swap_joint_feasible": true,
+    "reset_null_recovery": 0.5,
+    "reset_null_violates_dynamics": true
+  },
+  "unmodeled_calibration_mismatch_false_claim": true
+}
