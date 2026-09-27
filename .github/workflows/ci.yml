@@ -76,6 +76,10 @@ jobs:
           python studies/nist-bell-causal-audit/report.py --output-dir "$RUNNER_TEMP/nist-report"
           cmp studies/nist-bell-causal-audit/results/report.md "$RUNNER_TEMP/nist-report/report.md"
           cmp studies/nist-bell-causal-audit/results/diagnostics.svg "$RUNNER_TEMP/nist-report/diagnostics.svg"
+      - name: Check continuum finite-model synthetic design
+        run: |
+          python studies/continuum-finite-models/design.py --check
+          python studies/continuum-finite-models/joint_design.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/wen-2026-propagator/fetch_data.py --verify-only
