@@ -1,4 +1,4 @@
-# Correlated qubit mechanisms: feasibility gate
+# Correlated qubit mechanisms: research checkpoint
 
 **Status: the consequential research goal is not achieved.** This study audits
 whether radiation, controlled phonon injection and mechanical interventions can
@@ -14,6 +14,25 @@ radiation response, an event/readout likelihood with run-level uncertainty, and
 a response measurement that distinguishes tunneling intensity from parity
 contrast. These are requirements for this approach, not an impossibility result
 for the underlying physics or all available methods.
+
+## Qubit-history and intervention follow-up
+
+The [matched information comparison](complementarity.md) tests qubit-history-only,
+phase-only and combined predictors on the same retrospective windows. History
+alone predicts 2,912 paired events against 2,927 observed. Adding deposited phase
+improves log loss by only 0.39%, with mixed block performance and unverified causal
+phase availability. Mechanical information is not established as indispensable.
+
+A shared latent-environment window model predicts held-out count and coarse onset
+structure more accurately than the tested additional joint-event component.
+These are observed mark models, not full physical compatibility witnesses. The
+control audit also finds byte-identical calibration references and a common
+native-1-ms quadrature flag across off/on/shock records. The earlier 99 µs sampling
+mismatch does not rule out useful coarser intervention work.
+
+The next goal is a meaningful outcome requiring the combined information, or
+empirically adequate competing physical models demonstrating nonidentification.
+This checkpoint does not claim that goal is complete.
 
 ## Mechanical prediction follow-up
 
@@ -110,7 +129,7 @@ lengths, hashes and acquisition status. The three measured archives are CC BY
 The [mechanical inventory](mechanical-inventory.json) is an archive directory,
 not a claim to have inspected all 343 payloads.
 
-The reported measurement reconstructions are deterministic. Twelve scientific and
+The reported measurement reconstructions are deterministic. Sixteen scientific and
 integrity tests check Poisson sums, sharp extremizers, heterogeneous distributions,
 independent-background correction, global affine certificates, phase mixing,
 corruption rejection, pre-conversion integer/range/exposure validation, rational
@@ -138,3 +157,24 @@ requiring the additional dwell data. The new route processes every acquisition,
 retains its block assignment, and verifies the separate phase-offset and
 intervention-clock files. Refinement and benchmark diagnostics are explicitly
 labeled as post-validation analyses; no nominal confidence level is attached.
+
+## Reproduce the information and control comparisons
+
+Install the pinned study requirements, including scikit-learn 1.8.0. The information
+comparison uses the same dwell sources as above; feature extraction starts afresh
+on every invocation and writes a reconstructible scratch cache outside the repo.
+Allow roughly 3 GB RAM for extraction and fitting. Set thread counts as below for
+the reference reproduction.
+
+```bash
+python -m pip install -r studies/correlated-qubit-mechanisms/requirements.txt
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 python studies/correlated-qubit-mechanisms/cqm_complementarity.py --cache /tmp/correlated-qubit-data --features /tmp/cqm-history-features.npz --check
+python studies/correlated-qubit-mechanisms/cqm_sources.py --cache /tmp/correlated-qubit-data --mechanical-prediction --mechanical-interventions
+python studies/correlated-qubit-mechanisms/cqm_interventions.py --cache /tmp/correlated-qubit-data --check
+python -m unittest discover -s tests -p 'test_cqm_complementarity.py' -v
+```
+
+The control route adds 11 selected payloads (32.4 MB compressed). The new tests
+check future-data isolation, marks against a direct oracle, valid normalized
+mixture laws, and acquisition-safe intervention counting. Neither forecast nor
+control script attaches IID uncertainty to the recorded windows.

@@ -528,7 +528,86 @@
           "sha256": "8815d56cbedf9d74be968b4badd11b47eec265bf04a9390db497511a6a2be56f"
         }
       ],
-      "prediction_acquisition_status": "10 additional individually CRC/SHA-256/length-verified members for run-preserving retrospective prediction and intervention-clock checks; full archive remains unverified"
+      "prediction_acquisition_status": "10 additional individually CRC/SHA-256/length-verified members for run-preserving retrospective prediction and intervention-clock checks; full archive remains unverified",
+      "intervention_members": [
+        {
+          "name": "Zenodo/Fig2/774_r.npy",
+          "size": 524416,
+          "compressed_size": 492260,
+          "offset": 40115707,
+          "sha256": "350b94acf72ddb2c5feb0500c7245f76103c0bac3edb340f642f6fbd803dbb4f"
+        },
+        {
+          "name": "Zenodo/Fig2/782_r.npy",
+          "size": 524416,
+          "compressed_size": 493027,
+          "offset": 42069086,
+          "sha256": "55a5e82f0f51c4214b05988301d69b2059f5228a8cf2d002d6c8aa980fb1771a"
+        },
+        {
+          "name": "Zenodo/Fig2/617.npy",
+          "size": 1048704,
+          "compressed_size": 675347,
+          "offset": 37380536,
+          "sha256": "551f1753544708b5c40c7ee071c7a1499dcbf3aef53a6de0618bc48e039afc04"
+        },
+        {
+          "name": "Zenodo/Fig2/618.npy",
+          "size": 1048704,
+          "compressed_size": 692534,
+          "offset": 38055932,
+          "sha256": "626a0baa119650b55943c076f0c599dc4953317c357117cbbe162a9df1f71aa7"
+        },
+        {
+          "name": "Zenodo/Fig2/619.npy",
+          "size": 1048704,
+          "compressed_size": 694994,
+          "offset": 38748515,
+          "sha256": "d0228f963bbf68b35401ba571b56cb6044cf706652df465c8b286f08474f9231"
+        },
+        {
+          "name": "Zenodo/Fig6/833_r.npy",
+          "size": 26214528,
+          "compressed_size": 24631758,
+          "offset": 1746197166,
+          "sha256": "f979f83c12fe338f58f13580fc43fefc0134f24406aff2147e2b12118070b2b1"
+        },
+        {
+          "name": "Zenodo/Fig6/832.npy",
+          "size": 16800128,
+          "compressed_size": 2616761,
+          "offset": 1718373050,
+          "sha256": "a71ba943803beffaebdc982fdddd4fd01bdaaf55071cb08117cc850b427ad1d5"
+        },
+        {
+          "name": "Zenodo/Fig6/617.npy",
+          "size": 1048704,
+          "compressed_size": 675347,
+          "offset": 1714255772,
+          "sha256": "551f1753544708b5c40c7ee071c7a1499dcbf3aef53a6de0618bc48e039afc04"
+        },
+        {
+          "name": "Zenodo/Fig6/618.npy",
+          "size": 1048704,
+          "compressed_size": 692534,
+          "offset": 1714931168,
+          "sha256": "626a0baa119650b55943c076f0c599dc4953317c357117cbbe162a9df1f71aa7"
+        },
+        {
+          "name": "Zenodo/Fig6/619.npy",
+          "size": 1048704,
+          "compressed_size": 694994,
+          "offset": 1715623751,
+          "sha256": "d0228f963bbf68b35401ba571b56cb6044cf706652df465c8b286f08474f9231"
+        },
+        {
+          "name": "Zenodo/Fig2/mypy.py",
+          "size": 38050,
+          "compressed_size": 8505,
+          "offset": 43824578,
+          "sha256": "bf9322ecfa618dfb904f8f8d12a231d3529aba643adfbc4a6462a4a0a2ba70a9"
+        }
+      ]
     }
   ],
   "paper_tables": [

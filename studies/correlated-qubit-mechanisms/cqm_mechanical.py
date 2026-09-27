@@ -100,7 +100,8 @@ def count_run(states, lag, bins):
     return np.column_stack([np.bincount(indices[m], minlength=bins) for m in masks])
 
 
-def extract_blocks(cache, resolutions=(715, 1430, 3575)):
+def iter_acquisitions(cache):
+    """Yield validated paired states and deposited phase, preserving run boundaries."""
     base = cache/'mechanical/Zenodo/Fig4FigS6FigS7'
     with (base/'results_gef_2d').open('rb') as f:
         axis = NumericUnpickler(f).load()
@@ -119,16 +120,21 @@ def extract_blocks(cache, resolutions=(715, 1430, 3575)):
         raise ValueError('independent lag file disagrees')
     if type(dwells) is not list or len(dwells) != 2 or any(type(v) is not list or len(v) != RUNS for v in dwells):
         raise ValueError('unexpected paired acquisition schema')
-    blocks = {bins: np.zeros((RUNS//BLOCK_SIZE, bins, 9), dtype=np.int64) for bins in resolutions}
     for run in range(RUNS):
         states = [dwell_states(dwells[q][run]) for q in range(2)]
-        for bins in resolutions:
-            blocks[bins][run//BLOCK_SIZE] += count_run(states, lags[run], bins)
+        yield run, states, lags[run]
         # Preserve acquisition boundaries, while releasing already processed objects.
         for q in range(2):
             dwells[q][run] = None
         if run % 500 == 0:
-            print(f'Validated and counted paired acquisition {run}/{RUNS}', flush=True)
+            print(f'Validated paired acquisition {run}/{RUNS}', flush=True)
+
+
+def extract_blocks(cache, resolutions=(715, 1430, 3575)):
+    blocks = {bins: np.zeros((RUNS//BLOCK_SIZE, bins, 9), dtype=np.int64) for bins in resolutions}
+    for run, states, lag in iter_acquisitions(cache):
+        for bins in resolutions:
+            blocks[bins][run//BLOCK_SIZE] += count_run(states, lag, bins)
     return blocks
 
 

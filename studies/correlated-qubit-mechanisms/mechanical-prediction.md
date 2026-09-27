@@ -148,7 +148,7 @@ bursts, correlated readout disturbances, selection by the initial state, or a
 combination. We do not assign it to QPs, TLSs or radiation. The pulse-tube-on
 record alone cannot validate the counterfactual with the pulse tube off.
 
-## Transfer decision
+## Transfer decision for the 99 µs target
 
 The deposited off/on and controlled-shock clock vectors have 32,768 samples
 separated by **1 ms**, rather than 3 µs. Their readout duty cycle and backaction
@@ -162,7 +162,7 @@ before each proposed quiet window. An online phase estimator would need its own
 validation. The measured readout-classification target cannot yet be translated
 into free-evolution or QEC errors.
 
-The next useful control is now specific: matched 3 µs acquisition and state-readout
+For a future experiment using this same 99 µs target, one useful control is: matched 3 µs acquisition and state-readout
 calibration during pulse-tube-on, pulse-tube-off and controlled-shock trials,
 with a causal phase estimate logged before the target window. Rare-event readout
 controls must resolve a rate of a few events per million eligible windows if the
@@ -175,3 +175,15 @@ mechanisms have not been fitted to every retained source constraint, so no
 source-removal witness or general impossibility theorem is claimed. The concrete
 result is a reproducible retrospective forecast, its residual, and an identified
 protocol mismatch that blocks the proposed intervention transfer.
+
+
+## Subsequent matched comparison
+
+The [qubit-history and intervention follow-up](complementarity.md) strengthens
+the baseline and revises the next-step decision. Qubit history alone competes
+closely with deposited phase information on a common subset; phase has not been
+shown indispensable. A native 1 ms observed flag is shared by existing off/on and
+shock records, with identical calibration arrays. Thus the mismatch above blocks
+this particular 99 µs transfer, not every useful intervention target. The next
+step is to audit observation dynamics for that coarser target before asserting
+that new data are necessary.

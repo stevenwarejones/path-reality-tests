@@ -1,0 +1,1798 @@
+{
+  "status": "Retrospective information comparison using deposited, not verified causal, phase",
+  "feature_names": [
+    "elapsed_s",
+    "A_nonG_last_33",
+    "A_nonG_last_333",
+    "A_nonG_last_3333",
+    "A_nonG_last_33333",
+    "A_nonG_segment_0",
+    "A_nonG_segment_1",
+    "A_nonG_segment_2",
+    "A_nonG_segment_3",
+    "A_nonG_segment_4",
+    "A_nonG_segment_5",
+    "A_nonG_segment_6",
+    "A_nonG_segment_7",
+    "A_nonG_segment_8",
+    "A_nonG_segment_9",
+    "A_nonG_segment_10",
+    "A_nonG_segment_11",
+    "A_nonG_segment_12",
+    "A_nonG_segment_13",
+    "A_nonG_segment_14",
+    "A_log_ground_age",
+    "B_nonG_last_33",
+    "B_nonG_last_333",
+    "B_nonG_last_3333",
+    "B_nonG_last_33333",
+    "B_nonG_segment_0",
+    "B_nonG_segment_1",
+    "B_nonG_segment_2",
+    "B_nonG_segment_3",
+    "B_nonG_segment_4",
+    "B_nonG_segment_5",
+    "B_nonG_segment_6",
+    "B_nonG_segment_7",
+    "B_nonG_segment_8",
+    "B_nonG_segment_9",
+    "B_nonG_segment_10",
+    "B_nonG_segment_11",
+    "B_nonG_segment_12",
+    "B_nonG_segment_13",
+    "B_nonG_segment_14",
+    "B_log_ground_age",
+    "phase_sin",
+    "phase_cos"
+  ],
+  "learner": {
+    "max_iter": 100,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 100,
+    "learning_rate": 0.1,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 19
+  },
+  "extraction_digests": {
+    "x": "8d9a575a72ed846471f74fe2a268cb5eb873b9f26950c1a25ea6621b309e03a2",
+    "marks": "62695aead91b64cfa95d4edb5bbcd3921ed19438c4e3366c6ecf253ec1cc5864",
+    "cells": "ff8f8eb4236dc9da75f54db5d258a419fc9864126a98cbc1a7ae88db9f9fcf17",
+    "runs": "04673322859949310c1d4a56cc6bb3c040b2f258bb521804a642b81333b8d46c"
+  },
+  "predictors": {
+    "constant": {
+      "validation": {
+        "windows": 1258687,
+        "observed": 2927,
+        "predicted": 3006.2469716374612,
+        "log_loss": 0.01642467806196722,
+        "brier": 0.0023200354250607117
+      },
+      "blocks": [
+        {
+          "acquisitions": [
+            1550,
+            1599
+          ],
+          "windows": 40646,
+          "observed": 65,
+          "predicted": 97.07887219711989,
+          "log_loss": 0.012041852420895638,
+          "brier": 0.001597238872362794
+        },
+        {
+          "acquisitions": [
+            1600,
+            1649
+          ],
+          "windows": 40856,
+          "observed": 95,
+          "predicted": 97.58043602040867,
+          "log_loss": 0.016423475571179277,
+          "brier": 0.00231983711550716
+        },
+        {
+          "acquisitions": [
+            1650,
+            1699
+          ],
+          "windows": 40794,
+          "observed": 97,
+          "predicted": 97.43235527258055,
+          "log_loss": 0.01674066630993735,
+          "brier": 0.0023721468333233555
+        },
+        {
+          "acquisitions": [
+            1700,
+            1749
+          ],
+          "windows": 40794,
+          "observed": 99,
+          "predicted": 97.43235527258055,
+          "log_loss": 0.017036530441411516,
+          "brier": 0.0024209394597724883
+        },
+        {
+          "acquisitions": [
+            1750,
+            1799
+          ],
+          "windows": 40835,
+          "observed": 104,
+          "predicted": 97.53027963807978,
+          "log_loss": 0.017760743670101747,
+          "brier": 0.002540373557312253
+        },
+        {
+          "acquisitions": [
+            1800,
+            1849
+          ],
+          "windows": 40657,
+          "observed": 109,
+          "predicted": 97.1051445878636,
+          "log_loss": 0.018570185396385486,
+          "brier": 0.002673863168189106
+        },
+        {
+          "acquisitions": [
+            1850,
+            1899
+          ],
+          "windows": 40752,
+          "observed": 84,
+          "predicted": 97.33204250792281,
+          "log_loss": 0.014830356294968585,
+          "brier": 0.0020571068097220194
+        },
+        {
+          "acquisitions": [
+            1900,
+            1949
+          ],
+          "windows": 40638,
+          "observed": 89,
+          "predicted": 97.05976500385175,
+          "log_loss": 0.015607750873678328,
+          "brier": 0.002185311344329075
+        },
+        {
+          "acquisitions": [
+            1950,
+            1999
+          ],
+          "windows": 40495,
+          "observed": 122,
+          "predicted": 96.71822392418369,
+          "log_loss": 0.02057222553810217,
+          "brier": 0.003004030925545264
+        },
+        {
+          "acquisitions": [
+            2000,
+            2049
+          ],
+          "windows": 40486,
+          "observed": 122,
+          "predicted": 96.69672833175704,
+          "log_loss": 0.020576267150670517,
+          "brier": 0.003004697450721252
+        },
+        {
+          "acquisitions": [
+            2050,
+            2099
+          ],
+          "windows": 40531,
+          "observed": 93,
+          "predicted": 96.80420629389033,
+          "log_loss": 0.0162382097253553,
+          "brier": 0.0022892838775596205
+        },
+        {
+          "acquisitions": [
+            2100,
+            2149
+          ],
+          "windows": 40464,
+          "observed": 94,
+          "predicted": 96.64418355026964,
+          "log_loss": 0.016410275922313998,
+          "brier": 0.0023176602867948227
+        },
+        {
+          "acquisitions": [
+            2150,
+            2199
+          ],
+          "windows": 40544,
+          "observed": 106,
+          "predicted": 96.83525548295107,
+          "log_loss": 0.018168744910993746,
+          "brier": 0.002607659348389516
+        },
+        {
+          "acquisitions": [
+            2200,
+            2249
+          ],
+          "windows": 40290,
+          "observed": 102,
+          "predicted": 96.22860209668752,
+          "log_loss": 0.017669080464272093,
+          "brier": 0.0025252568598643685
+        },
+        {
+          "acquisitions": [
+            2250,
+            2299
+          ],
+          "windows": 40374,
+          "observed": 111,
+          "predicted": 96.42922762600303,
+          "log_loss": 0.018982532907589982,
+          "brier": 0.002741865727273183
+        },
+        {
+          "acquisitions": [
+            2300,
+            2349
+          ],
+          "windows": 40577,
+          "observed": 90,
+          "predicted": 96.91407265518217,
+          "log_loss": 0.015776342609909025,
+          "brier": 0.0022131147606044054
+        },
+        {
+          "acquisitions": [
+            2350,
+            2399
+          ],
+          "windows": 40442,
+          "observed": 91,
+          "predicted": 96.59163876878223,
+          "log_loss": 0.015970243193238278,
+          "brier": 0.0022450920019263377
+        },
+        {
+          "acquisitions": [
+            2400,
+            2449
+          ],
+          "windows": 40423,
+          "observed": 101,
+          "predicted": 96.5462591847704,
+          "log_loss": 0.017469523495410828,
+          "brier": 0.002492346792028655
+        },
+        {
+          "acquisitions": [
+            2450,
+            2499
+          ],
+          "windows": 40421,
+          "observed": 127,
+          "predicted": 96.54148238645337,
+          "log_loss": 0.021351995835698405,
+          "brier": 0.0031326272533838922
+        },
+        {
+          "acquisitions": [
+            2500,
+            2549
+          ],
+          "windows": 40560,
+          "observed": 97,
+          "predicted": 96.87346986948737,
+          "log_loss": 0.016823451369801755,
+          "brier": 0.0023857993855317186
+        },
+        {
+          "acquisitions": [
+            2550,
+            2599
+          ],
+          "windows": 40495,
+          "observed": 108,
+          "predicted": 96.71822392418369,
+          "log_loss": 0.018485884763796735,
+          "brier": 0.002659960674315199
+        },
+        {
+          "acquisitions": [
+            2600,
+            2649
+          ],
+          "windows": 40587,
+          "observed": 90,
+          "predicted": 96.93795664676735,
+          "log_loss": 0.01577304473456064,
+          "brier": 0.0022125708893377272
+        },
+        {
+          "acquisitions": [
+            2650,
+            2699
+          ],
+          "windows": 40688,
+          "observed": 108,
+          "predicted": 97.17918496177765,
+          "log_loss": 0.018409541287482862,
+          "brier": 0.002647370440064596
+        },
+        {
+          "acquisitions": [
+            2700,
+            2749
+          ],
+          "windows": 40939,
+          "observed": 61,
+          "predicted": 97.77867315056565,
+          "log_loss": 0.011383150754280964,
+          "brier": 0.0014886086568634948
+        },
+        {
+          "acquisitions": [
+            2750,
+            2799
+          ],
+          "windows": 40848,
+          "observed": 67,
+          "predicted": 97.56132882714053,
+          "log_loss": 0.012289601659264494,
+          "brier": 0.0016380965997951726
+        },
+        {
+          "acquisitions": [
+            2800,
+            2849
+          ],
+          "windows": 40666,
+          "observed": 78,
+          "predicted": 97.12664018029025,
+          "log_loss": 0.013966276191024763,
+          "brier": 0.0019146064751130545
+        },
+        {
+          "acquisitions": [
+            2850,
+            2899
+          ],
+          "windows": 40607,
+          "observed": 95,
+          "predicted": 96.98572462993769,
+          "log_loss": 0.016509520408025072,
+          "brier": 0.0023340272559651287
+        },
+        {
+          "acquisitions": [
+            2900,
+            2949
+          ],
+          "windows": 40473,
+          "observed": 82,
+          "predicted": 96.6656791426963,
+          "log_loss": 0.014617894348028883,
+          "brier": 0.00202206850899921
+        },
+        {
+          "acquisitions": [
+            2950,
+            2999
+          ],
+          "windows": 40534,
+          "observed": 94,
+          "predicted": 96.81137149136589,
+          "log_loss": 0.016386065841906904,
+          "brier": 0.002313667665574667
+        },
+        {
+          "acquisitions": [
+            3000,
+            3049
+          ],
+          "windows": 40664,
+          "observed": 76,
+          "predicted": 97.12186338197323,
+          "log_loss": 0.013670035502975339,
+          "brier": 0.0018657517485904107
+        },
+        {
+          "acquisitions": [
+            3050,
+            3099
+          ],
+          "windows": 40607,
+          "observed": 70,
+          "predicted": 96.98572462993769,
+          "log_loss": 0.012794187651555454,
+          "brier": 0.0017213107282217813
+        }
+      ],
+      "policy_training_threshold": 0.0023883991585179325,
+      "policy_training_coverage": 1.0,
+      "policy_validation_coverage": 1.0,
+      "policy_validation": {
+        "windows": 1258687,
+        "observed": 2927,
+        "predicted": 3006.2469716374612,
+        "log_loss": 0.01642467806196722,
+        "brier": 0.0023200354250607117
+      }
+    },
+    "history_only": {
+      "validation": {
+        "windows": 1258687,
+        "observed": 2927,
+        "predicted": 2911.6832457692426,
+        "log_loss": 0.009939365300642206,
+        "brier": 0.0022122252330701447
+      },
+      "blocks": [
+        {
+          "acquisitions": [
+            1550,
+            1599
+          ],
+          "windows": 40646,
+          "observed": 65,
+          "predicted": 77.54126400347842,
+          "log_loss": 0.007429068805346767,
+          "brier": 0.001550252815383855
+        },
+        {
+          "acquisitions": [
+            1600,
+            1649
+          ],
+          "windows": 40856,
+          "observed": 95,
+          "predicted": 87.48332005427417,
+          "log_loss": 0.010331000921652149,
+          "brier": 0.0022349451007989294
+        },
+        {
+          "acquisitions": [
+            1650,
+            1699
+          ],
+          "windows": 40794,
+          "observed": 97,
+          "predicted": 77.08839954782934,
+          "log_loss": 0.010112460921719623,
+          "brier": 0.0022517596127988706
+        },
+        {
+          "acquisitions": [
+            1700,
+            1749
+          ],
+          "windows": 40794,
+          "observed": 99,
+          "predicted": 76.5121679125273,
+          "log_loss": 0.00998131153614471,
+          "brier": 0.002265533477007661
+        },
+        {
+          "acquisitions": [
+            1750,
+            1799
+          ],
+          "windows": 40835,
+          "observed": 104,
+          "predicted": 87.35824803964408,
+          "log_loss": 0.01082693130456992,
+          "brier": 0.002401842470022111
+        },
+        {
+          "acquisitions": [
+            1800,
+            1849
+          ],
+          "windows": 40657,
+          "observed": 109,
+          "predicted": 101.27707570620794,
+          "log_loss": 0.01076400780207454,
+          "brier": 0.0025549149828443334
+        },
+        {
+          "acquisitions": [
+            1850,
+            1899
+          ],
+          "windows": 40752,
+          "observed": 84,
+          "predicted": 70.26936644645838,
+          "log_loss": 0.009583183670315638,
+          "brier": 0.0019913745558755094
+        },
+        {
+          "acquisitions": [
+            1900,
+            1949
+          ],
+          "windows": 40638,
+          "observed": 89,
+          "predicted": 100.26212057281758,
+          "log_loss": 0.009118033657934736,
+          "brier": 0.0020735467018594975
+        },
+        {
+          "acquisitions": [
+            1950,
+            1999
+          ],
+          "windows": 40495,
+          "observed": 122,
+          "predicted": 110.81322002975793,
+          "log_loss": 0.012441651015851443,
+          "brier": 0.002833213190210714
+        },
+        {
+          "acquisitions": [
+            2000,
+            2049
+          ],
+          "windows": 40486,
+          "observed": 122,
+          "predicted": 108.25005242294748,
+          "log_loss": 0.011994673411466502,
+          "brier": 0.0027755125197460153
+        },
+        {
+          "acquisitions": [
+            2050,
+            2099
+          ],
+          "windows": 40531,
+          "observed": 93,
+          "predicted": 94.18838658813293,
+          "log_loss": 0.009375206035130892,
+          "brier": 0.0021728406182897116
+        },
+        {
+          "acquisitions": [
+            2100,
+            2149
+          ],
+          "windows": 40464,
+          "observed": 94,
+          "predicted": 105.41988942063807,
+          "log_loss": 0.00934041329707185,
+          "brier": 0.002178295466553191
+        },
+        {
+          "acquisitions": [
+            2150,
+            2199
+          ],
+          "windows": 40544,
+          "observed": 106,
+          "predicted": 101.29300830115425,
+          "log_loss": 0.01045698036283472,
+          "brier": 0.0024540156383019824
+        },
+        {
+          "acquisitions": [
+            2200,
+            2249
+          ],
+          "windows": 40290,
+          "observed": 102,
+          "predicted": 116.13154193123441,
+          "log_loss": 0.011023069950604805,
+          "brier": 0.0024403788735696498
+        },
+        {
+          "acquisitions": [
+            2250,
+            2299
+          ],
+          "windows": 40374,
+          "observed": 111,
+          "predicted": 115.92195185540017,
+          "log_loss": 0.011103070602470014,
+          "brier": 0.002580468987864191
+        },
+        {
+          "acquisitions": [
+            2300,
+            2349
+          ],
+          "windows": 40577,
+          "observed": 90,
+          "predicted": 92.63269331470194,
+          "log_loss": 0.009455775981799225,
+          "brier": 0.002131255431964313
+        },
+        {
+          "acquisitions": [
+            2350,
+            2399
+          ],
+          "windows": 40442,
+          "observed": 91,
+          "predicted": 109.82911927794629,
+          "log_loss": 0.009774459481242602,
+          "brier": 0.0021542317962603324
+        },
+        {
+          "acquisitions": [
+            2400,
+            2449
+          ],
+          "windows": 40423,
+          "observed": 101,
+          "predicted": 106.07577987577588,
+          "log_loss": 0.01055351117709772,
+          "brier": 0.0023786805367754225
+        },
+        {
+          "acquisitions": [
+            2450,
+            2499
+          ],
+          "windows": 40421,
+          "observed": 127,
+          "predicted": 111.17214332267991,
+          "log_loss": 0.012915654145132988,
+          "brier": 0.00294556285106254
+        },
+        {
+          "acquisitions": [
+            2500,
+            2549
+          ],
+          "windows": 40560,
+          "observed": 97,
+          "predicted": 92.30726533573146,
+          "log_loss": 0.01029518621064086,
+          "brier": 0.0022622166630254592
+        },
+        {
+          "acquisitions": [
+            2550,
+            2599
+          ],
+          "windows": 40495,
+          "observed": 108,
+          "predicted": 99.84896268678628,
+          "log_loss": 0.010909205740959098,
+          "brier": 0.0025068620258687255
+        },
+        {
+          "acquisitions": [
+            2600,
+            2649
+          ],
+          "windows": 40587,
+          "observed": 90,
+          "predicted": 100.5602959922168,
+          "log_loss": 0.010578174439642339,
+          "brier": 0.0021869297490620244
+        },
+        {
+          "acquisitions": [
+            2650,
+            2699
+          ],
+          "windows": 40688,
+          "observed": 108,
+          "predicted": 97.41140307213331,
+          "log_loss": 0.011049839042218285,
+          "brier": 0.002489714131485648
+        },
+        {
+          "acquisitions": [
+            2700,
+            2749
+          ],
+          "windows": 40939,
+          "observed": 61,
+          "predicted": 67.09844225904676,
+          "log_loss": 0.00768883751604585,
+          "brier": 0.0014878318054138623
+        },
+        {
+          "acquisitions": [
+            2750,
+            2799
+          ],
+          "windows": 40848,
+          "observed": 67,
+          "predicted": 67.32805461926483,
+          "log_loss": 0.007156978842110608,
+          "brier": 0.0015899814119974334
+        },
+        {
+          "acquisitions": [
+            2800,
+            2849
+          ],
+          "windows": 40666,
+          "observed": 78,
+          "predicted": 89.32789336726445,
+          "log_loss": 0.008537986530499338,
+          "brier": 0.0018366849534486253
+        },
+        {
+          "acquisitions": [
+            2850,
+            2899
+          ],
+          "windows": 40607,
+          "observed": 95,
+          "predicted": 87.45887979431137,
+          "log_loss": 0.009628457406534811,
+          "brier": 0.00218817028461636
+        },
+        {
+          "acquisitions": [
+            2900,
+            2949
+          ],
+          "windows": 40473,
+          "observed": 82,
+          "predicted": 94.51489873173958,
+          "log_loss": 0.008692354966102421,
+          "brier": 0.0019288142687737527
+        },
+        {
+          "acquisitions": [
+            2950,
+            2999
+          ],
+          "windows": 40534,
+          "observed": 94,
+          "predicted": 100.93483056735963,
+          "log_loss": 0.009685997813868166,
+          "brier": 0.0021995267952217216
+        },
+        {
+          "acquisitions": [
+            3000,
+            3049
+          ],
+          "windows": 40664,
+          "observed": 76,
+          "predicted": 93.54028806272304,
+          "log_loss": 0.008507020156066547,
+          "brier": 0.0018317300279128144
+        },
+        {
+          "acquisitions": [
+            3050,
+            3099
+          ],
+          "windows": 40607,
+          "observed": 70,
+          "predicted": 71.8322826570587,
+          "log_loss": 0.008881506272659765,
+          "brier": 0.0017226980910757124
+        }
+      ],
+      "policy_training_threshold": 8.012764582700895e-06,
+      "policy_training_coverage": 0.15000103670080336,
+      "policy_validation_coverage": 0.18790453861841744,
+      "policy_validation": {
+        "windows": 236513,
+        "observed": 0,
+        "predicted": 1.5764954590938358,
+        "log_loss": 6.665598944103188e-06,
+        "brier": 4.518946796762558e-11
+      }
+    },
+    "phase_only": {
+      "validation": {
+        "windows": 1258687,
+        "observed": 2927,
+        "predicted": 3096.5567666169586,
+        "log_loss": 0.0099586031090336,
+        "brier": 0.002207521528871253
+      },
+      "blocks": [
+        {
+          "acquisitions": [
+            1550,
+            1599
+          ],
+          "windows": 40646,
+          "observed": 65,
+          "predicted": 106.42384855843122,
+          "log_loss": 0.007295192007014589,
+          "brier": 0.001551924118161592
+        },
+        {
+          "acquisitions": [
+            1600,
+            1649
+          ],
+          "windows": 40856,
+          "observed": 95,
+          "predicted": 105.20714035188843,
+          "log_loss": 0.010141806201778233,
+          "brier": 0.002223570006101812
+        },
+        {
+          "acquisitions": [
+            1650,
+            1699
+          ],
+          "windows": 40794,
+          "observed": 97,
+          "predicted": 105.77985546274837,
+          "log_loss": 0.009907955354299162,
+          "brier": 0.00223647531615258
+        },
+        {
+          "acquisitions": [
+            1700,
+            1749
+          ],
+          "windows": 40794,
+          "observed": 99,
+          "predicted": 96.51538634935498,
+          "log_loss": 0.009924348475209054,
+          "brier": 0.0022622204401049695
+        },
+        {
+          "acquisitions": [
+            1750,
+            1799
+          ],
+          "windows": 40835,
+          "observed": 104,
+          "predicted": 101.52314501893301,
+          "log_loss": 0.011108218589601723,
+          "brier": 0.0024283072793775777
+        },
+        {
+          "acquisitions": [
+            1800,
+            1849
+          ],
+          "windows": 40657,
+          "observed": 109,
+          "predicted": 97.89402480099604,
+          "log_loss": 0.010591889450030248,
+          "brier": 0.002492233951700338
+        },
+        {
+          "acquisitions": [
+            1850,
+            1899
+          ],
+          "windows": 40752,
+          "observed": 84,
+          "predicted": 105.05183824197766,
+          "log_loss": 0.009479572567538064,
+          "brier": 0.0019936095475902057
+        },
+        {
+          "acquisitions": [
+            1900,
+            1949
+          ],
+          "windows": 40638,
+          "observed": 89,
+          "predicted": 99.85690913169279,
+          "log_loss": 0.009134835162357127,
+          "brier": 0.0020758643647613537
+        },
+        {
+          "acquisitions": [
+            1950,
+            1999
+          ],
+          "windows": 40495,
+          "observed": 122,
+          "predicted": 96.7182409030899,
+          "log_loss": 0.012714937417730787,
+          "brier": 0.002839302147750897
+        },
+        {
+          "acquisitions": [
+            2000,
+            2049
+          ],
+          "windows": 40486,
+          "observed": 122,
+          "predicted": 102.59670305661427,
+          "log_loss": 0.012233848641671558,
+          "brier": 0.002809736736697258
+        },
+        {
+          "acquisitions": [
+            2050,
+            2099
+          ],
+          "windows": 40531,
+          "observed": 93,
+          "predicted": 95.58520181362023,
+          "log_loss": 0.009304728000694625,
+          "brier": 0.0021363740716815725
+        },
+        {
+          "acquisitions": [
+            2100,
+            2149
+          ],
+          "windows": 40464,
+          "observed": 94,
+          "predicted": 98.1636702971303,
+          "log_loss": 0.009672823197362599,
+          "brier": 0.0021888559684595677
+        },
+        {
+          "acquisitions": [
+            2150,
+            2199
+          ],
+          "windows": 40544,
+          "observed": 106,
+          "predicted": 96.85879546617076,
+          "log_loss": 0.010652468994778855,
+          "brier": 0.002444957981465267
+        },
+        {
+          "acquisitions": [
+            2200,
+            2249
+          ],
+          "windows": 40290,
+          "observed": 102,
+          "predicted": 91.09557429494066,
+          "log_loss": 0.010641908996767997,
+          "brier": 0.0023937896658422684
+        },
+        {
+          "acquisitions": [
+            2250,
+            2299
+          ],
+          "windows": 40374,
+          "observed": 111,
+          "predicted": 96.04841394442116,
+          "log_loss": 0.011203207792125261,
+          "brier": 0.0025713347784401728
+        },
+        {
+          "acquisitions": [
+            2300,
+            2349
+          ],
+          "windows": 40577,
+          "observed": 90,
+          "predicted": 94.78031009329518,
+          "log_loss": 0.010161001829609814,
+          "brier": 0.0021302362424330873
+        },
+        {
+          "acquisitions": [
+            2350,
+            2399
+          ],
+          "windows": 40442,
+          "observed": 91,
+          "predicted": 96.38172412450137,
+          "log_loss": 0.00960113232354682,
+          "brier": 0.0021160114044733447
+        },
+        {
+          "acquisitions": [
+            2400,
+            2449
+          ],
+          "windows": 40423,
+          "observed": 101,
+          "predicted": 99.73562174413574,
+          "log_loss": 0.010295809728946049,
+          "brier": 0.0023608278659669863
+        },
+        {
+          "acquisitions": [
+            2450,
+            2499
+          ],
+          "windows": 40421,
+          "observed": 127,
+          "predicted": 95.79027216087317,
+          "log_loss": 0.012775700153654354,
+          "brier": 0.002941257039694623
+        },
+        {
+          "acquisitions": [
+            2500,
+            2549
+          ],
+          "windows": 40560,
+          "observed": 97,
+          "predicted": 97.7464705408191,
+          "log_loss": 0.01028250902278704,
+          "brier": 0.002261152149341908
+        },
+        {
+          "acquisitions": [
+            2550,
+            2599
+          ],
+          "windows": 40495,
+          "observed": 108,
+          "predicted": 96.80370969483184,
+          "log_loss": 0.010813246370758228,
+          "brier": 0.0025123532565230547
+        },
+        {
+          "acquisitions": [
+            2600,
+            2649
+          ],
+          "windows": 40587,
+          "observed": 90,
+          "predicted": 98.01853798192992,
+          "log_loss": 0.010692379878770301,
+          "brier": 0.002160992721152014
+        },
+        {
+          "acquisitions": [
+            2650,
+            2699
+          ],
+          "windows": 40688,
+          "observed": 108,
+          "predicted": 100.62684126163421,
+          "log_loss": 0.01107198079655553,
+          "brier": 0.002499430938268075
+        },
+        {
+          "acquisitions": [
+            2700,
+            2749
+          ],
+          "windows": 40939,
+          "observed": 61,
+          "predicted": 108.83242885259867,
+          "log_loss": 0.007499219193868115,
+          "brier": 0.0014878102298384057
+        },
+        {
+          "acquisitions": [
+            2750,
+            2799
+          ],
+          "windows": 40848,
+          "observed": 67,
+          "predicted": 105.41727778961783,
+          "log_loss": 0.007698743278561527,
+          "brier": 0.0016172358380928409
+        },
+        {
+          "acquisitions": [
+            2800,
+            2849
+          ],
+          "windows": 40666,
+          "observed": 78,
+          "predicted": 99.57994674641554,
+          "log_loss": 0.008340948262637912,
+          "brier": 0.0018184589358739298
+        },
+        {
+          "acquisitions": [
+            2850,
+            2899
+          ],
+          "windows": 40607,
+          "observed": 95,
+          "predicted": 100.36255966924861,
+          "log_loss": 0.0098147823272326,
+          "brier": 0.0022251642632484976
+        },
+        {
+          "acquisitions": [
+            2900,
+            2949
+          ],
+          "windows": 40473,
+          "observed": 82,
+          "predicted": 96.56788800249842,
+          "log_loss": 0.008586028074728186,
+          "brier": 0.001924430334243679
+        },
+        {
+          "acquisitions": [
+            2950,
+            2999
+          ],
+          "windows": 40534,
+          "observed": 94,
+          "predicted": 100.50709125395694,
+          "log_loss": 0.009613225982817173,
+          "brier": 0.0022050168277039698
+        },
+        {
+          "acquisitions": [
+            3000,
+            3049
+          ],
+          "windows": 40664,
+          "observed": 76,
+          "predicted": 100.51561097347061,
+          "log_loss": 0.008262036510776125,
+          "brier": 0.001800995811873621
+        },
+        {
+          "acquisitions": [
+            3050,
+            3099
+          ],
+          "windows": 40607,
+          "observed": 70,
+          "predicted": 109.57172803512191,
+          "log_loss": 0.009269949039783247,
+          "brier": 0.0017434145372230273
+        }
+      ],
+      "policy_training_threshold": 1.6591396078477295e-06,
+      "policy_training_coverage": 0.15040774240058438,
+      "policy_validation_coverage": 0.14982676392145147,
+      "policy_validation": {
+        "windows": 188585,
+        "observed": 2,
+        "predicted": 0.2876097294979002,
+        "log_loss": 0.0001432578640972701,
+        "brier": 1.0605266381458127e-05
+      }
+    },
+    "combined": {
+      "validation": {
+        "windows": 1258687,
+        "observed": 2927,
+        "predicted": 2812.064183826324,
+        "log_loss": 0.009900142588299974,
+        "brier": 0.0022092247006093974
+      },
+      "blocks": [
+        {
+          "acquisitions": [
+            1550,
+            1599
+          ],
+          "windows": 40646,
+          "observed": 65,
+          "predicted": 77.51878868134575,
+          "log_loss": 0.007234717781428608,
+          "brier": 0.001543661737532361
+        },
+        {
+          "acquisitions": [
+            1600,
+            1649
+          ],
+          "windows": 40856,
+          "observed": 95,
+          "predicted": 83.07331459011155,
+          "log_loss": 0.010218403024035635,
+          "brier": 0.0022253884949009275
+        },
+        {
+          "acquisitions": [
+            1650,
+            1699
+          ],
+          "windows": 40794,
+          "observed": 97,
+          "predicted": 74.61817599217991,
+          "log_loss": 0.009776131754571316,
+          "brier": 0.00221888695296253
+        },
+        {
+          "acquisitions": [
+            1700,
+            1749
+          ],
+          "windows": 40794,
+          "observed": 99,
+          "predicted": 74.70820130553531,
+          "log_loss": 0.010207890961706887,
+          "brier": 0.002271582887763715
+        },
+        {
+          "acquisitions": [
+            1750,
+            1799
+          ],
+          "windows": 40835,
+          "observed": 104,
+          "predicted": 86.79338005321772,
+          "log_loss": 0.01080695647370144,
+          "brier": 0.0023870942191197555
+        },
+        {
+          "acquisitions": [
+            1800,
+            1849
+          ],
+          "windows": 40657,
+          "observed": 109,
+          "predicted": 95.66881875279024,
+          "log_loss": 0.010823852891632357,
+          "brier": 0.0025142048875923303
+        },
+        {
+          "acquisitions": [
+            1850,
+            1899
+          ],
+          "windows": 40752,
+          "observed": 84,
+          "predicted": 70.00338214910137,
+          "log_loss": 0.009528800130173456,
+          "brier": 0.001985825736084694
+        },
+        {
+          "acquisitions": [
+            1900,
+            1949
+          ],
+          "windows": 40638,
+          "observed": 89,
+          "predicted": 91.89678887834162,
+          "log_loss": 0.009042042215071515,
+          "brier": 0.0020608551615851852
+        },
+        {
+          "acquisitions": [
+            1950,
+            1999
+          ],
+          "windows": 40495,
+          "observed": 122,
+          "predicted": 103.79996374588593,
+          "log_loss": 0.012318977665872546,
+          "brier": 0.00282347901327933
+        },
+        {
+          "acquisitions": [
+            2000,
+            2049
+          ],
+          "windows": 40486,
+          "observed": 122,
+          "predicted": 104.2728481064029,
+          "log_loss": 0.012031148287430056,
+          "brier": 0.0027971837193132005
+        },
+        {
+          "acquisitions": [
+            2050,
+            2099
+          ],
+          "windows": 40531,
+          "observed": 93,
+          "predicted": 92.88442262729485,
+          "log_loss": 0.009128941784083619,
+          "brier": 0.0021410239639344172
+        },
+        {
+          "acquisitions": [
+            2100,
+            2149
+          ],
+          "windows": 40464,
+          "observed": 94,
+          "predicted": 103.38849597310909,
+          "log_loss": 0.009358364165342527,
+          "brier": 0.0021853053304411317
+        },
+        {
+          "acquisitions": [
+            2150,
+            2199
+          ],
+          "windows": 40544,
+          "observed": 106,
+          "predicted": 100.76786351444656,
+          "log_loss": 0.010299637811361975,
+          "brier": 0.002443568637043747
+        },
+        {
+          "acquisitions": [
+            2200,
+            2249
+          ],
+          "windows": 40290,
+          "observed": 102,
+          "predicted": 111.18507450489211,
+          "log_loss": 0.010739080361304608,
+          "brier": 0.0024299443455605666
+        },
+        {
+          "acquisitions": [
+            2250,
+            2299
+          ],
+          "windows": 40374,
+          "observed": 111,
+          "predicted": 111.18059270312573,
+          "log_loss": 0.011045377591673709,
+          "brier": 0.002590644565646147
+        },
+        {
+          "acquisitions": [
+            2300,
+            2349
+          ],
+          "windows": 40577,
+          "observed": 90,
+          "predicted": 93.05954563330305,
+          "log_loss": 0.009301642167294996,
+          "brier": 0.0021132609134470485
+        },
+        {
+          "acquisitions": [
+            2350,
+            2399
+          ],
+          "windows": 40442,
+          "observed": 91,
+          "predicted": 111.89773657444105,
+          "log_loss": 0.009602082095855731,
+          "brier": 0.002137540279051475
+        },
+        {
+          "acquisitions": [
+            2400,
+            2449
+          ],
+          "windows": 40423,
+          "observed": 101,
+          "predicted": 102.70186177634388,
+          "log_loss": 0.010389677603512,
+          "brier": 0.002382307207873783
+        },
+        {
+          "acquisitions": [
+            2450,
+            2499
+          ],
+          "windows": 40421,
+          "observed": 127,
+          "predicted": 104.65085002912616,
+          "log_loss": 0.012881149820903942,
+          "brier": 0.0029314374351707183
+        },
+        {
+          "acquisitions": [
+            2500,
+            2549
+          ],
+          "windows": 40560,
+          "observed": 97,
+          "predicted": 92.16539899234039,
+          "log_loss": 0.010278284626195892,
+          "brier": 0.0022802960360980276
+        },
+        {
+          "acquisitions": [
+            2550,
+            2599
+          ],
+          "windows": 40495,
+          "observed": 108,
+          "predicted": 99.77783580026937,
+          "log_loss": 0.010686567251232073,
+          "brier": 0.0025115505309565357
+        },
+        {
+          "acquisitions": [
+            2600,
+            2649
+          ],
+          "windows": 40587,
+          "observed": 90,
+          "predicted": 92.16274136095906,
+          "log_loss": 0.010802503068556258,
+          "brier": 0.002193225143454747
+        },
+        {
+          "acquisitions": [
+            2650,
+            2699
+          ],
+          "windows": 40688,
+          "observed": 108,
+          "predicted": 95.72445288449515,
+          "log_loss": 0.011066905759999773,
+          "brier": 0.002492089230043262
+        },
+        {
+          "acquisitions": [
+            2700,
+            2749
+          ],
+          "windows": 40939,
+          "observed": 61,
+          "predicted": 54.33354229595015,
+          "log_loss": 0.00817699532941063,
+          "brier": 0.001491321761654876
+        },
+        {
+          "acquisitions": [
+            2750,
+            2799
+          ],
+          "windows": 40848,
+          "observed": 67,
+          "predicted": 60.577722112089035,
+          "log_loss": 0.007761039939269549,
+          "brier": 0.0016060646724977963
+        },
+        {
+          "acquisitions": [
+            2800,
+            2849
+          ],
+          "windows": 40666,
+          "observed": 78,
+          "predicted": 83.0128958105089,
+          "log_loss": 0.008277819889419379,
+          "brier": 0.0018045352125935852
+        },
+        {
+          "acquisitions": [
+            2850,
+            2899
+          ],
+          "windows": 40607,
+          "observed": 95,
+          "predicted": 91.04572691243219,
+          "log_loss": 0.009670263032274386,
+          "brier": 0.002203131328643913
+        },
+        {
+          "acquisitions": [
+            2900,
+            2949
+          ],
+          "windows": 40473,
+          "observed": 82,
+          "predicted": 95.31927735270568,
+          "log_loss": 0.008634361167844303,
+          "brier": 0.0019391613937863531
+        },
+        {
+          "acquisitions": [
+            2950,
+            2999
+          ],
+          "windows": 40534,
+          "observed": 94,
+          "predicted": 98.58490670875626,
+          "log_loss": 0.009632534158492346,
+          "brier": 0.002214463709219552
+        },
+        {
+          "acquisitions": [
+            3000,
+            3049
+          ],
+          "windows": 40664,
+          "observed": 76,
+          "predicted": 87.24505228820715,
+          "log_loss": 0.008509442150169499,
+          "brier": 0.0018221327220523192
+        },
+        {
+          "acquisitions": [
+            3050,
+            3099
+          ],
+          "windows": 40607,
+          "observed": 70,
+          "predicted": 68.04452571661588,
+          "log_loss": 0.008733132260937589,
+          "brier": 0.0017658262134052172
+        }
+      ],
+      "policy_training_threshold": 7.475715439085157e-06,
+      "policy_training_coverage": 0.15000103670080336,
+      "policy_validation_coverage": 0.17799818382171262,
+      "policy_validation": {
+        "windows": 224044,
+        "observed": 1,
+        "predicted": 1.4301460410654547,
+        "log_loss": 5.9859998803784286e-05,
+        "brier": 4.463394230834077e-06
+      }
+    }
+  },
+  "differences": {
+    "history_only_minus_combined": {
+      "pooled_log_loss_difference": 3.922271234223229e-05,
+      "block_differences": [
+        0.00019435102391815885,
+        0.00011259789761651311,
+        0.00033632916714830714,
+        -0.00022657942556217683,
+        1.9974830868478913e-05,
+        -5.98450895578171e-05,
+        5.438354014218258e-05,
+        7.5991442863221e-05,
+        0.00012267334997889678,
+        -3.647487596355331e-05,
+        0.00024626425104727276,
+        -1.7950868270676795e-05,
+        0.0001573425514727455,
+        0.0002839895893001973,
+        5.7693010796305844e-05,
+        0.0001541338145042287,
+        0.00017237738538687132,
+        0.00016383357358571923,
+        3.450432422904583e-05,
+        1.6901584444967838e-05,
+        0.00022263848972702525,
+        -0.00022432862891391854,
+        -1.706671778148837e-05,
+        -0.0004881578133647804,
+        -0.000604061097158941,
+        0.0002601666410799591,
+        -4.18056257395754e-05,
+        5.799379825811857e-05,
+        5.346365537581971e-05,
+        -2.4219941029517134e-06,
+        0.00014837401172217678
+      ],
+      "blocks_combined_better": 21,
+      "scope": "Paired descriptive differences, not independent-block confidence intervals."
+    },
+    "phase_only_minus_combined": {
+      "pooled_log_loss_difference": 5.846052073362612e-05,
+      "block_differences": [
+        6.0474225585980916e-05,
+        -7.659682225740275e-05,
+        0.0001318235997278469,
+        -0.0002835424864978328,
+        0.0003012621159002825,
+        -0.000231963441602109,
+        -4.922756263539205e-05,
+        9.279294728561233e-05,
+        0.00039595975185824014,
+        0.00020270035424150255,
+        0.00017578621661100587,
+        0.00031445903202007193,
+        0.0003528311834168803,
+        -9.717136453661103e-05,
+        0.00015783020045155235,
+        0.0008593596623148181,
+        -9.497723089113563e-07,
+        -9.386787456595186e-05,
+        -0.0001054496672495877,
+        4.224396591147664e-06,
+        0.00012667911952615567,
+        -0.00011012318978595621,
+        5.075036555756904e-06,
+        -0.0006777761355425153,
+        -6.229666070802203e-05,
+        6.31283732185333e-05,
+        0.0001445192949582133,
+        -4.833309311611661e-05,
+        -1.9308175675173192e-05,
+        -0.0002474056393933742,
+        0.0005368167788456588
+      ],
+      "blocks_combined_better": 17,
+      "scope": "Paired descriptive differences, not independent-block confidence intervals."
+    }
+  },
+  "generative_checks": {
+    "models": {
+      "independent_local": {
+        "log_loss": 0.15122402089614967,
+        "structure": {
+          "paired": {
+            "observed": 2927,
+            "predicted": 1783.1659086823076
+          },
+          "same_onset_bin": {
+            "observed": 988,
+            "predicted": 616.3644599839994
+          },
+          "both_at_least_36us_nonG": {
+            "observed": 508,
+            "predicted": 350.9386248209487
+          }
+        },
+        "block_log_losses": [
+          0.12943740621425706,
+          0.14876453256558775,
+          0.1440089399649208,
+          0.13840522959211995,
+          0.1500607634514101,
+          0.15265054860115093,
+          0.15002429696273367,
+          0.15171785889388809,
+          0.17143172928001862,
+          0.16155878412451896,
+          0.15604813584865124,
+          0.15907879483327758,
+          0.15710400520876333,
+          0.15311925340745416,
+          0.15403013333304127,
+          0.13955062929675421,
+          0.1598453811891657,
+          0.16143082537219006,
+          0.18319043596030957,
+          0.150950874520237,
+          0.14273675074946962,
+          0.15122376820468203,
+          0.15821620431102876,
+          0.13896059354113582,
+          0.1409801523423426,
+          0.14081129236596274,
+          0.14859232598542818,
+          0.13959016902599922,
+          0.14499984916858696,
+          0.14854816726678555,
+          0.1614887749012134
+        ]
+      },
+      "shared_environment": {
+        "log_loss": 0.1510356145952781,
+        "structure": {
+          "paired": {
+            "observed": 2927,
+            "predicted": 2871.5630116000357
+          },
+          "same_onset_bin": {
+            "observed": 988,
+            "predicted": 999.031618017897
+          },
+          "both_at_least_36us_nonG": {
+            "observed": 508,
+            "predicted": 552.8806531200878
+          }
+        },
+        "block_log_losses": [
+          0.12943637486548729,
+          0.14859499040748686,
+          0.14361548547203987,
+          0.13818688520004582,
+          0.1497767054289319,
+          0.15225501969672467,
+          0.1500232104209014,
+          0.151611695258285,
+          0.1712856201658664,
+          0.16121899200126433,
+          0.15607976809063906,
+          0.15906555373528958,
+          0.1567745511390481,
+          0.1528498713934025,
+          0.15361875410706877,
+          0.13933773033540295,
+          0.15968223317687757,
+          0.16118821324060256,
+          0.18281849807453243,
+          0.15077439190415518,
+          0.14214993162312334,
+          0.15091041276443815,
+          0.15808892706511776,
+          0.1389337391099996,
+          0.14104413674346297,
+          0.1407915020339482,
+          0.14848576606659591,
+          0.13955616329207723,
+          0.1446783976122181,
+          0.14857943035184326,
+          0.16129709911518994
+        ]
+      },
+      "additional_joint_component": {
+        "log_loss": 0.15124188227465493,
+        "structure": {
+          "paired": {
+            "observed": 2927,
+            "predicted": 1982.40568808188
+          },
+          "same_onset_bin": {
+            "observed": 988,
+            "predicted": 857.4826913028434
+          },
+          "both_at_least_36us_nonG": {
+            "observed": 508,
+            "predicted": 459.93428082873214
+          }
+        },
+        "block_log_losses": [
+          0.12949013472624613,
+          0.1488070030891321,
+          0.14411880314095168,
+          0.1384194390299821,
+          0.15000408951845928,
+          0.15255395289547202,
+          0.1500771705178467,
+          0.1516282228603564,
+          0.17151439624374223,
+          0.16161594755430697,
+          0.15609878872742963,
+          0.15905518911459207,
+          0.15716142361693425,
+          0.15317635853261422,
+          0.15396065021295402,
+          0.13956410144886283,
+          0.1598762447070714,
+          0.1614657177249257,
+          0.1832139649728188,
+          0.1509836666069203,
+          0.14264168266890914,
+          0.1511926488060111,
+          0.15834365281531293,
+          0.13897666978426246,
+          0.14104992870488475,
+          0.14072985275086478,
+          0.14858403353534574,
+          0.13962895297384986,
+          0.1449756371505787,
+          0.14865038354598006,
+          0.16155094578174695
+        ]
+      },
+      "joint_table_benchmark": {
+        "log_loss": 0.15144347535064667,
+        "structure": {
+          "paired": {
+            "observed": 2927,
+            "predicted": 2930.9815963942847
+          },
+          "same_onset_bin": {
+            "observed": 988,
+            "predicted": 1006.7048286706088
+          },
+          "both_at_least_36us_nonG": {
+            "observed": 508,
+            "predicted": 581.7809408512035
+          }
+        },
+        "block_log_losses": [
+          0.1298295545762319,
+          0.14954552715186972,
+          0.1437151282597754,
+          0.13851611076222062,
+          0.15002387892875718,
+          0.15243430092502594,
+          0.15056367461702652,
+          0.151668098742545,
+          0.17221440377173935,
+          0.16161219105147448,
+          0.15619833053319432,
+          0.15942685419987146,
+          0.15685179073023345,
+          0.15317169308035564,
+          0.15413834154481446,
+          0.13970869347198306,
+          0.1597978300618738,
+          0.16158304219544845,
+          0.1836221647637999,
+          0.15114227571180117,
+          0.14246542190252726,
+          0.15191017438458213,
+          0.15857516864634552,
+          0.13928330156517862,
+          0.14141707848577378,
+          0.14121006684205564,
+          0.14913450465305114,
+          0.13997870395502793,
+          0.1448897803476018,
+          0.14895193442432722,
+          0.16177409003317986
+        ]
+      }
+    },
+    "training_windows": 1253978,
+    "validation_windows": 1258687,
+    "scope": "Finite-window observed mark laws, not full physical or whole-trace compatibility witnesses."
+  }
+}

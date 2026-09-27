@@ -57,3 +57,12 @@ an established broader direction: [Tathed et al., arXiv:2606.00358](https://arxi
 use software compensation for coherent control-frame disturbances in a trapped
 ion. That is a different platform and error channel; it prevents treating the
 generic idea of timing-aware control as new here.
+
+
+The subsequent history comparison uses standard supervised prediction and
+finite categorical latent-mixture models; neither method is claimed as novel.
+It directly tests a stronger qubit-only baseline. The paper's retrospective
+cross-correlation alignment (sections II.3–II.4) does not establish availability
+of deposited phase at forecast time. The new result is a restricted empirical
+comparison and a recovered common intervention observable, not universal
+complementarity, a microscopic cause, or a completed physical ambiguity theorem.

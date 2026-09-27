@@ -153,3 +153,11 @@ The [mechanical prediction follow-up](mechanical-prediction.md) carries out an
 ordered calibration/validation experiment on those paired dwell records. It
 delivers a retrospective observed-event forecast and a protocol-specific transfer
 limit, without upgrading this gate into a full physical-mechanism certificate.
+
+The [subsequent information comparison](complementarity.md) finds that qubit
+history rivals deposited phase on matched forecast windows, so mechanical-channel
+indispensability remains unestablished. Shared-environment and joint-event window
+models are compared on held-out marks, without claiming full physical adequacy.
+The native 1 ms control records share an observed threshold event and identical
+reference calibrations; the earlier 99 µs mismatch does not rule out this coarser
+intervention route. Observation dynamics still need a justified transfer model.
