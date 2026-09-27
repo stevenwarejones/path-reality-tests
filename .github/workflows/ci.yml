@@ -35,9 +35,10 @@ jobs:
             studies/born-rule-identifiability/requirements.txt
             studies/collapse-compatibility/requirements.txt
             studies/synthetic-timing-shifts/requirements.txt
+            studies/gst-rb-combination-gain/requirements.txt
             studies/correlated-qubit-mechanisms/requirements.txt
       - name: Install pinned study dependencies
-        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/born-rule-identifiability/requirements.txt -r studies/collapse-compatibility/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt -r studies/correlated-qubit-mechanisms/requirements.txt
+        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/born-rule-identifiability/requirements.txt -r studies/collapse-compatibility/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt -r studies/gst-rb-combination-gain/requirements.txt -r studies/correlated-qubit-mechanisms/requirements.txt
       - name: Check tracked files and documentation links
         run: python scripts/check_repository.py
       - name: Test integrity failures, extraction and numerical counterexamples
@@ -92,6 +93,8 @@ jobs:
         run: |
           python studies/continuum-finite-models/design.py --check
           python studies/continuum-finite-models/joint_design.py --check
+      - name: Verify GST/RB full-class combination certificate offline
+        run: python studies/gst-rb-combination-gain/verify.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/born-rule-identifiability/analyze.py --check

@@ -16,7 +16,7 @@ The exact-fraction attainers cover the boundary; floating-point LP tests are
 independent numerical corroboration. Formal companion: ontology-separation #87.
 
 The earlier Wen reconstruction and illustrative slope-family design are parked at
-[parked/wen-reconstruction](https://github.com/stevenwarejones/path-reality-tests/tree/parked/wen-reconstruction).
+[parked/wen-reconstruction](https://github.com/stevenwarejones/quantum-data-identifiability/tree/parked/wen-reconstruction).
 They are outside this contextuality study. Their practical recommendation is to
 measure the reference wavefront phase against an independently characterized
 external reference to test the near-collimation approximation. Calibration and

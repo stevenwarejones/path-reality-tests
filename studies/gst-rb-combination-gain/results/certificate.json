@@ -1,0 +1,150 @@
+{
+  "cell_budget": 6661,
+  "claim": "strict full-class source-removal gain for a recorded-context mixture",
+  "confidence": 0.95,
+  "group_budget": 12,
+  "groups": [
+    {"family": "GST", "k": 115870, "lower_denominator": 46570000000000, "lower_numerator": 22995172406163, "max_length": 8198, "min_length": 0, "n": 232850, "radius_denominator": 10000000000, "radius_numerator": 38399741, "upper_denominator": 46570000000000, "upper_numerator": 23352827593837},
+    {"family": "GST", "k": 21620, "lower_denominator": 8710000000000, "lower_numerator": 4246662435397, "max_length": 16, "min_length": 0, "n": 43550, "radius_denominator": 10000000000, "radius_numerator": 88791693, "upper_denominator": 8710000000000, "upper_numerator": 4401337564603},
+    {"family": "GST", "k": 18969, "lower_denominator": 10000000000, "lower_numerator": 4845285199, "max_length": 64, "min_length": 17, "n": 38400, "radius_denominator": 10000000000, "radius_numerator": 94558551, "upper_denominator": 10000000000, "upper_numerator": 5034402301},
+    {"family": "GST", "k": 19230, "lower_denominator": 10000000000, "lower_numerator": 4913253949, "max_length": 256, "min_length": 65, "n": 38400, "radius_denominator": 10000000000, "radius_numerator": 94558551, "upper_denominator": 10000000000, "upper_numerator": 5102371051},
+    {"family": "GST", "k": 19147, "lower_denominator": 30000000000, "lower_numerator": 14674918097, "max_length": 1024, "min_length": 257, "n": 38400, "radius_denominator": 10000000000, "radius_numerator": 94558551, "upper_denominator": 30000000000, "upper_numerator": 15242269403},
+    {"family": "GST", "k": 36904, "lower_denominator": 1482000000000, "lower_numerator": 727991989691, "max_length": 8198, "min_length": 1025, "n": 74100, "radius_denominator": 10000000000, "radius_numerator": 68070245, "upper_denominator": 1482000000000, "upper_numerator": 748168010309},
+    {"family": "RB", "k": 37704, "lower_denominator": 23470000000000, "lower_numerator": 1513054816079, "max_length": 8198, "min_length": 0, "n": 563280, "radius_denominator": 10000000000, "radius_numerator": 24689043, "upper_denominator": 23470000000000, "upper_numerator": 1628945183921},
+    {"family": "RB", "k": 32, "lower_denominator": 1, "lower_numerator": 0, "max_length": 16, "min_length": 0, "n": 5625, "radius_denominator": 10000000000, "radius_numerator": 247061545, "upper_denominator": 18000000000, "upper_numerator": 547110781},
+    {"family": "RB", "k": 68, "lower_denominator": 1, "lower_numerator": 0, "max_length": 64, "min_length": 17, "n": 8145, "radius_denominator": 10000000000, "radius_numerator": 205315091, "upper_denominator": 16290000000000, "upper_numerator": 470458283239},
+    {"family": "RB", "k": 197, "lower_denominator": 1, "lower_numerator": 0, "max_length": 256, "min_length": 65, "n": 13500, "radius_denominator": 10000000000, "radius_numerator": 159477542, "upper_denominator": 135000000000, "upper_numerator": 4122946817},
+    {"family": "RB", "k": 5838, "lower_denominator": 6865000000000, "lower_numerator": 244497513499, "max_length": 1024, "min_length": 257, "n": 144165, "radius_denominator": 10000000000, "radius_numerator": 48801874, "upper_denominator": 6865000000000, "upper_numerator": 311502486501},
+    {"family": "RB", "k": 31569, "lower_denominator": 261230000000000, "lower_numerator": 20272727930769, "max_length": 8198, "min_length": 1025, "n": 391845, "radius_denominator": 10000000000, "radius_numerator": 29601197, "upper_denominator": 261230000000000, "upper_numerator": 21819272069231}
+  ],
+  "joint_upper_exact": {
+    "decimal": 0.28781445089810115,
+    "denominator": 13662473750000000,
+    "numerator": 3932257380265971
+  },
+  "models": {
+    "GST_only": {
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "mean_intervals": {
+        "GST": [0.498302918506954, 0.49830292050695413],
+        "RB": [0.08198491628178735, 0.08198491828178738]
+      },
+      "minimum_certified_slack": {
+        "GST": 0.003153544896460145,
+        "RB": -0.015405546076164059
+      },
+      "numerical_probability_envelope": {
+        "decimal": 1e-09,
+        "denominator": 1000000000,
+        "numerator": 1
+      },
+      "physicality": "exact normalized Kraus construction; directed-interval input marginals positive",
+      "q_interval": [0.2918409978874166, 0.2918409998874167],
+      "q_lower_exact": {
+        "decimal": 0.29184099788741663,
+        "denominator": 6153031168945918312448000000000,
+        "numerator": 1795706756377554502582372703177
+      },
+      "q_upper_exact": {
+        "decimal": 0.29184099988741663,
+        "denominator": 6153031168945918312448000000000,
+        "numerator": 1795706768683616840474209328073
+      },
+      "retained": "GST",
+      "separation_lower_exact": {
+        "decimal": 0.004026546989315484,
+        "denominator": 30765155844729591562240000000000,
+        "numerator": 123877345642417619535944420077
+      },
+      "violated_inequalities": {
+        "GST": 0,
+        "RB": 3
+      }
+    },
+    "RB_only": {
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "mean_intervals": {
+        "GST": [0.05899675613921079, 0.058996758139210806],
+        "RB": [0.06870512643812927, 0.0687051284381293]
+      },
+      "minimum_certified_slack": {
+        "GST": -0.7659626231216736,
+        "RB": 9.999900000001006e-05
+      },
+      "numerical_probability_envelope": {
+        "decimal": 1e-09,
+        "denominator": 1000000000,
+        "numerator": 1
+      },
+      "physicality": "exact normalized Kraus construction; directed-interval input marginals positive",
+      "q_interval": [0.5048541841494592, 0.5048541861494593],
+      "q_lower_exact": {
+        "decimal": 0.5048541841494593,
+        "denominator": 384564448059119894528000000000,
+        "numerator": 194148970677774069034503152347
+      },
+      "q_upper_exact": {
+        "decimal": 0.5048541861494592,
+        "denominator": 384564448059119894528000000000,
+        "numerator": 194148971446902965152742941403
+      },
+      "retained": "RB",
+      "separation_lower_exact": {
+        "decimal": 0.21703973325135809,
+        "denominator": 1922822240295599472640000000000,
+        "numerator": 417328826123535664336520818247
+      },
+      "violated_inequalities": {
+        "GST": 3507,
+        "RB": 0
+      }
+    },
+    "joint": {
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "mean_intervals": {
+        "GST": [0.4983226513555186, 0.49832265335551873],
+        "RB": [0.06649174771832159, 0.06649174971832161]
+      },
+      "minimum_certified_slack": {
+        "GST": 0.0031338120478955536,
+        "RB": 0.00202413731870507
+      },
+      "numerical_probability_envelope": {
+        "decimal": 1e-09,
+        "denominator": 1000000000,
+        "numerator": 1
+      },
+      "physicality": "exact normalized Kraus construction; directed-interval input marginals positive",
+      "q_interval": [0.2840845471814014, 0.2840845491814015],
+      "q_lower_exact": {
+        "decimal": 0.28408454718140147,
+        "denominator": 12306062337891836624896000000000,
+        "numerator": 3495962146846101139160255171979
+      },
+      "q_upper_exact": {
+        "decimal": 0.28408454918140147,
+        "denominator": 12306062337891836624896000000000,
+        "numerator": 3495962171458225814943928421771
+      },
+      "retained": "joint",
+      "separation_lower_exact": {
+        "decimal": -0.0037299037166996884,
+        "denominator": 61530311689459183124480000000000,
+        "numerator": -229502138260204090950562331721
+      },
+      "violated_inequalities": {
+        "GST": 0,
+        "RB": 0
+      }
+    }
+  }
+}
