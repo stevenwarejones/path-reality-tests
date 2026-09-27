@@ -1,0 +1,46 @@
+{
+  "status": "Retrospective protocol recorded before computing these transfer fits; earlier aggregate intervention counts are already known",
+  "primary_target": "Native-1-ms common observed threshold flag response under controlled-shock run 833, using no shock qubit outcomes for fitting",
+  "calibration_records": {
+    "PT_on": 562,
+    "PT_off": 567,
+    "fit_samples": [
+      0,
+      4095
+    ],
+    "validation_samples": [
+      4096,
+      8191
+    ]
+  },
+  "matching": "Each PT qubit record has its own same-number acceleration and trigger record; shock acceleration is separate run 832, used only as the notebook's repeated-forcing reference for run 833",
+  "observation": "Positive saved first PCA quadrature; identical G/E calibration centering and positive normalization make this the previously defined u>0.5 flag, not a known intrinsic excited-state indicator",
+  "forcing": {
+    "acceleration_scale_m_s2_per_V": 5,
+    "causal_amplitude_lowpass_s": 0.001,
+    "reservoir_times_s": [
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1
+    ],
+    "law": "causal lowpass of acceleration, squared, then causal exponential reservoir; transition uses reservoir at preceding qubit sample"
+  },
+  "models": {
+    "linear": "independent two-state continuous-time chains conditional on forcing, u_q=b_q+k_q*E, d_q constant; exact 1 ms transition; one shared reservoir time chosen by training likelihood",
+    "saturated_extension": "same fitted parameters, but E is capped at the maximum over all PT control inputs; exactly the same transition laws on all retained PT records"
+  },
+  "parameters": "Positive b_q,k_q,d_q; bounded numerical search, four deterministic rate initializations per grid time; optimizer success and boundary contact reported; no global optimum claim",
+  "targets": [
+    "exposure-normalized flag rates in six protocol-phase intervals [0,.05,.1,.2,.4,.8,1.5] s",
+    "cross-qubit observed onset pairs at lags -10 through +10 ms",
+    "consecutive flagged runs of 1,2,3-5,6+ samples, with boundary censoring explicit"
+  ],
+  "prediction": "Unconditional forward propagation from each acquisition's measured initial flag pair; no later target qubit histories are supplied. Conditional transition likelihood is reported separately for validation diagnostics.",
+  "uncertainty": "Per-acquisition results and explicit forcing/support limitations; no IID-shot confidence claim, no certified physical-model adequacy, no controller ranking",
+  "success_gate": "A fit must describe calibration validation and transfer structure before any physical interpretation; identical calibration laws alone do not make countermodels empirically adequate",
+  "subsequent_diagnostic": "After initial transfer failure, audit found different accelerometer DC offsets. Repeat the entire fixed calibration/transfer procedure after subtracting each forcing record pre-trigger mean. This baseline is available before qubit acquisition. Preserve both outputs; do not label the diagnostic prespecified."
+}

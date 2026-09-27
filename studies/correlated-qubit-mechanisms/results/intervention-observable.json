@@ -1,0 +1,589 @@
+{
+  "status": "Common calibrated observed flag exists; physical intervention transfer has not been fitted",
+  "definition": "u=(saved projected quadrature times notebook normalization - prepared G mean)/(prepared E mean - prepared G mean); flag u>0.5",
+  "calibrations_identical": [
+    {
+      "calibration": 617,
+      "sha256": "551f1753544708b5c40c7ee071c7a1499dcbf3aef53a6de0618bc48e039afc04"
+    },
+    {
+      "calibration": 618,
+      "sha256": "626a0baa119650b55943c076f0c599dc4953317c357117cbbe162a9df1f71aa7"
+    },
+    {
+      "calibration": 619,
+      "sha256": "d0228f963bbf68b35401ba571b56cb6044cf706652df465c8b286f08474f9231"
+    }
+  ],
+  "calibration": [
+    {
+      "ground_mean": -7.701277494635356,
+      "excited_mean": 7.701277494635356,
+      "threshold": 0.0,
+      "prepared_G_flag_fraction": 0.01324462890625,
+      "prepared_E_flag_fraction": 0.94024658203125
+    },
+    {
+      "ground_mean": -8.311760221118362,
+      "excited_mean": 8.311760221118362,
+      "threshold": 0.0,
+      "prepared_G_flag_fraction": 0.015167236328125,
+      "prepared_E_flag_fraction": 0.917755126953125
+    }
+  ],
+  "calibration_scope": "Prepared-reference flag fractions mix preparation, dynamics and separation errors; not pure readout-error calibration.",
+  "clocks": [
+    {
+      "file": "Zenodo/Fig2/774_t.npy",
+      "samples": 32768,
+      "sample_period_s": 0.001,
+      "span_s": 32.767,
+      "can_directly_score_99us_target": false
+    },
+    {
+      "file": "Zenodo/Fig2/782_t.npy",
+      "samples": 32768,
+      "sample_period_s": 0.001,
+      "span_s": 32.767,
+      "can_directly_score_99us_target": false
+    },
+    {
+      "file": "Zenodo/Fig6/833_t.npy",
+      "samples": 32768,
+      "sample_period_s": 0.001,
+      "span_s": 32.767,
+      "can_directly_score_99us_target": false
+    },
+    {
+      "file": "Zenodo/FigS9/321_t.npy",
+      "samples": 32768,
+      "sample_period_s": 0.001,
+      "span_s": 32.767,
+      "can_directly_score_99us_target": false
+    }
+  ],
+  "records": {
+    "PT_off_774": {
+      "total": {
+        "samples": 32768,
+        "A_flags": 40,
+        "B_flags": 104,
+        "paired_flags": 0,
+        "initial_both_unflagged": 32623,
+        "next_1ms_paired_flags": 0,
+        "paired_flag_fraction": 0.0,
+        "conditional_1ms_pair_fraction": 0.0
+      },
+      "acquisitions": [
+        {
+          "acquisition": 0,
+          "samples": 32768,
+          "A_flags": 40,
+          "B_flags": 104,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32623,
+          "next_1ms_paired_flags": 0
+        }
+      ]
+    },
+    "PT_on_782": {
+      "total": {
+        "samples": 32768,
+        "A_flags": 757,
+        "B_flags": 305,
+        "paired_flags": 44,
+        "initial_both_unflagged": 31749,
+        "next_1ms_paired_flags": 35,
+        "paired_flag_fraction": 0.0013427734375,
+        "conditional_1ms_pair_fraction": 0.0011023969258874295
+      },
+      "acquisitions": [
+        {
+          "acquisition": 0,
+          "samples": 32768,
+          "A_flags": 757,
+          "B_flags": 305,
+          "paired_flags": 44,
+          "initial_both_unflagged": 31749,
+          "next_1ms_paired_flags": 35
+        }
+      ]
+    },
+    "controlled_shock_833": {
+      "total": {
+        "samples": 1638400,
+        "A_flags": 4217,
+        "B_flags": 7597,
+        "paired_flags": 32,
+        "initial_both_unflagged": 1626568,
+        "next_1ms_paired_flags": 29,
+        "paired_flag_fraction": 1.953125e-05,
+        "conditional_1ms_pair_fraction": 1.782895028059079e-05
+      },
+      "acquisitions": [
+        {
+          "acquisition": 0,
+          "samples": 32768,
+          "A_flags": 104,
+          "B_flags": 181,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32483,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 1,
+          "samples": 32768,
+          "A_flags": 127,
+          "B_flags": 157,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32483,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 2,
+          "samples": 32768,
+          "A_flags": 115,
+          "B_flags": 197,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32455,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 3,
+          "samples": 32768,
+          "A_flags": 108,
+          "B_flags": 158,
+          "paired_flags": 2,
+          "initial_both_unflagged": 32503,
+          "next_1ms_paired_flags": 2
+        },
+        {
+          "acquisition": 4,
+          "samples": 32768,
+          "A_flags": 120,
+          "B_flags": 172,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32476,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 5,
+          "samples": 32768,
+          "A_flags": 53,
+          "B_flags": 107,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32607,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 6,
+          "samples": 32768,
+          "A_flags": 52,
+          "B_flags": 166,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32550,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 7,
+          "samples": 32768,
+          "A_flags": 49,
+          "B_flags": 160,
+          "paired_flags": 2,
+          "initial_both_unflagged": 32560,
+          "next_1ms_paired_flags": 2
+        },
+        {
+          "acquisition": 8,
+          "samples": 32768,
+          "A_flags": 74,
+          "B_flags": 165,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32528,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 9,
+          "samples": 32768,
+          "A_flags": 88,
+          "B_flags": 188,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32492,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 10,
+          "samples": 32768,
+          "A_flags": 57,
+          "B_flags": 111,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32599,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 11,
+          "samples": 32768,
+          "A_flags": 42,
+          "B_flags": 112,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32613,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 12,
+          "samples": 32768,
+          "A_flags": 59,
+          "B_flags": 137,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32571,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 13,
+          "samples": 32768,
+          "A_flags": 61,
+          "B_flags": 154,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32553,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 14,
+          "samples": 32768,
+          "A_flags": 57,
+          "B_flags": 136,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32574,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 15,
+          "samples": 32768,
+          "A_flags": 84,
+          "B_flags": 121,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32562,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 16,
+          "samples": 32768,
+          "A_flags": 81,
+          "B_flags": 108,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32579,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 17,
+          "samples": 32768,
+          "A_flags": 81,
+          "B_flags": 115,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32571,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 18,
+          "samples": 32768,
+          "A_flags": 81,
+          "B_flags": 104,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32582,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 19,
+          "samples": 32768,
+          "A_flags": 87,
+          "B_flags": 145,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32536,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 20,
+          "samples": 32768,
+          "A_flags": 116,
+          "B_flags": 151,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32500,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 21,
+          "samples": 32768,
+          "A_flags": 107,
+          "B_flags": 147,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32513,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 22,
+          "samples": 32768,
+          "A_flags": 104,
+          "B_flags": 127,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32537,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 23,
+          "samples": 32768,
+          "A_flags": 116,
+          "B_flags": 158,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32493,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 24,
+          "samples": 32768,
+          "A_flags": 123,
+          "B_flags": 165,
+          "paired_flags": 2,
+          "initial_both_unflagged": 32481,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 25,
+          "samples": 32768,
+          "A_flags": 108,
+          "B_flags": 190,
+          "paired_flags": 4,
+          "initial_both_unflagged": 32473,
+          "next_1ms_paired_flags": 4
+        },
+        {
+          "acquisition": 26,
+          "samples": 32768,
+          "A_flags": 91,
+          "B_flags": 171,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32505,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 27,
+          "samples": 32768,
+          "A_flags": 102,
+          "B_flags": 192,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32473,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 28,
+          "samples": 32768,
+          "A_flags": 111,
+          "B_flags": 147,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32510,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 29,
+          "samples": 32768,
+          "A_flags": 120,
+          "B_flags": 166,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32482,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 30,
+          "samples": 32768,
+          "A_flags": 58,
+          "B_flags": 128,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32582,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 31,
+          "samples": 32768,
+          "A_flags": 66,
+          "B_flags": 122,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32580,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 32,
+          "samples": 32768,
+          "A_flags": 61,
+          "B_flags": 175,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32531,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 33,
+          "samples": 32768,
+          "A_flags": 46,
+          "B_flags": 158,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32563,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 34,
+          "samples": 32768,
+          "A_flags": 59,
+          "B_flags": 166,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32542,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 35,
+          "samples": 32768,
+          "A_flags": 54,
+          "B_flags": 125,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32588,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 36,
+          "samples": 32768,
+          "A_flags": 53,
+          "B_flags": 151,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32563,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 37,
+          "samples": 32768,
+          "A_flags": 51,
+          "B_flags": 96,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32621,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 38,
+          "samples": 32768,
+          "A_flags": 73,
+          "B_flags": 92,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32602,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 39,
+          "samples": 32768,
+          "A_flags": 77,
+          "B_flags": 89,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32601,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 40,
+          "samples": 32768,
+          "A_flags": 75,
+          "B_flags": 177,
+          "paired_flags": 3,
+          "initial_both_unflagged": 32518,
+          "next_1ms_paired_flags": 2
+        },
+        {
+          "acquisition": 41,
+          "samples": 32768,
+          "A_flags": 87,
+          "B_flags": 166,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32514,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 42,
+          "samples": 32768,
+          "A_flags": 102,
+          "B_flags": 171,
+          "paired_flags": 2,
+          "initial_both_unflagged": 32496,
+          "next_1ms_paired_flags": 2
+        },
+        {
+          "acquisition": 43,
+          "samples": 32768,
+          "A_flags": 66,
+          "B_flags": 189,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32512,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 44,
+          "samples": 32768,
+          "A_flags": 104,
+          "B_flags": 205,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32459,
+          "next_1ms_paired_flags": 1
+        },
+        {
+          "acquisition": 45,
+          "samples": 32768,
+          "A_flags": 92,
+          "B_flags": 181,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32494,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 46,
+          "samples": 32768,
+          "A_flags": 127,
+          "B_flags": 181,
+          "paired_flags": 2,
+          "initial_both_unflagged": 32461,
+          "next_1ms_paired_flags": 2
+        },
+        {
+          "acquisition": 47,
+          "samples": 32768,
+          "A_flags": 105,
+          "B_flags": 169,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32493,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 48,
+          "samples": 32768,
+          "A_flags": 83,
+          "B_flags": 170,
+          "paired_flags": 0,
+          "initial_both_unflagged": 32514,
+          "next_1ms_paired_flags": 0
+        },
+        {
+          "acquisition": 49,
+          "samples": 32768,
+          "A_flags": 100,
+          "B_flags": 178,
+          "paired_flags": 1,
+          "initial_both_unflagged": 32490,
+          "next_1ms_paired_flags": 1
+        }
+      ]
+    }
+  },
+  "shock_accelerometer": {
+    "samples": 700000,
+    "trigger_time_s": 0.5151,
+    "sample_interval_s": 4.999999999988347e-05
+  },
+  "limitations": [
+    "No raw IQ for the Fig2 projected records; notebook PCA orientation is taken as deposited.",
+    "Matching projection and sampling is not a bound on state-dependent backaction or run drift.",
+    "One off record, one on record and fifty shock records are not independent randomized interventions.",
+    "The 3 us continuous record is not downsampled or declared physically equivalent.",
+    "The shock accelerometer record is not an online phase log for the separate 3100 dwell acquisitions."
+  ]
+}

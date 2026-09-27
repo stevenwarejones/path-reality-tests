@@ -1,0 +1,2060 @@
+[
+  {
+    "name": "Zenodo/Fig1/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 0
+  },
+  {
+    "name": "Zenodo/Fig1/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 42
+  },
+  {
+    "name": "Zenodo/Fig1/.ipynb_checkpoints/Fig_Best-checkpoint.ipynb",
+    "size": 116404,
+    "compressed_size": 59975,
+    "offset": 103
+  },
+  {
+    "name": "Zenodo/Fig1/.ipynb_checkpoints/Fig_stability_all-checkpoint.ipynb",
+    "size": 5378814,
+    "compressed_size": 3939985,
+    "offset": 60164
+  },
+  {
+    "name": "Zenodo/Fig1/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 4000244
+  },
+  {
+    "name": "Zenodo/Fig1/__pycache__/mypy.cpython-39.pyc",
+    "size": 28611,
+    "compressed_size": 12463,
+    "offset": 4000298
+  },
+  {
+    "name": "Zenodo/Fig1/00195_Rabi_amp_qubit3.hdf5",
+    "size": 100691,
+    "compressed_size": 13450,
+    "offset": 4012834
+  },
+  {
+    "name": "Zenodo/Fig1/00200_T1_qubit3.hdf5",
+    "size": 9489135,
+    "compressed_size": 1262777,
+    "offset": 4026352
+  },
+  {
+    "name": "Zenodo/Fig1/00201_Ramsey_qubit3.hdf5",
+    "size": 9476847,
+    "compressed_size": 1342858,
+    "offset": 5289191
+  },
+  {
+    "name": "Zenodo/Fig1/00202_Echo_qubit3.hdf5",
+    "size": 9463407,
+    "compressed_size": 1263265,
+    "offset": 6632115
+  },
+  {
+    "name": "Zenodo/Fig1/1058_T1s.npy",
+    "size": 128608,
+    "compressed_size": 120875,
+    "offset": 7895444
+  },
+  {
+    "name": "Zenodo/Fig1/1058_T1s_err.npy",
+    "size": 128608,
+    "compressed_size": 122457,
+    "offset": 8016373
+  },
+  {
+    "name": "Zenodo/Fig1/1058_times_T1.npy",
+    "size": 32248,
+    "compressed_size": 21281,
+    "offset": 8138888
+  },
+  {
+    "name": "Zenodo/Fig1/1059_Ds.npy",
+    "size": 128608,
+    "compressed_size": 113412,
+    "offset": 8160228
+  },
+  {
+    "name": "Zenodo/Fig1/1059_Ds_err.npy",
+    "size": 128608,
+    "compressed_size": 114605,
+    "offset": 8273693
+  },
+  {
+    "name": "Zenodo/Fig1/1059_T2Rs.npy",
+    "size": 128608,
+    "compressed_size": 114418,
+    "offset": 8388355
+  },
+  {
+    "name": "Zenodo/Fig1/1059_T2Rs_err.npy",
+    "size": 128608,
+    "compressed_size": 114759,
+    "offset": 8502828
+  },
+  {
+    "name": "Zenodo/Fig1/1059_times_D.npy",
+    "size": 32248,
+    "compressed_size": 21277,
+    "offset": 8617646
+  },
+  {
+    "name": "Zenodo/Fig1/1059_times_T2R.npy",
+    "size": 32248,
+    "compressed_size": 21277,
+    "offset": 8638981
+  },
+  {
+    "name": "Zenodo/Fig1/1060_T2Es.npy",
+    "size": 128608,
+    "compressed_size": 117380,
+    "offset": 8660318
+  },
+  {
+    "name": "Zenodo/Fig1/1060_T2Es_err.npy",
+    "size": 128608,
+    "compressed_size": 117355,
+    "offset": 8777753
+  },
+  {
+    "name": "Zenodo/Fig1/1060_times_T2E.npy",
+    "size": 32248,
+    "compressed_size": 21275,
+    "offset": 8895167
+  },
+  {
+    "name": "Zenodo/Fig1/coherenceNb.svg",
+    "size": 28502,
+    "compressed_size": 5141,
+    "offset": 8916502
+  },
+  {
+    "name": "Zenodo/Fig1/Fig_Best.ipynb",
+    "size": 1502865,
+    "compressed_size": 1090070,
+    "offset": 8921700
+  },
+  {
+    "name": "Zenodo/Fig1/Fig_Best.svg",
+    "size": 30633,
+    "compressed_size": 5182,
+    "offset": 10011826
+  },
+  {
+    "name": "Zenodo/Fig1/Fig_stability.svg",
+    "size": 264210,
+    "compressed_size": 185334,
+    "offset": 10017062
+  },
+  {
+    "name": "Zenodo/Fig1/Fig_stability_all.ipynb",
+    "size": 10070894,
+    "compressed_size": 7523817,
+    "offset": 10202455
+  },
+  {
+    "name": "Zenodo/Fig1/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 17726337
+  },
+  {
+    "name": "Zenodo/Fig2/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 17734891
+  },
+  {
+    "name": "Zenodo/Fig2/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 17734933
+  },
+  {
+    "name": "Zenodo/Fig2/.ipynb_checkpoints/Fig_PTon&off-checkpoint.ipynb",
+    "size": 1621531,
+    "compressed_size": 1183393,
+    "offset": 17734994
+  },
+  {
+    "name": "Zenodo/Fig2/.ipynb_checkpoints/PTeffect-checkpoint.svg",
+    "size": 421109,
+    "compressed_size": 242129,
+    "offset": 18918477
+  },
+  {
+    "name": "Zenodo/Fig2/[582, 673, 639, 633, 617, 604, 745, 739, 782, 789]_r.npy",
+    "size": 5243008,
+    "compressed_size": 4929973,
+    "offset": 19160690
+  },
+  {
+    "name": "Zenodo/Fig2/[774, 797, 815, 841, 866, 852, 872]_r.npy",
+    "size": 5243008,
+    "compressed_size": 4926146,
+    "offset": 24090761
+  },
+  {
+    "name": "Zenodo/Fig2/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 29016990
+  },
+  {
+    "name": "Zenodo/Fig2/__pycache__/mypy.cpython-310.pyc",
+    "size": 28630,
+    "compressed_size": 12743,
+    "offset": 29017044
+  },
+  {
+    "name": "Zenodo/Fig2/__pycache__/mypy.cpython-39.pyc",
+    "size": 28617,
+    "compressed_size": 12485,
+    "offset": 29029861
+  },
+  {
+    "name": "Zenodo/Fig2/480_v.npy",
+    "size": 16000128,
+    "compressed_size": 4078426,
+    "offset": 29042419
+  },
+  {
+    "name": "Zenodo/Fig2/483_v.npy",
+    "size": 16000128,
+    "compressed_size": 3132871,
+    "offset": 33120896
+  },
+  {
+    "name": "Zenodo/Fig2/562_r.npy",
+    "size": 131200,
+    "compressed_size": 123153,
+    "offset": 36253818
+  },
+  {
+    "name": "Zenodo/Fig2/562_t.npy",
+    "size": 65664,
+    "compressed_size": 19193,
+    "offset": 36377022
+  },
+  {
+    "name": "Zenodo/Fig2/562_v.npy",
+    "size": 2400128,
+    "compressed_size": 468746,
+    "offset": 36396266
+  },
+  {
+    "name": "Zenodo/Fig2/567_r.npy",
+    "size": 131200,
+    "compressed_size": 123022,
+    "offset": 36865063
+  },
+  {
+    "name": "Zenodo/Fig2/567_t.npy",
+    "size": 65664,
+    "compressed_size": 19193,
+    "offset": 36988136
+  },
+  {
+    "name": "Zenodo/Fig2/567_v.npy",
+    "size": 2400128,
+    "compressed_size": 373105,
+    "offset": 37007380
+  },
+  {
+    "name": "Zenodo/Fig2/617.npy",
+    "size": 1048704,
+    "compressed_size": 675347,
+    "offset": 37380536
+  },
+  {
+    "name": "Zenodo/Fig2/618.npy",
+    "size": 1048704,
+    "compressed_size": 692534,
+    "offset": 38055932
+  },
+  {
+    "name": "Zenodo/Fig2/619.npy",
+    "size": 1048704,
+    "compressed_size": 694994,
+    "offset": 38748515
+  },
+  {
+    "name": "Zenodo/Fig2/774.npy",
+    "size": 1048704,
+    "compressed_size": 672100,
+    "offset": 39443558
+  },
+  {
+    "name": "Zenodo/Fig2/774_r.npy",
+    "size": 524416,
+    "compressed_size": 492260,
+    "offset": 40115707
+  },
+  {
+    "name": "Zenodo/Fig2/774_t.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 40608018
+  },
+  {
+    "name": "Zenodo/Fig2/775.npy",
+    "size": 1048704,
+    "compressed_size": 690165,
+    "offset": 40686979
+  },
+  {
+    "name": "Zenodo/Fig2/776.npy",
+    "size": 1048704,
+    "compressed_size": 691844,
+    "offset": 41377193
+  },
+  {
+    "name": "Zenodo/Fig2/782_r.npy",
+    "size": 524416,
+    "compressed_size": 493027,
+    "offset": 42069086
+  },
+  {
+    "name": "Zenodo/Fig2/782_t.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 42562164
+  },
+  {
+    "name": "Zenodo/Fig2/Fig_PTon&off.ipynb",
+    "size": 1621531,
+    "compressed_size": 1183393,
+    "offset": 42641125
+  },
+  {
+    "name": "Zenodo/Fig2/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 43824578
+  },
+  {
+    "name": "Zenodo/Fig2/PTeffect.svg",
+    "size": 405699,
+    "compressed_size": 234516,
+    "offset": 43833132
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 44067702
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 44067761
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/.ipynb_checkpoints/Fig3aeFig5-checkpoint.ipynb",
+    "size": 344749,
+    "compressed_size": 207460,
+    "offset": 44067839
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/.ipynb_checkpoints/Fig3c-checkpoint.ipynb",
+    "size": 1568043,
+    "compressed_size": 1184029,
+    "offset": 44275404
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/.ipynb_checkpoints/Fig7-checkpoint.ipynb",
+    "size": 348998,
+    "compressed_size": 256752,
+    "offset": 45459533
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/.ipynb_checkpoints/osc_figure-checkpoint.ipynb",
+    "size": 230558,
+    "compressed_size": 169328,
+    "offset": 45716384
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 45885817
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/__pycache__/helpers.cpython-310.pyc",
+    "size": 9752,
+    "compressed_size": 4648,
+    "offset": 45885888
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 45890630
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/2dhist",
+    "size": 209168075,
+    "compressed_size": 196781104,
+    "offset": 45890694
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/calibration",
+    "size": 1363,
+    "compressed_size": 772,
+    "offset": 242671868
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/error_mat",
+    "size": 3225,
+    "compressed_size": 2190,
+    "offset": 242672715
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/error_mat_fine",
+    "size": 7172,
+    "compressed_size": 3063,
+    "offset": 242674978
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/osc_record.npy",
+    "size": 1600128,
+    "compressed_size": 419893,
+    "offset": 242678119
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/pth",
+    "size": 227749,
+    "compressed_size": 35525,
+    "offset": 243098090
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/rate_results",
+    "size": 152436,
+    "compressed_size": 61265,
+    "offset": 243133682
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/results",
+    "size": 218058985,
+    "compressed_size": 25935203,
+    "offset": 243195023
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/statistics",
+    "size": 53701,
+    "compressed_size": 16067,
+    "offset": 269130297
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/statistics_wrapped",
+    "size": 53702,
+    "compressed_size": 15187,
+    "offset": 269146438
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/statistics_wrapped_period",
+    "size": 9560,
+    "compressed_size": 4094,
+    "offset": 269161707
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/supplementary",
+    "size": 19282162,
+    "compressed_size": 4897624,
+    "offset": 269165890
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/data/transition_mat",
+    "size": 209167950,
+    "compressed_size": 196781114,
+    "offset": 274063591
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/Fig3aeFig5.ipynb",
+    "size": 344760,
+    "compressed_size": 207468,
+    "offset": 470844783
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/Fig3c.ipynb",
+    "size": 1568054,
+    "compressed_size": 1184038,
+    "offset": 471052326
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/Fig7.ipynb",
+    "size": 348997,
+    "compressed_size": 256752,
+    "offset": 472236434
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/FigS11.ipynb",
+    "size": 230569,
+    "compressed_size": 169336,
+    "offset": 472493255
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/helpers.py",
+    "size": 10690,
+    "compressed_size": 2838,
+    "offset": 472662662
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/mypy.py",
+    "size": 48442,
+    "compressed_size": 9871,
+    "offset": 472665569
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 472675506
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/001.npy",
+    "size": 5500128,
+    "compressed_size": 1047642,
+    "offset": 472675574
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/002.npy",
+    "size": 5500128,
+    "compressed_size": 1059939,
+    "offset": 473723291
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/003.npy",
+    "size": 5500128,
+    "compressed_size": 1087503,
+    "offset": 474783305
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/004.npy",
+    "size": 5500128,
+    "compressed_size": 992470,
+    "offset": 475870883
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/osc_data/005.npy",
+    "size": 88000128,
+    "compressed_size": 12636915,
+    "offset": 476863428
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 489500418
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/2Dhist.svg",
+    "size": 40421,
+    "compressed_size": 19362,
+    "offset": 489500481
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/contigency.svg",
+    "size": 12720,
+    "compressed_size": 2971,
+    "offset": 489519916
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/contigency_stack.svg",
+    "size": 25751,
+    "compressed_size": 4413,
+    "offset": 489522964
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/init_mi.svg",
+    "size": 38893,
+    "compressed_size": 9901,
+    "offset": 489527460
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/mc_compare.svg",
+    "size": 47759,
+    "compressed_size": 28743,
+    "offset": 489537435
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/mechanics.svg",
+    "size": 40039,
+    "compressed_size": 26224,
+    "offset": 489566255
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/mutual_information.svg",
+    "size": 10891,
+    "compressed_size": 2693,
+    "offset": 489592555
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/noise.svg",
+    "size": 235102,
+    "compressed_size": 54232,
+    "offset": 489595333
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/pth.svg",
+    "size": 98873,
+    "compressed_size": 62486,
+    "offset": 489649637
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/stft.svg",
+    "size": 772412,
+    "compressed_size": 579168,
+    "offset": 489712193
+  },
+  {
+    "name": "Zenodo/Fig3aceFig5Fig7FigS11/out/stft_cb.svg",
+    "size": 635316,
+    "compressed_size": 471438,
+    "offset": 490291432
+  },
+  {
+    "name": "Zenodo/Fig3d/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 490762944
+  },
+  {
+    "name": "Zenodo/Fig3d/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 490762987
+  },
+  {
+    "name": "Zenodo/Fig3d/.ipynb_checkpoints/Fig_TimeResolvedMeas_GEF_2D-checkpoint.ipynb",
+    "size": 2364616,
+    "compressed_size": 1757326,
+    "offset": 490763049
+  },
+  {
+    "name": "Zenodo/Fig3d/.ipynb_checkpoints/Fig_TimeResolvedMeas_GEF-checkpoint.ipynb",
+    "size": 2387656,
+    "compressed_size": 1766012,
+    "offset": 492520481
+  },
+  {
+    "name": "Zenodo/Fig3d/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 494286596
+  },
+  {
+    "name": "Zenodo/Fig3d/__pycache__/mypy.cpython-310.pyc",
+    "size": 28640,
+    "compressed_size": 12748,
+    "offset": 494286651
+  },
+  {
+    "name": "Zenodo/Fig3d/__pycache__/mypy.cpython-39.pyc",
+    "size": 28566,
+    "compressed_size": 12445,
+    "offset": 494299474
+  },
+  {
+    "name": "Zenodo/Fig3d/617.npy",
+    "size": 1048704,
+    "compressed_size": 675347,
+    "offset": 494311993
+  },
+  {
+    "name": "Zenodo/Fig3d/618.npy",
+    "size": 1048704,
+    "compressed_size": 692534,
+    "offset": 494987390
+  },
+  {
+    "name": "Zenodo/Fig3d/619.npy",
+    "size": 1048704,
+    "compressed_size": 694994,
+    "offset": 495679974
+  },
+  {
+    "name": "Zenodo/Fig3d/748.npy",
+    "size": 24000128,
+    "compressed_size": 4732962,
+    "offset": 496375018
+  },
+  {
+    "name": "Zenodo/Fig3d/751.npy",
+    "size": 24000128,
+    "compressed_size": 4730718,
+    "offset": 501108030
+  },
+  {
+    "name": "Zenodo/Fig3d/751i.npy",
+    "size": 203161728,
+    "compressed_size": 195363777,
+    "offset": 505838798
+  },
+  {
+    "name": "Zenodo/Fig3d/751i_c.npy",
+    "size": 252761728,
+    "compressed_size": 195790799,
+    "offset": 701202626
+  },
+  {
+    "name": "Zenodo/Fig3d/751pe.npy",
+    "size": 81664,
+    "compressed_size": 10140,
+    "offset": 896993478
+  },
+  {
+    "name": "Zenodo/Fig3d/751pf.npy",
+    "size": 81664,
+    "compressed_size": 4453,
+    "offset": 897003670
+  },
+  {
+    "name": "Zenodo/Fig3d/751r.npy",
+    "size": 203161728,
+    "compressed_size": 192186741,
+    "offset": 897008175
+  },
+  {
+    "name": "Zenodo/Fig3d/751r_c.npy",
+    "size": 252761728,
+    "compressed_size": 192673373,
+    "offset": 1089194967
+  },
+  {
+    "name": "Zenodo/Fig3d/751t_full.npy",
+    "size": 9600128,
+    "compressed_size": 3466735,
+    "offset": 1281868393
+  },
+  {
+    "name": "Zenodo/Fig3d/751t_r.npy",
+    "size": 32896,
+    "compressed_size": 9484,
+    "offset": 1285335184
+  },
+  {
+    "name": "Zenodo/Fig3d/751t_r_full.npy",
+    "size": 40896,
+    "compressed_size": 13355,
+    "offset": 1285344721
+  },
+  {
+    "name": "Zenodo/Fig3d/751t_v.npy",
+    "size": 8000128,
+    "compressed_size": 2920221,
+    "offset": 1285358134
+  },
+  {
+    "name": "Zenodo/Fig3d/751v.npy",
+    "size": 80000128,
+    "compressed_size": 13822107,
+    "offset": 1288278408
+  },
+  {
+    "name": "Zenodo/Fig3d/751v_c.npy",
+    "size": 96000128,
+    "compressed_size": 13874586,
+    "offset": 1302100566
+  },
+  {
+    "name": "Zenodo/Fig3d/Fig_TimeResolvedMeas_GEF_2D.ipynb",
+    "size": 472517,
+    "compressed_size": 335293,
+    "offset": 1315975205
+  },
+  {
+    "name": "Zenodo/Fig3d/gude-2023-12-08.log",
+    "size": 101,
+    "compressed_size": 87,
+    "offset": 1316310574
+  },
+  {
+    "name": "Zenodo/Fig3d/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1316310723
+  },
+  {
+    "name": "Zenodo/Fig3d/p_GEF.svg",
+    "size": 309398,
+    "compressed_size": 59968,
+    "offset": 1316319278
+  },
+  {
+    "name": "Zenodo/Fig3d/thermal_pop",
+    "size": 348509,
+    "compressed_size": 38970,
+    "offset": 1316379298
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1316418322
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1316418374
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/.ipynb_checkpoints/Check_Dwelltime-checkpoint.ipynb",
+    "size": 7273241,
+    "compressed_size": 5334330,
+    "offset": 1316418445
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1321752878
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/__pycache__/mypy.cpython-310.pyc",
+    "size": 28649,
+    "compressed_size": 12760,
+    "offset": 1321752942
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/__pycache__/mypy.cpython-39.pyc",
+    "size": 28600,
+    "compressed_size": 12451,
+    "offset": 1321765786
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/2Dhist.svg",
+    "size": 299431,
+    "compressed_size": 196380,
+    "offset": 1321778320
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/2Dhist2.svg",
+    "size": 39107,
+    "compressed_size": 26202,
+    "offset": 1321974762
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/bic.svg",
+    "size": 53868,
+    "compressed_size": 6749,
+    "offset": 1322001027
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/binning",
+    "size": 115865830,
+    "compressed_size": 19704030,
+    "offset": 1322007835
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/combined_rates.svg",
+    "size": 89879,
+    "compressed_size": 16785,
+    "offset": 1341711924
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/combined_rates_eff.svg",
+    "size": 86649,
+    "compressed_size": 16420,
+    "offset": 1341728779
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/combined_rates_exp.svg",
+    "size": 86649,
+    "compressed_size": 16419,
+    "offset": 1341745273
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/det.svg",
+    "size": 23709,
+    "compressed_size": 4458,
+    "offset": 1341761766
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/divided_rates.svg",
+    "size": 155060,
+    "compressed_size": 29191,
+    "offset": 1341766283
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/dtime",
+    "size": 360415843,
+    "compressed_size": 115199774,
+    "offset": 1341795543
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/dwell_example.svg",
+    "size": 68148,
+    "compressed_size": 15548,
+    "offset": 1456995374
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/dwell_slice.svg",
+    "size": 117418,
+    "compressed_size": 14563,
+    "offset": 1457010991
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/dwells.npy",
+    "size": 184955350,
+    "compressed_size": 52337547,
+    "offset": 1457025621
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/Fig_Dwelltime_analysis.ipynb",
+    "size": 7273241,
+    "compressed_size": 5334330,
+    "offset": 1509363230
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/gude-2023-11-27.log",
+    "size": 359,
+    "compressed_size": 177,
+    "offset": 1514697640
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/gude-2023-11-28.log",
+    "size": 102,
+    "compressed_size": 88,
+    "offset": 1514697888
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/lags.npy",
+    "size": 24928,
+    "compressed_size": 21173,
+    "offset": 1514698047
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1514719280
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/pop.svg",
+    "size": 52699,
+    "compressed_size": 12360,
+    "offset": 1514727844
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/rate_xerr.svg",
+    "size": 145858,
+    "compressed_size": 26419,
+    "offset": 1514740263
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/rates",
+    "size": 726432,
+    "compressed_size": 194541,
+    "offset": 1514766747
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/results_gef",
+    "size": 174550774,
+    "compressed_size": 29960391,
+    "offset": 1514961345
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/results_gef_2d",
+    "size": 393008116,
+    "compressed_size": 59386654,
+    "offset": 1544921799
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/results_gef_n",
+    "size": 447435601,
+    "compressed_size": 73803779,
+    "offset": 1604308519
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/si_backaction.svg",
+    "size": 45578,
+    "compressed_size": 9479,
+    "offset": 1678112363
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/si_divided_rates.svg",
+    "size": 268051,
+    "compressed_size": 50678,
+    "offset": 1678121911
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/si_prob.svg",
+    "size": 133666,
+    "compressed_size": 26149,
+    "offset": 1678172661
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/thermal_pop",
+    "size": 348509,
+    "compressed_size": 38970,
+    "offset": 1678198873
+  },
+  {
+    "name": "Zenodo/Fig4FigS6FigS7/upopt.svg",
+    "size": 136233,
+    "compressed_size": 27378,
+    "offset": 1678237906
+  },
+  {
+    "name": "Zenodo/Fig6/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1678265345
+  },
+  {
+    "name": "Zenodo/Fig6/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1678265387
+  },
+  {
+    "name": "Zenodo/Fig6/.ipynb_checkpoints/Fig_ContorlledShock_Acc_HighResolution-checkpoint.ipynb",
+    "size": 50474,
+    "compressed_size": 35449,
+    "offset": 1678265448
+  },
+  {
+    "name": "Zenodo/Fig6/.ipynb_checkpoints/Fig_ContorlledShock_HighResolution-checkpoint.ipynb",
+    "size": 439197,
+    "compressed_size": 318713,
+    "offset": 1678301013
+  },
+  {
+    "name": "Zenodo/Fig6/.ipynb_checkpoints/Fig_ContorlledShock-checkpoint.ipynb",
+    "size": 953782,
+    "compressed_size": 696990,
+    "offset": 1678619838
+  },
+  {
+    "name": "Zenodo/Fig6/.ipynb_checkpoints/Fig_ControlledShock_GEF_2D-checkpoint.ipynb",
+    "size": 528676,
+    "compressed_size": 385261,
+    "offset": 1679316925
+  },
+  {
+    "name": "Zenodo/Fig6/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1679702290
+  },
+  {
+    "name": "Zenodo/Fig6/__pycache__/mypy.cpython-310.pyc",
+    "size": 28637,
+    "compressed_size": 12706,
+    "offset": 1679702344
+  },
+  {
+    "name": "Zenodo/Fig6/__pycache__/mypy.cpython-39.pyc",
+    "size": 28624,
+    "compressed_size": 12464,
+    "offset": 1679715124
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1679727661
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1679727708
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/.ipynb_checkpoints/Fig_ContorlledShock-checkpoint.ipynb",
+    "size": 736337,
+    "compressed_size": 535224,
+    "offset": 1679727774
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1680263100
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/__pycache__/mypy.cpython-39.pyc",
+    "size": 28629,
+    "compressed_size": 12468,
+    "offset": 1680263159
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/617.npy",
+    "size": 1048704,
+    "compressed_size": 675347,
+    "offset": 1680275705
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/618.npy",
+    "size": 1048704,
+    "compressed_size": 692534,
+    "offset": 1680951106
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/619.npy",
+    "size": 1048704,
+    "compressed_size": 694994,
+    "offset": 1681643694
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/832.npy",
+    "size": 16800128,
+    "compressed_size": 2616761,
+    "offset": 1682338742
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/833_r.npy",
+    "size": 26214528,
+    "compressed_size": 24631758,
+    "offset": 1684955557
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/833_t.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 1709587371
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/Fig_ContorlledShock.ipynb",
+    "size": 772192,
+    "compressed_size": 561963,
+    "offset": 1709666337
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/mechshock.svg",
+    "size": 235588,
+    "compressed_size": 163809,
+    "offset": 1710228372
+  },
+  {
+    "name": "Zenodo/Fig6/0lds/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1710392241
+  },
+  {
+    "name": "Zenodo/Fig6/1286.npy",
+    "size": 24000128,
+    "compressed_size": 3854922,
+    "offset": 1710400800
+  },
+  {
+    "name": "Zenodo/Fig6/617.npy",
+    "size": 1048704,
+    "compressed_size": 675347,
+    "offset": 1714255772
+  },
+  {
+    "name": "Zenodo/Fig6/618.npy",
+    "size": 1048704,
+    "compressed_size": 692534,
+    "offset": 1714931168
+  },
+  {
+    "name": "Zenodo/Fig6/619.npy",
+    "size": 1048704,
+    "compressed_size": 694994,
+    "offset": 1715623751
+  },
+  {
+    "name": "Zenodo/Fig6/774.npy",
+    "size": 1048704,
+    "compressed_size": 672100,
+    "offset": 1716318794
+  },
+  {
+    "name": "Zenodo/Fig6/775.npy",
+    "size": 1048704,
+    "compressed_size": 690165,
+    "offset": 1716990943
+  },
+  {
+    "name": "Zenodo/Fig6/776.npy",
+    "size": 1048704,
+    "compressed_size": 691844,
+    "offset": 1717681157
+  },
+  {
+    "name": "Zenodo/Fig6/832.npy",
+    "size": 16800128,
+    "compressed_size": 2616761,
+    "offset": 1718373050
+  },
+  {
+    "name": "Zenodo/Fig6/833_i.npy",
+    "size": 26214528,
+    "compressed_size": 25207255,
+    "offset": 1720989860
+  },
+  {
+    "name": "Zenodo/Fig6/833_r.npy",
+    "size": 26214528,
+    "compressed_size": 24631758,
+    "offset": 1746197166
+  },
+  {
+    "name": "Zenodo/Fig6/833_t.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 1770828975
+  },
+  {
+    "name": "Zenodo/Fig6/Fig_ContorlledShock_HighResolution.ipynb",
+    "size": 439197,
+    "compressed_size": 318713,
+    "offset": 1770907936
+  },
+  {
+    "name": "Zenodo/Fig6/Fig_ControlledShock_GEF_2D.ipynb",
+    "size": 528676,
+    "compressed_size": 385261,
+    "offset": 1771226731
+  },
+  {
+    "name": "Zenodo/Fig6/mechshock_GEF.svg",
+    "size": 221305,
+    "compressed_size": 99067,
+    "offset": 1771612066
+  },
+  {
+    "name": "Zenodo/Fig6/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1771711192
+  },
+  {
+    "name": "Zenodo/Fig6/shock_stft.svg",
+    "size": 75312,
+    "compressed_size": 51361,
+    "offset": 1771719746
+  },
+  {
+    "name": "Zenodo/Fig6/shock_stft_cb.svg",
+    "size": 60107,
+    "compressed_size": 37071,
+    "offset": 1771771163
+  },
+  {
+    "name": "Zenodo/FigS10/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1771808293
+  },
+  {
+    "name": "Zenodo/FigS10/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1771808337
+  },
+  {
+    "name": "Zenodo/FigS10/.ipynb_checkpoints/Fig_PTon&off-checkpoint.ipynb",
+    "size": 1511259,
+    "compressed_size": 1105073,
+    "offset": 1771808400
+  },
+  {
+    "name": "Zenodo/FigS10/.ipynb_checkpoints/Fig_Vibration_spectra-checkpoint.ipynb",
+    "size": 356262,
+    "compressed_size": 260507,
+    "offset": 1772913565
+  },
+  {
+    "name": "Zenodo/FigS10/.ipynb_checkpoints/PTeffect-checkpoint.svg",
+    "size": 421109,
+    "compressed_size": 242129,
+    "offset": 1773174173
+  },
+  {
+    "name": "Zenodo/FigS10/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1773416388
+  },
+  {
+    "name": "Zenodo/FigS10/__pycache__/mypy.cpython-39.pyc",
+    "size": 28617,
+    "compressed_size": 12485,
+    "offset": 1773416444
+  },
+  {
+    "name": "Zenodo/FigS10/480.npy",
+    "size": 16000128,
+    "compressed_size": 4078426,
+    "offset": 1773429004
+  },
+  {
+    "name": "Zenodo/FigS10/562.npy",
+    "size": 1600128,
+    "compressed_size": 419893,
+    "offset": 1777507481
+  },
+  {
+    "name": "Zenodo/FigS10/748.npy",
+    "size": 16000128,
+    "compressed_size": 4304812,
+    "offset": 1777927425
+  },
+  {
+    "name": "Zenodo/FigS10/752.npy",
+    "size": 16000128,
+    "compressed_size": 6235163,
+    "offset": 1782232288
+  },
+  {
+    "name": "Zenodo/FigS10/Fig_Vibration_spectra.ipynb",
+    "size": 356262,
+    "compressed_size": 260507,
+    "offset": 1788467502
+  },
+  {
+    "name": "Zenodo/FigS10/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1788728080
+  },
+  {
+    "name": "Zenodo/FigS10/Vibration.svg",
+    "size": 368186,
+    "compressed_size": 131992,
+    "offset": 1788736636
+  },
+  {
+    "name": "Zenodo/FigS12/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1788868685
+  },
+  {
+    "name": "Zenodo/FigS12/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1788868729
+  },
+  {
+    "name": "Zenodo/FigS12/.ipynb_checkpoints/Fig_PTeffect_diffrentQubits&cooling-checkpoint.ipynb",
+    "size": 27962,
+    "compressed_size": 4951,
+    "offset": 1788868792
+  },
+  {
+    "name": "Zenodo/FigS12/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1788873858
+  },
+  {
+    "name": "Zenodo/FigS12/__pycache__/mypy.cpython-39.pyc",
+    "size": 28640,
+    "compressed_size": 12500,
+    "offset": 1788873914
+  },
+  {
+    "name": "Zenodo/FigS12/00052_SSR of E .hdf5",
+    "size": 1525504,
+    "compressed_size": 1390698,
+    "offset": 1788886489
+  },
+  {
+    "name": "Zenodo/FigS12/00061_SSR of G .hdf5",
+    "size": 1532217,
+    "compressed_size": 1364178,
+    "offset": 1790277251
+  },
+  {
+    "name": "Zenodo/FigS12/00208_SSR-G ref #[2, 3].hdf5",
+    "size": 1583680,
+    "compressed_size": 1435635,
+    "offset": 1791641493
+  },
+  {
+    "name": "Zenodo/FigS12/00209_SSR-E ref #[2, 3].hdf5",
+    "size": 1573925,
+    "compressed_size": 1453786,
+    "offset": 1793077200
+  },
+  {
+    "name": "Zenodo/FigS12/00252_SSR of G.hdf5",
+    "size": 1502640,
+    "compressed_size": 1366885,
+    "offset": 1794531058
+  },
+  {
+    "name": "Zenodo/FigS12/00253_SSR of E.hdf5",
+    "size": 1518461,
+    "compressed_size": 1383457,
+    "offset": 1795898006
+  },
+  {
+    "name": "Zenodo/FigS12/00485_SSR-G ref #[2, 3].hdf5",
+    "size": 1625590,
+    "compressed_size": 1374153,
+    "offset": 1797281526
+  },
+  {
+    "name": "Zenodo/FigS12/00486_SSR-E ref #[2, 3].hdf5",
+    "size": 872323,
+    "compressed_size": 706352,
+    "offset": 1798655751
+  },
+  {
+    "name": "Zenodo/FigS12/00856_SSR-G ref #[2, 3].hdf5",
+    "size": 823675,
+    "compressed_size": 687636,
+    "offset": 1799362175
+  },
+  {
+    "name": "Zenodo/FigS12/00857_SSR-E ref #[2, 3].hdf5",
+    "size": 825068,
+    "compressed_size": 706601,
+    "offset": 1800049883
+  },
+  {
+    "name": "Zenodo/FigS12/00994_SSR of G.hdf5",
+    "size": 1537002,
+    "compressed_size": 1368777,
+    "offset": 1800756556
+  },
+  {
+    "name": "Zenodo/FigS12/00995_SSR of E.hdf5",
+    "size": 1525283,
+    "compressed_size": 1390772,
+    "offset": 1802125396
+  },
+  {
+    "name": "Zenodo/FigS12/Fig_PTeffect_diffrentQubits&cooling.ipynb",
+    "size": 657453,
+    "compressed_size": 475594,
+    "offset": 1803516231
+  },
+  {
+    "name": "Zenodo/FigS12/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1803991910
+  },
+  {
+    "name": "Zenodo/FigS12/PSDs.svg",
+    "size": 117118,
+    "compressed_size": 73370,
+    "offset": 1804000466
+  },
+  {
+    "name": "Zenodo/FigS12/PSDs_mag.svg",
+    "size": 55659,
+    "compressed_size": 34763,
+    "offset": 1804073888
+  },
+  {
+    "name": "Zenodo/FigS3/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1804108707
+  },
+  {
+    "name": "Zenodo/FigS3/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1804108750
+  },
+  {
+    "name": "Zenodo/FigS3/.ipynb_checkpoints/Coherence_analysis_plot_figures-checkpoint.ipynb",
+    "size": 10331188,
+    "compressed_size": 7674157,
+    "offset": 1804108812
+  },
+  {
+    "name": "Zenodo/FigS3/1058_T1s.npy",
+    "size": 128608,
+    "compressed_size": 120875,
+    "offset": 1811783079
+  },
+  {
+    "name": "Zenodo/FigS3/1058_T1s_err.npy",
+    "size": 128608,
+    "compressed_size": 122457,
+    "offset": 1811904009
+  },
+  {
+    "name": "Zenodo/FigS3/1058_times_T1.npy",
+    "size": 32248,
+    "compressed_size": 21281,
+    "offset": 1812026525
+  },
+  {
+    "name": "Zenodo/FigS3/1059_Ds.npy",
+    "size": 128608,
+    "compressed_size": 113412,
+    "offset": 1812047866
+  },
+  {
+    "name": "Zenodo/FigS3/1059_Ds_err.npy",
+    "size": 128608,
+    "compressed_size": 114605,
+    "offset": 1812161332
+  },
+  {
+    "name": "Zenodo/FigS3/1059_T2Rs.npy",
+    "size": 128608,
+    "compressed_size": 114418,
+    "offset": 1812275995
+  },
+  {
+    "name": "Zenodo/FigS3/1059_T2Rs_err.npy",
+    "size": 128608,
+    "compressed_size": 114759,
+    "offset": 1812390469
+  },
+  {
+    "name": "Zenodo/FigS3/1059_times_D.npy",
+    "size": 32248,
+    "compressed_size": 21277,
+    "offset": 1812505288
+  },
+  {
+    "name": "Zenodo/FigS3/1059_times_T2R.npy",
+    "size": 32248,
+    "compressed_size": 21277,
+    "offset": 1812526624
+  },
+  {
+    "name": "Zenodo/FigS3/1060_T2Es.npy",
+    "size": 128608,
+    "compressed_size": 117380,
+    "offset": 1812547962
+  },
+  {
+    "name": "Zenodo/FigS3/1060_T2Es_err.npy",
+    "size": 128608,
+    "compressed_size": 117355,
+    "offset": 1812665398
+  },
+  {
+    "name": "Zenodo/FigS3/1060_times_T2E.npy",
+    "size": 32248,
+    "compressed_size": 21275,
+    "offset": 1812782813
+  },
+  {
+    "name": "Zenodo/FigS3/Coherence_analysis_plot_figures.ipynb",
+    "size": 10331188,
+    "compressed_size": 7674157,
+    "offset": 1812804149
+  },
+  {
+    "name": "Zenodo/FigS3/FigSI_ADEV_v2.svg",
+    "size": 1148036,
+    "compressed_size": 799661,
+    "offset": 1820478386
+  },
+  {
+    "name": "Zenodo/FigS3/Longterm_meas.svg",
+    "size": 1148036,
+    "compressed_size": 799665,
+    "offset": 1821278107
+  },
+  {
+    "name": "Zenodo/FigS4/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1822077832
+  },
+  {
+    "name": "Zenodo/FigS4/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1822077875
+  },
+  {
+    "name": "Zenodo/FigS4/.ipynb_checkpoints/Fig_ReadoutBackaction-checkpoint.ipynb",
+    "size": 3498824,
+    "compressed_size": 2577352,
+    "offset": 1822077937
+  },
+  {
+    "name": "Zenodo/FigS4/.ipynb_checkpoints/Fig_Readout-checkpoint.ipynb",
+    "size": 13534,
+    "compressed_size": 3247,
+    "offset": 1824655389
+  },
+  {
+    "name": "Zenodo/FigS4/.ipynb_checkpoints/Fig_ReadoutOptimization-checkpoint.ipynb",
+    "size": 204767,
+    "compressed_size": 147118,
+    "offset": 1824658726
+  },
+  {
+    "name": "Zenodo/FigS4/.ipynb_checkpoints/Untitled-checkpoint.ipynb",
+    "size": 72,
+    "compressed_size": 57,
+    "offset": 1824805946
+  },
+  {
+    "name": "Zenodo/FigS4/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1824806090
+  },
+  {
+    "name": "Zenodo/FigS4/__pycache__/mypy.cpython-310.pyc",
+    "size": 28641,
+    "compressed_size": 12748,
+    "offset": 1824806145
+  },
+  {
+    "name": "Zenodo/FigS4/__pycache__/mypy.cpython-39.pyc",
+    "size": 28603,
+    "compressed_size": 12449,
+    "offset": 1824818968
+  },
+  {
+    "name": "Zenodo/FigS4/448.npy",
+    "size": 19520,
+    "compressed_size": 9899,
+    "offset": 1824831491
+  },
+  {
+    "name": "Zenodo/FigS4/449.npy",
+    "size": 9920,
+    "compressed_size": 5191,
+    "offset": 1824841440
+  },
+  {
+    "name": "Zenodo/FigS4/Fig_ReadoutOptimization.ipynb",
+    "size": 204767,
+    "compressed_size": 147118,
+    "offset": 1824846681
+  },
+  {
+    "name": "Zenodo/FigS4/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1824993871
+  },
+  {
+    "name": "Zenodo/FigS4/Readout.svg",
+    "size": 147048,
+    "compressed_size": 26375,
+    "offset": 1825002426
+  },
+  {
+    "name": "Zenodo/FigS5/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1825028855
+  },
+  {
+    "name": "Zenodo/FigS5/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1825028898
+  },
+  {
+    "name": "Zenodo/FigS5/.ipynb_checkpoints/Fig_ReadoutBackaction-checkpoint.ipynb",
+    "size": 1118709,
+    "compressed_size": 773383,
+    "offset": 1825028960
+  },
+  {
+    "name": "Zenodo/FigS5/.ipynb_checkpoints/mypy-checkpoint.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1825802443
+  },
+  {
+    "name": "Zenodo/FigS5/[744].npy",
+    "size": 26528,
+    "compressed_size": 13009,
+    "offset": 1825811028
+  },
+  {
+    "name": "Zenodo/FigS5/[744]_t.npy",
+    "size": 392,
+    "compressed_size": 297,
+    "offset": 1825824089
+  },
+  {
+    "name": "Zenodo/FigS5/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1825824440
+  },
+  {
+    "name": "Zenodo/FigS5/__pycache__/mypy.cpython-310.pyc",
+    "size": 28639,
+    "compressed_size": 12748,
+    "offset": 1825824495
+  },
+  {
+    "name": "Zenodo/FigS5/__pycache__/mypy.cpython-39.pyc",
+    "size": 28626,
+    "compressed_size": 12463,
+    "offset": 1825837318
+  },
+  {
+    "name": "Zenodo/FigS5/617.npy",
+    "size": 1048704,
+    "compressed_size": 675347,
+    "offset": 1825849855
+  },
+  {
+    "name": "Zenodo/FigS5/618.npy",
+    "size": 1048704,
+    "compressed_size": 692534,
+    "offset": 1826525252
+  },
+  {
+    "name": "Zenodo/FigS5/619.npy",
+    "size": 1048704,
+    "compressed_size": 694994,
+    "offset": 1827217836
+  },
+  {
+    "name": "Zenodo/FigS5/743.npy",
+    "size": 1472,
+    "compressed_size": 868,
+    "offset": 1827912880
+  },
+  {
+    "name": "Zenodo/FigS5/backactions.svg",
+    "size": 120849,
+    "compressed_size": 55673,
+    "offset": 1827913798
+  },
+  {
+    "name": "Zenodo/FigS5/Fig_ReadoutBackaction.ipynb",
+    "size": 1118709,
+    "compressed_size": 773383,
+    "offset": 1827969529
+  },
+  {
+    "name": "Zenodo/FigS5/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1828742982
+  },
+  {
+    "name": "Zenodo/FigS5/results_gef_2d",
+    "size": 393008116,
+    "compressed_size": 59386654,
+    "offset": 1828751537
+  },
+  {
+    "name": "Zenodo/FigS8/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1888138248
+  },
+  {
+    "name": "Zenodo/FigS8/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1888138291
+  },
+  {
+    "name": "Zenodo/FigS8/.ipynb_checkpoints/Fig_cavity_qubit-checkpoint.ipynb",
+    "size": 748337,
+    "compressed_size": 538529,
+    "offset": 1888138353
+  },
+  {
+    "name": "Zenodo/FigS8/.ipynb_checkpoints/mypy-checkpoint.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1888676977
+  },
+  {
+    "name": "Zenodo/FigS8/.ipynb_checkpoints/Qubit_spec-checkpoint.py",
+    "size": 1245,
+    "compressed_size": 698,
+    "offset": 1888685562
+  },
+  {
+    "name": "Zenodo/FigS8/.ipynb_checkpoints/RPN_FIT-checkpoint.py",
+    "size": 5810,
+    "compressed_size": 1971,
+    "offset": 1888686346
+  },
+  {
+    "name": "Zenodo/FigS8/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1888688400
+  },
+  {
+    "name": "Zenodo/FigS8/__pycache__/mypy.cpython-39.pyc",
+    "size": 28622,
+    "compressed_size": 12459,
+    "offset": 1888688455
+  },
+  {
+    "name": "Zenodo/FigS8/1.npy",
+    "size": 32160,
+    "compressed_size": 13101,
+    "offset": 1888700988
+  },
+  {
+    "name": "Zenodo/FigS8/13.npy",
+    "size": 16160,
+    "compressed_size": 6186,
+    "offset": 1888714137
+  },
+  {
+    "name": "Zenodo/FigS8/14.npy",
+    "size": 16160,
+    "compressed_size": 6065,
+    "offset": 1888720372
+  },
+  {
+    "name": "Zenodo/FigS8/16.npy",
+    "size": 16160,
+    "compressed_size": 6257,
+    "offset": 1888726486
+  },
+  {
+    "name": "Zenodo/FigS8/1616.npy",
+    "size": 304,
+    "compressed_size": 210,
+    "offset": 1888732792
+  },
+  {
+    "name": "Zenodo/FigS8/1617.npy",
+    "size": 304,
+    "compressed_size": 210,
+    "offset": 1888733053
+  },
+  {
+    "name": "Zenodo/FigS8/34.npy",
+    "size": 32160,
+    "compressed_size": 12898,
+    "offset": 1888733314
+  },
+  {
+    "name": "Zenodo/FigS8/447.npy",
+    "size": 304,
+    "compressed_size": 210,
+    "offset": 1888746261
+  },
+  {
+    "name": "Zenodo/FigS8/448.npy",
+    "size": 304,
+    "compressed_size": 210,
+    "offset": 1888746521
+  },
+  {
+    "name": "Zenodo/FigS8/617.npy",
+    "size": 1048704,
+    "compressed_size": 675376,
+    "offset": 1888746781
+  },
+  {
+    "name": "Zenodo/FigS8/618.npy",
+    "size": 1048704,
+    "compressed_size": 692540,
+    "offset": 1889422207
+  },
+  {
+    "name": "Zenodo/FigS8/7.npy",
+    "size": 16160,
+    "compressed_size": 5977,
+    "offset": 1890114797
+  },
+  {
+    "name": "Zenodo/FigS8/8.npy",
+    "size": 16160,
+    "compressed_size": 5940,
+    "offset": 1890120822
+  },
+  {
+    "name": "Zenodo/FigS8/Fig_cavity_qubit.ipynb",
+    "size": 747832,
+    "compressed_size": 538332,
+    "offset": 1890126810
+  },
+  {
+    "name": "Zenodo/FigS8/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 1890665207
+  },
+  {
+    "name": "Zenodo/FigS8/RPN.svg",
+    "size": 112490,
+    "compressed_size": 15678,
+    "offset": 1890673762
+  },
+  {
+    "name": "Zenodo/FigS8/RPN_FIT.py",
+    "size": 5810,
+    "compressed_size": 1971,
+    "offset": 1890689490
+  },
+  {
+    "name": "Zenodo/FigS9/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1890691514
+  },
+  {
+    "name": "Zenodo/FigS9/.ipynb_checkpoints/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1890691557
+  },
+  {
+    "name": "Zenodo/FigS9/.ipynb_checkpoints/Fig_ContorlledShock_v2-checkpoint.ipynb",
+    "size": 561916,
+    "compressed_size": 398619,
+    "offset": 1890691619
+  },
+  {
+    "name": "Zenodo/FigS9/__pycache__/",
+    "size": 0,
+    "compressed_size": 0,
+    "offset": 1891090339
+  },
+  {
+    "name": "Zenodo/FigS9/__pycache__/mypy.cpython-39.pyc",
+    "size": 28627,
+    "compressed_size": 12467,
+    "offset": 1891090394
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C5629.png",
+    "size": 88479,
+    "compressed_size": 88480,
+    "offset": 1891102935
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C562A.png",
+    "size": 76880,
+    "compressed_size": 76823,
+    "offset": 1891191470
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C562B.png",
+    "size": 76880,
+    "compressed_size": 76823,
+    "offset": 1891268348
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C562D.png",
+    "size": 32999,
+    "compressed_size": 32191,
+    "offset": 1891345226
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C562E.png",
+    "size": 32999,
+    "compressed_size": 32191,
+    "offset": 1891377472
+  },
+  {
+    "name": "Zenodo/FigS9/2C2C562F.png",
+    "size": 88479,
+    "compressed_size": 88480,
+    "offset": 1891409718
+  },
+  {
+    "name": "Zenodo/FigS9/318.npy",
+    "size": 1048704,
+    "compressed_size": 705358,
+    "offset": 1891498253
+  },
+  {
+    "name": "Zenodo/FigS9/319.npy",
+    "size": 1048704,
+    "compressed_size": 725099,
+    "offset": 1892203661
+  },
+  {
+    "name": "Zenodo/FigS9/320.npy",
+    "size": 16800128,
+    "compressed_size": 2824786,
+    "offset": 1892928810
+  },
+  {
+    "name": "Zenodo/FigS9/321_c.npy",
+    "size": 524288128,
+    "compressed_size": 359576203,
+    "offset": 1895753646
+  },
+  {
+    "name": "Zenodo/FigS9/321_r.npy",
+    "size": 262144128,
+    "compressed_size": 245925730,
+    "offset": 2255329901
+  },
+  {
+    "name": "Zenodo/FigS9/321_t.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 2501255683
+  },
+  {
+    "name": "Zenodo/FigS9/321_t_c.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 2501334645
+  },
+  {
+    "name": "Zenodo/FigS9/418.npy",
+    "size": 16800128,
+    "compressed_size": 2819174,
+    "offset": 2501413609
+  },
+  {
+    "name": "Zenodo/FigS9/419_c.npy",
+    "size": 524288128,
+    "compressed_size": 359328606,
+    "offset": 2504232833
+  },
+  {
+    "name": "Zenodo/FigS9/419_r.npy",
+    "size": 262144128,
+    "compressed_size": 246497984,
+    "offset": 2863561491
+  },
+  {
+    "name": "Zenodo/FigS9/419_t_c.npy",
+    "size": 262272,
+    "compressed_size": 78910,
+    "offset": 3110059527
+  },
+  {
+    "name": "Zenodo/FigS9/Fig_ContorlledShock_v2.ipynb",
+    "size": 734716,
+    "compressed_size": 530780,
+    "offset": 3110138491
+  },
+  {
+    "name": "Zenodo/FigS9/mechshock_v2.pdf",
+    "size": 2643848,
+    "compressed_size": 1372442,
+    "offset": 3110669342
+  },
+  {
+    "name": "Zenodo/FigS9/mechshock_v2.svg",
+    "size": 714552,
+    "compressed_size": 96325,
+    "offset": 3112041843
+  },
+  {
+    "name": "Zenodo/FigS9/mypy.py",
+    "size": 38050,
+    "compressed_size": 8505,
+    "offset": 3112138227
+  }
+]

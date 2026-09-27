@@ -36,8 +36,9 @@ jobs:
             studies/collapse-compatibility/requirements.txt
             studies/synthetic-timing-shifts/requirements.txt
             studies/gst-rb-combination-gain/requirements.txt
+            studies/correlated-qubit-mechanisms/requirements.txt
       - name: Install pinned study dependencies
-        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/born-rule-identifiability/requirements.txt -r studies/collapse-compatibility/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt -r studies/gst-rb-combination-gain/requirements.txt
+        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/born-rule-identifiability/requirements.txt -r studies/collapse-compatibility/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt -r studies/gst-rb-combination-gain/requirements.txt -r studies/correlated-qubit-mechanisms/requirements.txt
       - name: Check tracked files and documentation links
         run: python scripts/check_repository.py
       - name: Test integrity failures, extraction and numerical counterexamples
