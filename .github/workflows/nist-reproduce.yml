@@ -73,3 +73,14 @@ jobs:
           done
           python studies/timing-structure/analyze.py --check
           git diff --exit-code
+      - name: Re-extract fine timing and reproduce the exact coarse comparison
+        run: |
+          for side in alice bob; do
+            python studies/fine-timing-structure/extract.py \
+              --hdf5 "$RUNNER_TEMP/nist-inputs/hdf5.hdf5" \
+              --archive "$RUNNER_TEMP/nist-inputs/$side.zip" --side "$side" \
+              --cache-dir "$RUNNER_TEMP/fine-cache" \
+              --output "studies/fine-timing-structure/$side-counts.json" --check
+          done
+          python studies/fine-timing-structure/analyze.py --check
+          git diff --exit-code
