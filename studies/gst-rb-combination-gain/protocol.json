@@ -1,0 +1,25 @@
+{
+  "status": "retrospective follow-up; PR15 fits and data already inspected; targets fixed before this feasibility search",
+  "model_class": "all stationary qubit CPTP gate sets over Gi,Gx,Gy, with a shared arbitrary physical preparation and binary POVM; no unital, Pauli, Lindblad or near-ideal restriction",
+  "observations": "all 4657 GST and all 2004 RB rows in PR15's pinned 2015-03-30 sources; no training subset",
+  "primary_observable": "q = (1 + mu_RB - mu_GST)/2, where mu_F is the shot-denominator-weighted mean probability over every recorded circuit in family F. Operationally choose either family with probability 1/2, sample its word with exposure weights, and count plus for RB or minus for GST.",
+  "secondary_observable": "mu_RB itself: a prediction from GST-only constraints, directly constrained when RB is added",
+  "scope": "prediction of a specified mixture of recorded circuit contexts, not an unmeasured primitive sequence or untouched validation",
+  "confidence": {
+    "joint_level": 0.95,
+    "cell_alpha": 0.025,
+    "cell_budget": 6661,
+    "cell_construction": "two-sided Clopper-Pearson endpoints rounded outward and certified by exact integer binomial tails",
+    "group_alpha": 0.025,
+    "group_budget": 12,
+    "groups": "for each source: overall exposure-weighted mean and length bins 0-16,17-64,65-256,257-1024,1025-8198",
+    "group_construction": "two-sided Hoeffding; each group gets alpha .025/12; outward radius is certified by rational arithmetic",
+    "removal": "drop all constraints involving the removed source, retaining the original budgets, endpoints and physical model class",
+    "sampling": "independent Bernoulli shots with a fixed probability per circuit. Under unrestricted within-row dependence this confidence construction is not valid."
+  },
+  "joint_bound": "q <= (1 + upper_mean_RB - lower_mean_GST)/2; applies to the entire declared physical model class, without optimization",
+  "feasibility_search": "seek explicit physically parameterized gate sets satisfying every retained cell and group constraint but exceeding the joint upper bound; general CPTP constrained optimization, with successful witnesses independently verified",
+  "numerics": "require separation and constraint margins above 2e-8; independently propagate Kraus operators; local failures are only search failures",
+  "success": "GST-only witness crossing the joint bound; ideally also RB-only witness crossing the same bound; a joint-compatible model ensures nonempty joint set",
+  "novelty": "separate question; this result would establish explicit full-model constraint-set gain, not by itself a new physical mechanism or major advance"
+}
