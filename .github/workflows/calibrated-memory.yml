@@ -34,6 +34,8 @@ jobs:
         run: python studies/calibrated-quantum-memory/identifiability.py --source-dir "$RUNNER_TEMP/nmn" --check
       - name: Reproduce finite-sample joint statistical exclusions
         run: python studies/calibrated-quantum-memory/joint_statistics.py --source-dir "$RUNNER_TEMP/nmn" --check
+      - name: Verify complete fixed-region classical fits and separate quantum counterparts
+        run: python studies/calibrated-quantum-memory/classical_audit.py --source-dir "$RUNNER_TEMP/nmn" --check
       - name: Reconstruct measured calibration and acquisition schemas
         run: python studies/calibrated-quantum-memory/acquisition_audit.py --source-root "$RUNNER_TEMP/acquisitions" --nmn-dir "$RUNNER_TEMP/nmn" --download --check
       - name: Confirm tracked files remain unchanged

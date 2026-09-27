@@ -154,3 +154,19 @@ identifiability theorem. The earlier restricted ambiguity in [theory](theory.md)
 The later [IBM ambiguity](ibm-identifiability.md) is fitted to all selected
 measured counts, but only certifies membership in its declared interval region;
 its substantial aggregate residuals prevent a stronger empirical claim.
+
+
+## Classical-first follow-up
+
+The [new dissipative search](classical-fit.md) removes the fixed quantum-weight
+restriction. It supplies a memoryless CPTP explanation for the literal rows
+and a 13-record classical explanation for the regrouped rows. Both pass the
+complete fixed joint region. Separately physicalized instrument choices admit
+exact quantum counterparts, with directly verified NPT processes despite
+nonunitary wrapping. This establishes conditional full-region ambiguity, not
+exclusion of classical memory or empirical complementarity.
+
+The bounded inspection of all 13 reachable NMN commits and five notebook
+versions recovered no job metadata verifying mapping, independent rows or
+fixed acquisition exposures. No matched independent instrument calibration
+was recovered. The acquisition and combined-measurement gates remain open.

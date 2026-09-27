@@ -49,3 +49,11 @@ budget. No novelty is claimed for that statistics. It answers a concrete new
 question: whether the exhibited points survive a valid aggregate check. They
 do not, including two improved delay-dependent pairs. It does not answer
 whether every classical-memory model fails.
+
+
+The [classical-first follow-up](classical-fit.md) adds exact membership in the
+complete fixed aggregate/cell region and a separately verified quantum
+counterpart for dissipative classical models. Its increment is this conditional
+count-level certificate. No novelty is claimed for classical-record dynamics,
+CPTP fitting, SWAP ambiguity or confidence-region inversion. A useful measured
+calibration and complementary-source result remain unestablished.

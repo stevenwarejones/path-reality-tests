@@ -1,0 +1,63 @@
+{
+  "repository": "pyGSTio/supplemental-info-arXiv-1605.07674",
+  "commit": "fc939f90f7a2b32a20aec34f36465259f38837a3",
+  "truncated": false,
+  "experimental_files": [
+    {
+      "path": "ExperimentalData/2014_04_17-compensatedTraining.txt",
+      "git_blob_sha": "ccb5f516e288af5718b91fa77078b2b5b019bdeb",
+      "bytes": 91170
+    },
+    {
+      "path": "ExperimentalData/2014_12_02-GSTCompensatedDrift_randomized_condensed.txt",
+      "git_blob_sha": "2d9a8c48d8d7c052825eabcf864bc86f3da6bb3a",
+      "bytes": 99309
+    },
+    {
+      "path": "ExperimentalData/2015_02_09-GSTCompensatedDrift_condensed.txt",
+      "git_blob_sha": "dd926195bf0ae19bd454684b093b11cc8dae23ab",
+      "bytes": 101917
+    },
+    {
+      "path": "ExperimentalData/2015_03_02-GST_condensed.txt",
+      "git_blob_sha": "006149ffc4ac5592c297633091fcb723c734acdf",
+      "bytes": 125824
+    },
+    {
+      "path": "ExperimentalData/2015_03_19-GSTBest_condensed.txt",
+      "git_blob_sha": "94c2d9f6ee989cedf9346569722f373f1ef7e1cf",
+      "bytes": 132707
+    },
+    {
+      "path": "ExperimentalData/2015_03_30-GST_BB1_XYXY_8192_condensed.txt",
+      "git_blob_sha": "7f2ff231f6e48d4c4157375686ef193d264eb053",
+      "bytes": 146756
+    },
+    {
+      "path": "ExperimentalData/2015_03_30-RB_0320_condensed.txt",
+      "git_blob_sha": "5d552ece00b1db4081b1263e7c3cb8bbe30a55c6",
+      "bytes": 4679341
+    },
+    {
+      "path": "ExperimentalData/2015_03_30-RB_0320_condensed_cliffs.txt",
+      "git_blob_sha": "59fca384a9b3d56d8ab447a44a3d07eba782b6e6",
+      "bytes": 3078406
+    },
+    {
+      "path": "ExperimentalData/Cliff_seqs.txt",
+      "git_blob_sha": "613fb761ea42d474a45f8b19e3d3b7b35aa3e75f",
+      "bytes": 5477561
+    },
+    {
+      "path": "ExperimentalData/Cliffs_to_prims.py",
+      "git_blob_sha": "f9fd230ebc6e6c9dc80eb3818ac8ec2f0604ed71",
+      "bytes": 2203
+    },
+    {
+      "path": "ExperimentalData/clifford_lengths.txt",
+      "git_blob_sha": "1240f3ddf4a6d0e0e8b9191b4f54dc5be2e0114c",
+      "bytes": 9903
+    }
+  ],
+  "inventory_scope": "Pinned recursive tree, filenames and sizes confirmed; other acquisition contents not assumed to provide matched calibration."
+}

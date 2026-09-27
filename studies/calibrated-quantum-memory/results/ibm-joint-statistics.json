@@ -1,6 +1,6 @@
 {
   "assumptions": "Independent fixed-exposure multinomial rows; conditional on record mapping and stable within-row probabilities.",
-  "confidence_region": "Intersection of 97.5% simultaneous cell intervals and 97.5% aggregate Cantelli region; exclusions proved by aggregate component.",
+  "confidence_region": "Intersection of 97.5% simultaneous cell intervals and 97.5% aggregate Cantelli region; both components evaluated.",
   "familywise_alpha": 0.05,
   "kind": "finite_sample_joint_point_region_audit",
   "previous_cell_interval_certificate_unchanged": true,
@@ -10,7 +10,16 @@
       "aggregate_region_membership": "excluded",
       "cantelli_tail_lower": "0.000294061983248980399369423900213407818851203822425744112766262",
       "cantelli_tail_upper": "0.000294061983248980399369423900213407818851203822425744112808633",
+      "cell_component_alpha": "0.025",
+      "cell_decisions": {
+        "excluded": 0,
+        "inside": 11664,
+        "rounding_unresolved": 0
+      },
+      "cell_region_membership": "inside",
+      "cell_tail_denominator": 933120,
       "classical_memory_class_excluded": false,
+      "first_failed_cells": [],
       "fitted_degrees_of_freedom_used": false,
       "joint_region_membership": "excluded",
       "mapping": "regroup_first_1",
@@ -28,7 +37,16 @@
       "aggregate_region_membership": "excluded",
       "cantelli_tail_lower": "0.000401719769124085669177282325182060180034989355485523656601181",
       "cantelli_tail_upper": "0.000401719769124085669177282325182060180034989355485523656663028",
+      "cell_component_alpha": "0.025",
+      "cell_decisions": {
+        "excluded": 0,
+        "inside": 11664,
+        "rounding_unresolved": 0
+      },
+      "cell_region_membership": "inside",
+      "cell_tail_denominator": 933120,
       "classical_memory_class_excluded": false,
+      "first_failed_cells": [],
       "fitted_degrees_of_freedom_used": false,
       "joint_region_membership": "excluded",
       "mapping": "literal_rows",
@@ -46,8 +64,48 @@
       "aggregate_region_membership": "excluded",
       "cantelli_tail_lower": "0.00523134820275404190453459319542547663475947345208582815098364",
       "cantelli_tail_upper": "0.00523134820275404190453459319542547663475947345208582815202771",
+      "cell_component_alpha": "0.025",
+      "cell_decisions": {
+        "excluded": 6,
+        "inside": 11658,
+        "rounding_unresolved": 0
+      },
+      "cell_region_membership": "excluded",
+      "cell_tail_denominator": 933120,
       "classical_memory_class_excluded": false,
       "exact_physical_classical_and_quantum_pair": true,
+      "first_failed_cells": [
+        {
+          "decision": "excluded",
+          "outcome": 2,
+          "row": 1313
+        },
+        {
+          "decision": "excluded",
+          "outcome": 3,
+          "row": 1313
+        },
+        {
+          "decision": "excluded",
+          "outcome": 0,
+          "row": 1364
+        },
+        {
+          "decision": "excluded",
+          "outcome": 2,
+          "row": 1558
+        },
+        {
+          "decision": "excluded",
+          "outcome": 1,
+          "row": 1828
+        },
+        {
+          "decision": "excluded",
+          "outcome": 0,
+          "row": 1915
+        }
+      ],
       "fitted_degrees_of_freedom_used": false,
       "fixed_instrument_weight_endpoint": 0.00010002364569350181,
       "joint_region_membership": "excluded",
@@ -68,8 +126,53 @@
       "aggregate_region_membership": "excluded",
       "cantelli_tail_lower": "0.0239603037893166199484819025391604490504520365331054437235043",
       "cantelli_tail_upper": "0.0239603037893166199484819025391604490504520365331054437294919",
+      "cell_component_alpha": "0.025",
+      "cell_decisions": {
+        "excluded": 7,
+        "inside": 11657,
+        "rounding_unresolved": 0
+      },
+      "cell_region_membership": "excluded",
+      "cell_tail_denominator": 933120,
       "classical_memory_class_excluded": false,
       "exact_physical_classical_and_quantum_pair": true,
+      "first_failed_cells": [
+        {
+          "decision": "excluded",
+          "outcome": 2,
+          "row": 1310
+        },
+        {
+          "decision": "excluded",
+          "outcome": 3,
+          "row": 1310
+        },
+        {
+          "decision": "excluded",
+          "outcome": 0,
+          "row": 1364
+        },
+        {
+          "decision": "excluded",
+          "outcome": 2,
+          "row": 1555
+        },
+        {
+          "decision": "excluded",
+          "outcome": 1,
+          "row": 1807
+        },
+        {
+          "decision": "excluded",
+          "outcome": 1,
+          "row": 1828
+        },
+        {
+          "decision": "excluded",
+          "outcome": 0,
+          "row": 1915
+        }
+      ],
       "fitted_degrees_of_freedom_used": false,
       "fixed_instrument_weight_endpoint": 0.00010002308618456621,
       "joint_region_membership": "excluded",

@@ -1,12 +1,16 @@
 # Calibrated quantum environmental memory
 
-**Status: empirical feasibility gate not passed.** This study does not establish
-quantum environmental memory from existing matched datasets. It supplies
-measured-data diagnostics, explicit IBM-compatible classical/quantum models
-within a declared simultaneous interval region, and a prospective certificate
-tested on explicitly synthetic records. A new finite-sample joint test excludes
-the earlier points and two improved delay-dependent candidates. The full
-classical-memory class remains unresolved.
+**Status: conditional full-region ambiguity established; empirical calibration
+and complementarity goal remains open.** Classical-first searches with general
+dissipative channels produce physical explanations inside the complete fixed
+95% joint confidence region under both conditional IBM mappings. Separately
+verified quantum-memory counterparts have exactly the same full probabilities.
+The historical mapping and independent fixed-exposure acquisition assumptions
+remain unverified. No empirical quantum-memory detection is claimed.
+
+Start with the [classical-first report](classical-fit.md) and its
+[complete certificate](results/ibm-classical-audit.json). Earlier rejected
+candidate points and their narrower cell-only certificates are preserved.
 
 The central question is whether dynamics require more quantum information in
 the environment than a calibrated intervention can leave in the system.
@@ -17,7 +21,7 @@ matching evidence, alternatives checked, and missing inputs. The
 
 ## Aggregate statistical follow-up
 
-The [joint statistical analysis](joint-statistics.md) now rejects the exhibited
+The [earlier joint statistical analysis](joint-statistics.md) rejects the four earlier exhibited
 pairs from a valid aggregate/cell confidence region with at least 95% coverage,
 conditional on independent fixed-exposure multinomial rows and record mapping.
 It uses exact multinomial moments and a directed-rounding Cantelli bound,
@@ -41,7 +45,8 @@ verify every cell constraint independently of the discovery optimizer.
 
 This closes the search for a positive exclusion within the **current interval region**.
 The later joint analysis above excludes these particular points under its
-additional independence assumptions; the larger model class remains unresolved. The report gives an exact fixed-model ambiguity boundary and an
+additional independence assumptions. The new classical-first models pass the
+complete joint region; neither calculation excludes the larger model class. The report gives an exact fixed-model ambiguity boundary and an
 isolated-instrument probe whose predicted probabilities differ by about 0.003.
 Those are fitted-model predictions, not additional measured calibration.
 The empirical research mission remains incomplete.

@@ -1,4 +1,10 @@
-# Joint statistics: the exhibited ambiguity does not survive this region
+# Joint statistics: exclusion of four earlier candidate points
+
+**Follow-up:** [Classical-first dissipative models](classical-fit.md) now pass
+both components of this unchanged region, with separately verified quantum
+counterparts. The four exclusions below remain valid. The implementation now
+checks the 97.5% simultaneous cell component as well as the aggregate component
+for every candidate.
 
 **The four tested physical pairs are outside a valid aggregate 95% confidence
 region. The classical-memory class has not been excluded.** The previous
@@ -126,7 +132,8 @@ updates. The initial seed was fitted to these same counts. Some SDP solves
 report `optimal_inaccurate`; they are discovery only. The saved points are
 rationalized and independently verified. The search is not a global optimum
 and does not exhaust delay-dependent classical memory. Its failure to find
-an accepted point leaves **computational uncertainty** about that larger class.
+an accepted point did not exclude that larger class. The later
+[classical-first search](classical-fit.md) supplies accepted physical points.
 
 The new instruments have an exact quantum counterpart with w=1/10000 using
 the previously proved B_b=(1−w)K_b+w q_b Id identity. Rational LDL tests verify

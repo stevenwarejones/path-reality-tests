@@ -1,0 +1,218 @@
+{
+  "complementary_measured_source_gain_established": false,
+  "empirical_quantum_memory_certified": false,
+  "familywise_alpha": 0.05,
+  "historical_mapping_verified": false,
+  "independent_fixed_exposure_acquisition_verified": false,
+  "kind": "complete_fixed_region_classical_and_paired_model_certificate",
+  "reports": [
+    {
+      "family": "13-valued classical record with conditional dissipative return",
+      "internal_classical_record_sizes": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "mapping": "regroup_first_1",
+      "paired_post_fit_candidate": {
+        "aggregate_component_alpha": "0.025",
+        "aggregate_region_membership": "inside",
+        "cantelli_tail_lower": "0.0344906494699340182808513843017758490859118568411535519791546",
+        "cantelli_tail_upper": "0.0344906494699340182808513843017758490859118568411535519894399",
+        "cell_component_alpha": "0.025",
+        "cell_decisions": {
+          "excluded": 0,
+          "inside": 11664,
+          "rounding_unresolved": 0
+        },
+        "cell_region_membership": "inside",
+        "cell_tail_denominator": 933120,
+        "classical_memory_class_excluded": false,
+        "exact_classical_physicality": true,
+        "exact_full_probability_identity": true,
+        "exact_npt_expectation": [
+          -3897681959449333023540798947049013485173321593089983578947701980341759862949490382576321869857899555013452386324538893184794168335338070074646479738901,
+          431753585206914764581556278465712838379238780667402832609617101604397566512267842001810135744634908694328507864000000000000000000000000000000000000000000000
+        ],
+        "exact_quantum_instrument_physicality": true,
+        "first_failed_cells": [],
+        "fitted_degrees_of_freedom_used": false,
+        "fixed_instrument_endpoint": [
+          9818349762238631568528363384124383119090042814109657831337431872315833808436873011911617,
+          58120674929573671106678563934094779139448134227017470508695527397359724407976591386679343240
+        ],
+        "isolated_probe": {
+          "event": [
+            "01",
+            "11"
+          ],
+          "half_diamond_upper": 0.00016724111129807806,
+          "ideal_external_probes_assumed": true,
+          "independent_measured_calibration_available": false,
+          "label": "xm,x,xm,x",
+          "shots_per_candidate_for_two_95_percent_hoeffding_radii": 324006768,
+          "total_variation": 0.0001644657479434092,
+          "total_variation_exact": [
+            1911452327770648160914166752009214077982922123862559603216428994639450785693273791904305930191876691669915108586209,
+            11622190952661810972285144170868899200032047016926300389488500667961226346501247776479510147834000000000000000000000000
+          ]
+        },
+        "joint_region_membership": "inside",
+        "mean_exact": 8748,
+        "multinomial_deviance_display": 9599.586764,
+        "npt_delay": "28.444,24.889",
+        "npt_expectation_decimal": -9.02756130578834e-06,
+        "outcomes_per_row": 4,
+        "pearson_lower": "9449.89617221210454051620752123660402362263108128918160355130",
+        "pearson_upper": "9449.89617221210454051620752123660402362263108128918160365688",
+        "quantum_memory_weight": [
+          972016626461624525284307975028313928789914238596856125302405755359267547035250428179250083,
+          5812067492957367110667856393409477913944813422701747050869552739735972440797659138667934324000
+        ],
+        "quantum_memory_weight_decimal": 0.00016724111129807806,
+        "rows": 2916,
+        "variance_lower": "17599.1071826960524558906287053946252342149888573926764748670",
+        "variance_upper": "17599.1071826960524558906287053946252342149888573926764750080"
+      },
+      "quantum_constraint_used_in_classical_discovery": false,
+      "unrestricted_classical_candidate": {
+        "aggregate_component_alpha": "0.025",
+        "aggregate_region_membership": "inside",
+        "cantelli_tail_lower": "0.0384976878294923810210130006854140170773680034710587041948541",
+        "cantelli_tail_upper": "0.0384976878294923810210130006854140170773680034710587042069248",
+        "cell_component_alpha": "0.025",
+        "cell_decisions": {
+          "excluded": 0,
+          "inside": 11664,
+          "rounding_unresolved": 0
+        },
+        "cell_region_membership": "inside",
+        "cell_tail_denominator": 933120,
+        "classical_memory_class_excluded": false,
+        "exact_classical_physicality": true,
+        "first_failed_cells": [],
+        "fitted_degrees_of_freedom_used": false,
+        "joint_region_membership": "inside",
+        "mean_exact": 8748,
+        "multinomial_deviance_display": 9493.841955,
+        "outcomes_per_row": 4,
+        "pearson_lower": "9411.05034582708121927410217166593537592809782414509951988975",
+        "pearson_upper": "9411.05034582708121927410217166593537592809782414509951999520",
+        "rows": 2916,
+        "variance_lower": "17602.6204776947721314470739586392836651001378729973161742379",
+        "variance_upper": "17602.6204776947721314470739586392836651001378729973161743790"
+      }
+    },
+    {
+      "family": "memoryless general CPTP pre/post channels",
+      "internal_classical_record_sizes": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mapping": "literal_rows",
+      "paired_post_fit_candidate": {
+        "aggregate_component_alpha": "0.025",
+        "aggregate_region_membership": "inside",
+        "cantelli_tail_lower": "0.145069744528743989037576522261106116041036694553464542019712",
+        "cantelli_tail_upper": "0.145069744528743989037576522261106116041036694553464542101620",
+        "cell_component_alpha": "0.025",
+        "cell_decisions": {
+          "excluded": 0,
+          "inside": 11664,
+          "rounding_unresolved": 0
+        },
+        "cell_region_membership": "inside",
+        "cell_tail_denominator": 933120,
+        "classical_memory_class_excluded": false,
+        "exact_classical_physicality": true,
+        "exact_full_probability_identity": true,
+        "exact_npt_expectation": [
+          -15397641420099579048513501212377372136470211341606613138683361427931805566743705890259722567111606567558147859996335800519705771315878073513312605654571196261,
+          223505591453669100613936579778743794365264021282349714680775999611507434708746470511969870853874941985578758065336320000000000000000000000000000000000000000000000
+        ],
+        "exact_quantum_instrument_physicality": true,
+        "first_failed_cells": [],
+        "fitted_degrees_of_freedom_used": false,
+        "fixed_instrument_endpoint": [
+          346713133671621042744345971872103596983318383971410455792919691687631462656127700122182600339,
+          614640376499197363050176311788307508906654987709277168461609923356681226604650458882314834973888
+        ],
+        "isolated_probe": {
+          "event": [
+            "01",
+            "11"
+          ],
+          "half_diamond_upper": 0.0005584501367936948,
+          "ideal_external_probes_assumed": true,
+          "independent_measured_calibration_available": false,
+          "label": "ym,x,yp,y",
+          "shots_per_candidate_for_two_95_percent_hoeffding_radii": 28542781,
+          "total_variation": 0.0005541207004783361,
+          "total_variation_exact": [
+            340394756252753276466958296742307019896409365113610277046800547024934185201976192657703047420104752753817257133222767009,
+            614297130496862458217859409276154126345641502509145472110374932861910471456620892459193874199552390000000000000000000000000
+          ]
+        },
+        "joint_region_membership": "inside",
+        "mean_exact": 8748,
+        "multinomial_deviance_display": 9367.922403,
+        "npt_delay": "28.444,21.333",
+        "npt_expectation_decimal": -6.889152669494349e-05,
+        "outcomes_per_row": 4,
+        "pearson_lower": "9069.98845390650094462880740599860882237770904897455610060099",
+        "pearson_upper": "9069.98845390650094462880740599860882237770904897455610070602",
+        "quantum_memory_weight": [
+          34324600233490483231690251215338256101348520013169635123499049477075514802956642312096077433561,
+          61464037649919736305017631178830750890665498770927716846160992335668122660465045888231483497388800
+        ],
+        "quantum_memory_weight_decimal": 0.0005584501367936948,
+        "rows": 2916,
+        "variance_lower": "17592.4674814065157374887611945112661548365060055770489988990",
+        "variance_upper": "17592.4674814065157374887611945112661548365060055770489990400"
+      },
+      "quantum_constraint_used_in_classical_discovery": false,
+      "unrestricted_classical_candidate": {
+        "aggregate_component_alpha": "0.025",
+        "aggregate_region_membership": "inside",
+        "cantelli_tail_lower": "0.992947429618897213482134211436330568899877733021657311767379",
+        "cantelli_tail_upper": "0.992947429618897213482134211436330568899877733021657311898258",
+        "cell_component_alpha": "0.025",
+        "cell_decisions": {
+          "excluded": 0,
+          "inside": 11664,
+          "rounding_unresolved": 0
+        },
+        "cell_region_membership": "inside",
+        "cell_tail_denominator": 933120,
+        "classical_memory_class_excluded": false,
+        "exact_classical_physicality": true,
+        "first_failed_cells": [],
+        "fitted_degrees_of_freedom_used": false,
+        "joint_region_membership": "inside",
+        "mean_exact": 8748,
+        "multinomial_deviance_display": 8807.657314,
+        "outcomes_per_row": 4,
+        "pearson_lower": "8759.18163414684266396713646127974133961077994118180963748936",
+        "pearson_upper": "8759.18163414684266396713646127974133961077994118180963759380",
+        "rows": 2916,
+        "variance_lower": "17603.1092312089092191333482006209097299794398023169745110586",
+        "variance_upper": "17603.1092312089092191333482006209097299794398023169745111997"
+      }
+    }
+  ],
+  "sampling_assumptions": "Conditional independent fixed-exposure multinomial rows, stable within rows; both flags retained.",
+  "statistical_region_changed_during_search": false
+}

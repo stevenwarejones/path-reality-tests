@@ -74,6 +74,52 @@ def pearson_region(counts, numerators, denominators, alpha=Decimal('0.025')):
                 fitted_degrees_of_freedom_used=False)
 
 
+def binomial_cell_membership(n,k,pnum,pden,cells):
+    """Certify the 97.5% simultaneous CP box, tail threshold 1/(80M)."""
+    if not (n>0 and 0<=k<=n and 0<=pnum<=pden and pden>0 and cells>0):
+        raise ValueError('invalid binomial cell')
+    if pnum==0:return 'inside' if k==0 else 'excluded'
+    if pnum==pden:return 'inside' if k==n else 'excluded'
+    down=Context(prec=60,rounding=ROUND_FLOOR);up=Context(prec=60,rounding=ROUND_CEILING)
+    tl=down.divide(Decimal(1),Decimal(80*cells));tu=up.divide(Decimal(1),Decimal(80*cells))
+    masses=[]
+    for ctx in (down,up):
+        p=ctx.divide(Decimal(pnum),Decimal(pden));q=ctx.divide(Decimal(pden-pnum),Decimal(pden))
+        masses.append(ctx.multiply(Decimal(physical.choose(n,k)),ctx.multiply(physical.floor_power(ctx,p,k),physical.floor_power(ctx,q,n-k))))
+    decisions=[]
+    for direction in (-1,1):
+        if (k==0 and direction==1) or (k==n and direction==-1):continue
+        low,high=masses;term_l,term_u=masses;j=k
+        while low<tu and 0<=j+direction<=n:
+            top,bottom=((n-j)*pnum,(j+1)*(pden-pnum)) if direction==1 else (j*(pden-pnum),(n-j+1)*pnum)
+            rl=down.divide(Decimal(top),Decimal(bottom));ru=up.divide(Decimal(top),Decimal(bottom))
+            # Future ratios decrease in either outward direction.
+            if ru<1:
+                remainder=up.divide(up.multiply(term_u,ru),down.subtract(Decimal(1),ru))
+                if up.add(high,remainder)<tl:return 'excluded'
+            term_l=down.multiply(term_l,rl);term_u=up.multiply(term_u,ru)
+            low=down.add(low,term_l);high=up.add(high,term_u);j+=direction
+        if low>=tu:decisions.append('inside')
+        elif high<tl:return 'excluded'
+        else:decisions.append('rounding_unresolved')
+    return 'inside' if all(d=='inside' for d in decisions) else 'rounding_unresolved'
+
+
+def cell_region(counts,numerators,denominators):
+    counts=np.asarray(counts);nums=np.broadcast_to(np.asarray(numerators,dtype=object),counts.shape)
+    dens=np.broadcast_to(np.asarray(denominators,dtype=object),counts.shape[:-1])
+    tally=dict(inside=0,excluded=0,rounding_unresolved=0);failures=[]
+    for row,(obs,ps,den) in enumerate(zip(counts.reshape(-1,4),nums.reshape(-1,4),dens.reshape(-1))):
+        N=int(obs.sum())
+        for outcome,(k,p) in enumerate(zip(obs,ps)):
+            decision=binomial_cell_membership(N,int(k),int(p),int(den),counts.size)
+            tally[decision]+=1
+            if decision!='inside' and len(failures)<10:failures.append(dict(row=row,outcome=outcome,decision=decision))
+    membership='excluded' if tally['excluded'] else 'rounding_unresolved' if tally['rounding_unresolved'] else 'inside'
+    return dict(cell_region_membership=membership,cell_component_alpha='0.025',
+                cell_tail_denominator=80*counts.size,cell_decisions=tally,first_failed_cells=failures)
+
+
 def analyze(source_dir,candidate_file=physical.HERE/'results/ibm-delay-candidates.json'):
     catalog=json.loads((physical.HERE/'results/ibm-instrument-witnesses.json').read_text())
     reports=[]
@@ -82,7 +128,7 @@ def analyze(source_dir,candidate_file=physical.HERE/'results/ibm-delay-candidate
         counts,labels,_=physical.load_counts(source_dir,witness['mapping'])
         nums,den=physical.probability_numerators(witness,labels)
         reports.append(dict(mapping=witness['mapping'],point='previous_shared_identity_process_pair',
-                            **pearson_region(counts,nums,den)))
+                            **pearson_region(counts,nums,den),**cell_region(counts,nums,den)))
     candidates=json.loads(candidate_file.read_text())
     for candidate in candidates['candidates']:
         witness=candidate['instrument']
@@ -98,11 +144,12 @@ def analyze(source_dir,candidate_file=physical.HERE/'results/ibm-delay-candidate
                             quantum_npt_expectation=str(-physical.F(*witness['memory_weight'])/8),
                             fixed_instrument_weight_endpoint=float(boundary),
                             multinomial_deviance_display=round(deviance,6),
-                            **pearson_region(counts,nums,dens)))
+                            **pearson_region(counts,nums,dens),**cell_region(counts,nums,dens)))
     for report in reports:
-        report['joint_region_membership']='excluded' if report['aggregate_region_membership']=='excluded' else 'cell_component_not_evaluated'
+        decisions=[report['aggregate_region_membership'],report['cell_region_membership']]
+        report['joint_region_membership']='excluded' if 'excluded' in decisions else 'inside' if decisions==['inside','inside'] else 'rounding_unresolved'
     return dict(kind='finite_sample_joint_point_region_audit',familywise_alpha=.05,
-                confidence_region='Intersection of 97.5% simultaneous cell intervals and 97.5% aggregate Cantelli region; exclusions proved by aggregate component.',
+                confidence_region='Intersection of 97.5% simultaneous cell intervals and 97.5% aggregate Cantelli region; both components evaluated.',
                 assumptions='Independent fixed-exposure multinomial rows; conditional on record mapping and stable within-row probabilities.',
                 retrospective_fitting='Confidence-region inversion; no exclusion of the composite fitted model family.',
                 previous_cell_interval_certificate_unchanged=True,reports=reports)

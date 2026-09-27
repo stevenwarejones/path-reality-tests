@@ -1,0 +1,72 @@
+{
+  "complete_family_sha256": "b64478be9ceb4b7959b507d3f259f417642d62132dafee30003ca82dabcbce17",
+  "eligible_one_sided_targets": 410,
+  "family_definition": "Every RB row, five transformations in protocol order, recorded expanded words excluded; duplicates retained; all source rows and target hashes reconstructed by --check full-source verification",
+  "primary": {
+    "baseline_predictions": {
+      "GST_only": 0.9890715962859522,
+      "RB_only": 0.0023425912537054505,
+      "joint": 0.9891306033598213
+    },
+    "flip_index": 10,
+    "kind": "append_yy",
+    "length": 4,
+    "lower": 0.11136407058230036,
+    "source_index": 4662,
+    "word": [0, 0, 2, 2],
+    "word_sha256": "dcc185c9119d8ed71fca5a402c4353202bad7f19493372053cf68bf8c5186350"
+  },
+  "search_count": 9975,
+  "summaries": [
+    {
+      "count": 1995,
+      "kind": "repeat",
+      "nonvacuous_bounds": 37,
+      "prediction_ranges": {
+        "GST_only": [0.006111850797388296, 0.2121177367405327],
+        "RB_only": [0.0028118741422002436, 0.179949312912869],
+        "joint": [0.005934960104896081, 0.1765739631423206]
+      }
+    },
+    {
+      "count": 1994,
+      "kind": "append_xx",
+      "nonvacuous_bounds": 482,
+      "prediction_ranges": {
+        "GST_only": [0.8718983091067367, 0.9888693853602064],
+        "RB_only": [0.0025772984021549816, 0.1033035377384155],
+        "joint": [0.8945690149812013, 0.9889873596256482]
+      }
+    },
+    {
+      "count": 1994,
+      "kind": "prepend_xx",
+      "nonvacuous_bounds": 0,
+      "prediction_ranges": {
+        "GST_only": [0.8719669678912495, 0.9888692862355466],
+        "RB_only": [0.002577298402154926, 0.1033035377384155],
+        "joint": [0.8946415433306167, 0.9889872600515908]
+      }
+    },
+    {
+      "count": 1994,
+      "kind": "append_yy",
+      "nonvacuous_bounds": 482,
+      "prediction_ranges": {
+        "GST_only": [0.8718797993898151, 0.9890715962859522],
+        "RB_only": [0.0023425912537054505, 0.1033035377384155],
+        "joint": [0.8945492701139142, 0.9891306033598213]
+      }
+    },
+    {
+      "count": 1998,
+      "kind": "prepend_yy",
+      "nonvacuous_bounds": 0,
+      "prediction_ranges": {
+        "GST_only": [0.8719279126564703, 0.9889092551934944],
+        "RB_only": [0.002459961258580723, 0.1033035377384155],
+        "joint": [0.8946001237270995, 0.9889977399679526]
+      }
+    }
+  ]
+}

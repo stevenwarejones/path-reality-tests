@@ -30,6 +30,7 @@ sys.modules['identifiability']=T
 D = load('delay_candidates')
 sys.modules['delay_candidates']=D
 J = load('joint_statistics')
+M = load('classical_models')
 
 
 class CountAuditTests(unittest.TestCase):
@@ -405,6 +406,86 @@ class JointStatisticsTests(unittest.TestCase):
             with self.assertRaises(ValueError):D.check_candidate(bad)
         for nums,den in [([1,2,3,3],10),([-1,3,3,5],10),([1,2,3,4],10.5)]:
             with self.assertRaises(ValueError):J.pearson_region(np.array([[1,2,3,4]]),nums,den)
+
+
+class UnrestrictedClassicalTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.models=json.loads((STUDY/'results/ibm-classical-candidates.json').read_text())['models']
+
+    def test_cell_membership_matches_exact_binomial_enumeration(self):
+        from fractions import Fraction as F
+        import math
+        for pnum in range(11):
+            p=F(pnum,10)
+            for k in range(7):
+                lo=sum(F(math.comb(6,j))*p**j*(1-p)**(6-j) for j in range(k+1))
+                hi=sum(F(math.comb(6,j))*p**j*(1-p)**(6-j) for j in range(k,7))
+                expected='inside' if min(lo,hi)>=F(1,80) else 'excluded'
+                self.assertEqual(J.binomial_cell_membership(6,k,pnum,10,1),expected)
+
+    def test_aggregate_survival_does_not_skip_cell_component(self):
+        counts=np.full((100,4),250,dtype=int);counts[0]=[350,150,250,250]
+        self.assertEqual(J.pearson_region(counts,[1,1,1,1],4)['aggregate_region_membership'],'inside')
+        self.assertEqual(J.cell_region(counts,[1,1,1,1],4)['cell_region_membership'],'excluded')
+
+    def test_classical_physicality_does_not_require_counterpart(self):
+        for original in self.models:
+            model=copy.deepcopy(original)
+            model.pop('counterpart_certificate');model.pop('counterpart_post_fit_mixture')
+            self.assertTrue(M.check_model(model))
+            self.assertFalse(model['quantum_counterpart_required_during_search'])
+
+    def test_classical_records_and_tp_mutations_fail_closed(self):
+        bad=copy.deepcopy(self.models[0]);bad['processes'][0]['before']['choi'].pop()
+        with self.assertRaises(ValueError):M.check_model(bad)
+        bad=copy.deepcopy(self.models[0]);bad['processes'][0]['after']['choi'].pop()
+        with self.assertRaises(ValueError):M.check_model(bad)
+        bad=copy.deepcopy(self.models[1]);bad['instruments'][0]['choi'][0]['real'][0]+=100
+        with self.assertRaises(ValueError):M.check_model(bad)
+
+    def test_complete_probabilities_match_direct_dissipative_composition(self):
+        def channel(J,rho):return np.einsum('ij,iajb->ab',rho,J.reshape(2,2,2,2))
+        def floating(group):
+            mats,den=M.group_matrices(group)
+            return [(np.asarray(r,float)+1j*np.asarray(i,float))/den for r,i in mats]
+        labels=sorted(A.LABELS)
+        for model in self.models:
+            nums,dens=M.probabilities(model,labels);expected=np.asarray(nums/dens[...,None],float)
+            B=[floating(g) for g in model['instruments']];S=model['spam_denominator']
+            for d,proc in enumerate(model['processes']):
+                before=floating(proc['before']);after=floating(proc['after'])
+                for r,label in enumerate(labels):
+                    a,m,p,z=label.split(',');y=model['settings'].index(m+','+p)
+                    rho=(T.I+sum(x*s/S for x,s in zip(model['preparations'][a],T.PAULIS)))/2
+                    bias,*vec=model['effects'][z];obs=bias/S*T.I+sum(x*s/S for x,s in zip(vec,T.PAULIS))
+                    for b in range(2):
+                        output=sum(channel(ret,channel(B[y][b],channel(pre,rho))) for pre,ret in zip(before,after))
+                        for c in range(2):
+                            self.assertAlmostEqual(np.trace((T.I+(1-2*c)*obs)/2@output).real,expected[d,r,2*b+c],places=11)
+
+    def test_nonunitary_counterpart_has_direct_exact_resource_certificate(self):
+        from types import SimpleNamespace
+        for base in self.models:
+            model=M.mix_instruments(base,base['counterpart_post_fit_mixture']);certificate=base['counterpart_certificate']
+            self.assertLess(M.npt_expectation(model,certificate),0)
+            wrong=copy.deepcopy(certificate);wrong['vector_real']=[1]+[0]*15;wrong['vector_imag']=[0]*16
+            with self.assertRaises(ValueError):M.npt_expectation(model,wrong)
+            witness,_=M.quantum_instrument(model,certificate['memory_weight'])
+            checker=SimpleNamespace(witnesses=[witness],assertGreater=self.assertGreater)
+            IBMIdentifiabilityTests.test_independent_kraus_swap_circuit_on_full_operator_basis(checker)
+
+    def test_all_saved_new_points_pass_both_fixed_components(self):
+        result=json.loads((STUDY/'results/ibm-classical-audit.json').read_text())
+        self.assertFalse(result['empirical_quantum_memory_certified'])
+        self.assertFalse(result['complementary_measured_source_gain_established'])
+        self.assertFalse(result['independent_fixed_exposure_acquisition_verified'])
+        for report in result['reports']:
+            for name in ('unrestricted_classical_candidate','paired_post_fit_candidate'):
+                point=report[name]
+                self.assertEqual(point['joint_region_membership'],'inside')
+                self.assertEqual(point['cell_decisions']['inside'],11664)
+                self.assertEqual(point['cell_tail_denominator'],933120)
 
 
 if __name__ == '__main__':

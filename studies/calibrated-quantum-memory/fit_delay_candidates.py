@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Optional bounded alternating likelihood search; not a null-exclusion solver.
 
+Historical search: instruments also obey a fixed quantum-counterpart
+constraint at w=0.0001. Use fit_classical_models.py for classical-only
+CP/TP discovery with general dissipative channels.
+
 The saved seed was itself fitted to these data. Inference uses pointwise
 confidence-region inversion, never guessed fitted degrees of freedom.
 The rational JSON output must pass the independent probability and statistical verifier.
