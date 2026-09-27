@@ -1,0 +1,58 @@
+{
+  "status": "retrospective discovery; PR15 and PR17 already inspected; this initial protocol precedes new target screening",
+  "base": "44cd7f49d4cff48eb7141d6c5cf25fb6d217ae99",
+  "primary_model": "All stationary qubit CPTP Gi/Gx/Gy maps, arbitrary shared state and binary POVM, as in PR17",
+  "confidence_region": "Reuse PR17 gain_core.region unchanged: all 6661 two-sided cells and 12 groups; independent Bernoulli shots; deletion drops constraints without reallocating budgets",
+  "candidate_families": [
+    {
+      "name": "repetition",
+      "targets": "ww for every recorded RB word w of length at most 1970; exclude words recorded anywhere",
+      "method": "Bures-angle contractivity with observed empty and w probabilities; seek complete-source physical deletion witnesses"
+    },
+    {
+      "name": "order_sensitive",
+      "targets": "w f and f w, f in GxGx or GyGy, for recorded RB words w; exclude recorded expanded words",
+      "method": "Qubit state geometry, contrast and trace-distance contraction transfer between measured return words and GST rotations"
+    },
+    {
+      "name": "operational_memory",
+      "targets": "entanglement transmission / measure-and-prepare status of a specified primitive or repeated block",
+      "method": "test gauge dependence, entanglement-breaking bounds, and the observability of an ancilla-assisted operational task"
+    }
+  ],
+  "selection": "Publish complete screened family, discovery history, and negative results; select target only after feasibility. A bound derived uniformly from the fixed region remains conditional for adaptively selected targets. No held-out performance or novelty claim follows.",
+  "primary_success": "Unmeasured target or operational resource; full-class bound; nonempty joint set; physical GST-only and RB-only witnesses crossing the same bound/interval; separation exceeding verified numerical error",
+  "controls": [
+    "remove each source",
+    "remove composition",
+    "retain only aggregate means",
+    "gauge/realization equivalences",
+    "dimension and nonstationarity sensitivity",
+    "practical decision and shot scale"
+  ],
+  "stopping": "Concentrate on a feasible target after auditing at least three. If no primary certificate, report the strongest verified partial result and exact remaining step. Failed local searches or loose outer relaxations are not impossibility results.",
+  "permissions": "Public source research and computational analysis only; no new acquisition, author contact, or transfer of unrelated calibration",
+  "post_discovery_certificate_lock": {
+    "primary_target": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "target_sha256": "dcc185c9119d8ed71fca5a402c4353202bad7f19493372053cf68bf8c5186350",
+    "resource_target": "Gy^10749",
+    "resource_scales": [
+      [
+        1,
+        1
+      ],
+      [
+        1009,
+        1000
+      ]
+    ],
+    "selection_record": "discovery-history.md; selected after seeing outcomes, not preregistered",
+    "result": "one-sided gain only; primary two-source success condition not met",
+    "numerical_envelope": "1e-9 for binary probabilities through length 8198; separate directed interval power for length 10749"
+  }
+}

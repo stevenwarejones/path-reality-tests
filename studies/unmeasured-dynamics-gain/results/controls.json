@@ -1,0 +1,19 @@
+{
+  "composition_removed_target_interval": [0, 1],
+  "context_scope": "Fixed circuit-context channels within half-diamond delta of one stationary qubit gate set; fixed shared SPAM and independent shots. Delta is not inferred from this acquisition.",
+  "hypothetical_context_variation": [
+    {"half_diamond_per_occurrence": 0.0, "target_lower": 0.1113640705},
+    {"half_diamond_per_occurrence": 0.0001, "target_lower": 0.1104016065},
+    {"half_diamond_per_occurrence": 0.001, "target_lower": 0.1017797179},
+    {"half_diamond_per_occurrence": 0.01, "target_lower": 0.0188619179}
+  ],
+  "prospective": {
+    "conditional_size_upper": 0.048496980259,
+    "power_at_RB_witness_lower": 0.995765162257,
+    "probability_rounding_grid": 1000000000000,
+    "reject_if_plus_count_at_most": 1,
+    "shots": 41
+  },
+  "prospective_scope": "Independent future shots, conditional on training-region membership. Training coverage 95%; future conditional test size 5%; union bound gives at most 10% unconditional error, not 5%. No experiment conducted.",
+  "within_row_dependence": "Unrestricted dependence invalidates the binomial/Hoeffding confidence claim. Algebraic implications of region membership remain; no 95% empirical certificate is asserted in that enlargement."
+}
