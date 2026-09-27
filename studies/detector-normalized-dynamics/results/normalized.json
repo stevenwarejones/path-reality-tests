@@ -1,0 +1,52 @@
+{
+  "constant_detector_case": "Undefined; the positive observed response gap excludes it from the joint region",
+  "exact_all_word_identity": {
+    "a": {
+      "decimal": 0.16386065848617484,
+      "denominator": 6878867066520263668806904688148480,
+      "numerator": 1127175687158872271555483410890317
+    },
+    "b": {
+      "decimal": 0.6774442328108209,
+      "denominator": 4582245960351903015,
+      "numerator": 3104216099161078144
+    },
+    "equation": "E_new=a I+b E; TP gives G_w^*(E_new)=a I+b G_w^*(E), so every nonzero normalized contrast is unchanged"
+  },
+  "normalized_contrasts": {
+    "GST_contrast": [
+      {"decimal": 0.9989598100418315, "denominator": 47366578661515474609375, "numerator": 47317308422038971482112},
+      {"decimal": 0.9989598101903936, "denominator": 236832893307577373046875, "numerator": 236586542145379229499392}
+    ],
+    "RB_contrast": [
+      {"decimal": 0.9986008816374912, "denominator": 1775265128266870439453125, "numerator": 1772781322227590698631168},
+      {"decimal": 0.998600881796045, "denominator": 1775265128266870439453125, "numerator": 1772781322509065675341824}
+    ],
+    "joint": [
+      {"decimal": 0.998959810125806, "denominator": 8949699141312310576171875, "numerator": 8940389754888434804064256},
+      {"decimal": 0.9989598102264485, "denominator": 14916165235520517626953125, "numerator": 14900649592981924549230592}
+    ]
+  },
+  "primary_word": [2, 1, 2, 2, 1, 1, 2, 1, 2, 2],
+  "response_only_tightness": {
+    "E": "diag(0,1)",
+    "F": "diag(0.0452128544,0.7681878105)",
+    "channel": "Measure input in Z; prepare diagonal output with plus probability 0.0452128544 on input 0 and 0.7681878105 on input 1",
+    "normalized_contrast": {
+      "decimal": 0.7229749561,
+      "denominator": 10000000000,
+      "numerator": 7229749561
+    },
+    "not_claimed": "This block-level response witness does not realize the entire recorded native gate set or satisfy every count constraint"
+  },
+  "response_range_screen": {
+    "largest_two_sided_margin": {
+      "decimal": -0.2759848540903936,
+      "denominator": 48503376549391846000000000,
+      "numerator": -13386197299875326857927521
+    },
+    "positive_bounds": 59,
+    "two_sided_crossings": 0
+  },
+  "scope": "Normalized dynamics target defined; no two-source dynamics gain established"
+}

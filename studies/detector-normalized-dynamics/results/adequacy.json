@@ -1,0 +1,176 @@
+{
+  "interval_digits": 50,
+  "models": {
+    "PR21_contrast_GST": {
+      "deviance_enclosure": [
+        {"decimal": 22368.972377, "denominator": 1000000, "numerator": 22368972377},
+        {"decimal": 22368.974054, "denominator": 500000, "numerator": 11184487027}
+      ],
+      "excluded_at_0.025": true,
+      "log_chernoff_factor_enclosure": [
+        {"decimal": -5067.367258, "denominator": 500000, "numerator": -2533683629},
+        {"decimal": -5067.366106, "denominator": 500000, "numerator": -2533683053}
+      ],
+      "log_mgf_enclosure": [
+        {"decimal": 3648.66853, "denominator": 100000, "numerator": 364866853},
+        {"decimal": 3648.66903, "denominator": 100000, "numerator": 364866903}
+      ],
+      "original_region_membership": {
+        "GST": {
+          "minimum_slack": {
+            "decimal": 9.999000000022316e-06,
+            "denominator": 8796093022208000000000,
+            "numerator": 87952134129254083
+          },
+          "violations": 0
+        }
+      },
+      "retained": "GST",
+      "rows": 4657,
+      "tail_upper": {
+        "decimal": 1e-12,
+        "denominator": 1000000000000,
+        "numerator": 1
+      },
+      "tilt": {
+        "decimal": 0.3896484375,
+        "denominator": 1024,
+        "numerator": 399
+      }
+    },
+    "PR21_contrast_RB": {
+      "deviance_enclosure": [
+        {"decimal": 2534.80629, "denominator": 100000, "numerator": 253480629},
+        {"decimal": 2534.810727, "denominator": 1000000, "numerator": 2534810727}
+      ],
+      "excluded_at_0.025": true,
+      "log_chernoff_factor_enclosure": [
+        {"decimal": -26.93812, "denominator": 25000, "numerator": -673453},
+        {"decimal": -26.935744, "denominator": 15625, "numerator": -420871}
+      ],
+      "log_mgf_enclosure": [
+        {"decimal": 223.077391, "denominator": 1000000, "numerator": 223077391},
+        {"decimal": 223.07933, "denominator": 100000, "numerator": 22307933}
+      ],
+      "original_region_membership": {
+        "RB": {
+          "minimum_slack": {
+            "decimal": 9.998999999963663e-06,
+            "denominator": 422696250182205440000000000,
+            "numerator": 4226539805556512247141
+          },
+          "violations": 0
+        }
+      },
+      "retained": "RB",
+      "rows": 2004,
+      "tail_upper": {
+        "decimal": 3e-12,
+        "denominator": 1000000000000,
+        "numerator": 3
+      },
+      "tilt": {
+        "decimal": 0.0986328125,
+        "denominator": 1024,
+        "numerator": 101
+      }
+    },
+    "PR21_joint": {
+      "deviance_enclosure": [
+        {"decimal": 7288.331779, "denominator": 1000000, "numerator": 7288331779},
+        {"decimal": 7288.338148, "denominator": 250000, "numerator": 1822084537}
+      ],
+      "excluded_at_0.025": true,
+      "log_chernoff_factor_enclosure": [
+        {"decimal": -9.771066, "denominator": 500000, "numerator": -4885533},
+        {"decimal": -9.760176, "denominator": 62500, "numerator": -610011}
+      ],
+      "log_mgf_enclosure": [
+        {"decimal": 260.694607, "denominator": 1000000, "numerator": 260694607},
+        {"decimal": 260.705261, "denominator": 1000000, "numerator": 260705261}
+      ],
+      "original_region_membership": {
+        "GST": {
+          "minimum_slack": {
+            "decimal": 0.0031338120478955536,
+            "denominator": 409634052044226560000000000,
+            "numerator": 1283716127524471405002411
+          },
+          "violations": 0
+        },
+        "RB": {
+          "minimum_slack": {
+            "decimal": 0.00202413731870507,
+            "denominator": 6606217703399096320000000000,
+            "numerator": 13371891788940209736700231
+          },
+          "violations": 0
+        }
+      },
+      "retained": "joint",
+      "rows": 6661,
+      "tail_upper": {
+        "decimal": 5.7704437e-05,
+        "denominator": 1000000000000,
+        "numerator": 57704437
+      },
+      "tilt": {
+        "decimal": 0.037109375,
+        "denominator": 512,
+        "numerator": 19
+      }
+    },
+    "stationary_refit": {
+      "deviance_enclosure": [
+        {"decimal": 7271.537982, "denominator": 500000, "numerator": 3635768991},
+        {"decimal": 7271.544351, "denominator": 1000000, "numerator": 7271544351}
+      ],
+      "excluded_at_0.025": true,
+      "log_chernoff_factor_enclosure": [
+        {"decimal": -9.085386, "denominator": 500000, "numerator": -4542693},
+        {"decimal": -9.074498, "denominator": 500000, "numerator": -4537249}
+      ],
+      "log_mgf_enclosure": [
+        {"decimal": 260.75708, "denominator": 25000, "numerator": 6518927},
+        {"decimal": 260.767732, "denominator": 250000, "numerator": 65191933}
+      ],
+      "original_region_membership": {
+        "GST": {
+          "minimum_slack": {
+            "decimal": 0.0031130840128770075,
+            "denominator": 409634052044226560000000000,
+            "numerator": 1275225218548909764377411
+          },
+          "violations": 0
+        },
+        "RB": {
+          "minimum_slack": {
+            "decimal": 0.001972046478146365,
+            "denominator": 6606217703399096320000000000,
+            "numerator": 13027768355856355185918981
+          },
+          "violations": 0
+        }
+      },
+      "retained": "joint",
+      "rows": 6661,
+      "tail_upper": {
+        "decimal": 0.000114550079,
+        "denominator": 1000000000000,
+        "numerator": 114550079
+      },
+      "tilt": {
+        "decimal": 0.037109375,
+        "denominator": 512,
+        "numerator": 19
+      }
+    }
+  },
+  "probability_envelope": {
+    "decimal": 1e-09,
+    "denominator": 1000000000,
+    "numerator": 1
+  },
+  "sampling": "Independent binomial rows under fixed candidate; no fitted degrees of freedom",
+  "scope": "Candidatewise rejection, not exclusion of stationary CPTP class; original PR21 confidence region unchanged"
+}

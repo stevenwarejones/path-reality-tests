@@ -1,0 +1,5 @@
+{
+  "analysis_markers_confirmed": ["generate_fake_data", "NonMarkovRBData", "theta = 1.25e-2", "envSwich", "2015_03_30-RB_0320_condensed_cliffs.txt"],
+  "experimental_data_paths": ["ExperimentalData/2014_04_17-compensatedTraining.txt", "ExperimentalData/2014_12_02-GSTCompensatedDrift_randomized_condensed.txt", "ExperimentalData/2015_02_09-GSTCompensatedDrift_condensed.txt", "ExperimentalData/2015_03_02-GST_condensed.txt", "ExperimentalData/2015_03_19-GSTBest_condensed.txt", "ExperimentalData/2015_03_30-GST_BB1_XYXY_8192_condensed.txt", "ExperimentalData/2015_03_30-RB_0320_condensed.txt", "ExperimentalData/2015_03_30-RB_0320_condensed_cliffs.txt", "ExperimentalData/Cliff_seqs.txt", "ExperimentalData/Cliffs_to_prims.py", "ExperimentalData/clifford_lengths.txt"],
+  "interpretation": "Figure5 non-Markovian outcomes are simulated, not matched calibration observations; notebook and pickles never executed"
+}

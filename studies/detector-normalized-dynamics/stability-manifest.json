@@ -1,0 +1,26 @@
+{
+  "commit": "fc939f90f7a2b32a20aec34f36465259f38837a3",
+  "files": [
+    {
+      "cache_name": "tree.json",
+      "url": "https://api.github.com/repos/pyGSTio/supplemental-info-arXiv-1605.07674/git/trees/fc939f90f7a2b32a20aec34f36465259f38837a3?recursive=1",
+      "sha256": "8f73156634cd0df1b8bf3f329fd5516def71cbd5de1469c37199234eb718bdcb",
+      "bytes": 40738,
+      "role": "deposit inventory"
+    },
+    {
+      "cache_name": "Figure5.ipynb",
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/AnalysisNotebooks/Figure5.ipynb",
+      "sha256": "13990ad22b51f1fb08b657abcd3fd9435b8767cdedfb5c2c838778a4d40ea9f4",
+      "bytes": 324968,
+      "role": "analysis text, not observations"
+    },
+    {
+      "cache_name": "experiment-paper.pdf",
+      "url": "https://inspirehep.net/files/b3f0bbbd9f05c8dc74ad78292795c08a",
+      "sha256": "0100234f45e47b38697b95dc63638adc599b636bbf5a45e1245c4f87df867b19",
+      "bytes": 1940978,
+      "role": "paper assertions, not calibration counts"
+    }
+  ]
+}

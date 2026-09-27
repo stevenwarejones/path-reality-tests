@@ -1,0 +1,13 @@
+{
+  "status": "Retrospective follow-up to merged PR21; preliminary diagnostics already examined",
+  "primary_question": "Can both sources constrain actual dynamics after removing detector spectral scale, under empirically justified stability?",
+  "normalized_target": "R_T=diameter(G_T^*(E))/diameter(E), for nonconstant detectors; fixed-input prediction remains another admissible target",
+  "required_endpoint": "Full-class joint certificate plus both complete-source physical crossing witnesses; show that observed response range alone cannot imply the conclusion",
+  "method_exclusion": "Do not add more transfer inequalities to the relaxation whose full [0,1] obstruction was proved in PR21",
+  "baseline_preservation": "PR21 region and certificates remain unchanged. New aggregate adequacy diagnostics define a separate test, not a retroactive modification of its confidence region",
+  "adequacy": "Exact independent-binomial deviance moment-generating function, Chernoff tail enclosure at a saved rational tilt; no fitted degrees of freedom; source-restricted tests for source-only witnesses",
+  "statistics": "All original rows and denominators, independent Bernoulli shots under a fixed candidate. Candidatewise inversion, no full-class exclusion from optimizer failure",
+  "stability": "Audit deposit inventory, paper control descriptions and every repeated literal word; do not infer chronology from file order or import calibration from another epoch",
+  "search": "Refit general stationary CPTP model using all original data before interpreting a saved point's rejection; numerical optimization never supplies an exclusion certificate",
+  "limits": "No new acquisition, external contact, novelty claim or unverified empirical context allowance"
+}
