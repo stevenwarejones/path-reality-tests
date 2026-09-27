@@ -25,11 +25,15 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install pinned numerical dependencies
-        run: python -m pip install -r studies/gst-rb-combination-gain/requirements.txt
+        run: python -m pip install -r studies/unmeasured-dynamics-gain/discovery-requirements.txt
       - name: Reconstruct every deposited word and certify all physical witnesses
         env:
           OPENBLAS_NUM_THREADS: '1'
-        run: python studies/unmeasured-dynamics-gain/verify.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --download --check
+        run: |
+          python studies/unmeasured-dynamics-gain/verify.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --download --check
+          python studies/unmeasured-dynamics-gain/transfer_barrier.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
+          python studies/unmeasured-dynamics-gain/two_sided_screen.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
+          python studies/unmeasured-dynamics-gain/gram_probe.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
       - name: Check assumption violations and offline certificate
         run: |
           python -m unittest discover -s tests -p 'test_unmeasured_dynamics_gain.py' -v

@@ -17,6 +17,8 @@ The scientific question remains whether shared ordinary dynamics across compleme
 
 This builds on [PR17's study](../gst-rb-combination-gain/README.md), preserving its measured-context mixture result. The new target is a literal unrecorded sequence, not a relabeling of recorded frequencies. In the nominal apparatus interpretation it is two idles followed by a two-Y readout rotation; no ideal rotation assumption is used in the proof.
 
+The [two-sided follow-up](followup.md) now ranks targets by both deletion margins and proves a limitation of the entire transfer-inequality method using all GST constraints. It does not supply the missing physical GST-only witness or establish that GST alone implies the present joint bound.
+
 ## Decisive comparison
 
 All predictions use the same model class and the same original 95% confidence construction. Removing a source deletes all its constraints without reallocating statistical budgets. Intervals below include a common rigorous `1e-9` propagation envelope and outward quantization to `1e-8`.

@@ -1,0 +1,5 @@
+-r ../gst-rb-combination-gain/requirements.txt
+cvxpy==1.7.3
+scs==3.3.1
+clarabel==0.11.1
+osqp==1.1.3

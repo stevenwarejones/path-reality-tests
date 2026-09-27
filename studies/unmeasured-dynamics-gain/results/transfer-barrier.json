@@ -1,0 +1,52 @@
+{
+  "all_word_proof": "algebra_checks plus the exhaustive proper-extension fact, verified against pinned words by --cache; proof in followup.md",
+  "b": {
+    "decimal": 0.21,
+    "denominator": 100,
+    "numerator": 21
+  },
+  "cancellation_prefix": {
+    "index": 119,
+    "probability": {
+      "decimal": 0.4652,
+      "denominator": 2500,
+      "numerator": 1163
+    },
+    "word": [0, 0, 2]
+  },
+  "checked_two_sided_GST_constraints": 4663,
+  "claim": "Complete-GST transfer-inequality relaxation admits the entire target interval [0,1]",
+  "confidence": "Original region unchanged; this is a relaxation assignment, not a fitted quantum model",
+  "does_not_prove": "A physical GST-only crossing witness, a full-class GST bound, or impossibility of combination gain",
+  "endpoint_assignments": [
+    {
+      "other_unrecorded_words": [2, 5],
+      "target": 0
+    },
+    {
+      "other_unrecorded_words": [3, 5],
+      "target": 1
+    }
+  ],
+  "exceptional_recorded_proper_extensions": [
+    {
+      "index": 121,
+      "probability": {
+        "decimal": 0.5116,
+        "denominator": 2500,
+        "numerator": 1279
+      },
+      "word": [0, 0, 2, 2, 2]
+    }
+  ],
+  "interval_completion": "Geometric-mean concavity makes the transfer-inequality feasible set convex; interpolate the two endpoint assignments",
+  "minimum_GST_slack": {
+    "decimal": 0.00283890044743397,
+    "denominator": 46570000000000,
+    "numerator": 132207593837
+  },
+  "physical_model": false,
+  "recorded_GST_assignment": "b+(1-2b)*k/n",
+  "target": [0, 0, 2, 2],
+  "target_sha256": "dcc185c9119d8ed71fca5a402c4353202bad7f19493372053cf68bf8c5186350"
+}

@@ -92,4 +92,51 @@ class UnmeasuredDynamics(unittest.TestCase):
         S=[[F(1),F(0)],[F(0),F(1009,1000)]];T=[[F(1),F(0)],[F(0),F(1000,1009)]]
         self.assertEqual(mm(mm(mm(S,A),T),mm(mm(S,B),T)),mm(mm(S,mm(A,B)),T))
 
+
+class TransferMethodBarrier(unittest.TestCase):
+    def test_exact_complete_GST_constraints(self):
+        import transfer_barrier as tb
+        result=tb.run()
+        self.assertFalse(result['physical_model'])
+        self.assertEqual(result,json.loads((D/'results/transfer-barrier.json').read_text()))
+        self.assertEqual(result['checked_two_sided_GST_constraints'],4663)
+        self.assertGreater(result['minimum_GST_slack']['decimal'],.0028)
+
+    def test_infinite_word_proof_guards(self):
+        import transfer_barrier as tb
+        tb.algebra_checks(F(21,100),F(1279,2500),F(1163,2500))
+        with self.assertRaisesRegex(ValueError,'range argument'):tb.algebra_checks(F(19,100),F(1279,2500),F(1163,2500))
+        with self.assertRaisesRegex(ValueError,'exceptional'):tb.algebra_checks(F(21,100),F(99,100),F(1,100))
+
+    def test_transfer_assignment_exceptional_words(self):
+        import transfer_barrier as tb
+        rng=np.random.default_rng(210927)
+        known={(0,0,2):{'k':22,'n':50},(0,0,2,2,2):{'k':26,'n':50},():{'k':0,'n':50}}
+        words=[tuple(rng.integers(0,3,size=int(rng.integers(0,12)))) for _ in range(100)]
+        words.extend([dv.TARGET,dv.TARGET[:-1],dv.TARGET+(2,),(),(0,0)])
+        for endpoint in [0,1]:
+            for u in words:
+                for v in [(),dv.TARGET,dv.TARGET[:-1],(0,0)]:
+                    for suffix in [(),(2,),(2,2),(0,2,2),dv.TARGET]:
+                        p=float(tb.scalar_probability(u,known,endpoint));q=float(tb.scalar_probability(v,known,endpoint))
+                        diff=abs(float(tb.scalar_probability(u+suffix,known,endpoint)-tb.scalar_probability(v+suffix,known,endpoint)))
+                        self.assertLessEqual(diff,np.sqrt(p*(1-q))+np.sqrt(q*(1-p))+1e-14)
+
+    def test_gram_containment_on_physical_gate_set(self):
+        from gram_probe import contraction_matrix
+        from dynamics_common import operations
+        gates,initial,effect,_=operations(baseline_models()['joint']['x'])
+        rng=np.random.default_rng(927);states=rng.normal(size=(3,8));states/=2*np.maximum(1,np.linalg.norm(states,axis=0))
+        for g in range(3):
+            T=gates[0,g,1:4,1:4];t=gates[0,g,1:4,0];after=T@states+t[:,None]
+            vectors=np.c_[states,after,t];Q=vectors.T@vectors;M=contraction_matrix(Q,[(j,j+8) for j in range(8)],16)
+            np.testing.assert_allclose(M,states.T@(np.eye(3)-T.T@T)@states,atol=1e-15)
+            self.assertGreaterEqual(np.linalg.eigvalsh(M).min(),-1e-14)
+
+    def test_nonCP_map_passes_contraction_relaxation(self):
+        # Transposition is a ball isometry but its Choi matrix is the swap, with eigenvalue -1.
+        T=np.diag([1.,-1.,1.]);np.testing.assert_array_equal(T.T@T,np.eye(3))
+        swap=np.array([[1,0,0,0],[0,0,1,0],[0,1,0,0],[0,0,0,1]],float)
+        self.assertEqual(np.linalg.eigvalsh(swap).min(),-1)
+
 if __name__=='__main__':unittest.main()
