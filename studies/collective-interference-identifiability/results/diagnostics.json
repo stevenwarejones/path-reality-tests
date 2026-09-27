@@ -1,0 +1,19 @@
+{
+  "conditional_on_frozen_calibration": true,
+  "critical_count": 92,
+  "null_tail": 0.006019110696,
+  "power_at_observed_frequency": 0.55641596579,
+  "power_at_physical_inner_example": 0.037386346666,
+  "power_at_probability_0_04": 0.997012423445,
+  "synthetic_common_drift": {
+    "C2_ceiling_if_sharing_were_valid": 0.5,
+    "actual_distinguishable_bunch_probability": 1.0,
+    "product_of_averages_D": 0.25,
+    "singleton_row_probabilities": [
+      0.5,
+      0.5
+    ],
+    "violates_fixed_channel_assumption": true
+  },
+  "trials": 2999
+}

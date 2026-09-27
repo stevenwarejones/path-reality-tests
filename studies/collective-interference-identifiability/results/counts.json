@@ -1,0 +1,80 @@
+{
+  "bunch_shots": 93,
+  "copies": {
+    "31": 1,
+    "32": -1
+  },
+  "full_survival": 2329,
+  "many_row_indices": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "many_shots": 2999,
+  "provenance": "Derived aggregate statistics, not raw events; Young et al., Zenodo 10453016, boson-1.0.4.zip.",
+  "reference_row_counts": [
+    1,
+    10,
+    78,
+    218,
+    120,
+    26,
+    137,
+    218,
+    65,
+    18,
+    1,
+    0
+  ],
+  "reference_row_indices": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "scan_family": [
+    {
+      "bunch_shots": 718,
+      "full_survival": 2143,
+      "n": 2,
+      "prepared_shots": 2635
+    },
+    {
+      "bunch_shots": 93,
+      "full_survival": 2329,
+      "n": 3,
+      "prepared_shots": 2999
+    },
+    {
+      "bunch_shots": 6,
+      "full_survival": 1402,
+      "n": 4,
+      "prepared_shots": 1902
+    },
+    {
+      "bunch_shots": 2,
+      "full_survival": 1741,
+      "n": 5,
+      "prepared_shots": 2447
+    }
+  ],
+  "selected_n": 3,
+  "single_shots": 931
+}

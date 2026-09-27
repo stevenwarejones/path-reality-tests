@@ -1,0 +1,84 @@
+{
+  "alternatives": [
+    {
+      "files": [
+        {
+          "bytes": 4064,
+          "name": "5-photons-10-modes.csv",
+          "sha256": "20f4dd6d0ec95527f2d444bc987c534131ab50efbb0250fb10c6290b9a01e6c9",
+          "url": "https://zenodo.org/api/records/10829208/files/5-photons-10-modes.csv/content"
+        },
+        {
+          "bytes": 315327,
+          "name": "8-photons-16-modes.csv",
+          "sha256": "e213a43cf3191982b088b594a12356134b53df8db50f9ec07b24c42368fe2fa2",
+          "url": "https://zenodo.org/api/records/10829208/files/8-photons-16-modes.csv/content"
+        },
+        {
+          "bytes": 17177,
+          "name": "6-photons-12-modes.csv",
+          "sha256": "9ea83d3892a1393a4129a79fd94b03b66685efc1626edcdecc894b7baa20e899",
+          "url": "https://zenodo.org/api/records/10829208/files/6-photons-12-modes.csv/content"
+        },
+        {
+          "bytes": 7293,
+          "name": "Experiment.py",
+          "sha256": "e528ac40339525a05240d99ecce6a3f97afc7e94c24847bf742a445058531e19",
+          "url": "https://zenodo.org/api/records/10829208/files/Experiment.py/content"
+        },
+        {
+          "bytes": 334840,
+          "name": "LoopExperiment.ipynb",
+          "sha256": "7198240dbf8dfc0563e4e4ac2cfd8ad599498fb777ea5f2108d8b941e973a651",
+          "url": "https://zenodo.org/api/records/10829208/files/LoopExperiment.ipynb/content"
+        },
+        {
+          "bytes": 13184,
+          "name": "Loop.py",
+          "sha256": "3365a53433481182df6ee7c604ed0922934f3089ca4baeb4ab0dca42a6ec1388",
+          "url": "https://zenodo.org/api/records/10829208/files/Loop.py/content"
+        },
+        {
+          "bytes": 314255,
+          "name": "time_bin_hom_histogram_datapoints.txt",
+          "sha256": "44752bded64222cd84ac75dabe8aed6c5b1f17e90fbe084d2bbcd274ef96229f",
+          "url": "https://zenodo.org/api/records/10829208/files/time_bin_hom_histogram_datapoints.txt/content"
+        },
+        {
+          "bytes": 73800,
+          "name": "7-photons-14-modes.csv",
+          "sha256": "8d1fd77df9c1f4ee01360ce697831e6d5a668a7fdb1f8a66c38f7408d72f7483",
+          "url": "https://zenodo.org/api/records/10829208/files/7-photons-14-modes.csv/content"
+        }
+      ],
+      "license": "cc-by-4.0",
+      "record": 10829208
+    },
+    {
+      "files": [
+        {
+          "bytes": 1332377,
+          "name": "ECMBIDataSet.zip",
+          "sha256": "6f8cac1b349057a7c0d3cd5c2d857454c229e2fd7e6baef66f62fc8e6f73ff54",
+          "url": "https://zenodo.org/api/records/10927445/files/ECMBIDataSet.zip/content"
+        }
+      ],
+      "license": "cc-by-4.0",
+      "record": 10927445
+    }
+  ],
+  "atomic_archive": {
+    "bytes": 59176561,
+    "license": "NIST notice included in archive; source remains external",
+    "sha256": "4cc92717cda7831c4bc8bff59c4b8f117b438a0aaf091d99420ae76282ff3ab4",
+    "url": "https://zenodo.org/records/10453016/files/boson-1.0.4.zip?download=1"
+  },
+  "atomic_members": {
+    "1D.nc": "e4f5b7ba826e81b7dec81bc46f330444eee87a6d0353a22dd67a62e13c04a881",
+    "1D_singles.nc": "72c342bac83696b904b3745197e68e1b61e9762f3f36743455f7d40724a71aeb"
+  },
+  "notebook": {
+    "sha256": "263981a756b3f10ac81ba74c323d1f1be9475e7935d8c902e89c8c80eaf2443a",
+    "url": "https://zenodo.org/records/10453016/files/2402_mpwc_upload.ipynb?download=1"
+  }
+}
