@@ -21,7 +21,7 @@ independent datasets.
 | Family and record | Denominators/exposure actually available | Intervention and apparatus | Clocks, geometry and calibration | Role and limitation |
 |---|---|---|---|---|
 | Larson charge: [16568030](https://zenodo.org/records/16568030), `Figure02/Figure2b_nonCu_Q2.csv`, `Figure2b_1umCu_Q5.csv` | 10 rate/error rows per chip; full run denominators not in these tables. Fig. 2a includes example tomography arrays, not every dose run | External Co-60 distance sweep, with no-source row; separate bare and 1 µm Cu chips | Dose coordinate 1/r² in m⁻²; rates s⁻¹; 8×8×0.525 mm Si; charge threshold and charge transport matter. No common clock with other laboratories | Initiator-sensitive response; charge efficiency is not a universal particle tag |
-| Larson parity/footprint: same record, `Figure03/Figure3b_*.csv`, `Figure05/Figure5c_*.csv` | 30 bare-chip and 162 Cu-chip rate/error entries; 6 footprint summaries per chip. Paper reports 12 h/5 h footprint runs; coincidence numerators, valid-window denominators and run grouping are not supplied for all footprint entries | Same source-distance manipulation; bare qubits Q3/Q4/Q6, Cu Q1–Q6 | Sampling varies 250 µs–10 ms in the paper; HMM and coincidence windows are protocol dependent. Source at about 59 cm for footprints. Fig. 4 traces are excerpts | Measures parity contrast and fitted spectral rates; no complete event likelihood reconstructed |
+| Larson parity/footprint: same record, `Figure03/Figure3b_*.csv`, `Figure05/Figure5c_*.csv` | 30 bare-chip and 162 Cu-chip rate/error entries; 6 footprint summaries per chip. Paper Table 2 supplies every coincidence numerator and accepted-window denominator, with 11.78 h/5.35 h exposures; event identities, mask intersections and run grouping are not supplied | Same cooldown and cold finger, different chips; bare dose qubits Q3/Q4/Q6, Cu Q1–Q6 | Sampling varies 250 µs–10 ms in the paper; HMM and coincidence windows are protocol dependent. Source at about 59 cm for footprints. Fig. 4 traces are excerpts | Measures parity contrast and fitted spectral rates; no complete event likelihood reconstructed |
 | Iaia injection and mitigation: [7249678](https://zenodo.org/records/7249678), `Figure2a.dat`, `Figure3b.dat`, `Figure4b.dat` | 30 injection-delay rows; 7 observed/extracted coincidence categories, with errors. Example traces and spectra exist, but not the complete coincidence acquisition | Junction injection on bare versus **10 µm** Cu chips; distinct from the 1 µm mitigation comparison above | Fig. 2 uses delay in µs; 1 mV injection; rate response is inferred from T1 fits. Fig. 2 errors derive from fit confidence intervals, not necessarily one standard deviation | Calibrates a particular injection response; replacing 10 µm with 1 µm copper is not a known numerical scale transformation |
 | Kono mechanical controls: [11034817](https://zenodo.org/records/11034817), `Zenodo/Fig3aceFig5Fig7FigS11/data/statistics_wrapped_period` and analysis notebooks | 714 phase bins × 4 integer cells, total 12,697,600 measurements. These aggregates do not retain trial/run clustering. Larger quadrature and transition records are listed but not all acquired | Pulse-tube on/off, synchronized acceleration and qubit readout; Nb-capacitor/Al-junction transmons in a separate refrigerator | Notebook period 0.7144833333 s; binned samples 1 ms; jump protocol 3 µs. Q0/Q1 physical labels differ from some internal indices. Accelerometer is at the top plate, not a calibrated GHz phonon probe at the chip | Strong within-apparatus causal control; no measured transfer to the Larson/Iaia chips |
 
@@ -31,6 +31,10 @@ headers say distance in mm, but contain values around 2020–6660. The 8 mm chip
 geometry and the paper's 2.02–6.66 mm separations support interpreting these
 numbers as µm. Results preserve the original values and label the conversion
 as an inference. No probability bound uses that distance conversion.
+
+The [matched gamma follow-up](matched-gamma.md) corrects the denominator and
+observation-model omissions in the first audit, checks the proposed multiple-window
+route, and quantifies conditional charge/mask-acceptance requirements.
 
 ## Feasibility calculations at the supplied precision
 
@@ -50,8 +54,10 @@ The full stored curves must admit a common uncertainty construction first.
 For every curve, the code searches exact three-row annihilating contrasts (and
 two-row contrasts at repeated doses). If w·1=w·z=0, every affine function must
 satisfy |w·y|≤k Σ|w|e for reported errors e. This is a global algebraic bound,
-not a failed optimizer. A separately computed feasible affine function verifies
-the matching upper bound within approximately 1.1×10⁻⁹ in error-multiplier units.
+not a failed optimizer. The solver coefficients are converted to exact rationals and every original
+decimal residual is evaluated rationally to certify a feasible upper bound.
+Both exact endpoints and coefficients are recorded; no numerical cushion is
+used as an exactness argument.
 
 | Curve | Minimum multiplier of reported errors | Minimum additive rate discrepancy after a 4-error envelope (s⁻¹) |
 |---|---:|---:|
@@ -114,8 +120,8 @@ promising independent validation lead, not evidence of transportability.
 
 ## Quantified requirements to reopen this gate
 
-1. **Statistical model:** obtain valid-window coincidence counts and run/cooldown
-   grouping, or justified simultaneous bounds on the reported means that include
+1. **Statistical model:** Table 2 now supplies marginal valid-window counts.
+   Obtain their event identities, joint masks and run grouping, or justified simultaneous bounds on the reported means that include
    the discrepancies above. Preserve dependence between charge/parity records.
    Fit-error bars alone do not meet this requirement.
 2. **Parity-to-event calibration:** to approximate any-event probability by the

@@ -14,7 +14,8 @@ import numpy as np
 from scipy.optimize import linprog
 
 from cqm_sources import acquire
-from cqm_response import any_bounds, any_probability, odd_probability, two_point_witness
+from cqm_response import any_probability, odd_probability, two_point_witness
+from cqm_matched import matched_analysis
 
 HERE = Path(__file__).resolve().parent
 
@@ -70,12 +71,25 @@ def affine_certificate(data, envelope=4):
         bounds=[(0, None)] * 3, method="highs")
     if not lp_k.success or not lp_delta.success:
         raise ValueError("minimax computation failed")
-    # A directly checked feasible point gives an upper bound, irrespective
-    # of the solver's claim of optimality. Round it outward by 1e-9.
-    k_upper = max(0.0, float(np.max(abs(design @ lp_k.x[:2] - y) / error))) + 1e-9
-    delta_upper = max(0.0, float(np.max(abs(design @ lp_delta.x[:2] - y) - envelope * error))) + 1e-9
-    if k_upper < float(best_k[0]) or delta_upper < float(best_delta[0]):
+    # Convert the returned affine coefficients themselves to exact rationals.
+    # Evaluating every original decimal row then supplies a rigorous feasible
+    # upper certificate, without relying on solver tolerances or a cushion.
+    def exact_upper(solution, scaled):
+        parameters = [Fraction.from_float(float(v)) for v in solution[:2]]
+        if any(v < 0 for v in parameters):
+            raise ValueError("negative affine coefficient")
+        residuals = [abs(parameters[0] + parameters[1]*z - y)
+                     for z, y, error in rational]
+        upper = max([Fraction(0)] + [
+            residual / row[2] if scaled else residual - envelope*row[2]
+            for residual, row in zip(residuals, rational)])
+        return upper, parameters
+
+    k_exact, k_parameters = exact_upper(lp_k.x, True)
+    delta_exact, delta_parameters = exact_upper(lp_delta.x, False)
+    if k_exact < best_k[0] or delta_exact < best_delta[0]:
         raise ValueError("primal/certificate inconsistency")
+    k_upper, delta_upper = float(k_exact), float(delta_exact)
 
     def certificate(best):
         value, idx, weights = best
@@ -88,8 +102,12 @@ def affine_certificate(data, envelope=4):
             "weighted_affine_slope_m2_s_minus1": float(fit[1]),
             "required_error_multiplier": certificate(best_k),
             "feasible_multiplier_upper": k_upper,
+            "exact_feasible_multiplier_upper": str(k_exact),
+            "exact_multiplier_affine_parameters": [str(v) for v in k_parameters],
             "additive_discrepancy_s_minus1": certificate(best_delta),
             "feasible_discrepancy_upper_s_minus1": delta_upper,
+            "exact_feasible_discrepancy_upper_s_minus1": str(delta_exact),
+            "exact_discrepancy_affine_parameters": [str(v) for v in delta_parameters],
             "feasible_discrepancy_affine_parameters": lp_delta.x[:2].tolist(),
             "fits_four_reported_errors": delta_upper < 1e-8}
 
@@ -117,8 +135,8 @@ def gamma_analysis(path):
                     "distance_mm_interpreted_as_native_um": distance_native / 1000,
                     "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
                     "reported_poisoning_contrast": contrast, "reported_error": error,
-                    "any_tunnel_bounds_at_point_estimate": list(any_bounds(contrast)),
-                    "any_tunnel_bounds_four_error_envelope": [any_bounds(lo)[0], hi]})
+                    "contrast_four_reported_error_envelope": [lo, hi],
+                    "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."})
     return {"curves": curves, "footprint": footprint,
             "total_rate_points": sum(v["rows"] for v in curves.values()),
             "interpretation": "Exploratory deterministic consistency test. Four reported errors is NOT a calibrated confidence region."}
@@ -139,14 +157,34 @@ def mutual_information(counts):
     return float(np.sum(p[selected] * np.log2(p[selected] / independent[selected])))
 
 
+def validated_phase_counts(value, expected_rows=714):
+    """Validate primitive integers BEFORE conversion, including aggregate overflow."""
+    limit = np.iinfo(np.int64).max
+    if type(value) not in (list, tuple) or len(value) != expected_rows:
+        raise ValueError("unexpected phase-count schema")
+    total = 0
+    for row in value:
+        if type(row) not in (list, tuple) or len(row) != 4:
+            raise ValueError("unexpected phase-count schema")
+        for count in row:
+            # bool is an int subclass but is not an admissible event count.
+            if type(count) is not int or not 0 <= count <= limit:
+                raise ValueError("count must be a nonnegative int64-representable integer")
+        exposure = sum(row)  # Python integers cannot overflow.
+        if exposure == 0:
+            raise ValueError("zero-exposure phase bin")
+        total += exposure
+        if total > limit:
+            raise ValueError("aggregate count overflows int64")
+    return np.asarray(value, dtype=np.int64)
+
+
 def mechanical_analysis(cache):
     p = cache / "mechanical/Zenodo/Fig3aceFig5Fig7FigS11/data/statistics_wrapped_period"
     with p.open("rb") as f:
-        a = np.asarray(PrimitiveUnpickler(f).load(), dtype=np.int64)
+        a = validated_phase_counts(PrimitiveUnpickler(f).load())
         if f.read():
             raise ValueError("unexpected extra object")
-    if a.shape != (714, 4) or np.any(a < 0):
-        raise ValueError("unexpected phase-count schema")
     count = a.sum(axis=0)
     weights = a.sum(axis=1) / a.sum()
     phase = a.reshape(-1, 2, 2) / a.sum(axis=1)[:, None, None]
@@ -187,6 +225,7 @@ def compute(cache):
     witness = two_point_witness(contrast, 5.0)
     return {"status": "FEASIBILITY GATE: no certified empirical combination gain; mission not achieved",
         "gamma": gamma_analysis(cache / "gamma.zip"),
+        "matched_gamma": matched_analysis(cache / "gamma.zip"),
         "mechanical": mechanical_analysis(cache), "iaia": iaia_analysis(cache / "iaia.zip"),
         "synthetic_observation_witness": {"contrast": contrast,
             "homogeneous_intensity": float(fixed), "homogeneous_any_probability": any_probability(float(fixed)),

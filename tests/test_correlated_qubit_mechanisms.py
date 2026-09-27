@@ -16,7 +16,8 @@ STUDY = Path(__file__).resolve().parents[1] / "studies/correlated-qubit-mechanis
 sys.path.insert(0, str(STUDY))
 from cqm_response import (any_bounds, any_probability, corrected_contrast,
                           odd_probability, two_point_witness)
-from cqm_analysis import affine_certificate, mutual_information, PrimitiveUnpickler
+from cqm_analysis import affine_certificate, mutual_information, PrimitiveUnpickler, validated_phase_counts
+from cqm_matched import odd_signal_bracket, envelope_bracket, selection_floor
 from cqm_sources import decode_member
 
 
@@ -73,6 +74,71 @@ class CorrelatedQubitMechanisms(unittest.TestCase):
         # Fits each of three observations exactly: no falsely positive obstruction.
         exact = affine_certificate([['0','1','.1'], ['1','3','.1'], ['2','5','.1']])
         self.assertTrue(exact['fits_four_reported_errors'])
+
+    def test_exact_affine_upper_residuals(self):
+        data = [['0.13', '0.752', '.001'], ['0.9', '1.16', '.007'],
+                ['2.73', '1.4', '.012'], ['1.9', '.923', '.004']]
+        result = affine_certificate(data)
+        for label, parameter_key, upper_key, error_scaled in [
+                ('required_error_multiplier', 'exact_multiplier_affine_parameters',
+                 'exact_feasible_multiplier_upper', True),
+                ('additive_discrepancy_s_minus1', 'exact_discrepancy_affine_parameters',
+                 'exact_feasible_discrepancy_upper_s_minus1', False)]:
+            a, b = map(Fraction, result[parameter_key])
+            upper = Fraction(result[upper_key])
+            self.assertGreaterEqual(a, 0)
+            self.assertGreaterEqual(b, 0)
+            self.assertGreaterEqual(upper, Fraction(result[label]['exact_lower_bound']))
+            for z, y, error in data:
+                residual = abs(a+b*Fraction(z)-Fraction(y))
+                allowance = upper*Fraction(error) if error_scaled else upper+4*Fraction(error)
+                self.assertLessEqual(residual, allowance)
+
+    def test_phase_count_validation_precedes_conversion(self):
+        for bad in (1.25, 1.0, True, -1, 2**63, float('nan'), '1'):
+            with self.subTest(bad=bad), self.assertRaises(ValueError):
+                validated_phase_counts([[bad, 1, 2, 3]], expected_rows=1)
+        for bad in ([[0, 0, 0, 0]], [[2**63-1, 1, 0, 0]], [[1, 2, 3]],
+                    [[2**62, 0, 0, 0], [2**62, 0, 0, 0]]):
+            with self.assertRaises(ValueError):
+                validated_phase_counts(bad, expected_rows=len(bad))
+        a = validated_phase_counts([[0, 1, 2, 3]], expected_rows=1)
+        self.assertEqual(a.tolist(), [[0, 1, 2, 3]])
+        self.assertEqual(a.dtype, np.int64)
+
+    def test_background_paths_and_selection_extremizers(self):
+        # Enumerate all two-interval background paths and XOR a signal in the
+        # first interval. This checks the observation relation independently.
+        q = Fraction(3, 10)
+        for weights in ([Fraction(4, 5), Fraction(1, 5), 0, 0],
+                        [Fraction(4, 5), 0, Fraction(1, 5), 0],
+                        [Fraction(4, 5), Fraction(1, 20), Fraction(1, 20), Fraction(1, 10)]):
+            paths = [(0, 0), (1, 0), (0, 1), (1, 1)]
+            p = sum(w*((1-q)*bool(x or y)+q*bool((1-x) or y))
+                    for w, (x, y) in zip(weights, paths))
+            b = 1-weights[0]
+            lo, hi = odd_signal_bracket(p, b)
+            self.assertLessEqual(lo, 2*q)
+            self.assertGreaterEqual(hi, 2*q)
+            if weights[1] == b:
+                self.assertEqual(hi, 2*q)
+            if weights[1] == 0:
+                self.assertEqual(lo, 2*q)
+        # Population extremizers: rejected bare events have response 0, rejected
+        # copper events response 1. These are abstract response witnesses only.
+        low, high = Fraction(7, 10), Fraction(3, 10)
+        rho = selection_floor(low, high)
+        self.assertEqual(rho*low, rho*high+(1-rho))
+        self.assertGreater((rho+Fraction(1, 100))*(low-high)-(1-rho-Fraction(1, 100)), 0)
+        self.assertIsNone(selection_floor(high, low))
+        # Independently enumerate a rectangle to check outward containment.
+        envelope = envelope_bracket(Fraction(2, 5), Fraction(1, 100),
+                                    Fraction(1, 10), Fraction(1, 1000))
+        for p in np.linspace(.36, .44, 13):
+            for b in np.linspace(.096, .104, 13):
+                lo, hi = odd_signal_bracket(str(round(p, 10)), str(round(b, 10)))
+                self.assertLessEqual(envelope[0], lo)
+                self.assertGreaterEqual(envelope[1], hi)
 
     def test_common_phase_can_create_pooled_dependence(self):
         low = np.array([81, 9, 9, 1])

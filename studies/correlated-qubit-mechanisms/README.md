@@ -15,6 +15,18 @@ a response measurement that distinguishes tunneling intensity from parity
 contrast. These are requirements for this approach, not an impossibility result
 for the underlying physics or all available methods.
 
+## Matched gamma revision
+
+The [matched gamma follow-up](matched-gamma.md) recovers all 12 footprint count
+denominators from the paper, corrects the direct use of net-parity bounds for
+an any-switch readout, and tests the proposed multiple-window route. The
+released windows do not sample a calibrated common latent population. Under
+explicit observation assumptions, four distant pairs retain a contrast gap
+through a deterministic error envelope; the strongest needs combined charge/
+mask retention above **70.2438%** to imply a common-population difference. That
+retention is not established. This is a quantified calibration requirement,
+not the requested full-record mechanism separation.
+
 ## What is actually reproduced
 
 - The complete Iaia and Larson figure archives were downloaded and every member
@@ -80,8 +92,9 @@ lengths, hashes and acquisition status. The three measured archives are CC BY
 The [mechanical inventory](mechanical-inventory.json) is an archive directory,
 not a claim to have inspected all 343 payloads.
 
-The reported measurement reconstructions are deterministic. Five scientific and
+The reported measurement reconstructions are deterministic. Eight scientific and
 integrity tests check Poisson sums, sharp extremizers, heterogeneous distributions,
 independent-background correction, global affine certificates, phase mixing,
-and corruption rejection. No full G4CMP, microscopic transport fit, calibrated
+corruption rejection, pre-conversion integer/range/exposure validation, rational
+upper residuals, background-path enumeration and selection extremizers. No full G4CMP, microscopic transport fit, calibrated
 coverage simulation, held-out intervention test or QEC simulation was performed.

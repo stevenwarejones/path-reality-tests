@@ -24,14 +24,24 @@
             "-27918228418428781/12500000000000000"
           ]
         },
-        "feasible_multiplier_upper": 1.41967570106392,
+        "feasible_multiplier_upper": 1.4196757000639226,
+        "exact_feasible_multiplier_upper": "6104417393740527365143157012389475/4299867493305456054683773060513792",
+        "exact_multiplier_affine_parameters": [
+          "7277711498068067/2305843009213693952",
+          "5200039126084737/72057594037927936"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.0,
           "exact_lower_bound": "0",
           "row_indices_0based": [],
           "exact_weights": []
         },
-        "feasible_discrepancy_upper_s_minus1": 1.000000006938894e-09,
+        "feasible_discrepancy_upper_s_minus1": 7.619868936762413e-18,
+        "exact_feasible_discrepancy_upper_s_minus1": "134050151969590701/17592186044416000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "2385707400497601/1152921504606846976",
+          "143726457364239/2251799813685248"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.0020692713172273955,
           0.06382736888543361
@@ -60,7 +70,12 @@
             "-693883285667959271/200000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 100.44364560844005,
+        "feasible_multiplier_upper": 100.44364560744006,
+        "exact_feasible_multiplier_upper": "454528961986907273685296252870243125/4525213708026139062589630497947648",
+        "exact_multiplier_affine_parameters": [
+          "4932927109473897/9007199254740992",
+          "5003260434478547/9007199254740992"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.7655003369676018,
           "exact_lower_bound": "10356173573384982730969048633814367333921/13528633591997082153500000000000000000000",
@@ -75,7 +90,12 @@
             "-2925129948528212509/500000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.8261375682077025,
+        "feasible_discrepancy_upper_s_minus1": 0.8261375672077025,
+        "exact_feasible_discrepancy_upper_s_minus1": "93014820995834429658463861300250273/112589990684262400000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "0",
+          "3065395113233601/4503599627370496"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.0,
           0.6806544468570765
@@ -104,7 +124,12 @@
             "-2844407327814139297/1000000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 57.72858791364439,
+        "feasible_multiplier_upper": 57.72858791264439,
+        "exact_feasible_multiplier_upper": "38584554407316446312115621075/668378628379115485640261632",
+        "exact_multiplier_affine_parameters": [
+          "380846564040793/562949953421312",
+          "541892543670527/1125899906842624"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.6123729277456047,
           "exact_lower_bound": "6817049646899887852767935980718287910767/11132186512549202105000000000000000000000",
@@ -119,7 +144,12 @@
             "-7533687843641522441/1000000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.6123729287456058,
+        "feasible_discrepancy_upper_s_minus1": 0.6123729277456055,
+        "exact_feasible_discrepancy_upper_s_minus1": "137894124460344423635216441981461243/225179981368524800000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "7131018369618877/36028797018963968",
+          "5037215125424219/9007199254740992"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.19792551957439555,
           0.5592432212236064
@@ -148,7 +178,12 @@
             "-2844407327814139297/1000000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 119.53429132760057,
+        "feasible_multiplier_upper": 119.53429132660057,
+        "exact_feasible_multiplier_upper": "372137729083996534409646389925/3113229893731614573971111936",
+        "exact_multiplier_affine_parameters": [
+          "3140939250716943/4503599627370496",
+          "5410173399018885/9007199254740992"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.6699240492553221,
           "exact_lower_bound": "9627041430145189437271918456771681677677/14370347565289630865000000000000000000000",
@@ -163,7 +198,12 @@
             "-7533687843641522441/1000000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.6699240502553229,
+        "feasible_discrepancy_upper_s_minus1": 0.6699240492553226,
+        "exact_feasible_discrepancy_upper_s_minus1": "18856685616205026927948363694590819/28147497671065600000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "7025466158045661/36028797018963968",
+          "800294070054339/1125899906842624"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.1949958571846783,
           0.7108039224362441
@@ -192,14 +232,24 @@
             "-1355440060502399291/500000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 1.9156351493924386,
+        "feasible_multiplier_upper": 1.915635148392439,
+        "exact_feasible_multiplier_upper": "165231215334139031639567672731293125/86254011090158593746849637379080192",
+        "exact_multiplier_affine_parameters": [
+          "8425935698978971/2305843009213693952",
+          "8972819318080555/144115188075855872"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.0,
           "exact_lower_bound": "0",
           "row_indices_0based": [],
           "exact_weights": []
         },
-        "feasible_discrepancy_upper_s_minus1": 1e-09,
+        "feasible_discrepancy_upper_s_minus1": 2.078610020627625e-18,
+        "exact_feasible_discrepancy_upper_s_minus1": "1872245462869430133/900719925474099200000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "8188715106317857/4611686018427387904",
+          "3969219383294617/72057594037927936"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.0017756445416269378,
           0.05508398436402685
@@ -228,7 +278,12 @@
             "-405532681849497867/250000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 72.72417099309233,
+        "feasible_multiplier_upper": 72.7241709920924,
+        "exact_feasible_multiplier_upper": "53605995761544734776744678096031875/737113878786924133318840566153216",
+        "exact_multiplier_affine_parameters": [
+          "4747330022688513/72057594037927936",
+          "1527839215110777/18014398509481984"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.06707731686978015,
           "exact_lower_bound": "386192971167674118789952627361302890833/5757430219181334407750000000000000000000",
@@ -243,7 +298,12 @@
             "-11285593772034236751/1000000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.06707731786978033,
+        "feasible_discrepancy_upper_s_minus1": 0.06707731686978019,
+        "exact_feasible_discrepancy_upper_s_minus1": "37761172407469345016291550226088987/562949953421312000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "279559483614077/2251799813685248",
+          "686094928562841/9007199254740992"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.12414935018426698,
           0.0761718386769018
@@ -272,7 +332,12 @@
             "-1732404850685697939/1000000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 30.579670746735303,
+        "feasible_multiplier_upper": 30.579670745735292,
+        "exact_feasible_multiplier_upper": "50413830880235277965185865772240755/1648606072296121874808069962072064",
+        "exact_multiplier_affine_parameters": [
+          "2967200423366439/144115188075855872",
+          "5741761984657689/72057594037927936"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.03238683160623212,
           "exact_lower_bound": "59706001078722567437058685067681190523/1843527079297052728500000000000000000000",
@@ -287,7 +352,12 @@
             "-2601402475955769011/1000000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.03238683260623214,
+        "feasible_discrepancy_upper_s_minus1": 0.03238683160623213,
+        "exact_feasible_discrepancy_upper_s_minus1": "911608267209612690075811426728481/28147497671065600000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "3406795857341013/144115188075855872",
+          "338790688332983/4503599627370496"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.023639395006359955,
           0.07522664454317662
@@ -316,7 +386,12 @@
             "-807084331276095801/250000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 129.3293558829457,
+        "feasible_multiplier_upper": 129.3293558819457,
+        "exact_feasible_multiplier_upper": "3248754614790856842320068315375/25120009240256184715136991232",
+        "exact_multiplier_affine_parameters": [
+          "6108773305580023/36028797018963968",
+          "3041406626144531/36028797018963968"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.21166152047014752,
           "exact_lower_bound": "270243058334698717592603907828900702409/1276769900048098038750000000000000000000",
@@ -331,7 +406,12 @@
             "-542825841319168223/500000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.21166152147014752,
+        "feasible_discrepancy_upper_s_minus1": 0.21166152047014755,
+        "exact_feasible_discrepancy_upper_s_minus1": "476619372359014574058902004263396977/2251799813685248000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "475082337651859/2251799813685248",
+          "2725273321894217/36028797018963968"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.21097893994153472,
           0.07564152975909114
@@ -360,7 +440,12 @@
             "-198956852907735593/100000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 194.87290094524894,
+        "feasible_multiplier_upper": 194.87290094424895,
+        "exact_feasible_multiplier_upper": "2363251845943865775150032986875/12127144587537939659661246464",
+        "exact_multiplier_affine_parameters": [
+          "2534907582317149/18014398509481984",
+          "6255362263566721/72057594037927936"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.13605219567436364,
           "exact_lower_bound": "4971251558436825717815959487862635504749/36539296802936933605000000000000000000000",
@@ -375,7 +460,12 @@
             "-79745714320722083/250000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.1360521966743637,
+        "feasible_discrepancy_upper_s_minus1": 0.13605219567436366,
+        "exact_feasible_discrepancy_upper_s_minus1": "306362308871001027546137818443370641/2251799813685248000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "7787427953581447/36028797018963968",
+          "2718221941072025/36028797018963968"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.21614454541689218,
           0.07544581462548619
@@ -404,7 +494,12 @@
             "-927159132283379983/500000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 128.39952535991316,
+        "feasible_multiplier_upper": 128.39952535891317,
+        "exact_feasible_multiplier_upper": "344068883943191289819516020655/2679674110799249261971111936",
+        "exact_multiplier_affine_parameters": [
+          "2139871245873773/36028797018963968",
+          "2848808766026403/36028797018963968"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.058047761698475225,
           "exact_lower_bound": "405016660692515045107580015546305438693/6977300223845734202500000000000000000000",
@@ -419,7 +514,12 @@
             "-33812566127648991/250000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.058047762698475454,
+        "feasible_discrepancy_upper_s_minus1": 0.05804776169847536,
+        "exact_feasible_discrepancy_upper_s_minus1": "130711938977472491319596901400865577/2251799813685248000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "2123501338565607/36028797018963968",
+          "3026237800661357/36028797018963968"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.05893900197244692,
           0.08399497210713083
@@ -448,7 +548,12 @@
             "-198956852907735593/100000000000000000"
           ]
         },
-        "feasible_multiplier_upper": 97.84376101246276,
+        "feasible_multiplier_upper": 97.84376101146276,
+        "exact_feasible_multiplier_upper": "444996198354072968063613962675/4548028343901662155861131264",
+        "exact_multiplier_affine_parameters": [
+          "2847866990823471/36028797018963968",
+          "5323587447390781/72057594037927936"
+        ],
         "additive_discrepancy_s_minus1": {
           "lower_bound": 0.05530913427085532,
           "exact_lower_bound": "1163975264129444753880156935164466019/21044901162786625731250000000000000000",
@@ -463,7 +568,12 @@
             "-2677361809089922607/250000000000000000"
           ]
         },
-        "feasible_discrepancy_upper_s_minus1": 0.05530913527085543,
+        "feasible_discrepancy_upper_s_minus1": 0.055309134270855445,
+        "exact_feasible_discrepancy_upper_s_minus1": "1245450982462046567154182958873688957/22517998136852480000000000000000000000",
+        "exact_discrepancy_affine_parameters": [
+          "7785932476042703/72057594037927936",
+          "4630204811583329/72057594037927936"
+        ],
         "feasible_discrepancy_affine_parameters": [
           0.10805151878849205,
           0.06425699988187496
@@ -480,14 +590,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 1.0,
         "reported_error": 0.04,
-        "any_tunnel_bounds_at_point_estimate": [
-          1.0,
-          1.0
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.6,
+        "contrast_four_reported_error_envelope": [
+          0.84,
           1
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "nonCu",
@@ -497,14 +604,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.76,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.5101020514433644,
-          0.76
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.39999999999999997,
+        "contrast_four_reported_error_envelope": [
+          0.64,
           0.88
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "nonCu",
@@ -514,14 +618,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.91,
         "reported_error": 0.04,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.7000000000000001,
-          0.91
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.5,
+        "contrast_four_reported_error_envelope": [
+          0.75,
           1
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "nonCu",
@@ -531,14 +632,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.93,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.735424868893541,
-          0.93
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.5641101056459328,
+        "contrast_four_reported_error_envelope": [
+          0.81,
           1
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "nonCu",
@@ -548,14 +646,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.81,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.5641101056459328,
-          0.81
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.4432235637169979,
+        "contrast_four_reported_error_envelope": [
+          0.6900000000000001,
           0.93
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "nonCu",
@@ -565,14 +660,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.72,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.4708497377870819,
-          0.72
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.3675444679663241,
+        "contrast_four_reported_error_envelope": [
+          0.6,
           0.84
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -582,14 +674,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.99,
         "reported_error": 0.04,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.8999999999999999,
-          0.99
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.5876894374382339,
+        "contrast_four_reported_error_envelope": [
+          0.83,
           1
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -599,14 +688,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.47,
         "reported_error": 0.04,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.2719890110719482,
-          0.47
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.16933761370819247,
+        "contrast_four_reported_error_envelope": [
+          0.30999999999999994,
           0.63
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -616,14 +702,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.2,
         "reported_error": 0.02,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.10557280900008413,
-          0.2
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.061916848035314095,
+        "contrast_four_reported_error_envelope": [
+          0.12000000000000001,
           0.28
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -633,14 +716,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.18,
         "reported_error": 0.02,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.09446148618625833,
-          0.18
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.0513167019494862,
+        "contrast_four_reported_error_envelope": [
+          0.09999999999999999,
           0.26
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -650,14 +730,11 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.2,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.10557280900008413,
-          0.2
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.0408336953374561,
+        "contrast_four_reported_error_envelope": [
+          0.08000000000000002,
           0.32
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       },
       {
         "chip": "1umCu",
@@ -667,18 +744,446 @@
         "unit_resolution": "CSV header says mm but values are consistent with micrometers: 2020 maps to 2.020 mm on the stated 8 mm chip. Inference from paper geometry, not an author-verified correction; unused by probability bounds.",
         "reported_poisoning_contrast": 0.2,
         "reported_error": 0.03,
-        "any_tunnel_bounds_at_point_estimate": [
-          0.10557280900008413,
-          0.2
-        ],
-        "any_tunnel_bounds_four_error_envelope": [
-          0.0408336953374561,
+        "contrast_four_reported_error_envelope": [
+          0.08000000000000002,
           0.32
-        ]
+        ],
+        "observation_status": "Published burst-model contrast; not a certified net-parity moment or any-tunneling probability. See matched-gamma.md."
       }
     ],
     "total_rate_points": 212,
     "interpretation": "Exploratory deterministic consistency test. Four reported errors is NOT a calibrated confidence region."
+  },
+  "matched_gamma": {
+    "status": "CONDITIONAL SENSITIVITY, not a full-record physical separation",
+    "source": "https://arxiv.org/html/2503.07354v1#Sx4.T2",
+    "table_sha256": "60d379ae05d606266eecc09ce87eebe4be45d60648a8b7afa806685aa1227dac",
+    "rows": [
+      {
+        "chip": "nonCu",
+        "qubit": 1,
+        "counts": 1351,
+        "accepted_windows": 2889,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.46763586015922465,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.1539,
+        "reported_background_error": 0.0006,
+        "published_contrast_reconstructed": 0.9064890498677395,
+        "published_contrast_rounded": 0.91,
+        "reported_contrast_error": 0.04,
+        "conditional_contrast_bracket": [
+          0.7416046806742103,
+          0.9064890498677395
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.6432045991684833,
+          1.0
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "15677786/24374493",
+          "1"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.16488436919352925
+      },
+      {
+        "chip": "nonCu",
+        "qubit": 2,
+        "counts": 1306,
+        "accepted_windows": 2621,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.4982830980541778,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.1288,
+        "reported_background_error": 0.0005,
+        "published_contrast_reconstructed": 0.9953747253614703,
+        "published_contrast_rounded": 1.0,
+        "reported_contrast_error": 0.04,
+        "conditional_contrast_bracket": [
+          0.8482164785449444,
+          0.9953747253614703
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.7535276071195992,
+          1.0
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "4291666/5695433",
+          "1"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.14715824681652592
+      },
+      {
+        "chip": "nonCu",
+        "qubit": 3,
+        "counts": 1342,
+        "accepted_windows": 3150,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.42603174603174604,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.1173,
+        "reported_background_error": 0.0005,
+        "published_contrast_reconstructed": 0.8067200053089784,
+        "published_contrast_rounded": 0.81,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.6995168143916303,
+          0.8067200053089784
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.6057266856630998,
+          0.9117019652501847
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "336082/554841",
+          "220961/242361"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.1072031909173481
+      },
+      {
+        "chip": "nonCu",
+        "qubit": 4,
+        "counts": 1053,
+        "accepted_windows": 2593,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.40609332819128424,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.1101,
+        "reported_background_error": 0.0005,
+        "published_contrast_reconstructed": 0.759151906107423,
+        "published_contrast_rounded": 0.76,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.6652282912490937,
+          0.759151906107423
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.5721214735697359,
+          0.8624478902558924
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "1013238/1771019",
+          "8764167/10161967"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.09392361485832933
+      },
+      {
+        "chip": "nonCu",
+        "qubit": 5,
+        "counts": 904,
+        "accepted_windows": 2344,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.3856655290102389,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.0981,
+        "reported_background_error": 0.0006,
+        "published_contrast_reconstructed": 0.7155151256786239,
+        "published_contrast_rounded": 0.72,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.6376882781023149,
+          0.7155151256786239
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.545115128427435,
+          0.8161403141485009
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "287334/527107",
+          "966799/1184599"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.0778268475763089
+      },
+      {
+        "chip": "nonCu",
+        "qubit": 6,
+        "counts": 1433,
+        "accepted_windows": 3014,
+        "exposure_hours": 11.78,
+        "observed_frequency": 0.4754479097544791,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.1355,
+        "reported_background_error": 0.0006,
+        "published_contrast_reconstructed": 0.932641727721479,
+        "published_contrast_rounded": 0.93,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.7864613296806919,
+          0.932641727721479
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.6902863003235798,
+          1.0
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "8968094/12991847",
+          "1"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.14618039804078706
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 1,
+        "counts": 123,
+        "accepted_windows": 1149,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.10704960835509138,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.0199,
+        "reported_background_error": 0.0003,
+        "published_contrast_reconstructed": 0.18152386660089853,
+        "published_contrast_rounded": 0.18,
+        "reported_contrast_error": 0.02,
+        "conditional_contrast_bracket": [
+          0.17783819682704088,
+          0.18152386660089853
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.09388008653609436,
+          0.2666727786309815
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "351974/3749187",
+          "491579/1843379"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.003685669773857648
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 2,
+        "counts": 219,
+        "accepted_windows": 1398,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.15665236051502146,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.073,
+        "reported_background_error": 0.0006,
+        "published_contrast_reconstructed": 0.19590716748248585,
+        "published_contrast_rounded": 0.2,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.18047974221148103,
+          0.19590716748248585
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.0892328801968883,
+          0.29355463557294237
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "96118/1077159",
+          "7729/26329"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.015427425271004819
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 3,
+        "counts": 248,
+        "accepted_windows": 978,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.25357873210633947,
+        "reported_observed_error": 0.02,
+        "background_linear_rate_times_window": 0.0361,
+        "reported_background_error": 0.0005,
+        "published_contrast_reconstructed": 0.4688051996256509,
+        "published_contrast_rounded": 0.47,
+        "reported_contrast_error": 0.04,
+        "conditional_contrast_bracket": [
+          0.45124749892382915,
+          0.4688051996256509
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.28168984739856423,
+          0.6427961624948261
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "1324982/4703691",
+          "1464451/2278251"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.017557700701821763
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 4,
+        "counts": 160,
+        "accepted_windows": 1208,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.13245033112582782,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.038,
+        "reported_background_error": 0.0004,
+        "published_contrast_reconstructed": 0.20443794615980046,
+        "published_contrast_rounded": 0.2,
+        "reported_contrast_error": 0.03,
+        "conditional_contrast_bracket": [
+          0.1963624347730308,
+          0.20443794615980046
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.1100589985960596,
+          0.29346490751904186
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "39902/362551",
+          "51359/175009"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.008075511386769665
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 5,
+        "counts": 718,
+        "accepted_windows": 1445,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.49688581314878894,
+        "reported_observed_error": 0.02,
+        "background_linear_rate_times_window": 0.0241,
+        "reported_background_error": 0.0003,
+        "published_contrast_reconstructed": 0.9934562159041583,
+        "published_contrast_rounded": 0.99,
+        "reported_contrast_error": 0.04,
+        "conditional_contrast_bracket": [
+          0.9689226624629346,
+          0.9934562159041583
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.803500180873682,
+          1.0
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "2263366/2816883",
+          "1"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.024533553441223706
+      },
+      {
+        "chip": "1umCu",
+        "qubit": 6,
+        "counts": 145,
+        "accepted_windows": 1238,
+        "exposure_hours": 5.35,
+        "observed_frequency": 0.11712439418416801,
+        "reported_observed_error": 0.01,
+        "background_linear_rate_times_window": 0.0238,
+        "reported_background_error": 0.0003,
+        "published_contrast_reconstructed": 0.195977308240588,
+        "published_contrast_rounded": 0.2,
+        "reported_contrast_error": 0.02,
+        "conditional_contrast_bracket": [
+          0.19119933248139317,
+          0.195977308240588
+        ],
+        "conditional_contrast_four_error_envelope": [
+          0.10692183422393439,
+          0.28178549263545877
+        ],
+        "exact_conditional_contrast_four_error_envelope": [
+          "4302/40235",
+          "59479/211079"
+        ],
+        "same_interval_vs_separate_interval_contrast_difference": 0.004777975759194831
+      }
+    ],
+    "distance_pairs": [
+      {
+        "nonCu_qubit": 4,
+        "Cu_qubit": 3,
+        "approximate_distance_mm": 2.03,
+        "conditional_gap_lower_four_error_envelope": -0.07067468892509024,
+        "exact_conditional_gap_lower": "-285160058831/4034825807769",
+        "equal_retention_floor_for_positive_population_gap": null,
+        "exact_equal_retention_floor": null
+      },
+      {
+        "nonCu_qubit": 1,
+        "Cu_qubit": 6,
+        "approximate_distance_mm": 4.62,
+        "conditional_gap_lower_four_error_envelope": 0.36141910653302445,
+        "exact_conditional_gap_lower": "169043720177/467722146177",
+        "equal_retention_floor_for_positive_population_gap": 0.7345276669038305,
+        "exact_equal_retention_floor": "467722146177/636765866354"
+      },
+      {
+        "nonCu_qubit": 6,
+        "Cu_qubit": 1,
+        "approximate_distance_mm": 4.06,
+        "conditional_gap_lower_four_error_envelope": 0.42361352169259836,
+        "exact_conditional_gap_lower": "10145076993213/23948897931013",
+        "equal_retention_floor_for_positive_population_gap": 0.7024378349617352,
+        "exact_equal_retention_floor": "23948897931013/34093974924226"
+      },
+      {
+        "nonCu_qubit": 3,
+        "Cu_qubit": 2,
+        "approximate_distance_mm": 5.36,
+        "conditional_gap_lower_four_error_envelope": 0.31217205009015747,
+        "exact_conditional_gap_lower": "4560336889/14608408689",
+        "equal_retention_floor_for_positive_population_gap": 0.7620951840357302,
+        "exact_equal_retention_floor": "14608408689/19168745578"
+      },
+      {
+        "nonCu_qubit": 5,
+        "Cu_qubit": 4,
+        "approximate_distance_mm": 6.66,
+        "conditional_gap_lower_four_error_envelope": 0.2516502209083932,
+        "exact_conditional_gap_lower": "23214347593/92248468963",
+        "equal_retention_floor_for_positive_population_gap": 0.7989452510736135,
+        "exact_equal_retention_floor": "92248468963/115462816556"
+      }
+    ],
+    "trace_audit": [
+      {
+        "file": "Figure04/Figure4a_traces.csv",
+        "rows": 21001,
+        "displayed_span_s": 15.4523880000002,
+        "displayed_sample_period_s": 0.0007358279999600814,
+        "streams": [
+          {
+            "column_0based": 3,
+            "valid_100_interval_blocks": 188,
+            "any_switch_blocks": 24,
+            "odd_switch_blocks": 24,
+            "multiple_switch_blocks": 0
+          },
+          {
+            "column_0based": 5,
+            "valid_100_interval_blocks": 197,
+            "any_switch_blocks": 37,
+            "odd_switch_blocks": 37,
+            "multiple_switch_blocks": 0
+          }
+        ]
+      },
+      {
+        "file": "Figure04/Figure4b_traces.csv",
+        "rows": 21001,
+        "displayed_span_s": 15.4523880000002,
+        "displayed_sample_period_s": 0.0007358279999600814,
+        "streams": [
+          {
+            "column_0based": 3,
+            "valid_100_interval_blocks": 210,
+            "any_switch_blocks": 16,
+            "odd_switch_blocks": 16,
+            "multiple_switch_blocks": 0
+          },
+          {
+            "column_0based": 5,
+            "valid_100_interval_blocks": 144,
+            "any_switch_blocks": 6,
+            "odd_switch_blocks": 6,
+            "multiple_switch_blocks": 0
+          }
+        ]
+      }
+    ],
+    "assumptions": [
+      "Four reported errors is a deterministic diagnostic envelope, not simultaneous coverage.",
+      "Treat rate times window as background any-switch probability only for this sensitivity calculation.",
+      "One signal interval, signal-independent background, faithful digitization and selection are additional assumptions.",
+      "Retention must cover charge triggering AND parity masking relative to a specified common impact population.",
+      "Distance matching does not establish identical kernels, trigger populations, or charge acceptance."
+    ]
   },
   "mechanical": {
     "phase_bins": 714,

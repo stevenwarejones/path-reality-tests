@@ -86,6 +86,13 @@ burst produces an odd result with probability 1/2. Calling the result a
 not automatically the probability of at least one tunneling event under every
 possible intensity distribution.
 
+**Acquisition qualification:** the gamma footprint is described as an any-switch
+indicator over a masked HMM window, not explicitly endpoint parity. Its rate-times-
+window background is not a calibrated XOR probability. The earlier direct
+application of the following bounds to footprint CSV entries has been removed.
+See [matched-gamma.md](matched-gamma.md) for the temporal audit and conditional
+background-timing/acceptance sensitivity.
+
 ## Sharp model-conditional interval
 
 Put X=e^(−Λ)∈[0,1]. Then E[X²]=1−c. Since X²≤X and by Cauchy–Schwarz,
@@ -141,7 +148,10 @@ For measured table rows (z_i,y_i,e_i), suppose some affine curve f_i=a+bz_i obey
 For three rows choose w=(z_j−z_l,z_l−z_i,z_i−z_j); repeated doses admit (1,−1).
 The implementation uses the original decimal strings as exact rational numbers,
 records the maximizing coefficients, and separately finds a nonnegative affine
-curve attaining the bound up to the reported numerical tolerance. The lower
+curve. The solver-returned binary coefficients are converted to exact rationals;
+all original decimal residuals are then evaluated rationally. This gives an
+exact feasible upper endpoint, whose gap from the lower certificate is reported
+without claiming that the floating solver itself proves optimality. The lower
 bound is valid even without positivity restrictions. Thus it rules out **every**
 affine curve in the stated deterministic envelope. It says nothing about a
 nonlinear curve or whether the quoted errors cover the true means.

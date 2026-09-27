@@ -9,6 +9,8 @@ import urllib.request
 import zipfile
 import zlib
 
+from cqm_matched import TABLE_URL, TABLE_SHA256, extract_table
+
 HERE = Path(__file__).resolve().parent
 
 
@@ -53,6 +55,12 @@ def acquire(cache, verify_only=False, full_mechanical=False):
         raise ValueError("source cache must be outside the git repository")
     cache.mkdir(parents=True, exist_ok=True)
     manifest = json.loads((HERE / "manifest.json").read_text())
+    table_path = cache / "gamma-table2.html"
+    if not table_path.exists() and not verify_only:
+        table_path.write_bytes(extract_table(get(TABLE_URL).decode()))
+    if digest(table_path.read_bytes()) != TABLE_SHA256:
+        raise ValueError("paper Table 2 integrity failure")
+    print("Verified gamma paper Table 2")
     for source in manifest["sources"]:
         if source["id"] != "mechanical":
             path = cache / source["cache_name"]

@@ -457,5 +457,15 @@
         }
       ]
     }
+  ],
+  "paper_tables": [
+    {
+      "url": "https://arxiv.org/html/2503.07354v1",
+      "element_id": "Sx4.T2.2",
+      "cache_name": "gamma-table2.html",
+      "sha256": "60d379ae05d606266eecc09ce87eebe4be45d60648a8b7afa806685aa1227dac",
+      "acquisition": "Extract exact table element from versioned HTML, hash before parsing; no full paper redistribution",
+      "use": "All 12 coincidence numerators, accepted denominators, observed/background/contrast values and parenthesized errors; paper Table 2"
+    }
   ]
 }
