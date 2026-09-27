@@ -1,0 +1,153 @@
+{
+  "alpha": 0.01,
+  "assumptions": "Independent bounded trials and external deterministic calibration; no achieved power",
+  "evidence_type": "prospective_design",
+  "power_lower_bound": 0.9,
+  "rows": [
+    {
+      "budget": {
+        "per_setting": 13249785,
+        "total": 66248925
+      },
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.0,
+      "separation_gap_V": 0.001388004728,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.0
+    },
+    {
+      "budget": {
+        "per_setting": 73829355,
+        "total": 369146775
+      },
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.0,
+      "separation_gap_V": 0.000588004728003,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.0004
+    },
+    {
+      "budget": {
+        "per_setting": 22715953,
+        "total": 113579765
+      },
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.001,
+      "separation_gap_V": 0.00106005862104,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.00016397305348
+    },
+    {
+      "budget": {
+        "per_setting": 377440238,
+        "total": 1887201190
+      },
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.001,
+      "separation_gap_V": 0.000260058621044,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.00056397305348
+    },
+    {
+      "budget": null,
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.005,
+      "separation_gap_V": -0.000251724167063,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.000819864447533
+    },
+    {
+      "budget": null,
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.005,
+      "separation_gap_V": -0.00105172416706,
+      "signal_V": 0.001388004728,
+      "temperature_reference": "23",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.00121986444753
+    },
+    {
+      "budget": {
+        "per_setting": 13007838,
+        "total": 65039190
+      },
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.0,
+      "separation_gap_V": 0.00140085377445,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.0
+    },
+    {
+      "budget": {
+        "per_setting": 70705488,
+        "total": 353527440
+      },
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.0,
+      "separation_gap_V": 0.00060085377445,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.0004
+    },
+    {
+      "budget": {
+        "per_setting": 30388193,
+        "total": 151940965
+      },
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.001,
+      "separation_gap_V": 0.000916522046418,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.000242165864016
+    },
+    {
+      "budget": {
+        "per_setting": 1880072086,
+        "total": 9400360430
+      },
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.001,
+      "separation_gap_V": 0.000116522046418,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.000642165864016
+    },
+    {
+      "budget": null,
+      "per_reading_systematic_V": 0.0,
+      "phase_error_rad": 0.005,
+      "separation_gap_V": -0.00102080244405,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.00121082810925
+    },
+    {
+      "budget": null,
+      "per_reading_systematic_V": 0.0001,
+      "phase_error_rad": 0.005,
+      "separation_gap_V": -0.00182080244405,
+      "signal_V": 0.00140085377445,
+      "temperature_reference": "30",
+      "theta_target": 0.002,
+      "witness_bound_V": 0.00161082810925
+    }
+  ],
+  "voltage_range_V": 1.0
+}

@@ -1,0 +1,1030 @@
+{
+  "ibm": {
+    "lagos_bench": {
+      "backend": "ibm_lagos",
+      "circuit_rows": 18396,
+      "control_count_total": [
+        4015753,
+        4048247
+      ],
+      "control_preparation_success": [
+        0.980314732143,
+        0.984344246032
+      ],
+      "depth_column_present": false,
+      "depths": {},
+      "evidence_type": "observed",
+      "jobs": 63,
+      "shots_per_circuit": 32000,
+      "start_time": "2021-11-15 18:25:52"
+    },
+    "lima1-5": {
+      "backend": "ibmq_lima",
+      "circuit_rows": 29000,
+      "control_count_total": [
+        12268143,
+        10931857
+      ],
+      "control_preparation_success": [
+        0.990040431034,
+        0.932441896552
+      ],
+      "depth_column_present": true,
+      "depths": {
+        "1": {
+          "aggregate_counts_0_1": [
+            [
+              1186749,
+              16213251
+            ],
+            [
+              1780428,
+              15619572
+            ],
+            [
+              3499716,
+              13900284
+            ],
+            [
+              6094689,
+              11305311
+            ],
+            [
+              9173004,
+              8226996
+            ],
+            [
+              12249991,
+              5150009
+            ],
+            [
+              14864415,
+              2535585
+            ],
+            [
+              16607881,
+              792119
+            ],
+            [
+              17232229,
+              167771
+            ],
+            [
+              16640988,
+              759012
+            ],
+            [
+              14918332,
+              2481668
+            ],
+            [
+              12332191,
+              5067809
+            ],
+            [
+              9261847,
+              8138153
+            ],
+            [
+              6189161,
+              11210839
+            ],
+            [
+              3569167,
+              13830833
+            ],
+            [
+              1817644,
+              15582356
+            ]
+          ],
+          "angles_rad": [
+            -3.14159265359,
+            -2.74889357189,
+            -2.35619449019,
+            -1.96349540849,
+            -1.57079632679,
+            -1.1780972451,
+            -0.785398163397,
+            -0.392699081699,
+            -4.4408920985e-16,
+            0.392699081699,
+            0.785398163397,
+            1.1780972451,
+            1.57079632679,
+            1.96349540849,
+            2.35619449019,
+            2.74889357189
+          ],
+          "harmonic_fit_offset_cos_sin": [
+            0.529520229885,
+            0.461255313466,
+            0.00263083650261
+          ],
+          "job_level_se": [
+            0.00219358173192,
+            0.00210009773075,
+            0.001828739643,
+            0.0014193206734,
+            0.000982302626931,
+            0.000507188262542,
+            0.000158916881268,
+            0.00021619847917,
+            0.000312685747344,
+            0.000215489528664,
+            0.000163702232126,
+            0.000494230158654,
+            0.000968123775458,
+            0.00142151614199,
+            0.00183898024146,
+            0.00208926240274
+          ],
+          "residual_max_abs": 0.00046001657416,
+          "residual_rms": 0.000275249754218
+        },
+        "5": {
+          "aggregate_counts_0_1": [
+            [
+              1203167,
+              16196833
+            ],
+            [
+              1798795,
+              15601205
+            ],
+            [
+              3543855,
+              13856145
+            ],
+            [
+              6120758,
+              11279242
+            ],
+            [
+              9222615,
+              8177385
+            ],
+            [
+              12264641,
+              5135359
+            ],
+            [
+              14863871,
+              2536129
+            ],
+            [
+              16593944,
+              806056
+            ],
+            [
+              17215112,
+              184888
+            ],
+            [
+              16623924,
+              776076
+            ],
+            [
+              14896154,
+              2503846
+            ],
+            [
+              12318480,
+              5081520
+            ],
+            [
+              9240742,
+              8159258
+            ],
+            [
+              6183520,
+              11216480
+            ],
+            [
+              3557617,
+              13842383
+            ],
+            [
+              1824838,
+              15575162
+            ]
+          ],
+          "angles_rad": [
+            -3.14159265359,
+            -2.74889357189,
+            -2.35619449019,
+            -1.96349540849,
+            -1.57079632679,
+            -1.1780972451,
+            -0.785398163397,
+            -0.392699081699,
+            -4.4408920985e-16,
+            0.392699081699,
+            0.785398163397,
+            1.1780972451,
+            1.57079632679,
+            1.96349540849,
+            2.35619449019,
+            2.74889357189
+          ],
+          "harmonic_fit_offset_cos_sin": [
+            0.529712762213,
+            0.460304448705,
+            0.00129202645863
+          ],
+          "job_level_se": [
+            0.00217972374775,
+            0.00208067173704,
+            0.00180567401591,
+            0.00138763415674,
+            0.000925751950513,
+            0.000490504716074,
+            0.000142369911921,
+            0.000211969704076,
+            0.000310128508665,
+            0.000224931573756,
+            0.000169638279308,
+            0.000520587523552,
+            0.000974865708044,
+            0.00140742021359,
+            0.00185752404882,
+            0.00208067814247
+          ],
+          "residual_max_abs": 0.00161460907357,
+          "residual_rms": 0.00062615073812
+        }
+      },
+      "evidence_type": "observed",
+      "jobs": 290,
+      "shots_per_circuit": 20000,
+      "start_time": "2022-03-13 20:41:51"
+    },
+    "lima1-5s": {
+      "backend": "qasm_simulator",
+      "circuit_rows": 29000,
+      "control_count_total": [
+        11847299,
+        11352701
+      ],
+      "control_preparation_success": [
+        0.988416465517,
+        0.967097586207
+      ],
+      "depth_column_present": true,
+      "depths": {
+        "1": {
+          "aggregate_counts_0_1": [
+            [
+              580133,
+              16819867
+            ],
+            [
+              1211610,
+              16188390
+            ],
+            [
+              3011202,
+              14388798
+            ],
+            [
+              5705777,
+              11694223
+            ],
+            [
+              8883912,
+              8516088
+            ],
+            [
+              12059261,
+              5340739
+            ],
+            [
+              14753997,
+              2646003
+            ],
+            [
+              16552372,
+              847628
+            ],
+            [
+              17184375,
+              215625
+            ],
+            [
+              16551562,
+              848438
+            ],
+            [
+              14753620,
+              2646380
+            ],
+            [
+              12058353,
+              5341647
+            ],
+            [
+              8887111,
+              8512889
+            ],
+            [
+              5704560,
+              11695440
+            ],
+            [
+              3011532,
+              14388468
+            ],
+            [
+              1211686,
+              16188314
+            ]
+          ],
+          "angles_rad": [
+            -3.14159265359,
+            -2.74889357189,
+            -2.35619449019,
+            -1.96349540849,
+            -1.57079632679,
+            -1.1780972451,
+            -0.785398163397,
+            -0.392699081699,
+            -4.4408920985e-16,
+            0.392699081699,
+            0.785398163397,
+            1.1780972451,
+            1.57079632679,
+            1.96349540849,
+            2.35619449019,
+            2.74889357189
+          ],
+          "harmonic_fit_offset_cos_sin": [
+            0.510492323994,
+            0.477145401549,
+            6.62092194904e-06
+          ],
+          "job_level_se": [
+            4.23464612123e-05,
+            6.1818763576e-05,
+            8.30498682261e-05,
+            0.000109554714642,
+            0.000125950214825,
+            0.000116023322677,
+            8.90754573395e-05,
+            5.37726111829e-05,
+            2.55102222246e-05,
+            5.21760668426e-05,
+            8.75215615985e-05,
+            0.00010489605677,
+            0.000119944330014,
+            0.000108484430722,
+            8.85045472284e-05,
+            6.07110121855e-05
+          ],
+          "residual_max_abs": 0.000254560830924,
+          "residual_rms": 7.85612835332e-05
+        },
+        "5": {
+          "aggregate_counts_0_1": [
+            [
+              616987,
+              16783013
+            ],
+            [
+              1246530,
+              16153470
+            ],
+            [
+              3037101,
+              14362899
+            ],
+            [
+              5714455,
+              11685545
+            ],
+            [
+              8883846,
+              8516154
+            ],
+            [
+              12045499,
+              5354501
+            ],
+            [
+              14728109,
+              2671891
+            ],
+            [
+              16516272,
+              883728
+            ],
+            [
+              17147523,
+              252477
+            ],
+            [
+              16518140,
+              881860
+            ],
+            [
+              14724925,
+              2675075
+            ],
+            [
+              12043541,
+              5356459
+            ],
+            [
+              8885484,
+              8514516
+            ],
+            [
+              5718956,
+              11681044
+            ],
+            [
+              3036894,
+              14363106
+            ],
+            [
+              1247432,
+              16152568
+            ]
+          ],
+          "angles_rad": [
+            -3.14159265359,
+            -2.74889357189,
+            -2.35619449019,
+            -1.96349540849,
+            -1.57079632679,
+            -1.1780972451,
+            -0.785398163397,
+            -0.392699081699,
+            -4.4408920985e-16,
+            0.392699081699,
+            0.785398163397,
+            1.1780972451,
+            1.57079632679,
+            1.96349540849,
+            2.35619449019,
+            2.74889357189
+          ],
+          "harmonic_fit_offset_cos_sin": [
+            0.510458670977,
+            0.475005813417,
+            1.90349113778e-05
+          ],
+          "job_level_se": [
+            4.77636951232e-05,
+            6.2326620561e-05,
+            9.10750048438e-05,
+            0.000111583529204,
+            0.00011513997201,
+            0.0001092889589,
+            7.88292501303e-05,
+            5.3053835592e-05,
+            2.80449225721e-05,
+            4.81753152241e-05,
+            7.55581167661e-05,
+            0.000113116151977,
+            0.000118784332922,
+            0.000107718166,
+            9.2795453457e-05,
+            6.50770611907e-05
+          ],
+          "residual_max_abs": 0.000247275917149,
+          "residual_rms": 0.000101286186525
+        }
+      },
+      "evidence_type": "simulation",
+      "jobs": 290,
+      "shots_per_circuit": 20000,
+      "start_time": "2022-09-24 06:45:31"
+    }
+  },
+  "photon": {
+    "8-bin TMD": {
+      "event_reconciliation": [
+        {
+          "input_index": 0,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 98.0316246194,
+          "triggers": 99999
+        },
+        {
+          "input_index": 1,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 80.1165796413,
+          "triggers": 99998
+        },
+        {
+          "input_index": 2,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 62.6040168988,
+          "triggers": 99998
+        },
+        {
+          "input_index": 3,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 47.8347821025,
+          "triggers": 99999
+        },
+        {
+          "input_index": 4,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 35.739395292,
+          "triggers": 99998
+        },
+        {
+          "input_index": 5,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 24.4116873983,
+          "triggers": 99998
+        },
+        {
+          "input_index": 6,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 15.9430717281,
+          "triggers": 99998
+        },
+        {
+          "input_index": 7,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 8.89977034511,
+          "triggers": 99998
+        },
+        {
+          "input_index": 8,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 3.97011969052,
+          "triggers": 99999
+        },
+        {
+          "input_index": 9,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 0.988633221116,
+          "triggers": 99999
+        },
+        {
+          "input_index": 10,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 0.100401176061,
+          "triggers": 99999
+        },
+        {
+          "input_index": 11,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 0.0101962951873,
+          "triggers": 99999
+        },
+        {
+          "input_index": 12,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 0.00103549021661,
+          "triggers": 99998
+        },
+        {
+          "input_index": 13,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 2.081128995e-09,
+          "triggers": 99999
+        }
+      ],
+      "evidence_type": "observed_events_and_derived_tomography",
+      "mean_photon_labels": [
+        98.0316246194,
+        80.1165796413,
+        62.6040168988,
+        47.8347821025,
+        35.739395292,
+        24.4116873983,
+        15.9430717281,
+        8.89977034511,
+        3.97011969052,
+        0.988633221116,
+        0.100401176061,
+        0.0101962951873,
+        0.00103549021661,
+        2.081128995e-09
+      ],
+      "outcome_matrix_shape": [
+        14,
+        9
+      ],
+      "outcome_normalization_error": 1.11022302463e-16,
+      "reason": "POVM is inferred using assumed coherent-state probability model from these probes; not independent calibration of a Born-rule deformation or the waveguide detector",
+      "response_matrix_shape": [
+        158,
+        9
+      ],
+      "response_max": 1.00251847368,
+      "response_min": 0.0,
+      "response_row_sum_max_error": 0.00256410753561,
+      "same_data_calibration_is_independent": false,
+      "use_in_physical_joint_fit": false
+    },
+    "PNR SNSPD": {
+      "event_reconciliation": [
+        {
+          "input_index": 0,
+          "max_frequency_discrepancy": 0.0,
+          "mean_photon_label": 0.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 1,
+          "max_frequency_discrepancy": 0.00107894547553,
+          "mean_photon_label": 1.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 2,
+          "max_frequency_discrepancy": 0.00334736842105,
+          "mean_photon_label": 2.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 3,
+          "max_frequency_discrepancy": 0.00620876103726,
+          "mean_photon_label": 3.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 4,
+          "max_frequency_discrepancy": 0.00690350877193,
+          "mean_photon_label": 4.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 5,
+          "max_frequency_discrepancy": 0.00570526315789,
+          "mean_photon_label": 5.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 6,
+          "max_frequency_discrepancy": 0.00429648369038,
+          "mean_photon_label": 6.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 7,
+          "max_frequency_discrepancy": 0.00298069652509,
+          "mean_photon_label": 7.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 8,
+          "max_frequency_discrepancy": 0.00182280381964,
+          "mean_photon_label": 8.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 9,
+          "max_frequency_discrepancy": 0.000947368421053,
+          "mean_photon_label": 9.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 10,
+          "max_frequency_discrepancy": 0.000573684210526,
+          "mean_photon_label": 10.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 11,
+          "max_frequency_discrepancy": 0.000296490707911,
+          "mean_photon_label": 11.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 12,
+          "max_frequency_discrepancy": 0.000145614035088,
+          "mean_photon_label": 12.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 13,
+          "max_frequency_discrepancy": 9.12279101264e-05,
+          "mean_photon_label": 13.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 14,
+          "max_frequency_discrepancy": 2.63157433057e-05,
+          "mean_photon_label": 14.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 15,
+          "max_frequency_discrepancy": 2.45614035088e-05,
+          "mean_photon_label": 15.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 16,
+          "max_frequency_discrepancy": 3.50877192982e-06,
+          "mean_photon_label": 16.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 17,
+          "max_frequency_discrepancy": 1.75438288705e-06,
+          "mean_photon_label": 25.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 18,
+          "max_frequency_discrepancy": 8.77192982462e-06,
+          "mean_photon_label": 36.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 19,
+          "max_frequency_discrepancy": 3.33333333333e-05,
+          "mean_photon_label": 49.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 20,
+          "max_frequency_discrepancy": 4.91228070175e-05,
+          "mean_photon_label": 64.0,
+          "triggers": 570000
+        },
+        {
+          "input_index": 21,
+          "max_frequency_discrepancy": 8.07016128043e-05,
+          "mean_photon_label": 81.1,
+          "triggers": 570001
+        },
+        {
+          "input_index": 22,
+          "max_frequency_discrepancy": 0.000117543653432,
+          "mean_photon_label": 100.0,
+          "triggers": 570001
+        },
+        {
+          "input_index": 23,
+          "max_frequency_discrepancy": 0.000208771563559,
+          "mean_photon_label": 121.1,
+          "triggers": 570001
+        },
+        {
+          "input_index": 24,
+          "max_frequency_discrepancy": 0.00032105206833,
+          "mean_photon_label": 144.1,
+          "triggers": 570001
+        },
+        {
+          "input_index": 25,
+          "max_frequency_discrepancy": 0.000407016829795,
+          "mean_photon_label": 169.1,
+          "triggers": 570001
+        }
+      ],
+      "evidence_type": "observed_events_and_derived_tomography",
+      "mean_photon_labels": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        25.0,
+        36.0,
+        49.0,
+        64.0,
+        81.1,
+        100.0,
+        121.1,
+        144.1,
+        169.1,
+        195.8,
+        225.2,
+        256.0,
+        289.2,
+        323.7,
+        360.7,
+        400.2,
+        440.9,
+        483.6,
+        529.3,
+        576.6,
+        625.4,
+        675.2,
+        729.0,
+        783.6,
+        840.3,
+        899.2,
+        959.9,
+        1024.8,
+        1089.2,
+        1154.9,
+        1224.7,
+        1295.7,
+        1367.8,
+        1443.8,
+        1520.7,
+        1601.7,
+        1679.4,
+        1764.8,
+        1850.4,
+        1935.7,
+        2025.0,
+        2113.7,
+        2211.2,
+        2302.8,
+        2403.6,
+        2497.6,
+        2601.1,
+        2702.7,
+        2808.3,
+        2918.1,
+        3025.3,
+        3136.5,
+        3251.7,
+        3363.6,
+        3479.3,
+        3599.0,
+        3722.9,
+        3842.3,
+        3965.5,
+        4092.7,
+        4224.0,
+        4359.5,
+        4489.2,
+        4622.8,
+        4760.3,
+        4901.9,
+        5036.4,
+        5186.2,
+        5328.5,
+        5474.7,
+        5624.8,
+        5779.1,
+        5924.3,
+        6086.8,
+        6239.7,
+        6396.4,
+        6557.1,
+        6721.8,
+        6890.6,
+        7063.7,
+        7224.8,
+        7389.6,
+        7575.2,
+        7748.0,
+        7924.7,
+        8105.4,
+        8271.6,
+        8460.3,
+        8653.3,
+        8830.7,
+        9032.1,
+        9217.3,
+        9406.3,
+        9599.2,
+        9796.0,
+        9996.8,
+        11190.1,
+        14020.9,
+        17567.8,
+        22012.0,
+        27580.5,
+        34557.6,
+        43299.8,
+        54253.5,
+        67978.3
+      ],
+      "outcome_matrix_shape": [
+        122,
+        5
+      ],
+      "outcome_normalization_error": 2.22044604925e-16,
+      "reason": "POVM is inferred using assumed coherent-state probability model from these probes; not independent calibration of a Born-rule deformation or the waveguide detector",
+      "response_matrix_shape": [
+        729,
+        5
+      ],
+      "response_max": 1.00000000136,
+      "response_min": 0.0,
+      "response_row_sum_max_error": 1.61311697333e-09,
+      "same_data_calibration_is_independent": false,
+      "use_in_physical_joint_fit": false
+    }
+  },
+  "source": {
+    "files": [
+      {
+        "archive_md5": "md5:97d072de253cb1c9374ae378aec20f5f",
+        "bytes": 7504,
+        "cache_name": "7538941/functions_and_classes_1_5.py",
+        "license": "cc-by-4.0",
+        "name": "functions_and_classes_1_5.py",
+        "record": 7538941,
+        "sha256": "f3caf4376597524210e792e9f9cf8e4e0353f2632aa1f6681c73768b1dfa6636",
+        "url": "https://zenodo.org/api/records/7538941/files/functions_and_classes_1_5.py/content"
+      },
+      {
+        "archive_md5": "md5:134fcd1ecdeae00c618f784a01e4ccd1",
+        "bytes": 11001,
+        "cache_name": "7538941/1_5_gates.py",
+        "license": "cc-by-4.0",
+        "name": "1_5_gates.py",
+        "record": 7538941,
+        "sha256": "8c0058ba7edd78b39ff06b6a3ade085d00f37d8db1fcd82f1debc45d5c608e94",
+        "url": "https://zenodo.org/api/records/7538941/files/1_5_gates.py/content"
+      },
+      {
+        "archive_md5": "md5:1c5bb8f5f0714f54ed50e3f03ff1b7b1",
+        "bytes": 5701,
+        "cache_name": "7538941/1_5_gates_analiza.py",
+        "license": "cc-by-4.0",
+        "name": "1_5_gates_analiza.py",
+        "record": 7538941,
+        "sha256": "875cdf8ab1d127b3802a7a7f6c740367b565ef3b6708532c105f9fdc62da6478",
+        "url": "https://zenodo.org/api/records/7538941/files/1_5_gates_analiza.py/content"
+      },
+      {
+        "archive_md5": "md5:1f20d0c8aeb618ec3185b73e99412427",
+        "bytes": 396693,
+        "cache_name": "7538941/lima1-5s.zip",
+        "license": "cc-by-4.0",
+        "name": "lima1-5s.zip",
+        "record": 7538941,
+        "sha256": "93fec90f7e84647f9e7b09f5b208807801a027829d76ffe9e0ea89da303b84c7",
+        "url": "https://zenodo.org/api/records/7538941/files/lima1-5s.zip/content"
+      },
+      {
+        "archive_md5": "md5:a7bc55b5872019f3e1dc8ba1abb41c9a",
+        "bytes": 484260,
+        "cache_name": "7538941/lima1-5.zip",
+        "license": "cc-by-4.0",
+        "name": "lima1-5.zip",
+        "record": 7538941,
+        "sha256": "d803f266707188a0fe88b26960c0437fcde6d8c0cd31ecf21f23d1601f0536a7",
+        "url": "https://zenodo.org/api/records/7538941/files/lima1-5.zip/content"
+      },
+      {
+        "archive_md5": "md5:60c0e4c8f3cf1e3d22575cf3fa64fc5d",
+        "bytes": 180495,
+        "cache_name": "7538941/lagos_bench.zip",
+        "license": "cc-by-4.0",
+        "name": "lagos_bench.zip",
+        "record": 7538941,
+        "sha256": "b6fd203efee82e6583aa2445bcd19dcf5dd06f90e23122a468f1eced8cd0136a",
+        "url": "https://zenodo.org/api/records/7538941/files/lagos_bench.zip/content"
+      },
+      {
+        "archive_md5": "md5:0ceb76001c4fdb321e9f067f3a2fd8e2",
+        "bytes": 1451,
+        "cache_name": "7538941/README.txt",
+        "license": "cc-by-4.0",
+        "name": "README.txt",
+        "record": 7538941,
+        "sha256": "da7daf6e50d1db774c5c22d8a2edcbc161eb37d91917ca4fd1b12c59fccab7c1",
+        "url": "https://zenodo.org/api/records/7538941/files/README.txt/content"
+      },
+      {
+        "archive_md5": "md5:2f0294fdee66ad61501326e7b8a4d65f",
+        "bytes": 1472696,
+        "cache_name": "18483031/8-bin TMD.zip",
+        "license": "cc-by-4.0",
+        "name": "8-bin TMD.zip",
+        "record": 18483031,
+        "sha256": "94d036dc438f1509553eb38080647ef8f088328825b65badfbeb3ca6bb7c6770",
+        "url": "https://zenodo.org/api/records/18483031/files/8-bin%20TMD.zip/content"
+      },
+      {
+        "archive_md5": "md5:4e6cc11ec622d335e0483d2493733e47",
+        "bytes": 2871180,
+        "cache_name": "18483031/PNR SNSPD.zip",
+        "license": "cc-by-4.0",
+        "name": "PNR SNSPD.zip",
+        "record": 18483031,
+        "sha256": "9c090b7f8a4786daa3f7b2c46dad4a3ce544487003ef82b17e9c1ecde0d6eab7",
+        "url": "https://zenodo.org/api/records/18483031/files/PNR%20SNSPD.zip/content"
+      },
+      {
+        "archive_md5": "md5:c5669c355cadad504b17508b4f32701c",
+        "bytes": 1460,
+        "cache_name": "18483031/README.txt",
+        "license": "cc-by-4.0",
+        "name": "README.txt",
+        "record": 18483031,
+        "sha256": "1ef87d8173401fe42c7d1640d94c899755b99c839a205b579fa8da835ca59b7d",
+        "url": "https://zenodo.org/api/records/18483031/files/README.txt/content"
+      }
+    ]
+  }
+}

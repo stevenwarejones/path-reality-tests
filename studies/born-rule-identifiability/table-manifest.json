@@ -1,0 +1,164 @@
+{
+  "files": [
+    {
+      "name": "dim-wit-par.py",
+      "cache_name": "7470893/dim-wit-par.py",
+      "record": 7470893,
+      "bytes": 8194,
+      "sha256": "4fb465fd2b34af143a2532df87362b59ca309828e571e42f40b383880ac68510",
+      "archive_md5": "md5:3c5c8d0d3354013fc79f0a9bb18ecfb9",
+      "url": "https://zenodo.org/api/records/7470893/files/dim-wit-par.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "readme.txt",
+      "cache_name": "7470893/readme.txt",
+      "record": 7470893,
+      "bytes": 1177,
+      "sha256": "537f66673e75e66722c9d6e0faba091ffefbf65d54dd31162022e79f432481ce",
+      "archive_md5": "md5:0877d9b13f5818a145843e8df9a1f0b8",
+      "url": "https://zenodo.org/api/records/7470893/files/readme.txt/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "dim-par-anp.py",
+      "cache_name": "7470893/dim-par-anp.py",
+      "record": 7470893,
+      "bytes": 8736,
+      "sha256": "5185fc336a811c74e8885ffedff1cc09db0f111199aa664fc0ed301a3dfd3a50",
+      "archive_md5": "md5:140004a8599761a99d0ed1999bb7169a",
+      "url": "https://zenodo.org/api/records/7470893/files/dim-par-anp.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "Job.py",
+      "cache_name": "7470893/Job.py",
+      "record": 7470893,
+      "bytes": 11132,
+      "sha256": "6aeefa16db586418f56f13eefdb6b8a3ac55b74df6c8e883dffd719ff90fab41",
+      "archive_md5": "md5:cd9990cc94c87455c6d2a3f57bd45bdf",
+      "url": "https://zenodo.org/api/records/7470893/files/Job.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "wyniki-nairobi.zip",
+      "cache_name": "7470893/wyniki-nairobi.zip",
+      "record": 7470893,
+      "bytes": 321790,
+      "sha256": "adc3c1fbd8aa90f2bce8165e35e76c2ca8aee87236ab3b4cf14f2f85a3a28ba5",
+      "archive_md5": "md5:331e1e647284ca3e3518a2e9b51a689a",
+      "url": "https://zenodo.org/api/records/7470893/files/wyniki-nairobi.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "readme.txt",
+      "cache_name": "21775462/readme.txt",
+      "record": 21775462,
+      "bytes": 3122,
+      "sha256": "71fe17af251305aa799b91fe1be9fed368210039680efec4f721fe5e69798fd1",
+      "archive_md5": "md5:af92cda607573f4aad33da7c50eebace",
+      "url": "https://zenodo.org/api/records/21775462/files/readme.txt/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "ibm_nairobi_calibrations.csv",
+      "cache_name": "21775462/ibm_nairobi_calibrations.csv",
+      "record": 21775462,
+      "bytes": 2224,
+      "sha256": "f78dc63d3cbe27eb4793d5bf980b31a43a9391a2fd0f547495b897119e016349",
+      "archive_md5": "md5:6238afd09f62f6ced01ee86c241a00bb",
+      "url": "https://zenodo.org/api/records/21775462/files/ibm_nairobi_calibrations.csv/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "aria-viv.txt",
+      "cache_name": "21775462/aria-viv.txt",
+      "record": 21775462,
+      "bytes": 5984,
+      "sha256": "10e756f60a7f2d685a33824a14128126532d3c1bf87d0dbaeb24b8438a9b27e1",
+      "archive_md5": "md5:45590017400cc60eb68c4dc7fcb42f9a",
+      "url": "https://zenodo.org/api/records/21775462/files/aria-viv.txt/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "jobionq.py",
+      "cache_name": "21775462/jobionq.py",
+      "record": 21775462,
+      "bytes": 16912,
+      "sha256": "5b91f9020102b1ce9948dfb48e66aba17a7db2ce7825ec756cbdf7b5a0833fbc",
+      "archive_md5": "md5:68cb2b0104a4e06467c5ae49966f4a6c",
+      "url": "https://zenodo.org/api/records/21775462/files/jobionq.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "results-aria-viv.zip",
+      "cache_name": "21775462/results-aria-viv.zip",
+      "record": 21775462,
+      "bytes": 41011,
+      "sha256": "054f34576a58695737d0cf608cf0b9137c0182722f8c39e1b2607cc8094c4659",
+      "archive_md5": "md5:03981f338c19b4fb54d1ddc89d5db04c",
+      "url": "https://zenodo.org/api/records/21775462/files/results-aria-viv.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "viv.py",
+      "cache_name": "21775462/viv.py",
+      "record": 21775462,
+      "bytes": 6252,
+      "sha256": "6504cbe073a76575646a029a9211c2ca1d5d8def5dc236c2311f8c2a6bdccece",
+      "archive_md5": "md5:747cb7072121ad974e087df8abcc0b27",
+      "url": "https://zenodo.org/api/records/21775462/files/viv.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "dim-an-viv.py",
+      "cache_name": "21775462/dim-an-viv.py",
+      "record": 21775462,
+      "bytes": 4894,
+      "sha256": "c2165c03829e73ae5d9930d1d55167a10c0596b6c16062a87fd4eb170e936128",
+      "archive_md5": "md5:5a19bf1a5c5e06bc154dc1cd1b551049",
+      "url": "https://zenodo.org/api/records/21775462/files/dim-an-viv.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "results_nairobi.zip",
+      "cache_name": "21775462/results_nairobi.zip",
+      "record": 21775462,
+      "bytes": 25738,
+      "sha256": "4ca7e51d8e1cdf120e4d99f6d7b994c0d8285ca3af94092a94dfc00e6821e455",
+      "archive_md5": "md5:f98fc9e25be8e6b40239b00a0ecd6a97",
+      "url": "https://zenodo.org/api/records/21775462/files/results_nairobi.zip/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "viviani-nairobi.txt",
+      "cache_name": "21775462/viviani-nairobi.txt",
+      "record": 21775462,
+      "bytes": 1186,
+      "sha256": "50d0fc5fad81ad6c51c818a801ad995e5e85944b67d741d29818755641969071",
+      "archive_md5": "md5:b0773716d018d4a69dc0b6784b9c5fbc",
+      "url": "https://zenodo.org/api/records/21775462/files/viviani-nairobi.txt/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "vivionx.py",
+      "cache_name": "21775462/vivionx.py",
+      "record": 21775462,
+      "bytes": 2636,
+      "sha256": "777ace34b2e8f5675465c138f0de6021377ce94f485c8d42dca0903cddf32e70",
+      "archive_md5": "md5:10bddc8fbc88fc468c1c0b63ac70fe6c",
+      "url": "https://zenodo.org/api/records/21775462/files/vivionx.py/content",
+      "license": "cc-by-4.0"
+    },
+    {
+      "name": "Job.py",
+      "cache_name": "21775462/Job.py",
+      "record": 21775462,
+      "bytes": 11606,
+      "sha256": "21279fbe755f491864ec372d27e7facee1ce3977a46d5b04440596105c4953bf",
+      "archive_md5": "md5:6dc029a0612f5812c30219b00e5f9fb1",
+      "url": "https://zenodo.org/api/records/21775462/files/Job.py/content",
+      "license": "cc-by-4.0"
+    }
+  ]
+}

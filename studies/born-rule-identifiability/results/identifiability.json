@@ -1,0 +1,189 @@
+{
+  "alternative": "Additive all-open intensity theta*trace(G), not a complete probability theory",
+  "claim": "Mean-table ambiguity only; no fit of complete time-series distributions",
+  "datasets": {
+    "23": {
+      "added_witness_alternative_V": -0.00142108385077,
+      "added_witness_ordinary_V": 0.0,
+      "alternative_theta": -0.00204766427967,
+      "calibration_regions": [
+        {
+          "contains_zero": false,
+          "phase_radius_rad": 0.0,
+          "theta_interval": [
+            -0.00204766427967,
+            -0.00204766427967
+          ]
+        },
+        {
+          "contains_zero": false,
+          "phase_radius_rad": 0.01,
+          "theta_interval": [
+            -0.00358318840628,
+            -0.000515024916964
+          ]
+        },
+        {
+          "contains_zero": true,
+          "phase_radius_rad": 0.03,
+          "theta_interval": [
+            -0.0066622764736,
+            0.00254098676986
+          ]
+        },
+        {
+          "contains_zero": true,
+          "phase_radius_rad": 0.1,
+          "theta_interval": [
+            -0.0175073009737,
+            0.0131237339379
+          ]
+        }
+      ],
+      "gram_eigenvalues": [
+        0.00585999495959,
+        0.0972608490436,
+        0.590881519999
+      ],
+      "gram_real": [
+        [
+          0.175967022252,
+          -0.167059959324,
+          0.157049711028
+        ],
+        [
+          -0.167059959324,
+          0.359582127137,
+          -0.182619365772
+        ],
+        [
+          0.157049711028,
+          -0.182619365772,
+          0.158453214612
+        ]
+      ],
+      "imaginary_AB_V": 0.0266168525461,
+      "imaginary_AB_limit_V": 0.0532337050922,
+      "intensity_scale_V": 0.694002364002,
+      "local_whitened_rank": 1,
+      "max_table_residual_V": 0.0,
+      "ordinary_phase_rad": -0.026833802886,
+      "projected_theta_relative_norm": 1.26709638714e-14
+    },
+    "30": {
+      "added_witness_alternative_V": 0.000793578938401,
+      "added_witness_ordinary_V": 0.0,
+      "alternative_theta": 0.00113299325436,
+      "calibration_regions": [
+        {
+          "contains_zero": false,
+          "phase_radius_rad": 0.0,
+          "theta_interval": [
+            0.00113299325436,
+            0.00113299325436
+          ]
+        },
+        {
+          "contains_zero": true,
+          "phase_radius_rad": 0.01,
+          "theta_interval": [
+            -0.000154322515606,
+            0.0024413200208
+          ]
+        },
+        {
+          "contains_zero": true,
+          "phase_radius_rad": 0.03,
+          "theta_interval": [
+            -0.00266540825809,
+            0.0051204811287
+          ]
+        },
+        {
+          "contains_zero": true,
+          "phase_radius_rad": 0.1,
+          "theta_interval": [
+            -0.0107741324275,
+            0.0151394857443
+          ]
+        }
+      ],
+      "gram_eigenvalues": [
+        0.00234424017673,
+        0.214744433908,
+        0.48333821314
+      ],
+      "gram_real": [
+        [
+          0.179083640887,
+          -0.0907276274842,
+          0.164311574931
+        ],
+        [
+          -0.0907276274842,
+          0.364305515001,
+          -0.0969372075317
+        ],
+        [
+          0.164311574931,
+          -0.0969372075317,
+          0.157037731336
+        ]
+      ],
+      "imaginary_AB_V": 0.022726101543,
+      "imaginary_AB_limit_V": 0.045452203086,
+      "intensity_scale_V": 0.700426887225,
+      "local_whitened_rank": 1,
+      "max_table_residual_V": 0.0,
+      "ordinary_phase_rad": 0.0179842049441,
+      "projected_theta_relative_norm": 1.62234309812e-16
+    }
+  },
+  "evidence_type": "observed_summary_conditional_construction",
+  "joint": [
+    {
+      "contains_zero": false,
+      "evidence_type": "conditional_feasibility_not_confidence_interval",
+      "nonempty": false,
+      "phase_radius_rad": 0.0,
+      "shared": "theta only; independent coherence and phase nuisance per temperature",
+      "theta_interval": [
+        0.00113299325436,
+        -0.00204766427967
+      ]
+    },
+    {
+      "contains_zero": false,
+      "evidence_type": "conditional_feasibility_not_confidence_interval",
+      "nonempty": false,
+      "phase_radius_rad": 0.01,
+      "shared": "theta only; independent coherence and phase nuisance per temperature",
+      "theta_interval": [
+        -0.000154322515606,
+        -0.000515024916964
+      ]
+    },
+    {
+      "contains_zero": true,
+      "evidence_type": "conditional_feasibility_not_confidence_interval",
+      "nonempty": true,
+      "phase_radius_rad": 0.03,
+      "shared": "theta only; independent coherence and phase nuisance per temperature",
+      "theta_interval": [
+        -0.00266540825809,
+        0.00254098676986
+      ]
+    },
+    {
+      "contains_zero": true,
+      "evidence_type": "conditional_feasibility_not_confidence_interval",
+      "nonempty": true,
+      "phase_radius_rad": 0.1,
+      "shared": "theta only; independent coherence and phase nuisance per temperature",
+      "theta_interval": [
+        -0.0107741324275,
+        0.0131237339379
+      ]
+    }
+  ]
+}
