@@ -212,3 +212,14 @@ recover the preparation/readout settings and shock alignment sufficiently to
 predict this common observed target under a withheld intervention. If those
 cannot be constrained, demonstrate that specific observation ambiguity with
 empirically adequate models.
+
+
+## Subsequent intervention test
+
+The [transfer analysis](transfer.md) now makes the native-1-ms intervention the
+primary target. It finds same-number forcing/qubit records for shorter PT traces,
+while auditing the shock reference as a separate run. A dynamic rate model and
+an exactly PT-equivalent saturating extension both fail transfer. Their explicit
+time and duration predictions do not make them adequate physical countermodels.
+The finite-window model ranking above is therefore not promoted to a physical
+mechanism claim, and further optimization of the 0.39% gain is not the priority.

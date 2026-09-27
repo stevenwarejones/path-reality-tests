@@ -161,3 +161,10 @@ models are compared on held-out marks, without claiming full physical adequacy.
 The native 1 ms control records share an observed threshold event and identical
 reference calibrations; the earlier 99 µs mismatch does not rule out this coarser
 intervention route. Observation dynamics still need a justified transfer model.
+
+
+The [primary intervention-transfer attempt](transfer.md) now tests that bridge
+using matched short PT records. Both tested extensions fail the shock response;
+exact calibration-support equivalence is explicitly distinguished from adequate
+physical non-identifiability. Exposure, timing, onset lags and recovery are kept
+separate, and a successful combination payoff remains unestablished.

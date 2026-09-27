@@ -15,6 +15,22 @@ a response measurement that distinguishes tunneling intensity from parity
 contrast. These are requirements for this approach, not an impossibility result
 for the underlying physics or all available methods.
 
+## Primary target: intervention transfer
+
+The [forcing-to-response test](transfer.md) now uses short PT on/off acquisitions
+with matched acceleration and trigger records. It predicts native-1-ms shock
+response, onset lags and flagged-run duration without fitting shock outcomes.
+The simple transfer fails: 32 paired shock flags are observed, versus about
+648,620 under a linear response and 1,073 under a saturating extension. Both
+extensions are exactly identical on all retained PT input trajectories, but
+neither is an adequate physical countermodel. After a separately labeled pre-trigger baseline diagnostic, 74.86% of shock
+proxy values lie outside the PT calibration range, and its acceleration reference is a separate
+run from the 50 qubit acquisitions.
+
+This is a scoped negative transfer test. It supersedes further optimization of
+the small history/phase benchmark gain as the primary research direction. A
+transferable observation model and concrete combination payoff remain open.
+
 ## Qubit-history and intervention follow-up
 
 The [matched information comparison](complementarity.md) tests qubit-history-only,
@@ -129,7 +145,7 @@ lengths, hashes and acquisition status. The three measured archives are CC BY
 The [mechanical inventory](mechanical-inventory.json) is an archive directory,
 not a claim to have inspected all 343 payloads.
 
-The reported measurement reconstructions are deterministic. Sixteen scientific and
+The reported measurement reconstructions are deterministic. Twenty scientific and
 integrity tests check Poisson sums, sharp extremizers, heterogeneous distributions,
 independent-background correction, global affine certificates, phase mixing,
 corruption rejection, pre-conversion integer/range/exposure validation, rational
@@ -178,3 +194,20 @@ The control route adds 11 selected payloads (32.4 MB compressed). The new tests
 check future-data isolation, marks against a direct oracle, valid normalized
 mixture laws, and acquisition-safe intervention counting. Neither forecast nor
 control script attaches IID uncertainty to the recorded windows.
+
+## Reproduce the intervention-transfer test
+
+Six additional selected members provide the short matched PT records (about
+1.23 MB compressed). The transfer route also verifies the preceding prediction
+and intervention sources. No authors' notebook or helper is executed.
+
+```bash
+python studies/correlated-qubit-mechanisms/cqm_sources.py --cache /tmp/correlated-qubit-data --mechanical-transfer
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 python studies/correlated-qubit-mechanisms/cqm_transfer.py --cache /tmp/correlated-qubit-data --check
+python -m unittest discover -s tests -p 'test_cqm_transfer.py' -v
+```
+
+The tests compare transition matrices to an independent matrix exponential,
+check causal forcing access, enumerate complete paths to verify duration
+expectations, and prevent cross-acquisition onsets. The model's flag rates are
+not reported as independently calibrated intrinsic qubit rates.

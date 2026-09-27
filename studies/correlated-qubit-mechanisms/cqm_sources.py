@@ -49,7 +49,9 @@ def decode_member(block, member):
     return data
 
 
-def acquire(cache, verify_only=False, full_mechanical=False, mechanical_prediction=False, mechanical_interventions=False):
+def acquire(cache, verify_only=False, full_mechanical=False, mechanical_prediction=False, mechanical_interventions=False, mechanical_transfer=False):
+    if mechanical_transfer:
+        mechanical_prediction = mechanical_interventions = True
     cache = cache.resolve()
     if cache.is_relative_to(HERE.parents[1]):
         raise ValueError("source cache must be outside the git repository")
@@ -100,6 +102,8 @@ def acquire(cache, verify_only=False, full_mechanical=False, mechanical_predicti
             selected = source["members"] + (source.get("prediction_members", []) if mechanical_prediction else [])
             if mechanical_interventions:
                 selected += source.get("intervention_members", [])
+            if mechanical_transfer:
+                selected += source.get("transfer_members", [])
             for m in selected:
                 path = cache / "mechanical" / m["name"]
                 if not path.exists() and not verify_only:
@@ -126,5 +130,7 @@ if __name__ == "__main__":
                         help="also acquire run-level dwell/phase records and intervention clocks (~68 MB compressed)")
     parser.add_argument("--mechanical-interventions", action="store_true",
                         help="also acquire calibrated 1 ms control records (~33 MB compressed)")
+    parser.add_argument("--mechanical-transfer", action="store_true",
+                        help="include matched PT forcing records and the prediction/control sources")
     args = parser.parse_args()
-    acquire(args.cache, args.verify_only, args.full_mechanical, args.mechanical_prediction, args.mechanical_interventions)
+    acquire(args.cache, args.verify_only, args.full_mechanical, args.mechanical_prediction, args.mechanical_interventions, args.mechanical_transfer)
