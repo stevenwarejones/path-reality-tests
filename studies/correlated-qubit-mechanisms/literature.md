@@ -44,3 +44,16 @@ The sharp parity interval is a standard moment argument applied to this
 observation problem. The rational affine certificates are an elementary global
 consistency tool. Neither is claimed to have research priority, to establish
 full physical-model identifiability, or to satisfy the mission on its own.
+
+
+The mechanical follow-up uses the released acquisition-level dwell sequences
+rather than only the published phase covariance. Its increment is a specified
+99 µs paired-excursion forecast and a fixed-policy validation split; novelty and
+full-source indispensability are not established. Kono et al. already report
+phase-dependent correlations, continuous-readout backaction and mechanical
+controls. Their microwave monitor is around 7 GHz and is not a rare-classification
+error calibration for this new target. Trigger-synchronous mitigation is also
+an established broader direction: [Tathed et al., arXiv:2606.00358](https://arxiv.org/abs/2606.00358)
+use software compensation for coherent control-frame disturbances in a trapped
+ion. That is a different platform and error channel; it prevents treating the
+generic idea of timing-aware control as new here.

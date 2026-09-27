@@ -15,6 +15,24 @@ a response measurement that distinguishes tunneling intensity from parity
 contrast. These are requirements for this approach, not an impossibility result
 for the underlying physics or all available methods.
 
+## Mechanical prediction follow-up
+
+The [run-preserving mechanical analysis](mechanical-prediction.md) now uses
+3,100 paired dwell records and their synchronized phase offsets. A rule fitted
+to individual-qubit training frequencies predicts 48,528 joint persistent
+excursions in separate validation acquisitions; 56,438 occur. Its fixed quiet
+interval contains 14 events in 3.42 million eligible windows. The apparent
+574-fold rate reduction is retrospective selection of **observed readout events**,
+not a demonstrated physical mitigation or an online scheduling result.
+
+The phase-only point forecast remains imperfect, and the off/on and controlled-
+shock records use 1 ms sampling rather than the required 3 µs. We do not bridge
+that observation change with fitted free parameters. The report distinguishes
+selected readout response, common-impact physics and causal copper attribution;
+none is silently substituted for another. The scientific completion gate remains
+open. See the recorded [protocol](mechanical-protocol.json) and
+[results](results/mechanical-prediction.json).
+
 ## Matched gamma revision
 
 The [matched gamma follow-up](matched-gamma.md) recovers all 12 footprint count
@@ -92,9 +110,31 @@ lengths, hashes and acquisition status. The three measured archives are CC BY
 The [mechanical inventory](mechanical-inventory.json) is an archive directory,
 not a claim to have inspected all 343 payloads.
 
-The reported measurement reconstructions are deterministic. Eight scientific and
+The reported measurement reconstructions are deterministic. Twelve scientific and
 integrity tests check Poisson sums, sharp extremizers, heterogeneous distributions,
 independent-background correction, global affine certificates, phase mixing,
 corruption rejection, pre-conversion integer/range/exposure validation, rational
-upper residuals, background-path enumeration and selection extremizers. No full G4CMP, microscopic transport fit, calibrated
+upper residuals, background-path enumeration, selection extremizers, dwell
+partition validation, a direct counting oracle, and protection against fitting
+the joint validation target. No full G4CMP, microscopic transport fit, calibrated
 coverage simulation, held-out intervention test or QEC simulation was performed.
+
+## Reproduce the mechanical prediction
+
+This optional route acquires ten additional selected members (about 68 MB
+compressed), including the 393 MB uncompressed dwell record. It does not fetch
+the full 3.1 GB archive. A numeric-only restricted unpickler and primitive scalar
+conversion avoid importing arbitrary pickle classes and reduce memory use.
+The source hashes are verified before deserialization. Allow roughly 2 GB RAM.
+
+```bash
+python studies/correlated-qubit-mechanisms/cqm_sources.py --cache /tmp/correlated-qubit-data --mechanical-prediction
+python studies/correlated-qubit-mechanisms/cqm_mechanical.py --cache /tmp/correlated-qubit-data --check
+python -m unittest discover -s tests -p 'test_cqm_mechanical.py' -v
+```
+
+The original `cqm_analysis.py --check` still reproduces the earlier gate without
+requiring the additional dwell data. The new route processes every acquisition,
+retains its block assignment, and verifies the separate phase-offset and
+intervention-clock files. Refinement and benchmark diagnostics are explicitly
+labeled as post-validation analyses; no nominal confidence level is attached.

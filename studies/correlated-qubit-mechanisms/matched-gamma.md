@@ -182,3 +182,44 @@ and a quantified acceptance requirement. It does not meet the review's completio
 gate, and PR #19 remains draft/incomplete. Proceeding to a discovery claim would
 require inventing precisely the acceptance and response sharing the review
 prohibits. We preserve the conditional result without presenting it as that claim.
+
+## Causal-attribution decision
+
+The selected-population contrast, a common-impact response, and the causal effect
+of copper are separate targets. Even perfect selection correction would not
+randomize the two chips or identify which loss mechanism changed between them.
+
+One focused coarse-model calculation makes the latter freedom explicit. Suppose
+a phonon energy coordinate obeys
+
+\[
+ \dot E=u-(k_{\rm other}+Ck_{\rm Cu})E,
+ \qquad k_{\rm other},k_{\rm Cu}\ge0,
+\]
+
+where C is the copper intervention. Downstream QP evolution, charge marks and
+the entire sampled/filter/HMM/mask observation process can be arbitrary fixed
+functions of the resulting trajectory and other unchanged inputs. At the
+measured copper setting C=1, any split
+`k_other=(1-f)k_total`, `k_Cu=f k_total`, with 0<f<1, gives the same trajectory
+for **every** source history, not merely the same scalar parity contrast.
+All downstream joint observation laws are consequently unchanged. Positivity
+and energy accounting are preserved: the two nonnegative loss channels only
+change which unobserved reservoir receives the lost energy.
+
+Yet after an ideal C=0 intervention, an impulse's integrated energy is
+`E(0)/[(1-f)k_total]`. For example, f=0.1 versus f=0.5 gives an 80% difference
+between those counterfactual integrated responses. These numbers are illustrative
+model parameters, not fits to the gamma records. Independent constraints on
+copper coupling, other loss channels, or a matched intervention holding the
+other channel fixed would break this freedom. A more detailed transport model
+could also constrain the split; the calculation does not override independently
+known material physics.
+
+This is a trajectory-level structural invariance within a declared coarse model.
+It preserves every observation constraint **conditional on a feasible base model**;
+we have not constructed that base model for all released gamma measurements.
+It therefore does not satisfy the full-record empirical-ambiguity completion
+gate. The decision is to stop refining gamma selection thresholds and pivot to
+the [matched mechanical prediction test](mechanical-prediction.md), without
+claiming that all possible gamma analyses are uninformative.

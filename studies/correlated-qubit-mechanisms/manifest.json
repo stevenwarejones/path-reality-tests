@@ -455,7 +455,80 @@
           "offset": 1315975205,
           "sha256": "5037a6b4ed0c6b45da081694c27df52d9df34e3a1345c640039502f9abcf69a1"
         }
-      ]
+      ],
+      "prediction_members": [
+        {
+          "name": "Zenodo/Fig4FigS6FigS7/results_gef_2d",
+          "size": 393008116,
+          "compressed_size": 59386654,
+          "offset": 1544921799,
+          "sha256": "2e4153dbe29ec66be621d98c33e57ac3a2b38752ffe5dfd9541d3e488fab8236"
+        },
+        {
+          "name": "Zenodo/Fig4FigS6FigS7/lags.npy",
+          "size": 24928,
+          "compressed_size": 21173,
+          "offset": 1514698047,
+          "sha256": "d048232a15a02dd5b62ddd11370e6a0f857bb86cca8015d602e9a81176c76115"
+        },
+        {
+          "name": "Zenodo/Fig4FigS6FigS7/Fig_Dwelltime_analysis.ipynb",
+          "size": 7273241,
+          "compressed_size": 5334330,
+          "offset": 1509363230,
+          "sha256": "a8a1ad22a739d0e0167ec915936f7503721ecb95b811f21f45945115b56858f3"
+        },
+        {
+          "name": "Zenodo/Fig2/Fig_PTon&off.ipynb",
+          "size": 1621531,
+          "compressed_size": 1183393,
+          "offset": 42641125,
+          "sha256": "279ddcd025985ed9e0724a36cae4b350c936a906d1a6962777e51d3fd8f4655f"
+        },
+        {
+          "name": "Zenodo/Fig2/774_t.npy",
+          "size": 262272,
+          "compressed_size": 78910,
+          "offset": 40608018,
+          "sha256": "8815d56cbedf9d74be968b4badd11b47eec265bf04a9390db497511a6a2be56f"
+        },
+        {
+          "name": "Zenodo/Fig2/782_t.npy",
+          "size": 262272,
+          "compressed_size": 78910,
+          "offset": 42562164,
+          "sha256": "8815d56cbedf9d74be968b4badd11b47eec265bf04a9390db497511a6a2be56f"
+        },
+        {
+          "name": "Zenodo/Fig6/Fig_ControlledShock_GEF_2D.ipynb",
+          "size": 528676,
+          "compressed_size": 385261,
+          "offset": 1771226731,
+          "sha256": "8f090148ced79688f2ddf18cfeac46f42d478dded7e8915a6a70504861484801"
+        },
+        {
+          "name": "Zenodo/Fig6/833_t.npy",
+          "size": 262272,
+          "compressed_size": 78910,
+          "offset": 1770828975,
+          "sha256": "8815d56cbedf9d74be968b4badd11b47eec265bf04a9390db497511a6a2be56f"
+        },
+        {
+          "name": "Zenodo/FigS9/Fig_ContorlledShock_v2.ipynb",
+          "size": 734716,
+          "compressed_size": 530780,
+          "offset": 3110138491,
+          "sha256": "782cb2bf72d36abc7ff512c95b062e5218c3facd0b7a8f1efc3c25114097ddb1"
+        },
+        {
+          "name": "Zenodo/FigS9/321_t.npy",
+          "size": 262272,
+          "compressed_size": 78910,
+          "offset": 2501255683,
+          "sha256": "8815d56cbedf9d74be968b4badd11b47eec265bf04a9390db497511a6a2be56f"
+        }
+      ],
+      "prediction_acquisition_status": "10 additional individually CRC/SHA-256/length-verified members for run-preserving retrospective prediction and intervention-clock checks; full archive remains unverified"
     }
   ],
   "paper_tables": [

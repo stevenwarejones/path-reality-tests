@@ -49,7 +49,7 @@ def decode_member(block, member):
     return data
 
 
-def acquire(cache, verify_only=False, full_mechanical=False):
+def acquire(cache, verify_only=False, full_mechanical=False, mechanical_prediction=False):
     cache = cache.resolve()
     if cache.is_relative_to(HERE.parents[1]):
         raise ValueError("source cache must be outside the git repository")
@@ -97,7 +97,8 @@ def acquire(cache, verify_only=False, full_mechanical=False):
                 tail.write_bytes(get(source["url"], source["bytes"] - cd["tail_bytes"], source["bytes"] - 1))
             if digest(tail.read_bytes()) != cd["tail_sha256"]:
                 raise ValueError("central-directory tail hash mismatch")
-            for m in source["members"]:
+            selected = source["members"] + (source.get("prediction_members", []) if mechanical_prediction else [])
+            for m in selected:
                 path = cache / "mechanical" / m["name"]
                 if not path.exists() and not verify_only:
                     path.parent.mkdir(parents=True, exist_ok=True)
@@ -110,7 +111,8 @@ def acquire(cache, verify_only=False, full_mechanical=False):
                         path.write_bytes(decode_member(get(source["url"], start, end), m))
                 if len(path.read_bytes()) != m["size"] or digest(path.read_bytes()) != m["sha256"]:
                     raise ValueError(f"member integrity failure: {path}")
-        print(f"Verified {source['id']}: {len(source['members'])} members")
+        total_members = len(selected) if source["id"] == "mechanical" else len(source["members"])
+        print(f"Verified {source['id']}: {total_members} members")
 
 
 if __name__ == "__main__":
@@ -118,5 +120,7 @@ if __name__ == "__main__":
     parser.add_argument("--cache", type=Path, required=True)
     parser.add_argument("--verify-only", action="store_true")
     parser.add_argument("--full-mechanical", action="store_true")
+    parser.add_argument("--mechanical-prediction", action="store_true",
+                        help="also acquire run-level dwell/phase records and intervention clocks (~68 MB compressed)")
     args = parser.parse_args()
-    acquire(args.cache, args.verify_only, args.full_mechanical)
+    acquire(args.cache, args.verify_only, args.full_mechanical, args.mechanical_prediction)

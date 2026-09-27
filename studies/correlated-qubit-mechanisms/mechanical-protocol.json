@@ -1,0 +1,32 @@
+{
+  "frozen_before_first_exit_summary": true,
+  "source": "Zenodo/Fig4FigS6FigS7/results_gef_2d",
+  "training_acquisition_indices": [
+    0,
+    1549
+  ],
+  "validation_acquisition_indices": [
+    1550,
+    3099
+  ],
+  "target": "both qubits initially classified G, both have >=3 consecutive non-G samples among the next 33 readouts",
+  "sample_period_s": 3e-06,
+  "window_samples": 33,
+  "phase_bins": 715,
+  "scheduling_policy": "choose one contiguous 100 ms interval of the periodic mechanical phase minimizing training product-marginal error prediction; predict observed persistent double excursion in validation",
+  "validation_label": "retrospective ordered acquisition split; no IID-shot confidence claim",
+  "uncertainty": "report every contiguous 50-acquisition validation block and deterministic range; model/future generalization not established",
+  "physical_model": "conditional independence of the two entire local readout-state processes given mechanical phase; stationary phase response from training to validation; single-qubit memory otherwise unrestricted",
+  "phase_origin_s": -0.6408760000000001,
+  "policy_bins": 100,
+  "policy_duration_s": 0.09992773892773893,
+  "policy_weighting": "Training both-ground initial-state exposure; joint excursion outcomes are not used.",
+  "record": "Recorded locally before computing this target; not externally preregistered. Source plots and related outcomes were already inspected.",
+  "secondary_after_validation": [
+    "phase resolutions 1430 and 3575 bins",
+    "fixed-policy phase shifts -20 to +20 primary bins",
+    "contemporaneous validation-marginal recalibration",
+    "phase-blind and joint-outcome-fitted benchmarks"
+  ],
+  "scope": "Observed readout classifications and retrospective phase selection, not intrinsic transitions, online scheduling, copper causality, or a QEC resource."
+}
