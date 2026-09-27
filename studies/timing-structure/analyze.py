@@ -96,6 +96,12 @@ def report(r):
         'One existing run; both receivers. Retrospective, assumption-conditional analysis.',
         'The declared family separates current-setting effects, lag diagnostics and exact',
         'information-loss witnesses. No physics violation or RNG certification follows automatically.', '',
+        '**Nothing was detected; these null results are not strong evidence against structured effects.**',
+        'None of the four occupancy-matched toy designs resolves positive hidden TV in',
+        '400 repetitions per case (see recovery-report.md). The displayed future-setting',
+        'examples need 873–1,247 events of imbalance to reject, versus 11–133 observed:',
+        'lag +1, any event, eta=0, event-supported completion, holding known-event total',
+        'and uncertain rows fixed. These limits do not establish that hidden effects exist.', '',
         '## Source reconciliation', '',
         '| Receiver | Reconciled rows | Interior rows | Full-overlap selected events |',
         '|---|---:|---:|---:|']
@@ -117,8 +123,13 @@ def report(r):
     positive = sum(v['hidden_tv'] is not None and v['hidden_tv'][0] > 0 for v in ideal)
     interactions = [(v, f) for v in ideal for f, c in v['interactions'].items() if c is not None and (c[0] > 0 or c[1] < 0)]
     lines += ['', f'Across all {len(ideal)} ideal-assignment condition/receiver/setting/period/envelope comparisons:',
-        f'**{positive} positive hidden-TV lower bounds; {len(interactions)} signed feature interactions exclude zero.**',
+        f'**{positive} positive hidden-TV lower bounds; {len(interactions)} weighted state-contribution contrasts exclude zero.**',
         'Overlapping comparisons are covered jointly, not treated as independent replications.',
+        'The weighted state-contribution contrast is d_1-d_0, including each state prevalence.',
+        'If conditional effects are equal to delta, this contrast is (w_1-w_0)*delta:',
+        'unequal state sizes alone can make it nonzero. It establishes neither different',
+        'conditional effects nor cancellation by itself. Cancellation refers to hidden TV.',
+        'The JSON key interactions retains this weighted meaning; see statistics.md.',
         'Failure to resolve cancellation is not proof that instantaneous effects vanish.', '',
         '### Observed condition occupancy', '',
         '| Receiver | Clock state 1, known rows | Recovery state 1, known rows | Recovery state unknown |',

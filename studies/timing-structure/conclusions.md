@@ -1,5 +1,13 @@
 # Completed findings and limits of identifiability
 
+**Nothing was detected; these null results are not strong evidence against
+structured effects.** None of the four occupancy-matched toy designs resolves
+positive hidden TV in 400 repetitions per case. In the displayed future-setting
+examples (lag +1, any event, eta=0, event-supported completion), rejection needs
+873–1,247 events of imbalance, versus 11–133 observed, holding the known-event
+total and uncertain rows fixed. These are sensitivity limits of the declared
+tests, not calibrated physical power or evidence that structured effects exist.
+
 ## What the existing records answered
 
 The fixed analysis was completed on both receivers and every declared lag,
@@ -11,7 +19,9 @@ sizes. The analytic error guarantees and adversarial tests are supplied; neither
 ordinary least-squares standard errors nor an IID permutation is substituted.
 
 Within the stated assignment model, no ideal-assignment cancellation interval
-has a positive lower bound, and no signed state interaction excludes zero.
+has a positive lower bound, and no signed weighted state-contribution contrast excludes zero.
+The latter includes state prevalence and can differ from zero even when the
+conditional effects are identical; it alone would not establish cancellation.
 Full-record event-supported hidden-TV upper bounds range from about 82 to 119
 ppm of all interior rows. These are coarse, weighted, averaged-record bounds.
 They do not exclude all effects within the less common state or all effects
@@ -28,13 +38,13 @@ those fluctuations. There is no fitted preferred lag or claimed propagation spee
 
 ## What the recovery study establishes
 
-Balanced-state synthetic reversing responses can be detected by the interaction
+Balanced-state synthetic reversing responses can be detected by the weighted state-contribution contrast
 analysis while the pooled analysis misses them. Resolving a strictly positive
-hidden-TV lower bound is harder than detecting a signed interaction. The actual
+hidden-TV lower bound is harder than detecting a weighted state-contribution contrast. The actual
 clock/recovery occupancies are uneven. In the occupancy-matched toy designs,
 none of the four cases resolves a positive hidden-TV lower bound in 400 trials,
 even with a strong rare-state redistribution chosen to cancel exactly in the
-population average. Interaction detection ranges from 0/400 to 400/400. This is
+population average. Weighted state-contribution contrast detection ranges from 0/400 to 400/400. This is
 a useful demonstrated sensitivity limit, not grounds for tuning a replacement
 state definition on the same observed associations.
 
@@ -49,7 +59,7 @@ are not calibrated hardware power or a proof of exact tail probabilities.
 
 | Ambiguity | Completed result | What would remove it | Supplied by this study? |
 |---|---|---|---|
-| Opposite effects cancel in averages | Conditional stratum and interaction bounds; exact pooled-null witness; recovery checks | Sufficient counts in an externally justified predictable state, with valid assignment assumptions | Bounds for the two stated states; no universal coverage of every possible state |
+| Opposite effects cancel in averages | Weighted stratum-contribution and hidden-TV bounds; exact pooled-null witness; recovery checks | Sufficient counts in an externally justified predictable state, with valid assignment assumptions | Bounds for the two stated states; no universal coverage of every possible state |
 | Earlier/current/later setting association | Fixed descriptive lag map and a separately derived future-freshness test | Valid filtration/physical ordering and per-history setting calibration; a specified causal model | Neither certified by the archived bit frequencies; conclusions stay conditional |
 | Different analog laws give identical integer tags | Exact within-cell construction; 0.98-bin illustrative gap | A calibrated within-bin response law or a finer/differently dithered measurement | No; digital data alone cannot determine sub-bin latent distributions |
 | Different fine tag laws give identical coarse categories | Exact distinct-tag witness inside one category | Analyze finer categories or full tags with a new justified test family | The witness identifies this study's resolution limit; it does not claim the full archive lacks those tags |

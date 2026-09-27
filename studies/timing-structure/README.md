@@ -4,6 +4,15 @@ Three complementary interrogations of the same pinned NIST run: cancellation
 behind pooled averages, temporal setting fingerprints, and constructive limits
 on what the recorded data identify. This extends the [timing feasibility baseline](../synthetic-timing-shifts/README.md).
 
+**Nothing was detected; this is not strong evidence against structured effects.**
+The four occupancy-matched toy cases each resolve positive hidden TV in 0/400
+repetitions. The displayed future-setting examples require 873–1,247 events of
+imbalance to reject, versus 11–133 observed (lag +1, any event, eta=0,
+event-supported completion; known-event total and uncertain rows held fixed).
+The weighted state-contribution contrast includes state prevalence: a nonzero
+contrast alone would establish neither different conditional effects nor
+cancellation. Cancellation is assessed by the hidden-TV result.
+
 Start with the [results report](report.md) and [completed conclusions](conclusions.md).
 The [protocol](protocol.md), [statistical derivation](statistics.md),
 [related-work ledger](sources.md) and [recovery report](recovery-report.md)

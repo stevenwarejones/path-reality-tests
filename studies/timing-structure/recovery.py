@@ -115,13 +115,17 @@ def report(r):
         'binomial intervals are in recovery-results.json. No seeds or amplitudes were',
         'changed after seeing the results. Statistical validity comes from the proofs.', '',
         f'Seed {r["seed"]}; {r["repetitions"]} repetitions per case.', '',
+        'Detection of a weighted state-contribution contrast compares d_1-d_0, including',
+        'state prevalence. It alone is not evidence of different conditional effects or',
+        'cancellation; cancellation is assessed by the hidden-TV result. The JSON key',
+        'interaction_detected retains this weighted meaning.', '',
         '## Sparse categorical responses', '',
         '107,109,468 trials; two balanced fixed local states; fair independent settings.',
         'Local-setting event probabilities .00015/.00045; conditional early/core/late',
         'probabilities .25/.5/.25. Amplitude moves mass between early and late in',
         'opposite directions for the two remote settings. Reversing also flips by state.',
         'The same conservative inference constants as the actual study are used.', '',
-        '| Model | Amplitude | Pooled detected | State interaction detected | Hidden TV resolved |',
+        '| Model | Amplitude | Pooled detected | Weighted state-contribution contrast detected | Hidden TV resolved |',
         '|---|---:|---:|---:|---:|']
     for v in r['category']:
         a = v['outcomes']
@@ -133,11 +137,14 @@ def report(r):
         'in expectation. This panel uses descriptive occupancies, not fitted remote effects.',
         'It is not a calibrated physical power curve. Strong rare-state effects can be',
         'hard to detect when their weighted contribution is small.', '',
-        '| Receiver | Condition | Rare-state rows | Interaction detected | Hidden TV resolved |',
+        '| Receiver | Condition | Rare-state rows | Weighted state-contribution contrast detected | Hidden TV resolved |',
         '|---|---|---:|---:|---:|']
     for v in r['occupancy_matched']:
         lines.append(f'| {v["receiver"]} | {v["condition"]} | {v["synthetic_state0_rows"]:,} | {v["outcomes"]["interaction_detected"]["count"]} | {v["outcomes"]["hidden_tv_resolved"]["count"]} |')
-    lines += ['', '## Temporal controls', '',
+    lines += ['', 'None of these four occupancy-matched cases resolves positive hidden TV in',
+        '400 repetitions. Consequently, the archive non-detections are not strong evidence',
+        'against structured effects. These toy results are not calibrated physical power.', '',
+        '## Temporal controls', '',
         '200,000 trials, a drifting .01 baseline event rate, and ordinary outcome',
         'dependence on an earlier setting. One fixed future-lag/feature/local-setting',
         'test is evaluated using the full 64-test family threshold.', '',

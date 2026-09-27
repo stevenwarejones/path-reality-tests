@@ -60,7 +60,9 @@ See statistics.md for the complete estimand and proof.
 For each condition, bound the sum of stratum TVs and its excess above pooled TV.
 A positive lower bound on that excess would establish cancellation within this
 coarse conditional model. Otherwise report a bound, not an inferred hidden effect.
-Also report the signed state-1 minus state-0 feature interaction. No fitted
+Also report the signed state-1 minus state-0 weighted state-contribution contrast.
+It includes state prevalence; it is not a conditional-effect heterogeneity test
+and does not by itself establish cancellation (see statistics.md). No fitted
 classifier, chosen sign, window search or conditioning on a current outcome.
 
 ## B. Temporal fingerprints

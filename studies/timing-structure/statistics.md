@@ -22,7 +22,20 @@ T_pool is TV after forgetting the state. Convexity gives
 0 <= H=T_0+T_1-T_pool <=1. Our lower bound max(0,L_0+L_1-U_pool) is conservative
 and simultaneous. H>0 means cancellation at this chosen state resolution,
 not unbounded instantaneous signalling. A zero lower bound does not show H=0.
-The interaction interval covers d_1-d_0 and can reveal opposite contributions.
+The **weighted state-contribution contrast** interval covers d_1-d_0.
+It does not directly compare effects conditional on each state. Write
+w_g=(1/N) sum_i 1{G_i=g} and, for w_g>0, delta_g=d_g/w_g. Then
+
+    d_1-d_0 = w_1*delta_1 - w_0*delta_0.
+
+Even if delta_1=delta_0=delta, this equals (w_1-w_0)*delta and can be nonzero.
+For example, w_1=.9, w_0=.1 and the same signed conditional feature effect
+of 100 ppm give contributions of 90 and 10 ppm, hence an 80 ppm contrast.
+There is no cancellation in that example when the full conditional contrast
+vectors are identical: H=0. A nonzero contribution contrast alone establishes
+neither conditional effect heterogeneity nor cancellation. Reserve cancellation
+for H, the hidden-TV excess defined above. The existing JSON keys `interactions`
+and `interaction_detected` retain this weighted meaning for compatibility.
 
 For arbitrary adapted Bernoulli C_i with mean mu_i,
 E[exp(lambda*C_i)|F_(i-1)] = 1+mu_i*(exp(lambda)-1)
