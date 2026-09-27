@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "status": "retrospective exploratory; frozen after source inspection and baseline pilot, before validation simulations",
+  "reference_mass": "atomic mass constant; mechanics published convention also evaluated with neutron mass",
+  "rc_grid_m": [
+    1e-07,
+    3e-07,
+    1e-06
+  ],
+  "white_rate_grid_s_inverse": [
+    0,
+    1e-10,
+    1e-09,
+    1e-08,
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001
+  ],
+  "display_scans": [
+    "Sodium_int_powerscan_1",
+    "Sodium_int_powerscan_3",
+    "Sodium_int_powerscan_48"
+  ],
+  "ou_tau_grid_s": [
+    0,
+    1e-12,
+    1e-10,
+    1e-08,
+    1e-06,
+    0.0001,
+    0.01,
+    1
+  ],
+  "published_force_upper_N2_per_hz": 2.0734614485025937e-36,
+  "benchmarks": [
+    {
+      "name": "100 nm silica sphere",
+      "radius_m": 1e-07,
+      "density_kg_m3": 2200,
+      "separation_m": 1e-07,
+      "time_s": 0.01,
+      "required_log_suppression": 10,
+      "rationale": "mesoscopic spatial record; illustrative requirement, not a universal measurement threshold"
+    },
+    {
+      "name": "1 micron silica sphere",
+      "radius_m": 1e-06,
+      "density_kg_m3": 2200,
+      "separation_m": 1e-06,
+      "time_s": 0.01,
+      "required_log_suppression": 10,
+      "rationale": "larger spatial pointer; contrast mass amplification with the smaller benchmark"
+    }
+  ],
+  "simulation": {
+    "seed": 20260926,
+    "repeats": 5000,
+    "alpha": 0.05
+  },
+  "no_data_selected_cutoff": true,
+  "empirical_joint_exclusion_enabled": false,
+  "discovery_extension": {
+    "selected": "stationary-response mechanical + space published-envelope feasibility",
+    "runner_up": "mechanical + 2022 XENONnT ER subset, approximate response",
+    "selection_status": "conditional calculations only; common colored-noise rest-frame motion unresolved",
+    "frozen_after": "source audit and pilot feasibility; retrospective exploratory"
+  }
+}

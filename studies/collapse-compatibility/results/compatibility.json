@@ -1,0 +1,1689 @@
+{
+  "data": {
+    "claim_level": "conditional feasibility and constructive limitation of finite-positive-frequency envelopes",
+    "layer_thickness_sensitivity": [
+      {
+        "rc_m": 1e-07,
+        "thickness_m": 3.66e-07,
+        "two_sided_coefficient": 5.41592757328e-27
+      },
+      {
+        "rc_m": 1e-07,
+        "thickness_m": 3.7e-07,
+        "two_sided_coefficient": 5.44354531995e-27
+      },
+      {
+        "rc_m": 1e-07,
+        "thickness_m": 3.74e-07,
+        "two_sided_coefficient": 5.46947283497e-27
+      },
+      {
+        "rc_m": 3e-07,
+        "thickness_m": 3.66e-07,
+        "two_sided_coefficient": 2.40321537793e-27
+      },
+      {
+        "rc_m": 3e-07,
+        "thickness_m": 3.7e-07,
+        "two_sided_coefficient": 2.46335144273e-27
+      },
+      {
+        "rc_m": 3e-07,
+        "thickness_m": 3.74e-07,
+        "two_sided_coefficient": 2.52894126401e-27
+      },
+      {
+        "rc_m": 1e-06,
+        "thickness_m": 3.66e-07,
+        "two_sided_coefficient": 2.02274909061e-26
+      },
+      {
+        "rc_m": 1e-06,
+        "thickness_m": 3.7e-07,
+        "two_sided_coefficient": 2.02297271663e-26
+      },
+      {
+        "rc_m": 1e-06,
+        "thickness_m": 3.74e-07,
+        "two_sided_coefficient": 2.02319913701e-26
+      }
+    ],
+    "original_pairing": {
+      "colored_motion_comparison": [
+        {
+          "force_spectrum_ratio": 1.0,
+          "moving_local_approximation": 1.0,
+          "static_T10ms_ratio": 1.0,
+          "tau_s": 0
+        },
+        {
+          "force_spectrum_ratio": 1.0,
+          "moving_local_approximation": 0.999998751805,
+          "static_T10ms_ratio": 0.9999999999,
+          "tau_s": 1e-12
+        },
+        {
+          "force_spectrum_ratio": 0.999999999995,
+          "moving_local_approximation": 0.987958526822,
+          "static_T10ms_ratio": 0.99999999,
+          "tau_s": 1e-10
+        },
+        {
+          "force_spectrum_ratio": 0.999999950731,
+          "moving_local_approximation": 0.10459792846,
+          "static_T10ms_ratio": 0.999999,
+          "tau_s": 1e-08
+        },
+        {
+          "force_spectrum_ratio": 0.999507553184,
+          "moving_local_approximation": 0.00112100553024,
+          "static_T10ms_ratio": 0.9999,
+          "tau_s": 1e-06
+        },
+        {
+          "force_spectrum_ratio": 0.168722425887,
+          "moving_local_approximation": 1.12179822326e-05,
+          "static_T10ms_ratio": 0.99,
+          "tau_s": 0.0001
+        },
+        {
+          "force_spectrum_ratio": 2.02963494616e-05,
+          "moving_local_approximation": 1.12180615463e-07,
+          "static_T10ms_ratio": 0.367879441171,
+          "tau_s": 0.01
+        },
+        {
+          "force_spectrum_ratio": 2.02967613706e-09,
+          "moving_local_approximation": 1.12180623395e-09,
+          "static_T10ms_ratio": 0.00498337491681,
+          "tau_s": 1
+        }
+      ],
+      "diagnostic": {
+        "evidence": "observed",
+        "interpretation": "fixed-calibration predictions using measured powers/mass weights; no fitted collapse rate",
+        "joint_confidence_region_enabled": false,
+        "rate_grid": [
+          0.0,
+          1e-10,
+          1e-09,
+          1e-08,
+          1e-07,
+          1e-06,
+          1e-05,
+          0.0001,
+          0.001
+        ],
+        "results": [
+          {
+            "display_curves": [
+              {
+                "scan": "Sodium_int_powerscan_1",
+                "visibility": [
+                  0.0116775411926,
+                  0.0116311848305,
+                  0.0112222376883,
+                  0.00785018321624,
+                  0.000226336112831,
+                  2.25259746588e-14,
+                  9.68031345957e-102,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_3",
+                "visibility": [
+                  0.119121953047,
+                  0.11872786278,
+                  0.115240581296,
+                  0.0856331256527,
+                  0.00488811113521,
+                  2.46436444883e-13,
+                  2.76783893382e-101,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_48",
+                "visibility": [
+                  0.0207410012014,
+                  0.0206732222126,
+                  0.0200733095522,
+                  0.0149688478249,
+                  0.00087680178537,
+                  4.27765415167e-14,
+                  2.24715002008e-102,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "largest_visibility_increase": {
+              "increase": 0.0,
+              "scan": null
+            },
+            "rc_m": 1e-07
+          },
+          {
+            "display_curves": [
+              {
+                "scan": "Sodium_int_powerscan_1",
+                "visibility": [
+                  0.0116775411926,
+                  0.0116717403301,
+                  0.0116196627304,
+                  0.0111115590471,
+                  0.00710884453337,
+                  7.43888451708e-05,
+                  3.00390906074e-16,
+                  4.80918481275e-121,
+                  0.0
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_3",
+                "visibility": [
+                  0.119121953047,
+                  0.119074743898,
+                  0.118650724408,
+                  0.114494775089,
+                  0.0803003895489,
+                  0.00270773871406,
+                  3.00725047597e-15,
+                  3.58962141662e-120,
+                  0.0
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_48",
+                "visibility": [
+                  0.0207410012014,
+                  0.0207329231056,
+                  0.0206603651016,
+                  0.0199489325316,
+                  0.0140747134927,
+                  0.000496517223868,
+                  5.94996984548e-16,
+                  6.07454030566e-121,
+                  0.0
+                ]
+              }
+            ],
+            "largest_visibility_increase": {
+              "increase": 0.0,
+              "scan": null
+            },
+            "rc_m": 3e-07
+          },
+          {
+            "display_curves": [
+              {
+                "scan": "Sodium_int_powerscan_1",
+                "visibility": [
+                  0.0116775411926,
+                  0.0116770117252,
+                  0.011672247604,
+                  0.011624713673,
+                  0.0111599400763,
+                  0.00742366239653,
+                  0.000117365132588,
+                  4.06559055745e-15,
+                  2.9897420112e-110
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_3",
+                "visibility": [
+                  0.119121953047,
+                  0.11911766668,
+                  0.119079096496,
+                  0.118694098857,
+                  0.114913661125,
+                  0.0832618000784,
+                  0.00379186955296,
+                  4.17845657511e-14,
+                  2.6439604887e-109
+                ]
+              },
+              {
+                "scan": "Sodium_int_powerscan_48",
+                "visibility": [
+                  0.0207410012014,
+                  0.0207402681984,
+                  0.0207336723655,
+                  0.0206678321142,
+                  0.0200210927514,
+                  0.0145881842521,
+                  0.000694156079956,
+                  8.39483024894e-15,
+                  5.29573476895e-110
+                ]
+              }
+            ],
+            "largest_visibility_increase": {
+              "increase": 0.0,
+              "scan": null
+            },
+            "rc_m": 1e-06
+          }
+        ]
+      }
+    },
+    "runner_up": {
+      "audit": {
+        "background_rows": 300,
+        "efficiency_rows": 787,
+        "energy_max_kev": 29.9849014282,
+        "energy_min_kev": 1.698969841,
+        "events": 433,
+        "evidence": "observed",
+        "interpretation": "Poisson count bound with nonnegative unknown background; parameter conversion requires response assumptions",
+        "signal_counts_upper95_no_background_subtraction": 468.825713786
+      },
+      "combination": "layered force sensor + XENONnT 1-30 keV public ER subset",
+      "official_2026_limit_reproduced": false,
+      "rows": [
+        {
+          "evidence": "observed",
+          "force_only_upper": 1.90451381097e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.27835892422e-16,
+            1.33022410508e-16
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.59794865528e-16,
+            1.66278013135e-16
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.27835892422e-16,
+            1.33022410508e-16
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 0.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 1.90451381097e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.90451381097e-10,
+            1.90451381097e-10
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            0.0196477868413,
+            0.0215412844778
+          ],
+          "radiation_only_upper_alpha_range": [
+            0.0157182294731,
+            0.0172330275822
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 1e-12
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 1.90451390481e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.90451390481e-10,
+            1.90451390481e-10
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1964778.68413,
+            2154128.44778
+          ],
+          "radiation_only_upper_alpha_range": [
+            1571822.94731,
+            1723302.75822
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 1e-08
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 1.1287852228e-09,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.1287852228e-09,
+            1.1287852228e-09
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            196477868413000.0,
+            215412844778000.0
+          ],
+          "radiation_only_upper_alpha_range": [
+            157182294731000.0,
+            172330275822000.0
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 0.0001
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 0.0938333843611,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            0.0938333843611,
+            0.0938333843611
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+22,
+            2.15412844778e+22
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+22,
+            1.72330275822e+22
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 1.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 9383338.41707,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            9383338.41707,
+            9383338.41707
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+30,
+            2.15412844778e+30
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+30,
+            1.72330275822e+30
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 10000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 938333841707000.0,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            938333841707000.0,
+            938333841707000.0
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+38,
+            2.15412844778e+38
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+38,
+            1.72330275822e+38
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 100000000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 9.38333841707e+22,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            9.38333841707e+22,
+            9.38333841707e+22
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+46,
+            2.15412844778e+46
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+46,
+            1.72330275822e+46
+          ],
+          "rc_m": 1e-07,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 4.20861882014e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.1505230318e-15,
+            1.19720169457e-15
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.43815378975e-15,
+            1.49650211821e-15
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.1505230318e-15,
+            1.19720169457e-15
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 0.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 4.20861882014e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            4.20861882014e-10,
+            4.20861882014e-10
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            0.176830081572,
+            0.1938715603
+          ],
+          "radiation_only_upper_alpha_range": [
+            0.141464065258,
+            0.15509724824
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 1e-12
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 4.2086190275e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            4.2086190275e-10,
+            4.2086190275e-10
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            17683008.1572,
+            19387156.03
+          ],
+          "radiation_only_upper_alpha_range": [
+            14146406.5258,
+            15509724.824
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 1e-08
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 2.49440392882e-09,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            2.49440392882e-09,
+            2.49440392882e-09
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1768300815720000.0,
+            1938715603000000.0
+          ],
+          "radiation_only_upper_alpha_range": [
+            1414640652580000.0,
+            1550972482400000.0
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 0.0001
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 0.207354205102,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            0.207354205102,
+            0.207354205102
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.76830081572e+23,
+            1.938715603e+23
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.41464065258e+23,
+            1.5509724824e+23
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 1.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 20735420.4681,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            20735420.4681,
+            20735420.4681
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.76830081572e+31,
+            1.938715603e+31
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.41464065258e+31,
+            1.5509724824e+31
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 10000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 2073542046810000.0,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            2073542046810000.0,
+            2073542046810000.0
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.76830081572e+39,
+            1.938715603e+39
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.41464065258e+39,
+            1.5509724824e+39
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 100000000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 2.07354204681e+23,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            2.07354204681e+23,
+            2.07354204681e+23
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.76830081572e+47,
+            1.938715603e+47
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.41464065258e+47,
+            1.5509724824e+47
+          ],
+          "rc_m": 3e-07,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 5.12478846467e-11,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            1.27835892422e-14,
+            1.33022410508e-14
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.59794865528e-14,
+            1.66278013135e-14
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.27835892422e-14,
+            1.33022410508e-14
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 0.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 5.12478846467e-11,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            5.12478846467e-11,
+            5.12478846467e-11
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413,
+            2.15412844778
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731,
+            1.72330275822
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 1e-12
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 5.12478871716e-11,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            5.12478871716e-11,
+            5.12478871716e-11
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            196477868.413,
+            215412844.778
+          ],
+          "radiation_only_upper_alpha_range": [
+            157182294.731,
+            172330275.822
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 1e-08
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 3.03740800176e-10,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            3.03740800176e-10,
+            3.03740800176e-10
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+16,
+            2.15412844778e+16
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+16,
+            1.72330275822e+16
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 0.0001
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 0.0252492916042,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            0.0252492916042,
+            0.0252492916042
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+24,
+            2.15412844778e+24
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+24,
+            1.72330275822e+24
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 1.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 2524929.15529,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            2524929.15529,
+            2524929.15529
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+32,
+            2.15412844778e+32
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+32,
+            1.72330275822e+32
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 10000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 252492915529000.0,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            252492915529000.0,
+            252492915529000.0
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+40,
+            2.15412844778e+40
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+40,
+            1.72330275822e+40
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 100000000.0
+        },
+        {
+          "evidence": "observed",
+          "force_only_upper": 2.52492915529e+22,
+          "interpretation": "identity-energy response feasibility only; not official 2026 limit",
+          "joint_upper_alpha_range": [
+            2.52492915529e+22,
+            2.52492915529e+22
+          ],
+          "radiation_efficiency_20pct_reduction_upper": [
+            1.96477868413e+48,
+            2.15412844778e+48
+          ],
+          "radiation_only_upper_alpha_range": [
+            1.57182294731e+48,
+            1.72330275822e+48
+          ],
+          "rc_m": 1e-06,
+          "tau_s": 1000000000000.0
+        }
+      ]
+    },
+    "selected": {
+      "combination": "layered force sensor + LISA Pathfinder published rotational envelope",
+      "escape_witnesses": [
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 4.94022068025e-13,
+          "lambda_over_2tau": 2.31778812959e-14,
+          "lambda_s_inverse": 4.63557625919e-14,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 2.41271733147e-05,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 4.92379601555e-17,
+          "lambda_over_2tau": 2.31008221553e-14,
+          "lambda_s_inverse": 4.62016443105e-10,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 6.77017597136e-06,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 4.92379437445e-21,
+          "lambda_over_2tau": 2.31008144558e-14,
+          "lambda_s_inverse": 4.62016289115e-06,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 6.77036425987e-10,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 4.92379437429e-25,
+          "lambda_over_2tau": 2.3100814455e-14,
+          "lambda_s_inverse": 0.04620162891,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 6.77036425964e-14,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.21177254022e-12,
+          "lambda_over_2tau": 1.2563306592e-13,
+          "lambda_s_inverse": 2.51266131841e-13,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 0.00117695704843,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.20774378139e-16,
+          "lambda_over_2tau": 1.25215375624e-13,
+          "lambda_s_inverse": 2.50430751248e-09,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 0.00033025859369,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.20774337885e-20,
+          "lambda_over_2tau": 1.2521533389e-13,
+          "lambda_s_inverse": 2.5043066778e-05,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 3.30267778665e-08,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.20774337881e-24,
+          "lambda_over_2tau": 1.25215333886e-13,
+          "lambda_s_inverse": 0.250430667771,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 3.30267778654e-12,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.03866358266e-10,
+          "lambda_over_2tau": 1.31127598386e-12,
+          "lambda_s_inverse": 2.62255196771e-12,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 0.136471913265,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.03521035613e-14,
+          "lambda_over_2tau": 1.30691640503e-12,
+          "lambda_s_inverse": 2.61383281006e-08,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 0.0382945343783,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.0352100111e-18,
+          "lambda_over_2tau": 1.30691596944e-12,
+          "lambda_s_inverse": 0.000261383193887,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 3.82955994053e-06,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "force_fraction_of_upper": 1.03521001106e-22,
+          "lambda_over_2tau": 1.30691596939e-12,
+          "lambda_s_inverse": 2.61383193878,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 3.8295599404e-10,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.23944026967e-17,
+          "lambda_over_2tau": 5.81504376085e-19,
+          "lambda_s_inverse": 1.16300875217e-18,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 6.05320938783e-10,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.23531952444e-21,
+          "lambda_over_2tau": 5.79571057549e-19,
+          "lambda_s_inverse": 1.1591421151e-14,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 1.69855341994e-10,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.2353191127e-25,
+          "lambda_over_2tau": 5.79570864378e-19,
+          "lambda_s_inverse": 1.15914172876e-10,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 1.69860065919e-14,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.23531911266e-29,
+          "lambda_over_2tau": 5.79570864359e-19,
+          "lambda_s_inverse": 1.15914172872e-06,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-07,
+          "space_fraction_of_upper": 1.69860065914e-18,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 4.03163955064e-19,
+          "lambda_over_2tau": 4.1798870714e-20,
+          "lambda_s_inverse": 8.35977414281e-20,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 3.91580633196e-10,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 4.01823562962e-23,
+          "lambda_over_2tau": 4.16599026601e-20,
+          "lambda_s_inverse": 8.33198053201e-16,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 1.09879004852e-10,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 4.01823429035e-27,
+          "lambda_over_2tau": 4.16598887748e-20,
+          "lambda_s_inverse": 8.33197775496e-12,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 1.09882060748e-14,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 4.01823429021e-31,
+          "lambda_over_2tau": 4.16598887734e-20,
+          "lambda_s_inverse": 8.33197775468e-08,
+          "macro_log_suppression": 10.0,
+          "rc_m": 3e-07,
+          "space_fraction_of_upper": 1.09882060745e-18,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.83592329316e-18,
+          "lambda_over_2tau": 2.31778812959e-20,
+          "lambda_s_inverse": 4.63557625919e-20,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 2.41225328979e-09,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.82981943132e-22,
+          "lambda_over_2tau": 2.31008221553e-20,
+          "lambda_s_inverse": 4.62016443105e-16,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 6.76887385288e-10,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.82981882144e-26,
+          "lambda_over_2tau": 2.31008144558e-20,
+          "lambda_s_inverse": 4.62016289115e-12,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 6.76906210517e-14,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "force_fraction_of_upper": 1.82981882138e-30,
+          "lambda_over_2tau": 2.3100814455e-20,
+          "lambda_s_inverse": 4.620162891e-08,
+          "macro_log_suppression": 10.0,
+          "rc_m": 1e-06,
+          "space_fraction_of_upper": 6.76906210494e-18,
+          "tau_s": 1000000000000.0
+        }
+      ],
+      "evidence": "published_constraint",
+      "physical_premise": "stationary-body factorization; velocity through a common preferred noise frame is not calibrated; colored results are conditional envelope calculations only",
+      "rows": [
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451381097e-10,
+          "joint_lambda_upper": 1.90451381097e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 2.3100814455e-16,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451381097e-10,
+          "joint_lambda_upper": 1.90451381097e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 2.31008144573e-16,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451390481e-10,
+          "joint_lambda_upper": 1.90451390481e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 2.31008375558e-16,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.1287852228e-09,
+          "joint_lambda_upper": 1.1287852228e-09,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 2.33341560151e-16,
+          "space_only_lambda_upper": 1.92062689517e-09,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.0938333843611,
+          "joint_lambda_upper": 1.92130930496e-09,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 4.63557625919e-14,
+          "space_only_lambda_upper": 1.92130930496e-09,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 9383338.41707,
+          "joint_lambda_upper": 6.82429001933e-05,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 4.62016443105e-10,
+          "space_only_lambda_upper": 6.82429001933e-05,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 938333841707000.0,
+          "joint_lambda_upper": 6824.09795665,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 4.62016289115e-06,
+          "space_only_lambda_upper": 6824.09795665,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 9.38333841707e+22,
+          "joint_lambda_upper": 682409795664.0,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 0.04620162891,
+          "space_only_lambda_upper": 682409795664.0,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.20861882014e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 1.25215333886e-15,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.20861882014e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 1.25215333898e-15,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.2086190275e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 1.25215459101e-15,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.49440392882e-09,
+          "joint_lambda_upper": 2.13412110137e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 1.26480135238e-15,
+          "space_only_lambda_upper": 2.13412110137e-10,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.207354205102,
+          "joint_lambda_upper": 2.13487936688e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 2.51266131841e-13,
+          "space_only_lambda_upper": 2.13487936688e-10,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 20735420.4681,
+          "joint_lambda_upper": 7.58286857732e-06,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 2.50430751248e-09,
+          "space_only_lambda_upper": 7.58286857732e-06,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2073542046810000.0,
+          "joint_lambda_upper": 758.265516521,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 2.5043066778e-05,
+          "space_only_lambda_upper": 758.265516521,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.07354204681e+23,
+          "joint_lambda_upper": 75826551652.1,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 0.250430667771,
+          "space_only_lambda_upper": 75826551652.1,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478846467e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 1.30691596939e-14,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478846467e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 1.30691596952e-14,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478871716e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 1.30691727631e-14,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 3.03740800176e-10,
+          "joint_lambda_upper": 1.92099636339e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 1.3201171408e-14,
+          "space_only_lambda_upper": 1.92099636339e-11,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.0252492916042,
+          "joint_lambda_upper": 1.92167890445e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.62255196771e-12,
+          "space_only_lambda_upper": 1.92167890445e-11,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2524929.15529,
+          "joint_lambda_upper": 6.82560279815e-07,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.61383281006e-08,
+          "space_only_lambda_upper": 6.82560279815e-07,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 252492915529000.0,
+          "joint_lambda_upper": 68.2541069851,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 0.000261383193887,
+          "space_only_lambda_upper": 68.2541069851,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "100 nm silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.52492915529e+22,
+          "joint_lambda_upper": 6825410698.51,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.61383193878,
+          "space_only_lambda_upper": 6825410698.51,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451381097e-10,
+          "joint_lambda_upper": 1.90451381097e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 5.79570864359e-21,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451381097e-10,
+          "joint_lambda_upper": 1.90451381097e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 5.79570864417e-21,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.90451390481e-10,
+          "joint_lambda_upper": 1.90451390481e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 5.7957144393e-21,
+          "space_only_lambda_upper": 1.92062689516e-09,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 1.1287852228e-09,
+          "joint_lambda_upper": 1.1287852228e-09,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 5.85425115514e-21,
+          "space_only_lambda_upper": 1.92062689517e-09,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.0938333843611,
+          "joint_lambda_upper": 1.92130930496e-09,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 1.16300875217e-18,
+          "space_only_lambda_upper": 1.92130930496e-09,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 9383338.41707,
+          "joint_lambda_upper": 6.82429001933e-05,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 1.1591421151e-14,
+          "space_only_lambda_upper": 6.82429001933e-05,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 938333841707000.0,
+          "joint_lambda_upper": 6824.09795665,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 1.15914172876e-10,
+          "space_only_lambda_upper": 6824.09795665,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 9.38333841707e+22,
+          "joint_lambda_upper": 682409795664.0,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-07,
+          "required_lambda": 1.15914172872e-06,
+          "space_only_lambda_upper": 682409795664.0,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.20861882014e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 4.16598887734e-22,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.20861882014e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 4.16598887776e-22,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 4.2086190275e-10,
+          "joint_lambda_upper": 2.13412110136e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 4.16599304334e-22,
+          "space_only_lambda_upper": 2.13412110136e-10,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.49440392882e-09,
+          "joint_lambda_upper": 2.13412110137e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 4.20806957307e-22,
+          "space_only_lambda_upper": 2.13412110137e-10,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.207354205102,
+          "joint_lambda_upper": 2.13487936688e-10,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 8.35977414281e-20,
+          "space_only_lambda_upper": 2.13487936688e-10,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 20735420.4681,
+          "joint_lambda_upper": 7.58286857732e-06,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 8.33198053201e-16,
+          "space_only_lambda_upper": 7.58286857732e-06,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2073542046810000.0,
+          "joint_lambda_upper": 758.265516521,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 8.33197775496e-12,
+          "space_only_lambda_upper": 758.265516521,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.07354204681e+23,
+          "joint_lambda_upper": 75826551652.1,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 3e-07,
+          "required_lambda": 8.33197775468e-08,
+          "space_only_lambda_upper": 75826551652.1,
+          "tau_s": 1000000000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478846467e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.3100814455e-22,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 0.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478846467e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.31008144573e-22,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 1e-12
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 5.12478871716e-11,
+          "joint_lambda_upper": 1.92099636338e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.31008375558e-22,
+          "space_only_lambda_upper": 1.92099636338e-11,
+          "tau_s": 1e-08
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 3.03740800176e-10,
+          "joint_lambda_upper": 1.92099636339e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 2.33341560151e-22,
+          "space_only_lambda_upper": 1.92099636339e-11,
+          "tau_s": 0.0001
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 0.0252492916042,
+          "joint_lambda_upper": 1.92167890445e-11,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 4.63557625919e-20,
+          "space_only_lambda_upper": 1.92167890445e-11,
+          "tau_s": 1.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2524929.15529,
+          "joint_lambda_upper": 6.82560279815e-07,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 4.62016443105e-16,
+          "space_only_lambda_upper": 6.82560279815e-07,
+          "tau_s": 10000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 252492915529000.0,
+          "joint_lambda_upper": 68.2541069851,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 4.62016289115e-12,
+          "space_only_lambda_upper": 68.2541069851,
+          "tau_s": 100000000.0
+        },
+        {
+          "benchmark": "1 micron silica sphere",
+          "benchmark_feasible": true,
+          "force_only_lambda_upper": 2.52492915529e+22,
+          "joint_lambda_upper": 6825410698.51,
+          "nuisance_half_to_double_envelope_feasible": [
+            true,
+            true
+          ],
+          "rc_m": 1e-06,
+          "required_lambda": 4.620162891e-08,
+          "space_only_lambda_upper": 6825410698.51,
+          "tau_s": 1000000000000.0
+        }
+      ],
+      "statistical_interpretation": "deterministic compatibility with quoted envelopes; NOT joint 95% coverage"
+    },
+    "unrestricted_experimental_exclusion_enabled": false
+  },
+  "metadata": {
+    "code_sha256": "d924ea6c484fa81cba8caac8e937df2b69bcd8669f4b4d9a31f14f7f6b723d11",
+    "empirical_joint_confidence_enabled": false,
+    "manifest_sha256": "d261015f8cf8a02c93ff18456cf6e18efbb3bf09972623615c54c429490435eb",
+    "protocol_sha256": "1e8d7a707d5525f25b696cdf0a6af92c130da5cb89f9f47abad9fe89e44070bd",
+    "revision_association": "content hashes; no circular output/commit hash",
+    "source_hashes": {
+      "Final_data.xlsx": "7e98ea0be825c30a5cd44b6533d01d7000da364168b0945e1160d163de7a598d",
+      "Na-Cluster-Interference.zip": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
+      "PSD.zip": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
+      "XENONnT_ER_v2.zip": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "earth_201702.txt": "edec8fa63f100838ced32127368156586d08a1a2a9cfb72b1c1b1d490a391374",
+      "earth_sodium.txt": "d0eb7cddc067df5381c79dca503e55cc6c14ecb2478ee08890848cac8918e051",
+      "lpf_201702.txt": "22ff2ca9e37ff737bd5c683d21cc5579407c683252c157a399f3eefa476b8362",
+      "lpf_drs_sample.fits": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268"
+    },
+    "sufficiency_sha256": "78284c1795a9d8f4e818189765c06bbd1f5a347b0f62ee257adfdbe6af260e20",
+    "units": "SI except explicitly named keV, mK, mW, atomic mass units"
+  }
+}
