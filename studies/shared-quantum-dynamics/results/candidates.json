@@ -1,0 +1,52 @@
+{
+  "h1-rb.json": {
+    "circuits": 16,
+    "examples": [
+      {"correct": 99, "key": "SQ_RB (512, 3)", "q": 0, "shots": 100},
+      {"correct": 100, "key": "SQ_RB (2, 1)", "q": 0, "shots": 100}
+    ],
+    "keys": ["shots", "survival", "sequence_info", "qasm", "raw_data", "expected_output", "leakage_postselect"],
+    "logical_qubits": 10,
+    "missing": "per-circuit timestamps, persistent physical ion identifiers, matched calibration/gadget response records",
+    "schema_note": "leakage_postselect stores unflagged counts in this file, NOT leakage probabilities; QASM contains an ancilla gadget",
+    "shots_per_circuit": 100
+  },
+  "h1-spam.json": {
+    "circuits": 2,
+    "examples": [
+      {"correct": 9979, "key": "SPAM (0, 0)", "q": 0, "shots": 10000},
+      {"correct": 9962, "key": "SPAM (0, 1)", "q": 0, "shots": 10000}
+    ],
+    "keys": ["shots", "survival", "qasm", "raw_data", "expected_output"],
+    "logical_qubits": 10,
+    "missing": "per-circuit timestamps, persistent physical ion identifiers, matched calibration/gadget response records",
+    "schema_note": "leakage_postselect stores unflagged counts in this file, NOT leakage probabilities; QASM contains an ancilla gadget",
+    "shots_per_circuit": 10000
+  },
+  "leakage_control": {
+    "csv_files": 608,
+    "files": 675,
+    "leakage_readme": "Explanation for csv-data files: \r\n[name]/pf_vs_N_cliffords_and_idx_mat: 2d array, f-state probability after an RB sequence as a function of the number of random Clifford gates in the sequence (columns) and the index of the random sequence (rows). We used 25 different random sequences for each sequence length. \r\n[name]/N_cliffords_arr: 1d array, number of Clifford gates used in RB\r\n[name]/pf_fit_vs_N_cliffords: 1d array, exponential fit to the f-state probability as a function of the number of Clifford gates\r\n[name]/N_cliffords_arr_for_fit: number of Clifford gates for the fit\r\n[name]/leakage_per_gate_and_uncertainty: fitted leakage error and 1sigma uncertainty as a 2-element 1d array\r\n\r\nHere, the name is the pulse name from the set {FAST_DRAG-L, Cosine_DRAG-L}. Envelope predistortion has been applied to all pulses. \r\n\r\nThe gate duration was 6.25 ns including 0.41 ns zero padding.",
+    "rb_readme": "Explanation for csv-data files: \r\n[name]/pg_vs_N_cliffords_and_idx_mat: 2d array, ground state probability after an RB sequence as a function of the number of random Clifford gates in the sequence (columns) and the index of the random sequence (rows). We used 25 different random sequences for each sequence length. \r\n[name]/N_cliffords_arr: 1d array, number of Clifford gates used in RB\r\n[name]/pg_fit_vs_N_cliffords: 1d array, exponential fit to the ground state probability as a function of the number of Clifford gates\r\n[name]/N_cliffords_arr_for_fit: number of Clifford gates for the fit\r\n[name]/error_per_gate_and_uncertainty: fitted gate error and 1sigma uncertainty as a 2-element 1d array\r\n\r\nHere, the name is the pulse name from the set {FAST_DRAG-L, Cosine_DRAG-L}. Envelope predistortion has been applied to all pulses. \r\n\r\nThe gate duration was 6.25 ns including 0.41 ns zero padding.",
+    "status": "measured probability/fit arrays and explicitly named simulation arrays; not transferred to target ion acquisition"
+  },
+  "repeated_operation": {
+    "denominators": [20000],
+    "jobs": 200,
+    "match": "Belem May 2023 is not Nairobi December 2022 or October 2023; no shared-gate acquisition bridge",
+    "metadata": {
+      "angles list": [3.141592653589793],
+      "author": "TB",
+      "backend": "ibmq_belem",
+      "description": "Cayley experiment on belem, test for angle 4.",
+      "jobs": 200,
+      "repetitions": 12,
+      "script version": "CayleyExperiment",
+      "shots": 20000,
+      "start time": "2023-05-29 13:08:34",
+      "total sx number": 8
+    },
+    "rows": 19200,
+    "shots": 384000000
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "context_certificate": {
+    "alpha": 0.05,
+    "assumptions": "iid Bernoulli shots within each word/family; no cross-pool independence needed for union bound",
+    "max_half_context_gap_lower": 0.0,
+    "unrestricted_within_acquisition_dependence_lower": 0.0,
+    "words": [
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [1, 285],
+        "RB_interval": [5.486728723928674e-06, 0.030244959443362727],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "0a476f1a2a6dac3c3bb60cf95547256e352429860727a8692fc8e39c1fdfee04"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [1, 555],
+        "RB_interval": [2.817513105005625e-06, 0.01563387108737633],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "15fb518285583d39c4bcb30ff992f2ffad2420b4c69fce52da64bcdee108f7c3"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [7, 1140],
+        "RB_interval": [0.0014460041115699292, 0.01653697463255191],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [2, 285],
+        "RB_interval": [0.00020022932818296595, 0.03695436337073672],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "2fd1744374b5ce533f7761cf907bcae9807005f2e24bb57976e0f0955857f8a5"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [1, 285],
+        "RB_interval": [5.486728723928674e-06, 0.030244959443362727],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "33ff583e1231326855ee6032df2bdb63e3044d67e254cf904032bbb340ef4d30"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [0, 285],
+        "RB_interval": [0.0, 0.022416743796255904],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [8, 1125],
+        "RB_interval": [0.0018859897818622247, 0.018085310070726442],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "bb72b4e4eb29dc59328668f32e0511e3ac0e5ce4026b1591965216e49ca1f5d7"
+      },
+      {
+        "GST_counts": [0, 50],
+        "GST_interval": [0.0, 0.1212276159047607],
+        "RB_counts": [5, 285],
+        "RB_interval": [0.0028897928094603455, 0.054493245636497795],
+        "half_context_gap_lower": 0.0,
+        "word_sha256": "fa16a7fc4343bd9b7a2951b3b44c1e17bb6d50f84add936243c6b607211a37d0"
+      }
+    ]
+  },
+  "families": {
+    "GST": {
+      "count_order_sha256": "5b8994710bd1e1cc647f6061882a5dc6a7f26a3e9858facc462b4dfb3b7a60fc",
+      "denominators": [50],
+      "gate_occurrences": {
+        "0": 2062623,
+        "1": 2071833,
+        "2": 2167218
+      },
+      "length_range": [0, 8198],
+      "rows": 4657,
+      "total_shots": 232850,
+      "unique_words": 4657
+    },
+    "RB": {
+      "count_order_sha256": "9d93fbcd2dc5958a9a7ee6cbe5ae0377bcb923abf17bbc542cc59fec1b46bd6a",
+      "denominators": [270, 285],
+      "gate_occurrences": {
+        "0": 33240,
+        "1": 1240122,
+        "2": 1239626
+      },
+      "length_range": [2, 1970],
+      "rows": 2004,
+      "total_shots": 563280,
+      "unique_words": 1996
+    }
+  }
+}

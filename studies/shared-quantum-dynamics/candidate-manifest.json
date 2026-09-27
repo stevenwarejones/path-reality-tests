@@ -1,0 +1,47 @@
+{
+  "note": "Zenodo records immutable v1/13808824; dated Quantinuum URLs lack immutable version contract, so content SHA256 pins exact inspected bytes and downloader fails closed on change.",
+  "files": [
+    {
+      "url": "https://docs.quantinuum.com/systems/_static/assets/components_data/H1-1/2025_05_02/SPAM.json",
+      "cache_name": "h1-spam.json",
+      "bytes": 442922,
+      "sha256": "2182e0f09ae3a8d932aa61a1a12ed0aaaf638962eabf3f1edaa3d665de81755e"
+    },
+    {
+      "url": "https://docs.quantinuum.com/systems/_static/assets/components_data/H1-1/2025_05_02/SQ_RB.json",
+      "cache_name": "h1-rb.json",
+      "bytes": 3749558,
+      "sha256": "a3f699911a2008db996f3b229103e5e137dd75e3ef531ddd5076b02426a9aa5b"
+    },
+    {
+      "url": "https://zenodo.org/records/8208198/files/readme.txt",
+      "cache_name": "repeated-readme.txt",
+      "bytes": 1132,
+      "sha256": "02d6668f6e585d7864bda4c2097d3ef82af59b14bf5268643b49fbe4481aa55d"
+    },
+    {
+      "url": "https://zenodo.org/records/8208198/files/belem.zip",
+      "cache_name": "belem.zip",
+      "bytes": 206703,
+      "sha256": "17b4a50aaa3dd1dbaadf479ff4e7c65c33c2bc1abc8a9acb3996745b1a4dc23d"
+    },
+    {
+      "url": "https://zenodo.org/records/8208198/files/cayley.py",
+      "cache_name": "cayley.py",
+      "bytes": 5582,
+      "sha256": "f51403cef2a1dbb1de26069e7682ac3cbb859a2fa64dcdee6ffdab63cfcc692e"
+    },
+    {
+      "url": "https://zenodo.org/records/8208198/files/CayleyJob.py",
+      "cache_name": "CayleyJob.py",
+      "bytes": 3415,
+      "sha256": "0b452c99ef22cb77cea55481e025f17d77e90ed56820717af1fac27f5245fd77"
+    },
+    {
+      "url": "https://zenodo.org/records/13808824/files/Data_for_Reducing_leakage_errors_v2.zip",
+      "cache_name": "leakage.zip",
+      "bytes": 6153974,
+      "sha256": "b61549a3c69656b0903fd22a6ba8172a35ba97b2d8ae227902c9c1a8bd4f25f7"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "repository_commit": "fc939f90f7a2b32a20aec34f36465259f38837a3",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/ExperimentalData/2015_03_30-GST_BB1_XYXY_8192_condensed.txt",
+      "sha256": "5ca509cb8e6cfe8996b8a1339457bc7f96d4efe0a3bdb8b550c3c496ce53f686",
+      "bytes": 146756,
+      "cache_name": "2015_03_30-GST_BB1_XYXY_8192_condensed.txt",
+      "role": "GST"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/ExperimentalData/2015_03_30-RB_0320_condensed.txt",
+      "sha256": "95ec756e5d4ead57ac6ba67b9302f11badc1dc72b956f0c4cbc585c3e47026c9",
+      "bytes": 4679341,
+      "cache_name": "2015_03_30-RB_0320_condensed.txt",
+      "role": "RB"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/README.md",
+      "sha256": "335c9e1b1a7f6f961cac9396c9f3dc1f3e1eabbcb346e478b584d597ab755eba",
+      "bytes": 1905,
+      "cache_name": "README.md",
+      "role": "provenance"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/AnalysisNotebooks/ExperimentalDataToResultsObjs.ipynb",
+      "sha256": "81d3512278428ad088cd8b813996c61e918a7f1fad6c6e8133a98618e3983407",
+      "bytes": 48121,
+      "cache_name": "ExperimentalDataToResultsObjs.ipynb",
+      "role": "semantics"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/ExperimentalData/Cliffs_to_prims.py",
+      "sha256": "4cd6f3a47148cd255203b232a929197a7c5b75eaa785bf9f244b596528f172a0",
+      "bytes": 2203,
+      "cache_name": "Cliffs_to_prims.py",
+      "role": "semantics"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/ExperimentalData/Cliff_seqs.txt",
+      "sha256": "e70127e4c47a028cfc68a6da768284be2d1ff668373f0959a591a2b44d080933",
+      "bytes": 5477561,
+      "cache_name": "Cliff_seqs.txt",
+      "role": "semantics"
+    }
+  ]
+}
