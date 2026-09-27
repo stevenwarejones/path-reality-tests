@@ -1,3 +1,8 @@
+The existing numerical certificate below is **single-outcome and synthetic**.
+The follow-up [flagged-instrument model](flagged-instrument.md) states the
+register-aware extension and its empirical prerequisites; it is not evaluated
+on the deposited records.
+
 # Null, global bound, and exact restricted ambiguity
 
 ## Scope and physical assumptions

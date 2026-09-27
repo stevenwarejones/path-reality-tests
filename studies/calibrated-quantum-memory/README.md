@@ -12,6 +12,27 @@ The [feasibility gate](feasibility.md) records the candidate acquisitions,
 matching evidence, alternatives checked, and missing inputs. The
 [theory](theory.md) states and proves the narrower implemented result.
 
+## Follow-up: measured calibration and acquisition semantics
+
+The [source audit](acquisition-semantics.md) now verifies a concrete adjacent
+pair in `quantum_memory_data`: q0 readout calibration node 6047 and terminal
+QPT node 6048 (16.391 seconds between runs), plus QPT node 6099. It reproduces
+all IQ assignment counts and all 12 terminal tables per selected QPT run.
+The saved readout operations match, including the threshold unit conversion;
+two scheduling fields differ. These are measured readout and storage-channel
+records, **not** the needed intermediate flagged-instrument calibration.
+
+The same audit enumerates five NMN mapping alternatives, traces one table
+through the documented protocol, and safely inspects all seven SU4 training
+and thirteen validation probability vectors in the White archive. The NMN
+historical transformation remains unresolved. A new
+[register-aware null and sufficient bound](flagged-instrument.md) explicitly
+retains outcomes and permits feed-forward. The
+[missing-acquisition specification](missing-acquisition.md) gives exact
+settings, counts, metadata, timing controls and the completion gate.
+No empirical margin, joint quantum fit, or complete source-only witness is
+claimed. No further synthetic demonstration was added in this follow-up.
+
 ## Measured acquisition result
 
 We downloaded the NMN-tomo archive at
@@ -170,18 +191,26 @@ python -m pip install -r studies/calibrated-quantum-memory/requirements.txt
 python -m unittest discover -s tests -p 'test_calibrated_quantum_memory.py' -v
 python studies/calibrated-quantum-memory/certificate.py --check
 python studies/calibrated-quantum-memory/audit.py --source-dir /tmp/calibrated-memory-nmn --download --check
+python studies/calibrated-quantum-memory/acquisition_audit.py --source-root /tmp/calibrated-memory-sources --nmn-dir /tmp/calibrated-memory-nmn --download --check
 python scripts/check_repository.py
 ```
 
-The last analysis command downloads only five pinned files, about 2 MB, to an
+The NMN command downloads five pinned files, about 2 MB, to an
 external directory; [sources.json](sources.json) contains URLs, byte sizes,
 SHA-256 hashes and licensing. `--check` compares the regenerated outputs
 byte-for-byte. Reusing an existing full NMN clone is also supported. Raw data,
 source notebooks, paper PDFs, and other archives are not committed. A dedicated
-workflow performs source retrieval; ordinary PR checks use synthetic data.
+workflow performs source retrieval; ordinary PR checks use source-free tests and saved summaries.
 
 Outputs: [measured conditional audit](results/nmn-audit.json) and
 [synthetic certificate and controls](results/synthetic-certificate.json).
+The follow-up [acquisition source manifest](acquisition-sources.json) pins
+41 additional files (11,959,092 bytes) for the
+[measured schema/matching output](results/acquisition-audit.json). HDF5 is read
+as arrays, NumPy archives with `allow_pickle=False`, and only a strict primitive
+float-list pickle grammar is decoded. Other pickles receive opcode inspection
+only. Source code/notebooks are never imported or executed.
+
 No author contact, new acquisition or merge was performed. The empirical
 mission remains open: identify and validate a matched acquisition with
 intervention calibration, then test the full declared error model.

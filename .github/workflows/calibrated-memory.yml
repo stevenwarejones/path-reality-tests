@@ -14,7 +14,7 @@ permissions:
 jobs:
   reproduce:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
@@ -30,5 +30,7 @@ jobs:
         run: python studies/calibrated-quantum-memory/certificate.py --check
       - name: Retrieve and verify pinned NMN counts
         run: python studies/calibrated-quantum-memory/audit.py --source-dir "$RUNNER_TEMP/nmn" --download --check
+      - name: Reconstruct measured calibration and acquisition schemas
+        run: python studies/calibrated-quantum-memory/acquisition_audit.py --source-root "$RUNNER_TEMP/acquisitions" --nmn-dir "$RUNNER_TEMP/nmn" --download --check
       - name: Confirm tracked files remain unchanged
         run: git diff --exit-code

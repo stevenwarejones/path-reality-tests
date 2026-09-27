@@ -63,31 +63,30 @@ NMN, whose operations differ and whose calibration is missing.
 ## Alternative acquisitions checked before narrowing
 
 1. **44hsiang/quantum_memory_data**, commit
-   `25459810b88553dc5bc8641956e9a72e175008af`: downloaded the archive and inspected
-   the README, figure scripts, simulation code and representative `node.json`
-   acquisition records. The 152 ns family contains 245 node records (QPT,
-   ellipsoid and interaction-control acquisitions). For example node 6099
-   specifies q0, 10,000 runs, a 102 ns interaction and a 2026-02-21 timestamp.
-   The GST/ellipsoid family has 189 node records; iSWAP T1/T2 has two dated
-   2026-03-02. These are not automatically contemporaneous causal-break
-   calibrations. The [APS 2026 abstract](https://meetings-archive.aps.org/smt/2026/mar-g07/14/)
-   by Shih-Hsiang Chao et al. matches the geometric/storage objective, but the
-   README supplies no paper DOI; an exact journal-publication association was
-   not established. Do not assert that the conference abstract proves that
-   linkage. Inspected protocols concern terminal channel characterization;
-   no matched intermediate instrument calibration was verified. No HDF5 count
-   inference or environmental-memory conclusion is made. No explicit repository
-   license was found in the inspected top-level files; source data stay external.
+   `25459810b88553dc5bc8641956e9a72e175008af`: follow-up now reconstructs
+   measured q0/q2 IQ calibration node 6047 and q0 terminal QPT nodes 6048/6099,
+   including HDF5 counts, raw Bloch vectors, parent IDs, timestamps and stored
+   readout-operation equality. This is a real adjacent readout/QPT match;
+   it does not characterize a middle instrument. Scheduling fields differ,
+   classifier validation is unverified, and no numerical transfer bound is
+   supplied. See the [exact paths and source-matching table](acquisition-semantics.md).
+   Derived GST/QPT/ellipsoid estimates and simulations are not independent
+   measured sources. The [APS 2026 abstract](https://meetings-archive.aps.org/smt/2026/mar-g07/14/)
+   matches the storage/geometric objective; an exact journal-publication
+   association remains unverified. Source files stay external; no explicit
+   repository license was inferred.
 2. **White et al., PRX 15, 021047 (2025)** and its linked
    [public code](https://github.com/gwhitequantum/process-tensor-network-tomography/tree/e3f01b011f28c1497f7ebb3dc4f98a782a75095f):
-   downloaded and inventoried the archive, read the paper's self-consistency,
-   gauge and spillage treatment, and inspected file structure. It includes
-   fitted process tensors, validation statistics, circuit job files, RB and
-   decoupling families. These are promising for a dedicated adaptation, but
-   no independent matched reset-calibration dataset was verified here. This
-   source is **not exhausted**; a complete job-schema and instrument analysis
-   remains open. Existing self-consistent fits do not supply a global composite
-   classical-memory exclusion. Pickles were not executed.
+   follow-up safely decodes all 20 SU4 training/validation float lists and
+   inventories representative DD/optimizer pickle opcodes. The lists contain
+   terminal probabilities, not original counts, setting/outcome keys or
+   matched intermediate instrument tomography. Two training lists have 11999
+   entries; supplied preprocessing can omit absent outcomes, so reshaping and
+   zero imputation without keys are unjustified. DD object files were not
+   executed or fully decoded, and this is not an exhaustive archive search.
+   Exact paths, versions and limitations appear in the
+   [focused schema audit](acquisition-semantics.md). Existing self-consistent
+   fits do not supply the desired global classical-memory exclusion.
 3. **Aloy et al., Nature Communications 17, 2474 (2026)**:
    [primary paper](https://www.nature.com/articles/s41467-026-69030-x) describes
    terminal prepare-and-measure delay tables and readout calibration (2,000
@@ -98,6 +97,13 @@ NMN, whose operations differ and whose calibration is missing.
    file in that archive. It is an independent comparison, not borrowed calibration.
 
 ## What would reopen the empirical gate?
+
+The [exact acquisition specification](missing-acquisition.md) now freezes a
+q0 cut, 18 flagged calibration tables and 18 full dynamics tables per matched
+block/delay pair, with all outcomes, SPAM anchors and transfer controls.
+The [flagged null](flagged-instrument.md) incorporates every available record
+and feed-forward. Neither has been empirically certified from this subset.
+
 
 For NMN: original physical-circuit records or documented invertible regrouping;
 timestamps/interleaving to investigate the UQ past-marginal variation; matched

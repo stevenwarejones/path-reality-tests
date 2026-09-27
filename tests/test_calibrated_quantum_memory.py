@@ -2,6 +2,7 @@
 import importlib.util
 import itertools
 import json
+import pickle
 from pathlib import Path
 import tempfile
 import unittest
@@ -20,6 +21,7 @@ def load(name):
 
 A = load('audit')
 C = load('certificate')
+S = load('acquisition_audit')
 
 
 class CountAuditTests(unittest.TestCase):
@@ -135,6 +137,58 @@ class MemoryCertificateTests(unittest.TestCase):
         uq=[r for r in data['runs'] if r['source']=='NMN_lab_rslts.json'][0]
         self.assertAlmostEqual(uq['strongest_past_marginal_contrast']['epsilon_lower'],
                                .057844137838283474)
+
+
+
+
+class AcquisitionSemanticsTests(unittest.TestCase):
+    def test_safe_primitive_decoder_and_forbidden_object(self):
+        values = [0., .25, .75, 1.]*600
+        self.assertEqual(S.primitive_float_list(pickle.dumps(values, protocol=4)), values)
+        for raw in [pickle.dumps(np.array(values), protocol=4),
+                    pickle.dumps({'probabilities': values}, protocol=4),
+                    pickle.dumps([[.5,.5]], protocol=4),
+                    pickle.dumps([.5,.5], protocol=4)+b'junk',
+                    pickle.dumps([float('nan'),.5], protocol=4)]:
+            with self.assertRaises(ValueError): S.primitive_float_list(raw)
+
+    def test_mapping_denominators_do_not_resolve_branch_labels(self):
+        rows = {k:dict(zip(A.OUTCOMES,[17+i%4,13-i%4,7,3]))
+                for i,k in enumerate(sorted(A.LABELS))}
+        archived = A.regroup(rows)
+        a = S.alternative_regroup(archived,0,'1')
+        b = S.alternative_regroup(archived,0,'0')
+        self.assertEqual(a, rows)
+        self.assertEqual({sum(v.values()) for v in a.values()}, {40})
+        self.assertEqual({sum(v.values()) for v in b.values()}, {40})
+        for k in a:
+            parts=k.split(',');parts[2]=A.opposite(parts[2])
+            self.assertEqual(b[k],a[','.join(parts)])
+
+    def test_outcome_axis_cannot_be_silently_swapped(self):
+        labels = {'qubit':['q0'],'initial_state':['0','1','+','i+'],'axis':['x','y','z']}
+        states = np.zeros((1,5,4,3),dtype=int)
+        self.assertEqual(S.qpt_counts(states,labels,5), [[0,0,0]]*4)
+        for bad in [dict(labels,axis=['z','y','x']),dict(labels,qubit=['q2'])]:
+            with self.assertRaises(ValueError): S.qpt_counts(states,bad,5)
+        with self.assertRaises(ValueError): S.qpt_counts(states[:,:4],labels,5)
+        states[0,0,0,0]=2
+        with self.assertRaises(ValueError): S.qpt_counts(states,labels,5)
+
+    def test_calibration_transfer_fails_on_changed_operation(self):
+        cal={'threshold':.001,'length':2000,'integration_weights_angle':.1}
+        S.assert_readout_match(cal,dict(cal))
+        for key,value in [('threshold',.002),('length',1999),('integration_weights_angle',.2)]:
+            with self.assertRaises(ValueError): S.assert_readout_match(cal,dict(cal,**{key:value}))
+
+    def test_measured_snapshot_does_not_promote_readout_to_instrument(self):
+        result=json.loads((STUDY/'results/acquisition-audit.json').read_text())
+        self.assertFalse(result['quantum_memory_certified'])
+        qm=result['quantum_memory_data']
+        self.assertFalse(qm['finite_data_instrument_region_built'])
+        self.assertEqual(qm['readout_calibration'][0]['counts'],[[4005,995],[744,4256]])
+        self.assertEqual(qm['terminal_dynamics'][0]['parents'],[6047])
+        self.assertTrue(all(not row['intermediate_flag_axis_present'] for row in qm['terminal_dynamics']))
 
 
 if __name__ == '__main__':
