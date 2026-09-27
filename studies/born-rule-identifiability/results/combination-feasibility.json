@@ -1,0 +1,156 @@
+{
+  "photon_gauge_control": {
+    "claim": "For any row-stochastic P,T,R_d, (P T)R_d=P(T R_d). Separate detectors do not break this gauge; T is an ordinary preparation/response change, not a genuine new probability theory.",
+    "evidence_type": "exact_algebra_numerically_checked_synthetic",
+    "joint_max_error": 1.11022302463e-16,
+    "remove_detector_1_still_ambiguous": true,
+    "remove_detector_2_still_ambiguous": true,
+    "separate_max_errors": [
+      1.11022302463e-16,
+      1.38777878078e-17
+    ]
+  },
+  "qubit_equivalence": [
+    {
+      "added_complementary_preparations_radius": 0.950625,
+      "depth1_only_identifiable": false,
+      "depth5_only_identifiable": false,
+      "depth_residuals": {
+        "1": 1.11022302463e-16,
+        "2": 0.0,
+        "3": 2.22044604925e-16,
+        "5": 1.11022302463e-16,
+        "70": 0.0,
+        "9": 1.11022302463e-16
+      },
+      "joint_depths_identifiable_with_common_warp": false,
+      "max_exact_family_residual": 2.22044604925e-16,
+      "maximum_axis_warp_rad": 0.0246975419245,
+      "quadrature_squared_radius": 0.950625,
+      "theta": -0.1
+    },
+    {
+      "added_complementary_preparations_radius": 1.00500625,
+      "depth1_only_identifiable": false,
+      "depth5_only_identifiable": false,
+      "depth_residuals": {
+        "1": 1.11022302463e-16,
+        "2": 0.0,
+        "3": 2.22044604925e-16,
+        "5": 1.11022302463e-16,
+        "70": 0.0,
+        "9": 1.11022302463e-16
+      },
+      "joint_depths_identifiable_with_common_warp": false,
+      "max_exact_family_residual": 2.22044604925e-16,
+      "maximum_axis_warp_rad": 0.0025031354559,
+      "quadrature_squared_radius": 1.00500625,
+      "theta": 0.01
+    },
+    {
+      "added_complementary_preparations_radius": 1.050625,
+      "depth1_only_identifiable": false,
+      "depth5_only_identifiable": false,
+      "depth_residuals": {
+        "1": 1.11022302463e-16,
+        "2": 0.0,
+        "3": 2.22044604925e-16,
+        "5": 1.11022302463e-16,
+        "70": 0.0,
+        "9": 1.11022302463e-16
+      },
+      "joint_depths_identifiable_with_common_warp": false,
+      "max_exact_family_residual": 2.22044604925e-16,
+      "maximum_axis_warp_rad": 0.0253233246836,
+      "quadrature_squared_radius": 1.050625,
+      "theta": 0.1
+    }
+  ],
+  "qubit_prospective": {
+    "alpha": 0.01,
+    "evidence_type": "simulation_and_exact_observation_map",
+    "removal": {
+      "remove_complementary_preparation": "exact indistinguishability for all integer depths",
+      "remove_orthogonality_certificate": "no unit-radius witness; enlarged radius tested"
+    },
+    "replications": 1000,
+    "rows": [
+      {
+        "mc_95_interval": [
+          0.0,
+          0.00368208389687
+        ],
+        "rejected": 0,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "ordinary",
+        "true_squared_radius": 1.0,
+        "visibility": 1.0
+      },
+      {
+        "mc_95_interval": [
+          0.996317916103,
+          1.0
+        ],
+        "rejected": 1000,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "probability_deformation",
+        "true_squared_radius": 1.00500625,
+        "visibility": 1.0
+      },
+      {
+        "mc_95_interval": [
+          0.0,
+          0.00368208389687
+        ],
+        "rejected": 0,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "ordinary_common_axis_warp",
+        "true_squared_radius": 1.0,
+        "visibility": 1.0
+      },
+      {
+        "mc_95_interval": [
+          0.0,
+          0.00368208389687
+        ],
+        "rejected": 0,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "deformation_99_percent_contrast",
+        "true_squared_radius": 0.985006625625,
+        "visibility": 0.99
+      },
+      {
+        "mc_95_interval": [
+          0.0,
+          0.00368208389687
+        ],
+        "rejected": 0,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "deformation_hardware_reference_contrast",
+        "true_squared_radius": 0.8553141288,
+        "visibility": 0.922525632167
+      },
+      {
+        "mc_95_interval": [
+          0.0,
+          0.00368208389687
+        ],
+        "rejected": 0,
+        "relaxed_calibration_rejected": 0,
+        "replications": 1000,
+        "scenario": "negative_deformation",
+        "true_squared_radius": 0.99500625,
+        "visibility": 1.0
+      }
+    ],
+    "scope": "known pure antipodal orthogonal preparations, common quantum channel/POVM, stable readout, independent binomial trials",
+    "seed": 7538941,
+    "shots_per_preparation": 17400000,
+    "source_of_shot_scale": "median pooled per-angle hardware count for depth 1; not an executed quadrature experiment"
+  }
+}

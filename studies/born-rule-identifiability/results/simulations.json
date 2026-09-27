@@ -1,0 +1,161 @@
+{
+  "decision": "two-sided alpha=.01 normal threshold plus analytic synthetic calibration envelope",
+  "evidence_type": "simulation",
+  "noise": "known Gaussian sample means with common block power/phase drift",
+  "rows": [
+    {
+      "binomial_95_interval": [
+        0.00757766330098,
+        0.0141667091236
+      ],
+      "injected_intensity_V": 0.0,
+      "readings_per_setting": 200,
+      "rejected": 42,
+      "replications": 4000,
+      "scenario": "ordinary_phase",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0
+    },
+    {
+      "binomial_95_interval": [
+        0.00694213145508,
+        0.0133046952046
+      ],
+      "injected_intensity_V": 0.0,
+      "readings_per_setting": 200,
+      "rejected": 39,
+      "replications": 4000,
+      "scenario": "ordinary_large_phase",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0
+    },
+    {
+      "binomial_95_interval": [
+        0.989017385798,
+        0.994728352204
+      ],
+      "injected_intensity_V": 0.002,
+      "readings_per_setting": 200,
+      "rejected": 3969,
+      "replications": 4000,
+      "scenario": "injected_intensity",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0
+    },
+    {
+      "binomial_95_interval": [
+        0.0219728745729,
+        0.032234114651
+      ],
+      "injected_intensity_V": 0.0,
+      "readings_per_setting": 200,
+      "rejected": 107,
+      "replications": 4000,
+      "scenario": "leakage_nonlinearity_unprotected",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.000921794749606
+      ],
+      "injected_intensity_V": 0.0,
+      "readings_per_setting": 200,
+      "rejected": 0,
+      "replications": 4000,
+      "scenario": "leakage_nonlinearity_protected",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0300788216874
+    },
+    {
+      "binomial_95_interval": [
+        0.0,
+        0.000921794749606
+      ],
+      "injected_intensity_V": 0.002,
+      "readings_per_setting": 200,
+      "rejected": 0,
+      "replications": 4000,
+      "scenario": "injected_with_conservative_envelope",
+      "setting_sd_V": [
+        0.003,
+        0.003,
+        0.003,
+        0.003,
+        0.003
+      ],
+      "systematic_bound_V": 0.0300788216874
+    },
+    {
+      "binomial_95_interval": [
+        0.357737839339,
+        0.387948273448
+      ],
+      "injected_intensity_V": 0.00142108385152,
+      "readings_per_setting": 328,
+      "rejected": 1491,
+      "replications": 4000,
+      "scenario": "archive_scale_23_injection",
+      "setting_sd_V": [
+        0.0130298157313,
+        0.0130298157313,
+        0.00145615675787,
+        0.00677238269083,
+        1.23119558125e-05
+      ],
+      "systematic_bound_V": 0.0
+    },
+    {
+      "binomial_95_interval": [
+        0.0457923030666,
+        0.0598704385235
+      ],
+      "injected_intensity_V": 0.000793578937168,
+      "readings_per_setting": 433,
+      "rejected": 210,
+      "replications": 4000,
+      "scenario": "archive_scale_30_injection",
+      "setting_sd_V": [
+        0.0198117271887,
+        0.0198117271887,
+        0.000689730307019,
+        0.0100876659638,
+        0.000900712870855
+      ],
+      "systematic_bound_V": 0.0
+    }
+  ],
+  "scope": "Archive-scale scenarios use measured cycle SDs, retained cycle counts and absolute I3 as injection scale, assuming independent setting noise and equal all-open SD at the unmeasured antipode. Not validated temporal coverage or achieved sensitivity.",
+  "seed": 260926
+}

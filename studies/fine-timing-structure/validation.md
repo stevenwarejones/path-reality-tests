@@ -28,7 +28,8 @@ choices; they do not retroactively label this analysis preregistered.
 
 ## Independent tests
 
-All 186 repository tests pass locally, including 15 new fine-timing tests.
+All 248 repository tests pass locally after merging main, including 16 new
+fine-timing tests.
 Analysis, recovery and four SVG figures regenerate exactly; tracked data/link
 and whitespace checks pass.
 
@@ -51,6 +52,23 @@ settings with outcome memory, persistent assignments, intentional misalignment,
 and outcome-dependent missingness distinguish statistical assumptions from
 implementation correctness. Monte Carlo is a power/implementation diagnostic,
 not a substitute for the coverage proof.
+
+## CPU-independent serialization
+
+The first full-source CI run verified both raw extractions and their exact
+coarse reproduction, then failed byte-for-byte measured JSON regeneration.
+NumPy SIMD dispatch changed the final bits of scalar `expm1` denominators
+across CPU configurations. Count inversion now uses scalar `math.expm1`,
+consistent with the earlier studies. The regression compares serialized CDF
+and partition bounds in fresh processes with default dispatch and with
+AVX512F, AVX2 and FMA3 disabled. Full measured outputs and recovery also
+reproduce exactly under the disabled-feature configuration.
+
+Regeneration changes 1,292 measured floating-point entries by at most
+1.70e-21 and one recovery floating-point entry by 2.72e-20. Every integer
+(including every detection count), report and figure remains unchanged.
+This fixes reproducibility; it does not change the statistical procedure
+or any scientific conclusion.
 
 ## Automated gates
 

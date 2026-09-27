@@ -1,6 +1,8 @@
 """Independent row, decoder, probability and additive-tree oracles."""
 import importlib.util
 import io
+import os
+import subprocess
 import itertools
 import json
 from math import exp,expm1,log
@@ -203,6 +205,20 @@ class FineInferenceTests(unittest.TestCase):
         self.assertLess(a['k_grid'][1],.001)
         self.assertGreaterEqual(a['k_full'][1],.001)
         self.assertEqual(a['k_grid'][0],0)
+
+    def test_cpu_dispatch_does_not_change_serialized_bounds(self):
+        # Reproduces the differing local/full-source runners without tolerating drift.
+        code="""import json, numpy as np
+from inference import cdf, partitions
+c=np.zeros((2,486),dtype='i8'); c[0,252]=400; c[1,253]=521
+u=np.array([17,23]); n=107109468
+r=[cdf(c,u,n)['band'].tolist(),partitions(c,u,n,'alice')['tv'].tolist()]
+print(json.dumps(r,sort_keys=True))
+"""
+        base=os.environ.copy(); base.pop('NPY_DISABLE_CPU_FEATURES',None)
+        disabled=dict(base,NPY_DISABLE_CPU_FEATURES='AVX512F,AVX2,FMA3')
+        outputs=[subprocess.check_output([sys.executable,'-c',code],cwd=HERE,env=e) for e in (base,disabled)]
+        self.assertEqual(*outputs)
 
     def test_invalid_shapes_and_assumptions(self):
         with self.assertRaises(ValueError): inference.count_bounds(2,1,10,10)

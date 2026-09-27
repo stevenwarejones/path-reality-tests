@@ -1,0 +1,42 @@
+{
+  "doi": "10.5281/zenodo.5497283",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "authors": [
+    "Sebastian Gstir",
+    "Edmond Chan",
+    "Toni Eichelkraut",
+    "Alexander Szameit",
+    "Robert Keil",
+    "Gregor Weihs"
+  ],
+  "files": [
+    {
+      "name": "23degrees measurement.h5",
+      "bytes": 7559592,
+      "sha256": "d45d525407eb64668cdecbf085a93bd7da31d8c48690ea7bcaaa98e0c0402a6a",
+      "archive_md5": "md5:9e3e411dd70fef2e8f249bfbf89b23c9",
+      "url": "https://zenodo.org/api/records/5497283/files/23degrees%20measurement.h5/content",
+      "role": "primary",
+      "samples_per_setting": 40
+    },
+    {
+      "name": "30degrees measurement.h5",
+      "bytes": 10145888,
+      "sha256": "e78c032673c3aabca6eff54c6f26a6b41f1f50f9e3fb7e9200e20ead291d53af",
+      "archive_md5": "md5:fa0dea18c1d9446a1c2a95bfc4c91a1b",
+      "url": "https://zenodo.org/api/records/5497283/files/30degrees%20measurement.h5/content",
+      "role": "primary",
+      "samples_per_setting": 50
+    },
+    {
+      "name": "interference contrast_21to35.h5",
+      "bytes": 124288,
+      "sha256": "061a73d69cfe0feb55c4a4c4d2e8bf61cd5252aec9555a543751f3cd1eb5e20b",
+      "archive_md5": "md5:2146cb4e3f96116e3b9d3debcbc874ef",
+      "url": "https://zenodo.org/api/records/5497283/files/interference%20contrast_21to35.h5/content",
+      "role": "contrast",
+      "samples_per_setting": 5
+    }
+  ]
+}

@@ -32,9 +32,11 @@ jobs:
             studies/path-compatibility/requirements.txt
             studies/spacetime-causal-influence/requirements.txt
             studies/nist-bell-causal-audit/requirements.txt
+            studies/born-rule-identifiability/requirements.txt
+            studies/collapse-compatibility/requirements.txt
             studies/synthetic-timing-shifts/requirements.txt
       - name: Install pinned study dependencies
-        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt
+        run: python -m pip install -r studies/wen-2026-propagator/requirements.txt -r studies/phase-intervention-design/requirements.txt -r studies/path-contextuality/requirements.txt -r studies/path-compatibility/requirements.txt -r studies/spacetime-causal-influence/requirements.txt -r studies/nist-bell-causal-audit/requirements.txt -r studies/born-rule-identifiability/requirements.txt -r studies/collapse-compatibility/requirements.txt -r studies/synthetic-timing-shifts/requirements.txt
       - name: Check tracked files and documentation links
         run: python scripts/check_repository.py
       - name: Test integrity failures, extraction and numerical counterexamples
@@ -60,6 +62,10 @@ jobs:
         run: |
           python studies/path-compatibility/analyze.py --check
           python studies/path-compatibility/plot.py --output-dir "$RUNNER_TEMP/review-artifacts/path-compatibility"
+      - name: Check collapse compatibility, spectral escape and report offline
+        run: |
+          python studies/collapse-compatibility/analyze.py --check
+          python studies/collapse-compatibility/moving_analysis.py --check
       - name: Reproduce synthetic timing-shift sensitivity and null controls
         run: python studies/synthetic-timing-shifts/design.py --check
       - name: Reproduce conditional actual-setting timing bounds
@@ -86,6 +92,12 @@ jobs:
           python studies/continuum-finite-models/design.py --check
           python studies/continuum-finite-models/joint_design.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
+        run: |
+          python studies/born-rule-identifiability/analyze.py --check
+          python studies/born-rule-identifiability/combinations.py --check
+          python studies/born-rule-identifiability/joint_tables.py --check
+          git diff --exit-code
+      - name: Confirm original inputs remain unchanged
         run: |
           python studies/wen-2026-propagator/fetch_data.py --verify-only
           git diff --exit-code

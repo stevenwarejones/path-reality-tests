@@ -1,0 +1,664 @@
+{
+  "contrast_inventory": {
+    "cycle_permutations_valid": true,
+    "cycles": 100,
+    "datasets": {
+      "PD signal": {
+        "attributes": {
+          "device": "Physimetron A139-001 @Agilent 34410A",
+          "unit": "volt"
+        },
+        "dtype": "float64",
+        "nonfinite": 0,
+        "shape": [
+          400,
+          5,
+          1
+        ]
+      },
+      "shuttercombination": {
+        "attributes": {},
+        "dtype": "float64",
+        "nonfinite": 0,
+        "shape": [
+          400,
+          1,
+          1
+        ]
+      },
+      "temperature-housing": {
+        "attributes": {
+          "device": "NTC 10kOhm (TDK B57703M103G) @Keithley 2010",
+          "unit": "volt"
+        },
+        "dtype": "float64",
+        "nonfinite": 0,
+        "shape": [
+          100,
+          1,
+          1
+        ]
+      },
+      "time": {
+        "attributes": {
+          "unit": "[YYYY, MM, DD, hh, mm, ss.ss]"
+        },
+        "dtype": "float64",
+        "nonfinite": 0,
+        "shape": [
+          400,
+          5,
+          6
+        ]
+      }
+    },
+    "distinct_acquisition_orders": 24,
+    "elapsed_hours": 0.645948333333,
+    "samples_per_setting": 5,
+    "shutter_codes": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "timestamps_strictly_increasing": true
+  },
+  "datasets": {
+    "23": {
+      "F_epsilon_denominator_slopes_per_cycle": [
+        1.49691120392e-07,
+        5.17565998068e-07,
+        -0.000214855057131
+      ],
+      "cycle_covariance_V2": [
+        [
+          1.5158425593e-10,
+          1.20511673457e-08,
+          1.28517430751e-08,
+          -5.17905671611e-08,
+          1.64302794077e-08,
+          4.31052500968e-08,
+          -5.22332769621e-08,
+          -1.0303638602e-07
+        ],
+        [
+          1.20511673457e-08,
+          2.12039250348e-06,
+          2.85572321104e-06,
+          -8.32764034375e-06,
+          2.43339995519e-06,
+          7.37247420007e-06,
+          -8.85596963353e-06,
+          -1.71898074298e-05
+        ],
+        [
+          1.28517430751e-08,
+          2.85572321104e-06,
+          4.68131059394e-06,
+          -1.12065966682e-05,
+          3.32868506658e-06,
+          1.05538161797e-05,
+          -1.21794524511e-05,
+          -2.35349215448e-05
+        ],
+        [
+          -5.17905671611e-08,
+          -8.32764034375e-06,
+          -1.12065966682e-05,
+          4.01510031821e-05,
+          -1.04257770127e-05,
+          -3.05724569447e-05,
+          4.23646069595e-05,
+          8.19584132734e-05
+        ],
+        [
+          1.64302794077e-08,
+          2.43339995519e-06,
+          3.32868506658e-06,
+          -1.04257770127e-05,
+          3.30081819884e-06,
+          9.07286372628e-06,
+          -1.09837630388e-05,
+          -2.13231088989e-05
+        ],
+        [
+          4.31052500968e-08,
+          7.37247420007e-06,
+          1.05538161797e-05,
+          -3.05724569447e-05,
+          9.07286372628e-06,
+          2.81340527e-05,
+          -3.24876324312e-05,
+          -6.29689173653e-05
+        ],
+        [
+          -5.22332769621e-08,
+          -8.85596963353e-06,
+          -1.21794524511e-05,
+          4.23646069595e-05,
+          -1.09837630388e-05,
+          -3.24876324312e-05,
+          4.5865167311e-05,
+          8.76823121046e-05
+        ],
+        [
+          -1.0303638602e-07,
+          -1.71898074298e-05,
+          -2.35349215448e-05,
+          8.19584132734e-05,
+          -2.13231088989e-05,
+          -6.29689173653e-05,
+          8.76823121046e-05,
+          0.000169776097992
+        ]
+      ],
+      "epsilon_V": -0.00142108385152,
+      "excluded_one_based_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        121,
+        156,
+        204,
+        222,
+        226,
+        227,
+        252,
+        333,
+        335,
+        341,
+        366,
+        376
+      ],
+      "exclusion_sensitivity": {
+        "no_exclusions": {
+          "F": 0.960387781057,
+          "cycles": 420,
+          "kappa": -0.00130540931953
+        },
+        "zero_based_exclusions": {
+          "F": 0.956156057366,
+          "cycles": 328,
+          "kappa": -0.00188673952808
+        }
+      },
+      "hac_sensitivity": {
+        "0": {
+          "F_se": 0.000226108238144,
+          "epsilon_se_V": 8.54688150004e-05,
+          "kappa_delta_se": 8.43076886982e-05
+        },
+        "10": {
+          "F_se": 0.000373626141787,
+          "epsilon_se_V": 8.28255973819e-05,
+          "kappa_delta_se": 8.16028749258e-05
+        },
+        "20": {
+          "F_se": 0.000461106048666,
+          "epsilon_se_V": 7.27353710405e-05,
+          "kappa_delta_se": 7.14110032964e-05
+        },
+        "40": {
+          "F_se": 0.000573547696159,
+          "epsilon_se_V": 6.14838936956e-05,
+          "kappa_delta_se": 5.9516999341e-05
+        },
+        "5": {
+          "F_se": 0.000312367316681,
+          "epsilon_se_V": 8.79604609392e-05,
+          "kappa_delta_se": 8.67219636197e-05
+        }
+      },
+      "inventory": {
+        "cycle_permutations_valid": true,
+        "cycles": 420,
+        "datasets": {
+          "PD signal": {
+            "attributes": {
+              "device": "Physimetron A139-001 @Agilent 34410A",
+              "unit": "volt"
+            },
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3360,
+              40,
+              1
+            ]
+          },
+          "shuttercombination": {
+            "attributes": {},
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3360,
+              1,
+              1
+            ]
+          },
+          "time": {
+            "attributes": {
+              "unit": "[YYYY, MM, DD, hh, mm, ss.ss]"
+            },
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3360,
+              40,
+              6
+            ]
+          }
+        },
+        "distinct_acquisition_orders": 419,
+        "elapsed_hours": 11.7805069444,
+        "samples_per_setting": 40,
+        "shutter_codes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "timestamps_strictly_increasing": true
+      },
+      "kappa_ratio_of_means": -0.00140221277074,
+      "mean_F": 0.955394779779,
+      "mean_correlations_AB_AC_BC": [
+        -0.664044684455,
+        0.940560867104,
+        -0.764948247535
+      ],
+      "mean_cycle_kappa_not_paper_definition": -0.00140201914519,
+      "mean_voltage_by_mask": [
+        8.02907407701e-05,
+        0.176047312993,
+        0.359662417878,
+        0.201509521482,
+        0.158533505353,
+        0.648599949661,
+        0.152876900946,
+        0.307402342755
+      ],
+      "published_summary": {
+        "F": 0.9553,
+        "F_se": 0.0004,
+        "epsilon_nW": -2.58,
+        "evidence_type": "published_summary",
+        "kappa": -0.0014
+      },
+      "retained_cycles": 328,
+      "status": "Kappa agrees at reported precision; small F discrepancy unresolved; voltage gain absent",
+      "temperature_status": "absent_in_file"
+    },
+    "30": {
+      "F_epsilon_denominator_slopes_per_cycle": [
+        -1.53834137997e-05,
+        6.22864909712e-06,
+        -0.000107872051839
+      ],
+      "cycle_covariance_V2": [
+        [
+          8.11283675724e-07,
+          2.62972566479e-08,
+          -1.20874033726e-06,
+          -4.92637745392e-06,
+          -3.06145465937e-07,
+          -2.48704813782e-06,
+          -5.46851650313e-06,
+          -1.11206728207e-05
+        ],
+        [
+          2.62972566479e-08,
+          4.7572789642e-07,
+          3.67629538825e-07,
+          8.11056357085e-07,
+          3.55061812308e-07,
+          1.24102309951e-06,
+          5.56985817986e-07,
+          1.66524269745e-06
+        ],
+        [
+          -1.20874033726e-06,
+          3.67629538825e-07,
+          2.90956649252e-06,
+          1.13677547784e-05,
+          9.14254282932e-07,
+          5.38517529109e-06,
+          1.25117440887e-05,
+          2.52485022594e-05
+        ],
+        [
+          -4.92637745392e-06,
+          8.11056357085e-07,
+          1.13677547784e-05,
+          8.33101011368e-05,
+          1.98626797543e-06,
+          1.7925109688e-05,
+          9.00194083802e-05,
+          0.000178619553374
+        ],
+        [
+          -3.06145465937e-07,
+          3.55061812308e-07,
+          9.14254282932e-07,
+          1.98626797543e-06,
+          7.35250114939e-07,
+          2.40353455689e-06,
+          2.075330869e-06,
+          4.56804154069e-06
+        ],
+        [
+          -2.48704813782e-06,
+          1.24102309951e-06,
+          5.38517529109e-06,
+          1.7925109688e-05,
+          2.40353455689e-06,
+          1.37710898117e-05,
+          1.92441347011e-05,
+          4.05535498698e-05
+        ],
+        [
+          -5.46851650313e-06,
+          5.56985817986e-07,
+          1.25117440887e-05,
+          9.00194083802e-05,
+          2.075330869e-06,
+          1.92441347011e-05,
+          0.000101761004597,
+          0.000197665395239
+        ],
+        [
+          -1.11206728207e-05,
+          1.66524269745e-06,
+          2.52485022594e-05,
+          0.000178619553374,
+          4.56804154069e-06,
+          4.05535498698e-05,
+          0.000197665395239,
+          0.0003925045342
+        ]
+      ],
+      "epsilon_V": 0.000793578937168,
+      "excluded_one_based_ids": [
+        40,
+        47,
+        51,
+        67,
+        149,
+        186,
+        271,
+        272,
+        301,
+        335,
+        371,
+        393,
+        410,
+        424,
+        439,
+        444,
+        446
+      ],
+      "exclusion_sensitivity": {
+        "no_exclusions": {
+          "F": 0.979142629554,
+          "cycles": 450,
+          "kappa": 0.000487435986518
+        },
+        "zero_based_exclusions": {
+          "F": 0.978647053386,
+          "cycles": 433,
+          "kappa": 0.000533259467219
+        }
+      },
+      "hac_sensitivity": {
+        "0": {
+          "F_se": 0.000390460747469,
+          "epsilon_se_V": 0.000117648472729,
+          "kappa_delta_se": 0.000167420871288
+        },
+        "10": {
+          "F_se": 0.000621199392211,
+          "epsilon_se_V": 0.000161730671537,
+          "kappa_delta_se": 0.000232178518476
+        },
+        "20": {
+          "F_se": 0.00078757078521,
+          "epsilon_se_V": 0.000192517478483,
+          "kappa_delta_se": 0.000277317242765
+        },
+        "40": {
+          "F_se": 0.00101161396924,
+          "epsilon_se_V": 0.000238848949598,
+          "kappa_delta_se": 0.000345135618763
+        },
+        "5": {
+          "F_se": 0.000506656058596,
+          "epsilon_se_V": 0.000141077898074,
+          "kappa_delta_se": 0.000201949729775
+        }
+      },
+      "inventory": {
+        "cycle_permutations_valid": true,
+        "cycles": 450,
+        "datasets": {
+          "PD signal": {
+            "attributes": {
+              "device": "Physimetron A139-001 @Agilent 34410A",
+              "unit": "volt"
+            },
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3600,
+              50,
+              1
+            ]
+          },
+          "shuttercombination": {
+            "attributes": {},
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3600,
+              1,
+              1
+            ]
+          },
+          "temperature-housing": {
+            "attributes": {
+              "device": "NTC 10kOhm (TDK B57703M103G) @Keithley 2010",
+              "set_value": "30\u00b0C",
+              "unit": "volt"
+            },
+            "dtype": "float64",
+            "nonfinite": 1,
+            "shape": [
+              3600,
+              1,
+              1
+            ]
+          },
+          "time": {
+            "attributes": {
+              "unit": "[YYYY, MM, DD, hh, mm, ss.ss]"
+            },
+            "dtype": "float64",
+            "nonfinite": 0,
+            "shape": [
+              3600,
+              50,
+              6
+            ]
+          }
+        },
+        "distinct_acquisition_orders": 447,
+        "elapsed_hours": 13.7014972222,
+        "samples_per_setting": 50,
+        "shutter_codes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "timestamps_strictly_increasing": true
+      },
+      "kappa_ratio_of_means": 0.00112731835819,
+      "mean_F": 0.968420881449,
+      "mean_correlations_AB_AC_BC": [
+        -0.355261968264,
+        0.979822697689,
+        -0.405359594695
+      ],
+      "mean_cycle_kappa_not_paper_definition": 0.00114681017979,
+      "mean_voltage_by_mask": [
+        0.000567945179599,
+        0.179651586067,
+        0.364873460181,
+        0.3625018461,
+        0.157605676516,
+        0.665312467265,
+        0.328036776454,
+        0.655081891173
+      ],
+      "published_summary": {
+        "F": 0.9683,
+        "F_se": 0.0009,
+        "epsilon_nW": 1.5,
+        "evidence_type": "published_summary",
+        "kappa": 0.0011
+      },
+      "retained_cycles": 433,
+      "status": "Kappa agrees at reported precision; small F discrepancy unresolved; voltage gain absent",
+      "temperature_status": "housing_voltage_recorded_one_missing"
+    }
+  },
+  "evidence_type": "observed",
+  "source": {
+    "authors": [
+      "Sebastian Gstir",
+      "Edmond Chan",
+      "Toni Eichelkraut",
+      "Alexander Szameit",
+      "Robert Keil",
+      "Gregor Weihs"
+    ],
+    "doi": "10.5281/zenodo.5497283",
+    "files": [
+      {
+        "archive_md5": "md5:9e3e411dd70fef2e8f249bfbf89b23c9",
+        "bytes": 7559592,
+        "name": "23degrees measurement.h5",
+        "role": "primary",
+        "samples_per_setting": 40,
+        "sha256": "d45d525407eb64668cdecbf085a93bd7da31d8c48690ea7bcaaa98e0c0402a6a",
+        "url": "https://zenodo.org/api/records/5497283/files/23degrees%20measurement.h5/content"
+      },
+      {
+        "archive_md5": "md5:fa0dea18c1d9446a1c2a95bfc4c91a1b",
+        "bytes": 10145888,
+        "name": "30degrees measurement.h5",
+        "role": "primary",
+        "samples_per_setting": 50,
+        "sha256": "e78c032673c3aabca6eff54c6f26a6b41f1f50f9e3fb7e9200e20ead291d53af",
+        "url": "https://zenodo.org/api/records/5497283/files/30degrees%20measurement.h5/content"
+      },
+      {
+        "archive_md5": "md5:2146cb4e3f96116e3b9d3debcbc874ef",
+        "bytes": 124288,
+        "name": "interference contrast_21to35.h5",
+        "role": "contrast",
+        "samples_per_setting": 5,
+        "sha256": "061a73d69cfe0feb55c4a4c4d2e8bf61cd5252aec9555a543751f3cd1eb5e20b",
+        "url": "https://zenodo.org/api/records/5497283/files/interference%20contrast_21to35.h5/content"
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "version": "1.0.0"
+  },
+  "uncertainty_claim": "Descriptive Bartlett HAC sensitivity, not coverage or physics p-values",
+  "units": "detector volts"
+}

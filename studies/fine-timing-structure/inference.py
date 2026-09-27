@@ -1,5 +1,5 @@
 """Finite-family adapted count bands and conservative nested-law enclosures."""
-from math import log
+from math import log, expm1
 import numpy as np
 from common import (LAMBDAS, ALPHA, CDF_LABELS, PARTITION_LABELS, MAPS,
                     LEVELS, CELLS, grouped)
@@ -11,9 +11,10 @@ def count_bounds(k, u, n, labels):
         raise ValueError('invalid count completion')
     b=log(2*len(LAMBDAS)*labels/ALPHA)
     lo=np.zeros(np.broadcast_shapes(k.shape,u.shape)); hi=np.full(lo.shape,float(n))
+    # Scalar libm avoids NumPy SIMD-dispatch-dependent last-bit differences.
     for v in LAMBDAS:
-        lo=np.maximum(lo,(v*k-b)/np.expm1(v))
-        hi=np.minimum(hi,(-v*u-b)/np.expm1(-v))
+        lo=np.maximum(lo,(v*k-b)/expm1(float(v)))
+        hi=np.minimum(hi,(-v*u-b)/expm1(-float(v)))
     return np.stack([lo,hi],axis=-1)
 
 
