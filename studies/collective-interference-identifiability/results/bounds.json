@@ -1,0 +1,10 @@
+{
+  "bunch_lower": 0.02364675,
+  "cluster_two_ceiling": 0.02332,
+  "confidence_familywise": 0.95,
+  "distinguishable_row_upper": 0.01166,
+  "leaf_count": 4,
+  "non_cluster_weight_lower": 0.007005789022298457,
+  "separation_margin": 0.00032675,
+  "sum_transfer_tv_budget": 0.000163375
+}

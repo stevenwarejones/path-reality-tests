@@ -1,0 +1,11 @@
+{
+  "bosonic_bunch_interval": [
+    0.025291338344632788,
+    0.025291338381470824
+  ],
+  "complete_many_body_record_feasibility_established": false,
+  "contraction_slack_lower": 0.04189043493553515,
+  "distinguishable_bunch_probability": 0.004628130881794671,
+  "joint_summary_feasible": true,
+  "singleton_calibration_exact": true
+}

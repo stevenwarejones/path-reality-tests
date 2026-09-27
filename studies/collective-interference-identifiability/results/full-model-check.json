@@ -1,0 +1,42 @@
+{
+  "boson": {
+    "alphabet_size": 497785,
+    "bunch_lower": 0.023025033926510948,
+    "bunch_probability": 0.02599743967966178,
+    "cluster_ceiling": 0.0224,
+    "full_parity_region_compatible": true,
+    "full_singleton_region_compatible": true,
+    "individually_refined_unobserved_triples": 0,
+    "kind": "boson",
+    "margin": 0.000625033926510948,
+    "non_cluster_weight_lower": 0.013951650145333661,
+    "observed_patterns": 2539,
+    "physical_principal_minors": [
+      0.04125239290446,
+      0.0016091552888328586,
+      6.600376952434501e-05
+    ],
+    "sum_transfer_tv_sufficient": 0.000312516963255474,
+    "unobserved_triple_probability_upper": 0.0016301055890566947
+  },
+  "cluster": {
+    "alphabet_size": 497785,
+    "bunch_lower": 0.023025033926510948,
+    "bunch_probability": 0.028975277811590542,
+    "cluster_ceiling": 0.0224,
+    "full_parity_region_compatible": true,
+    "full_singleton_region_compatible": false,
+    "individually_refined_unobserved_triples": 0,
+    "kind": "cluster",
+    "margin": 0.000625033926510948,
+    "non_cluster_weight_lower": 0.013951650145333661,
+    "observed_patterns": 2539,
+    "physical_principal_minors": [
+      0.04000007156074,
+      0.0014726855811625196,
+      4.88849645387714e-05
+    ],
+    "sum_transfer_tv_sufficient": 0.000312516963255474,
+    "unobserved_triple_probability_upper": 0.002625070652927619
+  }
+}

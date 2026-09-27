@@ -36,6 +36,7 @@ for the distinction between equivalent descriptions and observable model separat
 
 | Study | Question | Status |
 |---|---|---|
+| [Collective interference](studies/collective-interference-identifiability/README.md) | Do singleton calibration and three-atom records exclude mixtures of pair-sized groups? | Shared-drift ambiguity, exact pair-control evasion and a prospective class-wide triple control; apparatus-supported dynamics remain open |
 | [Wen 2026 propagator](studies/wen-2026-propagator/README.md) | What can reconstructed propagators and endpoint statistics tell us about path descriptions? | Public-data audit available; full reconstruction needs additional records |
 | [NIST Bell-record causal audit](studies/nist-bell-causal-audit/README.md) | What conditional influence bounds do public trial records support? | Full raw reconstruction, measured marginals and explicit calibration limits |
 | [Born-rule identifiability](studies/born-rule-identifiability/README.md) | Can additional datasets separate probability changes from control and detector errors? | Measured scan–Viviani combination, ordinary qutrit compatibility certificates and conditional distance bounds; no identified probability-rule violation |

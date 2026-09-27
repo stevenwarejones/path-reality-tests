@@ -1,0 +1,65 @@
+name: Collective interference certificates
+on:
+  pull_request:
+    paths:
+      - 'studies/collective-interference-identifiability/**'
+      - 'tests/test_collective_interference.py'
+      - 'tests/test_collective_dynamics.py'
+      - '.github/workflows/collective-interference.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'studies/collective-interference-identifiability/**'
+      - 'tests/test_collective_interference.py'
+      - 'tests/test_collective_dynamics.py'
+  workflow_dispatch:
+    inputs:
+      full_source:
+        description: Download and reconstruct the pinned atomic source
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: |
+          python studies/collective-interference-identifiability/certificate.py --check
+          python studies/collective-interference-identifiability/witness.py --check
+          python studies/collective-interference-identifiability/cell_certificate.py --check
+          python studies/collective-interference-identifiability/full_models.py --check
+          python studies/collective-interference-identifiability/robustness.py --check
+          python studies/collective-interference-identifiability/control_design.py --check
+          python studies/collective-interference-identifiability/fresh_protocol.py --check
+          python -m unittest discover -s tests -p 'test_collective_interference.py' -v
+  full-source:
+    if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.full_source)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r studies/collective-interference-identifiability/requirements.txt
+      - run: |
+          python studies/collective-interference-identifiability/sources.py --cache "$RUNNER_TEMP/collective-sources" --download --check
+          python studies/collective-interference-identifiability/diagnostics.py --check
+          python studies/collective-interference-identifiability/build_full_models.py --cache "$RUNNER_TEMP/collective-sources" --check-source
+          python studies/collective-interference-identifiability/control_audit.py --cache "$RUNNER_TEMP/collective-sources" --check
+          python studies/collective-interference-identifiability/build_robustness.py --cache "$RUNNER_TEMP/collective-sources" --check-source
+          python studies/collective-interference-identifiability/dynamics.py --check --cache "$RUNNER_TEMP/collective-sources"
+          OPENBLAS_NUM_THREADS=1 python studies/collective-interference-identifiability/extended_dynamics.py --check --cache "$RUNNER_TEMP/collective-sources"
+          OPENBLAS_NUM_THREADS=1 python studies/collective-interference-identifiability/diagonal_dynamics.py --check
+          python studies/collective-interference-identifiability/fresh_power.py --check
+          python -m unittest discover -s tests -p 'test_collective_dynamics.py' -v

@@ -1,0 +1,103 @@
+{
+  "July2": {
+    "independent_records": 4,
+    "many_body_bunch_predictions": [
+      {
+        "boson": 0.03069907257011636,
+        "cluster_partition_upper_at_this_point": 0.010631168543331451,
+        "distinguishable": 0.005502839090580237,
+        "time_ms": 2.45
+      },
+      {
+        "boson": 0.013412483368962594,
+        "cluster_partition_upper_at_this_point": 0.004862302132585451,
+        "distinguishable": 0.002620083854869595,
+        "time_ms": 4.65
+      }
+    ],
+    "monte_carlo": {
+      "exceedances": 1520,
+      "replicates": 20000,
+      "seed": 927,
+      "tail_probability_upper_99": 0.08046846230431202
+    },
+    "multinomial_deviance": 875.6080220357038,
+    "numerical_domain_and_quadrature_difference": 2.394465736799134e-10,
+    "parameters": [
+      131.2213784656782,
+      119.01827931474742,
+      -5.400157752892181,
+      -0.37255272686905666,
+      -3.9235136174730068,
+      27.82191212812236,
+      7.916004987960841,
+      4.036880037354367,
+      -0.5212282845281349,
+      0.024737369797355413,
+      0.9595467032951436,
+      4.637325975240952
+    ],
+    "retained_cell_interval_failures": [],
+    "shots": 1624,
+    "status": "Deposited point diagnostic only; neither a global fit optimum nor a physical-family exclusion."
+  },
+  "July7": {
+    "independent_records": 45,
+    "monte_carlo": {
+      "exceedances": 0,
+      "replicates": 20000,
+      "seed": 927,
+      "tail_probability_upper_99": 0.00023023200184341363
+    },
+    "multinomial_deviance": 3223.789159236798,
+    "numerical_domain_and_quadrature_difference": 5.493383525845275e-13,
+    "parameters": [
+      120.11691224480792,
+      105.64573210085126,
+      14.633345634136807,
+      10.128594260329834,
+      -18.289338635075868,
+      0.21461139808992424,
+      4.77160859525262,
+      0.0,
+      -0.3813924275528682,
+      0.025254968982700392,
+      0.96392897608734,
+      -3.3461081527177483
+    ],
+    "retained_cell_interval_failures": [
+      {
+        "count": 2,
+        "input_y": -1,
+        "lower": 1.38937e-05,
+        "output": 60,
+        "probability": 6.280407405218027e-10,
+        "record": 3,
+        "time_ms": 0.7142857142857143,
+        "upper": 0.1817178211
+      },
+      {
+        "count": 1,
+        "input_y": 1,
+        "lower": 9.655794673e-09,
+        "output": 97,
+        "probability": 3.7510420187884416e-10,
+        "record": 5,
+        "time_ms": 0.7142857142857143,
+        "upper": 0.1661198246
+      },
+      {
+        "count": 1,
+        "input_y": 0,
+        "lower": 9.868009939e-09,
+        "output": 8,
+        "probability": 2.6542166791438784e-11,
+        "record": 7,
+        "time_ms": 0.9285714285714286,
+        "upper": 0.1694615636
+      }
+    ],
+    "shots": 4266,
+    "status": "Deposited point diagnostic only; neither a global fit optimum nor a physical-family exclusion."
+  }
+}
