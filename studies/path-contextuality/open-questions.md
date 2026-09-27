@@ -1,7 +1,7 @@
 # Path contextuality: question register
 
 Baseline: ontology-separation `ffbbd0d3c0eb2066ea9b32b0dfd18e9c2d50bd4d`;
-path-reality-tests `7f74b654464a87d9e320239164899d619165ea6b`.
+quantum-data-identifiability `7f74b654464a87d9e320239164899d619165ea6b`.
 Updated 2026-09-26 UTC. No apparatus data are available.
 
 | ID | Issue / dependencies | Serious attempts and evidence | Next concrete action | Disposition and consequences |

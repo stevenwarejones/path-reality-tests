@@ -1,9 +1,30 @@
-# Path reality tests
+# Quantum Data Identifiability
 
-This repository tests when claims that quantum paths or trajectories are “real”
-can be checked by experiment. Studies connect explicit models to observable
-predictions and document the data, assumptions and reproducible calculations
-needed to compare them. Studies provide independent, reproducible checks.
+**What can quantum experimental data distinguish?**
+
+Reproducible analyses of competing physical models, calibration ambiguities, and
+constraints from combined datasets, plus experiment designs for unresolved
+questions. Studies include [Wen et al. 2026 photon propagators](studies/wen-2026-propagator/README.md),
+[NIST Bell test records](studies/nist-bell-causal-audit/README.md), and
+[gate characterization (GST/RB)](studies/shared-quantum-dynamics/README.md).
+
+Each study connects explicit models to observable predictions and records the
+data, calibration requirements, statistical assumptions, and reproducible
+calculations needed to compare them. Results include both conditional model
+separation and constructions showing what the available observations leave
+indistinguishable. Prospective designs specify what future measurements could
+resolve; their synthetic checks and assumed calibrations are distinguished from
+measured evidence.
+
+The companion [ontology-separation](https://github.com/stevenwarejones/ontology-separation)
+repository develops the formal Lean framework for proving which predictions
+follow from stated physical assumptions. This repository focuses on experimental
+records, numerical inference, and measurement design. A formal result establishes
+its stated mathematical implication; applying it to an experiment also requires
+the physical and statistical assumptions documented in the study. The companion's
+[path-interference case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/docs/PATH_INTERFERENCE_CASE_STUDY.md)
+explains the distinction between equivalent descriptions and observable model
+separation.
 
 | Study | Question | Status |
 |---|---|---|
@@ -27,12 +48,6 @@ inputs. Its [method comparison](studies/wen-2026-propagator/method-comparison.md
 explains which numerical differences affect reproducibility and which tested
 choices preserve the broad comparison. The [completion report](studies/wen-2026-propagator/completion-report.md)
 connects every audit requirement to evidence and identifies the remaining inputs.
-
-The companion [ontology-separation](https://github.com/stevenwarejones/ontology-separation)
-repository contains the formal Lean framework. Its
-[path-interference case study](https://github.com/stevenwarejones/ontology-separation/blob/ab1eeb81119ff3fdcb46a771d9bcdf5e39ea3d29/docs/PATH_INTERFERENCE_CASE_STUDY.md)
-explains the distinction between equivalent descriptions and observable model
-separation.
 
 The Wen study includes the pinned CC0 Dryad originals for reproducible offline
 checks, with the official source, version and SHA-256 manifest retained. Paper
