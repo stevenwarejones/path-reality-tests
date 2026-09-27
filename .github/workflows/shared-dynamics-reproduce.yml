@@ -32,10 +32,19 @@ jobs:
         run: |
           python studies/shared-quantum-dynamics/run.py --cache "$RUNNER_TEMP/shared-dynamics" --check
           python studies/shared-quantum-dynamics/certificates.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/general_fit.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/general_geometry.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/lift_certificate.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/polish_general.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/sqd_repeat.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/transfer_audit.py --cache "$RUNNER_TEMP/shared-dynamics" --check
+          python studies/shared-quantum-dynamics/observable_audit.py --cache "$RUNNER_TEMP/shared-dynamics" --check
       - name: Reproduce runner-up source schema audits
         run: python studies/shared-quantum-dynamics/candidate_audit.py --cache "$RUNNER_TEMP/shared-dynamics-candidates" --download --check
       - name: Check independent physics and offline artifacts
         run: |
           python -m unittest discover -s tests -p 'test_shared_quantum_dynamics.py' -v
           python studies/shared-quantum-dynamics/report.py --check
+          python studies/shared-quantum-dynamics/escalation_report.py --check
+          python studies/shared-quantum-dynamics/general_compatibility.py --check
           git diff --exit-code

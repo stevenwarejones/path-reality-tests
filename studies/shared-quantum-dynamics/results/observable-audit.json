@@ -1,0 +1,201 @@
+{
+  "determinant_segment_denominator": 100000000,
+  "fiducials": [
+    [],
+    [1],
+    [2],
+    [1, 1]
+  ],
+  "first_exact_determinant": "-29552944000000000000000000000000",
+  "lower": [
+    [0.0, 0.2048398339320545, 0.251478281525908, 0.7769210395253241],
+    [0.2048398339320545, 0.7769210395253241, 0.17581808551076508, 0.11066726941639538],
+    [0.251478281525908, 0.1901219157816799, 0.7769210395253241, 0.23551623809582922],
+    [0.7769210395253241, 0.11066726941639538, 0.14846498244403447, 0.0]
+  ],
+  "note": "opposite exact determinant signs certify a singular H on the segment inside the entrywise count box; this relaxation cannot uniformly invert H. Witness need not obey a common CPTP realization or all other data.",
+  "point_singular_values": [2.2188334360431305, 1.0080614388328921, 0.5463592339536466, 0.24183032503964363],
+  "rows": [
+    {
+      "expression": "{}",
+      "family": "GST",
+      "k": 0,
+      "length": 0,
+      "n": 50,
+      "row": 0,
+      "word": [],
+      "word_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "expression": "Gx",
+      "family": "GST",
+      "k": 25,
+      "length": 1,
+      "n": 50,
+      "row": 1,
+      "word": [1],
+      "word_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    {
+      "expression": "Gy",
+      "family": "GST",
+      "k": 28,
+      "length": 1,
+      "n": 50,
+      "row": 2,
+      "word": [2],
+      "word_sha256": "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986"
+    },
+    {
+      "expression": "GxGx",
+      "family": "GST",
+      "k": 50,
+      "length": 2,
+      "n": 50,
+      "row": 5,
+      "word": [1, 1],
+      "word_sha256": "9dcf97a184f32623d11a73124ceb99a5709b083721e878a16d78f596718ba7b2"
+    },
+    {
+      "expression": "Gx",
+      "family": "GST",
+      "k": 25,
+      "length": 1,
+      "n": 50,
+      "row": 1,
+      "word": [1],
+      "word_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    {
+      "expression": "GxGx",
+      "family": "GST",
+      "k": 50,
+      "length": 2,
+      "n": 50,
+      "row": 5,
+      "word": [1, 1],
+      "word_sha256": "9dcf97a184f32623d11a73124ceb99a5709b083721e878a16d78f596718ba7b2"
+    },
+    {
+      "expression": "GyGx",
+      "family": "GST",
+      "k": 23,
+      "length": 2,
+      "n": 50,
+      "row": 9,
+      "word": [2, 1],
+      "word_sha256": "25dfd29c09617dcc9852281c030e5b3037a338a4712a42a21c907f259c6412a0"
+    },
+    {
+      "expression": "GxGxGx",
+      "family": "GST",
+      "k": 18,
+      "length": 3,
+      "n": 50,
+      "row": 3,
+      "word": [1, 1, 1],
+      "word_sha256": "75c8fd04ad916aec3e3d5cb76a452b116b3d4d0912a0a485e9fb8e3d240e210c"
+    },
+    {
+      "expression": "Gy",
+      "family": "GST",
+      "k": 28,
+      "length": 1,
+      "n": 50,
+      "row": 2,
+      "word": [2],
+      "word_sha256": "dbc1b4c900ffe48d575b5da5c638040125f65db0fe3e24494b76ea986457d986"
+    },
+    {
+      "expression": "GxGy",
+      "family": "GST",
+      "k": 24,
+      "length": 2,
+      "n": 50,
+      "row": 6,
+      "word": [1, 2],
+      "word_sha256": "a12871fee210fb8619291eaea194581cbd2531e4b23759d225f6806923f63222"
+    },
+    {
+      "expression": "GyGy",
+      "family": "GST",
+      "k": 50,
+      "length": 2,
+      "n": 50,
+      "row": 10,
+      "word": [2, 2],
+      "word_sha256": "50cff72c8e550546d661ec235431888fb2f9f7bada40c17020d47f6ccc117aae"
+    },
+    {
+      "expression": "GxGxGy",
+      "family": "GST",
+      "k": 27,
+      "length": 3,
+      "n": 50,
+      "row": 22,
+      "word": [1, 1, 2],
+      "word_sha256": "5e98aaa886032724db1ffd795b2f63b93a1d90f236e77eabfcc2913e4dd6e1d6"
+    },
+    {
+      "expression": "GxGx",
+      "family": "GST",
+      "k": 50,
+      "length": 2,
+      "n": 50,
+      "row": 5,
+      "word": [1, 1],
+      "word_sha256": "9dcf97a184f32623d11a73124ceb99a5709b083721e878a16d78f596718ba7b2"
+    },
+    {
+      "expression": "GxGxGx",
+      "family": "GST",
+      "k": 18,
+      "length": 3,
+      "n": 50,
+      "row": 3,
+      "word": [1, 1, 1],
+      "word_sha256": "75c8fd04ad916aec3e3d5cb76a452b116b3d4d0912a0a485e9fb8e3d240e210c"
+    },
+    {
+      "expression": "GyGxGx",
+      "family": "GST",
+      "k": 21,
+      "length": 3,
+      "n": 50,
+      "row": 13,
+      "word": [2, 1, 1],
+      "word_sha256": "da4d3da1daaceba9b72635459fd6a17da13e7530d53a4932535e6dc1d49bde3d"
+    },
+    {
+      "expression": "GxGxGxGx",
+      "family": "GST",
+      "k": 0,
+      "length": 4,
+      "n": 50,
+      "row": 7,
+      "word": [1, 1, 1, 1],
+      "word_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1"
+    }
+  ],
+  "second_exact_determinant": "30226976097735786950472192181625",
+  "segment_first_numerators": [
+    [0, 50000000, 56000000, 100000000],
+    [50000000, 100000000, 46000000, 36000000],
+    [56000000, 48000000, 100000000, 54000000],
+    [100000000, 36000000, 42000000, 0]
+  ],
+  "segment_second_numerators": [
+    [1, 79516016, 25147829, 77692104],
+    [79516016, 77692104, 17581809, 68038521],
+    [25147829, 19012192, 77692104, 23551624],
+    [77692104, 68038521, 73213837, 1]
+  ],
+  "singular_witness_found": true,
+  "status": "failure of chosen observable-basis interval relaxation only; not impossibility of stronger certification",
+  "upper": [
+    [0.22307896047461134, 0.7951601660679006, 0.83806903485078, 1.0],
+    [0.7951601660679006, 1.0, 0.7644837619041227, 0.6803852143789719],
+    [0.83806903485078, 0.7800290217819381, 1.0, 0.8241819144891934],
+    [1.0, 0.6803852143789719, 0.7321383795672014, 0.22307896047461134]
+  ]
+}

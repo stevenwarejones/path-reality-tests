@@ -93,3 +93,16 @@ through the existing [Born-rule study](../born-rule-identifiability/README.md).
 Its table parsers, qutrit certificates and epoch separation remain the baseline.
 This study does not reinterpret its tested .1%/.2% preparation-population caps as
 measured or minimal leakage, and supplies no temporal explanation of Nairobi.
+
+## Escalation apparatus caveat
+
+The original paper identifies the qubit with the two hyperfine clock states and
+uses fluorescence readout ([primary-paper mirror, experiment section](https://inspirehep.net/files/b3f0bbbd9f05c8dc74ad78292795c08a)).
+The exact lifts in `lift_certificate.py` stipulate an additional level and its
+POVM response; they do **not** identify a particular atomic leakage level or
+claim that its response equals the fitted computational average in this apparatus.
+The count deposits supply no independently calibrated effect for that additional
+level or return-state polarization. Such apparatus information could rule out
+the constructed lifts. Their leakage populations are therefore explicitly
+conditional model resources, while the stationary **qubit** compatibility example
+requires no additional level at all.

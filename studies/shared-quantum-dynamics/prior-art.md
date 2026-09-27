@@ -20,3 +20,49 @@ specific specialization. Publication-level importance is **not established**.
 The known ingredients and existing analysis are sufficient reason not to open a
 Lean companion merely for elementary recurrence algebra. A formal companion would
 make sense only if a materially stronger general theorem is developed.
+
+## Escalation comparison
+
+| Escalated claim | Closest result | Increment actually supported |
+|---|---|---|
+| General stationary CPTP baseline | Blume-Kohout et al. 2017 and the deposited GST analysis; Nielsen et al. GST review | Closes our implementation's restricted-channel gap under the retained held-out split. General gate-set fitting and the GST/RB pairing are not new. Local failures do not independently reproduce a global rejection. |
+| All-word gate-dependent, nonunital leakage orbit | GST similarity/gauge freedom; Wood–Gambetta leakage/seepage framework; Chen–Baldwin 2025 readout dependence | Supplies an explicit physical similarity, transformed return-state polarization, and its positivity conditions. It proves equality of arbitrary word probabilities, not only averaged RB decays. Neither generic readout confounding nor the use of a GST similarity is claimed as new. Priority for this specific orbit has not been established. |
+| Five doubled-word outer bounds | [Gutoski–Wu, section 2.3](https://arxiv.org/abs/1011.2787): Bures-angle triangle inequality and channel contractivity | Applies standard geometry to unknown qubit SPAM and the deposited GST/RB counts, with exact outward count-tail arithmetic. This is a full-class certificate; it is not a new general inequality priority claim or proof of strict complete-region contraction. |
+| Singular observable-basis interval obstruction | GST fiducial/Gram-matrix inversion and gauge-free realization | Exhibits opposite exact determinant signs inside this acquisition's entrywise confidence box. Only that interval-inversion relaxation fails; CPTP-aware certification may be stronger. |
+
+The closest leakage paper explicitly changes measurement/control assumptions to
+recover interpretable RB quantities. Our complementary negative statement asks
+what remains invariant if those calibration anchors are absent. The added
+nonunital result makes return-state polarization part of that ambiguity. It still
+assumes incoherent block dynamics and one leakage level; coherent leakage and
+independently fixed instruments are not covered.
+
+No publication-level novelty claim follows from these additions. A companion
+formalization is not opened: the proof is a small similarity calculation plus
+standard contractivity, and independent physical/math tests are more useful at
+this stage than an elementary formal PR. A stronger all-source feasible-region
+certificate would be a materially different result.
+
+The final escalation additionally uses a **nonminimal physical realization**,
+rather than an invertible similarity: QG_g=Ψ_gQ collapses a qubit-plus-leakage
+model onto an arbitrary interior qubit model. The sharp CP budget is
+λ_g≤2λ_min(J_g) for the fixed representation and maximally mixed replacement.
+Its return-state condition allows nonunital channels. This is attached to the
+compatible all-length measured prediction vector. It therefore fixes the earlier
+weakness that our leakage examples belonged only to a failed held-out fit.
+
+The nearest conceptual prior art remains GST gauge/realization nonuniqueness,
+dimension-witness limitations, and leakage/readout calibration dependence. We do
+not claim to have discovered hidden realizations or invisible dimensions. The
+precise implemented increment is a positive-transfer CPTP lift with a conditional
+CP budget, explicit return polarization, finite two-state-memory realization,
+and a calibrated monitor that separates it on this acquisition's operations.
+The exact readout condition z=Tr(Eτ) is substantive; a calibrated leakage response
+can rule the lift out. Neither its priority nor a major-advance claim is established.
+
+The original paper's non-Markovianity analysis uses likelihood-based aggregate
+badness of fit. Passing our conservative simultaneous cell/mean region does not
+reverse that analysis, and it is not equivalent to passing its likelihood test.
+The new all-length example only certifies compatibility with our explicitly
+stated region; frozen prediction still fails. This difference in inferential
+standard must accompany any comparison of the two analyses.

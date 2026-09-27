@@ -152,4 +152,140 @@ class SharedDynamics(unittest.TestCase):
         text=m.make_report();self.assertEqual(text,(STUDY/'results/report.md').read_text())
 
 
+class GeneralDynamicsEscalation(unittest.TestCase):
+    def test_general_channels_include_nonunital_and_independent_propagation(self):
+        from sqd_general import pack,channel_kraus,GeneralEvaluator,density_probability as dp,certificate as cert
+        from sqd_models import PAULI
+        from sqd_transfer import amplitude_damping
+        rng=np.random.default_rng(1931)
+        # Construct process factors from independent amplitude-damping Kraus maps.
+        # Identity nominal gate isolates the nonunital part.
+        kk=amplitude_damping(.31)
+        coeff=np.array([[np.trace(P@K)/2 for P in PAULI] for K in kk]).T
+        L=np.linalg.cholesky(coeff@coeff.conj().T+1e-15*np.eye(4))
+        reconstructed=channel_kraus(pack(L),0)
+        rho=np.diag([.2,.8])
+        actual=sum(K@rho@K.conj().T for K in reconstructed)
+        expected=sum(K@rho@K.conj().T for K in kk)
+        np.testing.assert_allclose(actual,expected,atol=2e-14)
+        x=np.r_[np.tile(pack(L),3),.83,.12,.94,.73]
+        words=[(0,0,0),(),(0,),(0,0),(0,1),(0,0),(1,2,0,0,1),tuple(rng.integers(0,3,80))]
+        pp=GeneralEvaluator([{'word':w} for w in words])(x)
+        np.testing.assert_allclose(pp,[dp(w,x) for w in words],atol=1e-12)
+        self.assertLess(cert(x)['trace_preservation_max_error'],1e-12)
+        self.assertGreaterEqual(cert(x)['choi_min_eigenvalue'],-1e-12)
+        with self.assertRaises(ValueError):channel_kraus(np.zeros(16),0)
+
+    def test_repeat_bound_random_arbitrary_cptp_and_spam(self):
+        from sqd_repeat import repeat_upper
+        rng=np.random.default_rng(312)
+        for _ in range(300):
+            A=rng.normal(size=(4,2,2))+1j*rng.normal(size=(4,2,2))
+            vals,V=np.linalg.eigh(sum(K.conj().T@K for K in A));inv=(V*vals**-.5)@V.conj().T
+            kk=[K@inv for K in A]
+            B=rng.normal(size=(2,2))+1j*rng.normal(size=(2,2));rho=B@B.conj().T;rho/=np.trace(rho)
+            Q,_=np.linalg.qr(rng.normal(size=(2,2))+1j*rng.normal(size=(2,2)))
+            E=(Q*rng.uniform(size=2))@Q.conj().T;p=[]
+            for j in range(3):
+                p.append(float(np.trace(E@rho).real));rho=sum(K@rho@K.conj().T for K in kk)
+            self.assertLessEqual(p[2],repeat_upper(p[0],p[1])+1e-12)
+        # Near the informative boundary: pure qubit coherent rotations.
+        for angle in np.linspace(0,.4,30):
+            self.assertLessEqual(np.sin(2*angle)**2,repeat_upper(0,np.sin(angle)**2)+1e-12)
+
+    def test_repeat_bound_assumption_violations(self):
+        from sqd_repeat import repeat_upper
+        # Three-level cyclic permutation, binary effect |2><2|.
+        U=np.roll(np.eye(3),1,axis=0);rho=np.diag([1.,0,0]);p=[]
+        for _ in range(3):p.append(float(rho[2,2]));rho=U@rho@U.T
+        self.assertEqual(p,[0.,0.,1.]);self.assertGreater(p[2],repeat_upper(p[0],p[1]))
+        # A two-state clock: first call changes flag; second applies X.
+        flag=0;bit=0;p=[0.]
+        for _ in range(2):
+            bit^=flag;flag^=1;p.append(float(bit))
+        self.assertEqual(p,[0.,0.,1.])
+        with self.assertRaises(ValueError):repeat_upper(-.1,.2)
+
+    def test_exact_outward_binomial_and_root_certificates(self):
+        import math
+        from sqd_repeat import exact_upper,rational_repeat,GRID,repeat_upper
+        for n in [12,50]:
+            for k in range(n+1):
+                a=exact_upper(k,n,120)
+                if k<n:
+                    num=sum(math.comb(n,j)*a**j*(GRID-a)**(n-j) for j in range(k+1))
+                    self.assertLessEqual(120*num,GRID**n)
+                self.assertGreaterEqual(rational_repeat(a,a)/GRID+1e-15,repeat_upper(a/GRID,a/GRID))
+        # Exact binomial coverage, including boundaries, with refitted nuisance absent.
+        for p in [.001,.03,.2,.5,.9]:
+            miss=sum(binom.pmf(k,12,p) for k in range(13) if exact_upper(k,12,120)/GRID<p)
+            self.assertLessEqual(miss,1/120+1e-12)
+
+    def test_repeat_certificate_loses_coverage_under_unrestricted_shot_dependence(self):
+        from sqd_repeat import exact_upper,rational_repeat,GRID
+        # Ordinary qubit with E=I/2 gives p0=p1=p2=1/2. One shared fair
+        # latent bit copied to every shot yields all-zero rows with probability
+        # 1/2, on which an incorrectly assumed binomial certificate excludes p2.
+        bound=rational_repeat(exact_upper(0,50,120),exact_upper(0,285,120))/GRID
+        self.assertLess(bound,.5)
+
+    def test_nonunital_gate_dependent_similarity_and_return_constraint(self):
+        from transfer_audit import setup
+        from sqd_transfer import similarity,apply,transform,amplitude_damping
+        old,new,locked,state,E,E2,kk,kp,tp,lower=setup();T=similarity(.6)
+        np.testing.assert_allclose(new,[T@G@np.linalg.inv(T) for G in old],atol=1e-14)
+        self.assertGreater(np.max(abs(new-locked)),1e-6)
+        rng=np.random.default_rng(615)
+        for _ in range(15):
+            word=rng.integers(0,3,25);a=state.copy();b=state.copy();rho=np.diag([1.,0,0]).astype(complex);sigma=rho.copy()
+            for g in word:a=old[g]@a;b=new[g]@b;rho=apply(kk[g],rho);sigma=apply(kp[g],sigma)
+            self.assertAlmostEqual(E@a,E2@b,places=12)
+            self.assertAlmostEqual(np.trace(np.diag([.02,.98,.4])@rho).real,E@a,places=12)
+            self.assertAlmostEqual(np.trace(np.diag([.02,.98,1/3])@sigma).real,E2@b,places=12)
+            self.assertAlmostEqual(sigma[2,2].real,.6*rho[2,2].real,places=12)
+        # Generic polarized return also has a physical neighborhood of kappa=1.
+        from sqd_transfer import matrix,TAU
+        original_return=np.diag([.6,.4]);ks=amplitude_damping(.02)
+        ks2,l2,e2,t2=transform(ks,.02,.1,.95,original_return)
+        tt=similarity(.95)
+        np.testing.assert_allclose(matrix(ks2,l2,e2,t2),tt@matrix(ks,.02,.1,original_return)@np.linalg.inv(tt),atol=1e-14)
+        # Large nonunital translation makes the formal similarity nonphysical.
+        with self.assertRaises(ValueError):transform(amplitude_damping(.8),.001,.001,.5)
+        with self.assertRaises(ValueError):transform(amplitude_damping(.1),.001,.001,1.1)
+
+    def test_nonunital_two_state_memory_realizes_leakage(self):
+        from sqd_transfer import amplitude_damping,qutrit_kraus,memory_probability,apply
+        from sqd_general import unitary
+        from sqd_models import IDEAL
+        channels=[[K@unitary(IDEAL[g]) for K in amplitude_damping(.03+.01*g)] for g in range(3)]
+        loss=[.02,.04,.01];ret=[.1,.2,.3];returns=[np.diag([.6,.4]),np.diag([.3,.7]),np.diag([.5,.5])]
+        qq=[qutrit_kraus(channels[g],loss[g],ret[g],returns[g]) for g in range(3)]
+        rho=np.diag([.7,.3]);E=np.array([[.2,.1],[.1,.8]]);z=.3
+        word=(1,2,0,1,1,2)*7;state=np.zeros((3,3),complex);state[:2,:2]=rho
+        effect=np.zeros((3,3),complex);effect[:2,:2]=E;effect[2,2]=z
+        for g in word:state=apply(qq[g],state)
+        self.assertAlmostEqual(memory_probability(word,channels,loss,ret,returns,rho,E,z),np.trace(effect@state).real,places=12)
+
+    def test_exact_leakage_lift_and_sharp_cp_boundary(self):
+        from sqd_transfer import lift_qubit,amplitude_damping,reset_kraus,TAU,apply,qutrit_kraus
+        ks=[np.sqrt(.9)*K for K in amplitude_damping(.1)]+[np.sqrt(.1)*K for K in reset_kraus(TAU)]
+        J=sum(np.outer(K.reshape(-1,order='F'),K.reshape(-1,order='F').conj()) for K in ks);budget=2*np.linalg.eigvalsh(J).min()
+        base,tau=lift_qubit(ks,budget*.8,.2);qq=qutrit_kraus(base,budget*.8,.2,tau)
+        rho=np.array([[.7,.1j],[-.1j,.3]]);state=np.zeros((3,3),complex);state[:2,:2]=rho
+        E=np.array([[.2,.1],[.1,.8]]);effect=np.zeros((3,3),complex);effect[:2,:2]=E;effect[2,2]=np.trace(E@TAU)
+        for _ in range(40):
+            rho=apply(ks,rho);state=apply(qq,state)
+            np.testing.assert_allclose(state[:2,:2]+state[2,2]*TAU,rho,atol=1e-12)
+            self.assertAlmostEqual(np.trace(E@rho).real,np.trace(effect@state).real,places=12)
+        self.assertGreater(state[2,2].real,0)
+        with self.assertRaises(ValueError):lift_qubit(ks,budget*1.01,.2)
+        with self.assertRaises(ValueError):lift_qubit(ks,budget*.8,.001)
+        # A unitary is on the boundary: no positive replacement-loss budget.
+        with self.assertRaises(ValueError):lift_qubit([np.eye(2)],.001,.2)
+
+    def test_escalation_offline_report(self):
+        import escalation_report
+        self.assertEqual(escalation_report.make_report(),(STUDY/'results/escalation.md').read_text())
+
+
 if __name__=='__main__':unittest.main()
