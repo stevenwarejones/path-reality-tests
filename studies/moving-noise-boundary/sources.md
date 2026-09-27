@@ -52,6 +52,13 @@ The two frame laws are kept distinct. No new tracking accuracy is inferred.
 
 ## LPF routes actually checked
 
+The [post-review follow-up](calibration-followup.md) additionally recovers the
+ESA frontend's documented synchronous machine interface. Its metadata example
+fails with a server-side database-session error, and the documentation-product
+download fails with HTTP 500. This is an observed service failure, not proof of
+missing products. That follow-up also records the CAL workbook reconstruction,
+two actual levitated-mass time-series analyses, and other low-frequency pivots.
+
 - [ESA PreProcessed](https://esdcdoi.esac.esa.int/doi/html/data/astronomy/lisa-pathfinder/PreProcessed.html),
   DOI 10.5270/esa-9z4vm0u, v1.0, covers 2016-02-29 through 2017-07-18. It explicitly
   describes corrected timestamps. The metadata is not a calibrated force product.

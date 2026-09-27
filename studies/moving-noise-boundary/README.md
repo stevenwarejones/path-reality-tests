@@ -13,6 +13,12 @@ Read [the generated result](results/report.md), [model and proofs](theory.md),
 [candidate/source audit and exact missing inputs](sources.md), and
 [claim-to-prior-art table](prior-art.md).
 
+The [post-review calibration follow-up](calibration-followup.md) reproduces the
+2020 CAL source-workbook energies with an explicitly inferred width conversion,
+then audits two actual levitated-mass time series. It does **not** reproduce the
+2019 lens images' 52 pK or establish a new combined constraint. Failed noise
+baselines and missing acquisition settings are retained as executable results.
+
 | Claim | Status |
 |---|---|
 | Original PR #12 SSB survivor reproduced without modifying that study | Reproduced offline; all eight external source objects verified |
@@ -23,6 +29,8 @@ Read [the generated result](results/report.md), [model and proofs](theory.md),
 | Complementary empirical identification or joint confidence | **Not established; source-removal gain is 1** |
 | Old SSB witness validated by the new quantum bound | **No; bound is vacuous** |
 | Public CAL science images and nine-shot timestamp join | Obtained; physical imaging/lens/motion calibration and 52 pK reproduction remain unestablished |
+| CAL 2020 reduced-source energy reproduction | 231.05(8.64), 719.88(78.89) pK; inferred sqrt(2) width conversion, not a 2019 image calibration |
+| New levitated-mass archive calibration attempt | Two multichannel records processed; nominal force floor differs from published best floor; acquisition lower response not established |
 | Globally optimized arbitrary-spectrum or all-frame result | Not claimed |
 | Objective collapse / individual outcomes / publication novelty | Not claimed |
 
@@ -52,7 +60,10 @@ python studies/moving-noise-boundary/analyze.py --check
 python studies/moving-noise-boundary/plot.py --check
 python studies/moving-noise-boundary/cal_audit.py --check
 python studies/moving-noise-boundary/cal_audit.py --data-dir /tmp/cal-sources --fetch --check
+python studies/moving-noise-boundary/calibration_gate.py --check
+python studies/moving-noise-boundary/calibration_gate.py --data-dir /tmp/gate-sources --fetch --check
 python -m unittest discover -s tests -p test_moving_noise_boundary.py -v
+python -m unittest discover -s tests -p test_noise_calibration_gate.py -v
 python studies/collapse-compatibility/moving_analysis.py --check
 ```
 

@@ -115,6 +115,11 @@ injections**, not recovery through the unestablished CAL calibration chain.
 
 ## The bridge that failed and the next records needed
 
+The subsequent [calibration follow-up](calibration-followup.md) obtains a
+numerical physical baseline from the separate 2020 reduced-data workbook,
+with a documented width-convention qualification. It does not establish the
+calibration of these 2019 lens images or replace the missing entries below.
+
 | Needed item | Obtained status | Why it matters |
 |---|---|---|
 | Science image pairs and relative sequence labels | Obtained, pinned and decoded | Establishes that an actual measured alternative exists |

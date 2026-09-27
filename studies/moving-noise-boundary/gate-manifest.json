@@ -1,0 +1,33 @@
+{
+  "status": "public sources obtained; calibration gate not passed",
+  "files": [
+    {
+      "name": "cal2020-source.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2346-1/MediaObjects/41586_2020_2346_MOESM1_ESM.xlsx",
+      "bytes": 12486,
+      "sha256": "b473ed1f79c8464005a445dacdf8247c03400e63df927408722b19acd6a857a8",
+      "source": "10.1038/s41586-020-2346-1, Figure 4 source data"
+    },
+    {
+      "name": "fuchs-v2.pdf",
+      "url": "https://arxiv.org/pdf/2303.03545v2",
+      "bytes": 2164618,
+      "sha256": "240ddfc3c7bfcbe954415d05492664b3b1f7cb8b151b8db9aa186071e8534d1d",
+      "source": "arXiv:2303.03545v2, Supplement C/E"
+    },
+    {
+      "name": "fuchs-minus3cm.txt",
+      "url": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=48,1cm.txt/content",
+      "bytes": 43328889,
+      "sha256": "a151c118e0590818cca187520857fbc23f1ae453e78c72f48e6f5e14befbed64",
+      "source": "Zenodo record 10300430, revision 4"
+    },
+    {
+      "name": "fuchs-plus3p5cm.txt",
+      "url": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt/content",
+      "bytes": 21579572,
+      "sha256": "6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67",
+      "source": "Zenodo record 10300430, revision 4"
+    }
+  ]
+}

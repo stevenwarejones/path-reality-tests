@@ -1,0 +1,81 @@
+{
+  "cal_2020_to_2019_calibration_transfer_established": false,
+  "cal_error_correlation_matrix_obtained": false,
+  "cal_raw_2019_52pK_baseline_reproduced": false,
+  "cal_width_reconstruction": {
+    "x": {
+      "baseline_numerically_reproduced_with_inferred_conversion": true,
+      "caption_energy_pK": 231.0,
+      "caption_error_pK": 9.0,
+      "diagonal_chi2": 3.718968609874503,
+      "energy_difference_pK": 0.048501983726339404,
+      "error_difference_pK": -0.35932243154036314,
+      "formal_energy_error_pK": 8.640677568459637,
+      "formal_slope_error_um_per_s": 3.9315664733797795,
+      "inferred_rms_conversion": 0.7071067811865475,
+      "intercept_um": 7.718979932510919,
+      "literal_header_energy_pK": 462.0970039674527,
+      "reconstructed_caption_energy_pK": 231.04850198372634,
+      "residual_dof": 4,
+      "slope_div_sqrt2_um_per_s": 148.6743260056541,
+      "source_width_slope_um_per_s": 210.25724821387502
+    },
+    "z": {
+      "baseline_numerically_reproduced_with_inferred_conversion": true,
+      "caption_energy_pK": 720.0,
+      "caption_error_pK": 79.0,
+      "diagonal_chi2": 5.571181427713816,
+      "energy_difference_pK": -0.12398630079167106,
+      "error_difference_pK": -0.11421006857041505,
+      "formal_energy_error_pK": 78.88578993142958,
+      "formal_slope_error_um_per_s": 20.334773023796654,
+      "inferred_rms_conversion": 0.7071067811865475,
+      "intercept_um": 28.23456851256403,
+      "literal_header_energy_pK": 1439.7520273984167,
+      "reconstructed_caption_energy_pK": 719.8760136992083,
+      "residual_dof": 4,
+      "slope_div_sqrt2_um_per_s": 262.4298615792874,
+      "source_width_slope_um_per_s": 371.1318694171223
+    }
+  },
+  "empirical_filter_time_constant_bound_s": null,
+  "filter_sensitivity_power_gain_at_4mHz": {
+    "0": {
+      "1": 1.0,
+      "4": 1.0,
+      "8": 1.0
+    },
+    "1": {
+      "1": 0.9993687440541037,
+      "4": 0.9974773661148074,
+      "8": 0.9949610959113335
+    },
+    "10": {
+      "1": 0.9405873591098881,
+      "4": 0.7827021940805522,
+      "8": 0.6126227246185104
+    },
+    "100": {
+      "1": 0.1366764984976091,
+      "4": 0.00034895978164139075,
+      "8": 1.2177292920320712e-07
+    },
+    "1000": {
+      "1": 0.0015806411127169307,
+      "4": 6.242134112501129e-12,
+      "8": 3.8964238278450257e-23
+    }
+  },
+  "levitation_nominal_to_best_published_ASD_ratios": {
+    "fuchs-minus3cm.txt": 9.825760556162455,
+    "fuchs-plus3p5cm.txt": 5.5430671103749045
+  },
+  "maximum_tau_for_at_least_90percent_power_gain_at_4mHz_s": {
+    "1": 13.262911924324614,
+    "4": 6.500327066756741,
+    "8": 4.581266767255142
+  },
+  "new_empirical_spectrum_rejection": false,
+  "original_SSB_witness_resolved": false,
+  "status": "Gate A remains blocked; no new joint constraint or source-removal gain claimed"
+}

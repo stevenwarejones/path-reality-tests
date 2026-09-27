@@ -5,6 +5,11 @@ an implemented response-bound diagnostic, not completion of that research missio
 The selected slow terrestrial field band gives no measured-source identification
 gain when the sensor is added. No large scan or joint confidence claim follows.
 
+The [post-review calibration follow-up](../calibration-followup.md) reproduces
+the separate 2020 CAL reduced-data energies with an inferred width conversion
+and processes two levitated-mass time series. Their calibration gates remain
+blocked; they do not change the source-removal result below.
+
 | Executed quantity | Result | Status |
 |---|---:|---|
 | Shared field variance | 1.5807119e-13 s^-2 | Constructed |

@@ -110,6 +110,11 @@ an implemented response-bound diagnostic, not completion of that research missio
 The selected slow terrestrial field band gives no measured-source identification
 gain when the sensor is added. No large scan or joint confidence claim follows.
 
+The [post-review calibration follow-up](../calibration-followup.md) reproduces
+the separate 2020 CAL reduced-data energies with an inferred width conversion
+and processes two levitated-mass time series. Their calibration gates remain
+blocked; they do not change the source-removal result below.
+
 | Executed quantity | Result | Status |
 |---|---:|---|
 | Shared field variance | {b['variance_s_minus2']:.8g} s^-2 | Constructed |
@@ -182,7 +187,9 @@ def main():
                 [HERE/'protocol.json',HERE/'noise_kernels.py',HERE/'noise_sources.py',HERE/'analyze.py',
                  BASE/'manifest.json',BASE/'results/baselines.json',BASE/'moving_response.py',BASE/'response.py',
                  BASE/'io_data.py',BASE/'baselines.py',HERE/'plot.py',HERE/'cal_audit.py',HERE/'cal_response.py',
-                 HERE/'cal-manifest.json',HERE/'results/cal-audit.json']}
+                 HERE/'cal-manifest.json',HERE/'results/cal-audit.json',HERE/'calibration_gate.py',
+                 HERE/'gate-manifest.json',HERE/'results/calibration-inputs.json',
+                 HERE/'results/calibration-gate.json']}
     provenance['generated_sources_sha256']=__import__('hashlib').sha256(encode(source).encode()).hexdigest()
     artifacts={'sources.json':encode(source),'boundary.json':encode(result),'report.md':report(result),'provenance.json':encode(provenance)}
     for name,content in artifacts.items():
