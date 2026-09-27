@@ -1,5 +1,8 @@
 # Collective interference: fixed-channel exclusion and a drift ambiguity
 
+The [shared-dynamics and control-design extension](control-dynamics-report.md) proves that the proposed pair statistic has **zero worst-case separation**: a physical cluster mixture matches it exactly while passing the expanded measured region. A matched labelled-triple control gives a sufficient class-wide test with conditional source-removal witnesses. A joint July 7 Hamiltonian diagnostic fails calibration constraints; apparatus-supported robustness remains open.
+
+
 **The selected records exclude the declared fixed-channel cluster null, but
 admit an explicit shared fluctuating cluster model in the expanded confidence
 region.** Both preparation families use the same two-channel law. This is a

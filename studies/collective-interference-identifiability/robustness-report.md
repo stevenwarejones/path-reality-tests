@@ -1,5 +1,7 @@
 # What the archive forces when transport may fluctuate
 
+The [subsequent control/dynamics analysis](control-dynamics-report.md) shows that the proposed pair control can be evaded exactly and gives a class-wide labelled-triple alternative. The results below are retained as the preceding robustness stage.
+
 The fixed-channel source-combination result remains intact. The next step is
 now quantitative: a shared fluctuating cluster model fits the selected
 singleton region, every selected parity-pattern constraint, and new measured

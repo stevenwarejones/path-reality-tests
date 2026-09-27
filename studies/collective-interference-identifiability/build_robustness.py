@@ -75,7 +75,7 @@ def source_cases(cache):
             'patterns':[[list(p),k] for p,k in sorted(pats.items())],'singletons':ss})
     return cases
 
-def drift_models(read):
+def drift_models(read,pair_target=None,seeds=3):
     c=read('cell-certificate.json');m=read('full-boson.json');base=np.array(m['base_amplitude_numerators'],float)**2/m['amplitude_denominator']**2
     q0=np.r_[base[9:21].sum(axis=1),1-base.sum()];r=base[9:21]/q0[:12,None]
     bounds=np.array([[float(F(v)) for v in p] for p in c['row_intervals']]);lower=float(F(read('full-region.json')['bunch_lower']))
@@ -91,13 +91,18 @@ def drift_models(read):
         pb=(w*a*b*c).sum()
         empty=(1-c)*((1-a)*(1-b)+a*b*(hh**2+2*ab))+a*c*ac*(1-b)+b*c*bc*(1-a)-2*a*b*c*hh*sz
         return pb,1-empty
+    def pair(q):
+        v=np.zeros(28);v[9:21]=q[:12]
+        return v[9:14].sum()*v[8:13].sum()-sum(v[y]*v[y-1]*ab[y-8] for y in range(9,14))
     def constraints(v):
         q=v[:13];d=v[13:26];pb1,h1=prob(q+d);pb2,h2=prob(q-d);hit=(h1+h2)/2
-        return np.r_[q+d-1e-6,q-d-1e-6,v[26:]-d,v[26:]+d,(pb1+pb2)/2-lower-.00005,hit-hlo-1e-6,hhi-hit-1e-6]
+        ans=np.r_[q+d-1e-6,q-d-1e-6,v[26:]-d,v[26:]+d,(pb1+pb2)/2-lower-.00005,hit-hlo-1e-6,hhi-hit-1e-6]
+        if pair_target is not None:ans=np.r_[ans,1e-7-abs((pair(q+d)+pair(q-d))/2-pair_target)]
+        return ans
     def eq(v):return np.array([v[:13].sum()-1,v[13:26].sum()])
     bnd=[(l+1e-6,u-1e-6) for l,u in bounds]+[(-.4,.4)]*12+[(0,0)]+[(0,1)]*13;bnd[12]=(.045,float(bounds[-1,1]))
     best=None
-    for seed in range(3):
+    for seed in range(seeds):
         v=np.random.default_rng(seed).normal(0,.03,13);v[-1]=0;v[:-1]-=v[:-1].mean();x=np.r_[q0,v,np.abs(v)]
         res=minimize(lambda x:1.5*x[26:].sum(),x,bounds=bnd,constraints=[{'type':'ineq','fun':constraints},{'type':'eq','fun':eq}],method='SLSQP',options={'ftol':1e-11,'maxiter':1500})
         if min(constraints(res.x))>-1e-8 and max(abs(eq(res.x)))<1e-8 and (best is None or res.fun<best.fun):best=res

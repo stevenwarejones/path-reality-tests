@@ -1,0 +1,61 @@
+{
+  "gaussian_scale_envelope": {
+    "cluster_upper": 0.0230234427369,
+    "excluded_through_kappa": "37/4000",
+    "scope": "Conditional bandwidth/noise product bound, not a measured apparatus noise limit."
+  },
+  "labelled_triple_control": {
+    "certified_control_upper": "23/2000",
+    "exclusion_threshold": 0.011512516963255474,
+    "joint_two_event_error_upper": "1/160",
+    "one_sided_tail": "1/320",
+    "prospective_max_successes": 19,
+    "prospective_trials": 3000,
+    "quantum_example_probability": 0.00466703483728716,
+    "status": "Prospective conditional protocol; no new acquisition has occurred.",
+    "universal_cluster_factor": 2
+  },
+  "pair_evading_cluster": {
+    "all_pattern_constraints_pass": true,
+    "bunch_probability": 0.02307502780519728,
+    "certified_pair_prediction_inner_interval": [
+      0.1432000624053198,
+      0.1432360689338087
+    ],
+    "drift_budget_sum_tv": 0.9360555211472577,
+    "endpoint_region_checks": [
+      true,
+      true
+    ],
+    "labelled_triple_control": 0.011821543975616163,
+    "many_pattern_deviance_descriptive": 17944.060078,
+    "mean_singleton_region_pass": true,
+    "pair_control_exact": "179044967496542367523422701/1250000000000000000000000000",
+    "pair_control_separation_gap_exact": "0",
+    "quantum_pair_control_exact": "179044967496542367523422701/1250000000000000000000000000",
+    "refined_unobserved_triples": 0,
+    "row_hit_constraints_pass": true,
+    "unobserved_triple_upper": 0.00529034933891331,
+    "weights_exact": [
+      "359115919141102212889077/720130569778350292840850",
+      "359115919141102212889077/720130569778350292840850",
+      "474682874036466765674/360065284889175146420425",
+      "474682874036466765674/360065284889175146420425"
+    ]
+  },
+  "pair_moment_obstruction": {
+    "all_singleton_and_pair_distributions_equal": true,
+    "scope": "Structural counterexample, not a witness for the archive confidence region.",
+    "triple_bunch_probabilities": [
+      "1/4",
+      "0"
+    ]
+  },
+  "prospective_source_deletions": {
+    "control_removed": "The exact pair-evading C2 mixture passes the complete existing selected region.",
+    "joint_quantum_feasible": true,
+    "original_many_body_source_removed": "The full-boson.json channel with cluster labels passes singleton calibration and the prospective control upper bound.",
+    "scope": "Conditional on the declared future upper region [0,0.0115]; not an observed two-source result.",
+    "singleton_source_needed_for_new_factor_two_test": false
+  }
+}

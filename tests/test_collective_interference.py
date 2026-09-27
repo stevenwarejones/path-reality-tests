@@ -15,7 +15,38 @@ import witness as collective_witness
 import cell_certificate as cells
 import full_models as full
 import robustness as robust
+import control_design as design
 sys.path.pop(0)
+
+class ControlDesignTests(unittest.TestCase):
+    def test_archive_pair_control_exact_evasion_and_source_deletions(self):
+        read=lambda n:json.loads((STUDY/'results'/n).read_text())
+        r=design.verify(read);p=r['pair_evading_cluster']
+        self.assertEqual(p['pair_control_exact'],p['quantum_pair_control_exact'])
+        self.assertEqual(p['pair_control_separation_gap_exact'],'0')
+        self.assertTrue(all(p['endpoint_region_checks']))
+        self.assertTrue(r['prospective_source_deletions']['joint_quantum_feasible'])
+        self.assertLess(r['labelled_triple_control']['quantum_example_probability'],.0115)
+
+    def test_complete_pair_marginals_do_not_determine_triples(self):
+        r=design.pair_moment_obstruction()
+        self.assertTrue(r['all_singleton_and_pair_distributions_equal'])
+        self.assertEqual(r['triple_bunch_probabilities'],['1/4','0'])
+
+    def test_factor_two_for_each_cluster_pair_with_complex_phases(self):
+        # Exercise all three pair partitions, collisions excluded, and complex interference.
+        T=[[(1,0),(0,1),(1,1)],[(1,-1),(1,0),(0,1)],[(0,1),(1,1),(1,0)]]
+        d=8;full.positive_definite(full.gram_complement(T,d))
+        independent=sum(F(full.norm(T[0][p[0]])*full.norm(T[1][p[1]])*full.norm(T[2][p[2]]),d**6) for p in itertools.permutations(range(3)))
+        for perm in [(0,1,2),(0,2,1),(1,2,0)]:
+            model=full.ParityModel([[row[j] for j in perm] for row in T],d,'cluster')
+            prob=F(model.occupation((0,1,2)),model.den)
+            self.assertLessEqual(prob,2*independent)
+
+    def test_unphysical_control_component_rejected(self):
+        model=json.loads((STUDY/'results/pair-above-minus.json').read_text())
+        model['amplitude_denominator']=1
+        with self.assertRaises(AssertionError):full.transport(model)
 
 class CollectiveTests(unittest.TestCase):
     @classmethod
