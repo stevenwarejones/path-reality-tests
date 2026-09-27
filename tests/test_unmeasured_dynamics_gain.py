@@ -41,6 +41,13 @@ class UnmeasuredDynamics(unittest.TestCase):
             (Path(directory)/'RB-clifford-counts.txt').write_text('corrupted')
             with self.assertRaisesRegex(ValueError,'checksum'):audit_extra(directory,[])
 
+    def test_target_grid_rounding_preserves_full_error_budget(self):
+        # 0.1 * 1e8 rounds to an integer although exact float(0.1)*1e8 does not.
+        for z in [.1,.3,.7,np.nextafter(.5,0),np.nextafter(.5,1)]:
+            low,high=dv.outward_target(z);center=F.from_float(float(z))
+            self.assertLessEqual(low,center-dv.ERROR)
+            self.assertGreaterEqual(high,center+dv.ERROR)
+
     def test_root_rounding_and_wrong_domain(self):
         for n in [0,1,2,3,4,10**20-1,10**20+1]:
             q=dv.ceilroot(n);self.assertGreaterEqual(q*q,n)

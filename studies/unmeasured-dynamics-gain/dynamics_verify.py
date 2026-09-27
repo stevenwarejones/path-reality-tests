@@ -34,6 +34,10 @@ def audit(rows,m,R,retained,aggregate=False):
         if min(slacks[f])<=0:raise ValueError('retained constraint violated: '+f)
     return {'retained':retained,'aggregate_only':aggregate,'minimum_slack':{f:record(min(v)) for f,v in slacks.items()},'checked_two_sided_constraints':{f:len(v)//2 for f,v in slacks.items()},'violations':{f:sum(s<0 for s in v) for f,v in slacks.items()}}
 
+def outward_target(z):
+    scaled=F.from_float(float(z))*10**8
+    return (F(math.floor(scaled),10**8)-ERROR,F(math.ceil(scaled),10**8)+ERROR)
+
 def target_probability(x):
     row={'expression':'GiGiGyGy','word':TARGET}
     p=float(prior.independent_probabilities([row],x)[0])
@@ -41,7 +45,7 @@ def target_probability(x):
     # Independent evaluation is cross-checked with the certified Bloch propagation.
     z=float(GeneralEvaluator([row])(x)[0])
     if abs(p-z)>float(ERROR)/10:raise ValueError('target density/Bloch disagreement')
-    return (F(math.floor(z*10**8),10**8)-ERROR,F(math.ceil(z*10**8),10**8)+ERROR)
+    return outward_target(z)
 
 def binding(rows,m):
     p=GeneralEvaluator(rows)(m['x']);saved=np.array(m['probabilities'])
