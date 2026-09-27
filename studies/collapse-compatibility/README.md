@@ -5,19 +5,16 @@ baselines, audits an additional XENONnT event release and a LISA Pathfinder arch
 probe, and implements two cross-experiment feasibility calculations. **It does
 not establish a new exclusion of objective-collapse models.**
 
-The strongest completed result is a conditional limitation: a finite collection
-of positive-frequency spectral envelopes cannot bound finite-time stationary
-dephasing over an unrestricted OU correlation-time family. A constructive sequence
-keeps the declared macroscopic suppression fixed while the measured-frequency
-responses tend to zero. Applying that sequence to an actual universal collapse
-field additionally requires the motion, noise-frame and instrument-response
-premises listed in [the derivation](derivation.md). Those premises are not proved
-by the datasets. Novelty is not established.
+The [moving-field report](results/moving-report.md) extends the stationary
+comparison with one shared noise frame, the same-frame moving benchmark,
+archived mass/velocity/optics, JPL trajectory metadata, published acquisition
+windows, and conservative assembly/orientation bounds. Motion produces a finite
+response; a conditional ensemble-dephasing survivor remains. This is not a
+physical outcome-selection model or a calibrated joint experimental acceptance.
 
-The original interference/sensor pairing remains valuable as a baseline. It is
-not converted into an arbitrary-spectrum LP: mass/velocity mixing is nonlinear,
-the author posterior fixes empirical calibration, and a colored Talbot-Lau map
-has not been established here.
+Read [the moving derivation and acquisition audit](moving-frame.md) for the
+precise local-Markov approximation and unresolved empirical limitations. The
+original stationary calculations remain as explicit comparison baselines.
 
 ## Reproduce
 
@@ -25,13 +22,15 @@ Use Python 3.12 and install `requirements.txt`. Keep originals outside this repo
 
 ```sh
 python studies/collapse-compatibility/fetch_data.py --data-dir /tmp/collapse-sources
+python studies/collapse-compatibility/moving_analysis.py --data-dir /tmp/collapse-sources
 python studies/collapse-compatibility/analyze.py --data-dir /tmp/collapse-sources
 python studies/collapse-compatibility/analyze.py --data-dir /tmp/collapse-sources --check
 python studies/collapse-compatibility/analyze.py --check
+python studies/collapse-compatibility/moving_analysis.py --check
 python -m unittest discover -s tests -p 'test_collapse_*.py' -v
 ```
 
-The full-source command verifies five downloaded objects, reproduces fits and
+The full-source command verifies eight external objects (including normalized Horizons responses), reproduces fits and
 Bayesian updating, compares 45 evaluations against the inspected author module,
 and regenerates derived artifacts. Offline checks use the committed small
 response summaries, re-evaluate theoretical calculations and certificates, and

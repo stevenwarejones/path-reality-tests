@@ -22,6 +22,8 @@ jobs:
       - name: Acquire and verify external original bytes
         run: python studies/collapse-compatibility/fetch_data.py --data-dir "$RUNNER_TEMP/collapse-sources"
       - name: Reproduce source fits, oracle, combinations and artifacts
-        run: python studies/collapse-compatibility/analyze.py --data-dir "$RUNNER_TEMP/collapse-sources" --check
+        run: |
+          python studies/collapse-compatibility/analyze.py --data-dir "$RUNNER_TEMP/collapse-sources" --check
+          python studies/collapse-compatibility/moving_analysis.py --data-dir "$RUNNER_TEMP/collapse-sources" --check
       - name: Verify tracked inputs remain unchanged
         run: git diff --exit-code

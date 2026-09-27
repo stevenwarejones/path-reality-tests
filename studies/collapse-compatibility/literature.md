@@ -68,3 +68,31 @@ mathematics. The OU asymptotic is not claimed as a new theorem. Its extension to
 the actual moving interferometer and calibrated instrument windows is unfinished;
 that extension, if successful and different from the literature, is the candidate
 research contribution.
+
+## Moving-response follow-up
+
+The source-linked [moving derivation](moving-frame.md) explicitly compares:
+
+- [Adler 1807.11450v3](https://arxiv.org/abs/1807.11450v3), especially Eq. (10–11):
+  colored spatial noise, boosts and directional effects are prior art. A preferred
+  frame or a Doppler slice is not claimed as new.
+- [Carlesso et al. 1805.10100v3](https://arxiv.org/abs/1805.10100v3), Eq. (11–19):
+  the stationary separable mechanical spectrum is the old baseline, whose motion
+  premises are now replaced for the new response bound.
+- [Toroš et al. 1601.03672](https://arxiv.org/abs/1601.03672), Appendix A2:
+  the short-memory expansion's kinetic-energy condition is not extended to long
+  memory. The new calculation instead declares a local *spatial-advection*
+  Markov approximation, with small parameters and an independent path check;
+  it does not assert equality to the full colored quantum grating map.
+- [Altamura et al. 2501.08971v2](https://arxiv.org/abs/2501.08971v2):
+  torque geometry and force/torque comparison are established. The present
+  extension allows delayed correlations between separated masses.
+- [Armano et al. 2405.05207](https://arxiv.org/abs/2405.05207): run table, calibrated
+  angular acceleration, windowed/Wishart methods and nuisance decorrelation.
+  This motivates the uniform finite-observation bound and the refusal to call
+  housekeeping or nominal orbit vectors a calibrated joint time-series fit.
+
+PDFs were acquired and the relevant response/acquisition derivations inspected.
+No comprehensive novelty conclusion is drawn. The specific repository result is
+an executed joint dephasing comparison with measured source summaries and stated
+auxiliary/model limitations; priority and PhD-level significance remain unclaimed.

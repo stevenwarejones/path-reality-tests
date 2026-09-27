@@ -59,3 +59,15 @@ instrument kernels. For the original experiment this means the colored
 Talbot-Lau map. For a new measurement, a slow or held massive superposition with
 several holding times and independent optical/noise calibration would directly
 test the zero-frequency dephasing that finite-band PSD summaries leave open.
+
+## Executed motion and acquisition extension
+
+The [new joint calculation](results/moving-report.md) combines sensor records,
+sodium mass/velocity/optics, the published LPF torque envelope, JPL trajectory
+metadata and the documented acquisition windows under one common field law.
+It implements the same-frame moving benchmark, finite-memory channel checks,
+all-orientation assembly/torque bounds, delayed cross-body correlations,
+nonlinear signed sodium visibility intervals and explicit dataset/auxiliary/
+window/frame-removal comparisons. This goes beyond taking a minimum of familiar
+stationary rate curves. The response-level survivor remains conditional on the
+source/mode and approximation-error assumptions in [the derivation](moving-frame.md).

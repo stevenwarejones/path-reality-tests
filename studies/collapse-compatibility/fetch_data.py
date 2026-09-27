@@ -19,7 +19,10 @@ def main():
             target = directory/item["name"]
             if target.exists(): continue
             with urllib.request.urlopen(item["url"],timeout=60) as response:
-                raw = response.read(item["bytes"]+1)
+                raw = response.read(item["bytes"]+1024 if item.get("normalization") else item["bytes"]+1)
+            if item.get("normalization") == "horizons_generation_timestamp":
+                from motion_sources import normalize_horizons
+                raw = normalize_horizons(raw)
             if len(raw)!=item["bytes"] or digest(raw)!=item["sha256"]: raise ValueError("Download integrity failure")
             target.write_bytes(raw)
     verify_sources(directory)

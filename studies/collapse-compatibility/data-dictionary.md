@@ -38,3 +38,15 @@ difference explicitly.
 The Blackman window correlates adjacent spectral estimates. A product of gamma
 marginals is not asserted as an exact likelihood. Gaussian Monte Carlo in this
 study validates only the separately named synthetic procedure.
+
+## Additional motion artifacts
+
+`results/motion.json` associates its calculation with all source and code hashes,
+a hash of the baseline data and a hash of the auxiliary summary. Its `inputs`
+contain derived normalized mass quadrature, optical settings, frequency/averaging
+metadata and SI-converted JPL vectors. The original transport responses remain
+external. LPF vectors are explicitly tagged as predicted, not reconstructed.
+`data` separates the benchmark, sensor assembly, window calculations, sodium
+nonlinear intervals, error budgets, one-channel/joint bounds and sampled common
+frames. `results/moving-report.md` and `results/moving-diagnostics.svg` regenerate
+from those rounded numerical values. None supplies a calibrated joint likelihood.

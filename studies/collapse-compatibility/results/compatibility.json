@@ -1668,9 +1668,9 @@
     "unrestricted_experimental_exclusion_enabled": false
   },
   "metadata": {
-    "code_sha256": "bf283517c932502bc85412bbb20b667ef2d09b3badbb6d7eb4222e7cf9758da4",
+    "code_sha256": "d924ea6c484fa81cba8caac8e937df2b69bcd8669f4b4d9a31f14f7f6b723d11",
     "empirical_joint_confidence_enabled": false,
-    "manifest_sha256": "0630198383692d2f2d4e8b6aeb6d9a4c676e0728bba68c026d8af09e35b6abbd",
+    "manifest_sha256": "d261015f8cf8a02c93ff18456cf6e18efbb3bf09972623615c54c429490435eb",
     "protocol_sha256": "1e8d7a707d5525f25b696cdf0a6af92c130da5cb89f9f47abad9fe89e44070bd",
     "revision_association": "content hashes; no circular output/commit hash",
     "source_hashes": {
@@ -1678,9 +1678,12 @@
       "Na-Cluster-Interference.zip": "b92355d06e06f16b3c746020ef7bc6c6eac6a629d36d739aff79e6a894003b9a",
       "PSD.zip": "43ee3538d61a636a2b94796d45827e763a028f4c1b47d1d22c86ee377d5e47fb",
       "XENONnT_ER_v2.zip": "589d80b3f2606a9e1d9d1b54d5d5e760308e9aa98bdaec90e498814b1703d920",
+      "earth_201702.txt": "edec8fa63f100838ced32127368156586d08a1a2a9cfb72b1c1b1d490a391374",
+      "earth_sodium.txt": "d0eb7cddc067df5381c79dca503e55cc6c14ecb2478ee08890848cac8918e051",
+      "lpf_201702.txt": "22ff2ca9e37ff737bd5c683d21cc5579407c683252c157a399f3eefa476b8362",
       "lpf_drs_sample.fits": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268"
     },
-    "sufficiency_sha256": "a1bf984d99d63000d3d692f18d859137115ad97a3504f1f9df286a999cb62aed",
+    "sufficiency_sha256": "78284c1795a9d8f4e818189765c06bbd1f5a347b0f62ee257adfdbe6af260e20",
     "units": "SI except explicitly named keV, mK, mW, atomic mass units"
   }
 }

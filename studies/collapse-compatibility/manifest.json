@@ -40,6 +40,33 @@
       "sha256": "3f30dd706affa4dfcd5ce03fa3306d06841c9a5a43bd6c9f4d3b9cab7df6b268",
       "role": "access and metadata probe only; not the rotational bound source",
       "redistribution": "External only; NASA DRS archive; no redistribution asserted."
+    },
+    {
+      "name": "lpf_201702.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&EPHEM_TYPE=VECTORS&CENTER=%27500%400%27&OUT_UNITS=%27KM-S%27&REF_PLANE=FRAME&VEC_TABLE=2&CSV_FORMAT=YES&TIME_TYPE=UT&COMMAND=%27-141043%27&START_TIME=%272017-02-14%27&STOP_TIME=%272017-02-28%27&STEP_SIZE=%276h%27",
+      "bytes": 19372,
+      "sha256": "22ff2ca9e37ff737bd5c683d21cc5579407c683252c157a399f3eefa476b8362",
+      "normalization": "horizons_generation_timestamp",
+      "role": "ICRF geometric trajectory; LPF is nominal prediction after 2016-04-14",
+      "redistribution": "Full transport response external only; derived metadata and vectors used in results"
+    },
+    {
+      "name": "earth_201702.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&EPHEM_TYPE=VECTORS&CENTER=%27500%400%27&OUT_UNITS=%27KM-S%27&REF_PLANE=FRAME&VEC_TABLE=2&CSV_FORMAT=YES&TIME_TYPE=UT&COMMAND=%27399%27&START_TIME=%272017-02-14%27&STOP_TIME=%272017-02-28%27&STEP_SIZE=%276h%27",
+      "bytes": 18574,
+      "sha256": "edec8fa63f100838ced32127368156586d08a1a2a9cfb72b1c1b1d490a391374",
+      "normalization": "horizons_generation_timestamp",
+      "role": "ICRF geometric trajectory; LPF is nominal prediction after 2016-04-14",
+      "redistribution": "Full transport response external only; derived metadata and vectors used in results"
+    },
+    {
+      "name": "earth_sodium.txt",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&EPHEM_TYPE=VECTORS&CENTER=%27500%400%27&OUT_UNITS=%27KM-S%27&REF_PLANE=FRAME&VEC_TABLE=2&CSV_FORMAT=YES&TIME_TYPE=UT&COMMAND=%27399%27&START_TIME=%272025-04-22%27&STOP_TIME=%272025-04-23%27&STEP_SIZE=%271h%27",
+      "bytes": 12333,
+      "sha256": "d0eb7cddc067df5381c79dca503e55cc6c14ecb2478ee08890848cac8918e051",
+      "normalization": "horizons_generation_timestamp",
+      "role": "ICRF geometric trajectory; LPF is nominal prediction after 2016-04-14",
+      "redistribution": "Full transport response external only; derived metadata and vectors used in results"
     }
   ]
 }

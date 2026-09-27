@@ -1,8 +1,11 @@
 {
-  "baselines.json": "96f03424b45367ee07cac9109deb4d9e107930e0066137c18411fdc7b3b112df",
-  "certificate.json": "8eaac600c1cb2ecc16e5cca72bc8b832035874e795c289cc0b2b8e1e84947e97",
-  "compatibility.json": "0db9ed40fa4a8ba4150df0a104bed867989696bf604d4086db84f48c52803d6a",
+  "baselines.json": "9f19803190052f59dbfad9d88b11fc79e8c909567a53353b33d9a482e7660899",
+  "certificate.json": "d3e16e2ff27fb6d69889fd93961b5ba522d084cd1a9290d82369e1fe79c19fcb",
+  "compatibility.json": "f7892f2deace0bc36be31c6152b10df87608c8acb9a441fe37f6eb1ee4bab301",
   "diagnostics.svg": "9920a80a24851f9cdcb48f23474d2b53bfbda6258b0018d2e869c834fbc8bc9b",
-  "report.md": "2f600beda5672d653b275cafd9d585e092be53fdad4ad22d34566605afba6134",
-  "validation.json": "40969a779d7266a965aa30488693b5b110344fd16df8f4054ca4092b5fcf0eca"
+  "motion.json": "0b445ecdb5857ee03ff2c598112f8bd89eaf53a1946c708085f651c3ef45f85e",
+  "moving-diagnostics.svg": "66a239eaf3677985947406c7157502c9ad15cf077a2ed1a5a65362daf89b43ce",
+  "moving-report.md": "89e15f5c94f4ecb7648dfa40efe6caa0b834b96593e251ce042a73554c384a23",
+  "report.md": "374b5e9541bd241d8b75b5df3fc1b0b3f6a9f875f4423816014bbc9a3b08cf2a",
+  "validation.json": "409aaf7d5803ba48387fc0aa8df458d518cc76f43f7e3e2540fb880aed78d10f"
 }

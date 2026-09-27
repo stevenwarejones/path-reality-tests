@@ -28,3 +28,19 @@ observations' timestamps are never aligned.
 The 2022 XENON release is for PRL 129, 161805. Its 433 events are under 30 keV.
 Bosonic-dark-matter limits in that ZIP extending to 140 keV are not higher-energy
 ER events. Background summaries are not multiplied into another likelihood.
+
+## Motion extension (2026-09-27 UTC)
+
+[The acquisition audit](moving-frame.md) records matching run dates, the actual
+sensor Blackman processing and LPF Blackman–Harris method. Three external JPL
+Horizons responses are now pinned in the manifest: LPF and Earth over February
+14–28, 2017, and Earth over April 22–23, 2025. Only the response-generation clock
+line is normalized; the physical source/version, frame, time system and numerical
+vectors remain checked. **The LPF trajectory is a nominal prediction after April
+14, 2016**, not reconstructed tracking. Derived trajectory summaries are used
+with explicit velocity-error budgets, never as measured attitude.
+
+The matching NASA February DRS summary contains housekeeping only. Direct ESA
+archive/document acquisition was investigated, but no calibrated torque/attitude
+bundle was retrieved. Failed endpoint probes are not evidence of archive-wide
+unavailability. Published torque envelopes remain conditional inputs.

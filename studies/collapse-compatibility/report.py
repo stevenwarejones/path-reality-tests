@@ -21,7 +21,7 @@ def generate(results,output):
     lines = [
         "# Collapse compatibility: audited baselines and conditional spectral feasibility",
         "",
-        "No new physical exclusion is established. The completed result is a reproducible comparison of two dataset combinations and a constructive long-memory escape for stationary-response spectral envelopes. Applying that escape to a universal colored-collapse field still requires moving-apparatus, noise-frame and finite-window response models.",
+        "No new physical exclusion is established. This report retains the original stationary comparison. The [moving-field extension](moving-report.md) now recomputes a joint ensemble-dephasing witness using one frame, a moving benchmark, trajectory metadata, assembly bounds, finite windows and the sodium mass/velocity mixture. Its empirical and approximation limits are explicit.",
         "",
         "## Observed-source reproduction",
         "",
@@ -68,7 +68,7 @@ def generate(results,output):
         "",
         "Validation includes independent time/Fourier geometry calculations, the inspected author-module oracle, synthetic count/PSD injection tests, simultaneous-bound calibration, deliberate spectral gaps and invalid-tail certificates. Offline checks recompute conditional outputs and regenerate this report; full-source checks additionally reread hash-pinned originals.",
         "",
-        "The highest-value next input is a validated colored response for the moving apparatus in a declared noise frame, with calibrated finite-time detection kernels. A slowly held massive superposition at several durations would directly address the remaining zero-frequency response.",
+        "The moving-field extension supplies a conditional response calculation. The remaining high-value inputs are a calibrated approximation-error envelope for sodium and a reconstructed LPF torque/attitude likelihood. A slowly held massive superposition at several durations would directly address the remaining zero-frequency response.",
         "",
         "See [derivation](../derivation.md), [candidate comparison](../combinations.md), [source dictionary](../data-dictionary.md), and [literature audit](../literature.md).",
         "",
