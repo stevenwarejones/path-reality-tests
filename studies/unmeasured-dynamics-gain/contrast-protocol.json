@@ -1,0 +1,12 @@
+{
+  "status": "Retrospective operational-resource follow-up; discovery already examined",
+  "model_and_region": "Unchanged full stationary qubit CPTP model and simultaneous PR17 95% region, with unchanged source-deletion endpoints",
+  "resource": "Maximum total-variation contrast between two input states through a shared native suffix followed by the binary detector; equivalent optimal equal-prior binary communication success (1+C)/2",
+  "scope": "Conditional capability with externally controllable input states; not an observed calibrated resource value or a fixed-input probability prediction",
+  "witness_recipe": "Hold native gates and reset from joint or RB baseline; minimize detector spectral range by linear programming over its two eigenvalues, retaining every selected source cell and group with 1e-5 inward slack",
+  "candidate_family": "All common GST/RB suffixes of lengths 1 through 256 absent as complete words from both sources",
+  "selection": "For candidates with positive GST lower minus RB upper, maximize the smaller crossing margin for the two LP witnesses; ties favor longer suffix, then lexicographic word",
+  "certificate": "Exact cell endpoint difference for full class; directed intervals for the effective-effect spectral range and exact complete-source membership with the inherited probability envelope",
+  "success_rule": "Both complete-source physical witnesses strictly below one joint bound, plus a jointly feasible point; no local optimizer failure or scalar relaxation witness counts",
+  "limits": "The spectral-range inequality is elementary. No novelty, fixed-input sequence gain, leakage or memory cost claim. Report readout-only gain to expose what the suffix adds."
+}

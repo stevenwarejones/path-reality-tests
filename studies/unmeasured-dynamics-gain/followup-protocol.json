@@ -1,0 +1,10 @@
+{
+  "status": "Retrospective follow-up after review of a93bec4; original results preserved",
+  "model_and_region": "Unchanged full stationary-qubit class and PR17 95% region; no confidence reallocation",
+  "first_question": "Does complete GST alone already imply the original lower bound for GiGiGyGy?",
+  "selection_objective": "Maximize the smaller crossing margin supplied by physical points from each complete source-only region; never optimize only the RB-only side",
+  "witness_pool": "Original GST/RB points and both certified all-GST search points; numerical pool used for discovery only",
+  "outer_method": "Bloch Gram semidefinite relaxation of shared affine contractions, finite prefix graphs, state/effect positivity consequences; prove every physical gate set maps into it before treating a bound as global",
+  "stopping_rule": "Retire a bound if a certified GST-only implication subsumes it; report numerical SDP bounds only as exploratory until an independent dual enclosure is checked; a loose relaxation is not physical impossibility",
+  "resource_route": "Preserve the existing obstruction; do not add another small boundary crossing"
+}

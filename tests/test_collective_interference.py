@@ -16,6 +16,7 @@ import cell_certificate as cells
 import full_models as full
 import robustness as robust
 import control_design as design
+import fresh_protocol as fresh
 sys.path.pop(0)
 
 class ControlDesignTests(unittest.TestCase):
@@ -260,3 +261,19 @@ class RobustnessTests(unittest.TestCase):
         with self.assertRaises(AssertionError):robust.single_probabilities([[F(0)]*12 for _ in range(28)],self.read('cell-certificate.json'))
 
 if __name__=='__main__':unittest.main()
+
+
+class FreshProtocolTests(unittest.TestCase):
+    def test_exact_alternatives_and_fresh_count_certificate(self):
+        result=fresh.verify(lambda n:json.loads((STUDY/'results'/n).read_text()))
+        self.assertEqual(len(result['alternatives']),6)
+        self.assertTrue(all(r['full_selected_region_pass'] for r in result['alternatives']))
+        self.assertTrue(result['fresh_example']['ideal_rejects'])
+
+    def test_mismatch_limits_and_contact_integrals(self):
+        self.assertEqual(fresh.coefficients(0,0,0,0),(F(2),F(0),F(1)))
+        A,b,lam=fresh.coefficients('0.1','0.001','0.002','0.003')
+        self.assertEqual(A,F(250,121))
+        self.assertEqual(b,F(4,1000)+A*F(3,1000))
+        with self.assertRaises(AssertionError):fresh.coefficients('0.9',0,0,0)
+        self.assertEqual(fresh.axial_contact_ratios()[2],['3/8','7/16','41/64'])

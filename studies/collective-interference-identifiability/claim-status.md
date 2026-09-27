@@ -1,5 +1,7 @@
 # Claim status and delivery boundary
 
+Latest: [physical implementation and fresh-power report](implementation-power-report.md). The extended July 2 diagonal point is calibration-compatible and not rejected by its numerical singleton point-null diagnostic, but no parameter-region or full many-body adequacy claim follows. July 7 remains discrepant. The fresh two-arm rule includes explicit label/transport/response allowances and numerical power variation; laboratory validation and total validation cost remain unresolved.
+
 | Claim | Status / evidence |
 |---|---|
 | Original fixed-channel source-combination criterion | Closed on the preserved full-pattern region: exact exclusion, physical joint quantum model and both source-deletion models. |

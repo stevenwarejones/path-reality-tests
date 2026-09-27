@@ -1,0 +1,172 @@
+{
+  "calibration_cost_example": {
+    "number_of_assays": 3,
+    "per_assay_error_target": "1/1000",
+    "per_assay_tail": "1/1000",
+    "status": "Cost illustration for validated binary error assays only; not a transport-TV or coherent-state certification.",
+    "zero_failure_trials": 6905
+  },
+  "certified_alternative_examples": [
+    {
+      "amplitude_scale": "197/200",
+      "control_probability": 0.004262441442474205,
+      "original_probability": 0.02374367626388375,
+      "power_10000": 0.865798188449349
+    },
+    {
+      "amplitude_scale": "99/100",
+      "control_probability": 0.004393920655868787,
+      "original_probability": 0.024476073393651456,
+      "power_10000": 0.8826690542711071
+    },
+    {
+      "amplitude_scale": "199/200",
+      "control_probability": 0.004528762306311452,
+      "original_probability": 0.02522720077879155,
+      "power_10000": 0.8982825803389851
+    },
+    {
+      "amplitude_scale": "1",
+      "control_probability": 0.00466703483728716,
+      "original_probability": 0.02599743967966178,
+      "power_10000": 0.9125657546713959
+    },
+    {
+      "amplitude_scale": "201/200",
+      "control_probability": 0.004808807731897883,
+      "original_probability": 0.02678717714774456,
+      "power_10000": 0.9254564618780774
+    },
+    {
+      "amplitude_scale": "101/100",
+      "control_probability": 0.00495415152333718,
+      "original_probability": 0.027596806083994986,
+      "power_10000": 0.9369422030727146
+    }
+  ],
+  "finite_hull_conservative_power_10000": 0.6954298306845287,
+  "finite_hull_conservative_power_15000": 0.9415902984528011,
+  "historical_3000_control_only_power": 0.92392750147325,
+  "ideal_nominal_costs": [
+    {
+      "control_trials": 1500,
+      "original_trials": 1500,
+      "power": 0.11404350633053005,
+      "total_science_trials": 3000
+    },
+    {
+      "control_trials": 3000,
+      "original_trials": 3000,
+      "power": 0.533580354986045,
+      "total_science_trials": 6000
+    },
+    {
+      "control_trials": 5000,
+      "original_trials": 5000,
+      "power": 0.9125657546713959,
+      "total_science_trials": 10000
+    },
+    {
+      "control_trials": 7500,
+      "original_trials": 7500,
+      "power": 0.9954910339691545,
+      "total_science_trials": 15000
+    },
+    {
+      "control_trials": 10000,
+      "original_trials": 10000,
+      "power": 0.9998738107182994,
+      "total_science_trials": 20000
+    }
+  ],
+  "iid_fixed_size_rule": "Reject if lower_CP(original) > factor * upper_CP(control) + offset; each tail is 1/320.",
+  "mismatch_sensitivity": [
+    {
+      "adverse_rate_control": 0.00466703483728716,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.9125657546713959,
+      "control_error": "0",
+      "factor": 2.0,
+      "fixed_rate_power_10000": 0.9125657546713959,
+      "offset": 0.0,
+      "original_error": "0",
+      "overlap_amplitude": "0",
+      "transport_event_tv": "0"
+    },
+    {
+      "adverse_rate_control": 0.004816379952080349,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.8517518456062099,
+      "control_error": "0",
+      "factor": 2.0661157024793386,
+      "fixed_rate_power_10000": 0.8794008298089184,
+      "offset": 0.0,
+      "original_error": "0",
+      "overlap_amplitude": "0.1",
+      "transport_event_tv": "0"
+    },
+    {
+      "adverse_rate_control": 0.005301751575158215,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.49747837098939485,
+      "control_error": "0",
+      "factor": 2.314814814814815,
+      "fixed_rate_power_10000": 0.7006400676681239,
+      "offset": 0.0,
+      "original_error": "0",
+      "overlap_amplitude": "0.2",
+      "transport_event_tv": "0"
+    },
+    {
+      "adverse_rate_control": 0.00566703483728716,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.4775281985217942,
+      "control_error": "0",
+      "factor": 2.0,
+      "fixed_rate_power_10000": 0.7690607373566152,
+      "offset": 0.002,
+      "original_error": "0",
+      "overlap_amplitude": "0",
+      "transport_event_tv": "0.001"
+    },
+    {
+      "adverse_rate_control": 0.00766703483728716,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.004896656710501625,
+      "control_error": "0",
+      "factor": 2.0,
+      "fixed_rate_power_10000": 0.3000017136865353,
+      "offset": 0.006,
+      "original_error": "0",
+      "overlap_amplitude": "0",
+      "transport_event_tv": "0.003"
+    },
+    {
+      "adverse_rate_control": 0.005848379952080349,
+      "adverse_rate_original": 0.02599743967966178,
+      "adverse_rate_power_10000": 0.3586441871214996,
+      "control_error": "0",
+      "factor": 2.0661157024793386,
+      "fixed_rate_power_10000": 0.7141655140473284,
+      "offset": 0.002,
+      "original_error": "0",
+      "overlap_amplitude": "0.1",
+      "transport_event_tv": "0.001"
+    },
+    {
+      "adverse_rate_control": 0.00566703483728716,
+      "adverse_rate_original": 0.024997439679661778,
+      "adverse_rate_power_10000": 0.2647758525936636,
+      "control_error": "0.001",
+      "factor": 2.0,
+      "fixed_rate_power_10000": 0.6651245414476191,
+      "offset": 0.003,
+      "original_error": "0.001",
+      "overlap_amplitude": "0",
+      "transport_event_tv": "0"
+    }
+  ],
+  "numerical_status": "SciPy binomial integration, not an interval-certified power calculation.",
+  "total_cost_formula": "ceil(N_original/yield_original)+ceil(N_control/yield_control)+N_validation. Validation cost and usable yields are unestablished.",
+  "uniform_over_all_compatible_quantum_models": false
+}

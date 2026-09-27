@@ -1,0 +1,238 @@
+{
+  "inputs": {
+    "1573": {
+      "denominator": 10000000000,
+      "expression": "GyGyGy(GxGxGyGxGyGy)^5",
+      "family": "GST",
+      "k": 50,
+      "lower_numerator": 7681878105,
+      "n": 50,
+      "upper_numerator": 10000000000
+    },
+    "4699": {
+      "denominator": 10000000000,
+      "expression": "GxGyGyGiGxGxGxGyGxGyGyGyGxGyGx(Gy)^9GxGyGyGyGxGyGyGxGxGyGxGyGy",
+      "family": "RB",
+      "k": 0,
+      "lower_numerator": 0,
+      "n": 285,
+      "upper_numerator": 452128544
+    }
+  },
+  "joint_binary_success_lower": {
+    "decimal": 0.86148747805,
+    "denominator": 20000000000,
+    "numerator": 17229749561
+  },
+  "joint_contrast_lower": {
+    "decimal": 0.7229749561,
+    "denominator": 10000000000,
+    "numerator": 7229749561
+  },
+  "models": {
+    "GST": {
+      "binary_success_lower": {
+        "decimal": 0.83620969775,
+        "denominator": 4000000000,
+        "numerator": 3344838791
+      },
+      "binary_success_upper": {
+        "decimal": 0.8362096978,
+        "denominator": 5000000000,
+        "numerator": 4181048489
+      },
+      "contrast_lower": {
+        "decimal": 0.6724193955,
+        "denominator": 2000000000,
+        "numerator": 1344838791
+      },
+      "contrast_upper": {
+        "decimal": 0.6724193956,
+        "denominator": 2500000000,
+        "numerator": 1681048489
+      },
+      "detector_only_contrast": {
+        "decimal": 0.6731195677149838,
+        "denominator": 36028797018963968,
+        "numerator": 24251688274695923
+      },
+      "detector_only_separation": {
+        "decimal": 0.04985538838501621,
+        "denominator": 351843720888320000000000,
+        "numerator": 17541305355716431955877
+      },
+      "effective_eigenvalue_intervals": [
+        [0.1645920903, 0.1645920904],
+        [0.8370114859, 0.837011486]
+      ],
+      "membership": {
+        "aggregate_only": false,
+        "checked_two_sided_constraints": {
+          "GST": 4663,
+          "RB": 2010
+        },
+        "minimum_slack": {
+          "GST": {
+            "decimal": 9.999000000022316e-06,
+            "denominator": 8796093022208000000000,
+            "numerator": 87952134129254083
+          },
+          "RB": {
+            "decimal": -0.1456236201336455,
+            "denominator": 1690785000728821760000000000,
+            "numerator": -246218232673799464937339561
+          }
+        },
+        "retained": ["GST"],
+        "violations": {
+          "GST": 0,
+          "RB": 1932
+        }
+      },
+      "method": "60-digit directed normalized-Kraus reconstruction; native Choi LDL; dual-effect propagation and outward spectral-radius enclosure",
+      "separation_below_joint_lower": {
+        "decimal": 0.0505555605,
+        "denominator": 2000000000,
+        "numerator": 101111121
+      }
+    },
+    "RB": {
+      "binary_success_lower": {
+        "decimal": 0.81490922265,
+        "denominator": 20000000000,
+        "numerator": 16298184453
+      },
+      "binary_success_upper": {
+        "decimal": 0.8149092227,
+        "denominator": 10000000000,
+        "numerator": 8149092227
+      },
+      "contrast_lower": {
+        "decimal": 0.6298184453,
+        "denominator": 10000000000,
+        "numerator": 6298184453
+      },
+      "contrast_upper": {
+        "decimal": 0.6298184454,
+        "denominator": 5000000000,
+        "numerator": 3149092227
+      },
+      "detector_only_contrast": {
+        "decimal": 0.6307008704691236,
+        "denominator": 288230376151711744,
+        "numerator": 181787149134527533
+      },
+      "detector_only_separation": {
+        "decimal": 0.09227408563087636,
+        "denominator": 2814749767106560000000000,
+        "numerator": 259728461039480000568891
+      },
+      "effective_eigenvalue_intervals": [
+        [0.0156480439, 0.015648044],
+        [0.6454664893, 0.6454664894]
+      ],
+      "membership": {
+        "aggregate_only": false,
+        "checked_two_sided_constraints": {
+          "GST": 4663,
+          "RB": 2010
+        },
+        "minimum_slack": {
+          "GST": {
+            "decimal": -0.7513163774374297,
+            "denominator": 17592186044416000000000,
+            "numerator": -13217297490095934851209
+          },
+          "RB": {
+            "decimal": 9.998999999963663e-06,
+            "denominator": 422696250182205440000000000,
+            "numerator": 4226539805556512247141
+          }
+        },
+        "retained": ["RB"],
+        "violations": {
+          "GST": 3640,
+          "RB": 0
+        }
+      },
+      "method": "60-digit directed normalized-Kraus reconstruction; native Choi LDL; dual-effect propagation and outward spectral-radius enclosure",
+      "separation_below_joint_lower": {
+        "decimal": 0.0931565107,
+        "denominator": 10000000000,
+        "numerator": 931565107
+      }
+    },
+    "joint": {
+      "binary_success_lower": {
+        "decimal": 0.99629132775,
+        "denominator": 4000000000,
+        "numerator": 3985165311
+      },
+      "binary_success_upper": {
+        "decimal": 0.9962913278,
+        "denominator": 5000000000,
+        "numerator": 4981456639
+      },
+      "contrast_lower": {
+        "decimal": 0.9925826555,
+        "denominator": 2000000000,
+        "numerator": 1985165311
+      },
+      "contrast_upper": {
+        "decimal": 0.9925826556,
+        "denominator": 2500000000,
+        "numerator": 2481456639
+      },
+      "detector_only_contrast": {
+        "decimal": 0.993616205015292,
+        "denominator": 4611686018427387904,
+        "numerator": 4582245960351903015
+      },
+      "detector_only_separation": {
+        "decimal": -0.27064124891529195,
+        "denominator": 45035996273704960000000000,
+        "numerator": -12188598277659945840507119
+      },
+      "effective_eigenvalue_intervals": [
+        [0.001079693, 0.0010796931],
+        [0.9936623485, 0.9936623486]
+      ],
+      "membership": {
+        "aggregate_only": false,
+        "checked_two_sided_constraints": {
+          "GST": 4663,
+          "RB": 2010
+        },
+        "minimum_slack": {
+          "GST": {
+            "decimal": 0.0031338120478955536,
+            "denominator": 409634052044226560000000000,
+            "numerator": 1283716127524471405002411
+          },
+          "RB": {
+            "decimal": 0.00202413731870507,
+            "denominator": 6606217703399096320000000000,
+            "numerator": 13371891788940209736700231
+          }
+        },
+        "retained": ["GST", "RB"],
+        "violations": {
+          "GST": 0,
+          "RB": 0
+        }
+      },
+      "method": "60-digit directed normalized-Kraus reconstruction; native Choi LDL; dual-effect propagation and outward spectral-radius enclosure",
+      "separation_below_joint_lower": {
+        "decimal": -0.2696076995,
+        "denominator": 2000000000,
+        "numerator": -539215399
+      }
+    }
+  },
+  "resource": "C=diameter(G_TARGET^*(E)); optimal equal-prior binary success=(1+C)/2",
+  "scope": "All stationary qubit CPTP models with shared SPAM in unchanged simultaneous confidence region. Resource assumes freely controllable external input states; no matching calibration was observed. Spectral-range bound itself extends to any finite dimension.",
+  "status": "Certified two-sided gain for an operational discrimination resource; fixed-input sequence gain remains open",
+  "target_absent_from_complete_source_words": true,
+  "target_sha256": "8da946d27461a8b05b042ec1930626340d4843bace36bf7da090a951478be514",
+  "target_word": [2, 1, 2, 2, 1, 1, 2, 1, 2, 2]
+}

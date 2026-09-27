@@ -1,5 +1,7 @@
 # Collective interference: fixed-channel exclusion and a drift ambiguity
 
+The [physical implementation and fresh-power follow-up](implementation-power-report.md) adds date-separated confinement and diagonal-hopping diagnostics, an imperfect-label control bound, and a fresh two-arm acquisition budget. A July 2 candidate passes the retained calibration intervals and is not rejected by its aggregate singleton diagnostic; July 7 still fails. At the displayed ideal alternative, 5,000 fresh shots per arm give 91.26% power. Label-dependent transport and response validation remain open.
+
 The [shared-dynamics and control-design extension](control-dynamics-report.md) proves that the proposed pair statistic has **zero worst-case separation**: a physical cluster mixture matches it exactly while passing the expanded measured region. A matched labelled-triple control gives a sufficient class-wide test with conditional source-removal witnesses. A joint July 7 Hamiltonian diagnostic fails calibration constraints; apparatus-supported robustness remains open.
 
 

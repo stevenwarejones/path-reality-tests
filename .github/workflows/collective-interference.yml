@@ -38,6 +38,7 @@ jobs:
           python studies/collective-interference-identifiability/full_models.py --check
           python studies/collective-interference-identifiability/robustness.py --check
           python studies/collective-interference-identifiability/control_design.py --check
+          python studies/collective-interference-identifiability/fresh_protocol.py --check
           python -m unittest discover -s tests -p 'test_collective_interference.py' -v
   full-source:
     if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.full_source)
@@ -58,4 +59,7 @@ jobs:
           python studies/collective-interference-identifiability/control_audit.py --cache "$RUNNER_TEMP/collective-sources" --check
           python studies/collective-interference-identifiability/build_robustness.py --cache "$RUNNER_TEMP/collective-sources" --check-source
           python studies/collective-interference-identifiability/dynamics.py --check --cache "$RUNNER_TEMP/collective-sources"
+          OPENBLAS_NUM_THREADS=1 python studies/collective-interference-identifiability/extended_dynamics.py --check --cache "$RUNNER_TEMP/collective-sources"
+          OPENBLAS_NUM_THREADS=1 python studies/collective-interference-identifiability/diagonal_dynamics.py --check
+          python studies/collective-interference-identifiability/fresh_power.py --check
           python -m unittest discover -s tests -p 'test_collective_dynamics.py' -v
