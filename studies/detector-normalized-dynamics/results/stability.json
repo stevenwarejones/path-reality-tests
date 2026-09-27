@@ -1,0 +1,98 @@
+{
+  "confirmed_missing_in_count_schema": ["timestamps", "per-shot order", "feedback records", "matched independently calibrated detector or state probes"],
+  "matched_rows": 23,
+  "matched_words": 8,
+  "not_proved": "No global stability upper bound follows from duplicate-word agreement alone; this is not an impossibility theorem using all GST/RB dynamics constraints",
+  "overlap_only_countermodel": {
+    "GST_effect": "diag(1/100,0)",
+    "RB_effect": "diag(1/100,1)",
+    "all_native_gates": "identity",
+    "all_word_probability": {
+      "decimal": 0.01,
+      "denominator": 100,
+      "numerator": 1
+    },
+    "minimum_retained_cell_slack": {
+      "decimal": 0.0093200413,
+      "denominator": 10000000000,
+      "numerator": 93200413
+    },
+    "operator_norm_effect_difference": 1,
+    "rho": "|0><0|",
+    "scope": "Fits every matched-word count cell only; does NOT fit all GST records or retained source-wide groups"
+  },
+  "paper_assertions": ["Interleaved GST/RB in final March 30 acquisition", "Active pi-time and frequency feedback using interleaved probes", "Final acquisition still reported statistically significant non-Markovianity"],
+  "records": [
+    {
+      "counts": [
+        [0, 50],
+        [1, 285],
+        [0, 285],
+        [3, 285],
+        [3, 285]
+      ],
+      "indices": [7, 4663, 4666, 4667, 4670],
+      "word_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [3, 285],
+        [2, 285],
+        [1, 285],
+        [2, 270]
+      ],
+      "indices": [12, 4657, 4658, 4664, 4665],
+      "word_sha256": "bb72b4e4eb29dc59328668f32e0511e3ac0e5ce4026b1591965216e49ca1f5d7"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [0, 285]
+      ],
+      "indices": [117, 4662],
+      "word_sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [5, 285]
+      ],
+      "indices": [170, 4660],
+      "word_sha256": "fa16a7fc4343bd9b7a2951b3b44c1e17bb6d50f84add936243c6b607211a37d0"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [0, 285],
+        [1, 270]
+      ],
+      "indices": [176, 4668, 4671],
+      "word_sha256": "15fb518285583d39c4bcb30ff992f2ffad2420b4c69fce52da64bcdee108f7c3"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [1, 285]
+      ],
+      "indices": [183, 4659],
+      "word_sha256": "0a476f1a2a6dac3c3bb60cf95547256e352429860727a8692fc8e39c1fdfee04"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [1, 285]
+      ],
+      "indices": [186, 4673],
+      "word_sha256": "33ff583e1231326855ee6032df2bdb63e3044d67e254cf904032bbb340ef4d30"
+    },
+    {
+      "counts": [
+        [0, 50],
+        [2, 285]
+      ],
+      "indices": [197, 4669],
+      "word_sha256": "2fd1744374b5ce533f7761cf907bcae9807005f2e24bb57976e0f0955857f8a5"
+    }
+  ]
+}
