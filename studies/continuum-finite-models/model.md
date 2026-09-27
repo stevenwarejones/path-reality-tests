@@ -1,9 +1,9 @@
 # Model and mathematical derivations
 
 These derivations have numerical checks and corresponding formal constructions.
-The [README](README.md) identifies the verified formal revision and its evidence;
-source implementations alone are not a completed audit. The sharper pure-state
-truncation constant remains independently derived here, as explained below.
+The [README](README.md) cites the machine-checked formal results and their axiom
+audit. The sharper pure-state truncation constant remains independently derived
+here, as explained below.
 
 ## Common experiment
 

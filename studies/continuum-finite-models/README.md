@@ -1,6 +1,6 @@
 # Continuum dynamics and finite alternatives
 
-**Synthetic prospective study; draft formal companion; no experimental
+**Synthetic prospective study; no experimental
 exclusion.** A finite spectral model reproduces restricted continuum experiments
 exactly. A specified nearest-neighbor spatial lattice instead changes relative
 mode phases, with a detectable difference only under adequate access and calibration.
@@ -49,7 +49,10 @@ on the declared external certificates, at type-I risk at most 5.00%.
 ## Completion/disposition register
 
 The machine-readable [register](questions.json) records dependencies and next
-steps. None of the numerical corroboration is a substitute for a Lean proof.
+steps. A `proved` status refers to the stated formal result; apparatus
+certificates are recorded separately as external requirements. Finite-menu
+numerical certificates remain computational evidence. None of the numerical
+corroboration is a substitute for a Lean proof.
 
 | ID | Disposition |
 |---|---|
@@ -66,20 +69,11 @@ steps. None of the numerical corroboration is a substitute for a Lean proof.
 | CF11 | No inspected compatible dataset; prospective outcome selected |
 | CF12 | Literal path occupancy outside scope; no conclusion relies on it |
 
-Merge readiness requires the companion formal proofs, audit and report to be
-complete and linked to an immutable verified commit, plus all final-head CI gates. This study does not narrow that requirement by
-calling the current numerical result a continuum theorem.
+## Formal evidence
 
-
-Formal evidence is in [draft #91](https://github.com/stevenwarejones/ontology-separation/pull/91).
-The [formal source and regenerated evidence at 91d813d](https://github.com/stevenwarejones/ontology-separation/tree/91d813d7bc5715d8b208e01a89c9ac40f40a5ead)
-is immutable and covers the complete chain, including physical site dynamics,
-full-space noisy measurements, phase/scale controls and heterogeneous menus.
-Its unchanged Lean sources passed the complete `scripts/check.sh` at `b9ecc05`
-in [run 36277055257](https://github.com/stevenwarejones/ontology-separation/actions/runs/36277055257).
-The linked evidence commit contains all 201 continuum audit roots and 164
-exported theorems, generated after the last Lean change. It uses only the three
-accepted axioms. Final-head CI must also pass the committed-output consistency
-gate. This is an immutable draft-branch commit, not a merged-main commit.
-Both PRs remain drafts for review. After the formal PR is approved and merged,
-replace this pin with its merged-main commit before merging the empirical PR.
+The [formal source, axiom audit and theorem report](https://github.com/stevenwarejones/ontology-separation/tree/f9f7ae2905827117318149cd51aea27867be267a)
+cover physical site dynamics, full-space noisy measurements, phase/scale controls
+and heterogeneous independent menus. The audit covers all 201 continuum roots;
+the report contains 164 exported theorems. The only axioms used are `propext`,
+`Classical.choice` and `Quot.sound`. The model and protocol identify the external
+physical assumptions and the separately derived sharper truncation bound.

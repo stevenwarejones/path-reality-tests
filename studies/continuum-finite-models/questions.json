@@ -10,19 +10,19 @@
     "id": "CF02",
     "status": "conditional",
     "evidence": "model.md",
-    "disposition": "Infinite spectral evolution and all Hilbert/site connections passed the full formal check at b9ecc05; all 201 audit roots and 164 theorem exports regenerated at 91d813d (see README immutable evidence link)",
+    "disposition": "Infinite spectral evolution and Hilbert/site connections are machine-checked; the formal source, axiom audit and theorem report are cited in README",
     "next_step": "Position-space L2 identification remains explicitly external"
   },
   {
     "id": "CF03",
-    "status": "computationally-verified",
+    "status": "proved",
     "evidence": "model.md",
     "disposition": "Full Fourier inversion, physical Schrodinger propagator and uniqueness, alias-free band transport; independent matrix-exponential and derivative checks",
     "next_step": "none"
   },
   {
     "id": "CF04",
-    "status": "computationally-verified",
+    "status": "proved",
     "evidence": "model.md",
     "disposition": "Exact spectral counterexample with complete POVMs and formal finite embedding",
     "next_step": "none"
@@ -36,24 +36,36 @@
   },
   {
     "id": "CF06",
-    "status": "conditional",
+    "status": "proved",
     "evidence": "model.md",
-    "disposition": "menu_tv and finite_menu_nonseparation compose heterogeneous fixed preparations, times, measurements and unequal or zero counts before choosing a common cutoff and site threshold",
+    "disposition": "menu_tv and finite_menu_nonseparation prove the bounds for a fixed finite menu of independent allocations, including different preparations, times, measurements and unequal or zero counts; the common cutoff and site threshold are chosen after that menu",
     "next_step": "none"
   },
   {
     "id": "CF07",
-    "status": "computationally-verified",
+    "status": "proved",
     "evidence": "protocol.md",
     "disposition": "spectral_noisy_witness and site_noisy_readout transport the complete noisy Born readout into the full Hilbert space and actual ring; phase robustness, blind times and degenerate controls are formalized",
-    "next_step": "Hardware preparation, reference, visibility and loss certificates"
+    "next_step": "Hardware preparation, reference, visibility and loss certificates",
+    "external_requirements": {
+      "status": "externally-blocked",
+      "description": "Hardware preparation, reference, visibility and loss certificates"
+    }
   },
   {
     "id": "CF08",
-    "status": "computationally-verified",
+    "status": "proved",
     "evidence": "joint.py",
     "disposition": "one_momentum_scale_interval proves exact overlap; shared_scale_two_modes_impossible proves the N>4 two-mode ratio obstruction. Separate numerical interval partitions certify finite-menu decisions and conditional power",
-    "next_step": "Physical shared-scale, phase and transport certificates"
+    "next_step": "Physical shared-scale, phase and transport certificates",
+    "external_requirements": {
+      "status": "externally-blocked",
+      "description": "Physical shared-scale, phase and transport certificates"
+    },
+    "computational_evidence": {
+      "status": "computationally-verified",
+      "description": "Finite-menu interval partitions and conditional power in joint.py; the exact ratio obstruction alone does not certify a finite menu"
+    }
   },
   {
     "id": "CF09",
