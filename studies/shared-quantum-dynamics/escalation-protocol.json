@@ -1,0 +1,62 @@
+{
+  "status": "retrospective escalation of PR 15; previous results already inspected",
+  "question": "Does the long-sequence discrepancy survive general stationary qubit CPTP operations, and what full-class predictive restrictions can the added RB counts certify?",
+  "primary_split": "retain protocol.json GST<=1024 and RB<=1000, without changing validation",
+  "general_qubit_model": "three arbitrary Choi-positive, trace-preserving qubit maps; arbitrary physical preparation and binary effect up to a common unitary gauge; no Lindblad or unital restriction",
+  "source_fits": [
+    "GST training",
+    "RB training",
+    "joint training"
+  ],
+  "diagnostic_full_fit": "joint all lengths, labeled in-sample; not a replacement validation split",
+  "optimization": {
+    "starts": 2,
+    "max_nfev": 180,
+    "seed": 260931,
+    "initialize_from": "published restricted fits in this PR, not held-out optimization"
+  },
+  "certification_targets": [
+    "repeat each selected RB training word twice; choose minimum word SHA256 in fixed length bins 2-16,17-128,129-256,257-512,513-1000, before calculating count bounds",
+    "weighted RB mean for fixed training-design length bins",
+    "held-out long-RB and long-GST fixed-design mean",
+    "unmeasured word probabilities via an observable-basis interval realization"
+  ],
+  "certification_standard": "outer sets must contain all stationary CPTP qubit predictions consistent with stated simultaneous count region; no finite bank called an outer bound; report failures of a relaxation separately from mathematical nonidentification",
+  "leakage_relaxations": [
+    "gate-dependent loss and return",
+    "arbitrary anisotropic nonunital qubit channels",
+    "unknown physical return-state polarization"
+  ],
+  "claim_scope": "no local optimizer failure becomes exclusion; fixed-design mean bounds do not imply unseen-sequence extrapolation; all validation remains retrospective",
+  "repeat_certificate": "For every stationary qubit CPTP word channel and common binary effect: p(ww) <= min(1,(2 sqrt(p(w)) + sqrt(p(empty)))^2). General physical proof and assumption violations required.",
+  "certification_decisions": {
+    "doubled_words": "implemented exact rational outer bounds",
+    "fixed_design_means": "not pursued further: direct count aggregation does not establish unseen-sequence gain; existing removal.py retains fixed design group constraints",
+    "observable_basis": "implemented opposite-determinant-sign certificate that this entrywise interval relaxation contains singular matrices; no global impossibility claim"
+  },
+  "exploratory_continuation": {
+    "reason": "initial general CPTP fits reached the budget with substantial optimality diagnostics",
+    "source": "joint training only; same split",
+    "max_nfev": 1200,
+    "fixed_coordinates": "three redundant Cholesky scales",
+    "jacobian": "absolute central differences, step 1e-4, clipped at physical bounds",
+    "x_scale": 1,
+    "ftol": 1e-09,
+    "xtol": 1e-09,
+    "gtol": 1e-05,
+    "initial_budget": 120,
+    "extension_reason": "120 evaluations still exhausted budget; extend numerical effort without changing model, training counts, or selecting by validation"
+  },
+  "full_compatibility_diagnostic": {
+    "status": "retrospective, added after seeing zero per-family cell violations in all-length fit; not validation",
+    "cells": "all 6661 two-sided CP intervals, alpha .025, exact outward rational endpoints",
+    "means": "10 Hoeffding groups, alpha .025: each family at lengths 0-16,17-64,65-256,257-1024,1025-8198",
+    "interpretation": "feasible ordinary point in this region; no global MLE, no likelihood adequacy or held-out claim"
+  },
+  "compatible_lift_extension": {
+    "status": "analytic exploratory follow-up after finding all-length compatible qubit point",
+    "choice": "loss=.8 times per-gate CP replacement budget; return=max(2 times nonunital Bloch displacement,1e-5); fractions 0,.25,1 of that loss; no count-residual optimization",
+    "restriction": "leakage readout equals maximally mixed computational response; return polarization chosen by intertwining identity",
+    "test": "full-source all-word numerical check plus independent Kraus tests; theorem all words"
+  }
+}

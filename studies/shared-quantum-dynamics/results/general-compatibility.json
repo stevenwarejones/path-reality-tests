@@ -1,0 +1,38 @@
+{
+  "cell_alpha": 0.025,
+  "cell_count": 6661,
+  "cell_violations": 0,
+  "compatible": true,
+  "confidence": 0.95,
+  "exact_cell_tail_denominator": 532880,
+  "fit": "all_joint",
+  "group_alpha": 0.025,
+  "group_count": 10,
+  "groups": [
+    {"family": "GST", "hoeffding_radius": 0.0087605024572071, "length_max": 16, "length_min": 0, "observed_mean": 0.4964408725602755, "predicted_mean": 0.49681808971213065, "shots": 43550, "slack": 0.008383285305351975},
+    {"family": "GST", "hoeffding_radius": 0.009329480971844547, "length_max": 64, "length_min": 17, "observed_mean": 0.493984375, "predicted_mean": 0.4973627350267293, "shots": 38400, "slack": 0.005951120945115237},
+    {"family": "GST", "hoeffding_radius": 0.009329480971844547, "length_max": 256, "length_min": 65, "observed_mean": 0.50078125, "predicted_mean": 0.501805523409328, "shots": 38400, "slack": 0.008305207562516456},
+    {"family": "GST", "hoeffding_radius": 0.009329480971844547, "length_max": 1024, "length_min": 257, "observed_mean": 0.49861979166666665, "predicted_mean": 0.496833274907711, "shots": 38400, "slack": 0.007542964212888911},
+    {"family": "GST", "hoeffding_radius": 0.006716051093608231, "length_max": 8198, "length_min": 1025, "observed_mean": 0.49802968960863697, "predicted_mean": 0.4986712943808168, "shots": 74100, "slack": 0.006074446321428393},
+    {"family": "RB", "hoeffding_radius": 0.024375965809092324, "length_max": 16, "length_min": 0, "observed_mean": 0.005688888888888889, "predicted_mean": 0.005683773364043161, "shots": 5625, "slack": 0.024370850284246594},
+    {"family": "RB", "hoeffding_radius": 0.02025711301862814, "length_max": 64, "length_min": 17, "observed_mean": 0.008348680171884592, "predicted_mean": 0.007167084134924039, "shots": 8145, "slack": 0.019075516981667588},
+    {"family": "RB", "hoeffding_radius": 0.015734618271055996, "length_max": 256, "length_min": 65, "observed_mean": 0.014592592592592593, "predicted_mean": 0.013580843485920502, "shots": 13500, "slack": 0.014722869164383905},
+    {"family": "RB", "hoeffding_radius": 0.004814965473489966, "length_max": 1024, "length_min": 257, "observed_mean": 0.0404952658412236, "predicted_mean": 0.04005999693302096, "shots": 144165, "slack": 0.004379696565287325},
+    {"family": "RB", "hoeffding_radius": 0.0029205587080917395, "length_max": 8198, "length_min": 1025, "observed_mean": 0.08056501933162348, "predicted_mean": 0.08014529787976266, "shots": 391845, "slack": 0.002500837256230915}
+  ],
+  "minimum_all_constraint_slack": 0.002500837256230915,
+  "minimum_cell_slack": 0.005130521631397638,
+  "numerical_verification_tolerance": 2e-08,
+  "physical_certificate": {
+    "choi_min_eigenvalue": 1.4303886036238106e-05,
+    "trace_preservation_max_error": 4.440892112839865e-16
+  },
+  "resource_point": {
+    "classical_memory_states": 1,
+    "gate_time_dependence": false,
+    "leakage_population": 0
+  },
+  "sampling": "Independent Bernoulli shots for Hoeffding means; binomial within each row for cells. Unrestricted dependence voids these confidence claims.",
+  "scope": "No strictly positive resource lower bound follows from this region, since it contains an explicit stationary qubit model. This does not certify the likelihood optimum, adequacy under stronger tests, or prediction of untouched data.",
+  "status": "retrospective in-sample constructive ordinary compatibility in a declared conservative simultaneous count region; no held-out claim"
+}

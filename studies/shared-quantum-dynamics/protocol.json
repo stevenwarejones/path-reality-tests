@@ -1,0 +1,20 @@
+{
+  "status": "retrospective; papers and first source rows inspected before freezing; no preregistration claim",
+  "source_commit": "fc939f90f7a2b32a20aec34f36465259f38837a3",
+  "base_commit": "95d209e",
+  "question": "What do interleaved GST and RB constrain about shared operations, and can they distinguish leakage, finite memory, and time dependence?",
+  "training": {"GST_max_primitive_length": 1024, "RB_max_primitive_length": 1000},
+  "validation": "all longer sequences; do not use validation to select model, starts, bounds, or splits",
+  "models": ["qubit", "leakage", "alternating", "quasistatic"],
+  "source_removal": ["GST", "RB", "joint"],
+  "primary_statistics": ["heldout binomial deviance (descriptive)", "heldout prediction spread across source-removal physical fits", "exact operational equivalence of restricted leakage/flag and parity/clock pairs"],
+  "confidence": "simultaneous Clopper-Pearson intervals under independent shots; no confidence claim with unrestricted within-acquisition dependence",
+  "optimizer": {"method": "bounded least_squares binomial deviance", "starts": 2, "max_nfev": 100, "seed": 260927},
+  "model_scale": {"rotation_radian": 0.001, "depolarization_exponent": 0.0001, "alternating_radian": 0.01, "leakage_rate": 0.0001},
+  "scope": "restricted physical channel families, not optimization over all CPTP gates; optimizer failure excludes nothing",
+  "controls": ["leakage", "alternating memory", "quasistatic coherent drift", "imperfect reset", "readout bias"],
+  "control_repetitions": 20,
+  "control_fit": "refit all qubit nuisance parameters; counts at actual training exposures",
+  "resource_claim": "feasible constructions and exact restricted-model nonidentification, not globally necessary leakage or memory",
+  "selection": "GST/RB selected for explicit interleaving and shared primitive gate alphabet; other device data are not calibration"
+}

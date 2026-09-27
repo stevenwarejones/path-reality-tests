@@ -1,0 +1,108 @@
+{
+  "CP_loss_upper_per_gate": [3.3853445616231146e-05, 6.981548588163097e-05, 2.8607772072476212e-05],
+  "computational_subspace": "stipulated block, using the saved qubit representation; channel budget is gauge-conditional",
+  "missing_observation": "calibrated subspace population monitor after one gate; unknown terminal binary words cannot distinguish these models",
+  "models": [
+    {
+      "choi_min_eigenvalue": 0.0,
+      "fraction_of_selected_loss": 0.0,
+      "full_source_max_probability_error": 3.5668135112132404e-12,
+      "intertwining_max_error": 8.326672684688674e-16,
+      "leakage_effect": 0.4973722146542227,
+      "loss": [0.0, 0.0, 0.0],
+      "repeated_gate_leakage_populations": {
+        "0": {
+          "1": 0.0,
+          "1000": 0.0,
+          "8192": 0.0
+        },
+        "1": {
+          "1": 0.0,
+          "1000": 0.0,
+          "8192": 0.0
+        },
+        "2": {
+          "1": 0.0,
+          "1000": 0.0,
+          "8192": 0.0
+        }
+      },
+      "return": [1.286502145749611e-05, 3.242637738899007e-05, 6.978297801195433e-05],
+      "return_state_min_eigenvalue": 0.24999999999999983,
+      "same_all_word_probabilities": true,
+      "trace_preservation_max_error": 8.388608599767658e-16
+    },
+    {
+      "choi_min_eigenvalue": 3.2162553643740314e-06,
+      "fraction_of_selected_loss": 0.25,
+      "full_source_max_probability_error": 4.412470389070222e-12,
+      "intertwining_max_error": 4.440892098500626e-16,
+      "leakage_effect": 0.4973722146542227,
+      "loss": [6.77068912324623e-06, 1.3963097176326195e-05, 5.721554414495243e-06],
+      "repeated_gate_leakage_populations": {
+        "0": {
+          "1": 6.770689123239637e-06,
+          "1000": 0.006704713617492672,
+          "8192": 0.051234851527816094
+        },
+        "1": {
+          "1": 1.3963097176308053e-05,
+          "1000": 0.013644486517591668,
+          "8192": 0.0951632593973863
+        },
+        "2": {
+          "1": 5.721554414494539e-06,
+          "1000": 0.005511088352394036,
+          "8192": 0.034954588504607524
+        }
+      },
+      "return": [1.286502145749611e-05, 3.242637738899007e-05, 6.978297801195433e-05],
+      "return_state_min_eigenvalue": 0.24999999999999983,
+      "same_all_word_probabilities": true,
+      "trace_preservation_max_error": 8.881784197024837e-16
+    },
+    {
+      "choi_min_eigenvalue": 2.86077720709636e-06,
+      "fraction_of_selected_loss": 1.0,
+      "full_source_max_probability_error": 4.849232126957759e-12,
+      "intertwining_max_error": 1.1102230246251565e-15,
+      "leakage_effect": 0.4973722146542227,
+      "loss": [2.708275649298492e-05, 5.585238870530478e-05, 2.288621765798097e-05],
+      "repeated_gate_leakage_populations": {
+        "0": {
+          "1": 2.7082756492975033e-05,
+          "1000": 0.026549460155423567,
+          "8192": 0.1892188651373983
+        },
+        "1": {
+          "1": 5.5852388705305695e-05,
+          "1000": 0.053460326921302974,
+          "8192": 0.3257100713033556
+        },
+        "2": {
+          "1": 2.2886217657989513e-05,
+          "1000": 0.02185877177654383,
+          "8192": 0.13137413061867673
+        }
+      },
+      "return": [1.286502145749611e-05, 3.242637738899007e-05, 6.978297801195433e-05],
+      "return_state_min_eigenvalue": 0.24999999999999983,
+      "same_all_word_probabilities": true,
+      "trace_preservation_max_error": 8.881784392844084e-16
+    }
+  ],
+  "positivity_return_lower_per_gate": [6.432510728748055e-06, 1.6213188694495036e-05, 3.4891489005977165e-05],
+  "recorded_example": {
+    "common_probability": 0.316160320987004,
+    "conditional_leakage_populations": [0.0, 0.0951632593973863, 0.3257100713033556],
+    "family": "GST",
+    "k": 21,
+    "length": 8192,
+    "n": 50,
+    "row": 4273,
+    "word": "Gx repeated 8192 times",
+    "word_sha256": "6ba042a6672c64272ce75901468fd210026cd674fe9f1e11b46c9302e47e2136"
+  },
+  "same_joint_region_minimum_slack": 0.002500837256230915,
+  "status": "exact model-class construction, numerically evaluated at the full-acquisition compatible qubit point; populations are conditional examples, not device estimates"
+}
