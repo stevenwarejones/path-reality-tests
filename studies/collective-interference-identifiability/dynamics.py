@@ -11,7 +11,6 @@ import numpy as np
 from numpy.polynomial.hermite import hermgauss
 from scipy.special import jv,xlogy
 from scipy.optimize import minimize
-from control_audit import audit
 HERE=Path(__file__).resolve().parent
 PARAMETERS=[121.94618326893601,106.58118068399486,-0.374281912946175,0.08116996089253452,0.9627199765171192]
 
@@ -74,6 +73,7 @@ def evaluate(parameters=PARAMETERS):
 
 def source_geometry(cache):
     import xarray as xr
+    from control_audit import audit
     audit(cache) # pins original archive, notebook and all input members
     result=[]
     for j in range(3):
