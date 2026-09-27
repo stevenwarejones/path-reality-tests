@@ -69,6 +69,11 @@ jobs:
           python studies/timing-structure/analyze.py --check
           python studies/timing-structure/recovery.py --check
           python studies/timing-structure/plot.py --output-dir "$RUNNER_TEMP/review-artifacts/timing-structure"
+      - name: Reproduce fine timing bands, paired recovery and figures
+        run: |
+          python studies/fine-timing-structure/analyze.py --check
+          python studies/fine-timing-structure/recovery.py --check
+          python studies/fine-timing-structure/plot.py --check
       - name: Check NIST causal-audit counts, assumptions and report
         run: |
           python studies/nist-bell-causal-audit/audit.py --check

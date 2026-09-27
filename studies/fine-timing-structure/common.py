@@ -50,3 +50,19 @@ def grouped(counts, mapping):
 def json_text(value):
     import json
     return json.dumps(value, sort_keys=True, indent=2, allow_nan=False)+'\n'
+
+
+def artifact_json(value):
+    """One independent case per line; full numerical precision and compact arrays."""
+    import json
+    lines=['{']
+    keys=sorted(value)
+    for index,key in enumerate(keys):
+        item=value[key]; suffix=',' if index+1<len(keys) else ''
+        if isinstance(item,list):
+            lines.append('  '+json.dumps(key)+': [')
+            lines.extend('    '+json.dumps(v,sort_keys=True,separators=(',',':'),allow_nan=False)+(',' if j+1<len(item) else '') for j,v in enumerate(item))
+            lines.append('  ]'+suffix)
+        else:
+            lines.append('  '+json.dumps(key)+': '+json.dumps(item,sort_keys=True,separators=(',',':'),allow_nan=False)+suffix)
+    return '\n'.join(lines+['}',''])
