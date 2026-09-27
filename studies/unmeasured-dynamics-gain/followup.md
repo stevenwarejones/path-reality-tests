@@ -1,6 +1,6 @@
 # Two-sided selection and a certified limitation of the transfer method
 
-The requested two-source payoff remains unestablished. This follow-up changes the selection objective, checks a stronger shared-dynamics relaxation, and proves exactly why adding more instances of the current transfer inequality cannot answer the GST-only question. It does **not** turn a relaxation point into a physical source-deletion witness.
+The requested two-source payoff for a fixed-input sequence remains unestablished. A subsequent [operational discrimination-resource result](contrast.md) establishes both source-deletion crossings for a different quantity, largely detector contrast. This follow-up changes the selection objective, checks a stronger shared-dynamics relaxation, and proves exactly why adding more instances of the current transfer inequality cannot answer the GST-only question. It does **not** turn a relaxation point into a physical source-deletion witness.
 
 | Question | Result and status |
 | --- | --- |

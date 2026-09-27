@@ -8,6 +8,7 @@ on:
       - 'studies/shared-quantum-dynamics/**'
       - 'studies/gst-rb-combination-gain/**'
       - 'tests/test_unmeasured_dynamics_gain.py'
+      - 'tests/test_discrimination_contrast.py'
       - '.github/workflows/unmeasured-dynamics-reproduce.yml'
 
 permissions:
@@ -34,9 +35,12 @@ jobs:
           python studies/unmeasured-dynamics-gain/transfer_barrier.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
           python studies/unmeasured-dynamics-gain/two_sided_screen.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
           python studies/unmeasured-dynamics-gain/gram_probe.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
+          python studies/unmeasured-dynamics-gain/contrast_certificate.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
+          python studies/unmeasured-dynamics-gain/contrast_discover.py --cache "$RUNNER_TEMP/unmeasured-dynamics" --check
       - name: Check assumption violations and offline certificate
         run: |
           python -m unittest discover -s tests -p 'test_unmeasured_dynamics_gain.py' -v
+          python -m unittest discover -s tests -p 'test_discrimination_contrast.py' -v
           python studies/unmeasured-dynamics-gain/verify.py --check
           python studies/unmeasured-dynamics-gain/controls.py --check
           python studies/unmeasured-dynamics-gain/aggregate_discovery.py --cache "$RUNNER_TEMP/unmeasured-dynamics"

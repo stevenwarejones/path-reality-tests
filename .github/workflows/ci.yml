@@ -99,6 +99,7 @@ jobs:
           python studies/unmeasured-dynamics-gain/verify.py --check
           python studies/unmeasured-dynamics-gain/controls.py --check
           python studies/unmeasured-dynamics-gain/transfer_barrier.py --check
+          python studies/unmeasured-dynamics-gain/contrast_certificate.py --check
       - name: Confirm inputs and tracked outputs remain unchanged
         run: |
           python studies/born-rule-identifiability/analyze.py --check

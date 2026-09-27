@@ -1,8 +1,8 @@
 # Can combined records predict a new quantum experiment?
 
-**A certified one-sided result, with the requested two-sided result still open.** For the unmeasured word `Gi Gi Gy Gy`, every stationary qubit CPTP model in the unchanged simultaneous GST/RB confidence region has plus-outcome probability at least **0.1113640705**. An explicit physical model satisfying **all** RB constraints predicts at most **0.002342601**. Adding GST therefore removes physically attainable RB-only predictions. We have not found a model satisfying every GST constraint that crosses the same bound. This is not a certificate that RB contributes indispensable information to this prediction.
+**A one-sided fixed-input prediction, now complemented by a two-sided operational-resource result.** For the unmeasured word `Gi Gi Gy Gy`, every stationary qubit CPTP model in the unchanged simultaneous GST/RB confidence region has plus-outcome probability at least **0.1113640705**. An explicit physical model satisfying **all** RB constraints predicts at most **0.002342601**. Adding GST therefore removes physically attainable RB-only predictions. We have not found a model satisfying every GST constraint that crosses the same bound. This is not a certificate that RB contributes indispensable information to this prediction.
 
-The scientific question remains whether shared ordinary dynamics across complementary measured families restrict an informative unmeasured experiment more than either complete source does alone. The result below advances that question in one direction; it does not establish the requested combined-source payoff or novelty.
+The scientific question remains whether shared ordinary dynamics across complementary measured families restrict an informative unmeasured experiment more than either complete source does alone. The fixed-input result below advances that question in one direction. The separate [discrimination-resource result](contrast.md) certifies a bound with physical crossings after both source deletions; most of that gain concerns detector contrast, and novelty or consequential dynamics identification is not established.
 
 | Claim | Status |
 | --- | --- |
@@ -13,7 +13,8 @@ The scientific question remains whether shared ordinary dynamics across compleme
 | Physical GST-only point below the same bound | Unavailable; two local searches failed to find one |
 | Detailed counts add information beyond two overall means | Certified physical aggregate-only counterexample |
 | All-word-equivalent physical models disagree on entanglement-breaking status of `Gy^10749` | Certified restricted operational identifiability obstruction; a small boundary crossing |
-| Useful two-source restriction on this resource, novelty, or major scientific advance | Not established |
+| Two-source restriction on entanglement breaking, novelty, or major scientific advance | Not established |
+| Shared suffix/detector discrimination contrast at least 0.7229749561; complete GST-only and RB-only physical models below it | Certified two-sided operational-resource gain; largely detector contrast, not fixed-input sequence gain |
 
 This builds on [PR17's study](../gst-rb-combination-gain/README.md), preserving its measured-context mixture result. The new target is a literal unrecorded sequence, not a relabeling of recorded frequencies. In the nominal apparatus interpretation it is two idles followed by a two-Y readout rotation; no ideal rotation assumption is used in the proof.
 
