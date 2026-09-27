@@ -1,0 +1,16 @@
+{
+  "status": "retrospective feasibility protocol; not preregistered",
+  "question": "Can one moving field strongly dephase a massive benchmark while satisfying complementary measured responses?",
+  "base_commit": "95d209e",
+  "prior_baseline_head": "77e9ba9bc2ab847b8b037f83839ffda29fb68b56",
+  "primary_endpoint": "Gate A: determine whether rigorous response bounds yield genuine complementary empirical identification, or identify the missing bridge",
+  "frame_class": "one Earth-following rigid coordinate law for every terrestrial instrument; distinct from inertial SSB models",
+  "temporal_measure": "arbitrary nonnegative one-sided variance measure supported on [0.1,1] Hz; atoms allowed",
+  "rc_m": 1e-7,
+  "benchmark": {"radius_m": 1e-7, "density_kg_m3": 2200.0, "separation_m": 1e-7, "duration_s": 0.01, "target_exponent": 10.0},
+  "quantum_domain": {"maximum_mass_u": 195500.0, "maximum_exposure_s": 0.025, "unvalidated_tail_weight": 0.0},
+  "sensor": {"samples": 4194304, "sample_interval_s": 1e-5, "window": "periodic or symmetric Blackman", "calibration_multiplier_stress": 10.0},
+  "selection": "all 95 sodium scans and all 14 sensor spectra; no frequency, lag, or epoch association search",
+  "prohibited_claims": ["calibrated joint confidence", "arbitrary inertial frames", "exclusion from an upper response bound", "outcome selection", "data establish mass/exposure support", "finite scan certifies all spectra"],
+  "stop_rule": "do not run a broad optimization if a necessary response/calibration bridge remains unbounded"
+}

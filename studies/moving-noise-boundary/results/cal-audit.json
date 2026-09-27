@@ -1,0 +1,252 @@
+{
+  "diagnostic_parameter_order": [
+    "amplitude",
+    "column_center_px",
+    "row_center_px",
+    "column_sigma_px",
+    "row_sigma_px",
+    "background",
+    "column_gradient",
+    "row_gradient"
+  ],
+  "image_calibration_obtained": false,
+  "images_loaded": 18,
+  "matched_ISS_trajectory_obtained": false,
+  "missing": [
+    "object-plane length per pixel and uncertainty for this 2019 sequence",
+    "dark/flat/saturation calibration and PSF with uncertainty",
+    "shot selection, spin components, effective lens waveform and initial state",
+    "release/image time definition and matching ISS position/attitude with errors"
+  ],
+  "published_52_pK_reproduced": false,
+  "roi_columns": [
+    1530,
+    1640
+  ],
+  "roi_rows": [
+    760,
+    980
+  ],
+  "scope": "Gaussian fits are diagnostic pixel summaries only; no physical radii, temperature, field fitting, confidence or modulation claim",
+  "shots": [
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.04798361389210901,
+        1572.2843555538743,
+        864.12019704457,
+        10.357257645345497,
+        38.786423443882924,
+        -0.009571351464262731,
+        -0.004917326672407659,
+        -0.0003184872341089634
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/117p000000T1/image0.png",
+      "image0_time_label": "2019-197T01:00:54",
+      "image1_time_label": "2019-197T01:00:55",
+      "log_ratio_max": 0.23679745613729394,
+      "log_ratio_min": -0.23515469644336412,
+      "nominal_TOF_from_path_ms": 117.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05399345611067282,
+      "roi_intensity_min": 7841.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.04085882841283503,
+        1580.9966205401504,
+        877.617534658253,
+        5.819964175920169,
+        11.198244797152805,
+        0.0013649243755097479,
+        -0.006528875343203205,
+        -0.0022487485974534635
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/137p000000T2/image0.png",
+      "image0_time_label": "2019-197T01:04:18",
+      "image1_time_label": "2019-197T01:04:18",
+      "log_ratio_max": 0.20325257113656423,
+      "log_ratio_min": -0.22289248878038745,
+      "nominal_TOF_from_path_ms": 137.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05395339656552566,
+      "roi_intensity_min": 7761.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.019051496924376632,
+        1578.128106163282,
+        870.7280448108395,
+        4.402432988873101,
+        16.072081945672068,
+        -0.008732771994646126,
+        -0.009059092566668054,
+        -0.002992461860139389
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/157p000000T1/image0.png",
+      "image0_time_label": "2019-197T01:06:14",
+      "image1_time_label": "2019-197T01:06:15",
+      "log_ratio_max": 0.22284707238934884,
+      "log_ratio_min": -0.28421654441414096,
+      "nominal_TOF_from_path_ms": 157.0,
+      "path_rows_without_image_times": 4,
+      "residual_rms": 0.05375288481297651,
+      "roi_intensity_min": 8129.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.5184521494749065,
+        1582.565277554811,
+        914.4699331516993,
+        5.346515209516986,
+        7.6347898913626695,
+        7.128408726542209e-05,
+        -0.0041832209194478725,
+        0.006330973994560482
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/17p000000T1/image0.png",
+      "image0_time_label": "2019-197T00:52:09",
+      "image1_time_label": "2019-197T00:52:10",
+      "log_ratio_max": 0.7829718665542873,
+      "log_ratio_min": -0.23168007284895661,
+      "nominal_TOF_from_path_ms": 17.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05552646580653166,
+      "roi_intensity_min": 5713.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.28896475049377884,
+        1581.791222866916,
+        914.9814843820021,
+        7.439735119272585,
+        19.67295957364304,
+        0.004499547305461901,
+        -0.005973339486299675,
+        0.005536378584097687
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/17p000000T2/image0.png",
+      "image0_time_label": "2019-197T00:53:24",
+      "image1_time_label": "2019-197T00:53:26",
+      "log_ratio_max": 0.7270359372307964,
+      "log_ratio_min": -0.20508945136144746,
+      "nominal_TOF_from_path_ms": 17.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.056270178313229835,
+      "roi_intensity_min": 6225.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.21972751560340395,
+        1584.6931381396184,
+        911.3890529644444,
+        5.603395562724228,
+        29.996151632816474,
+        -0.006958799617541388,
+        -0.006883755123854998,
+        0.004077802824299238
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/37p000000T1/image0.png",
+      "image0_time_label": "2019-197T00:54:45",
+      "image1_time_label": "2019-197T00:54:46",
+      "log_ratio_max": 0.5541794781439642,
+      "log_ratio_min": -0.22196167580730045,
+      "nominal_TOF_from_path_ms": 37.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05511268974944304,
+      "roi_intensity_min": 7457.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.1498749103189241,
+        1584.1397378061142,
+        904.8343406902299,
+        6.015838308210354,
+        44.69088228233528,
+        -0.009607262502600425,
+        -0.0074645836904554804,
+        0.0010621936934913485
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/57p000000T1/image0.png",
+      "image0_time_label": "2019-197T00:56:08",
+      "image1_time_label": "2019-197T00:56:09",
+      "log_ratio_max": 0.3377625696583295,
+      "log_ratio_min": -0.23753228876630933,
+      "nominal_TOF_from_path_ms": 57.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05431445118199193,
+      "roi_intensity_min": 8081.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.08437202040188096,
+        1582.43580556358,
+        892.1700351389541,
+        8.102518258232909,
+        48.633485715076546,
+        -0.011720679843920475,
+        -0.00390818065119073,
+        3.603892015755393e-05
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/77p000000T1/image0.png",
+      "image0_time_label": "2019-197T00:57:41",
+      "image1_time_label": "2019-197T00:57:41",
+      "log_ratio_max": 0.30513138886165886,
+      "log_ratio_min": -0.23014142516758826,
+      "nominal_TOF_from_path_ms": 77.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.05366181094106881,
+      "roi_intensity_min": 8258.0,
+      "roi_saturated_pixels": 0
+    },
+    {
+      "fit_success": true,
+      "gaussian_diagnostic": [
+        0.04867340709025699,
+        1578.8688418677018,
+        879.3903558829502,
+        11.02052950018718,
+        49.79014058143304,
+        -0.014869430566675926,
+        -0.0034160997494407045,
+        0.0022962012932320696
+      ],
+      "image": "2019/197/L1/190622_V20_3644009331_DKC_1p8msLens_TOF/TOF/97p000000T1/image0.png",
+      "image0_time_label": "2019-197T00:59:17",
+      "image1_time_label": "2019-197T00:59:19",
+      "log_ratio_max": 0.19970413826337607,
+      "log_ratio_min": -0.2839000006512828,
+      "nominal_TOF_from_path_ms": 97.0,
+      "path_rows_without_image_times": 0,
+      "residual_rms": 0.053381965107410966,
+      "roi_intensity_min": 8210.0,
+      "roi_saturated_pixels": 0
+    }
+  ],
+  "source": {
+    "bytes": 107889947,
+    "file_id": "66eb934dc6ad4bdc12fa5da1",
+    "file_version": 1,
+    "name": "2019_197_190622_V20_3644009331_DKC_1p8msLens_TOF_TOF_1_L1.zip",
+    "record": "PSI-32",
+    "record_version": 4,
+    "sha256": "c87e81d607e715c5ddcdf1b1893e83761623a74441d3ce926ce817bffaa1b059",
+    "url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-32/download?file=66eb934dc6ad4bdc12fa5da1&version=1&studyVersion=4&redirect=false"
+  },
+  "status": "science arrays and timestamp labels joined; physical response calibration NOT established",
+  "time_scale": "YYYY-day-of-year timestamp labels; clock scale/offset and release-to-image timing unverified"
+}

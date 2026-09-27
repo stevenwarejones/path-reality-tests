@@ -1,0 +1,376 @@
+{
+  "cal": {
+    "columns": [
+      "TOF_ms",
+      "x_um",
+      "x_error_um",
+      "z_um",
+      "z_error_um"
+    ],
+    "positions": [
+      [
+        18,
+        144.37040000000013,
+        6.520090207965252,
+        73.46140000000022,
+        6.679896340512512
+      ],
+      [
+        43,
+        136.822,
+        0.31961226509640356,
+        149.62339999999986,
+        2.7806267063386487
+      ],
+      [
+        68,
+        137.50000000000017,
+        3.8353471811555875,
+        239.3679999999998,
+        11.506041543468019
+      ],
+      [
+        93,
+        131.85000000000002,
+        5.433408506636977,
+        280.8164,
+        21.350099308434487
+      ],
+      [
+        143,
+        134.48666666666665,
+        4.101344820096339,
+        462.8066666666667,
+        0.9409130317589396
+      ],
+      [
+        168,
+        116.91893333333365,
+        49.73432496670018,
+        568.1075999999997,
+        36.73278052965803
+      ],
+      [
+        193,
+        135.9933333333334,
+        8.140184109302137,
+        593.5853333333338,
+        18.138120415669864
+      ],
+      [
+        243,
+        141.56800000000035,
+        22.504879826384478,
+        774.6866666666664,
+        52.77055638642932
+      ],
+      [
+        293,
+        131.47333333333341,
+        2.60962321673677,
+        898.8510666666668,
+        80.5036025095352
+      ],
+      [
+        318,
+        150.74360000000019,
+        6.647935114003689,
+        1075.7940000000006,
+        113.39843165617424
+      ],
+      [
+        343,
+        157.8400000000002,
+        0.6,
+        1017.2599999999999,
+        79.90306627408017
+      ],
+      [
+        393,
+        156.33333333333374,
+        48.751784924588414,
+        1322.36,
+        45.1999999999999
+      ],
+      [
+        418,
+        146.49480000000014,
+        29.892912157008872,
+        1230.2085,
+        75.52422156941869
+      ],
+      [
+        468,
+        212.0799999999998,
+        159.80613254815975,
+        1277.1599999999999,
+        63.92245301926376
+      ],
+      [
+        518,
+        167.63936000000027,
+        32.47313147646849,
+        1570.12832,
+        152.16033568979805
+      ],
+      [
+        568,
+        121.68000000000016,
+        22.600000000000207,
+        1717.1066666666663,
+        182.00134211959363
+      ],
+      [
+        618,
+        165.27992000000006,
+        77.84435806217427,
+        1864.91368,
+        145.97084956124624
+      ],
+      [
+        668,
+        31.279999999999752,
+        250,
+        2068.16,
+        250
+      ],
+      [
+        718,
+        313.78,
+        239.70919882223933,
+        1932.56,
+        191.7673590577913
+      ],
+      [
+        768,
+        177.85230000000007,
+        67.29302341124712,
+        2444.7664,
+        261.4107472265565
+      ],
+      [
+        918,
+        172.48480000000032,
+        "processed images",
+        2553.6079999999997,
+        "processed images"
+      ],
+      [
+        1018,
+        163.03800000000024,
+        "processed images",
+        3104.37,
+        "processed images"
+      ],
+      [
+        1118,
+        165.65960000000058,
+        "processed images",
+        3763.0696,
+        "processed images"
+      ]
+    ],
+    "reported_error_definition": "figure caption: SD, n >= 3; full covariance unavailable",
+    "width_header": "x-rms-width / z-rms-width (\u00b5m)",
+    "widths": [
+      [
+        168.0,
+        43.1404,
+        1.36409,
+        90.687,
+        1.237
+      ],
+      [
+        318.0,
+        81.64,
+        9.84308,
+        147.951,
+        9.21213
+      ],
+      [
+        418.0,
+        86.1275,
+        6.40961,
+        165.779,
+        12.0169
+      ],
+      [
+        518.0,
+        109.381,
+        9.46198,
+        194.584,
+        20.6842
+      ],
+      [
+        618.0,
+        137.983,
+        1.15497,
+        280.148,
+        19.7624
+      ],
+      [
+        768.0,
+        163.19,
+        10.2133,
+        326.989,
+        19.0678
+      ]
+    ]
+  },
+  "levitation": {
+    "fuchs-minus3cm.txt": {
+      "amplitude_fit_initial_V": 0.009953537250523257,
+      "amplitude_fit_tau_s": 210397.66727036802,
+      "band_bins_both_sides": 172,
+      "band_offset_Hz": [
+        0.002,
+        0.004
+      ],
+      "duration_s": 43000.54387568572,
+      "filter_settings_in_export": false,
+      "fit_to_published_lower_bound_ratio": 1.930253828168514,
+      "fitted_flux_at_0_and_5_hours_mPhi0": [
+        23.147761047728505,
+        21.249763832148496
+      ],
+      "header": [
+        "% Module: Plotter, ID: c0p1t8p1cfm0",
+        "% Devices: DEV1316",
+        "% Time: 2022/05/14 09:56:06",
+        "% Demod 1 Sample R,  /dev1316/demods/0/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 2 Sample R,  /dev1316/demods/1/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 3 Sample R,  /dev1316/demods/2/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 1 Sample Phase,  /dev1316/demods/0/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 2 Sample Phase,  /dev1316/demods/1/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 3 Sample Phase,  /dev1316/demods/2/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 1 Sample Frequency,  /dev1316/demods/0/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)",
+        "% Demod 2 Sample Frequency,  /dev1316/demods/1/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)",
+        "% Demod 3 Sample Frequency,  /dev1316/demods/2/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)"
+      ],
+      "nominal_damping_s_inv": 1.84e-05,
+      "nominal_mass_kg": 4.3e-07,
+      "phase_slope_frequency_Hz": 26.699246917224205,
+      "pipeline_status": "exploratory reconstruction, not a reproduced calibrated noise likelihood",
+      "published_displacement_gain_V_per_m": 160000.0,
+      "published_relative_gain_uncertainty": 0.07,
+      "published_ringdown_lower_bound_s": 109000,
+      "reference_frequency_Hz": 26.6992697817,
+      "sample_interval_s": 0.28461349999997765,
+      "samples_per_channel": 151085,
+      "time_scale": "export time label; UTC mapping not established",
+      "window_reconstructions": {
+        "Hann": {
+          "interpretation": "nominal reconstruction; median correction is not a confidence interval",
+          "mean_band_ASD_N_per_sqrtHz": 4.912880278081228e-15,
+          "median_log2_diagnostic_ASD_N_per_sqrtHz": 4.903469763058028e-15
+        },
+        "rectangular": {
+          "interpretation": "nominal reconstruction; median correction is not a confidence interval",
+          "mean_band_ASD_N_per_sqrtHz": 6.8413091651304745e-15,
+          "median_log2_diagnostic_ASD_N_per_sqrtHz": 7.0579777166919804e-15
+        }
+      }
+    },
+    "fuchs-plus3p5cm.txt": {
+      "amplitude_fit_initial_V": 0.006805438477953552,
+      "amplitude_fit_tau_s": 111170.02242973231,
+      "band_bins_both_sides": 86,
+      "band_offset_Hz": [
+        0.002,
+        0.004
+      ],
+      "duration_s": 21467.8260005,
+      "filter_settings_in_export": false,
+      "fit_to_published_lower_bound_ratio": 1.0199084626580945,
+      "fitted_flux_at_0_and_5_hours_mPhi0": [
+        15.82660111151989,
+        13.460749230904845
+      ],
+      "header": [
+        "% Module: Plotter, ID: c0p1t8p1cfm0",
+        "% Devices: DEV1316",
+        "% Time: 2022/05/13 05:03:23",
+        "% Demod 1 Sample R,  /dev1316/demods/0/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 2 Sample R,  /dev1316/demods/1/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 3 Sample R,  /dev1316/demods/2/sample.R",
+        "% Time (s), Amplitude (V)",
+        "% Demod 1 Sample Phase,  /dev1316/demods/0/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 2 Sample Phase,  /dev1316/demods/1/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 3 Sample Phase,  /dev1316/demods/2/sample.Theta",
+        "% Time (s), Phase (deg)",
+        "% Demod 1 Sample Frequency,  /dev1316/demods/0/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)",
+        "% Demod 2 Sample Frequency,  /dev1316/demods/1/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)",
+        "% Demod 3 Sample Frequency,  /dev1316/demods/2/sample.Frequency",
+        "% Time (s), Osc Frequency (Hz)"
+      ],
+      "nominal_damping_s_inv": 1.84e-05,
+      "nominal_mass_kg": 4.3e-07,
+      "phase_slope_frequency_Hz": 26.699271421605683,
+      "pipeline_status": "exploratory reconstruction, not a reproduced calibrated noise likelihood",
+      "published_displacement_gain_V_per_m": 160000.0,
+      "published_relative_gain_uncertainty": 0.07,
+      "published_ringdown_lower_bound_s": 109000,
+      "reference_frequency_Hz": 26.6992697817,
+      "sample_interval_s": 0.2846134900000834,
+      "samples_per_channel": 75429,
+      "time_scale": "export time label; UTC mapping not established",
+      "window_reconstructions": {
+        "Hann": {
+          "interpretation": "nominal reconstruction; median correction is not a confidence interval",
+          "mean_band_ASD_N_per_sqrtHz": 2.7715335551874523e-15,
+          "median_log2_diagnostic_ASD_N_per_sqrtHz": 2.9188731749025716e-15
+        },
+        "rectangular": {
+          "interpretation": "nominal reconstruction; median correction is not a confidence interval",
+          "mean_band_ASD_N_per_sqrtHz": 3.0004010356726935e-15,
+          "median_log2_diagnostic_ASD_N_per_sqrtHz": 3.155342784542717e-15
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "bytes": 12486,
+      "name": "cal2020-source.xlsx",
+      "sha256": "b473ed1f79c8464005a445dacdf8247c03400e63df927408722b19acd6a857a8",
+      "source": "10.1038/s41586-020-2346-1, Figure 4 source data",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-020-2346-1/MediaObjects/41586_2020_2346_MOESM1_ESM.xlsx"
+    },
+    {
+      "bytes": 2164618,
+      "name": "fuchs-v2.pdf",
+      "sha256": "240ddfc3c7bfcbe954415d05492664b3b1f7cb8b151b8db9aa186071e8534d1d",
+      "source": "arXiv:2303.03545v2, Supplement C/E",
+      "url": "https://arxiv.org/pdf/2303.03545v2"
+    },
+    {
+      "bytes": 43328889,
+      "name": "fuchs-minus3cm.txt",
+      "sha256": "a151c118e0590818cca187520857fbc23f1ae453e78c72f48e6f5e14befbed64",
+      "source": "Zenodo record 10300430, revision 4",
+      "url": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=-3cm_Height=48,1cm.txt/content"
+    },
+    {
+      "bytes": 21579572,
+      "name": "fuchs-plus3p5cm.txt",
+      "sha256": "6caefb32f687e479d832a28ffa18a2125484acc3783ee12d42e602e15f1d9c67",
+      "source": "Zenodo record 10300430, revision 4",
+      "url": "https://zenodo.org/api/records/10300430/files/Lock-in_data_Lateral_position=3,5cm_Height=48,1cm.txt/content"
+    }
+  ]
+}

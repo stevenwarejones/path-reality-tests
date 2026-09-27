@@ -1,0 +1,35 @@
+{
+  "status": "public unrestricted records downloaded 2026-09-27; versions and content hashes pinned",
+  "files": [
+    {
+      "name": "2019_197_190622_V20_3644009331_DKC_1p8msLens_TOF_TOF_1_L1.zip",
+      "bytes": 107889947,
+      "sha256": "c87e81d607e715c5ddcdf1b1893e83761623a74441d3ce926ce817bffaa1b059",
+      "url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-32/download?file=66eb934dc6ad4bdc12fa5da1&version=1&studyVersion=4&redirect=false",
+      "record": "PSI-32",
+      "record_version": 4,
+      "file_id": "66eb934dc6ad4bdc12fa5da1",
+      "file_version": 1
+    },
+    {
+      "name": "PSI-33_Science Documents_DLD_CAL - Development of Atom Interferometry Experiments for the ISS.docx",
+      "bytes": 13124,
+      "sha256": "4fe374e59fc0ebd57b50b77f3d47a879c6339c4252d39548f7524303ed4c2194",
+      "url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-33/download?file=6841990d4a0e24d624cec3da&version=1&studyVersion=6&redirect=false",
+      "record": "PSI-33",
+      "record_version": 6,
+      "file_id": "6841990d4a0e24d624cec3da",
+      "file_version": 1
+    },
+    {
+      "name": "PSI-33_Calibration_test1.xlsx",
+      "bytes": 15567,
+      "sha256": "5b4d307623937597df819a18080f59d46b0b67126207f0a033776fe59bcef417",
+      "url": "https://psi.nasa.gov/geode-py/ws/studies/PSI-33/download?file=684198d14a0e24d624cec132&version=1&studyVersion=6&redirect=false",
+      "record": "PSI-33",
+      "record_version": 6,
+      "file_id": "684198d14a0e24d624cec132",
+      "file_version": 1
+    }
+  ]
+}
