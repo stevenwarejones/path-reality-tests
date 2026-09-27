@@ -1,0 +1,32 @@
+{
+  "best": {
+    "GST_point": 0.7710335715256037,
+    "RB_point": 0.004099695072959875,
+    "bound": 0.11136407058230036,
+    "joint_point": 0.987407866061949,
+    "kind": "append_yy",
+    "length": 34,
+    "side": "lower",
+    "source_index": 4686,
+    "two_sided_margin": -0.6596695009433033,
+    "word_sha256": "f9632329955d9638c03b0a59035f0701032d9c0ec0956e7b705de5f057a85f0e"
+  },
+  "candidate_count": 9975,
+  "nonvacuous_directed_bounds": 1001,
+  "objective": "max min(GST crossing margin, RB crossing margin), using the bound direction; fixed point pool is not an optimum certificate",
+  "point_pool": ["GST_only", "RB_only", "joint", "GST_search_0", "GST_search_260927"],
+  "positive_two_sided_margins": 0,
+  "status": "Discovery screen; no physical region inferred from finite point spread",
+  "top_ten": [
+    {"GST_point": 0.7710335715256037, "RB_point": 0.004099695072959875, "bound": 0.11136407058230036, "joint_point": 0.987407866061949, "kind": "append_yy", "length": 34, "side": "lower", "source_index": 4686, "two_sided_margin": -0.6596695009433033, "word_sha256": "f9632329955d9638c03b0a59035f0701032d9c0ec0956e7b705de5f057a85f0e"},
+    {"GST_point": 0.7710482110249899, "RB_point": 0.00439182884475442, "bound": 0.11136407058230036, "joint_point": 0.9871862116649432, "kind": "append_xx", "length": 39, "side": "lower", "source_index": 4699, "two_sided_margin": -0.6596841404426895, "word_sha256": "79b46ef385f8a06f4de68f3186143429d1f3da1ea7abd5ec2ab5bb21d3633525"},
+    {"GST_point": 0.7711471618989945, "RB_point": 0.004274999876418384, "bound": 0.11136407058230036, "joint_point": 0.9873414815573301, "kind": "append_xx", "length": 37, "side": "lower", "source_index": 4693, "two_sided_margin": -0.6597830913166941, "word_sha256": "0842a87019320ab59fdfc845cc37944065489325720b14415f5335ef4784bd34"},
+    {"GST_point": 0.7712621170373236, "RB_point": 0.004099695072959875, "bound": 0.11136407058230036, "joint_point": 0.987452057702245, "kind": "append_xx", "length": 34, "side": "lower", "source_index": 4686, "two_sided_margin": -0.6598980464550233, "word_sha256": "e61d46b84552f93c1250ce099d3878451728f84e5444cbde73116b34a393e1df"},
+    {"GST_point": 0.7712753058437549, "RB_point": 0.003982784289986996, "bound": 0.11136407058230036, "joint_point": 0.9875434331428468, "kind": "append_yy", "length": 32, "side": "lower", "source_index": 4703, "two_sided_margin": -0.6599112352614546, "word_sha256": "615447b41dd515ca07f0f3403f70cdc92a4bcc28d7c531e15af14ccd6cb800d9"},
+    {"GST_point": 0.771276735749879, "RB_point": 0.00433341844988655, "bound": 0.11136407058230036, "joint_point": 0.9874338783563739, "kind": "append_yy", "length": 38, "side": "lower", "source_index": 4681, "two_sided_margin": -0.6599126651675786, "word_sha256": "992270d500f31cf28214fdd3c0d61a93df4e24dd561d76f38de2ec3e9af7971e"},
+    {"GST_point": 0.7712770063822996, "RB_point": 0.004274999876418384, "bound": 0.11136407058230036, "joint_point": 0.9872982554932572, "kind": "append_yy", "length": 37, "side": "lower", "source_index": 4693, "two_sided_margin": -0.6599129357999992, "word_sha256": "a23fcd11419ccc845289d3f06fd4fa9fdc263beac0196a323346e5ea1e90d0b3"},
+    {"GST_point": 0.7712812420262294, "RB_point": 0.003982784289986996, "bound": 0.11136407058230036, "joint_point": 0.9875842699395024, "kind": "append_xx", "length": 32, "side": "lower", "source_index": 4703, "two_sided_margin": -0.659917171443929, "word_sha256": "deaa59eafd804c603a2953fe55a727338e6c87b94ac0b29c25208da3cb1ece94"},
+    {"GST_point": 0.7713322063762629, "RB_point": 0.00439182884475442, "bound": 0.11136407058230036, "joint_point": 0.9871420496443821, "kind": "append_yy", "length": 39, "side": "lower", "source_index": 4699, "two_sided_margin": -0.6599681357939625, "word_sha256": "5c828bc90654223ab67c043cd752b900fb90da72a3e19241d3e55c6a39fce648"},
+    {"GST_point": 0.7713634599314017, "RB_point": 0.002694602693628756, "bound": 0.11136407058230036, "joint_point": 0.988826724243318, "kind": "append_xx", "length": 10, "side": "lower", "source_index": 4668, "two_sided_margin": -0.6599993893491013, "word_sha256": "bcf2f68196cf0638a5cf78d53280654445125e73116b4a929b8f8c0fec1d4583"}
+  ]
+}

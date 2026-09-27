@@ -1,0 +1,13 @@
+{
+  "containment": "Every full physical stationary qubit model maps into this relaxation; converse not asserted",
+  "missing_constraints": "No rank-three Gram restriction, full effect positivity, complete positivity of native Choi matrices, or full measured long-word/group constraints",
+  "results": [
+    {"max_word_length": 4, "numerical_objective": -1.2360112933151868e-12, "prefix_states": 78, "readout_bias": 0.44330916107408563, "rows_used": 73, "scope": "Uncertified numerical objective of an outer relaxation; not a physical witness, dual bound, or full-source exclusion", "solver_status": "optimal", "source": "GST"},
+    {"max_word_length": 5, "numerical_objective": 1.3933298959045715e-14, "prefix_states": 148, "readout_bias": 0.4488845494602409, "rows_used": 139, "scope": "Uncertified numerical objective of an outer relaxation; not a physical witness, dual bound, or full-source exclusion", "solver_status": "optimal", "source": "GST"},
+    {"max_word_length": 4, "numerical_objective": 0.08454938569108783, "prefix_states": 78, "readout_bias": 0.4344854539062062, "rows_used": 82, "scope": "Uncertified numerical objective of an outer relaxation; not a physical witness, dual bound, or full-source exclusion", "solver_status": "optimal", "source": "joint"}
+  ],
+  "versions": {
+    "cvxpy": "1.7.3",
+    "scs": "3.3.1"
+  }
+}

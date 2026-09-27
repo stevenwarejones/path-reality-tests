@@ -1,0 +1,11 @@
+{
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/pyGSTio/supplemental-info-arXiv-1605.07674/fc939f90f7a2b32a20aec34f36465259f38837a3/ExperimentalData/2015_03_30-RB_0320_condensed_cliffs.txt",
+      "sha256": "d86a4d1907b0ef80d09b69bb9c6f3b6ff11825873924e4ee533eb49236e0448d",
+      "bytes": 3078406,
+      "cache_name": "RB-clifford-counts.txt",
+      "role": "duplicate_count_representation_audit"
+    }
+  ]
+}

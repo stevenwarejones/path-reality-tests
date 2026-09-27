@@ -1,0 +1,32 @@
+{
+  "exact_word_equivalence": "S_s G_w S_s^-1, S_s rho, E S_s^-1 for every word; all original binary probabilities equal the joint-compatible base point",
+  "models": {
+    "1": {
+      "method": "interval LDL of partially transposed normalized Choi minus 3e-6 I",
+      "native_choi_eigenvalue_lower": 1e-06,
+      "partial_transpose_eigenvalue_lower": 3e-06,
+      "scale": [1, 1],
+      "state_bloch_length_interval": [0.9903161793919398, 0.99031617939194],
+      "status": "entanglement breaking"
+    },
+    "1009/1000": {
+      "method": "directed-interval Rayleigh quotient of normalized Choi partial transpose",
+      "native_choi_eigenvalue_lower": 1e-06,
+      "negative_rayleigh_upper": -3e-06,
+      "rayleigh_vector": [
+        [0.5447827234242008, -0.0],
+        [-0.4491354352267123, -0.040887715362738886],
+        [0.4491606088057363, 0.03583986081906223],
+        [0.5447821456383761, 7.404064283570745e-05]
+      ],
+      "scale": [1009, 1000],
+      "state_bloch_length_interval": [0.9992290250064673, 0.9992290250064675],
+      "status": "not entanglement breaking"
+    }
+  },
+  "scope": "nonidentification of EB status for this fixed block from arbitrary archived-style terminal words, not impossibility of interval tightening or a measured memory resource",
+  "target_expression": "(Gy)^10749",
+  "target_length": 10749,
+  "trusted_Z_preparation_probability_gap": [0.0044564, 0.0044565],
+  "word_sha256": "d837f68e9ba1016eba19af095f4fc3cd2c8c880bd9cbe712a77b4063ab664576"
+}

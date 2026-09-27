@@ -1,0 +1,269 @@
+{
+  "inputs": {
+    "0": {
+      "denominator": 10000000000,
+      "k": 0,
+      "lower_numerator": 0,
+      "n": 50,
+      "upper_numerator": 2318121895
+    },
+    "10": {
+      "denominator": 10000000000,
+      "k": 50,
+      "lower_numerator": 7681878105,
+      "n": 50,
+      "upper_numerator": 10000000000
+    },
+    "4662": {
+      "denominator": 10000000000,
+      "k": 0,
+      "lower_numerator": 0,
+      "n": 285,
+      "upper_numerator": 452128544
+    }
+  },
+  "joint_lower": {
+    "decimal": 0.1113640705,
+    "denominator": 2000000000,
+    "numerator": 222728141
+  },
+  "models": {
+    "GST_only": {
+      "aggregate_only": false,
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": 0.003153544896460145,
+          "denominator": 819268104088453120000000000,
+          "numerator": 2583598748480720417426697
+        },
+        "RB": {
+          "decimal": -0.015405546076164059,
+          "denominator": 2297803380191395840000000000,
+          "numerator": -35398915847504070276554417
+        }
+      },
+      "retained": ["GST"],
+      "separation_below_joint_lower": {
+        "decimal": -0.8777075305,
+        "denominator": 2000000000,
+        "numerator": -1755415061
+      },
+      "target_lower": {
+        "decimal": 0.989071589,
+        "denominator": 1000000000,
+        "numerator": 989071589
+      },
+      "target_upper": {
+        "decimal": 0.989071601,
+        "denominator": 1000000000,
+        "numerator": 989071601
+      },
+      "violations": {
+        "GST": 0,
+        "RB": 3
+      }
+    },
+    "GST_search_0": {
+      "aggregate_only": false,
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": 1.110861990731282e-06,
+          "denominator": 1638536208176906240000000000,
+          "numerator": 1820187594100684462769
+        },
+        "RB": {
+          "decimal": -0.1857720492289718,
+          "denominator": 286576710663536640000000000,
+          "numerator": -53237942801263338021115091
+        }
+      },
+      "retained": ["GST"],
+      "separation_below_joint_lower": {
+        "decimal": -0.6600500805,
+        "denominator": 2000000000,
+        "numerator": -1320100161
+      },
+      "target_lower": {
+        "decimal": 0.771414139,
+        "denominator": 1000000000,
+        "numerator": 771414139
+      },
+      "target_upper": {
+        "decimal": 0.771414151,
+        "denominator": 1000000000,
+        "numerator": 771414151
+      },
+      "violations": {
+        "GST": 0,
+        "RB": 1936
+      }
+    },
+    "GST_search_260927": {
+      "aggregate_only": false,
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": 1.0714545822700411e-06,
+          "denominator": 1638536208176906240000000000,
+          "numerator": 1755617128466524306519
+        },
+        "RB": {
+          "decimal": -0.18590854654584035,
+          "denominator": 143288355331768320000000000,
+          "numerator": -26638529876672963322080983
+        }
+      },
+      "retained": ["GST"],
+      "separation_below_joint_lower": {
+        "decimal": -0.6601952405,
+        "denominator": 2000000000,
+        "numerator": -1320390481
+      },
+      "target_lower": {
+        "decimal": 0.771559299,
+        "denominator": 1000000000,
+        "numerator": 771559299
+      },
+      "target_upper": {
+        "decimal": 0.771559311,
+        "denominator": 1000000000,
+        "numerator": 771559311
+      },
+      "violations": {
+        "GST": 0,
+        "RB": 1934
+      }
+    },
+    "RB_only": {
+      "aggregate_only": false,
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": -0.7659626231216736,
+          "denominator": 35184372088832000000000,
+          "numerator": -26949913938050758374293
+        },
+        "RB": {
+          "decimal": 9.999900000001006e-05,
+          "denominator": 2297803380191395840000000000,
+          "numerator": 229778040215782496883083
+        }
+      },
+      "retained": ["RB"],
+      "separation_below_joint_lower": {
+        "decimal": 0.1090214695,
+        "denominator": 2000000000,
+        "numerator": 218042939
+      },
+      "target_lower": {
+        "decimal": 0.002342589,
+        "denominator": 1000000000,
+        "numerator": 2342589
+      },
+      "target_upper": {
+        "decimal": 0.002342601,
+        "denominator": 1000000000,
+        "numerator": 2342601
+      },
+      "violations": {
+        "GST": 3507,
+        "RB": 0
+      }
+    },
+    "aggregate": {
+      "aggregate_only": true,
+      "checked_two_sided_constraints": {
+        "GST": 1,
+        "RB": 1
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": 0.003839973099991097,
+          "denominator": 204817026022113280000000000,
+          "numerator": 786491870345091517930893
+        },
+        "RB": {
+          "decimal": 0.0024689032998627004,
+          "denominator": 6606217703399096320000000000,
+          "numerator": 16310112687533418435918981
+        }
+      },
+      "retained": ["GST", "RB"],
+      "separation_below_joint_lower": {
+        "decimal": 0.0519232995,
+        "denominator": 2000000000,
+        "numerator": 103846599
+      },
+      "target_lower": {
+        "decimal": 0.059440759,
+        "denominator": 1000000000,
+        "numerator": 59440759
+      },
+      "target_upper": {
+        "decimal": 0.059440771,
+        "denominator": 1000000000,
+        "numerator": 59440771
+      },
+      "violations": {
+        "GST": 0,
+        "RB": 0
+      }
+    },
+    "joint": {
+      "aggregate_only": false,
+      "checked_two_sided_constraints": {
+        "GST": 4663,
+        "RB": 2010
+      },
+      "minimum_slack": {
+        "GST": {
+          "decimal": 0.0031338120478955536,
+          "denominator": 409634052044226560000000000,
+          "numerator": 1283716127524471405002411
+        },
+        "RB": {
+          "decimal": 0.00202413731870507,
+          "denominator": 6606217703399096320000000000,
+          "numerator": 13371891788940209736700231
+        }
+      },
+      "retained": ["GST", "RB"],
+      "separation_below_joint_lower": {
+        "decimal": -0.8777665405,
+        "denominator": 2000000000,
+        "numerator": -1755533081
+      },
+      "target_lower": {
+        "decimal": 0.989130599,
+        "denominator": 1000000000,
+        "numerator": 989130599
+      },
+      "target_upper": {
+        "decimal": 0.989130611,
+        "denominator": 1000000000,
+        "numerator": 989130611
+      },
+      "violations": {
+        "GST": 0,
+        "RB": 0
+      }
+    }
+  },
+  "status": "one-sided unmeasured prediction; two-sided goal unresolved",
+  "target_sha256": "dcc185c9119d8ed71fca5a402c4353202bad7f19493372053cf68bf8c5186350",
+  "target_word": [0, 0, 2, 2]
+}
